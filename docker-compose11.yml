@@ -1,0 +1,58 @@
+version: "3.7"
+services:
+  ecommerce-server-clone:
+    build:
+      context: .
+    restart: always 
+    networks:
+      - share-network
+    env_file:
+      - .env.development
+  #  depends_on:
+  #    - postgres-db
+    deploy:
+      replicas: 1
+    expose:
+      - "9090" # Expose the port to other containers in the same network
+
+# postgres-db:
+#   image: postgres:latest
+#   container_name: ecommerce-postgres
+#   restart: always
+#   env_file:
+#     - .env
+#   volumes:
+#     - postgres-data:/var/lib/postgresql/data
+#   networks:
+#     - share-network
+#   ports:
+#     - "5433:5432" # Exposes PostgreSQL on port 5432 for local development
+    
+#  redis-server:
+#    image: redis:latest
+#    container_name: redis-server
+#    restart: always
+#    ports:
+#      - "6370:6379" 
+#    networks:
+#      - share-network
+
+#  nginx:
+#    image: nginx:alpine
+#    container_name: ecommerce-server-nginx
+#    restart: always
+#    ports:
+#      - "9090:80" # Exposes port 80 from the NGINX container to port 9090 on the host
+#    volumes:
+#      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+#    depends_on:
+#      - ecommerce-server
+#    networks:
+#      - share-network
+
+networks:
+  share-network:
+    external: true
+
+# volumes:
+#   postgres-data:
