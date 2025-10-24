@@ -1,24 +1,25 @@
 import { gql } from "apollo-server-express";
+import { aboutUsSchema } from "../modules/aboutUs/schemas";
+import { attributeSchema } from "../modules/attribute/schemas";
 import { bannerSchema } from "../modules/banner/schemas";
 import { brandingSchema } from "../modules/branding/schemas";
 import { categorySchema } from "../modules/category/schemas";
-import { staffSchema } from "../modules/staff/schemas";
-import { shopSchema } from "../modules/shop/schemas";
-import { shopTypeSchema } from "../modules/shopType/schemas";
-import { shopAddressSchema } from "../modules/shopAddress/schemas";
-import { productSchema } from "../modules/product/schemas";
-import { shopSocialSchema } from "../modules/shopSocial/schemas";
-import { productCommentSchema } from "../modules/productComment/schemas";
-import { shopProductSchema } from "../modules/shopProduct/schemas";
-import { aboutUsSchema } from "../modules/aboutUs/schemas";
 import { customerSchema } from "../modules/customer/schemas";
-import { walletSchema } from "../modules/wallet/schemas";
-import { transactionHistorySchema } from "../modules/transactionHistory/schemas";
+import { dashboardSchema } from "../modules/dashboard/schemas";
+import { logisticSchema } from "../modules/logistics/schemas";
+import { notificationSchema } from "../modules/notification/schemas";
 import { orderSchema } from "../modules/order/schemas";
 import { orderDetailSchema } from "../modules/orderDetail/schemas";
-import { dashboardSchema } from "../modules/dashboard/schemas";
-import { notificationSchema } from "../modules/notification/schemas";
-import { logisticSchema } from "../modules/logistics/schemas";
+import { productSchema } from "../modules/product/schemas";
+import { productCommentSchema } from "../modules/productComment/schemas";
+import { shopSchema } from "../modules/shop/schemas";
+import { shopAddressSchema } from "../modules/shopAddress/schemas";
+import { shopProductSchema } from "../modules/shopProduct/schemas";
+import { shopSocialSchema } from "../modules/shopSocial/schemas";
+import { shopTypeSchema } from "../modules/shopType/schemas";
+import { staffSchema } from "../modules/staff/schemas";
+import { transactionHistorySchema } from "../modules/transactionHistory/schemas";
+import { walletSchema } from "../modules/wallet/schemas";
 
 export const typeDefs = gql`
   scalar Upload
@@ -126,4 +127,5 @@ export const typeDefs = gql`
   ${dashboardSchema}
   ${notificationSchema}
   ${logisticSchema}
+  ${attributeSchema}
 `;

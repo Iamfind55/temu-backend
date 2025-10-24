@@ -158,6 +158,11 @@ export const shopSchema = `
     password: String!
   }
 
+   input ShopVerifyOTPInput {
+    email: String!
+    otp: String!
+  }
+
   type ShopLoginType {
     token: String!
     data: Shop
@@ -224,6 +229,7 @@ export const shopSchema = `
   type Mutation {
     createShop(data: CreateShopInput!): SuccessShopResponseOne!
     shopRegister(data: CreateShopInput!): ShopLoginResponse!
+    shopVerifyOTP(data: ShopVerifyOTPInput!): ShopLoginResponse!
     adminUpdateShop(data: UpdateShopInput!): SuccessShopResponseOne!
     adminApproveShop(id: ID!): SuccessShopResponseOne!
     shopResetPassword(data: ShopResetPasswordInput!): SuccessShopResponseOne!

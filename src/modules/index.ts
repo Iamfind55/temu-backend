@@ -18,6 +18,7 @@ import { orderDetailResolvers } from "./orderDetail";
 import { dashboardResolvers } from "./dashboard";
 import { notificationResolvers } from "./notification";
 import { logisticsResolvers } from "./logistics";
+import { attributeResolvers } from "./attribute";
 const { GraphQLUpload } = require("graphql-upload");
 
 export const resolvers = [
@@ -41,5 +42,6 @@ export const resolvers = [
   orderDetailResolvers,
   dashboardResolvers,
   notificationResolvers,
-  logisticsResolvers
+  logisticsResolvers,
+  attributeResolvers
 ];

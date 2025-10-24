@@ -19,6 +19,9 @@ import { Order } from "./modules/order";
 import { OrderDetail } from "./modules/orderDetail";
 import { Notification } from "./modules/notification";
 import { Logistics } from "./modules/logistics";
+import { Attribute } from "./modules/attribute";
+import { AttributeValue } from "./modules/attributeValue/entity";
+import { CategoryAttribute } from "./modules/categoryAttribute";
 const AppDataSource = new DataSource({
   type: "postgres",
   host: config.db_host, // Replace with your PostgreSQL host
@@ -47,7 +50,10 @@ const AppDataSource = new DataSource({
     Wallet,
     OrderDetail,
     Notification,
-    Logistics
+    Logistics,
+    Attribute,
+    AttributeValue,
+    CategoryAttribute
   ],
   migrations: ["migrations/*.ts"],
   subscribers: [],

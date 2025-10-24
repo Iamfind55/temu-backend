@@ -91,3 +91,9 @@ export interface ShopRequestVIPData {
   payment_slip: string;
   requested_at: Date;
 }
+
+
+export interface ShopVerifyOTPInput {
+  email: string;
+  otp: string;
+}

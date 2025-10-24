@@ -19,6 +19,7 @@ export const categorySchema = `
     status: BaseStatus = ACTIVE
     recommended: Boolean
     parent_id: String
+    attributes: [ID!]
   }
 
   input UpdateCategoryInput {
@@ -28,6 +29,7 @@ export const categorySchema = `
     status: BaseStatus
     recommended: Boolean
     parent_id: String
+    attributes: [ID!]
   }
 
   input CategoryWhereInput {

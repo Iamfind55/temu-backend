@@ -1,6 +1,7 @@
 import {
   ShopRequestVIPData,
   ShopResetPassword,
+  ShopVerifyOTPInput,
   ShopWhereLoginInput,
 } from "../types/index";
 import { Request } from "express";
@@ -20,6 +21,13 @@ export const shopMutation = {
     { data }: { data: Shop },
     { req }: { req: Request }
   ) => ShopService.shopRegister({ data: data, req }),
+
+  shopVerifyOTP: async (
+    _: any,
+    { data }: { data: ShopVerifyOTPInput },
+    { req }: { req: Request }
+  ) => ShopService.shopVerifyOTP({ data: data, req }),
+
 
   adminUpdateShop: async (
     _: any,

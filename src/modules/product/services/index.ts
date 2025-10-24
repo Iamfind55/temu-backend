@@ -990,11 +990,17 @@ export class ProductService {
     if (where?.product_id) {
       const product = await productRepository.findOne({
         where: { id: where.product_id },
-        select: ["category_ids"],
+        select: ["category_ids", "brand_id"],
       });
+
       if (product?.category_ids?.length) {
         queryBuilder.andWhere("product.category_ids::jsonb @> :category_ids", {
           category_ids: JSON.stringify(product.category_ids),
+        });
+      }
+      if (product?.brand_id) {
+        queryBuilder.orWhere("product.brand_id = :brand_id", {
+          brand_id: product.brand_id,
         });
       }
     }
@@ -1222,8 +1228,13 @@ export class ProductService {
     if (where?.star_top) {
       queryBuilder.andWhere("product.total_star >= 4");
       queryBuilder.orderBy("RANDOM()");
-    } else if (where?.discount) {
-      queryBuilder.andWhere("product.discount > 0");
+    } else if (where?.discount && where?.discount > 0) {
+      queryBuilder.andWhere("product.discount >= :discount", {
+        discount: where.discount,
+      });
+      queryBuilder.orderBy("RANDOM()");
+    } else if (where?.offer) {
+      queryBuilder.andWhere("product.discount >0");
       queryBuilder.orderBy("RANDOM()");
     } else {
       queryBuilder.orderBy(this.order(sortedBy, where?.price_between) as any);
@@ -1232,8 +1243,6 @@ export class ProductService {
     queryBuilder.skip((page - 1) * limit).take(limit);
     return queryBuilder;
   }
-
-
 
   private static async executeQuery(
     queryBuilder: any,

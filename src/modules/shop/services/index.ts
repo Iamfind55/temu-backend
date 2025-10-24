@@ -15,6 +15,7 @@ import {
   ShopStatus,
   ShopWhereInput,
   ShopWhereLoginInput,
+  ShopVerifyOTPInput,
 } from "../types";
 import { Brackets, getManager, getRepository } from "typeorm";
 import { Shop } from "../entity";
@@ -26,6 +27,8 @@ import { GraphQLResolveInfo } from "graphql";
 import { Wallet, WalletService } from "../../wallet";
 import { Staff } from "../../staff";
 import { INotificationType, NotificationService } from "../../notification";
+import { OtpService } from "../utils/helpers";
+import { addMinutes } from "date-fns";
 const nodemailer = require("nodemailer");
 
 export class ShopService {
@@ -110,6 +113,11 @@ export class ShopService {
       if (data?.password) data.password = await hashPassword(data?.password);
 
       // Create and save shop
+      const otpExpires = addMinutes(new Date(), 5);
+      const otp = OtpService.generateOtp();
+      data.status == ShopStatus.PENDING;
+      data.otp = otp;
+      data.otpExpire_at = otpExpires;
       const newShop = shopRepository.create(data);
       const savedShop: any = await shopRepository.save(newShop);
 
@@ -123,7 +131,45 @@ export class ShopService {
         } as any);
       } catch (error) {}
 
+      const email = savedShop.email;
+      this.sendOtpEmail(email, otp, savedShop);
       return handleSuccess({ token: "", data: savedShop });
+    } catch (error: any) {
+      return handleError(
+        config.message.internal_server_error,
+        500,
+        error.message
+      );
+    }
+  }
+
+  static async shopVerifyOTP({
+    data,
+    req,
+  }: {
+    data: ShopVerifyOTPInput;
+    req: Request;
+  }): Promise<Response<Shop | null>> {
+    try {
+      const shopRepository = getRepository(Shop);
+      const { email, otp } = data;
+      const shop = await shopRepository.findOne({ where: { email } });
+      if (!shop) {
+        return handleError("Accont not found please try again", 400, null);
+      }
+      if (!shop.otp || shop.otp !== otp) {
+        return handleError("Invalid OTP, please try again", 400, null);
+      }
+      if (!shop.otpExpire_at || shop.otpExpire_at <= new Date()) {
+        return handleError("You OTP expires", 400, null);
+      }
+
+      shop.status = ShopStatus.ACTIVE;
+      shop.isOtpEnable = true;
+      await shopRepository.save(shop)
+
+      const token = new AuthMiddlewareService().genShopToken(shop);
+      return handleSuccess({ token, data: shop } as any);
     } catch (error: any) {
       return handleError(
         config.message.internal_server_error,
@@ -804,6 +850,82 @@ export class ShopService {
         500,
         error.message
       );
+    }
+  }
+
+  static async sendOtpEmail(email: string, otp: string, customer: Shop) {
+    try {
+      console.log(" Sending OTP email...");
+
+      // Create transporter
+      const transporter = nodemailer.createTransport({
+        host: config.smtp.host,
+        port: config.smtp.port,
+        secure: config.smtp.secure, // true for 465 (SSL), false for 587 (TLS)
+        auth: {
+          user: config.smtp.user,
+          pass: config.smtp.pass,
+        },
+      });
+
+      // Build email HTML
+      const htmlContent = `
+      <body style="margin:0; padding:0; background-color:#f6f6f6; font-family:Arial, sans-serif;">
+        <div style="width:100%; background-color:#f6f6f6; padding:30px 0;">
+          <div style="max-width:600px; width:90%; margin:0 auto; background-color:#ffffff; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+
+            <div style="display:flex; align-items:center; justify-content:center; margin-bottom:20px;">
+              <img 
+                src="https://res.cloudinary.com/dwzjfryoh/image/upload/v1760459478/Temu_logo_icon_h3c98r.png" 
+                alt="Temu Logo" 
+                width="80" 
+                style="display:block;"
+              />
+            </div>
+            <div>
+              <p style="font-size:16px;">Hi, ${
+                customer.fullname ?? customer.username ?? customer.store_name
+              }</p>
+              <p>Please verify your email address using the following verification code:</p>
+              <h1 style="letter-spacing:5px; color:#007bff; font-size:32px; margin:10px 0;">${otp}</h1>
+              <p style="font-size:14px; color:#555;">This code will expire in <strong>5 minutes</strong>.</p>
+
+              <p style="margin-top:10px;">Thank you！</p>
+        
+            </div>
+
+            <hr style="margin:30px 0; border:none; border-top:1px solid #ddd;" />
+
+            <p style="font-size:12px; color:#888; text-align:center;">
+              Temu Team
+            </p>
+            <p style="font-size:12px; color:#888; text-align:center;">
+            Please contact customer service if you have any questions.
+            </p>
+            <div style="font-size:12px; color:#888; text-align:center;">
+              <a href="google.com/url?q=https://app.temu.com/cmsg_transit.html?_cmsg_biz%3D9005%26_cmsg_channel%3Dmail%26region_id%3D197%26_cmsg_locale%3D197~en~THB%26locale_override%3D197~en~THB&source=gmail&ust=1761404349697000&usg=AOvVaw2iH95Jns_R_KRcYo9NVfcV">Privacy & Cookie Policy</a>  |  <a href="https://www.temu.com/privacy-and-cookie-policy.html?refer_page_name=bgp-privacy-policy-and-setting&refer_page_id=10181_1761319263695_rb8cr8lnhv&refer_page_sn=10181&_x_sessn_id=e3cg4fwwak">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+      </body>
+      `;
+
+      //  Setup mail options
+      const mailOptions = {
+        from: `"Temu" <${config.smtp.user}>`,
+        to: email,
+        subject: `Your OTP Code`,
+        text: `Your OTP code is ${otp}. It will expire in 5 minutes.`,
+        html: htmlContent,
+      };
+
+      // Send the email
+      const info = await transporter.sendMail(mailOptions);
+      console.log("Email sent:", customer.email);
+      return true;
+    } catch (error: any) {
+      console.error("Error sending OTP email:", error.message);
+      return false;
     }
   }
 

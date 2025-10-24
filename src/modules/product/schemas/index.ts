@@ -82,7 +82,8 @@ export const productSchema = `
     product_vip: Int
     product_top: Int
     quantity: Int
-    discount: Boolean
+    discount: Int
+    offer:Boolean
     star_top: Boolean
     createdAtBetween: DateBetweenInput
   }

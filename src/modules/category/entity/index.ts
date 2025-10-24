@@ -2,6 +2,7 @@ import { Entity, Column, OneToMany } from "typeorm";
 import { BaseEntity } from "../../../utils/base/baseEntity";
 import { BaseStatus, NameTranslateBase } from "../../../utils/base/baseType";
 import { Product } from "../../product";
+import { CategoryAttribute } from "../../categoryAttribute/entity";
 
 @Entity()
 export class Category extends BaseEntity {
@@ -42,4 +43,7 @@ export class Category extends BaseEntity {
 
   @OneToMany(() => Product, (product) => product.categoryData)
   products!: Product[];
+
+  @OneToMany(() => CategoryAttribute, (ca) => ca.category)
+  categoryAttributes?: CategoryAttribute[];
 }

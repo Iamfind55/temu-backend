@@ -33,7 +33,8 @@ export interface ProductWhereInput {
   product_vip: number;
   product_top: number;
   quantity?: number;
-  discount?: boolean;
+  discount?: number;
+  offer?: boolean;
   star_top?: boolean;
   createdAtBetween: DateBetween;
   within?: number;

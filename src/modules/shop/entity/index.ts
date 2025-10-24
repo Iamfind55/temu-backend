@@ -44,6 +44,15 @@ export class Shop extends BaseEntity {
   profit!: number;
 
   @Column({ nullable: true })
+  otp?: string;
+
+  @Column({ nullable: true })
+  otpExpire_at?: Date;
+
+  @Column({ default: false })
+  isOtpEnable?: boolean;
+
+  @Column({ nullable: true })
   dob!: Date;
 
   @Column({

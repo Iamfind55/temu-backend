@@ -13,6 +13,8 @@ import { BaseOrderByInput } from "../../../utils/base/baseType";
 import { AuthMiddlewareService } from "../../../middlewares/auth.middleware";
 import { getRequestedFields } from "../../../utils/graphqlUtils";
 import { GraphQLResolveInfo } from "graphql";
+import { CategoryAttribute } from "../../categoryAttribute";
+import { Attribute } from "../../attribute";
 
 export class CategoryService {
   // User only clone data from dhlshopping api
@@ -89,6 +91,7 @@ export class CategoryService {
     req: Request;
   }): Promise<Response<Category | null>> {
     const categoryRepository = getRepository(Category);
+    const categoryAttributeRepository = getRepository(CategoryAttribute);
 
     try {
       const staffDataFromToken = new AuthMiddlewareService().verifyStaffToken(
@@ -121,10 +124,22 @@ export class CategoryService {
       const newCategory = categoryRepository.create({
         ...data,
         created_by: staffDataFromToken.id,
-      } as any);
+      });
 
       const savedCategory = await categoryRepository.save(newCategory);
+      
+      if (savedCategory && data?.attributes && data?.attributes?.length > 0) {
+        const categoryAttributes: CategoryAttribute[] = data.attributes.map(
+          (attributeId) => {
+            const ca = new CategoryAttribute();
+            ca.category = { id: savedCategory.id } as Category;
+            ca.attribute = { id: attributeId } as Attribute;
+            return ca;
+          }
+        );
 
+        await categoryAttributeRepository.save(categoryAttributes);
+      }
       return handleSuccess(savedCategory as any);
     } catch (error: any) {
       return handleError(

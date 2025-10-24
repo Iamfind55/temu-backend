@@ -9,6 +9,7 @@ export interface CategoryModel extends BaseType {
   name: NameTranslateBase;
   image: string;
   status: BaseStatus;
+  attributes?: string[];
 }
 
 export interface CategoryWhereInput {
