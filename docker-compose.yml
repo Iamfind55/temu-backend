@@ -16,7 +16,7 @@ services:
     deploy:
       replicas: 1
     expose:
-      - "9090" # Expose the port to other containers in the same network
+      - "9091" # Expose the port to other containers in the same network
 
   # postgres-db:
   #   image: postgres:latest
@@ -50,7 +50,7 @@ services:
     container_name: ecommerce-server-nginx
     restart: always
     ports:
-      - "9090:80" # Exposes port 80 from the NGINX container to port 9090 on the host
+      - "9091:80" # Exposes port 80 from the NGINX container to port 9091 on the host
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:

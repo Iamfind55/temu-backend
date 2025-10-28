@@ -1,0 +1,44 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.TEMU_SSH_PRIVATE_KEY }}
+
+      - name: Set Environment Variables
+        run: |
+          echo "DEPLOY_PATH=/var/www/temu-backend" >> $GITHUB_ENV
+          echo "IP_ADDRESS=root@${{ secrets.TEMU_SERVER_IP_ADDRESS }}" >> $GITHUB_ENV
+
+      - name: Show Variables
+        run: |
+          echo "Deploy Path: ${{ env.DEPLOY_PATH }}"
+          echo "Server IP: ${{ env.IP_ADDRESS }}"
+
+      - name: Test SSH Connection
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ env.IP_ADDRESS }} 'echo "SSH Connection Successful"'
+
+      - name: Deploy to VM
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ env.IP_ADDRESS }} << EOF
+            set -e  # Exit on any error
+            cd ${{ env.DEPLOY_PATH }}
+            git fetch
+            git checkout main
+            git pull origin main
+            npm run build:docker
+          EOF

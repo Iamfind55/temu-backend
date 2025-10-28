@@ -1,29 +1,31 @@
-import { getRepository } from "typeorm";
-import { useServer } from "graphql-ws/lib/use/ws";
-import express, { Response, Request } from "express";
-import { ApolloServer } from "apollo-server-express";
-import { typeDefs } from "./schema";
-import { resolvers } from "./modules";
-import { config } from "./config";
-import { connectDB } from "./utils/db";
-import cors from "cors";
-import http from "http";
 import { makeExecutableSchema } from "@graphql-tools/schema";
-import pubsub from "./utils/pubsub";
-import { Product, ProductService } from "./modules/product";
-import { Category } from "./modules/category";
+import { ApolloServer } from "apollo-server-express";
+import cors from "cors";
+import express, { Request, Response } from "express";
+import { useServer } from "graphql-ws/lib/use/ws";
+import http from "http";
+import { getRepository } from "typeorm";
+import { config } from "./config";
+import { resolvers } from "./modules";
+import { Banner } from "./modules/banner";
 import { Branding } from "./modules/branding";
+import { Category } from "./modules/category";
+import { Notification } from "./modules/notification";
 import { Order } from "./modules/order";
 import { OrderDetail } from "./modules/orderDetail";
-import { Notification } from "./modules/notification";
+import { Product } from "./modules/product";
 import { Shop } from "./modules/shop";
 import { ShopAddress } from "./modules/shopAddress";
 import { ShopProduct } from "./modules/shopProduct";
-import { Wallet } from "./modules/wallet";
-import { Banner } from "./modules/banner";
-import { TransactionHistory } from "./modules/transactionHistory";
 import { ShopSocial } from "./modules/shopSocial";
+import { TransactionHistory } from "./modules/transactionHistory";
+import { Wallet } from "./modules/wallet";
+import { typeDefs } from "./schema";
+import { connectDB } from "./utils/db";
 import { createDefaultStaff } from "./utils/defaultStaff";
+import pubsub from "./utils/pubsub";
+import { ApolloServerPluginLandingPageLocalDefault } from "apollo-server-core";
+
 const { WebSocketServer } = require("ws");
 
 const app = express();
@@ -68,6 +70,7 @@ const startApp = async () => {
     schema,
     context: ({ req, res }) => ({ req, res, pubsub }), // Ensure pubsub is available in the context
     plugins: [
+      ApolloServerPluginLandingPageLocalDefault({ footer: false }),
       {
         async serverWillStart() {
           return {

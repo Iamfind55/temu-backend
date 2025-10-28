@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.BaseStatus = exports.BaseOrderByInput = void 0;
+var BaseOrderByInput;
+(function (BaseOrderByInput) {
+    BaseOrderByInput["created_at_ASC"] = "created_at_ASC";
+    BaseOrderByInput["created_at_DESC"] = "created_at_DESC";
+    BaseOrderByInput["updated_at_ASC"] = "updated_at_ASC";
+    BaseOrderByInput["updated_at_DESC"] = "updated_at_DESC";
+    BaseOrderByInput["sell_count_DESC"] = "sell_count_DESC";
+    BaseOrderByInput["sell_count_ASC"] = "sell_count_ASC";
+    BaseOrderByInput["price_DESC"] = "price_DESC";
+    BaseOrderByInput["price_ASC"] = "price_ASC";
+    BaseOrderByInput["position_DESC"] = "position_DESC";
+    BaseOrderByInput["position_ASC"] = "position_ASC";
+})(BaseOrderByInput || (exports.BaseOrderByInput = BaseOrderByInput = {}));
+var BaseStatus;
+(function (BaseStatus) {
+    BaseStatus["ACTIVE"] = "ACTIVE";
+    BaseStatus["INACTIVE"] = "INACTIVE";
+})(BaseStatus || (exports.BaseStatus = BaseStatus = {}));
