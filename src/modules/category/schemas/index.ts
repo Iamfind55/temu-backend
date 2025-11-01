@@ -1,8 +1,9 @@
 export const categorySchema = `
   type Category {
     id: ID
-    name: NameTranslateBaseType
+    name: String
     image: String
+    oringImageURL:String
     status: BaseStatus
     parent_id: String
     parent_data: Category
@@ -14,8 +15,9 @@ export const categorySchema = `
   } 
      
   input CreateCategoryInput {
-    name: NameTranslateBaseInput
+    name: String
     image: String
+    oringImageURL:String
     status: BaseStatus = ACTIVE
     recommended: Boolean
     parent_id: String
@@ -24,12 +26,13 @@ export const categorySchema = `
 
   input UpdateCategoryInput {
     id: ID!
-    name: NameTranslateBaseInput
+    name: String
     image: String
+    oringImageURL:String
     status: BaseStatus
     recommended: Boolean
     parent_id: String
-    attributes: [ID!]
+    attributes: [ID]
   }
 
   input CategoryWhereInput {

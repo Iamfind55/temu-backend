@@ -6,30 +6,20 @@ import { CategoryAttribute } from "../../categoryAttribute/entity";
 
 @Entity()
 export class Category extends BaseEntity {
-  @Column({
-    type: "json",
-    nullable: false,
-    default: {
-      name_en: "",
-      name_es: "",
-      name_ms: "",
-      name_jp: "",
-      name_th: "",
-      name_vi: "",
-      name_zh: "",
-      name_zh_tw: "",
-    },
-  })
-  name!: NameTranslateBase;
+  @Column({ nullable: false })
+  name!: string;
 
   @Column({ nullable: true })
   parent_id!: string;
 
   @Column({ nullable: true })
-  image!: string;
+  image?: string;
 
   @Column({ nullable: true })
-  origin_id!: string;
+  oringImageURL?: string;
+
+  @Column({ nullable: true })
+  origin_id?: string;
 
   @Column({
     type: "enum",
@@ -39,10 +29,10 @@ export class Category extends BaseEntity {
   status!: BaseStatus;
 
   @Column({ type: "boolean", default: true })
-  recommended!: boolean;
+  recommended?: boolean;
 
   @OneToMany(() => Product, (product) => product.categoryData)
-  products!: Product[];
+  products?: Product[];
 
   @OneToMany(() => CategoryAttribute, (ca) => ca.category)
   categoryAttributes?: CategoryAttribute[];

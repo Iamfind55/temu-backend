@@ -1,13 +1,13 @@
 import {
   BaseStatus,
-  BaseType,
-  NameTranslateBase,
+  BaseType
 } from "../../../utils/base/baseType";
 import { DateBetween } from "../../shopProduct";
 
 export interface CategoryModel extends BaseType {
-  name: NameTranslateBase;
+  name: string;
   image: string;
+  oringImageURL:string
   status: BaseStatus;
   attributes?: string[];
 }

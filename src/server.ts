@@ -13,7 +13,7 @@ import { Category } from "./modules/category";
 import { Notification } from "./modules/notification";
 import { Order } from "./modules/order";
 import { OrderDetail } from "./modules/orderDetail";
-import { Product } from "./modules/product";
+import { Product, ProductService } from "./modules/product";
 import { Shop } from "./modules/shop";
 import { ShopAddress } from "./modules/shopAddress";
 import { ShopProduct } from "./modules/shopProduct";
@@ -105,6 +105,8 @@ const startApp = async () => {
   // ProductService.createLoopCategoryAndProduct();
   // ProductService.createBanner()
   // ProductService.createProductWithoutImage();
+  // ProductService.fetchTemuCategoryOptList();
+  // ProductService.uploadCategoryToStorage();
 
   const clearAllData = async () => {
     const productRepository = getRepository(Product);

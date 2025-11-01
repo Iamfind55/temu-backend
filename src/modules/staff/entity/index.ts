@@ -1,7 +1,7 @@
 import { Entity, Column } from "typeorm";
 import { BaseEntity } from "../../../utils/base/baseEntity";
 import { StaffRole } from "../types";
-import { BaseStatus } from "../../../utils/base/baseType";
+import { BaseStatus, ERolesStaff } from "../../../utils/base/baseType";
 
 @Entity()
 export class Staff extends BaseEntity {
@@ -26,8 +26,13 @@ export class Staff extends BaseEntity {
   @Column({ nullable: true })
   image!: string;
 
-  @Column({ nullable: true })
-  role!: string;
+  @Column({
+    type: "enum",
+    enum: ERolesStaff,
+    default: ERolesStaff.STAFF,
+    nullable: true,
+  })
+  role!: ERolesStaff;
 
   @Column({
     type: "enum",

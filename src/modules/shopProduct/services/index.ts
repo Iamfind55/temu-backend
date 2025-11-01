@@ -128,6 +128,7 @@ export class ShopProductService {
       const shop = await shopRepository.findOne({
         where: { id: shopDataFromToken.id },
       });
+
       if (!shop) return handleError("Shop not found.", 404, null);
 
       // Get shop and products in parallel

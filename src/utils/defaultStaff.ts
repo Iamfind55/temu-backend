@@ -1,7 +1,7 @@
 import { getRepository } from "typeorm";
 import { Staff } from "../modules/staff";
 import { hashPassword } from "./helper";
-import { BaseStatus } from "./base/baseType";
+import { BaseStatus, ERolesStaff } from "./base/baseType";
 
 export async function createDefaultStaff() {
   const staffRepository = getRepository(Staff);
@@ -20,7 +20,7 @@ export async function createDefaultStaff() {
       password: defaultPassword,
       firstName: "admin",
       is_active:true,
-      role: "SUPER_ADMIN",
+      role: ERolesStaff.ADMIN,
       status: BaseStatus.ACTIVE,
       dob: twentyYearsAgo,
     });

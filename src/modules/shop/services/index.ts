@@ -20,7 +20,7 @@ import {
 import { Brackets, getManager, getRepository } from "typeorm";
 import { Shop } from "../entity";
 import { BaseOrderByInput } from "../../../utils/base/baseType";
-import { comparePassword, hashPassword } from "../../../utils/helper";
+import { comparePassword, hashPassword, isEmail } from "../../../utils/helper";
 import { AuthMiddlewareService } from "../../../middlewares/auth.middleware";
 import { getRequestedFields } from "../../../utils/graphqlUtils";
 import { GraphQLResolveInfo } from "graphql";
@@ -54,7 +54,11 @@ export class ShopService {
         return handleError("Validation Error", 400, null);
       }
 
-      if (data.email) data.email = data.email.replace(" ", "");
+      const validateEmail = await isEmail(data.email);
+      
+      if (!validateEmail) {
+        return handleError("Email is invalid please try again.", 400, null);
+      }
 
       const existShop = await this.existShopUnique(data);
       if (existShop)
@@ -75,6 +79,7 @@ export class ShopService {
 
       return handleSuccess(savedShop as any);
     } catch (error: any) {
+  
       return handleError(
         config.message.internal_server_error,
         500,
@@ -166,7 +171,7 @@ export class ShopService {
 
       shop.status = ShopStatus.ACTIVE;
       shop.isOtpEnable = true;
-      await shopRepository.save(shop)
+      await shopRepository.save(shop);
 
       const token = new AuthMiddlewareService().genShopToken(shop);
       return handleSuccess({ token, data: shop } as any);

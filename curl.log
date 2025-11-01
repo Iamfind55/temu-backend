@@ -1,0 +1,212 @@
+== Info: Host www.temu.com:443 was resolved.
+== Info: IPv6: (none)
+== Info: IPv4: 162.159.141.246, 172.66.1.242
+== Info:   Trying 162.159.141.246:443...
+== Info: Connected to www.temu.com (162.159.141.246) port 443
+== Info: ALPN: curl offers h2,http/1.1
+== Info: (304) (OUT), TLS handshake, Client hello (1):
+=> Send SSL data, 317 bytes (0x13d)
+0000: ...9.....#....:.%.>...B.G.....6V....). .G...q..Q'i.........M...a
+0040: .r!..+y.b.............0.,.(.$.......k.9...........=.5...../.+.'.
+0080: #.......g.3...E...<./...A.......................+............3.&
+00c0: .$... ..S0\u....^.....gvx........{.+.T.........www.temu.com.....
+0100: ..................................................h2.http/1.1
+== Info:  CAfile: /etc/ssl/cert.pem
+== Info:  CApath: none
+== Info: (304) (IN), TLS handshake, Server hello (2):
+<= Recv SSL data, 122 bytes (0x7a)
+0000: ...v..H.3.....5.....{.C...].-...vo.i6p .G...q..Q'i.........M...a
+0040: .r!..+y......3.$... &f....W.....:s.D.Vq.g..FU.M.wD...+....
+== Info: (304) (IN), TLS handshake, Unknown (8):
+<= Recv SSL data, 19 bytes (0x13)
+0000: .................h2
+== Info: (304) (IN), TLS handshake, Certificate (11):
+<= Recv SSL data, 4084 bytes (0xff4)
+0000: ...........0...0..l.......y.......0...*.H........0..1.0...U....U
+0040: S1.0...U....Arizona1.0...U....Scottsdale1.0...U....GoDaddy.com, 
+0080: Inc.1-0+..U...$http://certs.godaddy.com/repository/1301..U...*Go
+00c0:  Daddy Secure Certificate Authority - G20...250713211828Z..26081
+0100: 4082419Z0.1.0...U....*.temu.com0.."0...*.H.............0........
+0140: .....p...yC.U.R...}h;....H....T....dg.......'..........G..5...f.
+0180: a....Y.....).B.M\....9S..p.A`.:.6^....%8Q.2.5..{..,S..(.?#.(<...
+01c0: ...WG{.!..k.....f:.o0n....C."&...*...p..h..sR.."..y|.]...V......
+0200: ..!.?.[1|wB......2=......9.s.!..%.<u..(.OPx..#.K. .v..kq.....U.Q
+0240: ........60..20...U.......0.0...U.%..0...+.........+.......0...U.
+0280: ..........09..U...2000..,.*.(http://crl.godaddy.com/gdig2s1-5412
+02c0: 3.crl0]..U. .V0T0H..`.H...m....0907..+........+http://certificat
+0300: es.godaddy.com/repository/0...g.....0v..+........j0h0$..+.....0.
+0340: ..http://ocsp.godaddy.com/0@..+.....0..4http://certificates.goda
+0380: ddy.com/repository/gdig2.crt0...U.#..0...@..'..4.0.3..l...,..0..
+03c0: .U....0...*.temu.com..temu.com0...U.........,..;.;..Z........0..
+0400: ~..+.....y......n...j.h.v..m}....w..._......3Ze....s....iw......
+0440: T%.....G0E. n=....Y..p..G....._..7..P..._....!...@.&...j..s..r..
+0480: .).|.(.?......_.v..NC........$&..e..._8..?rg}U7.........Ug.....G
+04c0: 0E.!..KA.....O.9......#.%S.K.......... .).CB.U..a...?y.,......%.
+0500: }u....(.v..8...|..D_[....n..Y.G.i.......X.......U......G0E. &K..
+0540: 1......V...;...~...(.......I.!......-..n...Wn&..."..%.Z.#.A..V.0
+0580: ...*.H.............f......T]..L...M,;...1c.A.z'........W..S..1..
+05c0: .N)..l)@M.y.Y...k.35.....T..:..-.;...a...jL..2....~i.......e..6.
+0600: L...Y...q..%N..=......I~LU..:`...L..$..Q...W.2.D.......L........
+0640: ...2.@.X.5.X+.6..q...F.C=.7n+2...2~7.{H............8.F..<7`Hk.g.
+0680: . ........P.x-8&..?.....0...0...........0...*.H........0..1.0...
+06c0: U....US1.0...U....Arizona1.0...U....Scottsdale1.0...U....GoDaddy
+0700: .com, Inc.110/..U...(Go Daddy Root Certificate Authority - G20..
+0740: .110503070000Z..310503070000Z0..1.0...U....US1.0...U....Arizona1
+0780: .0...U....Scottsdale1.0...U....GoDaddy.com, Inc.1-0+..U...$http:
+07c0: //certs.godaddy.com/repository/1301..U...*Go Daddy Secure Certif
+0800: icate Authority - G20.."0...*.H.............0..............v...b
+0840: .0d...l...b../.>e...b.<R...EKU.xkc.b...il.....L.E3......+..a.yW.
+0880: ...?0<]G.....7.AQ..KT.(.....08...&.fGcm.q&G.8GS.F......E...q..o.
+08c0: ...0:yO_LG...[...`;..C...3N...'O.%........t.dW..DU.-*:>....2...d
+0900: ..:P.J..y3.. .....9.i.lcR.w...t.....PT5KiN.;.I.....R..........0.
+0940: ..0...U.......0....0...U...........0...U......@..'..4.0.3..l...,
+0980: ..0...U.#..0...:....g(.....An .....04..+........(0&0$..+.....0..
+09c0: .http://ocsp.godaddy.com/05..U....0,0*.(.&.$http://crl.godaddy.c
+0a00: om/gdroot-g2.crl0F..U. .?0=0;..U. .0301..+........%https://certs
+0a40: .godaddy.com/repository/0...*.H..............~l...8....K.._O..l>
+0a80: ....P..s.W1..../....[....yb....jcs1...H.;.-.]...|%O.V0..D.{,..^.
+0ac0: ..a...*......}.C.D..p........`..r.s$..."....bXD...%......b.Q...Q
+0b00: *...s.v.6....,....*...Mu..?.A.#}[K...X.F..``..}PA......../..T.D.
+0b40: .....3..-v6&.....a....o.F.(..&}...........0......0..}0..e.......
+0b80: ...0...*.H........0c1.0...U....US1!0...U....The Go Daddy Group, 
+0bc0: Inc.110/..U...(Go Daddy Class 2 Certification Authority0...14010
+0c00: 1070000Z..310530070000Z0..1.0...U....US1.0...U....Arizona1.0...U
+0c40: ....Scottsdale1.0...U....GoDaddy.com, Inc.110/..U...(Go Daddy Ro
+0c80: ot Certificate Authority - G20.."0...*.H.............0.........q
+0cc0: b...Y4.......IX.".... C.;....I.'....N...p..2...>.N...O/Y0"...Vk.
+0d00: .....u.9Q{..5.tN......?........j..............;F|2...f"..im6....
+0d40: ...`.8......F...>.]|.|..+S..biQ%.a.D..,.C.#..:...)....]....0.9..
+0d80: ...K].2..bC%4.V'...;p*?n.....}....Sm`..,.X.._F.....<..I1\iF..G..
+0dc0: .......0...0...U.......0....0...U...........0...U......:....g(..
+0e00: ...An .....0...U.#..0.........L.q.a.=....j..04..+........(0&0$..
+0e40: +.....0...http://ocsp.godaddy.com/02..U...+0)0'.%.#.!http://crl.
+0e80: godaddy.com/gdroot.crl0F..U. .?0=0;..U. .0301..+........%https:/
+0ec0: /certs.godaddy.com/repository/0...*.H.............Y.S.....${.[1.
+0f00: ..lp..n.N....P.0..(\b...~3..Bv....."Xu...eg9.....8...#.?.....D..
+0f40: .i'.Z%.:.2....*8)3..g..... .P...*.B.7L.....$.........^.IT <.....
+0f80: R.I.m..X.......2.(p.........Wp.Z....S..|.i..H......T..].g7l../1.
+0fc0: 7.no....W]$.......l.7Lf.a.. ..0.z.)...4_dw.@Q..0....
+== Info: (304) (IN), TLS handshake, CERT verify (15):
+<= Recv SSL data, 264 bytes (0x108)
+0000: ........6.4..........K.sJmx.@0...I.2&........L.{.....ZkV..&od.U.
+0040: U;(.|..6.-...T..(........@..../g...5..>......G..N....m.o./.5~4..
+0080: 4ay..+J."......4J......A.....Q7UM.|..O.*..Z..4..O]C.n...TN..9.b.
+00c0: .[..+c..!..{...H.9i...x..b..0...c.Pv.....3.b..SI}.gm9.W......+&2
+0100: .RO...xG
+== Info: (304) (IN), TLS handshake, Finished (20):
+<= Recv SSL data, 36 bytes (0x24)
+0000: ... c.n].. .Q|.sW..eg?$...P.:.R.w.39
+== Info: (304) (OUT), TLS handshake, Finished (20):
+=> Send SSL data, 36 bytes (0x24)
+0000: ... ......&G.DQ`4..#mg.c{G....>..0.m
+== Info: SSL connection using TLSv1.3 / AEAD-CHACHA20-POLY1305-SHA256 / [blank] / UNDEF
+== Info: ALPN: server accepted h2
+== Info: Server certificate:
+== Info:  subject: CN=*.temu.com
+== Info:  start date: Jul 13 21:18:28 2025 GMT
+== Info:  expire date: Aug 14 08:24:19 2026 GMT
+== Info:  subjectAltName: host "www.temu.com" matched cert's "*.temu.com"
+== Info:  issuer: C=US; ST=Arizona; L=Scottsdale; O=GoDaddy.com, Inc.; OU=http://certs.godaddy.com/repository/; CN=Go Daddy Secure Certificate Authority - G2
+== Info:  SSL certificate verify ok.
+== Info: using HTTP/2
+== Info: [HTTP/2] [1] OPENED stream for https://www.temu.com/bedding-o3-737.html?opt_level=2&title=Bedding&leaf_type=bro
+== Info: [HTTP/2] [1] [:method: GET]
+== Info: [HTTP/2] [1] [:scheme: https]
+== Info: [HTTP/2] [1] [:authority: www.temu.com]
+== Info: [HTTP/2] [1] [:path: /bedding-o3-737.html?opt_level=2&title=Bedding&leaf_type=bro]
+== Info: [HTTP/2] [1] [user-agent: curl/8.7.1]
+== Info: [HTTP/2] [1] [accept: */*]
+=> Send header, 132 bytes (0x84)
+0000: GET /bedding-o3-737.html?opt_level=2&title=Bedding&leaf_type=bro
+0040:  HTTP/2
+0049: Host: www.temu.com
+005d: User-Agent: curl/8.7.1
+0075: Accept: */*
+0082: 
+== Info: Request completely sent off
+<= Recv header, 13 bytes (0xd)
+0000: HTTP/2 200 
+<= Recv header, 37 bytes (0x25)
+0000: date: Fri, 31 Oct 2025 16:17:13 GMT
+<= Recv header, 40 bytes (0x28)
+0000: content-type: text/html; charset=utf-8
+<= Recv header, 30 bytes (0x1e)
+0000: cf-ray: 997476196d375065-VTE
+<= Recv header, 23 bytes (0x17)
+0000: vary: Accept-Encoding
+<= Recv header, 25 bytes (0x19)
+0000: cache-control: no-store
+<= Recv header, 73 bytes (0x49)
+0000: x-gateway-request-id: 1761927433329-aabce6e2bf428b78c924e29d6be4
+0040: 5b7b-07
+<= Recv header, 30 bytes (0x1e)
+0000: alt-svc: h3=":443"; ma=86400
+<= Recv header, 20 bytes (0x14)
+0000: cip: 202.144.185.6
+<= Recv header, 45 bytes (0x2d)
+0000: strict-transport-security: max-age=31536000
+<= Recv header, 26 bytes (0x1a)
+0000: cf-cache-status: DYNAMIC
+<= Recv header, 288 bytes (0x120)
+0000: set-cookie: __cf_bm=Qez2lHZ0S_13NaExJXpfEgyBiIqD4lx8eEt1fnXm.xs-
+0040: 1761927433-1.0.1.1-bDLXsYXZOCmq3Pq2liXso2d4VY96pZqpZSZjg6rkvEqE8
+0080: CrXcqbxHFSPH3B.VirKioUleZVMOYmWili._m6MLHJGVqT2kXqxd2t_uJuZFOk; 
+00c0: path=/; expires=Fri, 31-Oct-25 16:47:13 GMT; domain=.temu.com; H
+0100: ttpOnly; Secure; SameSite=None
+<= Recv header, 20 bytes (0x14)
+0000: server: cloudflare
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 1360 bytes (0x550)
+0000: <html><body><script>function _0x24b9(_0xe1c7cc,_0x5c0c2a){var _0
+0040: x1d3c50=_0x1d3c();return _0x24b9=function(_0x24b9d4,_0x26f4ce){_
+0080: 0x24b9d4=_0x24b9d4-0xc8;var _0x1c1c28=_0x1d3c50[_0x24b9d4];retur
+00c0: n _0x1c1c28;},_0x24b9(_0xe1c7cc,_0x5c0c2a);}function _0x1d3c(){v
+0100: ar _0x1abc82=['appendChild','21HtWQoR','anonymous','345906EyPmOS
+0140: ','script','onerror','createElement','28257zQMECR','12DEyZVE','f
+0180: unction','removeChild','https://','https://static.kwcdn.com/uplo
+01c0: ad-static/assets/chl/js/fea85011-2193-411a-82f6-2fcd40e00205.js'
+0200: ,'target','/bedding-o3-737.html?opt_level=2&title=Bedding&leaf_t
+0240: ype=bro','21544wIvgAx','tc56e2e95b0ad663c464f6af9c41b788bf','tc3
+0280: 3975c23383ff7e56f142b0048d35c72','length','challenge','cmwf60dkq
+02c0: gh5zt81','39muXtbj','1149175NtjaOJ','16664IURvJU','head','278782
+0300: 9PRdCXm','static.kwcdn.com','onload','10rBCHsz','static-2.kwcdn.
+0340: com','366030VtGABW'];_0x1d3c=function(){return _0x1abc82;};retur
+0380: n _0x1d3c();}(function(_0x535cd3,_0xb7812d){var _0x5b20b8=_0x24b
+03c0: 9,_0x19d8ba=_0x535cd3();while(!![]){try{var _0x5ec7ec=parseInt(_
+0400: 0x5b20b8(0xd5))/0x1*(parseInt(_0x5b20b8(0xd6))/0x2)+parseInt(_0x
+0440: 5b20b8(0xe3))/0x3*(-parseInt(_0x5b20b8(0xe5))/0x4)+-parseInt(_0x
+0480: 5b20b8(0xe4))/0x5+-parseInt(_0x5b20b8(0xd1))/0x6+parseInt(_0x5b2
+04c0: 0b8(0xcf))/0x7*(parseInt(_0x5b20b8(0xdd))/0x8)+parseInt(_0x5b20b
+0500: 8(0xcd))/0x9+-parseInt(_0x5b20b8(0xcb))/0xa*(-parseInt(_0x5b20b8
+0540: (0xc8))/0xb);if(
+<= Recv data, 1369 bytes (0x559)
+0000: _0x5ec7ec===_0xb7812d)break;else _0x19d8ba['push'](_0x19d8ba['sh
+0040: ift']());}catch(_0x1db23c){_0x19d8ba['push'](_0x19d8ba['shift'](
+0080: ));}}}(_0x1d3c,0x1fc26),!(function(){var _0x441b1f=_0x24b9,_0x3a
+00c0: 734c,_0xb31d69=[_0x441b1f(0xcc),'static-1.kwcdn.com',_0x441b1f(0
+0100: xc9)],_0x4eee45=0x0;function _0x5d5934(_0x129f87){var _0x2076ef=
+0140: _0x441b1f;if(clearTimeout(_0x3a734c),!(_0x4eee45>=0x2)&&_0xb31d6
+0180: 9[_0x2076ef(0xe0)]){var _0xf45ae0=_0x129f87[_0x2076ef(0xdb)]['sr
+01c0: c']['replace'](/https:\/\/[^/]+/,_0x2076ef(0xd9)+_0xb31d69[_0x4e
+0200: ee45%_0xb31d69[_0x2076ef(0xe0)]]);document['head'][_0x2076ef(0xd
+0240: 8)](_0x129f87[_0x2076ef(0xdb)]),_0x257620(_0xf45ae0),_0x4eee45++
+0280: ;}}function _0x196729(_0x3419cf){var _0x86de4a=_0x441b1f;clearTi
+02c0: meout(_0x3a734c),_0x86de4a(0xd7)==typeof window[_0x86de4a(0xe1)]
+0300: ?window[_0x86de4a(0xe1)](_0x86de4a(0xde),'wSKBoy3Zc3NJs3iQBqIh4E
+0340: qGr3DIhQ3wk4dBEwTLId38MazSOZXdRGeZmxphQo69FYuJLWBuOhjIgUbK7KshUS
+0380: nC0aHy+t3CsVsUvoL3x7U6Xic4EFcML8rBlYNcTLDCbynkZj7znU9kJmEWKTXVoS
+03c0: ZBnfeMDKV5wyTzot8AomaOYohDpqbm3CeSwihQ/IsiGo1bB93plOz4vgWmYq6og6
+0400: 2fJpzOlzeBC52Gk5DHckGmz8IAH//IYp7tX0LOU9zU',_0x86de4a(0xe2),_0x8
+0440: 6de4a(0xdc),_0x86de4a(0xdf)):_0x5d5934(_0x3419cf);}function _0x2
+0480: 57620(_0x4abf99){var _0x2fb3af=_0x441b1f,_0x5a1ed7=document[_0x2
+04c0: fb3af(0xd4)](_0x2fb3af(0xd2));_0x5a1ed7['src']=_0x4abf99,_0x5a1e
+0500: d7[_0x2fb3af(0xca)]=_0x196729,_0x5a1ed7[_0x2fb3af(0xd3)]=_0x5d59
+0540: 34,_0x5a1ed7['crossOrigin
+<= Recv data, 219 bytes (0xdb)
+0000: ']=_0x2fb3af(0xd0),document[_0x2fb3af(0xe6)][_0x2fb3af(0xce)](_0
+0040: x5a1ed7),_0x3a734c=setTimeout(function(){_0x4eee45<0x2&&_0x5d593
+0080: 4({'target':_0x5a1ed7});},0x1b58);}_0x257620(_0x441b1f(0xda));}(
+00c0: )));</script></body></html>
+<= Recv data, 0 bytes (0x0)
+== Info: Connection #0 to host www.temu.com left intact

@@ -61,3 +61,11 @@ export async function deleteFileFromCloudinary(imageUrl: string) {
     }
   });
 }
+
+export async function isEmail(email: string): Promise<boolean> {
+  if (!email) return false;
+
+  const cleaned = email.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(cleaned);
+}

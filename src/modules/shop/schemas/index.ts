@@ -92,7 +92,7 @@ export const shopSchema = `
     status: ShopStatus
     remark: String
     shop_address: String
-    profit: Float
+    profit: Float!
     id_card_info: ShopIdCardInfoInput
     store_name: String
   }

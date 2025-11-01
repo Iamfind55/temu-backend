@@ -25,6 +25,12 @@ export enum BaseStatus {
   INACTIVE = "INACTIVE",
 }
 
+export enum ERolesStaff {
+  ADMIN = "admin",
+  SUPER_ADMIN = "supper admin",
+  STAFF="staff"
+}
+
 export interface TokenData {
   id: string;
   username: string;
