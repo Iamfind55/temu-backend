@@ -34,7 +34,7 @@ const startApp = async () => {
   // deleteFileFromCloudinary("https://res.cloudinary.com/dxqvafipl/image/upload/v1741793500/i3xqtksopa4cyp4ej6rk.jpg");
   console.log("node_env:::", process.env.NODE_ENV);
   await connectDB();
-  await createDefaultStaff()
+  // await createDefaultStaff()
   const httpServer = http.createServer(app);
 
   const node = config.node;
