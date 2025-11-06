@@ -3,8 +3,8 @@ import { BaseStatus, BaseType } from "../../../utils/base/baseType";
 import { DateBetween } from "../../shopProduct";
 
 export interface ProductModel extends BaseType {
-  name: NameTranslateBase;
-  description: NameTranslateBase;
+  name: string;
+  description: string;
   images: [string];
   cover_image: string;
   price: number;

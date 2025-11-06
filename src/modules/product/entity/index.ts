@@ -1,51 +1,17 @@
-import {
-  Entity,
-  Column,
-  OneToMany,
-  ManyToMany,
-  JoinTable,
-  ManyToOne,
-  JoinColumn,
-} from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, OneToMany } from "typeorm";
 import { BaseEntity } from "../../../utils/base/baseEntity";
 import { BaseStatus, NameTranslateBase } from "../../../utils/base/baseType";
-import { ShopProduct } from "../../shopProduct";
-import { Category } from "../../category";
 import { Branding } from "../../branding";
+import { Category } from "../../category";
+import { ShopProduct } from "../../shopProduct";
 
 @Entity()
 export class Product extends BaseEntity {
-  @Column({
-    type: "json",
-    nullable: false,
-    default: {
-      name_en: "",
-      name_es: "",
-      name_ms: "",
-      name_jp: "",
-      name_th: "",
-      name_vi: "",
-      name_zh: "",
-      name_zh_tw: "",
-    },
-  })
-  name!: NameTranslateBase;
+  @Column({nullable: false})
+  name!: string;
 
-  @Column({
-    type: "json",
-    nullable: true,
-    default: {
-      name_en: "",
-      name_es: "",
-      name_ms: "",
-      name_jp: "",
-      name_th: "",
-      name_vi: "",
-      name_zh: "",
-      name_zh_tw: "",
-    },
-  })
-  description!: NameTranslateBase;
+  @Column({nullable: true})
+  description!: string;
 
   @Column({
     type: "json",

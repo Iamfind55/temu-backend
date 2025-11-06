@@ -1,8 +1,8 @@
 export const productSchema = `
   type Product {
     id: ID
-    name: NameTranslateBaseType
-    description: NameTranslateBaseType
+    name: String
+    description: String
     images: [String]
     cover_image: String
     price: Float

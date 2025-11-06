@@ -22,6 +22,7 @@ import { Logistics } from "./modules/logistics";
 import { Attribute } from "./modules/attribute";
 import { AttributeValue } from "./modules/attributeValue/entity";
 import { CategoryAttribute } from "./modules/categoryAttribute";
+import { ShopFollower } from "./modules/shopFollower";
 const AppDataSource = new DataSource({
   type: "postgres",
   host: config.db_host, // Replace with your PostgreSQL host
@@ -53,7 +54,7 @@ const AppDataSource = new DataSource({
     Logistics,
     Attribute,
     AttributeValue,
-    CategoryAttribute
+    CategoryAttribute,ShopFollower
   ],
   migrations: ["migrations/*.ts"],
   subscribers: [],

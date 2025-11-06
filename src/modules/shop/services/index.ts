@@ -55,7 +55,7 @@ export class ShopService {
       }
 
       const validateEmail = await isEmail(data.email);
-      
+
       if (!validateEmail) {
         return handleError("Email is invalid please try again.", 400, null);
       }
@@ -79,7 +79,6 @@ export class ShopService {
 
       return handleSuccess(savedShop as any);
     } catch (error: any) {
-  
       return handleError(
         config.message.internal_server_error,
         500,
@@ -695,7 +694,24 @@ export class ShopService {
     const shopRepository = getRepository(Shop);
 
     try {
-      const shop: any = await shopRepository.findOneBy({ id, is_active: true });
+      const shop = await shopRepository
+        .createQueryBuilder("shop")
+        .addSelect((subQuery) => {
+          return subQuery
+            .select("COUNT(*)")
+            .from("shop_product", "product")
+            .where("product.shop_id::uuid = shop.id");
+        }, "product_count")
+        .addSelect((subQuery) => {
+          return subQuery
+            .select("COUNT(*)")
+            .from("shop_follower", "follower")
+            .where("follower.shop_id::uuid = shop.id");
+        }, "follower_count")
+        .where("shop.id = :id AND shop.is_active = true", { id })
+        .getRawOne();
+
+      // const shop: any = await shopRepository.findOneBy({ id, is_active: true });
 
       if (!shop) {
         return handleError("Shop not found", 404, null);
@@ -704,9 +720,40 @@ export class ShopService {
       if (shop.payment_method) {
         delete shop.payment_method;
       }
+      const result = {
+        id: shop.shop_id,
+        is_active: shop.shop_is_active,
+        created_at: shop.shop_created_at,
+        updated_at: shop.shop_updated_at,
+        created_by: shop.shop_created_by,
+        updated_by: shop.shop_updated_by,
+        fullname: shop.shop_fullname,
+        store_name: shop.shop_store_name,
+        username: shop.shop_username,
+        email: shop.shop_email,
+        phone_number: shop.shop_phone_number,
+        shop_star: shop.shop_shop_star,
+        shop_vip: shop.shop_shop_vip,
+        profit: shop.shop_profit,
+        otp: shop.shop_otp,
+        otpExpire_at: shop.shop_otpExpire_at,
+        isOtpEnable: shop.shop_isOtpEnable,
+        dob: shop.shop_dob,
+        image: shop.shop_image,
+        totalFollower: parseInt(shop.follower_count, 10),
+        totalProduct: parseInt(shop.product_count, 10),
+        id_card_info: shop.shop_id_card_info,
+        remark: shop.shop_remark,
+        shop_address: shop.shop_shop_address,
+        status: shop.shop_status,
+        request_vip_data: shop.shop_request_vip_data,
+      };
+      console.log(result);
 
-      return handleSuccess(shop);
+      return handleSuccess(result as any);
     } catch (error: any) {
+      console.log(error);
+
       return handleError(
         config.message.internal_server_error,
         500,

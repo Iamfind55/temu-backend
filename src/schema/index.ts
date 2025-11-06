@@ -20,6 +20,7 @@ import { shopTypeSchema } from "../modules/shopType/schemas";
 import { staffSchema } from "../modules/staff/schemas";
 import { transactionHistorySchema } from "../modules/transactionHistory/schemas";
 import { walletSchema } from "../modules/wallet/schemas";
+import { shopFollowerSchemas } from "../modules/shopFollower/schema";
 
 export const typeDefs = gql`
   scalar Upload
@@ -128,4 +129,5 @@ export const typeDefs = gql`
   ${notificationSchema}
   ${logisticSchema}
   ${attributeSchema}
+  ${shopFollowerSchemas}
 `;

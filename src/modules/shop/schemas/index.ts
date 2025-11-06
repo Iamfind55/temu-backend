@@ -51,6 +51,8 @@ export const shopSchema = `
     created_at: DateTime
     updated_at: DateTime
     request_vip_data: ShopRequestVIP
+    totalFollower:Int
+    totalProduct:Int
   } 
   
   type ShopImageType {

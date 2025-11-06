@@ -1,5 +1,22 @@
 import { Response } from "./response.types";
 
+export const handleBoleanSuccess = <A>({
+  data,
+  message,
+}: {
+  data: A;
+  message?: string;
+}): Response<A> => {
+  
+  return {
+    success: true,
+    data,
+    message,
+    error: null,
+  };
+};
+
+
 export const handleSuccess = <A>(data: A, message?: string): Response<A> => {
   return {
     success: true,

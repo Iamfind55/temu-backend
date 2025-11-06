@@ -25,6 +25,7 @@ import { connectDB } from "./utils/db";
 import { createDefaultStaff } from "./utils/defaultStaff";
 import pubsub from "./utils/pubsub";
 import { ApolloServerPluginLandingPageLocalDefault } from "apollo-server-core";
+import { fetchAllImages } from "./utils/fetchProduct";
 
 const { WebSocketServer } = require("ws");
 
@@ -107,6 +108,7 @@ const startApp = async () => {
   // ProductService.createProductWithoutImage();
   // ProductService.fetchTemuCategoryOptList();
   // ProductService.uploadCategoryToStorage();
+  // fetchAllImages()
 
   const clearAllData = async () => {
     const productRepository = getRepository(Product);
@@ -164,7 +166,7 @@ const startApp = async () => {
       const productMap = new Map();
 
       for (const product of products) {
-        const productNameKey = product.name.name_en; // Use name_en as the key
+        const productNameKey = product.name; // Use name_en as the key
         if (!productMap.has(productNameKey)) {
           productMap.set(productNameKey, []);
         }
@@ -191,7 +193,7 @@ const startApp = async () => {
               console.log({ productId: product.id });
             }
             console.log(
-              `Deleted product with ID: ${product.id}, Name (en): ${product.name.name_en}`
+              `Deleted product with ID: ${product.id}, Name (en): ${product.name}`
             );
           }
         }

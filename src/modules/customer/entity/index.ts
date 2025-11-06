@@ -8,6 +8,7 @@ import { Wallet } from "../../wallet";
 import { TransactionHistory } from "../../transactionHistory";
 import { OrderDetail } from "../../orderDetail";
 import { CustomerType } from "../types";
+import { ShopFollower } from "../../shopFollower";
 
 @Entity()
 export class Customer extends BaseEntity {
@@ -91,4 +92,7 @@ export class Customer extends BaseEntity {
     { nullable: true }
   ) // Define OneToMany relationship
   transaction_histories?: TransactionHistory[]; // Correct type is ShopProduct[], not Product[]
+
+  @OneToMany(() => ShopFollower, (follower) => follower.customer)
+  followedShops?: ShopFollower[];
 }

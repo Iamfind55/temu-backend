@@ -13,6 +13,7 @@ import { Wallet } from "../../wallet";
 import { TransactionHistory } from "../../transactionHistory";
 import { Order } from "../../order";
 import { OrderDetail } from "../../orderDetail";
+import { ShopFollower } from "../../shopFollower";
 
 @Entity()
 export class Shop extends BaseEntity {
@@ -136,4 +137,7 @@ export class Shop extends BaseEntity {
     default: null,
   })
   request_vip_data!: ShopRequestVIPData;
+
+  @OneToMany(() => ShopFollower, (follower) => follower.shop)
+  followers?: ShopFollower[];
 }

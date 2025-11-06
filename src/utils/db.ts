@@ -22,6 +22,7 @@ import { Logistics } from "../modules/logistics";
 import { Attribute } from "../modules/attribute";
 import { AttributeValue } from "../modules/attributeValue/entity";
 import { CategoryAttribute } from "../modules/categoryAttribute";
+import { ShopFollower } from "../modules/shopFollower";
 
 export const connectDB = async () => {
   try {
@@ -56,7 +57,8 @@ export const connectDB = async () => {
         Logistics,
         Attribute,
         AttributeValue,
-        CategoryAttribute
+        CategoryAttribute,
+        ShopFollower,
       ],
       migrations: ["migrations/*.ts"],
     })
