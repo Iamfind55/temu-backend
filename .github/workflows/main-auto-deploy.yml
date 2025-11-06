@@ -37,8 +37,8 @@ jobs:
           ssh -o StrictHostKeyChecking=no ${{ env.IP_ADDRESS }} << EOF
             set -e  # Exit on any error
             cd ${{ env.DEPLOY_PATH }}
-            git fetch
+            git fetch origin main
             git checkout main
-            git pull origin main
+            git reset --hard origin/main
             npm run build:docker
           EOF
