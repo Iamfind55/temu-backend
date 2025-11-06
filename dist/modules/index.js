@@ -22,6 +22,7 @@ const dashboard_1 = require("./dashboard");
 const notification_1 = require("./notification");
 const logistics_1 = require("./logistics");
 const attribute_1 = require("./attribute");
+const shopFollower_1 = require("./shopFollower");
 const { GraphQLUpload } = require("graphql-upload");
 exports.resolvers = [
     { Upload: GraphQLUpload },
@@ -45,5 +46,6 @@ exports.resolvers = [
     dashboard_1.dashboardResolvers,
     notification_1.notificationResolvers,
     logistics_1.logisticsResolvers,
-    attribute_1.attributeResolvers
+    attribute_1.attributeResolvers,
+    shopFollower_1.shopFollowerResulvers
 ];

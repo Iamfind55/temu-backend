@@ -19,21 +19,8 @@ let Category = class Category extends baseEntity_1.BaseEntity {
 };
 exports.Category = Category;
 __decorate([
-    (0, typeorm_1.Column)({
-        type: "json",
-        nullable: false,
-        default: {
-            name_en: "",
-            name_es: "",
-            name_ms: "",
-            name_jp: "",
-            name_th: "",
-            name_vi: "",
-            name_zh: "",
-            name_zh_tw: "",
-        },
-    }),
-    __metadata("design:type", Object)
+    (0, typeorm_1.Column)({ nullable: false }),
+    __metadata("design:type", String)
 ], Category.prototype, "name", void 0);
 __decorate([
     (0, typeorm_1.Column)({ nullable: true }),
@@ -43,6 +30,10 @@ __decorate([
     (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)
 ], Category.prototype, "image", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ nullable: true }),
+    __metadata("design:type", String)
+], Category.prototype, "oringImageURL", void 0);
 __decorate([
     (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)

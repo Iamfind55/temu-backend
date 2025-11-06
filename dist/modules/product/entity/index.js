@@ -13,45 +13,19 @@ exports.Product = void 0;
 const typeorm_1 = require("typeorm");
 const baseEntity_1 = require("../../../utils/base/baseEntity");
 const baseType_1 = require("../../../utils/base/baseType");
-const shopProduct_1 = require("../../shopProduct");
-const category_1 = require("../../category");
 const branding_1 = require("../../branding");
+const category_1 = require("../../category");
+const shopProduct_1 = require("../../shopProduct");
 let Product = class Product extends baseEntity_1.BaseEntity {
 };
 exports.Product = Product;
 __decorate([
-    (0, typeorm_1.Column)({
-        type: "json",
-        nullable: false,
-        default: {
-            name_en: "",
-            name_es: "",
-            name_ms: "",
-            name_jp: "",
-            name_th: "",
-            name_vi: "",
-            name_zh: "",
-            name_zh_tw: "",
-        },
-    }),
-    __metadata("design:type", Object)
+    (0, typeorm_1.Column)({ nullable: false }),
+    __metadata("design:type", String)
 ], Product.prototype, "name", void 0);
 __decorate([
-    (0, typeorm_1.Column)({
-        type: "json",
-        nullable: true,
-        default: {
-            name_en: "",
-            name_es: "",
-            name_ms: "",
-            name_jp: "",
-            name_th: "",
-            name_vi: "",
-            name_zh: "",
-            name_zh_tw: "",
-        },
-    }),
-    __metadata("design:type", Object)
+    (0, typeorm_1.Column)({ nullable: true }),
+    __metadata("design:type", String)
 ], Product.prototype, "description", void 0);
 __decorate([
     (0, typeorm_1.Column)({

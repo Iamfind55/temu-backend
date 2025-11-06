@@ -54,6 +54,8 @@ exports.shopSchema = `
     created_at: DateTime
     updated_at: DateTime
     request_vip_data: ShopRequestVIP
+    totalFollower:Int
+    totalProduct:Int
   } 
   
   type ShopImageType {
@@ -95,7 +97,7 @@ exports.shopSchema = `
     status: ShopStatus
     remark: String
     shop_address: String
-    profit: Float
+    profit: Float!
     id_card_info: ShopIdCardInfoInput
     store_name: String
   }

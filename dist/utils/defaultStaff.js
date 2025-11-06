@@ -30,7 +30,7 @@ function createDefaultStaff() {
                 password: defaultPassword,
                 firstName: "admin",
                 is_active: true,
-                role: "SUPER_ADMIN",
+                role: baseType_1.ERolesStaff.ADMIN,
                 status: baseType_1.BaseStatus.ACTIVE,
                 dob: twentyYearsAgo,
             });

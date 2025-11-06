@@ -45,7 +45,12 @@ __decorate([
     __metadata("design:type", String)
 ], Staff.prototype, "image", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ nullable: true }),
+    (0, typeorm_1.Column)({
+        type: "enum",
+        enum: baseType_1.ERolesStaff,
+        default: baseType_1.ERolesStaff.STAFF,
+        nullable: true,
+    }),
     __metadata("design:type", String)
 ], Staff.prototype, "role", void 0);
 __decorate([

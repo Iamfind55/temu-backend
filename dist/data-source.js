@@ -24,6 +24,7 @@ const logistics_1 = require("./modules/logistics");
 const attribute_1 = require("./modules/attribute");
 const entity_1 = require("./modules/attributeValue/entity");
 const categoryAttribute_1 = require("./modules/categoryAttribute");
+const shopFollower_1 = require("./modules/shopFollower");
 const AppDataSource = new typeorm_1.DataSource({
     type: "postgres",
     host: config_1.config.db_host, // Replace with your PostgreSQL host
@@ -55,7 +56,7 @@ const AppDataSource = new typeorm_1.DataSource({
         logistics_1.Logistics,
         attribute_1.Attribute,
         entity_1.AttributeValue,
-        categoryAttribute_1.CategoryAttribute
+        categoryAttribute_1.CategoryAttribute, shopFollower_1.ShopFollower
     ],
     migrations: ["migrations/*.ts"],
     subscribers: [],

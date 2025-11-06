@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.hashPassword = hashPassword;
 exports.comparePassword = comparePassword;
 exports.deleteFileFromCloudinary = deleteFileFromCloudinary;
+exports.isEmail = isEmail;
 const bcrypt = require("bcrypt");
 const axios = require("axios");
 const crypto = require("crypto");
@@ -69,5 +70,14 @@ function deleteFileFromCloudinary(imageUrl) {
                 console.log("File deleted successfully:", result);
             }
         });
+    });
+}
+function isEmail(email) {
+    return __awaiter(this, void 0, void 0, function* () {
+        if (!email)
+            return false;
+        const cleaned = email.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(cleaned);
     });
 }

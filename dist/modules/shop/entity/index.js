@@ -18,6 +18,7 @@ const wallet_1 = require("../../wallet");
 const transactionHistory_1 = require("../../transactionHistory");
 const order_1 = require("../../order");
 const orderDetail_1 = require("../../orderDetail");
+const shopFollower_1 = require("../../shopFollower");
 let Shop = class Shop extends baseEntity_1.BaseEntity {
 };
 exports.Shop = Shop;
@@ -167,6 +168,10 @@ __decorate([
     }),
     __metadata("design:type", Object)
 ], Shop.prototype, "request_vip_data", void 0);
+__decorate([
+    (0, typeorm_1.OneToMany)(() => shopFollower_1.ShopFollower, (follower) => follower.shop),
+    __metadata("design:type", Array)
+], Shop.prototype, "followers", void 0);
 exports.Shop = Shop = __decorate([
     (0, typeorm_1.Entity)()
 ], Shop);

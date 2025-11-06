@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.BaseStatus = exports.BaseOrderByInput = void 0;
+exports.ERolesStaff = exports.BaseStatus = exports.BaseOrderByInput = void 0;
 var BaseOrderByInput;
 (function (BaseOrderByInput) {
     BaseOrderByInput["created_at_ASC"] = "created_at_ASC";
@@ -19,3 +19,9 @@ var BaseStatus;
     BaseStatus["ACTIVE"] = "ACTIVE";
     BaseStatus["INACTIVE"] = "INACTIVE";
 })(BaseStatus || (exports.BaseStatus = BaseStatus = {}));
+var ERolesStaff;
+(function (ERolesStaff) {
+    ERolesStaff["ADMIN"] = "admin";
+    ERolesStaff["SUPER_ADMIN"] = "supper admin";
+    ERolesStaff["STAFF"] = "staff";
+})(ERolesStaff || (exports.ERolesStaff = ERolesStaff = {}));

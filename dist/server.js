@@ -36,7 +36,6 @@ const transactionHistory_1 = require("./modules/transactionHistory");
 const wallet_1 = require("./modules/wallet");
 const schema_2 = require("./schema");
 const db_1 = require("./utils/db");
-const defaultStaff_1 = require("./utils/defaultStaff");
 const pubsub_1 = __importDefault(require("./utils/pubsub"));
 const apollo_server_core_1 = require("apollo-server-core");
 const { WebSocketServer } = require("ws");
@@ -45,7 +44,7 @@ const startApp = () => __awaiter(void 0, void 0, void 0, function* () {
     // deleteFileFromCloudinary("https://res.cloudinary.com/dxqvafipl/image/upload/v1741793500/i3xqtksopa4cyp4ej6rk.jpg");
     console.log("node_env:::", process.env.NODE_ENV);
     yield (0, db_1.connectDB)();
-    yield (0, defaultStaff_1.createDefaultStaff)();
+    // await createDefaultStaff()
     const httpServer = http_1.default.createServer(app);
     const node = config_1.config.node;
     // Set timezone
@@ -103,6 +102,9 @@ const startApp = () => __awaiter(void 0, void 0, void 0, function* () {
     // ProductService.createLoopCategoryAndProduct();
     // ProductService.createBanner()
     // ProductService.createProductWithoutImage();
+    // ProductService.fetchTemuCategoryOptList();
+    // ProductService.uploadCategoryToStorage();
+    // fetchAllImages()
     const clearAllData = () => __awaiter(void 0, void 0, void 0, function* () {
         const productRepository = (0, typeorm_1.getRepository)(product_1.Product);
         const categoryRepository = (0, typeorm_1.getRepository)(category_1.Category);
@@ -153,7 +155,7 @@ const startApp = () => __awaiter(void 0, void 0, void 0, function* () {
             // Group products by name_en (or any other field in the JSON name object)
             const productMap = new Map();
             for (const product of products) {
-                const productNameKey = product.name.name_en; // Use name_en as the key
+                const productNameKey = product.name; // Use name_en as the key
                 if (!productMap.has(productNameKey)) {
                     productMap.set(productNameKey, []);
                 }
@@ -177,7 +179,7 @@ const startApp = () => __awaiter(void 0, void 0, void 0, function* () {
                             // console.log({ error });
                             console.log({ productId: product.id });
                         }
-                        console.log(`Deleted product with ID: ${product.id}, Name (en): ${product.name.name_en}`);
+                        console.log(`Deleted product with ID: ${product.id}, Name (en): ${product.name}`);
                     }
                 }
             }
