@@ -1,4 +1,5 @@
 import { makeExecutableSchema } from "@graphql-tools/schema";
+import { ApolloServerPluginLandingPageLocalDefault } from "apollo-server-core";
 import { ApolloServer } from "apollo-server-express";
 import cors from "cors";
 import express, { Request, Response } from "express";
@@ -22,9 +23,8 @@ import { TransactionHistory } from "./modules/transactionHistory";
 import { Wallet } from "./modules/wallet";
 import { typeDefs } from "./schema";
 import { connectDB } from "./utils/db";
-import { createDefaultStaff } from "./utils/defaultStaff";
 import pubsub from "./utils/pubsub";
-import { ApolloServerPluginLandingPageLocalDefault } from "apollo-server-core";
+import { fetchProducts } from "./modules/product/utils/fetchProduct";
 
 const { WebSocketServer } = require("ws");
 
@@ -107,6 +107,9 @@ const startApp = async () => {
   // ProductService.createProductWithoutImage();
   // ProductService.fetchTemuCategoryOptList();
   // ProductService.uploadCategoryToStorage();
+  // ProductService.fetchTemuProduct()
+  fetchProducts()
+
   const clearAllData = async () => {
     const productRepository = getRepository(Product);
     const categoryRepository = getRepository(Category);

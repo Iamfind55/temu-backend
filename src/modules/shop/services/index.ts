@@ -983,8 +983,6 @@ export class ShopService {
 
   static async sendResetPasswordEmail(email: string, resetLink: string) {
     try {
-      console.log("Sending mail forgot password...");
-
       // Create a transporter
       const transporter = nodemailer.createTransport({
         host: config.smtp.host,
@@ -996,23 +994,39 @@ export class ShopService {
         },
       });
 
-      // host: 'mail.yourdomain.com', // Replace with your domain's mail server
-      // port: 465, // Port for SSL
-      // secure: true, // Use SSL
-      // auth: {
-      //   user: 'your-email@yourdomain.com', // Your full email address
-      //   pass: 'your-email-password', // Your email account password
-      // },
-
       // Email options
       const mailOptions = {
-        from: `"TIKTOK SHOP" <${config.smtp.user}>`, // sender address
+        from: `"Temu" <${config.smtp.user}>`, // sender address
         to: email, // recipient email
         subject: `Reset Your Password ${Date.now().toString()}`, // Subject line
         text: `You requested a password reset. Click the link below to reset your password: ${resetLink}`,
-        html: `<p>You requested a password reset.</p>
-             <p>Click the link below to reset your password:</p>
-             <a href="${resetLink}" target="_blank">${resetLink}</a>`,
+        // html: `<p>You requested a password reset.</p>
+        //      <p>Click the link below to reset your password:</p>
+        //      <a href="${resetLink}" target="_blank">${resetLink}</a>`,
+        html: `
+        <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+          <h2 style="color: #444;">Password Reset Request</h2>
+          <p>You requested a password reset. Click the button below to reset your password:</p>
+          <a href="${resetLink}" target="_blank"
+            style="
+              display: inline-block;
+              background-color: #ff6600;
+              color: white;
+              padding: 12px 20px;
+              text-decoration: none;
+              border-radius: 6px;
+              font-weight: bold;
+            ">
+            Reset Password
+          </a>
+          <p style="margin-top: 20px;">
+            Or, copy and paste this link into your browser:<br>
+            <a href="${resetLink}" target="_blank" style="color: #ff6600;">${resetLink}</a>
+          </p>
+          <p>If you didn’t request this, please ignore this email.</p>
+          <hr style="margin-top: 30px; border: none; border-top: 1px solid #ddd;">
+          <p style="font-size: 12px; color: #888;">© ${new Date().getFullYear()} Temu. All rights reserved.</p>
+        </div>`,
       };
 
       // Send the email

@@ -1024,6 +1024,8 @@ class ProductService {
     }
     static fetchTemuProduct() {
         return __awaiter(this, void 0, void 0, function* () {
+            const productRepository = (0, typeorm_1.getRepository)(entity_1.Product);
+            const categoryRepository = (0, typeorm_1.getRepository)(category_1.Category);
             const data = {
                 success: true,
                 error_code: 1000000,
@@ -21296,6 +21298,27 @@ class ProductService {
                     display_see_more: false,
                 },
             };
+            const mappedGoods = data.result.home_goods_list.map((item) => {
+                var _b, _c, _d, _e;
+                const d = item.data;
+                // Flatten all tags into one array
+                const good_tag = [
+                    ...(d.goods_tags || []).map((tag) => (Object.assign({}, tag))),
+                    ...(((_b = d.tags_info) === null || _b === void 0 ? void 0 : _b.goods_tags) || []).map((tag) => (Object.assign({}, tag))),
+                    ...(((_c = d.tags_info) === null || _c === void 0 ? void 0 : _c.mall_tag) || []).map((tag) => (Object.assign({}, tag))),
+                    ...(((_d = d.tags_info) === null || _d === void 0 ? void 0 : _d.title_header_tags) || []).map((tag) => (Object.assign({}, tag))),
+                    ...(((_e = d.tags_info) === null || _e === void 0 ? void 0 : _e.mix_benefit_tags) || [])
+                        .map((tag) => {
+                        var _b, _c;
+                        return ((_c = (_b = tag.tag_rich_text) === null || _b === void 0 ? void 0 : _b.text_rich) === null || _c === void 0 ? void 0 : _c.map((tr) => ({
+                            text: tr.value,
+                        }))) || [];
+                    })
+                        .flat(),
+                ];
+                return Object.assign(Object.assign({}, d), { good_tag });
+            });
+            console.log(mappedGoods);
         });
     }
     // static async fetchProductGallery() {

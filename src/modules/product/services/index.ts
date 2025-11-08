@@ -1187,6 +1187,9 @@ export class ProductService {
   }
 
   static async fetchTemuProduct() {
+    const productRepository = getRepository(Product);
+    const categoryRepository = getRepository(Category);
+
     const data = {
       success: true,
       error_code: 1000000,
@@ -23096,6 +23099,34 @@ export class ProductService {
         display_see_more: false,
       },
     };
+    const mappedGoods = data.result.home_goods_list.map((item: any) => {
+      const d = item.data;
+
+      // Flatten all tags into one array
+      const good_tag = [
+        ...(d.goods_tags || []).map((tag: any) => ({ ...tag })),
+        ...(d.tags_info?.goods_tags || []).map((tag: any) => ({ ...tag })),
+        ...(d.tags_info?.mall_tag || []).map((tag: any) => ({ ...tag })),
+        ...(d.tags_info?.title_header_tags || []).map((tag: any) => ({
+          ...tag,
+        })),
+        ...(d.tags_info?.mix_benefit_tags || [])
+          .map(
+            (tag: any) =>
+              tag.tag_rich_text?.text_rich?.map((tr: any) => ({
+                text: tr.value,
+              })) || []
+          )
+          .flat(),
+      ];
+   
+      return {
+        ...d, 
+        good_tag,
+      };
+    });
+
+    console.log(mappedGoods);
   }
   // static async fetchProductGallery() {
   //   const url =

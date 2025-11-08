@@ -13,6 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const schema_1 = require("@graphql-tools/schema");
+const apollo_server_core_1 = require("apollo-server-core");
 const apollo_server_express_1 = require("apollo-server-express");
 const cors_1 = __importDefault(require("cors"));
 const express_1 = __importDefault(require("express"));
@@ -37,7 +38,7 @@ const wallet_1 = require("./modules/wallet");
 const schema_2 = require("./schema");
 const db_1 = require("./utils/db");
 const pubsub_1 = __importDefault(require("./utils/pubsub"));
-const apollo_server_core_1 = require("apollo-server-core");
+const fetchProduct_1 = require("./modules/product/utils/fetchProduct");
 const { WebSocketServer } = require("ws");
 const app = (0, express_1.default)();
 const startApp = () => __awaiter(void 0, void 0, void 0, function* () {
@@ -104,6 +105,8 @@ const startApp = () => __awaiter(void 0, void 0, void 0, function* () {
     // ProductService.createProductWithoutImage();
     // ProductService.fetchTemuCategoryOptList();
     // ProductService.uploadCategoryToStorage();
+    // ProductService.fetchTemuProduct()
+    (0, fetchProduct_1.fetchProducts)();
     const clearAllData = () => __awaiter(void 0, void 0, void 0, function* () {
         const productRepository = (0, typeorm_1.getRepository)(product_1.Product);
         const categoryRepository = (0, typeorm_1.getRepository)(category_1.Category);
