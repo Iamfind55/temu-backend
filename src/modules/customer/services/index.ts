@@ -517,7 +517,7 @@ export class CustomerService {
       );
 
       // Generate a reset password link
-      const resetLink = `${config.client_url}/cus-reset-password?token=${token}`;
+      const resetLink = `${config.client_url}/reset-password?token=${token}`;
 
       // Send mail with reset password link
       await ShopService.sendResetPasswordEmail(email, resetLink);
