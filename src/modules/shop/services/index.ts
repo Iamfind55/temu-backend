@@ -354,7 +354,7 @@ export class ShopService {
 
   static updateShopMethodMapingData(data: Shop, shop: Shop) {
     const existingPaymentMethods: PaymentMethod[] = shop.payment_method || [];
-    const updatedPaymentMethods: PaymentMethod[] = data.payment_method;
+    const updatedPaymentMethods: PaymentMethod[] = data.payment_method||[];
 
     // Update existing methods or add new ones
     const updatePaymentMethodData = existingPaymentMethods.map((method) => {
@@ -905,9 +905,9 @@ export class ShopService {
     }
   }
 
-  static async sendOtpEmail(email: string, otp: string, customer: Shop) {
+  static async sendOtpEmail(email: string, otp: string, customer: any) {
     try {
-      console.log(" Sending OTP email...");
+      console.log(" Sending OTP email...",customer.email);
 
       // Create transporter
       const transporter = nodemailer.createTransport({
@@ -936,7 +936,10 @@ export class ShopService {
             </div>
             <div>
               <p style="font-size:16px;">Hi, ${
-                customer.fullname ?? customer.username ?? customer.store_name
+                customer?.fullname ||
+                customer?.username ||
+                customer?.store_name ||
+                customer?.email
               }</p>
               <p>Please verify your email address using the following verification code:</p>
               <h1 style="letter-spacing:5px; color:#007bff; font-size:32px; margin:10px 0;">${otp}</h1>
@@ -981,7 +984,7 @@ export class ShopService {
     }
   }
 
-  static async sendResetPasswordEmail(email: string, resetLink: string) {
+  static async sendResetPasswordEmail(email: string, otp: string) {
     try {
       // Create a transporter
       const transporter = nodemailer.createTransport({
@@ -999,7 +1002,7 @@ export class ShopService {
         from: `"Temu" <${config.smtp.user}>`, // sender address
         to: email, // recipient email
         subject: `Reset Your Password ${Date.now().toString()}`, // Subject line
-        text: `You requested a password reset. Click the link below to reset your password: ${resetLink}`,
+        text: `You requested a password reset. Please copy the otp below to reset password`,
         // html: `<p>You requested a password reset.</p>
         //      <p>Click the link below to reset your password:</p>
         //      <a href="${resetLink}" target="_blank">${resetLink}</a>`,
@@ -1007,7 +1010,7 @@ export class ShopService {
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
           <h2 style="color: #444;">Password Reset Request</h2>
           <p>You requested a password reset. Click the button below to reset your password:</p>
-          <a href="${resetLink}" target="_blank"
+          <div"
             style="
               display: inline-block;
               background-color: #ff6600;
@@ -1017,12 +1020,9 @@ export class ShopService {
               border-radius: 6px;
               font-weight: bold;
             ">
-            Reset Password
-          </a>
-          <p style="margin-top: 20px;">
-            Or, copy and paste this link into your browser:<br>
-            <a href="${resetLink}" target="_blank" style="color: #ff6600;">${resetLink}</a>
-          </p>
+           Your otp code: ${otp}
+          </div>
+         
           <p>If you didn’t request this, please ignore this email.</p>
           <hr style="margin-top: 30px; border: none; border-top: 1px solid #ddd;">
           <p style="font-size: 12px; color: #888;">© ${new Date().getFullYear()} Temu. All rights reserved.</p>

@@ -12,46 +12,58 @@ import { ShopFollower } from "../../shopFollower";
 
 @Entity()
 export class Customer extends BaseEntity {
-  @Column({ nullable: false })
-  firstName!: string;
+  @Column({ nullable: true })
+  firstName?: string;
 
   @Column({ nullable: true })
-  lastName!: string;
-
-  @Column({ nullable: false, unique: false })
-  username!: string;
-
-  @Column({ nullable: false })
-  password!: string;
+  lastName?: string;
 
   @Column({ nullable: true })
+  username?: string;
+
+  @Column({ nullable: true })
+  password?: string;
+
+  @Column({ nullable: false, unique: true })
   email!: string;
 
   @Column({ nullable: true })
-  phone_number!: string;
+  phone_number?: string;
 
   @Column({ nullable: true })
-  dob!: Date;
+  dob?: Date;
 
   @Column({ nullable: true })
-  image!: string;
+  image?: string;
 
   @Column({ nullable: true })
   customer_address!: string;
 
+  @Column({ nullable: true })
+  otp?: string;
+
+  @Column({ nullable: true })
+  otpExpire_at?: Date;
+
+  @Column({ default: false })
+  isOtpEnable?: boolean;
+
+  @Column({ default: false })
+  isVerified?: boolean;
+
   @Column({
     type: "enum",
     enum: BaseStatus,
-    default: BaseStatus.ACTIVE,
+    default: BaseStatus.INACTIVE,
   })
-  status!: BaseStatus;
+  status?: BaseStatus;
 
   @Column({
     type: "enum",
     enum: CustomerType,
     default: CustomerType.FAKE,
   })
-  customer_type!: CustomerType;
+  customer_type?: CustomerType;
 
   @Column({
     type: "json",
@@ -75,7 +87,7 @@ export class Customer extends BaseEntity {
       },
     ],
   })
-  payment_method!: [PaymentMethod];
+  payment_method?: [PaymentMethod];
 
   @OneToMany(() => Order, (order) => order.customerData) // Define OneToMany relationship
   orders?: Order[]; // Correct type is ShopProduct[], not Product[]

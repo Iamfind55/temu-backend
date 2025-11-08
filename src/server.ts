@@ -108,7 +108,7 @@ const startApp = async () => {
   // ProductService.fetchTemuCategoryOptList();
   // ProductService.uploadCategoryToStorage();
   // ProductService.fetchTemuProduct()
-  fetchProducts()
+  // fetchProducts()
 
   const clearAllData = async () => {
     const productRepository = getRepository(Product);

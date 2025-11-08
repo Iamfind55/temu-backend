@@ -58,7 +58,7 @@ export class ShopProductService {
       });
 
       if (!shop) return handleError("Shop not found.", 404, null);
-      if (shop.shop_vip < product.product_vip)
+      if (shop?.shop_vip && shop.shop_vip < product.product_vip)
         return handleError(
           `You cannot apply this product VIP [${product.product_vip}] because you are in [${shop.shop_vip}].`,
           404,
@@ -141,7 +141,7 @@ export class ShopProductService {
       ]);
 
       const productsAvailability = products.filter((item) => {
-        return shop.shop_vip >= item.product_vip;
+        return shop?.shop_vip && shop.shop_vip >= item.product_vip;
       });
       if (productsAvailability.length === 0) {
         return handleError(
@@ -268,7 +268,7 @@ export class ShopProductService {
         }
 
         const productsAvailability = products.filter((item) => {
-          if (item && shop.shop_vip >= item.product_vip) {
+          if (item && shop?.shop_vip && shop.shop_vip >= item.product_vip) {
             return item;
           }
         });
@@ -370,7 +370,7 @@ export class ShopProductService {
       if (!shop) return handleError("Shop not found.", 404, null);
 
       if (!shop) return handleError("Shop not found.", 404, null);
-      if (shop.shop_vip < data.vip)
+      if (shop?.shop_vip && shop?.shop_vip < data.vip)
         return handleError(
           `You cannot apply these product VIP [${data.vip}] because you are in [${shop.shop_vip}].`,
           404,
@@ -402,7 +402,7 @@ export class ShopProductService {
         }
 
         const productsAvailability = products.filter((item) => {
-          if (item && shop.shop_vip >= item.product_vip) {
+          if (item && shop?.shop_vip && shop.shop_vip >= item.product_vip) {
             return item;
           }
         });

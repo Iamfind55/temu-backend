@@ -22,6 +22,16 @@ export const customerSchema = `
     FAKE
   }
 
+  input RegisterCustomerInput {
+    email: String!
+    firstName: String
+    lastName: String
+    username: String
+    password: String
+    phone_number: String
+    dob: DateTime
+    image: String
+  }
   input CreateCustomerInput {
     firstName: String
     lastName: String
@@ -33,6 +43,17 @@ export const customerSchema = `
     image: String
     customer_address: String
     status: BaseStatus = ACTIVE
+  }
+  input VerifyOtpCustomerInput {
+    otp: String!
+    email: String!
+  }
+  input ResendOtpCustomerInput {
+    email: String!
+  }
+  input CreatePasswordCustomerInput {
+    password: String!
+    email: String!
   }
 
   input UpdateCustomerInput {
@@ -72,12 +93,12 @@ export const customerSchema = `
   }
 
   input CustomerWhereLoginInput {
-    username: String!
+    email: String!
     password: String!
   }
 
   type CustomerLoginType {
-    token: String!
+    token: String
     data: Customer
   }
 
@@ -107,8 +128,11 @@ export const customerSchema = `
   }
 
   type Mutation {
+    customerResendOTP(data: ResendOtpCustomerInput!): CustomerLoginResponse!
+    customerCreatePassword(data: CreatePasswordCustomerInput!): CustomerLoginResponse!
+    customerVerifyOtp(data: VerifyOtpCustomerInput!): CustomerLoginResponse!
     createCustomer(data: CreateCustomerInput!): SuccessCustomerResponseOne!
-    customerRegister(data: CreateCustomerInput!): CustomerLoginResponse!
+    customerRegister(data: RegisterCustomerInput!): CustomerLoginResponse!
     updateCustomer(data: UpdateCustomerInput!): SuccessCustomerResponseOne!
     deleteCustomer(id: ID!): SuccessCustomerResponseOne!
     customerLogin(where: CustomerWhereLoginInput): CustomerLoginResponse!

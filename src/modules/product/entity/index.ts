@@ -7,10 +7,16 @@ import { ShopProduct } from "../../shopProduct";
 
 @Entity()
 export class Product extends BaseEntity {
-  @Column({nullable: false})
+  @Column({ nullable: true })
+  opt_id!: string;
+
+  @Column({ nullable: true })
+  list_id!: string;
+
+  @Column({ nullable: false })
   name!: string;
 
-  @Column({nullable: true})
+  @Column({ nullable: true })
   description!: string;
 
   @Column({

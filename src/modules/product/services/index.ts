@@ -1134,55 +1134,60 @@ export class ProductService {
     const response = data.result.data.opt_list.map((opt) => {
       const subCategory = opt.child_opts?.map((child) => {
         return {
+          opt_id: child.opt_id,
           opt_name: child.opt_name,
+          list_id: opt.p_rec.list_id,
           child_images: child.image_url,
         };
       });
 
       return {
+        opt_id: opt.opt_id,
         opt_name: opt.opt_name,
         child_images: opt.child_opts?.map((child) => child.image_url) || [],
         sub_opt_name: subCategory?.map((sub) => sub.opt_name),
+        sub_list_id: subCategory.map((sub)=>sub.list_id),
+        sub_opt_id: subCategory.map((sub)=>sub.opt_id),
         sub_child_images1: subCategory?.map((sub) => sub.child_images),
       };
     });
 
-    const categoryRepository = getRepository(Category);
-    for (const parent of response) {
-      const parentCategory = categoryRepository.create({
-        name: parent.opt_name,
-        oringImageURL: parent.child_images[0] || "",
-        parent_id: "5f0933c8-472b-4c20-bf2d-7f965cecad0f",
-        status: BaseStatus.ACTIVE,
-      });
-      await categoryRepository.save(parentCategory);
+    // const categoryRepository = getRepository(Category);
+    // for (const parent of response) {
+    //   const parentCategory = categoryRepository.create({
+    //     name: parent.opt_name,
+    //     oringImageURL: parent.child_images[0] || "",
+    //     parent_id: "5f0933c8-472b-4c20-bf2d-7f965cecad0f",
+    //     status: BaseStatus.ACTIVE,
+    //   });
+    //   await categoryRepository.save(parentCategory);
 
-      // Insert second-level categories
-      if (parent.sub_opt_name && parent.sub_child_images1) {
-        for (let i = 0; i < parent.sub_opt_name.length; i++) {
-          const subName = parent.sub_opt_name[i];
+    //   // Insert second-level categories
+    //   if (parent.sub_opt_name && parent.sub_child_images1) {
+    //     for (let i = 0; i < parent.sub_opt_name.length; i++) {
+    //       const subName = parent.sub_opt_name[i];
 
-          let subCategory = await categoryRepository
-            .createQueryBuilder("category")
-            .where(`category.name = :name AND category.parent_id = :parentId`, {
-              name: subName,
-              parentId: parentCategory.id,
-            })
-            .getOne();
+    //       let subCategory = await categoryRepository
+    //         .createQueryBuilder("category")
+    //         .where(`category.name = :name AND category.parent_id = :parentId`, {
+    //           name: subName,
+    //           parentId: parentCategory.id,
+    //         })
+    //         .getOne();
 
-          if (!subCategory) {
-            subCategory = categoryRepository.create({
-              name: subName,
-              oringImageURL: parent.sub_child_images1[i] || "",
-              parent_id: parentCategory.id,
-              status: BaseStatus.ACTIVE,
-            });
-            const created = await categoryRepository.save(subCategory);
-            console.log(created);
-          }
-        }
-      }
-    }
+    //       if (!subCategory) {
+    //         subCategory = categoryRepository.create({
+    //           name: subName,
+    //           oringImageURL: parent.sub_child_images1[i] || "",
+    //           parent_id: parentCategory.id,
+    //           status: BaseStatus.ACTIVE,
+    //         });
+    //         const created = await categoryRepository.save(subCategory);
+    //         console.log(created);
+    //       }
+    //     }
+    //   }
+    // }
     console.log("Added category completed");
   }
 
@@ -23119,9 +23124,9 @@ export class ProductService {
           )
           .flat(),
       ];
-   
+
       return {
-        ...d, 
+        ...d,
         good_tag,
       };
     });

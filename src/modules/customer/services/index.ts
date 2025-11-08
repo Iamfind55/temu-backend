@@ -7,11 +7,15 @@ import {
   handleSuccessWithTotalData,
 } from "../../../utils/response/success.handler";
 import {
+  CreatePasswordCustomerInput,
   CustomerLoginResponse,
   CustomerModel,
   CustomerType,
   CustomerWhereInput,
   CustomerWhereLoginInput,
+  RegisterCustomerInput,
+  ResendOtpCustomerInput,
+  VerifyOtpCustomerInput,
 } from "../types";
 import { Brackets, getRepository, Like, Not } from "typeorm";
 import { Customer } from "../entity";
@@ -27,40 +31,188 @@ import {
   ShopService,
 } from "../../shop";
 import { WalletService } from "../../wallet";
+import { addMinutes } from "date-fns";
+import { OtpService } from "../../shop/utils/helpers";
 
 export class CustomerService {
+  // static async customerRegister({
+  //   data,
+  //   req,
+  // }: {
+  //   data: RegisterCustomerInput;
+  //   req: Request;
+  // }): Promise<Response<CustomerLoginResponse | null>> {
+  //   const customerRepository = getRepository(Customer);
+
+  //   try {
+  //     // Validation
+  //     if (!data?.email) {
+  //       return handleError("Validation Error", 400, null);
+  //     }
+
+  //     const existCustomer = await customerRepository.findOneBy({
+  //       username: data?.email,
+  //       is_active: true,
+  //     });
+  //     if (existCustomer) {
+  //       return handleError(config.message.username_already_exist, 404, null);
+  //     }
+
+  //     // Hash the password
+  //     if (data?.password) data.password = await hashPassword(data?.password);
+
+  //     // Create and save customere
+  //     const newCustomer = customerRepository.create({
+  //       ...data,
+  //       customer_type: CustomerType?.REAL,
+  //     });
+  //     const savedCustomer = await customerRepository.save(newCustomer);
+
+  //     // Generate JWT token
+  //     const token = new AuthMiddlewareService().genCustomerToken(savedCustomer);
+
+  //     try {
+  //       await WalletService.createWallet({
+  //         customer_id: savedCustomer?.id,
+  //         name: savedCustomer?.firstName,
+  //       } as any);
+  //     } catch (error) {}
+
+  //     return handleSuccess({ token, data: savedCustomer });
+  //   } catch (error: any) {
+  //     return handleError(
+  //       config.message.internal_server_error,
+  //       500,
+  //       error.message
+  //     );
+  //   }
+  // }
+
   static async customerRegister({
     data,
     req,
   }: {
-    data: CustomerModel;
+    data: RegisterCustomerInput;
     req: Request;
   }): Promise<Response<CustomerLoginResponse | null>> {
     const customerRepository = getRepository(Customer);
-
     try {
+      const { email } = data;
+
       // Validation
-      if (!data?.username || !data?.password) {
+      if (!email) {
         return handleError("Validation Error", 400, null);
       }
 
       const existCustomer = await customerRepository.findOneBy({
-        username: data?.username,
-        is_active: true,
+        email: email,
       });
+
       if (existCustomer) {
         return handleError(config.message.username_already_exist, 404, null);
       }
 
-      // Hash the password
-      if (data?.password) data.password = await hashPassword(data?.password);
-
       // Create and save customere
-      const newCustomer = customerRepository.create({
-        ...data,
-        customer_type: CustomerType?.REAL,
-      });
+      const newCustomer = customerRepository.create(data);
+      const otpExpires = addMinutes(new Date(), 1);
+      const otp = OtpService.generateOtp();
+      newCustomer.otp = otp;
+      newCustomer.otpExpire_at = otpExpires;
+      newCustomer.isVerified = true;
       const savedCustomer = await customerRepository.save(newCustomer);
+
+      await ShopService.sendOtpEmail(email, otp, savedCustomer);
+
+      return handleSuccess({ token: null, data: savedCustomer } as any);
+    } catch (error: any) {
+      console.log(error);
+
+      return handleError(
+        config.message.internal_server_error,
+        500,
+        error.message
+      );
+    }
+  }
+  static async customerVerifyOtp({
+    data,
+    req,
+  }: {
+    data: VerifyOtpCustomerInput;
+    req: Request;
+  }): Promise<Response<CustomerLoginResponse | null>> {
+    const customerRepository = getRepository(Customer);
+    try {
+      const { otp, email } = data;
+
+      // Validation
+      if (!email || !otp) {
+        return handleError("Validation Error", 400, null);
+      }
+
+      const customer = await customerRepository.findOneBy({
+        email: email,
+      });
+
+      if (!customer) {
+        return handleError(config.message.user_not_found, 404, null);
+      }
+      const { otp: customerOtp, isVerified, otpExpire_at } = customer;
+      if (isVerified) {
+        return handleError("The OTP is expires", 404, null);
+      }
+      if (customerOtp != otp) {
+        return handleError("The OTP is invalid", 404, null);
+      }
+      if (!otpExpire_at || otpExpire_at <= new Date()) {
+        return handleError("You OTP expires", 400, null);
+      }
+      customer.status = BaseStatus.ACTIVE;
+      customer.isOtpEnable = true;
+      const savedCustomer = await customerRepository.save(customer);
+      return handleSuccess({ token: null, data: savedCustomer } as any);
+    } catch (error: any) {
+      console.log(error);
+
+      return handleError(
+        config.message.internal_server_error,
+        500,
+        error.message
+      );
+    }
+  }
+
+  static async customerCreatePassoword({
+    data,
+    req,
+  }: {
+    data: CreatePasswordCustomerInput;
+    req: Request;
+  }): Promise<Response<CustomerLoginResponse | null>> {
+    const customerRepository = getRepository(Customer);
+    try {
+      const { password, email } = data;
+
+      // Validation
+      if (!email || !password) {
+        return handleError("Validation Error", 400, null);
+      }
+
+      const customer = await customerRepository.findOneBy({
+        email: email,
+        is_active: true,
+      });
+
+      if (!customer) {
+        return handleError(config.message.user_not_found, 404, null);
+      }
+      if(customer.password){
+        return handleError("You already have a password", 404, null);
+      }
+      if (data?.password) data.password = await hashPassword(data?.password);
+      customer.password = data.password;
+
+      const savedCustomer = await customerRepository.save(customer);
 
       // Generate JWT token
       const token = new AuthMiddlewareService().genCustomerToken(savedCustomer);
@@ -72,8 +224,10 @@ export class CustomerService {
         } as any);
       } catch (error) {}
 
-      return handleSuccess({ token, data: savedCustomer });
+      return handleSuccess({ token, data: savedCustomer } as any);
     } catch (error: any) {
+      console.log(error);
+
       return handleError(
         config.message.internal_server_error,
         500,
@@ -82,6 +236,49 @@ export class CustomerService {
     }
   }
 
+  static async customerRendOTP({
+    data,
+    req,
+  }: {
+    data: ResendOtpCustomerInput;
+    req: Request;
+  }): Promise<Response<CustomerLoginResponse | null>> {
+    const customerRepository = getRepository(Customer);
+    try {
+      const { email } = data;
+
+      // Validation
+      if (!email) {
+        return handleError("Validation Error", 400, null);
+      }
+
+      const customer = await customerRepository.findOneBy({
+        email: email,
+      });
+
+      if (!customer) {
+        return handleError(config.message.user_not_found, 404, null);
+      }
+
+      const otpExpires = addMinutes(new Date(), 1);
+      const newOTP = OtpService.generateOtp();
+      customer.otp = newOTP;
+      customer.otpExpire_at = otpExpires;
+      customer.isVerified = false;
+      const savedCustomer = await customerRepository.save(customer);
+      await ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+
+      return handleSuccess({ token: null, data: savedCustomer } as any);
+    } catch (error: any) {
+      console.log(error);
+
+      return handleError(
+        config.message.internal_server_error,
+        500,
+        error.message
+      );
+    }
+  }
   static async createCustomer({
     data,
     req,
@@ -243,7 +440,7 @@ export class CustomerService {
 
   static updateCustomerMethodMapingData(data: Customer, shop: Customer) {
     const existingPaymentMethods: PaymentMethod[] = shop.payment_method || [];
-    const updatedPaymentMethods: PaymentMethod[] = data.payment_method;
+    const updatedPaymentMethods: PaymentMethod[] = data?.payment_method || [];
 
     // Update existing methods or add new ones
     const updatePaymentMethodData = existingPaymentMethods.map((method) => {
@@ -411,19 +608,19 @@ export class CustomerService {
     const customerRepository = getRepository(Customer);
 
     try {
-      const { username, password } = where;
+      const { email, password } = where;
       // Validate input
-      if (!username || !password) {
-        return handleError("Username and password are required.", 400, null);
+      if (!email || !password) {
+        return handleError("Email and password are required.", 400, null);
       }
 
       // Fetch user from database
       const customer = await customerRepository.findOne({
-        where: { username, is_active: true },
+        where: { email, is_active: true },
       });
 
       if (!customer) {
-        return handleError("Invalid username or password.", 404, null);
+        return handleError("Invalid email or password.", 404, null);
       }
 
       if (customer.status !== BaseStatus.ACTIVE)
@@ -432,12 +629,12 @@ export class CustomerService {
           404,
           null
         );
-
+      let isPasswordValid;
+      if (customer.password) {
+        isPasswordValid = await comparePassword(password, customer?.password);
+      }
       // Compare passwords
-      const isPasswordValid = await comparePassword(
-        password,
-        customer?.password
-      );
+
       if (!isPasswordValid) {
         return handleError("Invalid username or password.", 404, null);
       }

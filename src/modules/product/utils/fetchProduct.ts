@@ -7040,6 +7040,7 @@ export const fetchProducts = async () => {
     let category = await categoryRepository.findOne({
       where: { name: productData.category_name },
     });
+    // console.log(category);
 
     //   const product = productRepository.create({
     //     goods_id: productData.goods_id,

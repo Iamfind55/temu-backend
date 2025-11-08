@@ -85,8 +85,8 @@ export const shopSchema = `
 
   input CreateShopInput {
     fullname: String
-    username: String!
-    password: String!
+    username: String
+    password: String
     email: String!
     dob: Date
     phone_number: String
@@ -94,7 +94,7 @@ export const shopSchema = `
     status: ShopStatus
     remark: String
     shop_address: String
-    profit: Float!
+    profit: Float
     id_card_info: ShopIdCardInfoInput
     store_name: String
   }

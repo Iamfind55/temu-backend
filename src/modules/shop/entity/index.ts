@@ -17,14 +17,14 @@ import { ShopFollower } from "../../shopFollower";
 
 @Entity()
 export class Shop extends BaseEntity {
-  @Column({ nullable: false })
-  fullname!: string;
+  @Column({ nullable: true })
+  fullname?: string;
 
   @Column({ nullable: true })
-  store_name!: string;
+  store_name?: string;
 
   @Column({ nullable: false })
-  username!: string;
+  username?: string;
 
   @Column({ nullable: false })
   password?: string;
@@ -33,16 +33,16 @@ export class Shop extends BaseEntity {
   email!: string;
 
   @Column({ nullable: true, unique: false })
-  phone_number!: string;
+  phone_number?: string;
 
   @Column({ nullable: true, unique: false, default: 0 })
-  shop_star!: number;
+  shop_star?: number;
 
   @Column({ nullable: true, unique: false, default: 0 })
-  shop_vip!: number;
+  shop_vip?: number;
 
   @Column({ type: "float", default: 20.0 })
-  profit!: number;
+  profit?: number;
 
   @Column({ nullable: true })
   otp?: string;
@@ -54,7 +54,7 @@ export class Shop extends BaseEntity {
   isOtpEnable?: boolean;
 
   @Column({ nullable: true })
-  dob!: Date;
+  dob?: Date;
 
   @Column({
     type: "json", // JSON column for complex objects
@@ -64,7 +64,7 @@ export class Shop extends BaseEntity {
       cover: "",
     },
   })
-  image!: ShopImage;
+  image?: ShopImage;
 
   @Column({
     type: "json",
