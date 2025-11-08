@@ -21,7 +21,7 @@ export interface ShopModel extends BaseType {
 }
 export interface ShopResetPassword {
   new_password: string;
-  token: string;
+  email: string;
 }
 
 export interface ShopWhereInput {

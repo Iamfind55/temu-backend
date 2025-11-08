@@ -127,7 +127,7 @@ export const shopSchema = `
 
   input ShopResetPasswordInput {
     new_password: String!
-    token: String!
+    email: String!
   }
 
   input UpdateShopInformationInput {

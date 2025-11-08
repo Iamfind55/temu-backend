@@ -51,6 +51,7 @@ export const customerSchema = `
   input ResendOtpCustomerInput {
     email: String!
   }
+    
   input CreatePasswordCustomerInput {
     password: String!
     email: String!

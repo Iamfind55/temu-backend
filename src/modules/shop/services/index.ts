@@ -20,7 +20,12 @@ import {
 import { Brackets, getManager, getRepository } from "typeorm";
 import { Shop } from "../entity";
 import { BaseOrderByInput } from "../../../utils/base/baseType";
-import { comparePassword, hashPassword, isEmail } from "../../../utils/helper";
+import {
+  comparePassword,
+  hashPassword,
+  isEmail,
+  validateStrongPassword,
+} from "../../../utils/helper";
 import { AuthMiddlewareService } from "../../../middlewares/auth.middleware";
 import { getRequestedFields } from "../../../utils/graphqlUtils";
 import { GraphQLResolveInfo } from "graphql";
@@ -354,7 +359,7 @@ export class ShopService {
 
   static updateShopMethodMapingData(data: Shop, shop: Shop) {
     const existingPaymentMethods: PaymentMethod[] = shop.payment_method || [];
-    const updatedPaymentMethods: PaymentMethod[] = data.payment_method||[];
+    const updatedPaymentMethods: PaymentMethod[] = data.payment_method || [];
 
     // Update existing methods or add new ones
     const updatePaymentMethodData = existingPaymentMethods.map((method) => {
@@ -876,13 +881,23 @@ export class ShopService {
     const shopRepository = getRepository(Shop);
 
     try {
-      const shopDataFromToken =
-        new AuthMiddlewareService().verifyShopForgotPasswordToken(data.token);
+      // const shopDataFromToken =
+      //   new AuthMiddlewareService().verifyShopForgotPasswordToken(data.token);
 
-      if (!shopDataFromToken)
+      if (!data.email || !data.new_password) {
         return handleError(config.message.invalid_token, 404, null);
-
-      const shop = await shopRepository.findOneById(shopDataFromToken.id);
+      }
+      const validatePassStrong = validateStrongPassword(data.new_password);
+      if (!validatePassStrong) {
+        return handleError(
+          "Password must be at least 8 characters and include uppercase, lowercase, number, and special character.",
+          400,
+          null
+        );
+      }
+      const shop = await shopRepository.findOne({
+        where: { email: data.email, is_active: true },
+      });
 
       if (!shop) {
         return handleError("Shop not found", 404, null);
@@ -907,7 +922,7 @@ export class ShopService {
 
   static async sendOtpEmail(email: string, otp: string, customer: any) {
     try {
-      console.log(" Sending OTP email...",customer.email);
+      console.log(" Sending OTP email...", customer.email);
 
       // Create transporter
       const transporter = nodemailer.createTransport({
@@ -969,7 +984,7 @@ export class ShopService {
       const mailOptions = {
         from: `"Temu" <${config.smtp.user}>`,
         to: email,
-        subject: `Your OTP Code`,
+        subject: `${otp} is your verification code`,
         text: `Your OTP code is ${otp}. It will expire in 5 minutes.`,
         html: htmlContent,
       };

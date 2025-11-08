@@ -62,6 +62,16 @@ export async function deleteFileFromCloudinary(imageUrl: string) {
   });
 }
 
+export async function validateStrongPassword(
+  password: string
+): Promise<boolean> {
+  if (!password) return false;
+
+  const strongPasswordRegex =
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+  return strongPasswordRegex.test(password);
+}
 export async function isEmail(email: string): Promise<boolean> {
   if (!email) return false;
 

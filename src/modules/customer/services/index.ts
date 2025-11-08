@@ -20,7 +20,11 @@ import {
 import { Brackets, getRepository, Like, Not } from "typeorm";
 import { Customer } from "../entity";
 import { BaseOrderByInput, BaseStatus } from "../../../utils/base/baseType";
-import { comparePassword, hashPassword } from "../../../utils/helper";
+import {
+  comparePassword,
+  hashPassword,
+  validateStrongPassword,
+} from "../../../utils/helper";
 import { AuthMiddlewareService } from "../../../middlewares/auth.middleware";
 import { GraphQLResolveInfo } from "graphql";
 import { getRequestedFields } from "../../../utils/graphqlUtils";
@@ -197,7 +201,14 @@ export class CustomerService {
       if (!email || !password) {
         return handleError("Validation Error", 400, null);
       }
-
+      const validatePassStrong = validateStrongPassword(password);
+      if (!validatePassStrong) {
+        return handleError(
+          "Password must be at least 8 characters and include uppercase, lowercase, number, and special character.",
+          400,
+          null
+        );
+      }
       const customer = await customerRepository.findOneBy({
         email: email,
         is_active: true,
@@ -206,7 +217,7 @@ export class CustomerService {
       if (!customer) {
         return handleError(config.message.user_not_found, 404, null);
       }
-      if(customer.password){
+      if (customer.password) {
         return handleError("You already have a password", 404, null);
       }
       if (data?.password) data.password = await hashPassword(data?.password);
@@ -695,12 +706,12 @@ export class CustomerService {
       const customerRepository = getRepository(Customer);
 
       // Check if the email exists
-      const existEmail = await customerRepository.findOneBy({
+      const customer = await customerRepository.findOneBy({
         email,
         is_active: true,
       });
 
-      if (!existEmail) {
+      if (!customer) {
         return handleError(
           "Email not found",
           404,
@@ -710,14 +721,16 @@ export class CustomerService {
 
       // Generate JWT token with expiration
       const token = new AuthMiddlewareService().genShopForgotPasswordToken(
-        existEmail as any
+        customer as any
       );
 
-      // Generate a reset password link
-      const resetLink = `${config.client_url}/reset-password?token=${token}`;
-
-      // Send mail with reset password link
-      await ShopService.sendResetPasswordEmail(email, resetLink);
+      const otpExpires = addMinutes(new Date(), 1);
+      const newOTP = OtpService.generateOtp();
+      customer.otp = newOTP;
+      customer.otpExpire_at = otpExpires;
+      customer.isVerified = false;
+      const savedCustomer = await customerRepository.save(customer);
+      await ShopService.sendOtpEmail(email, newOTP, savedCustomer);
 
       return handleSuccess(null);
     } catch (error: any) {
@@ -739,26 +752,34 @@ export class CustomerService {
     const customerRepository = getRepository(Customer);
 
     try {
-      const customerDataFromToken =
-        new AuthMiddlewareService().verifyShopForgotPasswordToken(data.token);
-
-      if (!customerDataFromToken)
+      // const customerDataFromToken =
+      //   new AuthMiddlewareService().verifyShopForgotPasswordToken(data.token);
+      if (!data.email || !data.new_password) {
         return handleError(config.message.invalid_token, 404, null);
+      }
+      const validatePassStrong = validateStrongPassword(data.new_password);
+      if (!validatePassStrong) {
+        return handleError(
+          "Password must be at least 8 characters and include uppercase, lowercase, number, and special character.",
+          400,
+          null
+        );
+      }
 
-      const shop = await customerRepository.findOne({
-        where: { id: customerDataFromToken.id, is_active: true },
+      const customer = await customerRepository.findOne({
+        where: { email: data.email, is_active: true },
       });
 
-      if (!shop) {
-        return handleError("Shop not found", 404, null);
+      if (!customer) {
+        return handleError("customer not found", 404, null);
       }
 
       // Hash the password
       const newPass = await hashPassword(data?.new_password);
 
-      customerRepository.merge(shop, { password: newPass });
+      customerRepository.merge(customer, { password: newPass });
 
-      const updatedShop = await customerRepository.save(shop);
+      const updatedShop = await customerRepository.save(customer);
 
       return handleSuccess(updatedShop);
     } catch (error: any) {
