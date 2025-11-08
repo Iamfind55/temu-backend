@@ -104,7 +104,6 @@ const startApp = () => __awaiter(void 0, void 0, void 0, function* () {
     // ProductService.createProductWithoutImage();
     // ProductService.fetchTemuCategoryOptList();
     // ProductService.uploadCategoryToStorage();
-    // fetchAllImages()
     const clearAllData = () => __awaiter(void 0, void 0, void 0, function* () {
         const productRepository = (0, typeorm_1.getRepository)(product_1.Product);
         const categoryRepository = (0, typeorm_1.getRepository)(category_1.Category);

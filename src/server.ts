@@ -25,7 +25,6 @@ import { connectDB } from "./utils/db";
 import { createDefaultStaff } from "./utils/defaultStaff";
 import pubsub from "./utils/pubsub";
 import { ApolloServerPluginLandingPageLocalDefault } from "apollo-server-core";
-import { fetchAllImages } from "./utils/fetchProduct";
 
 const { WebSocketServer } = require("ws");
 
@@ -108,8 +107,6 @@ const startApp = async () => {
   // ProductService.createProductWithoutImage();
   // ProductService.fetchTemuCategoryOptList();
   // ProductService.uploadCategoryToStorage();
-  // fetchAllImages()
-
   const clearAllData = async () => {
     const productRepository = getRepository(Product);
     const categoryRepository = getRepository(Category);
