@@ -24,7 +24,10 @@ import { Wallet } from "./modules/wallet";
 import { typeDefs } from "./schema";
 import { connectDB } from "./utils/db";
 import pubsub from "./utils/pubsub";
-import { fetchProducts } from "./modules/product/utils/fetchProduct";
+import {
+  fetchProductByCategory,
+  fetchProducts,
+} from "./modules/product/utils/fetchProduct";
 
 const { WebSocketServer } = require("ws");
 
@@ -46,6 +49,7 @@ const startApp = async () => {
   app.get("/graphql/check-healthy", (req: Request, res: Response) => {
     res.send(`server is running on ${node}`);
   });
+ 
 
   const schema = makeExecutableSchema({
     typeDefs,
@@ -105,11 +109,12 @@ const startApp = async () => {
   // ProductService.createLoopCategoryAndProduct();
   // ProductService.createBanner()
   // ProductService.createProductWithoutImage();
-  ProductService.fetchTemuCategoryOptList();
+  // ProductService.fetchTemuCategoryOptList();
   // ProductService.uploadCategoryToStorage();
   // ProductService.fetchTemuProduct()
   // fetchProducts()
-
+  // fetchProductByCategory();
+  
   const clearAllData = async () => {
     const productRepository = getRepository(Product);
     const categoryRepository = getRepository(Category);
@@ -206,6 +211,5 @@ const startApp = async () => {
 };
 
 startApp();
-
 
 // Dev test auto deploy

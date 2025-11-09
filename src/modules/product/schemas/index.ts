@@ -11,7 +11,7 @@ export const productSchema = `
     quantity: Int
     sku: String
     spu: String
-    total_star: Int
+    total_star: Float
     total_comment: Int
     category_ids: [String]
     categories: [Category]
@@ -23,7 +23,7 @@ export const productSchema = `
     recommended: Boolean
     product_top: Int
     product_vip: Int
-    sell_count: Int
+    sell_count: String
     created_by: String
     created_at: DateTime
     updated_at: DateTime 
@@ -39,7 +39,7 @@ export const productSchema = `
     quantity: Int
     sku: String
     spu: String
-    total_star: Int
+    total_star: Float
     total_comment: Int
     category_id: String
     brand_id: String
@@ -61,7 +61,7 @@ export const productSchema = `
     quantity: Int
     sku: String
     spu: String
-    total_star: Int
+    total_star: Float
     total_comment: Int
     category_id: String
     brand_id: String

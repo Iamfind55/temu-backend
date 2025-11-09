@@ -1,16 +1,16 @@
 import { Request } from "express";
+import { Brackets, getRepository } from "typeorm";
 import { config } from "../../../config";
+import { AuthMiddlewareService } from "../../../middlewares/auth.middleware";
+import { BaseOrderByInput } from "../../../utils/base/baseType";
 import { handleError } from "../../../utils/response/error.handler";
 import { Response } from "../../../utils/response/response.types";
 import {
   handleSuccess,
   handleSuccessWithTotalData,
 } from "../../../utils/response/success.handler";
-import { BrandingModel, BrandingWhereInput } from "../types";
-import { Brackets, getRepository, Like } from "typeorm";
 import { Branding } from "../entity";
-import { BaseOrderByInput, BaseStatus } from "../../../utils/base/baseType";
-import { AuthMiddlewareService } from "../../../middlewares/auth.middleware";
+import { BrandingModel, BrandingWhereInput } from "../types";
 
 export class BrandingService {
   static async createBranding({
@@ -30,7 +30,7 @@ export class BrandingService {
       if (!staffDataFromToken)
         return handleError(config.message.invalid_token, 404, null);
 
-      if (!data?.name?.name_en) {
+      if (!data?.name) {
         return handleError("Validation Error", 400, null);
       }
 
@@ -38,9 +38,7 @@ export class BrandingService {
       const existingBrand = await brandingRepository
         .createQueryBuilder("branding")
         .andWhere("branding.is_active = :isActive", { isActive: true })
-        .andWhere("branding.name->>'name_en' = :name_en", {
-          name_en: data.name.name_en,
-        })
+        .andWhere("branding.name = :name", { name: data.name })
         .getOne();
 
       if (existingBrand) {
@@ -98,8 +96,8 @@ export class BrandingService {
           .createQueryBuilder("branding")
           .where("branding.id != :id", { id: data.id })
           .andWhere("branding.is_active = :isActive", { isActive: true })
-          .andWhere("branding.name->>'name_en' = :name_en", {
-            name_en: data.name.name_en,
+          .andWhere("branding.name = :name", {
+            name: data.name,
           })
           .getOne();
 
@@ -188,7 +186,7 @@ export class BrandingService {
       if (where?.keyword) {
         queryBuilder.andWhere(
           new Brackets((qb) => {
-            qb.where("branding.name ->> 'name_en' ILIKE :keyword", {
+            qb.where("branding.name ILIKE :keyword", {
               keyword: `%${where.keyword}%`,
             });
           })

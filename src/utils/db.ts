@@ -23,6 +23,7 @@ import { Attribute } from "../modules/attribute";
 import { AttributeValue } from "../modules/attributeValue/entity";
 import { CategoryAttribute } from "../modules/categoryAttribute";
 import { ShopFollower } from "../modules/shopFollower";
+import { ProductTag } from "../modules/productTag";
 
 export const connectDB = async () => {
   try {
@@ -59,6 +60,7 @@ export const connectDB = async () => {
         AttributeValue,
         CategoryAttribute,
         ShopFollower,
+        ProductTag
       ],
       migrations: ["migrations/*.ts"],
     })

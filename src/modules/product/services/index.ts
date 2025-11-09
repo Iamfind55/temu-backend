@@ -23673,7 +23673,7 @@ export class ProductService {
       productRepository.merge(product, {
         ...data,
         category_ids: categoryIds,
-        updated_by: staffDataFromToken.id,
+        updated_by: staffDataFromToken?.id as string | undefined,
       });
 
       const updatedProduct = await productRepository.save(product);

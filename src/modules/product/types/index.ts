@@ -14,7 +14,7 @@ export interface ProductModel extends BaseType {
   spu: string;
   total_star: number;
   total_comment: number;
-  sell_count: number;
+  sell_count: string;
   category_id: string;
   brand_id: string;
   status: BaseStatus;

@@ -175,6 +175,7 @@ export class ShopService {
 
       shop.status = ShopStatus.ACTIVE;
       shop.isOtpEnable = true;
+      shop.isVerified = true;
       await shopRepository.save(shop);
 
       const token = new AuthMiddlewareService().genShopToken(shop);
@@ -884,7 +885,7 @@ export class ShopService {
       // const shopDataFromToken =
       //   new AuthMiddlewareService().verifyShopForgotPasswordToken(data.token);
 
-      if (!data.email || !data.new_password) {
+      if (!data.email || !data.new_password || !data.otp) {
         return handleError(config.message.invalid_token, 404, null);
       }
       const validatePassStrong = validateStrongPassword(data.new_password);
@@ -912,7 +913,7 @@ export class ShopService {
       }
       // Hash the password
       const newPass = await hashPassword(data?.new_password);
-
+      shop.isVerified = false;
       shopRepository.merge(shop, { password: newPass });
 
       const updatedShop = await shopRepository.save(shop);
