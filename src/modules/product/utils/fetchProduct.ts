@@ -15890,7 +15890,7 @@ export const fetchProductByCategory = async () => {
       ];
 
       for (const tag of allTags) {
-        if (!tag.text) continue;
+        
         let localExplanation: { title?: string; content?: string } = {};
         if (tag.title_header_tags?.ext_map?.local_explanation) {
           try {
@@ -15901,6 +15901,8 @@ export const fetchProductByCategory = async () => {
             console.warn("Failed to parse local_explanation JSON:", err);
           }
         }
+        console.log(localExplanation);
+        
         const productTag = productTagRepository.create({
           text_rich: tag.mix_benefit_tags?.tag_rich_text?.text
             ? [tag.mix_benefit_tags.tag_rich_text.text]

@@ -1,10 +1,10 @@
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany } from "typeorm";
 import { BaseEntity } from "../../../utils/base/baseEntity";
-import { BaseStatus, NameTranslateBase } from "../../../utils/base/baseType";
+import { BaseStatus } from "../../../utils/base/baseType";
 import { Branding } from "../../branding";
 import { Category } from "../../category";
-import { ShopProduct } from "../../shopProduct";
 import { ProductTag } from "../../productTag";
+import { ShopProduct } from "../../shopProduct";
 
 @Entity()
 export class Product extends BaseEntity {
@@ -53,7 +53,7 @@ export class Product extends BaseEntity {
   @Column({ type: "timestamp", nullable: true })
   discount_end?: Date;
 
-  @Column({ nullable: true, default: 0 })
+  @Column({ nullable: true, default: 300 })
   quantity?: number;
 
   @Column({ nullable: true })

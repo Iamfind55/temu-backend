@@ -23944,13 +23944,30 @@ export class ProductService {
 
     const queryBuilder = productRepository
       .createQueryBuilder("product")
+      .leftJoinAndSelect("product.productTag", "productTag")
       .where("product.is_active = :isActive", { isActive: true });
     const selectFields = getRequestedFields(info, "getProducts.data");
     if (selectFields?.length) {
       const fields = selectFields
-        .filter((field) => field !== "shopProductStatus")
+        // .filter((field) => field !== "shopProductStatus")
+        .filter((field) => !["shopProductStatus", "productTag"].includes(field))
         .map((field) => `product.${field}`);
-      queryBuilder.select(fields);
+      fields.push("product.created_at");
+
+      queryBuilder.select([
+        ...fields,
+        "productTag.id",
+        "productTag.text_rich",
+        "productTag.local_title",
+      ]);
+
+      // queryBuilder.select([
+      //   ...fields,
+      //   "productTag.id",
+      //   "productTag.text_rich",
+      //   "productTag.local_title",
+      // ]);
+      // queryBuilder.select(fields);
     }
 
     if (!isAdmin) {

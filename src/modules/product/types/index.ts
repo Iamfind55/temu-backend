@@ -1,4 +1,3 @@
-import { NameTranslateBase } from "./../../../utils/base/baseType";
 import { BaseStatus, BaseType } from "../../../utils/base/baseType";
 import { DateBetween } from "../../shopProduct";
 

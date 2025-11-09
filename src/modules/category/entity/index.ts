@@ -1,6 +1,6 @@
 import { Entity, Column, OneToMany } from "typeorm";
 import { BaseEntity } from "../../../utils/base/baseEntity";
-import { BaseStatus, NameTranslateBase } from "../../../utils/base/baseType";
+import { BaseStatus } from "../../../utils/base/baseType";
 import { Product } from "../../product";
 import { CategoryAttribute } from "../../categoryAttribute/entity";
 

@@ -1,4 +1,13 @@
 export const productSchema = `
+  type ProductTag {
+    id: ID
+    text_rich: [String]
+    local_title: String
+    content: String
+    prompt_tag_text: String
+    footer_text: String
+    header_text: String
+  }
   type Product {
     id: ID
     name: String
@@ -16,6 +25,7 @@ export const productSchema = `
     category_ids: [String]
     categories: [Category]
     categoryData: Category
+    productTag: [ProductTag]
     brandData: Branding
     brand_id: String
     status: BaseStatus

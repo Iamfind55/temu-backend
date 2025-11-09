@@ -90,7 +90,7 @@ export class BrandingService {
       }
 
       // Check if another brand already has the same name
-      if (data.name?.name_en) {
+      if (data.name) {
         // Check if another brand has the same name_en (or another relevant language field)
         const existingBranding = await brandingRepository
           .createQueryBuilder("branding")

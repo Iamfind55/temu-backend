@@ -44,16 +44,6 @@ export class CategoryService {
         image: category.image
           ? `https://227_cdn.pionexprocoin.cc${category.image}`
           : "",
-        name: {
-          name_vi: category?.name?.name_vi || "",
-          name_en: category?.name?.name_en || "",
-          name_ms: category?.name?.name_ms || "",
-          name_th: category?.name?.name_th || "",
-          name_es: category?.name?.name_es || "",
-          name_jp: category?.name?.name_jp || "",
-          name_zh: category?.name?.name_zh || "",
-          name_zh_tw: category?.name?.["name_zh-tw"] || "",
-        },
         parent_id: parentId,
       });
 
@@ -177,13 +167,13 @@ export class CategoryService {
 
       // Check if another category already has the same name
       if (data.name) {
-        // Check if another category has the same name_en (or another relevant language field)
+        // Check if another category has the same (or another relevant language field)
         const existingCategory = await categoryRepository
           .createQueryBuilder("category")
           .where("category.id != :id", { id: data.id })
           .andWhere("category.is_active = :isActive", { isActive: true })
-          .andWhere("category.name->>'name' = :name", {
-            name_en: data.name,
+          .andWhere("category.name = :name", {
+            name: data.name,
           })
           .getOne();
 
@@ -655,7 +645,7 @@ export class CategoryService {
       if (where?.keyword) {
         queryBuilder.andWhere(
           new Brackets((qb) => {
-            qb.where("category.name ->> 'name_en' ILIKE :keyword", {
+            qb.where("category.name ILIKE :keyword", {
               keyword: `%${where.keyword}%`,
             });
           })
@@ -785,6 +775,7 @@ export class CategoryService {
       }
 
       const [categories, total] = await queryBuilder.getManyAndCount();
+      console.log(categories);
 
       if (!selectFields?.includes("subcategories")) {
         return handleSuccessWithTotalData(categories, total);
@@ -806,6 +797,7 @@ export class CategoryService {
           };
         })
       );
+      console.log(categoriesWithSubcategories);
 
       return handleSuccessWithTotalData(
         categoriesWithSubcategories as any,

@@ -118,11 +118,11 @@ export class CustomerService {
 
       // Create and save customere
       const newCustomer = customerRepository.create(data);
-      const otpExpires = addMinutes(new Date(), 1);
+      const otpExpires = addMinutes(new Date(), 5);
       const otp = OtpService.generateOtp();
       newCustomer.otp = otp;
       newCustomer.otpExpire_at = otpExpires;
-      newCustomer.isVerified = true;
+      newCustomer.isVerified = false;
       const savedCustomer = await customerRepository.save(newCustomer);
 
       await ShopService.sendOtpEmail(email, otp, savedCustomer);
@@ -162,8 +162,9 @@ export class CustomerService {
         return handleError(config.message.user_not_found, 404, null);
       }
       const { otp: customerOtp, isVerified, otpExpire_at } = customer;
+      console.log(isVerified);
 
-      if (isVerified == true) {
+      if (isVerified) {
         return handleError("The OTP is expires", 404, null);
       }
       if (customerOtp != otp) {
@@ -273,7 +274,7 @@ export class CustomerService {
         return handleError(config.message.user_not_found, 404, null);
       }
 
-      const otpExpires = addMinutes(new Date(), 1);
+      const otpExpires = addMinutes(new Date(), 5);
       const newOTP = OtpService.generateOtp();
       customer.otp = newOTP;
       customer.otpExpire_at = otpExpires;
@@ -726,7 +727,7 @@ export class CustomerService {
         customer as any
       );
 
-      const otpExpires = addMinutes(new Date(), 1);
+      const otpExpires = addMinutes(new Date(), 5);
       const newOTP = OtpService.generateOtp();
       customer.otp = newOTP;
       customer.otpExpire_at = otpExpires;

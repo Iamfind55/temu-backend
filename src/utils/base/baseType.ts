@@ -36,14 +36,3 @@ export interface TokenData {
   username: string;
   type?: string;
 }
-
-export interface NameTranslateBase {
-  name_en: string;
-  name_es: string;
-  name_ms: string;
-  name_jp: string;
-  name_th: string;
-  name_vi: string;
-  name_zh: string;
-  name_zh_tw: string;
-}

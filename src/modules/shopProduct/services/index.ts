@@ -614,54 +614,15 @@ export class ShopProductService {
       if (where?.keyword) {
         queryBuilder.andWhere(
           new Brackets((qb) => {
-            qb.where("product.name ->> 'name_en' ILIKE :keyword", {
+            qb.where("product.name ILIKE :keyword", {
               keyword: `%${where.keyword}%`,
             })
-              // .orWhere("product.name ->> 'name_es' ILIKE :keyword", {
-              //   keyword: `%${where.keyword}%`,
-              // })
-              // .orWhere("product.name ->> 'name_ms' ILIKE :keyword", {
-              //   keyword: `%${where.keyword}%`,
-              // })
-              // .orWhere("product.name ->> 'name_jp' ILIKE :keyword", {
-              //   keyword: `%${where.keyword}%`,
-              // })
-              // .orWhere("product.name ->> 'name_th' ILIKE :keyword", {
-              //   keyword: `%${where.keyword}%`,
-              // })
-              // .orWhere("product.name ->> 'name_vi' ILIKE :keyword", {
-              //   keyword: `%${where.keyword}%`,
-              // })
-              // .orWhere("product.name ->> 'name_zh' ILIKE :keyword", {
-              //   keyword: `%${where.keyword}%`,
-              // })
-              // .orWhere("product.name ->> 'name_zh_tw' ILIKE :keyword", {
-              //   keyword: `%${where.keyword}%`,
-              // })
-              .orWhere("product.description ->> 'name_en' ILIKE :keyword", {
+              .orWhere("product.name ILIKE :keyword", {
+                keyword: `%${where.keyword}%`,
+              })
+              .orWhere("product.description ILIKE :keyword", {
                 keyword: `%${where.keyword}%`,
               });
-            // .orWhere("product.description ->> 'name_es' ILIKE :keyword", {
-            //   keyword: `%${where.keyword}%`,
-            // })
-            // .orWhere("product.description ->> 'name_ms' ILIKE :keyword", {
-            //   keyword: `%${where.keyword}%`,
-            // })
-            // .orWhere("product.description ->> 'name_jp' ILIKE :keyword", {
-            //   keyword: `%${where.keyword}%`,
-            // })
-            // .orWhere("product.description ->> 'name_th' ILIKE :keyword", {
-            //   keyword: `%${where.keyword}%`,
-            // })
-            // .orWhere("product.description ->> 'name_vi' ILIKE :keyword", {
-            //   keyword: `%${where.keyword}%`,
-            // })
-            // .orWhere("product.description ->> 'name_zh' ILIKE :keyword", {
-            //   keyword: `%${where.keyword}%`,
-            // })
-            // .orWhere("product.description ->> 'name_zh_tw' ILIKE :keyword", {
-            //   keyword: `%${where.keyword}%`,
-            // });
           })
         );
       }

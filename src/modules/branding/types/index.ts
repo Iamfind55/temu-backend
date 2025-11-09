@@ -1,12 +1,11 @@
-import { DateBetween } from "./../../shopProduct/types/index";
 import {
   BaseStatus,
-  BaseType,
-  NameTranslateBase,
+  BaseType
 } from "../../../utils/base/baseType";
+import { DateBetween } from "./../../shopProduct/types/index";
 
 export interface BrandingModel extends BaseType {
-  name: NameTranslateBase;
+  name: string;
   image: string;
   status: BaseStatus;
 }
