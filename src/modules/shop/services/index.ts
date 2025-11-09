@@ -903,6 +903,13 @@ export class ShopService {
         return handleError("Shop not found", 404, null);
       }
 
+      const { otp, isVerified } = shop;
+      if (!isVerified) {
+        return handleError("Please verify your OTP code", 404, null);
+      }
+      if (otp != data.otp) {
+        return handleError("The OTP is invalid", 404, null);
+      }
       // Hash the password
       const newPass = await hashPassword(data?.new_password);
 

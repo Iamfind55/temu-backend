@@ -53,6 +53,9 @@ export class Shop extends BaseEntity {
   @Column({ default: false })
   isOtpEnable?: boolean;
 
+  @Column({ default: false })
+  isVerified?: boolean;
+
   @Column({ nullable: true })
   dob?: Date;
 

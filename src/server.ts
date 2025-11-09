@@ -105,7 +105,7 @@ const startApp = async () => {
   // ProductService.createLoopCategoryAndProduct();
   // ProductService.createBanner()
   // ProductService.createProductWithoutImage();
-  // ProductService.fetchTemuCategoryOptList();
+  ProductService.fetchTemuCategoryOptList();
   // ProductService.uploadCategoryToStorage();
   // ProductService.fetchTemuProduct()
   // fetchProducts()

@@ -162,7 +162,8 @@ export class CustomerService {
         return handleError(config.message.user_not_found, 404, null);
       }
       const { otp: customerOtp, isVerified, otpExpire_at } = customer;
-      if (isVerified) {
+
+      if (isVerified == true) {
         return handleError("The OTP is expires", 404, null);
       }
       if (customerOtp != otp) {
@@ -173,6 +174,7 @@ export class CustomerService {
       }
       customer.status = BaseStatus.ACTIVE;
       customer.isOtpEnable = true;
+      customer.isVerified = true;
       const savedCustomer = await customerRepository.save(customer);
       return handleSuccess({ token: null, data: savedCustomer } as any);
     } catch (error: any) {
@@ -636,7 +638,7 @@ export class CustomerService {
 
       if (customer.status !== BaseStatus.ACTIVE)
         return handleError(
-          "Your shop is not active now. Please contact the admin to check the details.",
+          "Your account is not active now. Please contact the admin to check the details.",
           404,
           null
         );
@@ -754,7 +756,7 @@ export class CustomerService {
     try {
       // const customerDataFromToken =
       //   new AuthMiddlewareService().verifyShopForgotPasswordToken(data.token);
-      if (!data.email || !data.new_password) {
+      if (!data.email || !data.new_password || !data.otp) {
         return handleError(config.message.invalid_token, 404, null);
       }
       const validatePassStrong = validateStrongPassword(data.new_password);
@@ -774,11 +776,21 @@ export class CustomerService {
         return handleError("customer not found", 404, null);
       }
 
+      const { otp, isVerified } = customer;
+
+      if (!isVerified) {
+        return handleError("Please verify your OTP code", 404, null);
+      }
+
+      if (otp != data.otp) {
+        return handleError("The OTP is invalid", 404, null);
+      }
+
       // Hash the password
       const newPass = await hashPassword(data?.new_password);
 
       customerRepository.merge(customer, { password: newPass });
-
+      customer.isVerified = false;
       const updatedShop = await customerRepository.save(customer);
 
       return handleSuccess(updatedShop);

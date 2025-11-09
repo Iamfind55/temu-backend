@@ -1143,16 +1143,24 @@ export class ProductService {
 
       return {
         opt_id: opt.opt_id,
+        list_id: opt.p_rec.list_id,
         opt_name: opt.opt_name,
         child_images: opt.child_opts?.map((child) => child.image_url) || [],
         sub_opt_name: subCategory?.map((sub) => sub.opt_name),
-        sub_list_id: subCategory.map((sub)=>sub.list_id),
-        sub_opt_id: subCategory.map((sub)=>sub.opt_id),
+        sub_list_id: subCategory.map((sub) => sub.list_id),
+        sub_opt_id: subCategory.map((sub) => sub.opt_id),
         sub_child_images1: subCategory?.map((sub) => sub.child_images),
       };
     });
 
-    // const categoryRepository = getRepository(Category);
+    const categoryRepository = getRepository(Category);
+    for (const category of response) {
+      const updateCategory = await categoryRepository.findOne({
+        where: { name: category.opt_name },
+      });
+      console.log(updateCategory);
+    }
+
     // for (const parent of response) {
     //   const parentCategory = categoryRepository.create({
     //     name: parent.opt_name,
