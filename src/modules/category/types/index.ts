@@ -7,7 +7,7 @@ import { DateBetween } from "../../shopProduct";
 export interface CategoryModel extends BaseType {
   name: string;
   image: string;
-  oringImageURL:string
+  oring_image_url:string
   status: BaseStatus;
   attributes?: string[];
 }

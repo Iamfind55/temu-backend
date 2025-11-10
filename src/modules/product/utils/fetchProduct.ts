@@ -15762,6 +15762,8 @@ export const fetchProductByCategory = async () => {
 
     const mappedGoods = goodsList.map((item: any) => ({
       id: item.goods_id,
+      list_id: item.p_rec.list_id,
+      opt_id: item.opt_id,
       name: title,
       title: item.title,
       image: item.image?.url,
@@ -15857,20 +15859,23 @@ export const fetchProductByCategory = async () => {
       }
 
       const productDataToSave: DeepPartial<Product> = {
+        opt_id: productData.opt_id,
+        list_id: productData.list_id,
+        good_id: productData.id,
         name: productData.title,
         price: toNumber(productData.price),
         market_price: toNumber(productData.market_price),
         price_str: productData.price_str,
         show_price: productData.show_price,
         currency: productData.currency,
-        images: productData.image ? [productData.image] : [],
+        origin_image_url: productData.image,
         image_url: productData.image_url,
         discount: toNumber(productData.discount),
         sell_count: productData.sales,
         star_store: productData.mall_tag?.[0]?.text || null,
         brand_id: brand?.id,
         category_id: category?.id,
-        total_star: Math.floor(Number(productData.comment?.goods_score)) || 0,
+        total_star: parseFloat(productData.comment?.goods_score),
         total_comment: Number(productData.comment?.comment_num_tips) || 0,
       };
       const product = productRepository.create(productDataToSave);
@@ -15880,6 +15885,8 @@ export const fetchProductByCategory = async () => {
       const allTags = [
         ...(Array.isArray(productData.goods_tags)
           ? productData.goods_tags
+          : typeof productData.goods_tags === "object"
+          ? Object.values(productData.goods_tags)
           : []),
         ...(Array.isArray(productData.tags_info?.title_header_tags)
           ? productData.tags_info.title_header_tags
@@ -15890,22 +15897,20 @@ export const fetchProductByCategory = async () => {
       ];
 
       for (const tag of allTags) {
-        
+        // console.log(tag.);
+
         let localExplanation: { title?: string; content?: string } = {};
-        if (tag.title_header_tags?.ext_map?.local_explanation) {
+        if (tag?.ext_map?.local_explanation) {
           try {
-            localExplanation = JSON.parse(
-              tag.title_header_tags.ext_map.local_explanation
-            );
+            localExplanation = JSON.parse(tag.ext_map.local_explanation);
           } catch (err) {
             console.warn("Failed to parse local_explanation JSON:", err);
           }
         }
-        console.log(localExplanation);
-        
+
         const productTag = productTagRepository.create({
-          text_rich: tag.mix_benefit_tags?.tag_rich_text?.text
-            ? [tag.mix_benefit_tags.tag_rich_text.text]
+          text_rich: Array.isArray(tag.tag_rich_text?.text_rich)
+            ? tag.tag_rich_text.text_rich.map((rich: any) => rich?.value)
             : [],
           local_title: localExplanation.title || undefined,
           content: localExplanation.content || undefined,
@@ -15916,7 +15921,6 @@ export const fetchProductByCategory = async () => {
         });
 
         const createTag = await productTagRepository.save(productTag);
-        console.log(createTag);
       }
     }
     console.log("Completed");

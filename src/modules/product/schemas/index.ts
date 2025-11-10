@@ -13,8 +13,13 @@ export const productSchema = `
     name: String
     description: String
     images: [String]
+    origin_image_url: String
     cover_image: String
     price: Float
+    market_price:Float
+    price_str: String
+    currency: String
+    show_price: String
     discount: Float
     discount_end: Date
     quantity: Int
@@ -22,6 +27,7 @@ export const productSchema = `
     spu: String
     total_star: Float
     total_comment: Int
+    star_store:String
     category_ids: [String]
     categories: [Category]
     categoryData: Category

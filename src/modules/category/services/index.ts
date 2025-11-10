@@ -337,7 +337,7 @@ export class CategoryService {
   //           id: category.id,
   //           name: category.name,
   //           image: category.image,
-  //           oringImageURL: category.oringImageURL,
+  //           oring_image_url: category.oring_image_url,
   //           status: category.status,
   //           recommended: category.recommended,
   //           parent_id: category.parent_id,

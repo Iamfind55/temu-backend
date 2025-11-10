@@ -16,7 +16,7 @@ export class Category extends BaseEntity {
   image?: string;
 
   @Column({ nullable: true })
-  oringImageURL?: string;
+  oring_image_url?: string;
 
   @Column({ nullable: true })
   origin_id?: string;

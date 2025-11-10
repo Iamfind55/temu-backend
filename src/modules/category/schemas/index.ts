@@ -3,7 +3,7 @@ export const categorySchema = `
     id: ID
     name: String
     image: String
-    oringImageURL:String
+    oring_image_url:String
     status: BaseStatus
     parent_id: String
     parent_data: Category
@@ -17,7 +17,7 @@ export const categorySchema = `
   input CreateCategoryInput {
     name: String
     image: String
-    oringImageURL:String
+    oring_image_url:String
     status: BaseStatus = ACTIVE
     recommended: Boolean
     parent_id: String
@@ -28,7 +28,7 @@ export const categorySchema = `
     id: ID!
     name: String
     image: String
-    oringImageURL:String
+    oring_image_url:String
     status: BaseStatus
     recommended: Boolean
     parent_id: String

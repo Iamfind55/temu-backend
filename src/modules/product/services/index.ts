@@ -405,12 +405,12 @@ export class ProductService {
       console.log(`🔍 Found ${categories.length} categories.`);
 
       for (const category of categories) {
-        if (!category.oringImageURL) {
+        if (!category.oring_image_url) {
           console.log(`⏭️ Skipped category ${category.id}: No origin image`);
           continue;
         }
 
-        const imageUrl = `${category.oringImageURL}?${params}`;
+        const imageUrl = `${category.oring_image_url}?${params}`;
 
         console.log(`⬆️ Uploading category ${category.id}...`);
 
@@ -468,9 +468,9 @@ export class ProductService {
   //     });
 
   //     for (const category of categories) {
-  //       if (!category.oringImageURL) continue; // skip if no image
+  //       if (!category.oring_image_url) continue; // skip if no image
 
-  //       const imageUrl = `${category.oringImageURL}?${params}`;
+  //       const imageUrl = `${category.oring_image_url}?${params}`;
 
   //       console.log(`Uploading category ${category.id}: ${imageUrl}`);
 
@@ -1164,7 +1164,7 @@ export class ProductService {
     // for (const parent of response) {
     //   const parentCategory = categoryRepository.create({
     //     name: parent.opt_name,
-    //     oringImageURL: parent.child_images[0] || "",
+    //     oring_image_url: parent.child_images[0] || "",
     //     parent_id: "5f0933c8-472b-4c20-bf2d-7f965cecad0f",
     //     status: BaseStatus.ACTIVE,
     //   });
@@ -1186,7 +1186,7 @@ export class ProductService {
     //       if (!subCategory) {
     //         subCategory = categoryRepository.create({
     //           name: subName,
-    //           oringImageURL: parent.sub_child_images1[i] || "",
+    //           oring_image_url: parent.sub_child_images1[i] || "",
     //           parent_id: parentCategory.id,
     //           status: BaseStatus.ACTIVE,
     //         });
@@ -23945,20 +23945,39 @@ export class ProductService {
     const queryBuilder = productRepository
       .createQueryBuilder("product")
       .leftJoinAndSelect("product.productTag", "productTag")
+      .leftJoinAndSelect("product.brandData", "brandData")
       .where("product.is_active = :isActive", { isActive: true });
     const selectFields = getRequestedFields(info, "getProducts.data");
     if (selectFields?.length) {
-      const fields = selectFields
-        // .filter((field) => field !== "shopProductStatus")
-        .filter((field) => !["shopProductStatus", "productTag"].includes(field))
-        .map((field) => `product.${field}`);
-      fields.push("product.created_at");
+      // const fields = selectFields
+      //   // .filter((field) => field !== "shopProductStatus")
+      //   .filter((field) => !["shopProductStatus", "productTag"].includes(field))
+      //   .map((field) => `product.${field}`);
+      // fields.push("product.created_at");
+      const fields = Array.from(
+        new Set(
+          selectFields
+            .filter(
+              (field) => !["shopProductStatus", "productTag","brandData"].includes(field)
+            )
+            .map((field) => `product.${field}`)
+            .concat("product.created_at")
+        )
+      );
 
       queryBuilder.select([
         ...fields,
         "productTag.id",
         "productTag.text_rich",
         "productTag.local_title",
+        "productTag.content",
+        "productTag.prompt_tag_text",
+        "productTag.footer_text",
+        "productTag.header_text",
+        "brandData.id",
+        "brandData.name",
+        "brandData.image",
+        "brandData.status"
       ]);
 
       // queryBuilder.select([

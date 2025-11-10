@@ -14,6 +14,9 @@ export class Product extends BaseEntity {
   @Column({ nullable: true })
   list_id?: string;
 
+  @Column({ nullable: true })
+  good_id?: string;
+
   @Column({ nullable: false })
   name!: string;
 
@@ -28,6 +31,12 @@ export class Product extends BaseEntity {
     nullable: true,
   })
   images?: string[];
+
+  @Column({
+    type: "text",
+    nullable: true,
+  })
+  origin_image_url?: string;
 
   @Column({ nullable: true })
   cover_image?: string;
