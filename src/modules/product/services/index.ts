@@ -23923,6 +23923,190 @@ export class ProductService {
     return this.executeQuery(queryBuilder, info);
   }
 
+  // private static buildBaseQuery(
+  //   {
+  //     req,
+  //     where,
+  //     page,
+  //     limit,
+  //     sortedBy,
+  //   }: {
+  //     req: Request;
+  //     where: Partial<ProductWhereInput>;
+  //     page: number;
+  //     limit: number;
+  //     sortedBy: BaseOrderByInput;
+  //   },
+  //   info: GraphQLResolveInfo,
+  //   isAdmin = false
+  // ) {
+  //   const productRepository = getRepository(Product);
+
+  //   const queryBuilder = productRepository
+  //     .createQueryBuilder("product")
+  //     .leftJoinAndSelect("product.productTag", "productTag")
+  //     .leftJoinAndSelect("product.brandData", "brandData")
+  //     .where("product.is_active = :isActive", { isActive: true });
+  //   const selectFields = getRequestedFields(info, "getProducts.data");
+
+  //   if (selectFields?.length) {
+  //     // const fields = selectFields
+  //     //   .filter((field) => field !== "shopProductStatus")
+  //     //   .filter((field) => !["shopProductStatus", "productTag"].includes(field))
+  //     //   .map((field) => `product.${field}`);
+  //     // fields.push("product.created_at");
+  //     const fields = Array.from(
+  //       new Set(
+  //         selectFields
+  //           .filter(
+  //             (field) =>
+  //               !["shopProductStatus", "productTag", "brandData"].includes(
+  //                 field
+  //               )
+  //           )
+  //           .map((field) => `product.${field}`)
+  //           .concat("product.created_at")
+  //       )
+  //     );
+  //     if (!fields.includes("product.created_at"))
+  //       fields.push("product.created_at");
+
+  //     queryBuilder.select([
+  //       ...fields,
+  //       "productTag.id",
+  //       "productTag.text_rich",
+  //       "productTag.local_title",
+  //       "productTag.content",
+  //       "productTag.prompt_tag_text",
+  //       "productTag.footer_text",
+  //       "productTag.header_text",
+  //       "brandData.id",
+  //       "brandData.name",
+  //       "brandData.image",
+  //       "brandData.status",
+  //     ]);
+
+  //     // queryBuilder.select([
+  //     //   ...fields,
+  //     //   "productTag.id",
+  //     //   "productTag.text_rich",
+  //     //   "productTag.local_title",
+  //     // ]);
+  //     // queryBuilder.select(fields);
+  //   }
+
+  //   if (!isAdmin) {
+  //     try {
+  //       const shopDataFromToken = new AuthMiddlewareService().verifyShopToken(
+  //         req
+  //       );
+  //       if (shopDataFromToken?.id) {
+  //         queryBuilder.leftJoinAndSelect(
+  //           "product.shopProducts",
+  //           "shopProduct",
+  //           "shopProduct.shop_id = :shopId",
+  //           { shopId: shopDataFromToken.id }
+  //         );
+  //       }
+  //     } catch (error) {}
+  //   }
+
+  //   if (where?.keyword) {
+  //     queryBuilder.andWhere(
+  //       new Brackets((qb) => {
+  //         qb.where("product.name ILIKE :keyword", {
+  //           keyword: `%${where.keyword}%`,
+  //         }).orWhere("product.description ILIKE :keyword", {
+  //           keyword: `%${where.keyword}%`,
+  //         });
+  //       })
+  //     );
+  //   }
+
+  //   if (where?.status)
+  //     queryBuilder.andWhere("product.status = :status", {
+  //       status: where.status,
+  //     });
+  //   if (where?.category_id)
+  //     queryBuilder.andWhere("product.category_ids::jsonb @> :category_id", {
+  //       category_id: JSON.stringify([where.category_id]),
+  //     });
+
+  //   if (where?.category_ids?.length)
+  //     queryBuilder.andWhere(
+  //       "product.category_ids::jsonb ?| array[:...category_ids]",
+  //       {
+  //         category_ids: where.category_ids,
+  //       }
+  //     );
+
+  //   if (where?.brand_id)
+  //     queryBuilder.andWhere("product.brand_id = :brand_id", {
+  //       brand_id: where.brand_id,
+  //     });
+  //   if (where?.product_top)
+  //     queryBuilder.andWhere("product.product_top = :product_top", {
+  //       product_top: where.product_top,
+  //     });
+  //   if (where?.product_vip || where?.product_vip === 0)
+  //     queryBuilder.andWhere("product.product_vip = :product_vip", {
+  //       product_vip: where.product_vip,
+  //     });
+  //   if (where?.price_between) {
+  //     queryBuilder
+  //       .andWhere("product.price >= :minPrice", {
+  //         minPrice: where.price_between[0],
+  //       })
+  //       .andWhere("product.price <= :maxPrice", {
+  //         maxPrice: where.price_between[1],
+  //       });
+  //   }
+  //   if (where?.quantity !== undefined) {
+  //     queryBuilder.andWhere(
+  //       `product.quantity ${where.quantity > 0 ? ">=" : "<="} :quantity`,
+  //       { quantity: where.quantity > 0 ? 1 : 0 }
+  //     );
+  //   }
+  //   if (
+  //     where?.createdAtBetween?.startDate &&
+  //     where?.createdAtBetween?.endDate
+  //   ) {
+  //     queryBuilder.andWhere(
+  //       "DATE(product.created_at) BETWEEN :startDate AND :endDate",
+  //       {
+  //         startDate: where.createdAtBetween.startDate,
+  //         endDate: where.createdAtBetween.endDate,
+  //       }
+  //     );
+  //   }
+  //   // within 30 day, 15 day, 7 day
+  //   if (where?.within) {
+  //     const days = where.within;
+  //     const fromDate = new Date();
+  //     fromDate.setDate(fromDate.getDate() - days);
+  //     queryBuilder.andWhere("product.created_at >= :fromDate", { fromDate });
+  //   }
+
+  //   // 5 Star rate
+  //   if (where?.star_top) {
+  //     queryBuilder.andWhere("product.total_star >= 4");
+  //     queryBuilder.orderBy("RANDOM()");
+  //   } else if (where?.discount && where?.discount > 0) {
+  //     queryBuilder.andWhere("product.discount >= :discount", {
+  //       discount: where.discount,
+  //     });
+  //     queryBuilder.orderBy("RANDOM()");
+  //   } else if (where?.offer) {
+  //     queryBuilder.andWhere("product.discount >0");
+  //     queryBuilder.orderBy("RANDOM()");
+  //   } else {
+  //     queryBuilder.orderBy(this.order(sortedBy, where?.price_between) as any);
+  //   }
+
+  //   queryBuilder.skip((page - 1) * limit).take(limit);
+  //   return queryBuilder;
+  // }
+
   private static buildBaseQuery(
     {
       req,
@@ -23947,18 +24131,19 @@ export class ProductService {
       .leftJoinAndSelect("product.productTag", "productTag")
       .leftJoinAndSelect("product.brandData", "brandData")
       .where("product.is_active = :isActive", { isActive: true });
+
     const selectFields = getRequestedFields(info, "getProducts.data");
+
+    // Select requested fields + required relations
     if (selectFields?.length) {
-      // const fields = selectFields
-      //   // .filter((field) => field !== "shopProductStatus")
-      //   .filter((field) => !["shopProductStatus", "productTag"].includes(field))
-      //   .map((field) => `product.${field}`);
-      // fields.push("product.created_at");
       const fields = Array.from(
         new Set(
           selectFields
             .filter(
-              (field) => !["shopProductStatus", "productTag","brandData"].includes(field)
+              (field) =>
+                !["shopProductStatus", "productTag", "brandData"].includes(
+                  field
+                )
             )
             .map((field) => `product.${field}`)
             .concat("product.created_at")
@@ -23977,18 +24162,11 @@ export class ProductService {
         "brandData.id",
         "brandData.name",
         "brandData.image",
-        "brandData.status"
+        "brandData.status",
       ]);
-
-      // queryBuilder.select([
-      //   ...fields,
-      //   "productTag.id",
-      //   "productTag.text_rich",
-      //   "productTag.local_title",
-      // ]);
-      // queryBuilder.select(fields);
     }
 
+    // Shop-specific filter
     if (!isAdmin) {
       try {
         const shopDataFromToken = new AuthMiddlewareService().verifyShopToken(
@@ -24005,6 +24183,7 @@ export class ProductService {
       } catch (error) {}
     }
 
+    // Keyword search
     if (where?.keyword) {
       queryBuilder.andWhere(
         new Brackets((qb) => {
@@ -24017,23 +24196,20 @@ export class ProductService {
       );
     }
 
+    // Filters
     if (where?.status)
       queryBuilder.andWhere("product.status = :status", {
         status: where.status,
       });
     if (where?.category_id)
-      queryBuilder.andWhere("product.category_ids::jsonb @> :category_id", {
-        category_id: JSON.stringify([where.category_id]),
+      queryBuilder.andWhere("product.category_id = :category_id", {
+        category_id: where.category_id,
       });
-
-    if (where?.category_ids?.length)
-      queryBuilder.andWhere(
-        "product.category_ids::jsonb ?| array[:...category_ids]",
-        {
-          category_ids: where.category_ids,
-        }
-      );
-
+    if (where?.category_ids?.length) {
+      queryBuilder.andWhere("product.category_id IN (:...category_ids)", {
+        category_ids: where.category_ids,
+      });
+    }
     if (where?.brand_id)
       queryBuilder.andWhere("product.brand_id = :brand_id", {
         brand_id: where.brand_id,
@@ -24073,7 +24249,6 @@ export class ProductService {
         }
       );
     }
-    // within 30 day, 15 day, 7 day
     if (where?.within) {
       const days = where.within;
       const fromDate = new Date();
@@ -24081,23 +24256,23 @@ export class ProductService {
       queryBuilder.andWhere("product.created_at >= :fromDate", { fromDate });
     }
 
-    // 5 Star rate
-    if (where?.star_top) {
+    // Randomized queries for offers or top-rated
+    if (
+      where?.star_top ||
+      (where?.discount && where?.discount > 0) ||
+      where?.offer
+    ) {
+      queryBuilder.addSelect("RANDOM()", "rand_order");
+      queryBuilder.orderBy("rand_order");
+    } else if (where?.star_top) {
       queryBuilder.andWhere("product.total_star >= 4");
-      queryBuilder.orderBy("RANDOM()");
-    } else if (where?.discount && where?.discount > 0) {
-      queryBuilder.andWhere("product.discount >= :discount", {
-        discount: where.discount,
-      });
-      queryBuilder.orderBy("RANDOM()");
-    } else if (where?.offer) {
-      queryBuilder.andWhere("product.discount >0");
       queryBuilder.orderBy("RANDOM()");
     } else {
       queryBuilder.orderBy(this.order(sortedBy, where?.price_between) as any);
     }
 
     queryBuilder.skip((page - 1) * limit).take(limit);
+
     return queryBuilder;
   }
 

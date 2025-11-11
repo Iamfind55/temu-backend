@@ -11,6 +11,7 @@ import { Brackets, getRepository, Like } from "typeorm";
 import { ProductComment } from "../entity";
 import { BaseOrderByInput, BaseStatus } from "../../../utils/base/baseType";
 import { AuthMiddlewareService } from "../../../middlewares/auth.middleware";
+import { Customer } from "../../customer";
 
 export class ProductCommentService {
   static async createProductComment({
@@ -131,6 +132,66 @@ export class ProductCommentService {
     }
   }
 
+  // static async getProductComments({
+  //   where,
+  //   page,
+  //   limit,
+  //   sortedBy,
+  // }: {
+  //   where: Partial<ProductCommentWhereInput>;
+  //   page: number;
+  //   limit: number;
+  //   sortedBy: BaseOrderByInput;
+  // }): Promise<Response<ProductComment[] | null>> {
+  //   const productCommentgRepository = getRepository(ProductComment);
+
+  //   try {
+  //     const order = this.order(sortedBy);
+
+  //     const queryBuilder = productCommentgRepository
+  //       .createQueryBuilder("productComment")
+  //       .where({ is_active: true });
+
+  //     if (where?.comment) {
+  //       queryBuilder.andWhere(
+  //         new Brackets((qb) => {
+  //           qb.where("productComment.comment ILIKE :comment", {
+  //             comment: `%${where.comment}%`,
+  //           });
+  //         })
+  //       );
+  //     }
+
+  //     if (
+  //       where?.createdAtBetween?.startDate &&
+  //       where?.createdAtBetween?.endDate
+  //     ) {
+  //       queryBuilder.andWhere(
+  //         "DATE(productComment.created_at) BETWEEN :startDate AND :endDate",
+  //         {
+  //           startDate: where.createdAtBetween.startDate,
+  //           endDate: where?.createdAtBetween?.endDate,
+  //         }
+  //       );
+  //     }
+
+  //     // Pagination and sorting
+  //     queryBuilder
+  //       .skip((page - 1) * limit)
+  //       .take(limit)
+  //       .orderBy(order as any);
+
+  //     const [productComments, total] = await queryBuilder.getManyAndCount();
+
+  //     return handleSuccessWithTotalData(productComments, total);
+  //   } catch (error: any) {
+  //     return handleError(
+  //       config.message.internal_server_error,
+  //       500,
+  //       error.message
+  //     );
+  //   }
+  // }
   static async getProductComments({
     where,
     page,
@@ -142,34 +203,33 @@ export class ProductCommentService {
     limit: number;
     sortedBy: BaseOrderByInput;
   }): Promise<Response<ProductComment[] | null>> {
-    const productCommentgRepository = getRepository(ProductComment);
+    const productCommentRepository = getRepository(ProductComment);
+    const customerRepository = getRepository(Customer);
 
     try {
       const order = this.order(sortedBy);
 
-      const queryBuilder = productCommentgRepository
-        .createQueryBuilder("productComment")
-        .where({ is_active: true });
+      const queryBuilder = productCommentRepository
+        .createQueryBuilder("pc")
+        .where("pc.status = :active", { active: BaseStatus.ACTIVE });
 
+      // Filter by comment text
       if (where?.comment) {
-        queryBuilder.andWhere(
-          new Brackets((qb) => {
-            qb.where("productComment.comment ILIKE :comment", {
-              comment: `%${where.comment}%`,
-            });
-          })
-        );
+        queryBuilder.andWhere("pc.comment ILIKE :comment", {
+          comment: `%${where.comment}%`,
+        });
       }
 
+      // Filter by date range
       if (
         where?.createdAtBetween?.startDate &&
         where?.createdAtBetween?.endDate
       ) {
         queryBuilder.andWhere(
-          "DATE(productComment.created_at) BETWEEN :startDate AND :endDate",
+          "DATE(pc.created_at) BETWEEN :startDate AND :endDate",
           {
             startDate: where.createdAtBetween.startDate,
-            endDate: where?.createdAtBetween?.endDate,
+            endDate: where.createdAtBetween.endDate,
           }
         );
       }
@@ -180,9 +240,22 @@ export class ProductCommentService {
         .take(limit)
         .orderBy(order as any);
 
-      const [productComments, total] = await queryBuilder.getManyAndCount();
+      // Execute query
+      const [comments, total] = await queryBuilder.getManyAndCount();
 
-      return handleSuccessWithTotalData(productComments, total);
+      // Manual join: fetch customers by customer_id
+      const customerIds = comments.map((c) => c.customer_id);
+      const customers = await customerRepository.findByIds(customerIds);
+
+      // Attach customer data to each comment
+      const commentsWithCustomer = comments.map((comment) => ({
+        ...comment,
+        customer: customers.find((c) => c.id === comment.customer_id),
+      }));
+      console.log(commentsWithCustomer);
+      
+
+      return handleSuccessWithTotalData(commentsWithCustomer, total);
     } catch (error: any) {
       return handleError(
         config.message.internal_server_error,

@@ -28,6 +28,7 @@ import {
   fetchProductByCategory,
   fetchProducts,
 } from "./modules/product/utils/fetchProduct";
+import { productReview } from "./utils/fetchProduct";
 
 const { WebSocketServer } = require("ws");
 
@@ -49,7 +50,6 @@ const startApp = async () => {
   app.get("/graphql/check-healthy", (req: Request, res: Response) => {
     res.send(`server is running on ${node}`);
   });
- 
 
   const schema = makeExecutableSchema({
     typeDefs,
@@ -114,7 +114,8 @@ const startApp = async () => {
   // ProductService.fetchTemuProduct()
   // fetchProducts()
   // fetchProductByCategory();
-  
+  // productReview();
+
   const clearAllData = async () => {
     const productRepository = getRepository(Product);
     const categoryRepository = getRepository(Category);

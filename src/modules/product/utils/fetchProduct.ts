@@ -15812,6 +15812,7 @@ export const fetchProductByCategory = async () => {
       let category = await categoryRepository.findOne({
         where: { name: productData.name },
       });
+      console.log(category);
 
       let brand: Branding | null = null;
       let brandName: string | null = null;
@@ -15921,6 +15922,7 @@ export const fetchProductByCategory = async () => {
         });
 
         const createTag = await productTagRepository.save(productTag);
+        console.log(createTag);
       }
     }
     console.log("Completed");
