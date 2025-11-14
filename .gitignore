@@ -23,3 +23,18 @@ bun.lockb
 package-lock.json
 yarn.lock
 pnpm-lock
+
+# Temu authentication cookies
+temu-cookies.json
+*-cookies.json
+
+# Scraping output files
+ssr-raw-data.json
+product-info.json
+complete-data.json
+store-goods.json
+activityInfo.json
+categories.json
+rawData.json
+api-*.json
+debug-*.json

@@ -14,7 +14,7 @@ import { Category } from "./modules/category";
 import { Notification } from "./modules/notification";
 import { Order } from "./modules/order";
 import { OrderDetail } from "./modules/orderDetail";
-import { Product, ProductService } from "./modules/product";
+import { Product } from "./modules/product";
 import { Shop } from "./modules/shop";
 import { ShopAddress } from "./modules/shopAddress";
 import { ShopProduct } from "./modules/shopProduct";
@@ -23,12 +23,8 @@ import { TransactionHistory } from "./modules/transactionHistory";
 import { Wallet } from "./modules/wallet";
 import { typeDefs } from "./schema";
 import { connectDB } from "./utils/db";
+import { getTemuProductData } from "./utils/fetchProduct";
 import pubsub from "./utils/pubsub";
-import {
-  fetchProductByCategory,
-  fetchProducts,
-} from "./modules/product/utils/fetchProduct";
-import { productReview } from "./utils/fetchProduct";
 
 const { WebSocketServer } = require("ws");
 
@@ -115,7 +111,7 @@ const startApp = async () => {
   // fetchProducts()
   // fetchProductByCategory();
   // productReview();
-
+  // getTemuProductData();
   const clearAllData = async () => {
     const productRepository = getRepository(Product);
     const categoryRepository = getRepository(Category);

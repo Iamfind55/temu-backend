@@ -240,125 +240,8 @@ export class CategoryService {
     }
   }
 
-  // static async getCategories(
-  //   {
-  //     where,
-  //     page,
-  //     limit,
-  //     sortedBy,
-  //   }: {
-  //     where: Partial<CategoryWhereInput>;
-  //     page: number;
-  //     limit: number;
-  //     sortedBy: BaseOrderByInput;
-  //   },
-  //   info: GraphQLResolveInfo
-  // ): Promise<Response<Category[] | null>> {
-  //   const categoryRepository = getRepository(Category);
-
-  //   try {
-  //     const order = this.order(sortedBy);
-
-  //     const queryBuilder = categoryRepository
-  //       .createQueryBuilder("category")
-  //       .where({ is_active: true });
-
-  //     // Apply field selection
-  //     // Extract requested fields dynamically
-  //     const selectFields = getRequestedFields(info, "getCategories.data");
-  //     if (selectFields?.length) {
-  //       const fields = selectFields
-  //         .filter((field) => field !== "subcategories")
-  //         .filter((field) => field !== "parent_data")
-  //         .map((field) => `category.${field}`);
-  //       queryBuilder.select(fields);
-  //     }
-
-  //     if (where?.keyword) {
-  //       queryBuilder.andWhere(
-  //         new Brackets((qb) => {
-  //           qb.where("category.name ILIKE :keyword", {
-  //             keyword: `%${where.keyword}%`,
-  //           });
-  //         })
-  //       );
-  //     }
-
-  //     if (where?.parent_id) {
-  //       queryBuilder.andWhere("category.parent_id = :parent_id", {
-  //         parent_id: where.parent_id,
-  //       });
-  //     } else {
-  //       queryBuilder.andWhere("category.parent_id IS NULL");
-  //     }
-
-  //     if (where?.status) {
-  //       queryBuilder.andWhere("category.status = :status", {
-  //         status: where.status,
-  //       });
-  //     }
-
-  //     if (
-  //       where?.createdAtBetween?.startDate &&
-  //       where?.createdAtBetween?.endDate
-  //     ) {
-  //       queryBuilder.andWhere(
-  //         "DATE(category.created_at) BETWEEN :startDate AND :endDate",
-  //         {
-  //           startDate: where.createdAtBetween.startDate,
-  //           endDate: where?.createdAtBetween?.endDate,
-  //         }
-  //       );
-  //     }
-
-  //     // Pagination and sorting
-  //     queryBuilder
-  //       .skip((page - 1) * limit)
-  //       .take(limit)
-  //       .orderBy(order as any);
-
-  //     if (selectFields?.length <= 0) {
-  //       const _total = await queryBuilder.getCount();
-  //       return handleSuccessWithTotalData([], _total);
-  //     }
-
-  //     const [categories, total] = await queryBuilder.getManyAndCount();
-
-  //     if (!selectFields?.includes("subcategories")) {
-  //       return handleSuccessWithTotalData(categories, total);
-  //     }
-
-  //     // Fetch subcategories for each category
-  //     const categoriesWithSubcategories = await Promise.all(
-  //       categories.map(async (category) => {
-  //         const subcategories = await this.getCategoryHierarchy(category.id);
-
-  //         return {
-  //           id: category.id,
-  //           name: category.name,
-  //           image: category.image,
-  //           oring_image_url: category.oring_image_url,
-  //           status: category.status,
-  //           recommended: category.recommended,
-  //           parent_id: category.parent_id,
-  //           subcategories, // Nested subcategories
-  //         };
-  //       })
-  //     );
-
-  //     return handleSuccessWithTotalData(
-  //       categoriesWithSubcategories as any,
-  //       total
-  //     );
-  //   } catch (error: any) {
-  //     return handleError(
-  //       config.message.internal_server_error,
-  //       500,
-  //       error.message
-  //     );
-  //   }
-  // }
-
+  
+  
   // static async getCategories(
   //   {
   //     where,
@@ -382,7 +265,7 @@ export class CategoryService {
   //       .createQueryBuilder("category")
   //       .where("category.is_active = true");
 
-  //     // --- Handle field selection ---
+  //     // --- Field selection ---
   //     const selectFields = getRequestedFields(info, "getCategories.data");
   //     if (selectFields?.length) {
   //       const fields = selectFields
@@ -391,7 +274,7 @@ export class CategoryService {
   //       queryBuilder.select(fields);
   //     }
 
-  //     // --- Filters ---
+  //     // --- Filtering ---
   //     if (where?.keyword) {
   //       queryBuilder.andWhere("category.name ILIKE :keyword", {
   //         keyword: `%${where.keyword}%`,
@@ -425,45 +308,62 @@ export class CategoryService {
   //       );
   //     }
 
-  //     // --- Pagination & sorting ---
+  //     // --- Pagination & Sorting ---
   //     queryBuilder
   //       .skip((page - 1) * limit)
   //       .take(limit)
   //       .orderBy(order as any);
 
-  //     if (selectFields?.length <= 0) {
-  //       const _total = await queryBuilder.getCount();
-  //       return handleSuccessWithTotalData([], _total);
-  //     }
-
   //     const [categories, total] = await queryBuilder.getManyAndCount();
 
-  //     // --- If no subcategories requested, return now ---
-  //     if (!selectFields.includes("subcategories")) {
+  //     if (!selectFields?.includes("subcategories")) {
   //       return handleSuccessWithTotalData(categories, total);
   //     }
 
-  //     // --- Fetch all subcategories in one go ---
+  //     // ----------------------------
+  //     //   Fetch up to 3 levels deep
+  //     // ----------------------------
   //     const parentIds = categories.map((c) => c.id);
-  //     const subcategories = await categoryRepository.find({
-  //       where: {
-  //         parent_id: In(parentIds),
-  //         is_active: true,
-  //       },
+
+  //     // Level 1
+  //     const level1 = await categoryRepository.find({
+  //       where: { parent_id: In(parentIds), is_active: true },
   //     });
 
-  //     // --- Group subcategories by parent_id ---
-  //     const grouped = subcategories.reduce((acc, sub) => {
-  //       if (!acc[sub.parent_id]) acc[sub.parent_id] = [];
-  //       acc[sub.parent_id].push(sub);
+  //     // Level 2
+  //     const level1Ids = level1.map((c) => c.id);
+  //     const level2 = level1Ids.length
+  //       ? await categoryRepository.find({
+  //           where: { parent_id: In(level1Ids), is_active: true },
+  //         })
+  //       : [];
+
+  //     // Level 3
+  //     const level2Ids = level2.map((c) => c.id);
+  //     const level3 = level2Ids.length
+  //       ? await categoryRepository.find({
+  //           where: { parent_id: In(level2Ids), is_active: true },
+  //         })
+  //       : [];
+
+  //     // --- Group all by parent_id ---
+  //     const grouped = [...level1, ...level2, ...level3].reduce((acc, c) => {
+  //       if (!acc[c.parent_id]) acc[c.parent_id] = [];
+  //       acc[c.parent_id].push(c);
   //       return acc;
   //     }, {} as Record<string, Category[]>);
 
-  //     // --- Attach subcategories to parents ---
-  //     const result = categories.map((cat) => ({
-  //       ...cat,
-  //       subcategories: grouped[cat.id] || [],
-  //     }));
+  //     // --- Recursive builder (limited to 3 levels) ---
+  //     const buildHierarchy = (category: Category, level = 1): any => {
+  //       if (level > 3) return category;
+  //       const subs = grouped[category.id] || [];
+  //       return {
+  //         ...category,
+  //         subcategories: subs.map((sub) => buildHierarchy(sub, level + 1)),
+  //       };
+  //     };
+
+  //     const result = categories.map((cat) => buildHierarchy(cat));
 
   //     return handleSuccessWithTotalData(result, total);
   //   } catch (error: any) {
@@ -586,12 +486,38 @@ export class CategoryService {
         return acc;
       }, {} as Record<string, Category[]>);
 
-      // --- Recursive builder (limited to 3 levels) ---
+      // -----------------------------------
+      // Fetch parent_data for all categories
+      // -----------------------------------
+      const allCategoryIds = [
+        ...parentIds,
+        ...level1.map((c) => c.id),
+        ...level2.map((c) => c.id),
+        ...level3.map((c) => c.id),
+      ];
+
+      const allCategoriesMap = new Map(
+        (
+          await categoryRepository.find({
+            where: { id: In(allCategoryIds) },
+            select: ["id", "name", "parent_id"],
+          })
+        ).map((c) => [c.id, c])
+      );
+
+      // --- Recursive builder including parent_data ---
       const buildHierarchy = (category: Category, level = 1): any => {
         if (level > 3) return category;
+
+        const parent = category.parent_id
+          ? allCategoriesMap.get(category.parent_id)
+          : null;
+
         const subs = grouped[category.id] || [];
+
         return {
           ...category,
+          parent_data: parent ? { id: parent.id, name: parent.name } : null,
           subcategories: subs.map((sub) => buildHierarchy(sub, level + 1)),
         };
       };

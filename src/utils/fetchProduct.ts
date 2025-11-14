@@ -1,7 +1,8 @@
+import puppeteer from "puppeteer";
 import { getRepository } from "typeorm";
-import { ProductComment } from "../modules/productComment";
 import { Customer } from "../modules/customer";
 import { Product } from "../modules/product";
+import { ProductComment } from "../modules/productComment";
 
 // export async function fetchAllImages() {
 //   const url =
@@ -1012,8 +1013,6 @@ export async function productReview() {
           customer_id: customer.id,
           product_id: product.id,
         });
-        console.log(comment);
-        
 
         await productCommentRepository.save(comment);
       }
@@ -1025,5 +1024,317 @@ export async function productReview() {
         err
       );
     }
+  }
+}
+
+/**
+ * Extract structured product data from Temu SSR JSON
+ * @param rawData - Raw data from window.rawData (contains store key)
+ * @returns Structured product information with all available data
+ */
+export function extractProductInfo(rawData: any) {
+  try {
+    const store = rawData?.store || rawData;
+    const goods = store?.goods || {};
+
+    // Extract complete product data structure
+    return {
+      // Basic product info
+      goodsId: goods.goodsId || goods.goods_id || null,
+      title: goods.goodsName || goods.title || null,
+
+      // Pricing
+      price: {
+        original: goods.retailPrice || goods.originalPrice || 0,
+        sale: goods.minOnSalePrice || goods.salePrice || 0,
+        currency: goods.currency || "USD",
+        priceInfo: goods.priceInfo || null,
+      },
+
+      // Images
+      images:
+        goods.topGallery?.map((img: any) => img.url || img) ||
+        goods.imageList ||
+        [],
+
+      // Product details
+      description: goods.description || goods.goodsDesc || null,
+      specifications: goods.productSpec || goods.specs || {},
+
+      // Reviews
+      reviews: {
+        rating: goods.averageRating || goods.rating || 0,
+        count: goods.reviewNum || goods.reviewCount || 0,
+        reviewData: store?.review || null,
+      },
+
+      // Inventory & availability
+      inventory: goods.quantity || goods.stock || 0,
+      available: goods.available !== false,
+
+      // Categories & classification
+      category: goods.categoryId || goods.catId || null,
+      categoryPath: goods.categoryPath || null,
+      brand: goods.brandName || goods.brand || null,
+
+      // Shipping & benefits (from activityInfoData in network response)
+      shipping: {
+        freeShipping: goods.freeShipping || false,
+        deliveryGuarantee: goods.deliveryGuarantee || false,
+        estimatedDelivery: goods.estimatedDelivery || null,
+      },
+
+      // SKU variations
+      skus: goods.skus || goods.skuList || [],
+
+      // Additional data
+      metadata: {
+        mallCode: goods.mallCode || null,
+        sellerId: goods.sellerId || null,
+        createTime: goods.createTime || null,
+        updateTime: goods.updateTime || null,
+      },
+
+      // Full store data (includes all other info like categories, reviews, etc.)
+      _fullStore: store,
+    };
+  } catch (err) {
+    console.error("Error extracting product info:", err);
+    return null;
+  }
+}
+
+/**
+ * Extract complete SSR data structure with all available information
+ * @param rawData - Raw data from window.rawData
+ * @returns Complete structured data
+ */
+export function extractCompleteData(rawData: any) {
+  try {
+    const store = rawData?.store || {};
+
+    return {
+      // Product information
+      product: extractProductInfo(rawData),
+
+      // Reviews
+      reviews: {
+        list: store?.review?.list || [],
+        summary: store?.review?.summary || null,
+        stats: store?.review?.stats || null,
+      },
+
+      // Categories
+      categories: store?.categories || store?.categoryTree || null,
+
+      // Recommendations
+      recommendations: store?.recommendations || store?.relatedGoods || [],
+
+      // Store/Seller info
+      seller: {
+        id: store?.seller?.id || null,
+        name: store?.seller?.name || null,
+        rating: store?.seller?.rating || 0,
+        info: store?.seller || null,
+      },
+
+      // Promotions & benefits
+      promotions: store?.promotions || store?.activities || [],
+
+      // Activity info (shipping, returns, etc.)
+      activityInfo: store?.activityInfo || null,
+
+      // Page metadata
+      metadata: {
+        pageType: store?.pageType || null,
+        locale: store?.locale || null,
+        region: store?.region || null,
+      },
+
+      // Raw data (for debugging or accessing other fields)
+      _raw: rawData,
+    };
+  } catch (err) {
+    console.error("Error extracting complete data:", err);
+    return null;
+  }
+}
+
+
+export async function getTemuProductData(productUrl?: string, cookies?: any[]) {
+  const url =
+    productUrl ||
+    "https://www.temu.com/new--max--version-with-2-batteries-screen-control-electrically-adjustable-dual-cameras-360-obstacle-avoidance-function-brushless-motor-foldable-arm-suitable-for--with-remote-control-and-8gb-storage-card-g-601102382176633.html?_oak_name_id=3157938455344744797&_oak_mp_inf=EPmy2u%2Bw1ogBGiAyZjJiODQwYzdhZTc0MjA4YjY2NjAwYjU3MjcyYTAwYyCXv9%2BbpzM%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fa5cc7666-b29b-41ce-8bf7-a81ce0f104f3.jpg&spec_gallery_id=206100150942";
+
+  let browser = null;
+
+  try {
+    // Launch puppeteer browser with Chrome-like configuration
+    browser = await puppeteer.launch({
+      headless: true,
+      args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",
+        "--disable-accelerated-2d-canvas",
+        "--disable-gpu",
+        "--window-size=1920x1080",
+        "--disable-blink-features=AutomationControlled", // Hide automation
+        '--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
+      ],
+    });
+
+    const page = await browser.newPage();
+
+    // Override navigator properties to avoid bot detection
+    await page.evaluateOnNewDocument(() => {
+      // Override navigator.webdriver
+      Object.defineProperty(navigator, 'webdriver', {
+        get: () => undefined,
+      });
+
+      // Override navigator.plugins
+      Object.defineProperty(navigator, 'plugins', {
+        get: () => [1, 2, 3, 4, 5],
+      });
+
+      // Override navigator.languages
+      Object.defineProperty(navigator, 'languages', {
+        get: () => ['en-US', 'en'],
+      });
+
+      // Override chrome property
+      (window as any).chrome = {
+        runtime: {},
+      };
+
+      // Override permissions
+      const originalQuery = window.navigator.permissions.query;
+      window.navigator.permissions.query = (parameters: any) =>
+        parameters.name === 'notifications'
+          ? Promise.resolve({ state: Notification.permission } as PermissionStatus)
+          : originalQuery(parameters);
+    });
+
+    // Set realistic viewport and user agent
+    await page.setViewport({ width: 1920, height: 1080 });
+    await page.setUserAgent(
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+    );
+
+    // Set extra headers to match real Chrome browser
+    await page.setExtraHTTPHeaders({
+      "Accept-Language": "en-US,en;q=0.9",
+      Accept:
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Upgrade-Insecure-Requests": "1",
+      "Sec-Fetch-Dest": "document",
+      "Sec-Fetch-Mode": "navigate",
+      "Sec-Fetch-Site": "same-origin",
+      "Sec-Fetch-User": "?1",
+      "Cache-Control": "max-age=0",
+      Referer: "https://www.temu.com/?is_back=1",
+    });
+
+    // Load authentication cookies if provided
+    if (cookies && cookies.length > 0) {
+      await page.setCookie(...cookies);
+    } else {
+      // Set default cookies to simulate a real session
+      await page.setCookie(
+        {
+          name: "region",
+          value: "211",
+          domain: ".temu.com",
+        },
+        {
+          name: "language",
+          value: "en",
+          domain: ".temu.com",
+        },
+        {
+          name: "currency",
+          value: "USD",
+          domain: ".temu.com",
+        }
+      );
+    }
+
+    // Navigate to the page and wait for network to be idle
+    await page.goto(url, {
+      waitUntil: "networkidle2",
+      timeout: 60000,
+    });
+
+    // Wait for JavaScript to execute
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+
+    // Check current URL to ensure we're not redirected to login
+    const currentUrl = page.url();
+    if (currentUrl.includes("/login.html")) {
+      await browser.close();
+      throw new Error(
+        "Page redirected to login. Try accessing the product page directly or check if authentication is required."
+      );
+    }
+
+    // Extract window.rawData from the page
+    const windowData = await page.evaluate(() => {
+      // @ts-ignore
+      return typeof window.rawData !== "undefined" ? window.rawData : null;
+    });
+
+    if (windowData && windowData.store) {
+      const isProductPage =
+        windowData.store?.goods ||
+        windowData.store?.webLayoutData?.activityInfoData;
+
+      if (!isProductPage) {
+        await browser.close();
+        throw new Error(
+          "Not a product page. Extracted data does not contain product information."
+        );
+      }
+
+      await browser.close();
+
+      // Extract activityInfo from the correct location
+      const activityInfo =
+        windowData.store?.activityInfo ||
+        windowData.store?.webLayoutData?.activityInfoData ||
+        null;
+      const headersData = windowData.store?.webLayoutData?.headerData;
+      const cartScene = windowData.store?.webLayoutData?.CartScene;
+      const reviewStore = windowData?.store?.reviewStore;
+      const deliveryTag = windowData?.store?.deliveryTag;
+
+      // Return the complete data structure including activityInfo with benefits
+      return {
+        success: true,
+        source: "window.rawData",
+        data: windowData,
+        cartScene: cartScene,
+        headersData: headersData,
+        reviewStore: reviewStore,
+        deliveryTag: deliveryTag,
+        // Quick access to commonly used data
+        product: windowData.store?.goods || null,
+        reviews: windowData.store?.review || null,
+        categories: windowData.store?.categories || null,
+        activityInfo: activityInfo,
+      };
+    }
+
+    // Fallback: Try to parse HTML with cheerio if window.rawData not found
+    await browser.close();
+    return null;
+  } catch (err: any) {
+    if (browser) {
+      await browser.close();
+    }
+    throw new Error(
+      `Failed to fetch Temu product data: ${err?.message || "Unknown error"}`
+    );
   }
 }

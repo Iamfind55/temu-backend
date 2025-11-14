@@ -587,6 +587,7 @@ export class ShopProductService {
 
       // Add LEFT JOIN with Product
       queryBuilder.leftJoinAndSelect("shopProduct.productData", "product");
+      queryBuilder.leftJoinAndSelect("product.productTag", "productTag");
 
       // Select specific fields for both shopProduct and product
       queryBuilder.select([
@@ -608,6 +609,15 @@ export class ShopProductService {
         "product.total_star",
         "product.product_vip",
         "product.product_top",
+        "productTag.id",
+        "productTag.text_rich",
+        "productTag.local_title",
+        "productTag.text_rich",
+        "productTag.local_title",
+        "productTag.content",
+        "productTag.prompt_tag_text",
+        "productTag.footer_text",
+        "productTag.header_text",
       ]);
 
       // Add keyword filter
@@ -696,11 +706,10 @@ export class ShopProductService {
     const shopProductRepository = getRepository(ShopProduct);
 
     try {
-      const queryBuilder =
-        shopProductRepository.createQueryBuilder("shopProduct");
-
-      // Add LEFT JOIN with Product
-      queryBuilder.leftJoinAndSelect("shopProduct.productData", "product");
+      const queryBuilder = shopProductRepository
+        .createQueryBuilder("shopProduct")
+        .leftJoinAndSelect("shopProduct.productData", "product")
+        .leftJoinAndSelect("product.productTag", "productTag")
 
       queryBuilder.andWhere("shopProduct.id = :shopProductId", {
         shopProductId: id,
@@ -736,6 +745,8 @@ export class ShopProductService {
 
       return handleSuccess(shopProduct);
     } catch (error: any) {
+      console.log(error);
+
       return handleError(
         config.message.internal_server_error,
         500,

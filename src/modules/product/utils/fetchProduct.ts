@@ -15770,7 +15770,7 @@ export const fetchProductByCategory = async () => {
       image_url: item.video?.url,
       price: item.price_info?.price_schema,
       show_price: item.p_rec?.show_price,
-      market_price: item.p_rec?.market_price,
+      market_price: item.price_info?.market_price,
       currency: item.price_info?.currency,
       price_str: item.price_info?.price_str,
       discount: item.price_info?.reduction_text?.join("") || "",
@@ -15865,7 +15865,7 @@ export const fetchProductByCategory = async () => {
         good_id: productData.id,
         name: productData.title,
         price: toNumber(productData.price),
-        market_price: toNumber(productData.market_price),
+        market_price: productData.market_price,
         price_str: productData.price_str,
         show_price: productData.show_price,
         currency: productData.currency,
@@ -15879,6 +15879,7 @@ export const fetchProductByCategory = async () => {
         total_star: parseFloat(productData.comment?.goods_score),
         total_comment: Number(productData.comment?.comment_num_tips) || 0,
       };
+
       const product = productRepository.create(productDataToSave);
       const saved = await productRepository.save(product);
 
