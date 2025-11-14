@@ -819,7 +819,34 @@ export class CategoryService {
         return handleError("Category not found", 404, null);
       }
 
-      // --------- Fetch 3 Levels Deep ---------
+      // ---------------------------------------------------
+      //                BUILD PARENT CHAIN
+      // ---------------------------------------------------
+      const buildParentChain = async (
+        parentId: string | null
+      ): Promise<any> => {
+        if (!parentId) return null;
+
+        const parent = await categoryRepository.findOne({
+          where: { id: parentId, is_active: true },
+          select: ["id", "name", "parent_id"],
+        });
+
+        if (!parent) return null;
+
+        return {
+          id: parent.id,
+          name: parent.name,
+          parent_data: await buildParentChain(parent.parent_id),
+        };
+      };
+
+      const parent_data = await buildParentChain(category.parent_id);
+
+      // ---------------------------------------------------
+      //                FETCH SUBCATEGORIES (3 levels)
+      // ---------------------------------------------------
+
       const level1 = await categoryRepository.find({
         where: { parent_id: category.id, is_active: true },
       });
@@ -842,52 +869,33 @@ export class CategoryService {
             })
           : [];
 
-      // ---------- Map All Categories for parent_data ----------
-      const allIds = [
-        category.id,
-        ...level1Ids,
-        ...level2Ids,
-        ...level3.map((c) => c.id),
-      ];
-
-      const allCategories = await categoryRepository.find({
-        where: { id: In(allIds) },
-        select: ["id", "name", "parent_id"],
-      });
-
-      const categoryMap = new Map(allCategories.map((c) => [c.id, c]));
-
-      // ---------- Group children under parent ----------
+      // ---------- Group subcategories ----------
       const grouped = [...level1, ...level2, ...level3].reduce((acc, c) => {
         if (!acc[c.parent_id]) acc[c.parent_id] = [];
         acc[c.parent_id].push(c);
         return acc;
       }, {} as Record<string, Category[]>);
 
-      // ---------- Recursive Hierarchy Builder ----------
-      const buildHierarchy = (cat: Category, level = 1): any => {
-        if (level > 3) return cat;
-
-        const parent =
-          cat.parent_id && categoryMap.has(cat.parent_id)
-            ? categoryMap.get(cat.parent_id)
-            : null;
+      // ---------- Recursive subcategory builder ----------
+      const buildSubs = (cat: Category, level = 1): any => {
+        if (level > 3) return [];
 
         const subs = grouped[cat.id] || [];
 
-        return {
-          ...cat,
-          parent_data: parent
-            ? {
-                id: parent.id,
-                name: parent.name,
-              }
-            : null,
-          subcategories: subs.map((sub) => buildHierarchy(sub, level + 1)),
-        };
+        return subs.map((sub) => ({
+          ...sub,
+          subcategories: buildSubs(sub, level + 1),
+        }));
       };
 
-      const result = buildHierarchy(category);
+      // ---------------------------------------------------
+      //                COMBINE RESULT
+      // ---------------------------------------------------
+      const result = {
+        ...category,
+        parent_data,
+        subcategories: buildSubs(category),
+      };
 
       return handleSuccess(result);
     } catch (error: any) {
