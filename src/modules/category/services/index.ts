@@ -240,8 +240,6 @@ export class CategoryService {
     }
   }
 
-  
-  
   // static async getCategories(
   //   {
   //     where,
@@ -701,7 +699,6 @@ export class CategoryService {
       }
 
       const [categories, total] = await queryBuilder.getManyAndCount();
-      console.log(categories);
 
       if (!selectFields?.includes("subcategories")) {
         return handleSuccessWithTotalData(categories, total);
@@ -723,7 +720,6 @@ export class CategoryService {
           };
         })
       );
-      console.log(categoriesWithSubcategories);
 
       return handleSuccessWithTotalData(
         categoriesWithSubcategories as any,
@@ -738,6 +734,74 @@ export class CategoryService {
     }
   }
 
+  // static async getCategory({
+  //   id,
+  // }: {
+  //   id: string;
+  // }): Promise<Response<Category | null>> {
+  //   const categoryRepository = getRepository(Category);
+
+  //   try {
+  //     // Find the base category
+  //     const category = await categoryRepository.findOne({
+  //       where: { id, is_active: true },
+  //     });
+
+  //     if (!category) {
+  //       return handleError("Category not found", 404, null);
+  //     }
+
+  //     // --- Fetch up to 3 levels of subcategories ---
+  //     const level1 = await categoryRepository.find({
+  //       where: { parent_id: category.id, is_active: true },
+  //     });
+
+  //     const level1Ids = level1.map((c) => c.id);
+  //     const level2 =
+  //       level1Ids.length > 0
+  //         ? await categoryRepository.find({
+  //             where: { parent_id: In(level1Ids), is_active: true },
+  //           })
+  //         : [];
+
+  //     const level2Ids = level2.map((c) => c.id);
+  //     const level3 =
+  //       level2Ids.length > 0
+  //         ? await categoryRepository.find({
+  //             where: { parent_id: In(level2Ids), is_active: true },
+  //           })
+  //         : [];
+
+  //     // --- Group by parent_id ---
+  //     const grouped = [...level1, ...level2, ...level3].reduce((acc, c) => {
+  //       if (!acc[c.parent_id]) acc[c.parent_id] = [];
+  //       acc[c.parent_id].push(c);
+  //       return acc;
+  //     }, {} as Record<string, Category[]>);
+
+  //     // --- Recursive builder up to level 3 ---
+  //     const buildHierarchy = (cat: Category, level = 1): any => {
+  //       if (level > 3) return cat;
+  //       const subs = grouped[cat.id] || [];
+
+  //       return {
+  //         ...cat,
+  //         subcategories: subs.map((sub) => buildHierarchy(sub, level + 1)),
+  //       };
+  //     };
+
+  //     const result = buildHierarchy(category);
+
+  //     return handleSuccess(result);
+  //   } catch (error: any) {
+  //     return handleError(
+  //       config.message.internal_server_error,
+  //       500,
+  //       error.message
+  //     );
+  //   }
+  // }
+
   static async getCategory({
     id,
   }: {
@@ -746,7 +810,7 @@ export class CategoryService {
     const categoryRepository = getRepository(Category);
 
     try {
-      // Find the base category
+      // --------- Base Category ---------
       const category = await categoryRepository.findOne({
         where: { id, is_active: true },
       });
@@ -755,12 +819,13 @@ export class CategoryService {
         return handleError("Category not found", 404, null);
       }
 
-      // --- Fetch up to 3 levels of subcategories ---
+      // --------- Fetch 3 Levels Deep ---------
       const level1 = await categoryRepository.find({
         where: { parent_id: category.id, is_active: true },
       });
 
       const level1Ids = level1.map((c) => c.id);
+
       const level2 =
         level1Ids.length > 0
           ? await categoryRepository.find({
@@ -769,6 +834,7 @@ export class CategoryService {
           : [];
 
       const level2Ids = level2.map((c) => c.id);
+
       const level3 =
         level2Ids.length > 0
           ? await categoryRepository.find({
@@ -776,19 +842,47 @@ export class CategoryService {
             })
           : [];
 
-      // --- Group by parent_id ---
+      // ---------- Map All Categories for parent_data ----------
+      const allIds = [
+        category.id,
+        ...level1Ids,
+        ...level2Ids,
+        ...level3.map((c) => c.id),
+      ];
+
+      const allCategories = await categoryRepository.find({
+        where: { id: In(allIds) },
+        select: ["id", "name", "parent_id"],
+      });
+
+      const categoryMap = new Map(allCategories.map((c) => [c.id, c]));
+
+      // ---------- Group children under parent ----------
       const grouped = [...level1, ...level2, ...level3].reduce((acc, c) => {
         if (!acc[c.parent_id]) acc[c.parent_id] = [];
         acc[c.parent_id].push(c);
         return acc;
       }, {} as Record<string, Category[]>);
 
-      // --- Recursive builder up to level 3 ---
+      // ---------- Recursive Hierarchy Builder ----------
       const buildHierarchy = (cat: Category, level = 1): any => {
         if (level > 3) return cat;
+
+        const parent =
+          cat.parent_id && categoryMap.has(cat.parent_id)
+            ? categoryMap.get(cat.parent_id)
+            : null;
+
         const subs = grouped[cat.id] || [];
+
         return {
           ...cat,
+          parent_data: parent
+            ? {
+                id: parent.id,
+                name: parent.name,
+              }
+            : null,
           subcategories: subs.map((sub) => buildHierarchy(sub, level + 1)),
         };
       };
