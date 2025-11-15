@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Request } from "express";
 import { GraphQLResolveInfo } from "graphql";
-import { Brackets, getRepository } from "typeorm";
+import { Brackets, getRepository, In } from "typeorm";
 import { config } from "../../../config";
 import { AuthMiddlewareService } from "../../../middlewares/auth.middleware";
 import { BaseOrderByInput, BaseStatus } from "../../../utils/base/baseType";
@@ -23780,7 +23780,7 @@ export class ProductService {
     },
     info: GraphQLResolveInfo
   ) {
-    const queryBuilder = this.buildBaseQuery(
+    const queryBuilder = await this.buildBaseQuery(
       { req, where, page, limit, sortedBy },
       info
     );
@@ -23803,7 +23803,7 @@ export class ProductService {
   ) {
     const productRepository = getRepository(Product);
 
-    const queryBuilder = this.buildBaseQuery(
+    const queryBuilder = await this.buildBaseQuery(
       { req, where, page, limit, sortedBy: BaseOrderByInput.created_at_DESC },
       info
     );
@@ -23943,7 +23943,7 @@ export class ProductService {
     }
   }
 
-  private static buildProductQuery(
+  private static async buildProductQuery(
     {
       req,
       where,
@@ -23960,7 +23960,7 @@ export class ProductService {
     info: GraphQLResolveInfo,
     isAdmin: boolean
   ) {
-    const queryBuilder = this.buildBaseQuery(
+    const queryBuilder = await this.buildBaseQuery(
       { req, where, page, limit, sortedBy },
       info,
       isAdmin
@@ -24157,7 +24157,7 @@ export class ProductService {
   //   return queryBuilder;
   // }
 
-  private static buildBaseQuery(
+  private static async buildBaseQuery(
     {
       req,
       where,
@@ -24252,10 +24252,32 @@ export class ProductService {
         status: where.status,
       });
 
-    if (where?.category_id)
-      queryBuilder.andWhere("product.category_id = :category_id", {
-        category_id: where.category_id,
+    if (where?.category_id) {
+      const categoryRepository = getRepository(Category);
+      const childCategories = await categoryRepository.find({
+        where: { parent_id: where.category_id, is_active: true },
+        select: ["id"],
       });
+
+      const level1Ids = childCategories.map((c) => c.id);
+
+      // Level 2 children
+      let level2Ids: string[] = [];
+      if (level1Ids.length) {
+        const childCategoriesLevel2 = await categoryRepository.find({
+          where: { parent_id: In(level1Ids), is_active: true },
+          select: ["id"],
+        });
+        level2Ids = childCategoriesLevel2.map((c) => c.id);
+      }
+
+      const categoryIds = [where.category_id, ...level1Ids, ...level2Ids];
+
+      queryBuilder.andWhere("product.category_id IN (:...category_ids)", {
+        category_ids: categoryIds,
+      });
+    }
+
     if (where?.category_ids?.length) {
       queryBuilder.andWhere("product.category_id IN (:...category_ids)", {
         category_ids: where.category_ids,
@@ -24308,16 +24330,13 @@ export class ProductService {
     }
 
     // Randomized queries for offers or top-rated
-    if (
-      where?.star_top ||
-      (where?.discount && where?.discount > 0) ||
-      where?.offer
-    ) {
+    if ((where?.discount && where?.discount > 0) || where?.offer) {
       queryBuilder.addSelect("RANDOM()", "rand_order");
       queryBuilder.orderBy("rand_order");
     } else if (where?.star_top) {
-      queryBuilder.andWhere("product.total_star >= 4");
-      queryBuilder.orderBy("RANDOM()");
+      queryBuilder.andWhere("product.total_star >= 5");
+      queryBuilder.addSelect("RANDOM()", "rand_order");
+      queryBuilder.orderBy("rand_order");
     } else {
       queryBuilder.orderBy(this.order(sortedBy, where?.price_between) as any);
     }

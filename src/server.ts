@@ -25,6 +25,7 @@ import { typeDefs } from "./schema";
 import { connectDB } from "./utils/db";
 import { getTemuProductData } from "./utils/fetchProduct";
 import pubsub from "./utils/pubsub";
+import { fetchProductByCategory } from "./modules/product/utils/fetchProduct";
 
 const { WebSocketServer } = require("ws");
 

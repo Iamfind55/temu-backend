@@ -27,7 +27,7 @@ export const productSchema = `
     spu: String
     total_star: Float
     total_comment: Int
-    star_store:String
+    star_store: String
     category_ids: [String]
     categories: [Category]
     categoryData: Category

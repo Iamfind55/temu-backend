@@ -7135,8 +7135,9 @@ export const fetchProductByCategory = async () => {
     // const result = await response.json();
     const data = {
       result: {
-        server_time: 1762677696799,
+        server_time: 1763223031262,
         data: {
+          aspect_ratio: 1.33,
           popup_map: {},
           control_param: {
             preload_size: 24,
@@ -7149,37 +7150,36 @@ export const fetchProductByCategory = async () => {
               " item to cart",
               ": ",
               "",
-              "$",
+              "CA$",
               "0",
             ],
             price: 0,
-            price_text: ["Add ", "0", " item to cart", ": ", "", "$", "0"],
+            price_text: ["Add ", "0", " item to cart", ": ", "", "CA$", "0"],
           },
           call_opt: 0,
           pattern: 0,
           filter_region: {
             p_search: {
-              offset: "40",
-              list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
+              offset: "80",
+              list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
               item_type: "0",
               g: "0",
               scene_id: "3",
               mid: "69999906",
-              opt_id: "36",
+              opt_id: "721",
               ts_req: "0",
               version: "5",
-              search_id:
-                "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
+              search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
               scene: "opt",
               gin_fallback: "0",
               opt_type: "0",
               goods_source: "search",
               idx: "-1",
-              region: "211",
+              region: "37",
               no_result: "0",
               bid: "69999705",
-              cloud_env: "udpm1",
-              ts: "1762677696799",
+              cloud_env: "usm1",
+              ts: "1763223031262",
             },
             outer_filter: [
               {
@@ -7215,27 +7215,26 @@ export const fetchProductByCategory = async () => {
               {
                 name: "Relevance",
                 p_search: {
-                  offset: "40",
-                  list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
+                  offset: "80",
+                  list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
                   item_type: "0",
                   g: "0",
                   scene_id: "3",
                   mid: "69999906",
-                  opt_id: "36",
+                  opt_id: "721",
                   ts_req: "0",
                   version: "5",
-                  search_id:
-                    "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
+                  search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
                   scene: "opt",
                   gin_fallback: "0",
                   opt_type: "0",
                   goods_source: "search",
                   idx: "0",
-                  region: "211",
+                  region: "37",
                   no_result: "0",
                   bid: "69999705",
-                  cloud_env: "udpm1",
-                  ts: "1762677696799",
+                  cloud_env: "usm1",
+                  ts: "1763223031262",
                 },
                 id: 0,
                 sort: [1],
@@ -7243,27 +7242,26 @@ export const fetchProductByCategory = async () => {
               {
                 name: "Top sales",
                 p_search: {
-                  offset: "40",
-                  list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
+                  offset: "80",
+                  list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
                   item_type: "0",
                   g: "0",
                   scene_id: "3",
                   mid: "69999906",
-                  opt_id: "36",
+                  opt_id: "721",
                   ts_req: "0",
                   version: "5",
-                  search_id:
-                    "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
+                  search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
                   scene: "opt",
                   gin_fallback: "0",
                   opt_type: "0",
                   goods_source: "search",
                   idx: "1",
-                  region: "211",
+                  region: "37",
                   no_result: "0",
                   bid: "69999705",
-                  cloud_env: "udpm1",
-                  ts: "1762677696799",
+                  cloud_env: "usm1",
+                  ts: "1763223031262",
                 },
                 id: 1,
                 sort: [1],
@@ -7271,27 +7269,26 @@ export const fetchProductByCategory = async () => {
               {
                 name: "Most recent",
                 p_search: {
-                  offset: "40",
-                  list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
+                  offset: "80",
+                  list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
                   item_type: "0",
                   g: "0",
                   scene_id: "3",
                   mid: "69999906",
-                  opt_id: "36",
+                  opt_id: "721",
                   ts_req: "0",
                   version: "5",
-                  search_id:
-                    "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
+                  search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
                   scene: "opt",
                   gin_fallback: "0",
                   opt_type: "0",
                   goods_source: "search",
                   idx: "2",
-                  region: "211",
+                  region: "37",
                   no_result: "0",
                   bid: "69999705",
-                  cloud_env: "udpm1",
-                  ts: "1762677696799",
+                  cloud_env: "usm1",
+                  ts: "1763223031262",
                 },
                 id: 3,
                 sort: [1],
@@ -7299,27 +7296,26 @@ export const fetchProductByCategory = async () => {
               {
                 name: "Price low to high",
                 p_search: {
-                  offset: "40",
-                  list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
+                  offset: "80",
+                  list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
                   item_type: "0",
                   g: "0",
                   scene_id: "3",
                   mid: "69999906",
-                  opt_id: "36",
+                  opt_id: "721",
                   ts_req: "0",
                   version: "5",
-                  search_id:
-                    "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
+                  search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
                   scene: "opt",
                   gin_fallback: "0",
                   opt_type: "0",
                   goods_source: "search",
                   idx: "3",
-                  region: "211",
+                  region: "37",
                   no_result: "0",
                   bid: "69999705",
-                  cloud_env: "udpm1",
-                  ts: "1762677696799",
+                  cloud_env: "usm1",
+                  ts: "1763223031262",
                 },
                 id: 2,
                 sort: [0],
@@ -7327,27 +7323,26 @@ export const fetchProductByCategory = async () => {
               {
                 name: "Price high to low",
                 p_search: {
-                  offset: "40",
-                  list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
+                  offset: "80",
+                  list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
                   item_type: "0",
                   g: "0",
                   scene_id: "3",
                   mid: "69999906",
-                  opt_id: "36",
+                  opt_id: "721",
                   ts_req: "0",
                   version: "5",
-                  search_id:
-                    "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
+                  search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
                   scene: "opt",
                   gin_fallback: "0",
                   opt_type: "0",
                   goods_source: "search",
                   idx: "4",
-                  region: "211",
+                  region: "37",
                   no_result: "0",
                   bid: "69999705",
-                  cloud_env: "udpm1",
-                  ts: "1762677696799",
+                  cloud_env: "usm1",
+                  ts: "1763223031262",
                 },
                 id: 2,
                 sort: [1],
@@ -7366,6165 +7361,412 @@ export const fetchProductByCategory = async () => {
             },
             open: true,
           },
-          title: "Home & Kitchen",
+          title: "Women's Coats & Jackets",
           default_row_cnt: 0,
           opt_list: [
             {
               tab_type: 0,
               image_url:
-                "https://img.kwcdn.com/product/1e19d468875/bba34851-9832-4e6e-9f96-da20ad2c6813_213x213.png",
+                "https://img.kwcdn.com/product/1e14dde0136/b7d80419-f356-420a-b469-ee9303bb75bb_213x213.png",
               p_rec: {
-                offset: "40",
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
+                offset: "80",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
                 item_type: "0",
                 g: "0",
                 scene_id: "3",
                 mid: "69999906",
-                opt_id: "36",
+                opt_id: "721",
                 ts_req: "0",
                 version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
                 scene: "opt",
                 gin_fallback: "0",
-                opt_hash_id: "668074088",
-                opt_type: "1",
+                opt_hash_id: "158213038",
+                opt_type: "2",
                 goods_source: "rec",
                 idx: "-1",
-                region: "211",
+                region: "37",
                 no_result: "0",
                 bid: "69999705",
-                cloud_env: "udpm1",
-                ts: "1762677696802",
+                cloud_env: "usm1",
+                ts: "1763223031268",
               },
               disable_dup: false,
               pattern: 0,
-              opt_type: 1,
-              opt_name: "Home & Kitchen",
+              opt_type: 2,
+              opt_name: "Women's Coats & Jackets",
               priority: 0,
-              opt_id: 36,
+              opt_id: 721,
               is_featured: false,
             },
           ],
           goods_list: [
             {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 8790,
-              },
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/2dbaa657-b3b1-4adf-bf38-0f589b6d0712.jpg",
               thumb_url:
-                "https://img.kwcdn.com/product/fancy/2c060838-d1f4-4a3e-b79b-bb737f1391f5.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "",
-              },
-              item_type: 0,
-              page_alt:
-                "2   non stick sandwich maker with   plates   handle indicator lights easy to clean 750w for quick breakfasts and snacks bpa free stainless  ",
-              current_sku_id: 17593891397995,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 1 BUSINESS DAY",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"YASHE","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: YASHE",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/d2febb7c5927eb95407e1a15eafcf98aa15cb142.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/2c060838-d1f4-4a3e-b79b-bb737f1391f5.jpg",
-                url: "https://img.kwcdn.com/product/c37a01a0bc1c7aa73f335f1a15af7e5e84ec6fb3.goods.000001.jpeg",
-              },
-              title:
-                "2-Slice Non-Stick Sandwich Maker with Triangle Plates, Cool-Touch Handle & Indicator Lights, Easy to Clean, 750W for Quick Breakfasts and Snacks, BPA-Free Stainless Steel Design",
-              sales_tip_text_list: ["1.3K+", "sold"],
-              sold_quantity_percent: 30,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "1846172548",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGokyPmEXHH+XAdIKAt0mTxvnJrzVmRzgI5uKVLXI8OQeR33dn/E1/TkHCIQehVB2jfEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "1176881330217694915",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "1846172548",
-                g: "601099916685676",
-                scene_id: "3",
-                show_price: "1348",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "40",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "8859934593954810762",
-                ts: "1762677696796",
-              },
-              activity_type: 13,
-              mall_id: 634418220056823,
-              sales_num: "1.3K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099916685676&_oak_name_id=8859934593954810762&_oak_mp_inf=EOziiNin1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIOzRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2c060838-d1f4-4a3e-b79b-bb737f1391f5.jpg&spec_gallery_id=3534874409&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTM0OA&_oak_gallery_order=1846172548%2C1114287705%2C1397716942%2C1188140115%2C2058030964",
-              extend_fields: {
-                sale_fire_flag: true,
-                mall_view_type: 2,
-                support_tag_carousel: true,
-                detail_id: "112716977592545644",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "1846172548,1114287705,1397716942,1188140115,2058030964",
-                  _oak_name_id: "8859934593954810762",
-                },
-              },
-              goods_tags: [],
-              show_index: 40,
-              price_info: {
-                split_price_text: ["$", "13", ".48", ""],
-                reduction_text: [],
-                price: 1348,
-                price_schema: "13.48",
-                currency: "USD",
-                price_text: ["$", "13.48", ""],
-                price_str: "$13.48",
-              },
-              image: {
-                width: 1600,
-                id: 3534874409,
-                url_id: "1176881330217694915",
-                url: "https://img.kwcdn.com/product/fancy/2c060838-d1f4-4a3e-b79b-bb737f1391f5.jpg",
-                height: 1600,
-              },
-              sales_tip: "1.3K+ sold",
-              visible: true,
-              goods_id: 601099916685676,
-              opt_id: 1854,
-              seo_link_url:
-                "/2--non-stick-sandwich-maker-with--plates--handle-indicator-lights-easy-to-clean-750w-for-quick-breakfasts-and-snacks-bpa-free-stainless--g-601099916685676.html?&_oak_name_id=8859934593954810762&_oak_mp_inf=EOziiNin1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIOzRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2c060838-d1f4-4a3e-b79b-bb737f1391f5.jpg&spec_gallery_id=3534874409&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTM0OA&_oak_gallery_order=1846172548%2C1114287705%2C1397716942%2C1188140115%2C2058030964",
-              queryReleScore: 0.0,
-              sales_tip_text: ["1.3K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.9,
-                hidden_comment: false,
-                comment_num_tips: "297",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 8670,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/33b89e3f-4705-4479-b6c8-20d9818276cb.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "",
-              },
-              item_type: 0,
-              page_alt:
-                "24 pack airtight food storage containers with lids bpa free plastic leak proof square canisters for cereal dry food flour sugar dishwasher safe   24 labels",
-              current_sku_id: 17592733594465,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"HIHEGD","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: HIHEGD",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/ffad4752c599a895cc1869329766f291f312fadf.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/33b89e3f-4705-4479-b6c8-20d9818276cb.jpg",
-                url: "https://img.kwcdn.com/product/34a5dc22f7c3d8920d1309278e9182ae6f072969.goods.000001.jpeg",
-              },
-              title:
-                "24-Pack Airtight Food Storage Containers with Lids - BPA-Free Plastic, Leak-Proof, Square Canisters for Cereal, Dry Food, Flour, Sugar - Dishwasher Safe, Includes 24 Labels",
-              sales_tip_text_list: ["1.3K+", "sold"],
-              sold_quantity_percent: 97,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "500273021",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGobTkLku4znt6A+8YhI0VhP55kdO4s3h7RAKCbkab9IEA7CRLjtuQhUqd/YxuU9MJLEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "506969926437324930",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "500273021",
-                g: "601099654238703",
-                scene_id: "3",
-                show_price: "2251",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "41",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "2115650146418334348",
-                ts: "1762677696796",
-              },
-              activity_type: 13,
-              mall_id: 634418217716822,
-              sales_num: "1.3K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099654238703&_oak_name_id=2115650146418334348&_oak_mp_inf=EO%2Bj9tqm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIOzRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F33b89e3f-4705-4479-b6c8-20d9818276cb.jpg&spec_gallery_id=601099654238703&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI1MQ&_oak_gallery_order=500273021%2C1590322436%2C1901703664%2C1682827023",
-              extend_fields: {
-                sale_fire_flag: true,
-                mall_view_type: 2,
-                support_tag_carousel: true,
-                detail_id: "112666412137288175",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "500273021,1590322436,1901703664,1682827023",
-                  _oak_name_id: "2115650146418334348",
-                },
-              },
-              goods_tags: [],
-              show_index: 41,
-              price_info: {
-                split_price_text: ["$", "22", ".51", ""],
-                reduction_text: [],
-                price: 2251,
-                price_schema: "22.51",
-                currency: "USD",
-                price_text: ["$", "22.51", ""],
-                price_str: "$22.51",
-              },
-              image: {
-                width: 375,
-                id: 601099654238703,
-                url_id: "506969926437324930",
-                url: "https://img.kwcdn.com/product/fancy/33b89e3f-4705-4479-b6c8-20d9818276cb.jpg",
-                height: 375,
-              },
-              sales_tip: "1.3K+ sold",
-              visible: true,
-              goods_id: 601099654238703,
-              opt_id: 1724,
-              seo_link_url:
-                "/24-pack-airtight-food-storage-containers-with-lids-bpa-free-plastic-leak-proof-square-canisters-for-cereal-dry-food-flour-sugar-dishwasher-safe--24-labels-g-601099654238703.html?&_oak_name_id=2115650146418334348&_oak_mp_inf=EO%2Bj9tqm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIOzRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F33b89e3f-4705-4479-b6c8-20d9818276cb.jpg&spec_gallery_id=601099654238703&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI1MQ&_oak_gallery_order=500273021%2C1590322436%2C1901703664%2C1682827023",
-              queryReleScore: 0.0,
-              sales_tip_text: ["1.3K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.8,
-                hidden_comment: false,
-                comment_num_tips: "156",
-              },
-              adult_goods: false,
-            },
-            {
-              thumb_url:
-                "https://img.kwcdn.com/product/open/2024-04-28/1714296316009-35fe02c7f9234a68bd97865f0e0dcaba-goods.jpeg",
+                "https://img.kwcdn.com/product/fancy/2dbaa657-b3b1-4adf-bf38-0f589b6d0712.jpg",
               ware_house_type: 0,
-              benefit_text: {
-                text: "-31%",
-              },
-              item_type: 0,
-              page_alt:
-                "versatile wooden belt hanger with multiple hooks   ties scarves more ideal closet organizer for home dorm",
-              current_sku_id: 17592445707550,
-              tags_info: {
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Closet & Laundry Storage","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"6926"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"6926"}}}',
-                    },
-                    prompt_tag_text:
-                      "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Closet & Laundry Storage",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "TOP RATED",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "TOP RATED",
-                    ranking_id: "6926",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/87a53ebb8e3945ec97fa5b2ad5cff134c7b37a13.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/open/2024-04-28/1714296316009-35fe02c7f9234a68bd97865f0e0dcaba-goods.jpeg",
-                url: "https://img.kwcdn.com/product/d14d100da908bd7d3f199f3d1d13e6fe6fd82179.goods.000001.jpeg",
-              },
-              title:
-                "Multiple Hooks Versatile Wooden Belt Hanger - Ideal Closet Organizer for Home & Dorm - Perfect for Ties, Scarves & More",
-              sales_tip_text_list: ["29K+", "sold"],
-              sold_quantity_percent: 46,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "1880977968",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoqC22wkg5hk8hfFIMyUsnJ2hD9e7xSPgGKWx1yFVSd8ADHMlSbeTOJpOEuXeYyFrREIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "5634632994696567622",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "1880977968",
-                g: "601099574946380",
-                scene_id: "3",
-                show_price: "577",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "42",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "7939683604429345361",
-                ts: "1762677696796",
-              },
-              activity_type: 13,
-              mall_id: 634418213745546,
-              sales_num: "29K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099574946380&_oak_name_id=7939683604429345361&_oak_mp_inf=EMzUjrWm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIOzRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2024-04-28%2F1714296316009-35fe02c7f9234a68bd97865f0e0dcaba-goods.jpeg&spec_gallery_id=601099574946380&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTc3&_oak_gallery_order=1880977968%2C1138565266%2C1361377069%2C892568557%2C753740596",
-              extend_fields: {
-                support_tag_carousel: true,
-                detail_id: "112629016192592460",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "1880977968,1138565266,1361377069,892568557,753740596",
-                  _oak_name_id: "7939683604429345361",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Closet & Laundry Storage","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"6926"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"6926"}}}',
-                  },
-                  prompt_tag_text:
-                    "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Closet & Laundry Storage",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "TOP RATED",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "TOP RATED",
-                  ranking_id: "6926",
-                },
-              ],
-              show_index: 42,
-              price_info: {
-                split_price_text: ["$", "5", ".77", ""],
-                reduction_text: ["-31", "%"],
-                price: 577,
-                market_price_str: "$8.37",
-                market_price: 837,
-                price_schema: "5.77",
-                currency: "USD",
-                price_text: ["$", "5.77", ""],
-                price_str: "$5.77",
-                reduction: 310,
-                market_price_text: ["$", "8.37", ""],
-              },
-              image: {
-                width: 375,
-                id: 601099574946380,
-                url_id: "5634632994696567622",
-                url: "https://img.kwcdn.com/product/open/2024-04-28/1714296316009-35fe02c7f9234a68bd97865f0e0dcaba-goods.jpeg",
-                height: 375,
-              },
-              sales_tip: "29K+ sold",
-              visible: true,
-              goods_id: 601099574946380,
-              opt_id: 6928,
-              seo_link_url:
-                "/versatile-wooden-belt-hanger-with-multiple-hooks--ties-scarves-more-ideal-closet-organizer-for-home-dorm-g-601099574946380.html?&_oak_name_id=7939683604429345361&_oak_mp_inf=EMzUjrWm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIOzRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2024-04-28%2F1714296316009-35fe02c7f9234a68bd97865f0e0dcaba-goods.jpeg&spec_gallery_id=601099574946380&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTc3&_oak_gallery_order=1880977968%2C1138565266%2C1361377069%2C892568557%2C753740596",
-              queryReleScore: 0.0,
-              sales_tip_text: ["29K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.9,
-                hidden_comment: false,
-                comment_num_tips: "586",
-              },
-              adult_goods: false,
-            },
-            {
-              thumb_url:
-                "https://img.kwcdn.com/product/open/d6b58eacb2dd4b9a88155046b203f53c-goods.jpeg",
-              ware_house_type: 0,
-              benefit_text: {
-                text: "",
-              },
-              item_type: 0,
-              page_alt:
-                "1  olive oil dispenser 2 in 1 oil bottle and cooking sprayer automatic   16 ounces kitchen essentials oil dispensing tool modern oil sprayer sleek kitchen tool   sprayer bpafree plastic kitchen spray bottle home   chefs",
-              current_sku_id: 17605555382636,
-              tags_info: {
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#9 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"732"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"732"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Kitchen Utensils & Supplies",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#9 BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#9 BEST-SELLING ITEM",
-                    ranking_id: "732",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/ee0096c483af35bbe1eb64e5fc9d021eece207f8.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/open/d6b58eacb2dd4b9a88155046b203f53c-goods.jpeg",
-                url: "https://img.kwcdn.com/product/fc7ccbf205c1cc2cf96c1c39a9432d0f6e13a570.goods.000001.jpeg",
-              },
-              title:
-                "1pc Kitchen Olive Oil Dispenser, 2-in-1 Oil Bottle and Cooking Sprayer, Automatic Flip Lid, 16 Ounces, Kitchen Essentials, Oil Dispensing Tool, Modern Oil Sprayer, Sleek Kitchen Tool, Highquality Sprayer, Bpafree Plastic, Kitchen Spray Bottle, Home Cooks, Professional Chefs",
-              sales_tip_text_list: ["9.6K+", "sold"],
-              sold_quantity_percent: 64,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "1903472204",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGo1RZmyCxM8B6yAkKsYuPfAq5sypMnktUj3SXaBYePXRbLLA9Ab2zx/8GvxkmzELF6EIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "7761904334593394291",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "1903472204",
-                g: "601102616121377",
-                scene_id: "3",
-                show_price: "348",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "43",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "5732752222551371521",
-                ts: "1762677696796",
-              },
-              activity_type: 13,
-              mall_id: 634418212828746,
-              sales_num: "9.6K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601102616121377&_oak_name_id=5732752222551371521&_oak_mp_inf=EKGgod%2Bx1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2Fd6b58eacb2dd4b9a88155046b203f53c-goods.jpeg&spec_gallery_id=207057066216&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzQ4&_oak_gallery_order=1903472204%2C2125629524%2C733792797%2C1114239264",
-              extend_fields: {
-                support_tag_carousel: true,
-                detail_id: "112624631416836129",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "1903472204,2125629524,733792797,1114239264",
-                  _oak_name_id: "5732752222551371521",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#9 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"732"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"732"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Kitchen Utensils & Supplies",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#9 BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#9 BEST-SELLING ITEM",
-                  ranking_id: "732",
-                },
-              ],
-              show_index: 43,
-              price_info: {
-                split_price_text: ["$", "3", ".48", ""],
-                reduction_text: [],
-                price: 348,
-                price_schema: "3.48",
-                currency: "USD",
-                price_text: ["$", "3.48", ""],
-                price_str: "$3.48",
-              },
-              image: {
-                width: 800,
-                id: 207057066216,
-                url_id: "7761904334593394291",
-                url: "https://img.kwcdn.com/product/open/d6b58eacb2dd4b9a88155046b203f53c-goods.jpeg",
-                height: 800,
-              },
-              sales_tip: "9.6K+ sold",
-              visible: true,
-              goods_id: 601102616121377,
-              opt_id: 734,
-              seo_link_url:
-                "/1-olive-oil-dispenser-2-in-1-oil-bottle-and-cooking-sprayer-automatic--16-ounces-kitchen-essentials-oil-dispensing-tool-modern-oil-sprayer-sleek-kitchen-tool--sprayer-bpafree-plastic-kitchen-spray-bottle-home--chefs-g-601102616121377.html?&_oak_name_id=5732752222551371521&_oak_mp_inf=EKGgod%2Bx1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2Fd6b58eacb2dd4b9a88155046b203f53c-goods.jpeg&spec_gallery_id=207057066216&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzQ4&_oak_gallery_order=1903472204%2C2125629524%2C733792797%2C1114239264",
-              queryReleScore: 0.0,
-              sales_tip_text: ["9.6K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.5,
-                hidden_comment: false,
-                comment_num_tips: "275",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 7110,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/a2e64f9a-3465-4d8e-9e90-554b1dc08c96.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-52%",
-              },
-              item_type: 0,
-              page_alt:
-                "3pcs kitchen chef knife set barbecue knife multipurpose knife utility knife stainless steel boning knife professional vegetable chopper fish knife mini knife   small pocket knife for   camping knife outdoor",
-              current_sku_id: 17592945630677,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#4 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies: Stainless Steel","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"732"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"732"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Kitchen Utensils & Supplies: Stainless Steel",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#4 BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#4 BEST-SELLING ITEM",
-                    ranking_id: "732",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/0e8c07717eafcaa5c557dcd4d43119643eb5e713.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/a2e64f9a-3465-4d8e-9e90-554b1dc08c96.jpg",
-                url: "https://img.kwcdn.com/product/0007bb9f2afcda07645a3b4f3e86c9ef3e0b1462.goods.000001.jpeg",
-              },
-              title:
-                "3PCS, Kitchen Chef Knife Set, Barbecue Knife Multipurpose Knife Utility Knife Stainless Steel Boning Knife Professional Vegetable Chopper Fish Knife Mini Knife Cheese Pizza Small Pocket Knife for Kitchen Convenience Camping Knife Outdoor",
-              sales_tip_text_list: ["6K+", "sold"],
-              sold_quantity_percent: 32,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "2669547",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGod3sbpu6R03amD8kTkLSap+D7cmWBABNu5oiSOe98iesaqSzB3mqWWa36s6rUU38BEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "1908524200010220027",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "2669547",
-                g: "601099708727074",
-                scene_id: "3",
-                show_price: "1712",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "44",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "668477574146884436",
-                ts: "1762677696797",
-              },
-              activity_type: 100,
-              mall_id: 634418214713468,
-              sales_num: "6K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099708727074&_oak_name_id=668477574146884436&_oak_mp_inf=EKL%2B8%2FSm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fa2e64f9a-3465-4d8e-9e90-554b1dc08c96.jpg&spec_gallery_id=601099708727074&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTcxMg&_oak_gallery_order=2669547%2C819019364%2C1508368016%2C958468334%2C1721340432",
-              extend_fields: {
-                sale_fire_flag: true,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099708727074&_oak_name_id=668477574146884436&_oak_mp_inf=EKL%2B8%2FSm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fa2e64f9a-3465-4d8e-9e90-554b1dc08c96.jpg&spec_gallery_id=601099708727074&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTcxMg&_oak_gallery_order=2669547%2C819019364%2C1508368016%2C958468334%2C1721340432&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112692771542794018",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "2669547,819019364,1508368016,958468334,1721340432",
-                  _oak_name_id: "668477574146884436",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#4 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies: Stainless Steel","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"732"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"732"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Kitchen Utensils & Supplies: Stainless Steel",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#4 BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#4 BEST-SELLING ITEM",
-                  ranking_id: "732",
-                },
-              ],
-              show_index: 44,
-              price_info: {
-                split_price_text: ["$", "17", ".12", ""],
-                reduction_text: ["-52", "%"],
-                price: 1712,
-                market_price_str: "$35.96",
-                market_price: 3596,
-                price_schema: "17.12",
-                currency: "USD",
-                price_text: ["$", "17.12", ""],
-                price_str: "$17.12",
-                reduction: 520,
-                market_price_text: ["$", "35.96", ""],
-              },
-              image: {
-                width: 375,
-                id: 601099708727074,
-                url_id: "1908524200010220027",
-                url: "https://img.kwcdn.com/product/fancy/a2e64f9a-3465-4d8e-9e90-554b1dc08c96.jpg",
-                height: 375,
-              },
-              sales_tip: "6K+ sold",
-              visible: true,
-              goods_id: 601099708727074,
-              opt_id: 734,
-              seo_link_url:
-                "/3pcs-kitchen-chef-knife-set-barbecue-knife-multipurpose-knife-utility-knife-stainless-steel-boning-knife-professional-vegetable-chopper-fish-knife-mini-knife--small-pocket-knife-for--camping-knife-outdoor-g-601099708727074.html?&_oak_name_id=668477574146884436&_oak_mp_inf=EKL%2B8%2FSm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fa2e64f9a-3465-4d8e-9e90-554b1dc08c96.jpg&spec_gallery_id=601099708727074&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTcxMg&_oak_gallery_order=2669547%2C819019364%2C1508368016%2C958468334%2C1721340432",
-              queryReleScore: 0.0,
-              sales_tip_text: ["6K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.8,
-                hidden_comment: false,
-                comment_num_tips: "655",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 7340,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/20e03d3d-05b6-4445-8078-d4eb08a2e5f0.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "",
-              },
-              item_type: 0,
-              page_alt:
-                "  coffee maker with   setting single serve coffee maker   cup and   6   brew sizes 50oz removable water   cup coffee machine with reusable filter black",
-              current_sku_id: 17593556192029,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#2 TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Coffee, Tea & Espresso","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"1855"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"1855"}}}',
-                    },
-                    prompt_tag_text:
-                      "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Coffee, Tea & Espresso",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#2 TOP RATED",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#2 TOP RATED",
-                    ranking_id: "1855",
-                  },
-                  {
-                    color: "#555555",
-                    ext_map: {
-                      lowest_tag_up_flag: "4",
-                      lowest_price_before_title: "60d lowest",
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91048,
-                    text: "Lowest price in 60 days",
-                    tag_series: 2,
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/1888fe68a5547bb2bbc7cd36dc6c6af6be1c83fd.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/20e03d3d-05b6-4445-8078-d4eb08a2e5f0.jpg",
-                url: "https://img.kwcdn.com/product/dce0fbba1878e3bd56403d916ece255b3d17badf.goods.000001.jpeg",
-              },
-              title:
-                "Hot & Iced Coffee Maker with Bold Setting, Single Serve Coffee Maker for K Cup And Grounds, 6-14oz Brew Sizes, 50oz Removable Water Tank, One Cup Coffee Machine with Reusable Filter, Black.",
-              sales_tip_text_list: ["3.6K+", "sold"],
-              sold_quantity_percent: 37,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "318085346",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoYXPGZvI/APiIoC4LMVnVuA+JICkA94qfJjPWRwFGaairTaJl1xGC0tGbuCVnnDYnEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "2509467941091566714",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "318085346",
-                g: "601099844643391",
-                scene_id: "3",
-                show_price: "3870",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "45",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "479120717037573749",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418219689244,
-              sales_num: "3.6K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099844643391&_oak_name_id=479120717037573749&_oak_mp_inf=EL%2FU27Wn1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F20e03d3d-05b6-4445-8078-d4eb08a2e5f0.jpg&spec_gallery_id=3130259873&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzg3MA&_oak_gallery_order=318085346%2C886643361%2C413954477%2C75075571%2C944848373",
-              extend_fields: {
-                sale_fire_flag: true,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099844643391&_oak_name_id=479120717037573749&_oak_mp_inf=EL%2FU27Wn1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F20e03d3d-05b6-4445-8078-d4eb08a2e5f0.jpg&spec_gallery_id=3130259873&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzg3MA&_oak_gallery_order=318085346%2C886643361%2C413954477%2C75075571%2C944848373&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112725765431224895",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "318085346,886643361,413954477,75075571,944848373",
-                  _oak_name_id: "479120717037573749",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#2 TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Coffee, Tea & Espresso","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"1855"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"1855"}}}',
-                  },
-                  prompt_tag_text:
-                    "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Coffee, Tea & Espresso",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#2 TOP RATED",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#2 TOP RATED",
-                  ranking_id: "1855",
-                },
-                {
-                  color: "#555555",
-                  ext_map: {
-                    lowest_tag_up_flag: "4",
-                    lowest_price_before_title: "60d lowest",
-                  },
-                  marketing_tag_type: 1000,
-                  tag_id: 91048,
-                  text: "Lowest price in 60 days",
-                  tag_series: 2,
-                },
-              ],
-              show_index: 45,
-              price_info: {
-                split_price_text: ["$", "38", ".70", ""],
-                reduction_text: [],
-                price: 3870,
-                price_schema: "38.70",
-                currency: "USD",
-                price_text: ["$", "38.70", ""],
-                price_str: "$38.70",
-              },
-              image: {
-                width: 3000,
-                id: 3130259873,
-                url_id: "2509467941091566714",
-                url: "https://img.kwcdn.com/product/fancy/20e03d3d-05b6-4445-8078-d4eb08a2e5f0.jpg",
-                height: 3000,
-              },
-              sales_tip: "3.6K+ sold",
-              visible: true,
-              goods_id: 601099844643391,
-              opt_id: 1856,
-              seo_link_url:
-                "/-coffee-maker-with--setting-single-serve-coffee-maker--cup-and--6--brew-sizes-50oz-removable-water--cup-coffee-machine-with-reusable-filter-black-g-601099844643391.html?&_oak_name_id=479120717037573749&_oak_mp_inf=EL%2FU27Wn1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F20e03d3d-05b6-4445-8078-d4eb08a2e5f0.jpg&spec_gallery_id=3130259873&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzg3MA&_oak_gallery_order=318085346%2C886643361%2C413954477%2C75075571%2C944848373",
-              queryReleScore: 0.0,
-              sales_tip_text: ["3.6K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.8,
-                hidden_comment: false,
-                comment_num_tips: "733",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 8070,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/cd3c6db9-37db-49b0-9b22-45c3bffa9a02.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-15%",
-              },
-              item_type: 0,
-              page_alt:
-                "high pressure rain shower head and handheld shower combo with 11 inch adjustable arm 9 spray   rain massage spa stainless hose bracket leak proof design heavy duty square shower system for bath shower  ",
-              current_sku_id: 17597659245400,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"BN BY NEE","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: BN BY NEE",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#2 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Bath in Black","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"746"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"746"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Bath in Black",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#2 BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#2 BEST-SELLING ITEM",
-                    ranking_id: "746",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/1553fd9687876088100c70e0bad01543fdf74e59.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/cd3c6db9-37db-49b0-9b22-45c3bffa9a02.jpg",
-                url: "https://img.kwcdn.com/product/c19e3dc6e06988b12ca7c21e421f0b52daf4efe5.goods.000001.jpeg",
-              },
-              title:
-                "High-Pressure Rain Shower Head and Handheld Shower Combo with 11-Inch Adjustable Arm, 9-Spray Modes (Rain, Massage, Spa), Stainless Hose & Bracket, Leak-Proof Design - Heavy-Duty Square Shower System for Bath/Shower (Easy Install",
-              sales_tip_text_list: ["54K+", "sold"],
-              sold_quantity_percent: 78,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "873142417",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoaolvjOVsYIt+FirQUTgEPy2dK7WXL+nIzLqNEkSUG9JqKv4dYf4im1aXv5rEZtnlEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "2621500976697079621",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "873142417",
-                g: "601099763926495",
-                scene_id: "3",
-                show_price: "992",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "46",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "5762116553164575238",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418219087619,
-              sales_num: "54K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099763926495&_oak_mp_inf=EN%2BLnY%2Bn1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fcd3c6db9-37db-49b0-9b22-45c3bffa9a02.jpg&spec_gallery_id=601099763926495&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTky&_oak_gallery_order=873142417%2C1054454933%2C1155697811%2C1894065579%2C2063957758",
-              extend_fields: {
-                sale_fire_flag: true,
-                mall_view_type: 2,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099763926495&_oak_mp_inf=EN%2BLnY%2Bn1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fcd3c6db9-37db-49b0-9b22-45c3bffa9a02.jpg&spec_gallery_id=601099763926495&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTky&_oak_gallery_order=873142417%2C1054454933%2C1155697811%2C1894065579%2C2063957758&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112710369156220383",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "873142417,1054454933,1155697811,1894065579,2063957758",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#2 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Bath in Black","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"746"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"746"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Bath in Black",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#2 BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#2 BEST-SELLING ITEM",
-                  ranking_id: "746",
-                },
-              ],
-              show_index: 46,
-              price_info: {
-                split_price_text: ["$", "9", ".92", ""],
-                reduction_text: ["-15", "%"],
-                price: 992,
-                market_price_str: "$11.72",
-                market_price: 1172,
-                price_schema: "9.92",
-                currency: "USD",
-                price_text: ["$", "9.92", ""],
-                price_str: "$9.92",
-                reduction: 150,
-                market_price_text: ["$", "11.72", ""],
-              },
-              image: {
-                width: 375,
-                id: 601099763926495,
-                url_id: "2621500976697079621",
-                url: "https://img.kwcdn.com/product/fancy/cd3c6db9-37db-49b0-9b22-45c3bffa9a02.jpg",
-                height: 375,
-              },
-              sales_tip: "54K+ sold",
-              visible: true,
-              goods_id: 601099763926495,
-              opt_id: 749,
-              seo_link_url:
-                "/high-pressure-rain-shower-head-and-handheld-shower-combo-with-11-inch-adjustable-arm-9-spray--rain-massage-spa-stainless-hose-bracket-leak-proof-design-heavy-duty-square-shower-system-for-bath-shower--g-601099763926495.html?&_oak_mp_inf=EN%2BLnY%2Bn1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fcd3c6db9-37db-49b0-9b22-45c3bffa9a02.jpg&spec_gallery_id=601099763926495&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTky&_oak_gallery_order=873142417%2C1054454933%2C1155697811%2C1894065579%2C2063957758",
-              queryReleScore: 0.0,
-              sales_tip_text: ["54K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "7,249",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 8160,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/1c57dce4-58de-49ce-a26e-ed5cd72d2e07.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-32%",
-              },
-              item_type: 0,
-              page_alt:
-                "intelligent bathroom scale digital body scale with backlit led display screen and sturdy tempered glass compact size weighing up to 400   180  ",
-              current_sku_id: 17592771219874,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Bath","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"746"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"746"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Bath",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "BEST-SELLING ITEM",
-                    ranking_id: "746",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/6936a1ec66099e1349161212e7058e297b723745.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/1c57dce4-58de-49ce-a26e-ed5cd72d2e07.jpg",
-                url: "https://img.kwcdn.com/product/5a34686c088e4a36024d05f0469b331412a51113.goods.000001.jpeg",
-              },
-              title:
-                "Intelligent Bathroom Scale, Digital Body Scale, With Backlit LED Display Screen And Sturdy Tempered Glass, Compact Size, Weighing Up To 400 Pounds/180 Kilograms.",
-              sales_tip_text_list: ["31K+", "sold"],
-              sold_quantity_percent: 12,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "256044807",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGov2hwATgAKNyfkuxiLwwgS0HsBKuOeJVrX9Y+oe+ipE9/F6PqRhlThGwXKWA+Vzk8EIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "4209856024599935399",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "256044807",
-                g: "601099664353604",
-                scene_id: "3",
-                show_price: "882",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "47",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "7574338072731571455",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418214874526,
-              sales_num: "31K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099664353604&_oak_mp_inf=EMTS39%2Bm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F1c57dce4-58de-49ce-a26e-ed5cd72d2e07.jpg&spec_gallery_id=2413660389&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODgy&_oak_gallery_order=256044807%2C1891234587%2C986688031%2C1007629431",
-              extend_fields: {
-                sale_fire_flag: true,
-                support_tag_carousel: true,
-                detail_id: "112721370958260548",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "256044807,1891234587,986688031,1007629431",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Bath","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"746"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"746"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Bath",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "BEST-SELLING ITEM",
-                  ranking_id: "746",
-                },
-              ],
-              show_index: 47,
-              price_info: {
-                split_price_text: ["$", "8", ".82", ""],
-                reduction_text: ["-32", "%"],
-                price: 882,
-                market_price_str: "$13.08",
-                market_price: 1308,
-                price_schema: "8.82",
-                currency: "USD",
-                price_text: ["$", "8.82", ""],
-                price_str: "$8.82",
-                reduction: 320,
-                market_price_text: ["$", "13.08", ""],
-              },
-              image: {
-                width: 800,
-                id: 2413660389,
-                url_id: "4209856024599935399",
-                url: "https://img.kwcdn.com/product/fancy/1c57dce4-58de-49ce-a26e-ed5cd72d2e07.jpg",
-                height: 800,
-              },
-              sales_tip: "31K+ sold",
-              visible: true,
-              goods_id: 601099664353604,
-              opt_id: 749,
-              seo_link_url:
-                "/intelligent-bathroom-scale-digital-body-scale-with-backlit-led-display-screen-and-sturdy-tempered-glass-compact-size-weighing-up-to-400--180--g-601099664353604.html?&_oak_mp_inf=EMTS39%2Bm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F1c57dce4-58de-49ce-a26e-ed5cd72d2e07.jpg&spec_gallery_id=2413660389&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODgy&_oak_gallery_order=256044807%2C1891234587%2C986688031%2C1007629431",
-              queryReleScore: 0.0,
-              sales_tip_text: ["31K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "4,958",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 8440,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/ac2fc571-2e01-4ad3-b5bf-99ecd72ec5b3.jpg",
-              ware_house_type: 1,
               benefit_text: {
                 text: "-14%",
               },
               item_type: 0,
               page_alt:
-                "10  bartenders set with bamboo stand stainless steel   shaker with bar tool set for home bar perfect housewarming   accessories for fathers day gift",
-              current_sku_id: 17594614432134,
+                "womens elegant trench coat long sleeve winter coat with button front closure   length formal everyday outerwear chic   outerwear non stretchy fabric for fall   ladies winter coats",
+              current_sku_id: 17612742039013,
               tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
+                activity_icon_tags: [{}],
                 title_header_tags: [
                   {
-                    color: "#0A8800",
                     ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
                     },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
+                    marketing_tag_type: 2000,
                   },
                 ],
               },
               video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/02d21e2a8c2697bd06c54eb108b1d4885f6a0d7f.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/ac2fc571-2e01-4ad3-b5bf-99ecd72ec5b3.jpg",
-                url: "https://img.kwcdn.com/product/cd8212858ed6efc0f1f6f88476768ec504614081.goods.000001.jpeg",
+                video_url: "",
               },
               title:
-                "10pcs Premium Bartender's Set with Bamboo Stand - Stainless Steel Roostertail Shaker with Bar Tool Set for Home Bar, Perfect Housewarming Gift, Bar Accessories for Father's Day Gift",
-              sales_tip_text_list: ["570", "sold"],
-              sold_quantity_percent: 46,
+                "Women'S Elegant Trench Coat - Long Sleeve Winter Coat with Button Front Closure, Mid-Length Formal & Everyday Outerwear, Chic Office to Party Outerwear, Non-Stretchy Fabric for Fall/Winter Fashion, Ladies Winter Coats",
+              sales_tip_text_list: [],
+              display_end_time_percent: 52,
+              sold_quantity_percent: 50,
               p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
+                skc_id: "17597362873313",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
                 item_type: "0",
                 ad_goods: "1",
                 mid: "69999906",
-                final_creative_id: "839908704",
+                final_creative_id: "1172849424",
                 sort_by_type: "873027542",
                 st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGowGm+j55SiUg94U/NH+BWksyj9PxHerx3c07E20gdMX6/WmLqF+YkU2cQ8SzA4yKHEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw9Lc2m4lwFmPxPkUhfC5zlVTbfnuRCwLjYJG+X4eZ45nEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
                 scene: "opt",
-                image_url_id: "6392759953826630227",
-                show_currency: "USD",
+                image_url_id: "4463595821841252026",
+                show_currency: "CAD",
                 no_result: "0",
-                offset: "40",
-                engine_creative_id: "839908704",
-                g: "601100078270307",
+                offset: "80",
+                engine_creative_id: "1172849424",
+                g: "601104020664185",
                 scene_id: "3",
-                show_price: "1423",
-                opt_id: "36",
+                show_price: "4914",
+                opt_id: "721",
                 ts_req: "0",
                 version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
                 gin_fallback: "0",
                 opt_type: "0",
                 goods_source: "rec",
-                idx: "48",
-                region: "211",
+                idx: "80",
+                region: "37",
                 bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "3048148109485177210",
-                ts: "1762677696797",
+                cloud_env: "usm1",
+                creative_title_id: "8104114164893616976",
+                ts: "1763223031258",
               },
               activity_type: 13,
-              mall_id: 634418220675315,
-              sales_num: "570",
+              mall_id: 634418212725044,
+              sales_num: "4.6K+",
               link_url:
-                "goods.html?_bg_fs=1&goods_id=601100078270307&_oak_name_id=3048148109485177210&_oak_mp_inf=EOOOj6Wo1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fac2fc571-2e01-4ad3-b5bf-99ecd72ec5b3.jpg&spec_gallery_id=5084282769&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQyMw&_oak_gallery_order=839908704%2C652439554%2C169186857%2C376496341%2C58137482",
-              extend_fields: {
-                support_tag_carousel: true,
-                detail_id: "112723557734139747",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "839908704,652439554,169186857,376496341,58137482",
-                  _oak_name_id: "3048148109485177210",
-                },
-              },
-              goods_tags: [],
-              show_index: 48,
-              price_info: {
-                split_price_text: ["$", "14", ".23", ""],
-                reduction_text: ["-14", "%"],
-                price: 1423,
-                market_price_str: "$16.59",
-                market_price: 1659,
-                price_schema: "14.23",
-                currency: "USD",
-                price_text: ["$", "14.23", ""],
-                price_str: "$14.23",
-                reduction: 140,
-                market_price_text: ["$", "16.59", ""],
-              },
-              image: {
-                width: 1600,
-                id: 5084282769,
-                url_id: "6392759953826630227",
-                url: "https://img.kwcdn.com/product/fancy/ac2fc571-2e01-4ad3-b5bf-99ecd72ec5b3.jpg",
-                height: 1600,
-              },
-              sales_tip: "570 sold",
-              visible: true,
-              goods_id: 601100078270307,
-              opt_id: 1726,
-              seo_link_url:
-                "/10-bartender--with-bamboo-stand-stainless-steel--shaker-with-bar-tool-set-for-home-bar-perfect-housewarming--accessories-for-father-s-day-gift-g-601100078270307.html?&_oak_name_id=3048148109485177210&_oak_mp_inf=EOOOj6Wo1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fac2fc571-2e01-4ad3-b5bf-99ecd72ec5b3.jpg&spec_gallery_id=5084282769&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQyMw&_oak_gallery_order=839908704%2C652439554%2C169186857%2C376496341%2C58137482",
-              queryReleScore: 0.0,
-              sales_tip_text: ["570", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.8,
-                hidden_comment: false,
-                comment_num_tips: "65",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 8300,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/38438cc7-4f8a-4e43-9cff-09d4dda4fc20.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "",
-              },
-              item_type: 0,
-              page_alt:
-                "set of 4 oversized collapsible storage container made of   fabric featuring double zippers and three handles waterproof design ideal for closets bedrooms kitchens and books versatile large canvas storage box easy to fold for organization",
-              current_sku_id: 17599048503850,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Home Storage & Organization","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"759"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"759"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Home Storage & Organization",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "BEST-SELLING ITEM",
-                    ranking_id: "759",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/1fcd648fb931661f1fdfbef86258c5c13b337a2fgs2CV.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/38438cc7-4f8a-4e43-9cff-09d4dda4fc20.jpg",
-                url: "https://img.kwcdn.com/product/0d80faaaeb9c11257fd63f855925346d5eb575a9.temu.000001.jpeg",
-              },
-              title:
-                "Set of 4, Oversized Collapsible Storage Container Made of Cationic Fabric, Featuring Double Zippers And Three Handles, Waterproof Design, Ideal for Closets, Bedrooms, Kitchens, And Books, Versatile Large Canvas Storage Box, Easy to Fold for Organization.",
-              sales_tip_text_list: ["4.1K+", "sold"],
-              sold_quantity_percent: 27,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "665605651",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoDr2HdrQuG1k7z4rG6o2/+aIyNEKmyefwA2A7bbIAOWQ3ClZkiDRXzfD4qH5sm94ZEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "3760537295165231781",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "665605651",
-                g: "601101275960773",
-                scene_id: "3",
-                show_price: "1759",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "49",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "886411582820364640",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418218777722,
-              sales_num: "4.1K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601101275960773&_oak_name_id=886411582820364640&_oak_mp_inf=EMWrnOCs1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F38438cc7-4f8a-4e43-9cff-09d4dda4fc20.jpg&spec_gallery_id=201660232163&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc1OQ&_oak_gallery_order=665605651%2C631999312%2C823225712%2C1573310609%2C2141371816",
-              extend_fields: {
-                sale_fire_flag: true,
-                support_tag_carousel: true,
-                detail_id: "112723549152548293",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "665605651,631999312,823225712,1573310609,2141371816",
-                  _oak_name_id: "886411582820364640",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Home Storage & Organization","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"759"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"759"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Home Storage & Organization",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "BEST-SELLING ITEM",
-                  ranking_id: "759",
-                },
-              ],
-              show_index: 49,
-              price_info: {
-                split_price_text: ["$", "17", ".59", ""],
-                reduction_text: [],
-                price: 1759,
-                price_schema: "17.59",
-                currency: "USD",
-                price_text: ["$", "17.59", ""],
-                price_str: "$17.59",
-              },
-              image: {
-                width: 900,
-                id: 201660232163,
-                url_id: "3760537295165231781",
-                url: "https://img.kwcdn.com/product/fancy/38438cc7-4f8a-4e43-9cff-09d4dda4fc20.jpg",
-                height: 900,
-              },
-              sales_tip: "4.1K+ sold",
-              visible: true,
-              goods_id: 601101275960773,
-              opt_id: 760,
-              seo_link_url:
-                "/set-of-4-oversized-collapsible-storage-container-made-of--fabric-featuring-double-zippers-and-three-handles-waterproof-design-ideal-for-closets-bedrooms-kitchens-and-books-versatile-large-canvas-storage-box-easy-to-fold-for-organization-g-601101275960773.html?&_oak_name_id=886411582820364640&_oak_mp_inf=EMWrnOCs1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO3RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F38438cc7-4f8a-4e43-9cff-09d4dda4fc20.jpg&spec_gallery_id=201660232163&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc1OQ&_oak_gallery_order=665605651%2C631999312%2C823225712%2C1573310609%2C2141371816",
-              queryReleScore: 0.0,
-              sales_tip_text: ["4.1K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "363",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 8300,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/9f7a2f47-cd08-4424-8da1-f89c0aa3c621.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-12%",
-              },
-              item_type: 0,
-              page_alt:
-                "1pc adjustable expandable clothes drying rack 3 tier foldable laundry dryer metal towel and garment rack for air drying white drying racks",
-              current_sku_id: 17616476365153,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 1 BUSINESS DAY",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/166491707b32889a2d539148a2f1aa63319164e8gs2CV.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/9f7a2f47-cd08-4424-8da1-f89c0aa3c621.jpg",
-                url: "https://img.kwcdn.com/product/5eea4278a2f5ea920a6766b4e102a6248d368a93.temu.000001.jpeg",
-              },
-              title:
-                "Clothes Drying Rack 3-Tier Laundry Drying Rack For Clothes Expandable Metal Clothing Dryer Collapsible Towel Rack Air Drying Rack White, Drying Racks",
-              sales_tip_text_list: ["431", "sold"],
-              sold_quantity_percent: 75,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "1357732193",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoY/W+MPBREaF4esi/XSaT2VAzybsybI0s3q9Er01sd1FpUYuU6mPHgGqGq1BC57g5EIIBGGMiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "7531241870967618947",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "1357732193",
-                g: "601102781676517",
-                scene_id: "3",
-                show_price: "1872",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "50",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "7829383952245024589",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418222431952,
-              sales_num: "431",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601102781676517&_oak_mp_inf=EOX3ma6y1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9f7a2f47-cd08-4424-8da1-f89c0aa3c621.jpg&spec_gallery_id=601102781676517&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTg3Mg&_oak_gallery_order=1357732193%2C519159949%2C693610649%2C1310277946",
-              extend_fields: {
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601102781676517&_oak_mp_inf=EOX3ma6y1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9f7a2f47-cd08-4424-8da1-f89c0aa3c621.jpg&spec_gallery_id=601102781676517&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTg3Mg&_oak_gallery_order=1357732193%2C519159949%2C693610649%2C1310277946&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112705982040079333",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "1357732193,519159949,693610649,1310277946",
-                },
-              },
-              goods_tags: [],
-              show_index: 50,
-              price_info: {
-                split_price_text: ["$", "18", ".72", ""],
-                reduction_text: ["-12", "%"],
-                price: 1872,
-                market_price_str: "$21.47",
-                market_price: 2147,
-                price_schema: "18.72",
-                currency: "USD",
-                price_text: ["$", "18.72", ""],
-                price_str: "$18.72",
-                reduction: 120,
-                market_price_text: ["$", "21.47", ""],
-              },
-              image: {
-                width: 375,
-                id: 601102781676517,
-                url_id: "7531241870967618947",
-                url: "https://img.kwcdn.com/product/fancy/9f7a2f47-cd08-4424-8da1-f89c0aa3c621.jpg",
-                height: 375,
-              },
-              sales_tip: "431 sold",
-              visible: true,
-              goods_id: 601102781676517,
-              opt_id: 6928,
-              seo_link_url:
-                "/clothes-drying-rack-3-tier-laundry-drying-rack-for-clothes-expandable-metal-clothing-dryer-collapsible-towel-rack-air-drying-rack-white-drying-racks-g-601102781676517.html?&_oak_mp_inf=EOX3ma6y1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9f7a2f47-cd08-4424-8da1-f89c0aa3c621.jpg&spec_gallery_id=601102781676517&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTg3Mg&_oak_gallery_order=1357732193%2C519159949%2C693610649%2C1310277946",
-              queryReleScore: 0.0,
-              sales_tip_text: ["431", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.9,
-                hidden_comment: true,
-                comment_num_tips: "40",
-              },
-              adult_goods: false,
-            },
-            {
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/4b05fe62-129d-4a7f-bed0-5ebd695b6850.jpg",
-              ware_house_type: 0,
-              benefit_text: {
-                text: "-8%",
-              },
-              item_type: 0,
-              page_alt:
-                "1pc stainless steel garlic press manual handheld garlic crusher grater 304 stainless steel kitchen tool for mincing garlic   durable   design for   garlic crusher and grater kitchen gadget modern kitchenware   material food preparation   sturdy construction cooking enthusiasts",
-              current_sku_id: 17605662082704,
-              tags_info: {},
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/49fa922fcbdb66230dda6b2bec237560066d5e9bgs2CV.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/4b05fe62-129d-4a7f-bed0-5ebd695b6850.jpg",
-                url: "https://img.kwcdn.com/product/b1f69ef3b627a1997fade9b8fe99d64dccaa0671.temu.000001.jpeg",
-              },
-              title:
-                "1pc Stainless Steel Garlic Press - Manual Handheld Garlic Crusher & Grater, 304 Stainless Steel Kitchen Tool for Mincing Garlic, Ginger, and More - Durable, Easy-to-Use Design for Home Cooking, Garlic Crusher And Grater, Kitchen Gadget, Modern Kitchenware, Easyclean Material, Food Preparation, Compact Design, Sturdy Construction, Cooking Enthusiasts",
-              sales_tip_text_list: ["8.3K+", "sold"],
-              sold_quantity_percent: 12,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "880039907",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoBThicNrKpdH7645t/ZBr82T8PgzFbl0N5sVMILBpHMDCE1vGuLG8cxQcP5V2GTF4EIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "7251002243915485970",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "880039907",
-                g: "601102637680865",
-                scene_id: "3",
-                show_price: "488",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "51",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "2247559970725919429",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 5889228770328,
-              sales_num: "8.3K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601102637680865&_oak_name_id=2247559970725919429&_oak_mp_inf=EOGRxemx1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4b05fe62-129d-4a7f-bed0-5ebd695b6850.jpg&spec_gallery_id=208870379510&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDg4&_oak_gallery_order=880039907%2C151846615%2C745674472",
-              extend_fields: {
-                support_tag_carousel: true,
-                detail_id: "112635625954298081",
-                sku_extra_param: {
-                  _oak_gallery_order: "880039907,151846615,745674472",
-                  _oak_name_id: "2247559970725919429",
-                },
-              },
-              goods_tags: [],
-              show_index: 51,
-              price_info: {
-                split_price_text: ["$", "4", ".88", ""],
-                reduction_text: ["-8", "%"],
-                price: 488,
-                market_price_str: "$5.31",
-                market_price: 531,
-                price_schema: "4.88",
-                currency: "USD",
-                price_text: ["$", "4.88", ""],
-                price_str: "$4.88",
-                reduction: 80,
-                market_price_text: ["$", "5.31", ""],
-              },
-              image: {
-                width: 800,
-                id: 208870379510,
-                url_id: "7251002243915485970",
-                url: "https://img.kwcdn.com/product/fancy/4b05fe62-129d-4a7f-bed0-5ebd695b6850.jpg",
-                height: 800,
-              },
-              sales_tip: "8.3K+ sold",
-              visible: true,
-              goods_id: 601102637680865,
-              opt_id: 734,
-              seo_link_url:
-                "/1pc-stainless-steel-garlic-press-manual-handheld-garlic-crusher-grater-304-stainless-steel-kitchen-tool-for-mincing-garlic--durable--design-for--garlic-crusher-and-grater-kitchen-gadget-modern-kitchenware--material-food-preparation--sturdy-construction-cooking-enthusiasts-g-601102637680865.html?&_oak_name_id=2247559970725919429&_oak_mp_inf=EOGRxemx1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4b05fe62-129d-4a7f-bed0-5ebd695b6850.jpg&spec_gallery_id=208870379510&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDg4&_oak_gallery_order=880039907%2C151846615%2C745674472",
-              queryReleScore: 0.0,
-              sales_tip_text: ["8.3K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.5,
-                hidden_comment: false,
-                comment_num_tips: "71",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 7190,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/91966a10-b4a6-40b1-80c3-012291b4351f.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-13%",
-              },
-              item_type: 0,
-              page_alt:
-                "12 inch all metal 3 way rain shower head high pressure shower head dual shower heads with handheld spray combo upgrade extension arm height adjustable hotel toilet shower2025",
-              current_sku_id: 17592815054440,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"SANKECAO","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: SANKECAO",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Bath in Black","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"746"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"746"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Bath in Black",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "BEST-SELLING ITEM",
-                    ranking_id: "746",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/cd9f9cfc276367a03d447f54225a5f419a3ab995.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/91966a10-b4a6-40b1-80c3-012291b4351f.jpg",
-                url: "https://img.kwcdn.com/product/79252dedda2e38287cbd9f6f11ef963c44841b69.goods.000001.jpeg",
-              },
-              title:
-                "12 Inch All Metal 3-Way Rain Shower Head with High Pressure & Handheld Spray Combo - Upgrade Extension Arm Height Adjustable, Hotel Toilet Shower2025, Dual Shower Heads",
-              sales_tip_text_list: ["11K+", "sold"],
-              sold_quantity_percent: 22,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "246973255",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGozKi9yt6tz49Ap1OrQzXLrsQYt2qacw1PGtwbVgsPR+BxufphQvpmL3taJE8sKY6dEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "4061883977187511762",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "246973255",
-                g: "601099615921614",
-                scene_id: "3",
-                show_price: "1487",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "52",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "1066232083670180548",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418216984670,
-              sales_num: "11K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099615921614&_oak_mp_inf=EM7L08im1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F91966a10-b4a6-40b1-80c3-012291b4351f.jpg&spec_gallery_id=601099615921614&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQ4Nw&_oak_gallery_order=246973255%2C1050476262%2C680807364%2C42297332%2C974224250",
-              extend_fields: {
-                sale_fire_flag: true,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099615921614&_oak_mp_inf=EM7L08im1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F91966a10-b4a6-40b1-80c3-012291b4351f.jpg&spec_gallery_id=601099615921614&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQ4Nw&_oak_gallery_order=246973255%2C1050476262%2C680807364%2C42297332%2C974224250&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112701569313531342",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "246973255,1050476262,680807364,42297332,974224250",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Bath in Black","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"746"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"746"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Bath in Black",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "BEST-SELLING ITEM",
-                  ranking_id: "746",
-                },
-              ],
-              show_index: 52,
-              price_info: {
-                split_price_text: ["$", "14", ".87", ""],
-                reduction_text: ["-13", "%"],
-                price: 1487,
-                market_price_str: "$17.23",
-                market_price: 1723,
-                price_schema: "14.87",
-                currency: "USD",
-                price_text: ["$", "14.87", ""],
-                price_str: "$14.87",
-                reduction: 130,
-                market_price_text: ["$", "17.23", ""],
-              },
-              image: {
-                width: 375,
-                id: 601099615921614,
-                url_id: "4061883977187511762",
-                url: "https://img.kwcdn.com/product/fancy/91966a10-b4a6-40b1-80c3-012291b4351f.jpg",
-                height: 375,
-              },
-              sales_tip: "11K+ sold",
-              visible: true,
-              goods_id: 601099615921614,
-              opt_id: 749,
-              seo_link_url:
-                "/12-inch-all-metal-3-way-rain-shower-head-high-pressure-shower-head-dual-shower-heads-with-handheld-spray-combo-upgrade-extension-arm-height-adjustable-hotel-toilet-shower2025-g-601099615921614.html?&_oak_mp_inf=EM7L08im1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F91966a10-b4a6-40b1-80c3-012291b4351f.jpg&spec_gallery_id=601099615921614&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQ4Nw&_oak_gallery_order=246973255%2C1050476262%2C680807364%2C42297332%2C974224250",
-              queryReleScore: 0.0,
-              sales_tip_text: ["11K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.6,
-                hidden_comment: false,
-                comment_num_tips: "1,340",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 6,
-                percent: 8860,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/123754a2-a64c-44c2-93be-833a01fcdb86.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-15%",
-              },
-              item_type: 0,
-              page_alt:
-                "1pc home electronic body weight scale digital bathroom scale usb charging thickening and durable hd   to     electronic weighing suitable for home use",
-              current_sku_id: 17608498043224,
-              tags_info: {
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    color: "#555555",
-                    ext_map: {
-                      lowest_tag_up_flag: "1",
-                      lowest_price_before_title: "Lowest ever",
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91048,
-                    text: "Lowest price ever",
-                    tag_series: 2,
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/ccadbc0bce74fde0383466f7ec9b9eb9d3cd5d80.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/123754a2-a64c-44c2-93be-833a01fcdb86.jpg",
-                url: "https://img.kwcdn.com/product/639bfb00a4bec2090de866be7ad912e5b55d3ab0.goods.000001.jpeg",
-              },
-              title:
-                "1pc Smart Scale For Body Weight - High Precision Digital Bathroom Scale, USB Charging, HD Display, Thickened Tempered Glass, For Home, Gym, Health Tracking",
-              sales_tip_text_list: ["431", "sold"],
-              sold_quantity_percent: 33,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "960716326",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoZeEQWINP+zeen3TkVCaIVYDY4+7PaPYYywJVXuUtCmRR+U8Wljl42AdGXFQZuXdMEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "3824290138496468435",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "960716326",
-                g: "601102287470212",
-                scene_id: "3",
-                show_price: "682",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "53",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "5082028104512384240",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418222836934,
-              sales_num: "431",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601102287470212&_oak_mp_inf=EIT9xcKw1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F123754a2-a64c-44c2-93be-833a01fcdb86.jpg&spec_gallery_id=205698365859&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Njgy&_oak_gallery_order=960716326%2C2019425971%2C1369572014%2C1592202196%2C179242737",
-              extend_fields: {
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601102287470212&_oak_mp_inf=EIT9xcKw1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F123754a2-a64c-44c2-93be-833a01fcdb86.jpg&spec_gallery_id=205698365859&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Njgy&_oak_gallery_order=960716326%2C2019425971%2C1369572014%2C1592202196%2C179242737&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112723555980902020",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "960716326,2019425971,1369572014,1592202196,179242737",
-                },
-              },
-              goods_tags: [
-                {
-                  color: "#555555",
-                  ext_map: {
-                    lowest_tag_up_flag: "1",
-                    lowest_price_before_title: "Lowest ever",
-                  },
-                  marketing_tag_type: 1000,
-                  tag_id: 91048,
-                  text: "Lowest price ever",
-                  tag_series: 2,
-                },
-              ],
-              show_index: 53,
-              price_info: {
-                split_price_text: ["$", "6", ".82", ""],
-                reduction_text: ["-15", "%"],
-                price: 682,
-                market_price_str: "$8.10",
-                market_price: 810,
-                price_schema: "6.82",
-                currency: "USD",
-                price_text: ["$", "6.82", ""],
-                price_str: "$6.82",
-                reduction: 150,
-                market_price_text: ["$", "8.10", ""],
-              },
-              image: {
-                width: 800,
-                id: 205698365859,
-                url_id: "3824290138496468435",
-                url: "https://img.kwcdn.com/product/fancy/123754a2-a64c-44c2-93be-833a01fcdb86.jpg",
-                height: 800,
-              },
-              sales_tip: "431 sold",
-              visible: true,
-              goods_id: 601102287470212,
-              opt_id: 749,
-              seo_link_url:
-                "/1pc-home-electronic-body-weight-scale-digital-bathroom-scale-usb-charging-thickening-and-durable-hd--to---electronic-weighing-suitable-for-home-use-g-601102287470212.html?&_oak_mp_inf=EIT9xcKw1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F123754a2-a64c-44c2-93be-833a01fcdb86.jpg&spec_gallery_id=205698365859&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Njgy&_oak_gallery_order=960716326%2C2019425971%2C1369572014%2C1592202196%2C179242737",
-              queryReleScore: 0.0,
-              sales_tip_text: ["431", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.5,
-                hidden_comment: true,
-                comment_num_tips: "49",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 7820,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/4ead47c5-bda0-4758-b2f3-6388b5c6e209.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-25%",
-              },
-              item_type: 0,
-              page_alt:
-                " s for large rooms up to 1076   h13 true hepa filter with scented sponge 25db quiet   for bedrooms and homes odor   compact appliance highefficiency filtration   home   allergy sufferers",
-              current_sku_id: 17614093537631,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#4 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Air Quality","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"6841"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"6841"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Air Quality",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#4 BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#4 BEST-SELLING ITEM",
-                    ranking_id: "6841",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/153add0f37111dc070042aca08a6fe0e45e648c2gs2CV.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/4ead47c5-bda0-4758-b2f3-6388b5c6e209.jpg",
-                url: "https://img.kwcdn.com/product/767f64c900913f47baf8af3bd0f4a4a0d91fd86d.temu.000001.jpeg",
-              },
-              title:
-                "Air Purifiers for Large Rooms up to 1076 Sqft, H13 True HEPA Filter with Scented Sponge, 25dB Quiet Air Purifier for Bedrooms and Homes, Odor Elimination, Compact Appliance, Highefficiency Filtration, Quiet Operation, Home Users, Allergy Sufferers",
-              sales_tip_text_list: ["3.9K+", "sold"],
-              sold_quantity_percent: 34,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "842444572",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoZNg5ocSG52S9Azr04z9T3av/pLHa3SnSZayZU1gVuEkgmBYzF5xPPGtjAqd+AyUnEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "4143704332779635943",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "842444572",
-                g: "601100286051111",
-                scene_id: "3",
-                show_price: "2919",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "54",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "5841388912786250110",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418218290923,
-              sales_num: "3.9K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601100286051111&_oak_mp_inf=EKeGmYip1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4ead47c5-bda0-4758-b2f3-6388b5c6e209.jpg&spec_gallery_id=5293351185&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjkxOQ&_oak_gallery_order=842444572%2C1469689221%2C940693958%2C86947218%2C1630223726",
-              extend_fields: {
-                sale_fire_flag: true,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601100286051111&_oak_mp_inf=EKeGmYip1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4ead47c5-bda0-4758-b2f3-6388b5c6e209.jpg&spec_gallery_id=5293351185&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjkxOQ&_oak_gallery_order=842444572%2C1469689221%2C940693958%2C86947218%2C1630223726&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112721369364382503",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "842444572,1469689221,940693958,86947218,1630223726",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#4 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Air Quality","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"6841"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"6841"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Air Quality",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#4 BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#4 BEST-SELLING ITEM",
-                  ranking_id: "6841",
-                },
-              ],
-              show_index: 54,
-              price_info: {
-                split_price_text: ["$", "29", ".19", ""],
-                reduction_text: ["-25", "%"],
-                price: 2919,
-                market_price_str: "$39.26",
-                market_price: 3926,
-                price_schema: "29.19",
-                currency: "USD",
-                price_text: ["$", "29.19", ""],
-                price_str: "$29.19",
-                reduction: 250,
-                market_price_text: ["$", "39.26", ""],
-              },
-              image: {
-                width: 1600,
-                id: 5293351185,
-                url_id: "4143704332779635943",
-                url: "https://img.kwcdn.com/product/fancy/4ead47c5-bda0-4758-b2f3-6388b5c6e209.jpg",
-                height: 1600,
-              },
-              sales_tip: "3.9K+ sold",
-              visible: true,
-              goods_id: 601100286051111,
-              opt_id: 6842,
-              seo_link_url:
-                "/s-for-large-rooms-up-to-1076--h13-true-hepa-filter-with-scented-sponge-25db-quiet--for-bedrooms-and-homes-odor--compact-appliance-highefficiency-filtration--home--allergy-sufferers-g-601100286051111.html?&_oak_mp_inf=EKeGmYip1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO7RnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4ead47c5-bda0-4758-b2f3-6388b5c6e209.jpg&spec_gallery_id=5293351185&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjkxOQ&_oak_gallery_order=842444572%2C1469689221%2C940693958%2C86947218%2C1630223726",
-              queryReleScore: 0.0,
-              sales_tip_text: ["3.9K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "494",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 7280,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/512f6a1b-2618-4f9a-aeaa-86b7a93aeb5e.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-20%",
-              },
-              item_type: 0,
-              page_alt:
-                "digital bathroom scale with lcd display temperature   body weight scale   platform supports 396 lbs 180kg kg switchable   function low indicator for use bedside tracking",
-              current_sku_id: 17610257573106,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Bath","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"746"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"746"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Bath",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "BEST-SELLING ITEM",
-                    ranking_id: "746",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/bf1b9c654503d4a8f08db6d7e86b2a90f44c14cdgs2CV.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/512f6a1b-2618-4f9a-aeaa-86b7a93aeb5e.jpg",
-                url: "https://img.kwcdn.com/product/92ee52aa66705015c25f7ead7de6a22b9f771964.temu.000001.jpeg",
-              },
-              title:
-                "Digital Bathroom Scale with LCD Display & Temperature - High-Precision Body Weight Scale, Ultra-Wide Platform (Supports 396 lbs/180kg), kg/ Switchable, Tare Function & Low Indicator for Use, Bedside, Tracking",
-              sales_tip_text_list: ["1.1K+", "sold"],
-              sold_quantity_percent: 84,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "684084562",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGo49PC6A2SSPYAzW53SPQ20BOItFX+j7cwT8UD12YVuu2HVUi1yKZih/1OVHxIaUGCEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "6873228422957896633",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "684084562",
-                g: "601103526051140",
-                scene_id: "3",
-                show_price: "467",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "55",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "3153558541379383590",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418220843305,
-              sales_num: "1.1K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601103526051140&_oak_mp_inf=EMT6kpG11ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F512f6a1b-2618-4f9a-aeaa-86b7a93aeb5e.jpg&spec_gallery_id=210823646683&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTA5&_oak_gallery_order=684084562%2C1982997947%2C1622395577%2C605051410%2C241362106",
+                "goods.html?_bg_fs=1&goods_id=601104020664185&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2dbaa657-b3b1-4adf-bf38-0f589b6d0712.jpg&spec_id=16079&spec_gallery_id=523336&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTAxMw&_oak_gallery_order=1172849424%2C216916827%2C487800165&spec_ids=16079&_oak_mp_inf=EPne%2F%2Fy21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKibocKoMw%3D%3D",
+              selected_spec_ids: [16079],
               extend_fields: {
                 market_map: {
                   "220001": {
                     showTag: false,
                     couponBatchSn: "",
                     marketingToolType: 220001,
-                    endTime: 1765295999000,
-                    savingPrice: 42,
+                    endTime: 1765641599000,
+                    savingPrice: 99,
                     appliedPrice: true,
-                    promotionId: "A00051C-4698732154975240489176102575731060",
+                    promotionId: "A00049C-4699013630230823220176127420390130",
                   },
                 },
                 floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601103526051140&_oak_mp_inf=EMT6kpG11ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F512f6a1b-2618-4f9a-aeaa-86b7a93aeb5e.jpg&spec_gallery_id=210823646683&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTA5&_oak_gallery_order=684084562%2C1982997947%2C1622395577%2C605051410%2C241362106&goods_pop_style=1&floating_when_add_to_cart=1",
+                  "goods.html?_bg_fs=1&goods_id=601104020664185&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2dbaa657-b3b1-4adf-bf38-0f589b6d0712.jpg&spec_id=16079&spec_gallery_id=523336&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTAxMw&_oak_gallery_order=1172849424%2C216916827%2C487800165&spec_ids=16079&_oak_mp_inf=EPne%2F%2Fy21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKibocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
                 support_tag_carousel: true,
-                detail_id: "112714794407017796",
+                detail_id: "112732613555056505",
                 sku_extra_param: {
-                  _oak_gallery_order:
-                    "684084562,1982997947,1622395577,605051410,241362106",
+                  _oak_gallery_order: "1172849424,216916827,487800165",
                 },
               },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Bath","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"746"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"746"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Bath",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "BEST-SELLING ITEM",
-                  ranking_id: "746",
-                },
-              ],
-              show_index: 55,
+              goods_tags: [],
+              show_index: 80,
               price_info: {
-                split_price_text: ["$", "4", ".67", ""],
-                reduction_text: ["-27", "%"],
-                price: 467,
-                market_price_str: "$6.41",
-                market_price: 641,
-                price_schema: "$4.67",
-                currency: "USD",
-                price_text: ["$", "4.67", ""],
-                price_str: "$4.67",
-                price_color: "#000000",
-                reduction: 271,
-                market_price_text: ["$", "6.41", ""],
+                reduction_text: ["-16", "%"],
+                market_price_type: 2,
+                price_text: ["CA$", "49.14", ""],
+                price_str: "CA$49.14",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "49", ".14", ""],
+                currency_str: "CA$",
+                price: 4914,
+                market_price_str: "58.54",
+                market_price: 5854,
+                price_schema: "CA$49.14",
+                currency: "CAD",
+                reduction: 161,
+                market_price_text: ["", "58.54", ""],
               },
               image: {
-                width: 1600,
-                id: 210823646683,
-                url_id: "6873228422957896633",
-                url: "https://img.kwcdn.com/product/fancy/512f6a1b-2618-4f9a-aeaa-86b7a93aeb5e.jpg",
-                height: 1600,
-              },
-              sales_tip: "1.1K+ sold",
-              visible: true,
-              goods_id: 601103526051140,
-              opt_id: 749,
-              seo_link_url:
-                "/digital-bathroom-scale-with-lcd-display-temperature--body-weight-scale--platform-supports-396-lbs-180kg-kg-switchable--function-low-indicator-for-use-bedside-tracking-g-601103526051140.html?&_oak_mp_inf=EMT6kpG11ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F512f6a1b-2618-4f9a-aeaa-86b7a93aeb5e.jpg&spec_gallery_id=210823646683&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTA5&_oak_gallery_order=684084562%2C1982997947%2C1622395577%2C605051410%2C241362106",
-              queryReleScore: 0.0,
-              sales_tip_text: ["1.1K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.8,
-                hidden_comment: false,
-                comment_num_tips: "139",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 8310,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/eebc3abe-65e3-492c-ab16-c735147a2962.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-44%",
-              },
-              item_type: 0,
-              page_alt:
-                "5 tray food dehydrator machine with digital timer thermostat heavy duty stainless 201   tray dehydrator for jerky fruits vegetables herbs yogurt pet treats energy saving   operation dishwasher safe trays",
-              current_sku_id: 17612914081161,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"SUSTEAS","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: SUSTEAS",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#9 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Small Appliances & Accessories: Stainless Steel","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"1853"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"1853"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Small Appliances & Accessories: Stainless Steel",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#9 BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#9 BEST-SELLING ITEM",
-                    ranking_id: "1853",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/fa96b7f3a900129c50a8c0a7e391e5e8b51e4d6bgs2CV.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/eebc3abe-65e3-492c-ab16-c735147a2962.jpg",
-                url: "https://img.kwcdn.com/product/dac4beb10065bda483c43d2fcdc184b74ba4f8e7.temu.000001.jpeg",
-              },
-              title:
-                "5-Tray Food Dehydrator Machine with Digital Timer & Thermostat - Heavy-Duty Stainless (201 Grade) 5-Tray Dehydrator for Jerky, Fruits, Vegetables, Herbs, Yogurt, Pet Treats - Energy-Saving, Ultra-Quiet Operation, Dishwasher-Safe Trays,",
-              sales_tip_text_list: ["1.1K+", "sold"],
-              sold_quantity_percent: 51,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "286416187",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoqzYJQI+y5syMlV+u6k0eTxd0jIPoz+/oX0+rPhyX71uW6Oxu9GvuMjWe/dcgUA7jEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "2645354831749884010",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "286416187",
-                g: "601103161494387",
-                scene_id: "3",
-                show_price: "2363",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "56",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "7915842891514801332",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418215805902,
-              sales_num: "1.1K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601103161494387&_oak_mp_inf=EPOWqOOz1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Feebc3abe-65e3-492c-ab16-c735147a2962.jpg&spec_gallery_id=209192294548&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM2Mw&_oak_gallery_order=286416187%2C291608156%2C920230341%2C1603812340%2C279991253",
-              extend_fields: {
-                sale_fire_flag: true,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601103161494387&_oak_mp_inf=EPOWqOOz1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Feebc3abe-65e3-492c-ab16-c735147a2962.jpg&spec_gallery_id=209192294548&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM2Mw&_oak_gallery_order=286416187%2C291608156%2C920230341%2C1603812340%2C279991253&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112723557901863795",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "286416187,291608156,920230341,1603812340,279991253",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#9 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Small Appliances & Accessories: Stainless Steel","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"1853"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"1853"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Small Appliances & Accessories: Stainless Steel",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#9 BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#9 BEST-SELLING ITEM",
-                  ranking_id: "1853",
-                },
-              ],
-              show_index: 56,
-              price_info: {
-                split_price_text: ["$", "23", ".63", ""],
-                reduction_text: ["-44", "%"],
-                price: 2363,
-                market_price_str: "$42.40",
-                market_price: 4240,
-                price_schema: "23.63",
-                currency: "USD",
-                price_text: ["$", "23.63", ""],
-                price_str: "$23.63",
-                reduction: 440,
-                market_price_text: ["$", "42.40", ""],
-              },
-              image: {
-                width: 2000,
-                id: 209192294548,
-                url_id: "2645354831749884010",
-                url: "https://img.kwcdn.com/product/fancy/eebc3abe-65e3-492c-ab16-c735147a2962.jpg",
-                height: 2000,
-              },
-              sales_tip: "1.1K+ sold",
-              visible: true,
-              goods_id: 601103161494387,
-              opt_id: 1854,
-              seo_link_url:
-                "/5-tray-food-dehydrator-machine-with-digital-timer-thermostat-heavy-duty-stainless-201--tray-dehydrator-for-jerky-fruits-vegetables-herbs-yogurt-pet-treats-energy-saving--operation-dishwasher-safe-trays-g-601103161494387.html?&_oak_mp_inf=EPOWqOOz1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Feebc3abe-65e3-492c-ab16-c735147a2962.jpg&spec_gallery_id=209192294548&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM2Mw&_oak_gallery_order=286416187%2C291608156%2C920230341%2C1603812340%2C279991253",
-              queryReleScore: 0.0,
-              sales_tip_text: ["1.1K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "71",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 7460,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/7574dfe1-4a34-4397-a79f-63e6225576e4.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-7%",
-              },
-              item_type: 0,
-              page_alt:
-                "3 in 1 electric indoor grill   with non stick plates 180 opening angle floating hinge grease tray 304 stainless steel sandwich maker with preheat indicator light   for   steaks chicken all in one appliance",
-              current_sku_id: 17593694381045,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"SUSTEAS","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: SUSTEAS",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#7 TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Small Appliances & Accessories","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"1853"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"1853"}}}',
-                    },
-                    prompt_tag_text:
-                      "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Small Appliances & Accessories",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#7 TOP RATED",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#7 TOP RATED",
-                    ranking_id: "1853",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/2efc7441e34d8b594652cd3c5196b93cb0b628c3.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/7574dfe1-4a34-4397-a79f-63e6225576e4.jpg",
-                url: "https://img.kwcdn.com/product/385daf52cc6bce0fafbfaad1f601fa4f34e3915c.goods.000001.jpeg",
-              },
-              title:
-                "3-in-1 Electric Indoor Grill & Panini Press with Non-Stick Plates, 180° Opening Angle, Floating Hinge & Grease Tray - 304 Stainless Steel Sandwich Maker with Preheat Indicator Light, Compact Design for Burgers, Steaks, Chicken - All-in-One Appliance",
-              sales_tip_text_list: ["4.6K+", "sold"],
-              sold_quantity_percent: 15,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "1337029864",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGogZAIS2xBreLl3ayPQBUbG5a42k1myTzEoLp58ugZYvY3ClZkiDRXzfD4qH5sm94ZEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "6933522686465750222",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "1337029864",
-                g: "601099756410736",
-                scene_id: "3",
-                show_price: "1655",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "57",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "1395796166785542691",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418218931726,
-              sales_num: "4.6K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099756410736&_oak_mp_inf=EPCu0oun1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F7574dfe1-4a34-4397-a79f-63e6225576e4.jpg&spec_gallery_id=2768587541&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTY1NQ&_oak_gallery_order=1337029864%2C1146703387%2C171040196%2C1543748816%2C476585430",
-              extend_fields: {
-                sale_fire_flag: true,
-                mall_view_type: 2,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099756410736&_oak_mp_inf=EPCu0oun1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F7574dfe1-4a34-4397-a79f-63e6225576e4.jpg&spec_gallery_id=2768587541&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTY1NQ&_oak_gallery_order=1337029864%2C1146703387%2C171040196%2C1543748816%2C476585430&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112723551945987952",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "1337029864,1146703387,171040196,1543748816,476585430",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#7 TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Small Appliances & Accessories","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"1853"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"1853"}}}',
-                  },
-                  prompt_tag_text:
-                    "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Small Appliances & Accessories",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#7 TOP RATED",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#7 TOP RATED",
-                  ranking_id: "1853",
-                },
-              ],
-              show_index: 57,
-              price_info: {
-                split_price_text: ["$", "16", ".55", ""],
-                reduction_text: ["-7", "%"],
-                price: 1655,
-                market_price_str: "$17.90",
-                market_price: 1790,
-                price_schema: "16.55",
-                currency: "USD",
-                price_text: ["$", "16.55", ""],
-                price_str: "$16.55",
-                reduction: 70,
-                market_price_text: ["$", "17.90", ""],
-              },
-              image: {
-                width: 2000,
-                id: 2768587541,
-                url_id: "6933522686465750222",
-                url: "https://img.kwcdn.com/product/fancy/7574dfe1-4a34-4397-a79f-63e6225576e4.jpg",
-                height: 2000,
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1340,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 523336,
+                url_id: "4463595821841252026",
+                url: "https://img.kwcdn.com/product/fancy/2dbaa657-b3b1-4adf-bf38-0f589b6d0712.jpg",
+                height: 1785,
               },
               sales_tip: "4.6K+ sold",
               visible: true,
-              goods_id: 601099756410736,
-              opt_id: 1854,
+              goods_id: 601104020664185,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "50", ".13", ""],
+                    reduction_text: ["-14", "%"],
+                    price: 5013,
+                    market_price_str: "58.54",
+                    market_price: 5854,
+                    price_schema: "50.13",
+                    currency: "CAD",
+                    price_text: ["CA$", "50.13", ""],
+                    price_str: "CA$50.13",
+                    price_color: "#FB7701",
+                    reduction: 140,
+                    market_price_text: ["", "58.54", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 523336,
+                    url: "https://img.kwcdn.com/product/fancy/2dbaa657-b3b1-4adf-bf38-0f589b6d0712.jpg",
+                    height: 1785,
+                  },
+                  color: "(234,234,234,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-trench-coat-long-sleeve-winter-coat-with-button-front-closure--length-formal-everyday-outerwear-chic--outerwear-non-stretchy-fabric-for-fall--ladies-winter-coats-g-601104020664185.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2dbaa657-b3b1-4adf-bf38-0f589b6d0712.jpg&spec_id=16079&spec_gallery_id=523336&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTAxMw&_oak_mp_inf=EPne%2F%2Fy21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKibocKoMw%3D%3D",
+                  spec_id: 16079,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/cc690cf7-3187-404c-8cdd-f3eb5561591a.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104020664185&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2dbaa657-b3b1-4adf-bf38-0f589b6d0712.jpg&spec_id=16079&spec_gallery_id=523336&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTAxMw&_oak_mp_inf=EPne%2F%2Fy21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKibocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/2dbaa657-b3b1-4adf-bf38-0f589b6d0712.jpg",
+                  price_str: "53.60",
+                },
+              ],
+              spec_ids: "16079",
+              display_end_time: 1764392399,
               seo_link_url:
-                "/3-in-1-electric-indoor-grill--with-non-stick-plates-180-opening-angle-floating-hinge-grease-tray-304-stainless-steel-sandwich-maker-with-preheat-indicator-light--for--steaks-chicken-all-in-one-appliance-g-601099756410736.html?&_oak_mp_inf=EPCu0oun1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F7574dfe1-4a34-4397-a79f-63e6225576e4.jpg&spec_gallery_id=2768587541&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTY1NQ&_oak_gallery_order=1337029864%2C1146703387%2C171040196%2C1543748816%2C476585430",
+                "/ca/womens-elegant-trench-coat-long-sleeve-winter-coat-with-button-front-closure--length-formal-everyday-outerwear-chic--outerwear-non-stretchy-fabric-for-fall--ladies-winter-coats-g-601104020664185.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2dbaa657-b3b1-4adf-bf38-0f589b6d0712.jpg&spec_id=16079&spec_gallery_id=523336&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTAxMw&_oak_gallery_order=1172849424%2C216916827%2C487800165&_oak_mp_inf=EPne%2F%2Fy21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKibocKoMw%3D%3D&spec_ids=16079",
               queryReleScore: 0.0,
               sales_tip_text: ["4.6K+", "sold"],
               opt_type: 3,
-              comment: {
-                goods_score: 4.8,
-                hidden_comment: false,
-                comment_num_tips: "797",
-              },
+              comment: {},
               adult_goods: false,
             },
             {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 7940,
-              },
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/3046a5f1-09de-4ae6-ac0a-5ca6dd05d21b.jpg",
               thumb_url:
-                "https://img.kwcdn.com/product/fancy/c4c68c84-7f75-4dd5-af6a-ba77fd8a5066.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "",
-              },
-              item_type: 0,
-              page_alt:
-                "adult cordless electric lunch box 8000mah battery powered 60w 1 liter portable timer   food warmer portable food heater for home car office truck portable electric lunch box",
-              current_sku_id: 17604167731163,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Storage & Organization: Plastic","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"1723"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"1723"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Kitchen Storage & Organization: Plastic",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "BEST-SELLING ITEM",
-                    ranking_id: "1723",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/0f3fdc61a89ea96de53934fd34b054ec1e541cc3gs2CV.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/c4c68c84-7f75-4dd5-af6a-ba77fd8a5066.jpg",
-                url: "https://img.kwcdn.com/product/4249bf3de1239fd86410f94b27236af1482c66e4.temu.000001.jpeg",
-              },
-              title:
-                "Adult Cordless Electric Lunch Box, 8000mAh Battery Powered, 60W 1 Liter Portable Timer Automatic Heating Food Warmer, Portable Food Heater For Home/Car/Office/Truck, Portable Electric Lunch Box",
-              sales_tip_text_list: ["1.3K+", "sold"],
-              sold_quantity_percent: 50,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "2010294658",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoab3X9PvFAFP99ALRvvJUZvrEEGyL+UFGu2tl1lE5Dnpd/gKQInHeYX9/Tfl/bhoCEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "6901244269880070053",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "2010294658",
-                g: "601102329628444",
-                scene_id: "3",
-                show_price: "4059",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "58",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "2742949206091232489",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418217352954,
-              sales_num: "1.3K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601102329628444&_oak_name_id=2742949206091232489&_oak_mp_inf=EJyO09aw1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc4c68c84-7f75-4dd5-af6a-ba77fd8a5066.jpg&spec_gallery_id=206422436307&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDA1OQ&_oak_gallery_order=2010294658%2C822380799%2C921974585%2C281343638%2C262293846",
-              extend_fields: {
-                sale_fire_flag: true,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601102329628444&_oak_name_id=2742949206091232489&_oak_mp_inf=EJyO09aw1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc4c68c84-7f75-4dd5-af6a-ba77fd8a5066.jpg&spec_gallery_id=206422436307&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDA1OQ&_oak_gallery_order=2010294658%2C822380799%2C921974585%2C281343638%2C262293846&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112716956428125980",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "2010294658,822380799,921974585,281343638,262293846",
-                  _oak_name_id: "2742949206091232489",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Storage & Organization: Plastic","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"1723"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"1723"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Kitchen Storage & Organization: Plastic",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "BEST-SELLING ITEM",
-                  ranking_id: "1723",
-                },
-              ],
-              show_index: 58,
-              price_info: {
-                split_price_text: ["$", "40", ".59", ""],
-                reduction_text: [],
-                price: 4059,
-                price_schema: "40.59",
-                currency: "USD",
-                price_text: ["$", "40.59", ""],
-                price_str: "$40.59",
-              },
-              image: {
-                width: 1600,
-                id: 206422436307,
-                url_id: "6901244269880070053",
-                url: "https://img.kwcdn.com/product/fancy/c4c68c84-7f75-4dd5-af6a-ba77fd8a5066.jpg",
-                height: 1600,
-              },
-              sales_tip: "1.3K+ sold",
-              visible: true,
-              goods_id: 601102329628444,
-              opt_id: 1724,
-              seo_link_url:
-                "/adult-cordless-electric-lunch-box-8000mah-battery-powered-60w-1-liter-portable-timer--food-warmer-portable-food-heater-for-home-car-office-truck-portable-electric-lunch-box-g-601102329628444.html?&_oak_name_id=2742949206091232489&_oak_mp_inf=EJyO09aw1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc4c68c84-7f75-4dd5-af6a-ba77fd8a5066.jpg&spec_gallery_id=206422436307&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDA1OQ&_oak_gallery_order=2010294658%2C822380799%2C921974585%2C281343638%2C262293846",
-              queryReleScore: 0.0,
-              sales_tip_text: ["1.3K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "113",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 7170,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/dc1e8cb8-a050-485b-ad8e-00699c0f52f1.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-40%",
-              },
-              item_type: 0,
-              page_alt:
-                "6 7 9 12 21 24 30 72pcs sealed kitchen crisper bpa free labeled and labeled food storage containers cupboards sealed living room jars for   preservation of   sugar and   kitchen set tools",
-              current_sku_id: 17593237433700,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"VOOVA","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: VOOVA",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/746bc737cd5f95561dc632b6d425e7570682df55.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/dc1e8cb8-a050-485b-ad8e-00699c0f52f1.jpg",
-                url: "https://img.kwcdn.com/product/00dbd1ee8a6da4c6eb3270f56e742b020e889fbe.goods.000001.jpeg",
-              },
-              title:
-                "6/7/9/12/21/24/30/72pcs Sealed Kitchen Crisper, Bpa-Free Labeled And Labeled Food Storage Containers, Cupboards, Sealed Living Room Jars for Longer Preservation of Pasta, Snacks, Sugar And Grains, Kitchen Set Tools",
-              sales_tip_text_list: ["39K+", "sold"],
-              sold_quantity_percent: 1,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "1090855943",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGo4cEn1B3AKCRfKkpJa4G2WBnxUhoGX7NdJmrrIkXy78J3NO9mRZXxvHpaGyEMvrrJEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "8481435704031772139",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "1090855943",
-                g: "601099565007050",
-                scene_id: "3",
-                show_price: "1313",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "59",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "4762697025191484172",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418214343399,
-              sales_num: "39K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099565007050&_oak_mp_inf=EMqBsLCm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdc1e8cb8-a050-485b-ad8e-00699c0f52f1.jpg&spec_gallery_id=601099565007050&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMxMw&_oak_gallery_order=1090855943%2C1837800874%2C1392123067%2C1670734138%2C2039628904",
-              extend_fields: {
-                sale_fire_flag: true,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099565007050&_oak_mp_inf=EMqBsLCm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdc1e8cb8-a050-485b-ad8e-00699c0f52f1.jpg&spec_gallery_id=601099565007050&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMxMw&_oak_gallery_order=1090855943%2C1837800874%2C1392123067%2C1670734138%2C2039628904&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112712555856593098",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "1090855943,1837800874,1392123067,1670734138,2039628904",
-                },
-              },
-              goods_tags: [],
-              show_index: 59,
-              price_info: {
-                split_price_text: ["$", "13", ".13", ""],
-                reduction_text: ["-40", "%"],
-                price: 1313,
-                market_price_str: "$22.12",
-                market_price: 2212,
-                price_schema: "13.13",
-                currency: "USD",
-                price_text: ["$", "13.13", ""],
-                price_str: "$13.13",
-                reduction: 400,
-                market_price_text: ["$", "22.12", ""],
-              },
-              image: {
-                width: 375,
-                id: 601099565007050,
-                url_id: "8481435704031772139",
-                url: "https://img.kwcdn.com/product/fancy/dc1e8cb8-a050-485b-ad8e-00699c0f52f1.jpg",
-                height: 375,
-              },
-              sales_tip: "39K+ sold",
-              visible: true,
-              goods_id: 601099565007050,
-              opt_id: 1724,
-              seo_link_url:
-                "/6-7-9-12-21-24-30-72pcs-sealed-kitchen-crisper-bpa-free-labeled-and-labeled-food-storage-containers-cupboards-sealed-living-room-jars-for--preservation-of--sugar-and--kitchen-set-tools-g-601099565007050.html?&_oak_mp_inf=EMqBsLCm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIO%2FRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdc1e8cb8-a050-485b-ad8e-00699c0f52f1.jpg&spec_gallery_id=601099565007050&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMxMw&_oak_gallery_order=1090855943%2C1837800874%2C1392123067%2C1670734138%2C2039628904",
-              queryReleScore: 0.0,
-              sales_tip_text: ["39K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.8,
-                hidden_comment: false,
-                comment_num_tips: "4,759",
-              },
-              adult_goods: false,
-            },
-            {
-              thumb_url:
-                "https://img.kwcdn.com/product/open/2024-09-10/1725967773868-0bf9f361bdc04958be4d1e0ae8b8d91e-goods.jpeg",
+                "https://img.kwcdn.com/product/fancy/3046a5f1-09de-4ae6-ac0a-5ca6dd05d21b.jpg",
               ware_house_type: 0,
               benefit_text: {
-                text: "-29%",
-              },
-              item_type: 0,
-              page_alt:
-                "stainless steel garlic   clean portable   tool for   and chopping garlic     durable stylish design garlic crusher garlic   garlic crusher  s garlic chopper kitchen accessory kitchen utensil kitchen item",
-              current_sku_id: 17601208585175,
-              tags_info: {
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"732"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"732"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Kitchen Utensils & Supplies",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "BEST-SELLING ITEM",
-                    ranking_id: "732",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/440ab965de1b472356b74a987223fb8b0921c304.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/open/2024-09-10/1725967773868-0bf9f361bdc04958be4d1e0ae8b8d91e-goods.jpeg",
-                url: "https://img.kwcdn.com/product/12edfab32b6bffc60d070599066cabfa87c3b8b0.goods.000001.jpeg",
-              },
-              title:
-                "Stainless Steel Garlic Press - Easy-Clean, Portable & Compact Kitchen Tool for Crushing and Chopping Garlic, Perfect for All Seasons, Durable & Stylish Design, Garlic Crusher, Garlic Pres, Garlic Crusher/press, Garlic Chopper, Kitchen Accessory, Kitchen Utensil, Kitchen Item",
-              sales_tip_text_list: ["18K+", "sold"],
-              sold_quantity_percent: 55,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "1018510672",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGowLI8DzQbKLz0oSkWX5xrFLzMMrYAhT1fw09JN0svZcPxSUswXOS4vavlJvNEKRlpEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "1011964767746542645",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "1018510672",
-                g: "601101725663912",
-                scene_id: "3",
-                show_price: "303",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "60",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "3188775883095134898",
-                ts: "1762677696797",
-              },
-              activity_type: 13,
-              mall_id: 634418222198850,
-              sales_num: "18K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601101725663912&_oak_name_id=3188775883095134898&_oak_mp_inf=EKiF1Lau1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2024-09-10%2F1725967773868-0bf9f361bdc04958be4d1e0ae8b8d91e-goods.jpeg&spec_gallery_id=203496492910&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzAz&_oak_gallery_order=1018510672%2C1820742171%2C597413529",
-              extend_fields: {
-                support_tag_carousel: true,
-                detail_id: "112725762939749032",
-                sku_extra_param: {
-                  _oak_gallery_order: "1018510672,1820742171,597413529",
-                  _oak_name_id: "3188775883095134898",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"732"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"732"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Kitchen Utensils & Supplies",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "BEST-SELLING ITEM",
-                  ranking_id: "732",
-                },
-              ],
-              show_index: 60,
-              price_info: {
-                split_price_text: ["$", "3", ".03", ""],
-                reduction_text: ["-29", "%"],
-                price: 303,
-                market_price_str: "$4.31",
-                market_price: 431,
-                price_schema: "3.03",
-                currency: "USD",
-                price_text: ["$", "3.03", ""],
-                price_str: "$3.03",
-                reduction: 290,
-                market_price_text: ["$", "4.31", ""],
-              },
-              image: {
-                width: 1500,
-                id: 203496492910,
-                url_id: "1011964767746542645",
-                url: "https://img.kwcdn.com/product/open/2024-09-10/1725967773868-0bf9f361bdc04958be4d1e0ae8b8d91e-goods.jpeg",
-                height: 1500,
-              },
-              sales_tip: "18K+ sold",
-              visible: true,
-              goods_id: 601101725663912,
-              opt_id: 734,
-              seo_link_url:
-                "/stainless-steel-garlic--clean-portable--tool-for--and-chopping-garlic---durable-stylish-design-garlic-crusher-garlic--garlic-crusher-s-garlic-chopper-kitchen-accessory-kitchen-utensil-kitchen-item-g-601101725663912.html?&_oak_name_id=3188775883095134898&_oak_mp_inf=EKiF1Lau1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2024-09-10%2F1725967773868-0bf9f361bdc04958be4d1e0ae8b8d91e-goods.jpeg&spec_gallery_id=203496492910&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzAz&_oak_gallery_order=1018510672%2C1820742171%2C597413529",
-              queryReleScore: 0.0,
-              sales_tip_text: ["18K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.8,
-                hidden_comment: false,
-                comment_num_tips: "594",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 7380,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/0fed8bfb-8ff4-499b-98d7-b518d8a6ec2d.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-50%",
-              },
-              item_type: 0,
-              page_alt:
-                "1 2pcs corner floor lamp 61 42 156cm modern rgb led mood lighting with remote app control music sync mode timer     6000k tall standing lamp for living room bedroom game room halloween christmas gift",
-              current_sku_id: 17594963040188,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#1 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Lighting & Ceiling Fans: Modern","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"773"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"773"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Lighting & Ceiling Fans: Modern",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#1 BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#1 BEST-SELLING ITEM",
-                    ranking_id: "773",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/b0385ffe22f2f48d374e4dc3ade32d98fc6db2b1.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/0fed8bfb-8ff4-499b-98d7-b518d8a6ec2d.jpg",
-                url: "https://img.kwcdn.com/product/9b6fd6b117df23c1a1dcbec5fa11cbabbee8d138.goods.000001.jpeg",
-              },
-              title:
-                '1/2pcs Corner Floor Lamp 61.42" (156cm) Modern RGB LED Mood Lighting With Remote APP Control, Music Sync, Mode, Timer, RGBCW 2000K-6000K Tall Standing Lamp For Living Room, Bedroom, Game Room, Halloween Christmas Gift',
-              sales_tip_text_list: ["9.8K+", "sold"],
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "680404560",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoPTvYlt0SiMAD9tAaEAUPkUEPGTKc6M8OfPNY1/Ovxfvm1Xqj1NG9eNAvP2Sm1NAVEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "1744199810109514288",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "680404560",
-                g: "601099631505418",
-                scene_id: "3",
-                show_price: "2964",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "61",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "3708850512628320387",
-                ts: "1762677696798",
-              },
-              mall_id: 634418216267425,
-              sales_num: "9.8K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099631505418&_oak_mp_inf=EIrgitCm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F0fed8bfb-8ff4-499b-98d7-b518d8a6ec2d.jpg&spec_gallery_id=6317405870&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk2NA&_oak_gallery_order=680404560%2C306017822%2C616447694%2C1710618945%2C1595725117",
-              extend_fields: {
-                sale_fire_flag: true,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099631505418&_oak_mp_inf=EIrgitCm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F0fed8bfb-8ff4-499b-98d7-b518d8a6ec2d.jpg&spec_gallery_id=6317405870&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk2NA&_oak_gallery_order=680404560%2C306017822%2C616447694%2C1710618945%2C1595725117&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "680404560,306017822,616447694,1710618945,1595725117",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#1 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Lighting & Ceiling Fans: Modern","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"773"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"773"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Lighting & Ceiling Fans: Modern",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#1 BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#1 BEST-SELLING ITEM",
-                  ranking_id: "773",
-                },
-              ],
-              show_index: 61,
-              price_info: {
-                split_price_text: ["$", "29", ".64", ""],
-                reduction_text: ["-50", "%"],
-                price: 2964,
-                market_price_str: "$59.96",
-                market_price: 5996,
-                price_schema: "29.64",
-                currency: "USD",
-                price_text: ["$", "29.64", ""],
-                price_str: "$29.64",
-                market_price_text: ["$", "59.96", ""],
-              },
-              image: {
-                width: 1600,
-                id: 6317405870,
-                url_id: "1744199810109514288",
-                url: "https://img.kwcdn.com/product/fancy/0fed8bfb-8ff4-499b-98d7-b518d8a6ec2d.jpg",
-                height: 1600,
-              },
-              sales_tip: "9.8K+ sold",
-              visible: true,
-              goods_id: 601099631505418,
-              opt_id: 777,
-              seo_link_url:
-                "/1-2pcs-corner-floor-lamp-61-42-156cm-modern-rgb-led-mood-lighting-with-remote-app-control-music-sync-mode-timer---6000k-tall-standing-lamp-for-living-room-bedroom-game-room-halloween-christmas-gift-g-601099631505418.html?&_oak_mp_inf=EIrgitCm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F0fed8bfb-8ff4-499b-98d7-b518d8a6ec2d.jpg&spec_gallery_id=6317405870&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk2NA&_oak_gallery_order=680404560%2C306017822%2C616447694%2C1710618945%2C1595725117",
-              queryReleScore: 0.0,
-              sales_tip_text: ["9.8K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "564",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 8750,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/86409872-af34-485f-89fc-ac3d3c35077e.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-57%",
-              },
-              item_type: 0,
-              page_alt:
-                "two level organizers for under the sink featuring a sliding pull out shelf made of metal ideal for organizing kitchen bathroom pantry or closet spaces   in 1 pack   pack under sink bathroom cabinet under sink cabinet bathroom under sink storage cabinet under sink cabinet black kitchen cabinet organizer and storage pull out cabinet organizer for kitchen under cabinet organizer and storage pull down cabinet organizer under the sink organizer sliding cabinet",
-              current_sku_id: 17592723512199,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#2 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Storage & Organization","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"1723"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"1723"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Kitchen Storage & Organization",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#2 BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#2 BEST-SELLING ITEM",
-                    ranking_id: "1723",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/1f1f71a7a4eced4fa3a43c38786946e0fb2ef11a.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/86409872-af34-485f-89fc-ac3d3c35077e.jpg",
-                url: "https://img.kwcdn.com/product/c193b5c536ae9bf758f223f0732c8aefa93a1e1f.goods.000001.jpeg",
-              },
-              title:
-                "Two-Level Organizers for Under The Sink, Featuring a Sliding Pull-Out Shelf Made of Metal, Ideal for Organizing Kitchen, Bathroom, Pantry, Or Closet Spaces (Available in 1-Pack Or 2-Pack), Under Sink Bathroom Cabinet, Under Sink Cabinet Bathroom, Under Sink Storage Cabinet, Under Sink Cabinet Black, Kitchen Cabinet Organizer And Storage, Pull Out Cabinet Organizer For Kitchen, Under Cabinet Organizer And Storage, Pull Down Cabinet Organizer, Under The Sink Organizer, Sliding Cabinet",
-              sales_tip_text_list: ["100K+", "sold"],
-              sold_quantity_percent: 39,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "747048336",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoDr2HdrQuG1k7z4rG6o2/+Vgh+uBcCjGXcW/MEdBpIJ060Tg4NBcmKzYrktM7ecunEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "8505190426188287847",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "747048336",
-                g: "601099651517081",
-                scene_id: "3",
-                show_price: "927",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "62",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "2828270453990733153",
-                ts: "1762677696798",
-              },
-              activity_type: 13,
-              mall_id: 634418217431313,
-              sales_num: "100K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099651517081&_oak_mp_inf=EJmV0Nmm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F86409872-af34-485f-89fc-ac3d3c35077e.jpg&spec_gallery_id=2374817094&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTI3&_oak_gallery_order=747048336%2C545065046%2C1414597091%2C1860122318%2C945712838",
-              extend_fields: {
-                sale_fire_flag: true,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099651517081&_oak_mp_inf=EJmV0Nmm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F86409872-af34-485f-89fc-ac3d3c35077e.jpg&spec_gallery_id=2374817094&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTI3&_oak_gallery_order=747048336%2C545065046%2C1414597091%2C1860122318%2C945712838&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112716972894915225",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "747048336,545065046,1414597091,1860122318,945712838",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#2 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Storage & Organization","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"1723"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"1723"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Kitchen Storage & Organization",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#2 BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#2 BEST-SELLING ITEM",
-                  ranking_id: "1723",
-                },
-              ],
-              show_index: 62,
-              price_info: {
-                split_price_text: ["$", "9", ".27", ""],
-                reduction_text: ["-57", "%"],
-                price: 927,
-                market_price_str: "$21.93",
-                market_price: 2193,
-                price_schema: "9.27",
-                currency: "USD",
-                price_text: ["$", "9.27", ""],
-                price_str: "$9.27",
-                reduction: 570,
-                market_price_text: ["$", "21.93", ""],
-              },
-              image: {
-                width: 1200,
-                id: 2374817094,
-                url_id: "8505190426188287847",
-                url: "https://img.kwcdn.com/product/fancy/86409872-af34-485f-89fc-ac3d3c35077e.jpg",
-                height: 1200,
-              },
-              sales_tip: "100K+ sold",
-              visible: true,
-              goods_id: 601099651517081,
-              opt_id: 1724,
-              seo_link_url:
-                "/two-level-organizers-for-under-the-sink-featuring-a-sliding-pull-out-shelf-made-of-metal-ideal-for-organizing-kitchen-bathroom-pantry-or-closet-spaces--in-1-pack--pack-under-sink-bathroom-cabinet-under-sink-cabinet-bathroom-under-sink-storage-cabinet-under-sink-cabinet-black-kitchen-cabinet-organizer-and-storage-pull-out-cabinet-organizer-for-kitchen-under-cabinet-organizer-and-storage-pull-down-cabinet-organizer-under-the-sink-organizer-sliding-cabinet-g-601099651517081.html?&_oak_mp_inf=EJmV0Nmm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F86409872-af34-485f-89fc-ac3d3c35077e.jpg&spec_gallery_id=2374817094&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTI3&_oak_gallery_order=747048336%2C545065046%2C1414597091%2C1860122318%2C945712838",
-              queryReleScore: 0.0,
-              sales_tip_text: ["100K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.8,
-                hidden_comment: false,
-                comment_num_tips: "11,136",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 8270,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/030de514-2f30-4d02-8131-1eb06e639fef.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-6%",
-              },
-              item_type: 0,
-              page_alt:
-                "2pcs gravity powered electric salt and pepper grinder battery powered led   handed automatic operation adjustable coarse grinder grinder black rocking chair   gadget gift battery powered  ",
-              current_sku_id: 17593757364292,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 1 BUSINESS DAY",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"JIASLING","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: JIASLING",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#1 TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"732"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"732"}}}',
-                    },
-                    prompt_tag_text:
-                      "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Kitchen Utensils & Supplies",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#1 TOP RATED",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#1 TOP RATED",
-                    ranking_id: "732",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/790217855c1074ea2c661999f99741d1a9e40685.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/030de514-2f30-4d02-8131-1eb06e639fef.jpg",
-                url: "https://img.kwcdn.com/product/0ddb9cbf8d5645a96ce5285c6195a146f88a4d2e.goods.000001.jpeg",
-              },
-              title:
-                "2PCS Gravity-powered Electric Salt and Pepper Grinder Battery-powered LED Light One-handed Automatic Operation Adjustable Coarse Grinder Grinder Black Rocking Chair Creative Kitchen Gadget Gift Battery-powered to Choose",
-              sales_tip_text_list: ["86K+", "sold"],
-              sold_quantity_percent: 78,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "1115300747",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGo0BjdY6mmEu2wr8LYlho2EgU6i+6AXK5c9LOZ1JtxHXfoa4nUZN9OBzMcUth5JyqwEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "5247289271558221197",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "1115300747",
-                g: "601099889081263",
-                scene_id: "3",
-                show_price: "789",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "63",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "5759328918438436171",
-                ts: "1762677696798",
-              },
-              activity_type: 13,
-              mall_id: 634418219465738,
-              sales_num: "86K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099889081263&_oak_name_id=5759328918438436171&_oak_mp_inf=EK%2F388qn1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F030de514-2f30-4d02-8131-1eb06e639fef.jpg&spec_gallery_id=601099889081263&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Nzg5&_oak_gallery_order=1115300747%2C2119117238%2C1912700287%2C330836800%2C602862777",
-              extend_fields: {
-                sale_fire_flag: true,
-                mall_view_type: 2,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099889081263&_oak_name_id=5759328918438436171&_oak_mp_inf=EK%2F388qn1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F030de514-2f30-4d02-8131-1eb06e639fef.jpg&spec_gallery_id=601099889081263&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Nzg5&_oak_gallery_order=1115300747%2C2119117238%2C1912700287%2C330836800%2C602862777&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112699365986925487",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "1115300747,2119117238,1912700287,330836800,602862777",
-                  _oak_name_id: "5759328918438436171",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#1 TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"732"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"732"}}}',
-                  },
-                  prompt_tag_text:
-                    "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Kitchen Utensils & Supplies",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#1 TOP RATED",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#1 TOP RATED",
-                  ranking_id: "732",
-                },
-              ],
-              show_index: 63,
-              price_info: {
-                split_price_text: ["$", "7", ".89", ""],
-                reduction_text: ["-6", "%"],
-                price: 789,
-                market_price_str: "$8.48",
-                market_price: 848,
-                price_schema: "7.89",
-                currency: "USD",
-                price_text: ["$", "7.89", ""],
-                price_str: "$7.89",
-                reduction: 60,
-                market_price_text: ["$", "8.48", ""],
-              },
-              image: {
-                width: 375,
-                id: 601099889081263,
-                url_id: "5247289271558221197",
-                url: "https://img.kwcdn.com/product/fancy/030de514-2f30-4d02-8131-1eb06e639fef.jpg",
-                height: 375,
-              },
-              sales_tip: "86K+ sold",
-              visible: true,
-              goods_id: 601099889081263,
-              opt_id: 734,
-              seo_link_url:
-                "/2pcs-gravity-powered-electric-salt-and-pepper-grinder-battery-powered-led--handed-automatic-operation-adjustable-coarse-grinder-grinder-black-rocking-chair--gadget-gift-battery-powered--g-601099889081263.html?&_oak_name_id=5759328918438436171&_oak_mp_inf=EK%2F388qn1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F030de514-2f30-4d02-8131-1eb06e639fef.jpg&spec_gallery_id=601099889081263&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Nzg5&_oak_gallery_order=1115300747%2C2119117238%2C1912700287%2C330836800%2C602862777",
-              queryReleScore: 0.0,
-              sales_tip_text: ["86K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "8,892",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 7460,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/market/8ec9501cb3349064bc70b4c68bbbadd8_pp4y5o5oJdOnH.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-47%",
-              },
-              item_type: 0,
-              page_alt:
-                "16 in 1 vegetable chopper professional onion chopper multi functional food chopper kitchen vegetable slicer and dicer vegetable chopper with 8   carrot chopper with container father gift",
-              current_sku_id: 17594755679250,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#1 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"732"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"732"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Kitchen Utensils & Supplies",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#1 BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#1 BEST-SELLING ITEM",
-                    ranking_id: "732",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/fbb368c1dbae6bbd17b520267bf8e056f7ec5d72.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/market/8ec9501cb3349064bc70b4c68bbbadd8_pp4y5o5oJdOnH.jpg",
-                url: "https://img.kwcdn.com/product/5cb4cf3156c525fb9b99191a59df52130efdb202.goods.000001.jpeg",
-              },
-              title:
-                "16-In-1 Vegetable Chopper, Professional Onion Chopper, Multi-Functional Food Chopper, Kitchen Vegetable Slicer And Dicer, Vegetable Chopper with 8 Blades, Carrot Chopper with Container Father Gift",
-              sales_tip_text_list: ["56K+", "sold"],
-              sold_quantity_percent: 40,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "151772875",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGophYegXTHmdT0NTmRPnYZdJ9x+ZTKFVHNHzyYxfiN89ug7JIR/BF4RCaE6a+ri9TfEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "2726496634210073738",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "151772875",
-                g: "601100107041758",
-                scene_id: "3",
-                show_price: "667",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "64",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "86097281700262093",
-                ts: "1762677696798",
-              },
-              activity_type: 13,
-              mall_id: 634418221139160,
-              sales_num: "56K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601100107041758&_oak_name_id=86097281700262093&_oak_mp_inf=EN6X67Ko1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F8ec9501cb3349064bc70b4c68bbbadd8_pp4y5o5oJdOnH.jpg&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjY3&_oak_gallery_order=151772875%2C263352769%2C1017672048%2C1893782224%2C1377452038",
-              extend_fields: {
-                sale_fire_flag: true,
-                support_tag_carousel: true,
-                detail_id: "112719186690558942",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "151772875,263352769,1017672048,1893782224,1377452038",
-                  _oak_name_id: "86097281700262093",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#1 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"732"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"732"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Kitchen Utensils & Supplies",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#1 BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#1 BEST-SELLING ITEM",
-                  ranking_id: "732",
-                },
-              ],
-              show_index: 64,
-              price_info: {
-                split_price_text: ["$", "6", ".67", ""],
-                reduction_text: ["-47", "%"],
-                price: 667,
-                market_price_str: "$12.76",
-                market_price: 1276,
-                price_schema: "6.67",
-                currency: "USD",
-                price_text: ["$", "6.67", ""],
-                price_str: "$6.67",
-                reduction: 470,
-                market_price_text: ["$", "12.76", ""],
-              },
-              image: {
-                width: 800,
-                id: 2,
-                url_id: "2726496634210073738",
-                url: "https://img.kwcdn.com/product/fancy/market/8ec9501cb3349064bc70b4c68bbbadd8_pp4y5o5oJdOnH.jpg",
-                height: 800,
-              },
-              sales_tip: "56K+ sold",
-              visible: true,
-              goods_id: 601100107041758,
-              opt_id: 734,
-              seo_link_url:
-                "/16-in-1-vegetable-chopper-professional-onion-chopper-multi-functional-food-chopper-kitchen-vegetable-slicer-and-dicer-vegetable-chopper-with-8--carrot-chopper-with-container-father-gift-g-601100107041758.html?&_oak_name_id=86097281700262093&_oak_mp_inf=EN6X67Ko1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F8ec9501cb3349064bc70b4c68bbbadd8_pp4y5o5oJdOnH.jpg&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjY3&_oak_gallery_order=151772875%2C263352769%2C1017672048%2C1893782224%2C1377452038",
-              queryReleScore: 0.0,
-              sales_tip_text: ["56K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.6,
-                hidden_comment: false,
-                comment_num_tips: "6,046",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 8130,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/90d9dfee-12e1-41c7-8861-2519c0fc3112.jpg",
-              ware_house_type: 1,
-              benefit_text: {
                 text: "",
               },
               item_type: 0,
               page_alt:
-                "22lbs multipurpose plastic   reusable round food storage container with   lid 360 rotating grain organizer for rice beans pasta with one click portion control",
-              current_sku_id: 17592831684941,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"BANBERS","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: BANBERS",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/d675d27f91ce8a4bfcf1e22688931d4c4bcb03a6.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/90d9dfee-12e1-41c7-8861-2519c0fc3112.jpg",
-                url: "https://img.kwcdn.com/product/d06c024e2460070e03efe81e3e5545f31994503f.goods.000001.jpeg",
-              },
-              title:
-                "22Lbs Multipurpose Plastic Cereal Dispenser, Reusable Round Food Storage Container, with Flip Top Lid, 360° Rotating Grain Organizer for Rice, Beans, Pasta, with One-Click Portion Control",
-              sales_tip_text_list: ["1.3K+", "sold"],
-              sold_quantity_percent: 34,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "409495995",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGo5mp45ClMESgO7cxB1L3rBw5E4D2q6UptSJZsQnxVYkS3TWzubVl05OnJLfw/SRPrEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "7744329031865607230",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "409495995",
-                g: "601099679477593",
-                scene_id: "3",
-                show_price: "1419",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "65",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "1855650678295798410",
-                ts: "1762677696798",
-              },
-              activity_type: 13,
-              mall_id: 634418217433394,
-              sales_num: "1.3K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099679477593&_oak_name_id=1855650678295798410&_oak_mp_inf=ENne%2Buam1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F90d9dfee-12e1-41c7-8861-2519c0fc3112.jpg&spec_gallery_id=2842262942&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQxOQ&_oak_gallery_order=409495995%2C506443340%2C1293214824%2C1794610885%2C420004039",
-              extend_fields: {
-                sale_fire_flag: true,
-                support_tag_carousel: true,
-                detail_id: "112723559646736217",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "409495995,506443340,1293214824,1794610885,420004039",
-                  _oak_name_id: "1855650678295798410",
-                },
-              },
-              goods_tags: [],
-              show_index: 65,
-              price_info: {
-                split_price_text: ["$", "14", ".19", ""],
-                reduction_text: [],
-                price: 1419,
-                price_schema: "14.19",
-                currency: "USD",
-                price_text: ["$", "14.19", ""],
-                price_str: "$14.19",
-              },
-              image: {
-                width: 1500,
-                id: 2842262942,
-                url_id: "7744329031865607230",
-                url: "https://img.kwcdn.com/product/fancy/90d9dfee-12e1-41c7-8861-2519c0fc3112.jpg",
-                height: 1500,
-              },
-              sales_tip: "1.3K+ sold",
-              visible: true,
-              goods_id: 601099679477593,
-              opt_id: 1724,
-              seo_link_url:
-                "/22lbs-multipurpose-plastic--reusable-round-food-storage-container-with--lid-360-rotating-grain-organizer-for-rice-beans-pasta-with-one-click-portion-control-g-601099679477593.html?&_oak_name_id=1855650678295798410&_oak_mp_inf=ENne%2Buam1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F90d9dfee-12e1-41c7-8861-2519c0fc3112.jpg&spec_gallery_id=2842262942&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQxOQ&_oak_gallery_order=409495995%2C506443340%2C1293214824%2C1794610885%2C420004039",
-              queryReleScore: 0.0,
-              sales_tip_text: ["1.3K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "205",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 7840,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/open/2c3460a5a42049a5a9c537a2e444f2e2-goods.jpeg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "",
-              },
-              item_type: 0,
-              page_alt:
-                "3  stainless steel cutting board set durable easy to clean rust resistant bpa   saving   for food preparation food preparation essentials modern kitchenware durable cutting boards cutting boards for kitchen",
-              current_sku_id: 17594268449666,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies: Stainless Steel","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"732"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"732"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Kitchen Utensils & Supplies: Stainless Steel",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "BEST-SELLING ITEM",
-                    ranking_id: "732",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/7be09799863b21ed0bf2e48350de18bac7c91d02.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/open/2c3460a5a42049a5a9c537a2e444f2e2-goods.jpeg",
-                url: "https://img.kwcdn.com/product/9dd7bdff73273a7ae247d8109f7f7f70adef77aa.goods.000001.jpeg",
-              },
-              title:
-                "3pcs Stainless Steel Cutting Board Set - Premium, Durable, Easy to Clean, Rust-Resistant, BPA-Free, Space-Saving Kitchen Ready for Food Preparation, Food Preparation Essentials|Modern Kitchenware|Durable Cutting Boards, Cutting Boards for Kitchen",
-              sales_tip_text_list: ["37K+", "sold"],
-              sold_quantity_percent: 99,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "626307455",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoldhJ8iGq5TAFZ+dvq6lvArKvESsN3BF36mNdixi4UMo42EpspeDaxQk7jmPcRf+nEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "2804981306422715612",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "626307455",
-                g: "601099999899088",
-                scene_id: "3",
-                show_price: "967",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "66",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "4151082571311412273",
-                ts: "1762677696798",
-              },
-              activity_type: 13,
-              mall_id: 634418215466438,
-              sales_num: "37K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099999899088&_oak_mp_inf=ENDb3%2F%2Bn1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2c3460a5a42049a5a9c537a2e444f2e2-goods.jpeg&spec_gallery_id=3713610805&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTY3&_oak_gallery_order=626307455%2C830294361%2C1341972031%2C1084879094%2C1809872540",
-              extend_fields: {
-                sale_fire_flag: true,
-                support_tag_carousel: true,
-                detail_id: "112708182892080592",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "626307455,830294361,1341972031,1084879094,1809872540",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies: Stainless Steel","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"732"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"732"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Kitchen Utensils & Supplies: Stainless Steel",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "BEST-SELLING ITEM",
-                  ranking_id: "732",
-                },
-              ],
-              show_index: 66,
-              price_info: {
-                split_price_text: ["$", "9", ".67", ""],
-                reduction_text: [],
-                price: 967,
-                price_schema: "9.67",
-                currency: "USD",
-                price_text: ["$", "9.67", ""],
-                price_str: "$9.67",
-              },
-              image: {
-                width: 800,
-                id: 3713610805,
-                url_id: "2804981306422715612",
-                url: "https://img.kwcdn.com/product/open/2c3460a5a42049a5a9c537a2e444f2e2-goods.jpeg",
-                height: 800,
-              },
-              sales_tip: "37K+ sold",
-              visible: true,
-              goods_id: 601099999899088,
-              opt_id: 734,
-              seo_link_url:
-                "/3-stainless-steel-cutting-board-set-durable-easy-to-clean-rust-resistant-bpa--saving--for-food-preparation-food-preparation-essentials-modern-kitchenware-durable-cutting-boards-cutting-boards-for-kitchen-g-601099999899088.html?&_oak_mp_inf=ENDb3%2F%2Bn1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPDRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2c3460a5a42049a5a9c537a2e444f2e2-goods.jpeg&spec_gallery_id=3713610805&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTY3&_oak_gallery_order=626307455%2C830294361%2C1341972031%2C1084879094%2C1809872540",
-              queryReleScore: 0.0,
-              sales_tip_text: ["37K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.6,
-                hidden_comment: false,
-                comment_num_tips: "3,434",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 7790,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/d48ae5f7-e859-40c9-a04a-38312d14d190.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-16%",
-              },
-              item_type: 0,
-              page_alt:
-                "15 9 5 6 5 large screen led alarm clock energy saving with auto dimming luminous display of week temperature remote   humidity timer modern desk room decor great fathers day gift for dad seniors  ",
-              current_sku_id: 17592877968686,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"PACILACK","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: PACILACK",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    color: "#555555",
-                    ext_map: {
-                      lowest_tag_up_flag: "2",
-                      lowest_price_before_title: "6m lowest",
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91048,
-                    text: "Lowest price in half year",
-                    tag_series: 2,
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/c1ffa8319d0ef2ca0ed92cbb7fc024def005b1f1.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/d48ae5f7-e859-40c9-a04a-38312d14d190.jpg",
-                url: "https://img.kwcdn.com/product/b410e47e4d299107fe5c21eb7383be3f0250f837.goods.000001.jpeg",
-              },
-              title:
-                '15"/9.5"/6.5" Large Screen LED Alarm Clock - Energy-Saving with Auto-Dimming, Luminous Display Of Week, Temperature, Remote Controll, Humidity & Timer - Modern Desk & Room Decor, Great Father\'s Day Gift for Dad, Seniors, Family & Friends',
-              sales_tip_text_list: ["9.5K+", "sold"],
-              sold_quantity_percent: 56,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "1068957611",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoraeDaUA3Wk9pl9y+Ei0dM5rr8DoEbjdqSk6yb45CwPHbRmA4bHztRb/sOWRIFEU1EIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "9222093257782452769",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "1068957611",
-                g: "601099692214309",
-                scene_id: "3",
-                show_price: "660",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "67",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "2922002642836752455",
-                ts: "1762677696798",
-              },
-              activity_type: 13,
-              mall_id: 634418216913785,
-              sales_num: "9.5K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099692214309&_oak_name_id=2922002642836752455&_oak_mp_inf=EKWQhO2m1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd48ae5f7-e859-40c9-a04a-38312d14d190.jpg&spec_gallery_id=601099692214309&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjYw&_oak_gallery_order=1068957611%2C550564776%2C387892815%2C348877016%2C1467031039",
-              extend_fields: {
-                mall_view_type: 2,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099692214309&_oak_name_id=2922002642836752455&_oak_mp_inf=EKWQhO2m1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd48ae5f7-e859-40c9-a04a-38312d14d190.jpg&spec_gallery_id=601099692214309&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjYw&_oak_gallery_order=1068957611%2C550564776%2C387892815%2C348877016%2C1467031039&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112710359819683877",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "1068957611,550564776,387892815,348877016,1467031039",
-                  _oak_name_id: "2922002642836752455",
-                },
-              },
-              goods_tags: [
-                {
-                  color: "#555555",
-                  ext_map: {
-                    lowest_tag_up_flag: "2",
-                    lowest_price_before_title: "6m lowest",
-                  },
-                  marketing_tag_type: 1000,
-                  tag_id: 91048,
-                  text: "Lowest price in half year",
-                  tag_series: 2,
-                },
-              ],
-              show_index: 67,
-              price_info: {
-                split_price_text: ["$", "6", ".60", ""],
-                reduction_text: ["-16", "%"],
-                price: 660,
-                market_price_str: "$7.95",
-                market_price: 795,
-                price_schema: "6.60",
-                currency: "USD",
-                price_text: ["$", "6.60", ""],
-                price_str: "$6.60",
-                reduction: 160,
-                market_price_text: ["$", "7.95", ""],
-              },
-              image: {
-                width: 375,
-                id: 601099692214309,
-                url_id: "9222093257782452769",
-                url: "https://img.kwcdn.com/product/fancy/d48ae5f7-e859-40c9-a04a-38312d14d190.jpg",
-                height: 375,
-              },
-              sales_tip: "9.5K+ sold",
-              visible: true,
-              goods_id: 601099692214309,
-              opt_id: 755,
-              seo_link_url:
-                "/15-9-5-6-5-large-screen-led-alarm-clock-energy-saving-with-auto-dimming-luminous-display-of-week-temperature-remote--humidity-timer-modern-desk-room-decor-great-fathers-day-gift-for-dad-seniors--g-601099692214309.html?&_oak_name_id=2922002642836752455&_oak_mp_inf=EKWQhO2m1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd48ae5f7-e859-40c9-a04a-38312d14d190.jpg&spec_gallery_id=601099692214309&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjYw&_oak_gallery_order=1068957611%2C550564776%2C387892815%2C348877016%2C1467031039",
-              queryReleScore: 0.0,
-              sales_tip_text: ["9.5K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "1,363",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 3,
-                percent: 7090,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/e105bddf-9ed3-4e8c-9be3-b10c07fc7db1.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-6%",
-              },
-              item_type: 0,
-              page_alt:
-                "2pcs under sink organizer under sliding cabinet basket organizer drawer slide out pull out cabinet organizer shelf multi purpose under sink organizers and storage for kitchen bathroom pantry cabinet christmas gifts black white",
-              current_sku_id: 17602036707324,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 1 BUSINESS DAY",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                  {
-                    color: "#FFEFD3",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"INNOVATIVE LIFE","brand_authorized_type":1}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand Official Store: INNOVATIVE LIFE",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
-                    height: 39,
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/9fbee84f49119d31c74519a4f1379b91f23bd73d.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/e105bddf-9ed3-4e8c-9be3-b10c07fc7db1.jpg",
-                url: "https://img.kwcdn.com/product/ee2fdd88d0c4230e8af89987000734563d764498.goods.000001.jpeg",
-              },
-              title:
-                "2pcs Under Sink Organizer, Under Sliding Cabinet Basket Organizer Drawer, Slide Out Pull Out Cabinet Organizer Shelf, Multi-Purpose Under Sink Organizers And Storage for Kitchen, Bathroom, Pantry Cabinet, Christmas Gifts, Black/White",
-              sales_tip_text_list: ["3.7K+", "sold"],
-              sold_quantity_percent: 12,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "1275432747",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGokrVO6oobo5rKcDzpO/8CSeuvsKQDjXrxP18B3QaySCx+xAG8f/D4Zt4hgOi3cUpnEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "8695509603163849485",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "1275432747",
-                g: "601100809669171",
-                scene_id: "3",
-                show_price: "1299",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "68",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "1799902094170792800",
-                ts: "1762677696798",
-              },
-              activity_type: 13,
-              mall_id: 634418213933714,
-              sales_num: "3.7K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601100809669171&_oak_mp_inf=ELOU8IGr1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fe105bddf-9ed3-4e8c-9be3-b10c07fc7db1.jpg&spec_gallery_id=601100809669171&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTI5OQ&_oak_gallery_order=1275432747%2C1846893156%2C1666757609%2C181755233%2C1529270888",
-              extend_fields: {
-                sale_fire_flag: true,
-                mall_view_type: 2,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601100809669171&_oak_mp_inf=ELOU8IGr1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fe105bddf-9ed3-4e8c-9be3-b10c07fc7db1.jpg&spec_gallery_id=601100809669171&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTI5OQ&_oak_gallery_order=1275432747%2C1846893156%2C1666757609%2C181755233%2C1529270888&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112725756933507635",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "1275432747,1846893156,1666757609,181755233,1529270888",
-                },
-              },
-              goods_tags: [],
-              show_index: 68,
-              price_info: {
-                split_price_text: ["$", "12", ".99", ""],
-                reduction_text: ["-6", "%"],
-                price: 1299,
-                market_price_str: "$13.96",
-                market_price: 1396,
-                price_schema: "12.99",
-                currency: "USD",
-                price_text: ["$", "12.99", ""],
-                price_str: "$12.99",
-                reduction: 60,
-                market_price_text: ["$", "13.96", ""],
-              },
-              image: {
-                width: 375,
-                id: 601100809669171,
-                url_id: "8695509603163849485",
-                url: "https://img.kwcdn.com/product/fancy/e105bddf-9ed3-4e8c-9be3-b10c07fc7db1.jpg",
-                height: 375,
-              },
-              sales_tip: "3.7K+ sold",
-              visible: true,
-              goods_id: 601100809669171,
-              opt_id: 1724,
-              seo_link_url:
-                "/2pcs-under-sink-organizer-under-sliding-cabinet-basket-organizer-drawer-slide-out-pull-out-cabinet-organizer-shelf-multi-purpose-under-sink-organizers-and-storage-for-kitchen-bathroom-pantry-cabinet-christmas-gifts-black-white-g-601100809669171.html?&_oak_mp_inf=ELOU8IGr1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fe105bddf-9ed3-4e8c-9be3-b10c07fc7db1.jpg&spec_gallery_id=601100809669171&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTI5OQ&_oak_gallery_order=1275432747%2C1846893156%2C1666757609%2C181755233%2C1529270888",
-              queryReleScore: 0.0,
-              sales_tip_text: ["3.7K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "365",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 8120,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/2c0fa938-53a6-48be-9810-6ff2164dbf2d.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-46%",
-              },
-              item_type: 0,
-              page_alt:
-                "2 tier   dispenser organizer   plastic space saving refrigerator storage rack with   for   access breakage prevention ladderstyle rack egg holder for refrigerator",
-              current_sku_id: 17595955224674,
+                "womens   tweed coat long formal casual outerwear   h silhouette winter jacket for office parties party attire medium   fabric office wear professional women trench coat women with hood",
+              current_sku_id: 17607205250926,
               tags_info: {
                 activity_icon_tags: [{}],
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 1 BUSINESS DAY",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
                 title_header_tags: [
                   {
                     ext_map: {
                       discount_promotion_tag:
-                        '{"width":95.0,"height":20.0,"bg_url":"https://aimg.kwcdn.com/material-put/20150c22617/6418b975-cdbc-4f67-a113-095602c56edd.png","promotion_tag_track":"clearance_normal"}',
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
                     },
                     marketing_tag_type: 2000,
-                  },
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    color: "#555555",
-                    ext_map: {
-                      lowest_tag_up_flag: "4",
-                      lowest_price_before_title: "60d lowest",
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91048,
-                    text: "Lowest price in 60 days",
-                    tag_series: 2,
                   },
                 ],
               },
               video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/72d8c2c9e0b9a8123c34a1e31b92d84737396628.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/2c0fa938-53a6-48be-9810-6ff2164dbf2d.jpg",
-                url: "https://img.kwcdn.com/product/dcef8efe49158e8a480a4ae53c5c64607beb008d.goods.000001.jpeg",
+                video_url: "",
               },
               title:
-                "2-Tier Rolling Egg Dispenser Organizer - Food-Safe Plastic Space-Saving Refrigerator Storage Rack with Transparent Design for Easy Egg Access & Breakage Prevention, Ladderstyle Rack, Egg Holder for Refrigerator",
-              sales_tip_text_list: ["3.7K+", "sold"],
-              display_end_time_percent: 22,
-              sold_quantity_percent: 97,
+                "Women'S Elegant Burgundy Tweed Coat - Long Formal & Casual Outerwear, Structured H-Silhouette Winter Jacket for Office, Parties, Party Attire, Medium Elasticity Fabric, Office Wear, Professional Women, Trench Coat Women With Hood",
+              sales_tip_text_list: [],
+              display_end_time_percent: 23,
+              sold_quantity_percent: 64,
               p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
+                skc_id: "17596091295645",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
                 item_type: "0",
                 ad_goods: "1",
                 mid: "69999906",
-                final_creative_id: "386749238",
+                final_creative_id: "2140427328",
                 sort_by_type: "873027542",
                 st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGo9ICFt1HvwfrrXjx5RSJDNohUWIRgGFy4cxkaXMdwvbTCwataXSeQBSjqfXwKdaRQEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw78YpXSD/0EsBhAY1CK+jtLJBjdgJ6w33A0cgoT9hAObEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
                 scene: "opt",
-                image_url_id: "8608933363992631365",
-                show_currency: "USD",
+                image_url_id: "8293781271811889844",
+                show_currency: "CAD",
                 no_result: "0",
-                offset: "40",
-                engine_creative_id: "386749238",
-                g: "601100417644546",
+                offset: "80",
+                engine_creative_id: "2140427328",
+                g: "601102947455862",
                 scene_id: "3",
-                show_price: "269",
-                opt_id: "36",
+                show_price: "4019",
+                opt_id: "721",
                 ts_req: "0",
                 version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
                 gin_fallback: "0",
                 opt_type: "0",
                 goods_source: "rec",
-                idx: "69",
-                region: "211",
+                idx: "81",
+                region: "37",
                 bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "7830522829644256593",
-                ts: "1762677696798",
+                cloud_env: "usm1",
+                creative_title_id: "4350936274119332679",
+                ts: "1763223031258",
               },
-              activity_type: 27,
-              mall_id: 634418216289387,
-              sales_num: "3.7K+",
+              activity_type: 13,
+              mall_id: 634418211419586,
+              sales_num: "8.2K+",
               link_url:
-                "goods.html?_bg_fs=1&goods_id=601100417644546&_oak_mp_inf=EILw%2BMap1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2c0fa938-53a6-48be-9810-6ff2164dbf2d.jpg&spec_gallery_id=5256487117&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY5&_oak_gallery_order=386749238%2C1385247989%2C1298453138%2C2121119047%2C5000978",
+                "goods.html?_bg_fs=1&goods_id=601102947455862&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3046a5f1-09de-4ae6-ac0a-5ca6dd05d21b.jpg&spec_id=15066&spec_gallery_id=394558&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDAxOQ&_oak_gallery_order=2140427328%2C1551846340%2C936617112%2C568030776%2C440171277&spec_ids=15066&_oak_name_id=4350936274119332679&_oak_mp_inf=EPamoP2y1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKibocKoMw%3D%3D",
+              selected_spec_ids: [15066],
               extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601102947455862&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3046a5f1-09de-4ae6-ac0a-5ca6dd05d21b.jpg&spec_id=15066&spec_gallery_id=394558&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDAxOQ&_oak_gallery_order=2140427328%2C1551846340%2C936617112%2C568030776%2C440171277&spec_ids=15066&_oak_name_id=4350936274119332679&_oak_mp_inf=EPamoP2y1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKibocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
                 support_tag_carousel: true,
-                detail_id: "112686176553351170",
+                detail_id: "112738948061336438",
                 sku_extra_param: {
                   _oak_gallery_order:
-                    "386749238,1385247989,1298453138,2121119047,5000978",
+                    "2140427328,1551846340,936617112,568030776,440171277",
+                  _oak_name_id: "4350936274119332679",
                 },
               },
-              goods_tags: [
-                {
-                  color: "#555555",
-                  ext_map: {
-                    lowest_tag_up_flag: "4",
-                    lowest_price_before_title: "60d lowest",
-                  },
-                  marketing_tag_type: 1000,
-                  tag_id: 91048,
-                  text: "Lowest price in 60 days",
-                  tag_series: 2,
-                },
-              ],
-              show_index: 69,
+              goods_tags: [],
+              show_index: 81,
               price_info: {
-                split_price_text: ["$", "2", ".69", ""],
-                reduction_text: ["-46", "%"],
-                price: 269,
-                market_price_str: "$5.05",
-                market_price: 505,
-                price_schema: "2.69",
-                currency: "USD",
-                price_text: ["$", "2.69", ""],
-                price_str: "$2.69",
-                price_color: "#D9001B",
-                reduction: 460,
-                market_price_text: ["$", "5.05", ""],
+                split_price_text: ["CA$", "40", ".19", ""],
+                currency_str: "CA$",
+                reduction_text: [],
+                price: 4019,
+                price_schema: "40.19",
+                currency: "CAD",
+                price_text: ["CA$", "40.19", ""],
+                price_str: "CA$40.19",
+                price_color: "#FB7701",
               },
               image: {
-                width: 801,
-                id: 5256487117,
-                url_id: "8608933363992631365",
-                url: "https://img.kwcdn.com/product/fancy/2c0fa938-53a6-48be-9810-6ff2164dbf2d.jpg",
-                height: 801,
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 394558,
+                url_id: "8293781271811889844",
+                url: "https://img.kwcdn.com/product/fancy/3046a5f1-09de-4ae6-ac0a-5ca6dd05d21b.jpg",
+                height: 1800,
               },
-              sales_tip: "3.7K+ sold",
+              sales_tip: "8.2K+ sold",
               visible: true,
-              goods_id: 601100417644546,
-              opt_id: 1724,
-              display_end_time: 1763625599,
+              goods_id: 601102947455862,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "40", ".19", ""],
+                    reduction_text: [],
+                    price: 4019,
+                    price_schema: "40.19",
+                    currency: "CAD",
+                    price_text: ["CA$", "40.19", ""],
+                    price_str: "CA$40.19",
+                    price_color: "#FB7701",
+                  },
+                  image: {
+                    width: 1350,
+                    id: 394558,
+                    url: "https://img.kwcdn.com/product/fancy/3046a5f1-09de-4ae6-ac0a-5ca6dd05d21b.jpg",
+                    height: 1800,
+                  },
+                  color: "(139,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens--tweed-coat-long-formal-casual-outerwear--h-silhouette-winter-jacket-for-office-parties-party-attire-medium--fabric-office-wear-professional-women-trench-coat-women-with-hood-g-601102947455862.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3046a5f1-09de-4ae6-ac0a-5ca6dd05d21b.jpg&spec_id=15066&spec_gallery_id=394558&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDAxOQ&_oak_mp_inf=EPamoP2y1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKibocKoMw%3D%3D",
+                  spec_id: 15066,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/eb06f0f8-a182-4a1c-8454-5190ea273bf4.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102947455862&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3046a5f1-09de-4ae6-ac0a-5ca6dd05d21b.jpg&spec_id=15066&spec_gallery_id=394558&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDAxOQ&_oak_mp_inf=EPamoP2y1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKibocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/3046a5f1-09de-4ae6-ac0a-5ca6dd05d21b.jpg",
+                  price_str: "42.19",
+                },
+              ],
+              spec_ids: "15066",
+              display_end_time: 1763355599,
               seo_link_url:
-                "/2-tier--dispenser-organizer--plastic-space-saving-refrigerator-storage-rack-with--for--access-breakage-prevention-ladderstyle-rack-egg-holder-for-refrigerator-g-601100417644546.html?&_oak_mp_inf=EILw%2BMap1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2c0fa938-53a6-48be-9810-6ff2164dbf2d.jpg&spec_gallery_id=5256487117&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY5&_oak_gallery_order=386749238%2C1385247989%2C1298453138%2C2121119047%2C5000978",
+                "/ca/womens--tweed-coat-long-formal-casual-outerwear--h-silhouette-winter-jacket-for-office-parties-party-attire-medium--fabric-office-wear-professional-women-trench-coat-women-with-hood-g-601102947455862.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3046a5f1-09de-4ae6-ac0a-5ca6dd05d21b.jpg&spec_id=15066&spec_gallery_id=394558&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDAxOQ&_oak_gallery_order=2140427328%2C1551846340%2C936617112%2C568030776%2C440171277&_oak_name_id=4350936274119332679&_oak_mp_inf=EPamoP2y1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKibocKoMw%3D%3D&spec_ids=15066",
               queryReleScore: 0.0,
-              sales_tip_text: ["3.7K+", "sold"],
+              sales_tip_text: ["8.2K+", "sold"],
               opt_type: 3,
               comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "426",
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "4",
               },
               adult_goods: false,
             },
             {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 8740,
-              },
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fmket/c5fe39ef77dfa0210aaf32123fbb3572.jpg",
               thumb_url:
-                "https://img.kwcdn.com/product/fancy/70384a22-0bed-447b-9b9b-00e5684c615f.jpg",
-              ware_house_type: 1,
+                "https://img.kwcdn.com/product/fmket/c5fe39ef77dfa0210aaf32123fbb3572.jpg",
+              ware_house_type: 0,
               benefit_text: {
-                text: "-5%",
+                text: "-41%",
               },
               item_type: 0,
               page_alt:
-                "1pc 1050w high power portable handheld steam cleaner quick heating 12 brush heads for versatile cleaning in kitchens bathrooms furniture cars us plug large capacity water tank steam cleaner for car",
-              current_sku_id: 17592626995090,
+                "womens winter coat navy blue cold weather parka with full zip closure thick insulated long jacket front zipper pocket machine washable loose outerwear for everyday formal events seasonal fashion elegant design   stitching zipper closure office wear",
+              current_sku_id: 17600847093063,
               tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
+                activity_icon_tags: [{}],
                 title_header_tags: [
                   {
-                    color: "#0A8800",
                     ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
                     },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"HATTYROOM","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: HATTYROOM",
-                    tag_series: 2,
-                    height: 39,
+                    marketing_tag_type: 2000,
                   },
                 ],
                 goods_tags: [
                   {
                     icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
                     ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#4 TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Vacuums & Floor Care","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"1849"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"1849"}}}',
+                      stock_type: "1",
+                      simply_stock_tag_text: "2 LEFT!",
                     },
                     prompt_tag_text:
-                      "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Vacuums & Floor Care",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#4 TOP RATED",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#4 TOP RATED",
-                    ranking_id: "1849",
-                  },
-                  {
-                    color: "#555555",
-                    ext_map: {
-                      lowest_tag_up_flag: "5",
-                      lowest_price_before_title: "30d lowest",
-                    },
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
                     marketing_tag_type: 1000,
-                    tag_id: 91048,
-                    text: "Lowest price in 30 days",
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 2 left",
                     tag_series: 2,
                   },
                 ],
@@ -13533,154 +7775,869 @@ export const fetchProductByCategory = async () => {
                 icon_url:
                   "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
                 video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/8bd9e3d3999ab36408f37bf15ea5db13e46926f6.f30.mp4",
+                  "https://goods-vod.kwcdn.com/goods-video/adafb9ae8a044edefb325ad7acce6f5e6cc0e5cbgs2CV.f30.mp4",
                 image_url:
-                  "https://img.kwcdn.com/product/fancy/70384a22-0bed-447b-9b9b-00e5684c615f.jpg",
-                url: "https://img.kwcdn.com/product/950e99b8d4a6e3064c0a9bd8748549b240092612.goods.000001.jpeg",
+                  "https://img.kwcdn.com/product/fmket/c5fe39ef77dfa0210aaf32123fbb3572.jpg",
+                url: "https://img.kwcdn.com/product/88568e599503399cec434f7564176494bfc0f1be.temu.000001.jpeg",
               },
               title:
-                "1Pc 1050W High-Power Portable Handheld Steam Cleaner Quick Heating, 12 Brush Heads For Versatile Cleaning In Kitchens, Bathrooms, Furniture & Cars - Us Plug, Large Capacity Water Tank, Steam Cleaner For Car",
-              sales_tip_text_list: ["14K+", "sold"],
-              sold_quantity_percent: 28,
+                "[Women's Winter Coat] Women's Winter Coat - Navy Blue Cold Weather Parka with Full-Zip Closure, Thick Insulated Long Jacket, Front Zipper Pocket, Machine Washable Loose Outerwear for Everyday & Formal Events, Seasonal Fashion, Elegant Design, Highquality Stitching, Zipper Closure, Office Wear",
+              sales_tip_text_list: [],
+              display_end_time_percent: 23,
+              sold_quantity_percent: 0,
               p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
+                skc_id: "17594588622156",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
                 item_type: "0",
-                ad_goods: "1",
+                ad_goods: "0",
                 mid: "69999906",
-                final_creative_id: "169590555",
+                final_creative_id: "1313030879",
                 sort_by_type: "873027542",
                 st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGojqOlJktiBJVLjQsSlHwv/XyL6kDfNs7DuoOg/CpAgEe7i3jubgH1hj0/Fkaqp1AMEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw6dxD7YTjkz2z3g5sZGcMEDGvcMATbMn+TgdJpdk3FgOEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
                 scene: "opt",
-                image_url_id: "7374238955551624233",
-                show_currency: "USD",
+                image_url_id: "2365700435330543754",
+                show_currency: "CAD",
                 no_result: "0",
-                offset: "40",
-                engine_creative_id: "169590555",
-                g: "601099597290744",
+                offset: "80",
+                engine_creative_id: "1313030879",
+                g: "601101649990341",
                 scene_id: "3",
-                show_price: "2317",
-                opt_id: "36",
+                show_price: "7201",
+                opt_id: "721",
                 ts_req: "0",
                 version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
                 gin_fallback: "0",
                 opt_type: "0",
                 goods_source: "rec",
-                idx: "70",
-                region: "211",
+                idx: "82",
+                region: "37",
                 bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "4181350228741247280",
-                ts: "1762677696798",
+                cloud_env: "usm1",
+                creative_title_id: "7227835776698799943",
+                ts: "1763223031259",
               },
               activity_type: 13,
-              mall_id: 634418216142304,
-              sales_num: "14K+",
+              mall_id: 634418224176548,
+              sales_num: "6.6K+",
               link_url:
-                "goods.html?_bg_fs=1&goods_id=601099597290744&_oak_name_id=4181350228741247280&_oak_mp_inf=EPi54r%2Bm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F70384a22-0bed-447b-9b9b-00e5684c615f.jpg&spec_gallery_id=2227021283&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjMxNw&_oak_gallery_order=169590555%2C57103810%2C138369384%2C190600037%2C720701805",
+                "goods.html?_bg_fs=1&goods_id=601101649990341&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Fc5fe39ef77dfa0210aaf32123fbb3572.jpg&spec_id=16091&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NzIwMQ&_oak_gallery_order=1313030879%2C2118705217%2C747766230%2C1394986941%2C625962563&spec_ids=16091&_oak_name_id=7227835776698799943&_oak_mp_inf=EMWlyZKu1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+              selected_spec_ids: [16091],
               extend_fields: {
-                sale_fire_flag: true,
                 floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099597290744&_oak_name_id=4181350228741247280&_oak_mp_inf=EPi54r%2Bm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F70384a22-0bed-447b-9b9b-00e5684c615f.jpg&spec_gallery_id=2227021283&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjMxNw&_oak_gallery_order=169590555%2C57103810%2C138369384%2C190600037%2C720701805&goods_pop_style=1&floating_when_add_to_cart=1",
+                  "goods.html?_bg_fs=1&goods_id=601101649990341&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Fc5fe39ef77dfa0210aaf32123fbb3572.jpg&spec_id=16091&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NzIwMQ&_oak_gallery_order=1313030879%2C2118705217%2C747766230%2C1394986941%2C625962563&spec_ids=16091&_oak_name_id=7227835776698799943&_oak_mp_inf=EMWlyZKu1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
                 support_tag_carousel: true,
-                detail_id: "112725772788014328",
+                detail_id: "112737216988205765",
                 sku_extra_param: {
                   _oak_gallery_order:
-                    "169590555,57103810,138369384,190600037,720701805",
-                  _oak_name_id: "4181350228741247280",
+                    "1313030879,2118705217,747766230,1394986941,625962563",
+                  _oak_name_id: "7227835776698799943",
                 },
               },
               goods_tags: [
                 {
                   icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
                   ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#4 TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Vacuums & Floor Care","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"1849"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"1849"}}}',
+                    stock_type: "1",
+                    simply_stock_tag_text: "2 LEFT!",
                   },
                   prompt_tag_text:
-                    "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 2 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 82,
+              price_info: {
+                reduction_text: ["-41", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "72.01", ""],
+                price_str: "CA$72.01",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "72", ".01", ""],
+                currency_str: "CA$",
+                price: 7201,
+                market_price_str: "123.68",
+                market_price: 12368,
+                price_schema: "72.01",
+                currency: "CAD",
+                reduction: 410,
+                market_price_text: ["", "123.68", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1500,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 1,
+                url_id: "2365700435330543754",
+                url: "https://img.kwcdn.com/product/fmket/c5fe39ef77dfa0210aaf32123fbb3572.jpg",
+                height: 2000,
+              },
+              sales_tip: "6.6K+ sold",
+              visible: true,
+              goods_id: 601101649990341,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "72", ".01", ""],
+                    reduction_text: ["-41", "%"],
+                    price: 7201,
+                    market_price_str: "123.68",
+                    market_price: 12368,
+                    price_schema: "72.01",
+                    currency: "CAD",
+                    price_text: ["CA$", "72.01", ""],
+                    price_str: "CA$72.01",
+                    price_color: "#FB7701",
+                    reduction: 410,
+                    market_price_text: ["", "123.68", ""],
+                  },
+                  image: {
+                    width: 1500,
+                    id: 1,
+                    url: "https://img.kwcdn.com/product/fmket/c5fe39ef77dfa0210aaf32123fbb3572.jpg",
+                    height: 2000,
+                  },
+                  color: "(46,78,126,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-coat-navy-blue-cold-weather-parka-with-full-zip-closure-thick-insulated-long-jacket-front-zipper-pocket-machine-washable-loose-outerwear-for-everyday-formal-events-seasonal-fashion-elegant-design--stitching-zipper-closure-office-wear-g-601101649990341.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Fc5fe39ef77dfa0210aaf32123fbb3572.jpg&spec_id=16091&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NzIwMQ&_oak_mp_inf=EMWlyZKu1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  spec_id: 16091,
+                  color_image:
+                    "https://img.kwcdn.com/product/temu-avi/image-crop/a57f6519-5cba-45b6-8a5a-273314e886c4.jpg",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601101649990341&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Fc5fe39ef77dfa0210aaf32123fbb3572.jpg&spec_id=16091&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NzIwMQ&_oak_mp_inf=EMWlyZKu1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fmket/c5fe39ef77dfa0210aaf32123fbb3572.jpg",
+                  price_str: "83.25",
+                },
+              ],
+              spec_ids: "16091",
+              display_end_time: 1763355599,
+              seo_link_url:
+                "/ca/womens-winter-coat-navy-blue-cold-weather-parka-with-full-zip-closure-thick-insulated-long-jacket-front-zipper-pocket-machine-washable-loose-outerwear-for-everyday-formal-events-seasonal-fashion-elegant-design--stitching-zipper-closure-office-wear-g-601101649990341.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Fc5fe39ef77dfa0210aaf32123fbb3572.jpg&spec_id=16091&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NzIwMQ&_oak_gallery_order=1313030879%2C2118705217%2C747766230%2C1394986941%2C625962563&_oak_name_id=7227835776698799943&_oak_mp_inf=EMWlyZKu1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D&spec_ids=16091",
+              queryReleScore: 0.0,
+              sales_tip_text: ["6.6K+", "sold"],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/da659d57-aa1c-4ff1-a3ca-907429648b80.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/da659d57-aa1c-4ff1-a3ca-907429648b80.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-85%",
+              },
+              item_type: 0,
+              page_alt: "womens casual outerwear",
+              current_sku_id: 17610858702305,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    ext_map: {
+                      ranking_list_rich_text:
+                        '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"721"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"721"}}}',
+                    },
+                    footer: {
+                      color: "#555555",
+                      text: " in Women's Coats & Jackets",
+                      font: 14,
+                    },
+                    marketing_tag_type: 2100,
+                    header: {
+                      text_style: 2,
+                      color: "#FFFFFF",
+                      back_color: "#0A8800",
+                      text: "BEST-SELLING ITEM",
+                      font: 12,
+                    },
+                    tag_id: 91020,
+                    ranking_type: "Best sellers",
+                    ranking_id: "721",
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title: "Women's Casual Outerwear",
+              sales_tip_text_list: [],
+              display_end_time_percent: 7,
+              sold_quantity_percent: 5,
+              p_rec: {
+                skc_id: "17596923706205",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "139965919",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw1k1rqj/mahorDE1rF+aEYS5mhP7S8vVOxekSwPvghZjEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "6748517884678078918",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "139965919",
+                g: "601102393584900",
+                scene_id: "3",
+                show_price: "2269",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "83",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "4105875677496430159",
+                ts: "1763223031259",
+              },
+              activity_type: 13,
+              mall_id: 634418223104890,
+              sales_num: "7.6K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601102393584900&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fda659d57-aa1c-4ff1-a3ca-907429648b80.jpg&spec_id=2&spec_gallery_id=412129&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI2OQ&_oak_gallery_order=139965919%2C999604195%2C880778687%2C1104134849%2C1406472651&spec_ids=2,15060,2877514,16091,15082,16062,3002,16093,16102&_oak_name_id=4105875677496430159&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+              selected_spec_ids: [
+                2, 15060, 2877514, 16091, 15082, 16062, 3002, 16093, 16102,
+              ],
+              extend_fields: {
+                sale_fire_flag: true,
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601102393584900&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fda659d57-aa1c-4ff1-a3ca-907429648b80.jpg&spec_id=2&spec_gallery_id=412129&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI2OQ&_oak_gallery_order=139965919%2C999604195%2C880778687%2C1104134849%2C1406472651&spec_ids=2,15060,2877514,16091,15082,16062,3002,16093,16102&_oak_name_id=4105875677496430159&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112737154761534724",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "139965919,999604195,880778687,1104134849,1406472651",
+                  _oak_name_id: "4105875677496430159",
+                },
+              },
+              goods_tags: [
+                {
+                  ext_map: {
+                    ranking_list_rich_text:
+                      '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"721"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"721"}}}',
+                  },
                   footer: {
                     color: "#555555",
-                    text: " in Vacuums & Floor Care",
+                    text: " in Women's Coats & Jackets",
                     font: 14,
                   },
                   marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
                   header: {
                     text_style: 2,
                     color: "#FFFFFF",
                     back_color: "#0A8800",
-                    text: "#4 TOP RATED",
+                    text: "BEST-SELLING ITEM",
                     font: 12,
                   },
                   tag_id: 91020,
-                  ranking_type: "#4 TOP RATED",
-                  ranking_id: "1849",
-                },
-                {
-                  color: "#555555",
-                  ext_map: {
-                    lowest_tag_up_flag: "5",
-                    lowest_price_before_title: "30d lowest",
-                  },
-                  marketing_tag_type: 1000,
-                  tag_id: 91048,
-                  text: "Lowest price in 30 days",
-                  tag_series: 2,
+                  ranking_type: "Best sellers",
+                  ranking_id: "721",
                 },
               ],
-              show_index: 70,
+              show_index: 83,
               price_info: {
-                split_price_text: ["$", "23", ".17", ""],
-                reduction_text: ["-5", "%"],
-                price: 2317,
-                market_price_str: "$24.39",
-                market_price: 2439,
-                price_schema: "23.17",
-                currency: "USD",
-                price_text: ["$", "23.17", ""],
-                price_str: "$23.17",
-                reduction: 50,
-                market_price_text: ["$", "24.39", ""],
+                reduction_text: ["-85", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "22.69", ""],
+                price_str: "CA$22.69",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "22", ".69", ""],
+                currency_str: "CA$",
+                price: 2269,
+                market_price_str: "156.20",
+                market_price: 15620,
+                price_schema: "22.69",
+                currency: "CAD",
+                reduction: 850,
+                market_price_text: ["", "156.20", ""],
               },
               image: {
-                width: 1600,
-                id: 2227021283,
-                url_id: "7374238955551624233",
-                url: "https://img.kwcdn.com/product/fancy/70384a22-0bed-447b-9b9b-00e5684c615f.jpg",
-                height: 1600,
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 412129,
+                url_id: "6748517884678078918",
+                url: "https://img.kwcdn.com/product/fancy/da659d57-aa1c-4ff1-a3ca-907429648b80.jpg",
+                height: 1800,
               },
-              sales_tip: "14K+ sold",
+              sales_tip: "7.6K+ sold",
               visible: true,
-              goods_id: 601099597290744,
-              opt_id: 1850,
+              goods_id: 601102393584900,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "22", ".69", ""],
+                    reduction_text: ["-85", "%"],
+                    price: 2269,
+                    market_price_str: "156.20",
+                    market_price: 15620,
+                    price_schema: "22.69",
+                    currency: "CAD",
+                    price_text: ["CA$", "22.69", ""],
+                    price_str: "CA$22.69",
+                    price_color: "#FB7701",
+                    reduction: 850,
+                    market_price_text: ["", "156.20", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 412129,
+                    url: "https://img.kwcdn.com/product/fancy/da659d57-aa1c-4ff1-a3ca-907429648b80.jpg",
+                    height: 1800,
+                  },
+                  color: "(255,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-casual-outerwear-g-601102393584900.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fda659d57-aa1c-4ff1-a3ca-907429648b80.jpg&spec_id=2&spec_gallery_id=412129&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI2OQ&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  spec_id: 2,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/f38bd804-b24b-4951-8fa4-511d1eed5aaf.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102393584900&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fda659d57-aa1c-4ff1-a3ca-907429648b80.jpg&spec_id=2&spec_gallery_id=412129&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI2OQ&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/da659d57-aa1c-4ff1-a3ca-907429648b80.jpg",
+                  price_str: "29.73",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "20", ".41", ""],
+                    reduction_text: ["-81", "%"],
+                    price: 2041,
+                    market_price_str: "108.73",
+                    market_price: 10873,
+                    price_schema: "20.41",
+                    currency: "CAD",
+                    price_text: ["CA$", "20.41", ""],
+                    price_str: "CA$20.41",
+                    price_color: "#FB7701",
+                    reduction: 810,
+                    market_price_text: ["", "108.73", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 311132,
+                    url: "https://img.kwcdn.com/product/fancy/d2834509-4b5a-41f4-b28b-00a9b85ea85e.jpg",
+                    height: 1800,
+                  },
+                  color: "(238,222,176,1)",
+                  seo_link_url:
+                    "/ca/womens-casual-outerwear-g-601102393584900.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd2834509-4b5a-41f4-b28b-00a9b85ea85e.jpg&spec_id=15060&spec_gallery_id=311132&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjA0MQ&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  spec_id: 15060,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/f19fb5b8-ab2e-420c-8d46-3970e468c3a5.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102393584900&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd2834509-4b5a-41f4-b28b-00a9b85ea85e.jpg&spec_id=15060&spec_gallery_id=311132&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjA0MQ&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/d2834509-4b5a-41f4-b28b-00a9b85ea85e.jpg",
+                  price_str: "25.48",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "21", ".03", ""],
+                    reduction_text: ["-80", "%"],
+                    price: 2103,
+                    market_price_str: "109.10",
+                    market_price: 10910,
+                    price_schema: "21.03",
+                    currency: "CAD",
+                    price_text: ["CA$", "21.03", ""],
+                    price_str: "CA$21.03",
+                    price_color: "#FB7701",
+                    reduction: 800,
+                    market_price_text: ["", "109.10", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 408929,
+                    url: "https://img.kwcdn.com/product/fancy/c382444a-22d4-49d7-b368-d9e3b74c683c.jpg",
+                    height: 1800,
+                  },
+                  color: "",
+                  seo_link_url:
+                    "/ca/womens-casual-outerwear-g-601102393584900.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc382444a-22d4-49d7-b368-d9e3b74c683c.jpg&spec_id=2877514&spec_gallery_id=408929&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjEwMw&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  spec_id: 2877514,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/e6f15682-9edc-453f-ae3c-e0cb9b8eca7d.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102393584900&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc382444a-22d4-49d7-b368-d9e3b74c683c.jpg&spec_id=2877514&spec_gallery_id=408929&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjEwMw&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/c382444a-22d4-49d7-b368-d9e3b74c683c.jpg",
+                  price_str: "28.07",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "21", ".05", ""],
+                    reduction_text: ["-80", "%"],
+                    price: 2105,
+                    market_price_str: "107.49",
+                    market_price: 10749,
+                    price_schema: "21.05",
+                    currency: "CAD",
+                    price_text: ["CA$", "21.05", ""],
+                    price_str: "CA$21.05",
+                    price_color: "#FB7701",
+                    reduction: 800,
+                    market_price_text: ["", "107.49", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 408949,
+                    url: "https://img.kwcdn.com/product/fancy/81a79fa4-d8cf-4484-8b08-e412d98cbf4f.jpg",
+                    height: 1800,
+                  },
+                  color: "(46,78,126,1)",
+                  seo_link_url:
+                    "/ca/womens-casual-outerwear-g-601102393584900.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F81a79fa4-d8cf-4484-8b08-e412d98cbf4f.jpg&spec_id=16091&spec_gallery_id=408949&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjEwNQ&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  spec_id: 16091,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/5e9a5cbe-bb3b-4bd2-9d5b-be03a3c9129f.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102393584900&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F81a79fa4-d8cf-4484-8b08-e412d98cbf4f.jpg&spec_id=16091&spec_gallery_id=408949&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjEwNQ&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/81a79fa4-d8cf-4484-8b08-e412d98cbf4f.jpg",
+                  price_str: "28.07",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "21", ".29", ""],
+                    reduction_text: ["-82", "%"],
+                    price: 2129,
+                    market_price_str: "119.88",
+                    market_price: 11988,
+                    price_schema: "21.29",
+                    currency: "CAD",
+                    price_text: ["CA$", "21.29", ""],
+                    price_str: "CA$21.29",
+                    price_color: "#FB7701",
+                    reduction: 820,
+                    market_price_text: ["", "119.88", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 408934,
+                    url: "https://img.kwcdn.com/product/fancy/643e6edc-a95f-4ec8-a4d3-547e302d0430.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,100,0,1)",
+                  seo_link_url:
+                    "/ca/womens-casual-outerwear-g-601102393584900.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F643e6edc-a95f-4ec8-a4d3-547e302d0430.jpg&spec_id=15082&spec_gallery_id=408934&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjEyOQ&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  spec_id: 15082,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/0ab1543b-68f6-4f44-b6aa-90d2d35e5de0.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102393584900&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F643e6edc-a95f-4ec8-a4d3-547e302d0430.jpg&spec_id=15082&spec_gallery_id=408934&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjEyOQ&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/643e6edc-a95f-4ec8-a4d3-547e302d0430.jpg",
+                  price_str: "28.07",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "22", ".69", ""],
+                    reduction_text: ["-81", "%"],
+                    price: 2269,
+                    market_price_str: "119.88",
+                    market_price: 11988,
+                    price_schema: "22.69",
+                    currency: "CAD",
+                    price_text: ["CA$", "22.69", ""],
+                    price_str: "CA$22.69",
+                    price_color: "#FB7701",
+                    reduction: 810,
+                    market_price_text: ["", "119.88", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 408939,
+                    url: "https://img.kwcdn.com/product/fancy/f33a0867-45b4-4362-9cdf-504a8d720c7b.jpg",
+                    height: 1800,
+                  },
+                  color: "(153,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-casual-outerwear-g-601102393584900.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Ff33a0867-45b4-4362-9cdf-504a8d720c7b.jpg&spec_id=16062&spec_gallery_id=408939&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI2OQ&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  spec_id: 16062,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/d41fd6c8-8c89-4822-aa8f-a3296913a7dc.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102393584900&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Ff33a0867-45b4-4362-9cdf-504a8d720c7b.jpg&spec_id=16062&spec_gallery_id=408939&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI2OQ&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKmbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/f33a0867-45b4-4362-9cdf-504a8d720c7b.jpg",
+                  price_str: "29.73",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "22", ".70", ""],
+                    reduction_text: ["-79", "%"],
+                    price: 2270,
+                    market_price_str: "108.73",
+                    market_price: 10873,
+                    price_schema: "22.70",
+                    currency: "CAD",
+                    price_text: ["CA$", "22.70", ""],
+                    price_str: "CA$22.70",
+                    price_color: "#FB7701",
+                    reduction: 790,
+                    market_price_text: ["", "108.73", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 311127,
+                    url: "https://img.kwcdn.com/product/fancy/aa3d8052-314d-47f2-99fe-df033c1f419c.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-casual-outerwear-g-601102393584900.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Faa3d8052-314d-47f2-99fe-df033c1f419c.jpg&spec_id=3002&spec_gallery_id=311127&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI3MA&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/b7c4ebe8-25ad-4aee-ac71-483bf7798fb9.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102393584900&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Faa3d8052-314d-47f2-99fe-df033c1f419c.jpg&spec_id=3002&spec_gallery_id=311127&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI3MA&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/aa3d8052-314d-47f2-99fe-df033c1f419c.jpg",
+                  price_str: "29.73",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "22", ".70", ""],
+                    reduction_text: ["-79", "%"],
+                    price: 2270,
+                    market_price_str: "109.10",
+                    market_price: 10910,
+                    price_schema: "22.70",
+                    currency: "CAD",
+                    price_text: ["CA$", "22.70", ""],
+                    price_str: "CA$22.70",
+                    price_color: "#FB7701",
+                    reduction: 790,
+                    market_price_text: ["", "109.10", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 311137,
+                    url: "https://img.kwcdn.com/product/fancy/7060604a-205b-4b4c-a569-09eb371f6463.jpg",
+                    height: 1800,
+                  },
+                  color: "(93,118,42,1)",
+                  seo_link_url:
+                    "/ca/womens-casual-outerwear-g-601102393584900.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F7060604a-205b-4b4c-a569-09eb371f6463.jpg&spec_id=16093&spec_gallery_id=311137&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI3MA&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  spec_id: 16093,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/82c791cf-3759-4c87-90c4-470c74c7137f.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102393584900&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F7060604a-205b-4b4c-a569-09eb371f6463.jpg&spec_id=16093&spec_gallery_id=311137&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI3MA&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/7060604a-205b-4b4c-a569-09eb371f6463.jpg",
+                  price_str: "29.73",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "22", ".71", ""],
+                    reduction_text: ["-85", "%"],
+                    price: 2271,
+                    market_price_str: "156.20",
+                    market_price: 15620,
+                    price_schema: "22.71",
+                    currency: "CAD",
+                    price_text: ["CA$", "22.71", ""],
+                    price_str: "CA$22.71",
+                    price_color: "#FB7701",
+                    reduction: 850,
+                    market_price_text: ["", "156.20", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 408944,
+                    url: "https://img.kwcdn.com/product/fancy/593af507-eaf2-4cf1-bd73-caf18506b4e8.jpg",
+                    height: 1800,
+                  },
+                  color: "(96,57,18,1)",
+                  seo_link_url:
+                    "/ca/womens-casual-outerwear-g-601102393584900.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F593af507-eaf2-4cf1-bd73-caf18506b4e8.jpg&spec_id=16102&spec_gallery_id=408944&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI3MQ&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  spec_id: 16102,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/655ebad5-349b-47b7-aaf5-9efab7d462c5.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102393584900&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F593af507-eaf2-4cf1-bd73-caf18506b4e8.jpg&spec_id=16102&spec_gallery_id=408944&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI3MQ&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/593af507-eaf2-4cf1-bd73-caf18506b4e8.jpg",
+                  price_str: "29.73",
+                },
+              ],
+              spec_ids: "2,15060,2877514,16091,15082,16062,3002,16093,16102",
+              display_end_time: 1763787599,
               seo_link_url:
-                "/1pc-1050w-high-power-portable-handheld-steam-cleaner-quick-heating-12-brush-heads-for-versatile-cleaning-in-kitchens-bathrooms-furniture-cars-us-plug-large-capacity-water-tank-steam-cleaner-for-car-g-601099597290744.html?&_oak_name_id=4181350228741247280&_oak_mp_inf=EPi54r%2Bm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F70384a22-0bed-447b-9b9b-00e5684c615f.jpg&spec_gallery_id=2227021283&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjMxNw&_oak_gallery_order=169590555%2C57103810%2C138369384%2C190600037%2C720701805",
+                "/ca/womens-casual-outerwear-g-601102393584900.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fda659d57-aa1c-4ff1-a3ca-907429648b80.jpg&spec_id=2&spec_gallery_id=412129&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI2OQ&_oak_gallery_order=139965919%2C999604195%2C880778687%2C1104134849%2C1406472651&_oak_name_id=4105875677496430159&_oak_mp_inf=EITakvWw1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D&spec_ids=2,15060,2877514,16091,15082,16062,3002,16093,16102",
               queryReleScore: 0.0,
-              sales_tip_text: ["14K+", "sold"],
+              sales_tip_text: ["7.6K+", "sold"],
               opt_type: 3,
               comment: {
-                goods_score: 4.8,
+                goods_score: 4.7,
                 hidden_comment: false,
-                comment_num_tips: "1,483",
+                comment_num_tips: "236",
               },
               adult_goods: false,
             },
             {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/60f6580f-20e2-4e9a-81d5-cf824f046381.jpg",
               thumb_url:
-                "https://img.kwcdn.com/product/fmket/edfc7aedd1709df55844b0a69dd12411.jpg",
+                "https://img.kwcdn.com/product/fancy/60f6580f-20e2-4e9a-81d5-cf824f046381.jpg",
               ware_house_type: 0,
               benefit_text: {
-                text: "",
+                text: "-73%",
               },
               item_type: 0,
               page_alt:
-                "2  stainless steel salt and pepper grinder set adjustable ceramic   salt and pepper mill this elegant yet practical grinder set enhances your     flavor to your kitchen",
-              current_sku_id: 17602314745413,
+                "womens winter plush like hooded jacket with full zip closure collar dark green black coat machine washable long sleeve outerwear zippered pockets for cold weather casual outer jacket no belt",
+              current_sku_id: 17612093647921,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    ext_map: {
+                      ranking_list_rich_text:
+                        '{"text_rich":[{"type":0,"value":"NEW ARRIVAL","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"New product","ranking_opt_id":"721"},"impr":{"ranking_type":"New product","ranking_opt_id":"721"}}}',
+                    },
+                    footer: {
+                      color: "#555555",
+                      text: " in Women's Coats & Jackets",
+                      font: 14,
+                    },
+                    marketing_tag_type: 2100,
+                    header: {
+                      text_style: 2,
+                      color: "#FFFFFF",
+                      back_color: "#0A8800",
+                      text: "NEW ARRIVAL",
+                      font: 12,
+                    },
+                    tag_id: 91020,
+                    ranking_type: "New product",
+                    ranking_id: "721",
+                  },
+                ],
+              },
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/95cfdfb3d733b3293a9fd1258c6fcd11e0e899c8gs2CV.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fancy/60f6580f-20e2-4e9a-81d5-cf824f046381.jpg",
+                url: "https://img.kwcdn.com/product/fceb09e3d49984bb30729bdf60f9524fdeb1cacc.temu.000001.jpeg",
+              },
+              title:
+                "Women's Winter Plush-Like Hooded Jacket, Full-Zip Closure with Collar, Machine Washable Long Sleeve Outerwear, Zippered Pockets for Cold Weather, Dark Green/Black, Casual Outer Jacket (No Belt)",
+              sales_tip_text_list: [],
+              display_end_time_percent: 7,
+              sold_quantity_percent: 0,
+              p_rec: {
+                skc_id: "17597211132281",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "1206570940",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw5si5UO3NQwHENrfQcZmz1Ah+AvMhqcLkmVtkd8x2r3AEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "4324967474809091268",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1206570940",
+                g: "601103892720340",
+                scene_id: "3",
+                show_price: "3654",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "84",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "3080039183419665591",
+                ts: "1763223031259",
+              },
+              activity_type: 13,
+              mall_id: 634418224177937,
+              sales_num: "6.5K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601103892720340&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F60f6580f-20e2-4e9a-81d5-cf824f046381.jpg&spec_id=15082&spec_gallery_id=479838&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzY1NA&_oak_gallery_order=1206570940%2C1330999369%2C557049981&spec_ids=15082&_oak_name_id=3080039183419665591&_oak_mp_inf=ENTV%2Fr%2B21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+              selected_spec_ids: [15082],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601103892720340&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F60f6580f-20e2-4e9a-81d5-cf824f046381.jpg&spec_id=15082&spec_gallery_id=479838&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzY1NA&_oak_gallery_order=1206570940%2C1330999369%2C557049981&spec_ids=15082&_oak_name_id=3080039183419665591&_oak_mp_inf=ENTV%2Fr%2B21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112741297005832916",
+                sku_extra_param: {
+                  _oak_gallery_order: "1206570940,1330999369,557049981",
+                  _oak_name_id: "3080039183419665591",
+                },
+              },
+              goods_tags: [
+                {
+                  ext_map: {
+                    ranking_list_rich_text:
+                      '{"text_rich":[{"type":0,"value":"NEW ARRIVAL","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"New product","ranking_opt_id":"721"},"impr":{"ranking_type":"New product","ranking_opt_id":"721"}}}',
+                  },
+                  footer: {
+                    color: "#555555",
+                    text: " in Women's Coats & Jackets",
+                    font: 14,
+                  },
+                  marketing_tag_type: 2100,
+                  header: {
+                    text_style: 2,
+                    color: "#FFFFFF",
+                    back_color: "#0A8800",
+                    text: "NEW ARRIVAL",
+                    font: 12,
+                  },
+                  tag_id: 91020,
+                  ranking_type: "New product",
+                  ranking_id: "721",
+                },
+              ],
+              show_index: 84,
+              price_info: {
+                reduction_text: ["-73", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "36.54", ""],
+                price_str: "CA$36.54",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "36", ".54", ""],
+                currency_str: "CA$",
+                price: 3654,
+                market_price_str: "140.41",
+                market_price: 14041,
+                price_schema: "36.54",
+                currency: "CAD",
+                reduction: 730,
+                market_price_text: ["", "140.41", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1773,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 479838,
+                url_id: "4324967474809091268",
+                url: "https://img.kwcdn.com/product/fancy/60f6580f-20e2-4e9a-81d5-cf824f046381.jpg",
+                height: 2364,
+              },
+              sales_tip: "6.5K+ sold",
+              visible: true,
+              goods_id: 601103892720340,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "36", ".54", ""],
+                    reduction_text: ["-73", "%"],
+                    price: 3654,
+                    market_price_str: "140.41",
+                    market_price: 14041,
+                    price_schema: "36.54",
+                    currency: "CAD",
+                    price_text: ["CA$", "36.54", ""],
+                    price_str: "CA$36.54",
+                    price_color: "#FB7701",
+                    reduction: 730,
+                    market_price_text: ["", "140.41", ""],
+                  },
+                  image: {
+                    width: 1773,
+                    id: 479838,
+                    url: "https://img.kwcdn.com/product/fancy/60f6580f-20e2-4e9a-81d5-cf824f046381.jpg",
+                    height: 2364,
+                  },
+                  color: "(0,100,0,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-plush-like-hooded-jacket-with-full-zip-closure-collar-dark-green-black-coat-machine-washable-long-sleeve-outerwear-zippered-pockets-for-cold-weather-casual-outer-jacket-no-belt-g-601103892720340.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F60f6580f-20e2-4e9a-81d5-cf824f046381.jpg&spec_id=15082&spec_gallery_id=479838&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzY1NA&_oak_mp_inf=ENTV%2Fr%2B21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  spec_id: 15082,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/e07aa62d-e46d-44c8-ae61-c195494e9272.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103892720340&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F60f6580f-20e2-4e9a-81d5-cf824f046381.jpg&spec_id=15082&spec_gallery_id=479838&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzY1NA&_oak_mp_inf=ENTV%2Fr%2B21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/60f6580f-20e2-4e9a-81d5-cf824f046381.jpg",
+                  price_str: "38.81",
+                },
+              ],
+              spec_ids: "15082",
+              display_end_time: 1763787599,
+              seo_link_url:
+                "/ca/womens-winter-plush-like-hooded-jacket-with-full-zip-closure-collar-dark-green-black-coat-machine-washable-long-sleeve-outerwear-zippered-pockets-for-cold-weather-casual-outer-jacket-no-belt-g-601103892720340.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F60f6580f-20e2-4e9a-81d5-cf824f046381.jpg&spec_id=15082&spec_gallery_id=479838&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzY1NA&_oak_gallery_order=1206570940%2C1330999369%2C557049981&_oak_name_id=3080039183419665591&_oak_mp_inf=ENTV%2Fr%2B21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D&spec_ids=15082",
+              queryReleScore: 0.0,
+              sales_tip_text: ["6.5K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "2",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/e0b80880-3f1c-4cc3-b804-6fb5670e58b3.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/e0b80880-3f1c-4cc3-b804-6fb5670e58b3.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-77%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens elegant sleeveless hooded jacket   length coat with adjustable drawstring hood solid color blouse   washable versatile for casual professional wear   outerwear for dresses skirts blouses stylish",
+              current_sku_id: 17613186078463,
               tags_info: {
                 activity_icon_tags: [
                   {
@@ -13694,7 +8651,7 @@ export const fetchProductByCategory = async () => {
                   {
                     ext_map: {
                       discount_promotion_tag:
-                        '{"width":91.0,"height":20.0,"bg_url":"https://aimg.kwcdn.com/material-put/20150c22617/8154dd93-1bf7-4376-8ea2-b9a76d13ab14.png","promotion_tag_track":"lightning_normal"}',
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
                     },
                     marketing_tag_type: 2000,
                   },
@@ -13702,1924 +8659,20 @@ export const fetchProductByCategory = async () => {
                 goods_tags: [
                   {
                     icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
                     ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"732"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"732"}}}',
+                      stock_type: "1",
+                      simply_stock_tag_text: "4 LEFT!",
                     },
                     prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Kitchen Utensils & Supplies",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
                     rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "BEST-SELLING ITEM",
-                    ranking_id: "732",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/cd2d4824d4276ecc8964d50eb199c3ceee4069d9.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fmket/edfc7aedd1709df55844b0a69dd12411.jpg",
-                url: "https://img.kwcdn.com/product/e5679c73394fedaec62e1e5642e2d4ee9b4cdc09.goods.000001.jpeg",
-              },
-              title:
-                "2pcs Premium Stainless Steel Salt and Pepper Grinder Set - Adjustable Ceramic - High Glass Salt and Pepper Mill - This elegant yet practical grinder set enhances your cooking experience, adding flavor to your kitchen",
-              sales_tip_text_list: ["19K+", "sold"],
-              display_end_time_percent: 0,
-              sold_quantity_percent: 26,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "320936788",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoe1QahOXQG7mdRURdFcFNqLBYKZB+OVEigfVTMgFeiEAPfPC+Djf1p45XrF7PTbxBEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "3670021454164074744",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "320936788",
-                g: "601101961736576",
-                scene_id: "3",
-                show_price: "1232",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "71",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "230776809520038132",
-                ts: "1762677696798",
-              },
-              activity_type: 2,
-              mall_id: 634418220450081,
-              sales_num: "19K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601101961736576&_oak_name_id=230776809520038132&_oak_mp_inf=EIDjnKev1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Fedfc7aedd1709df55844b0a69dd12411.jpg&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTIzMg&_oak_gallery_order=320936788%2C2141295602%2C1221861028%2C1023116834%2C1751397537",
-              extend_fields: {
-                sale_fire_flag: true,
-                support_tag_carousel: true,
-                detail_id: "112710358745952640",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "320936788,2141295602,1221861028,1023116834,1751397537",
-                  _oak_name_id: "230776809520038132",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Kitchen Utensils & Supplies","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"732"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"732"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Kitchen Utensils & Supplies",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "BEST-SELLING ITEM",
-                  ranking_id: "732",
-                },
-              ],
-              show_index: 71,
-              price_info: {
-                split_price_text: ["$", "12", ".32", ""],
-                reduction_text: [],
-                price: 1232,
-                price_schema: "12.32",
-                currency: "USD",
-                price_text: ["$", "12.32", ""],
-                price_str: "$12.32",
-                price_color: "#FB7701",
-              },
-              image: {
-                width: 2000,
-                id: 1,
-                url_id: "3670021454164074744",
-                url: "https://img.kwcdn.com/product/fmket/edfc7aedd1709df55844b0a69dd12411.jpg",
-                height: 2000,
-              },
-              sales_tip: "19K+ sold",
-              visible: true,
-              goods_id: 601101961736576,
-              opt_id: 734,
-              display_end_time: 1763279999,
-              seo_link_url:
-                "/2-stainless-steel-salt-and-pepper-grinder-set-adjustable-ceramic--salt-and-pepper-mill-this-elegant-yet-practical-grinder-set-enhances-your---flavor-to-your-kitchen-g-601101961736576.html?&_oak_name_id=230776809520038132&_oak_mp_inf=EIDjnKev1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Fedfc7aedd1709df55844b0a69dd12411.jpg&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTIzMg&_oak_gallery_order=320936788%2C2141295602%2C1221861028%2C1023116834%2C1751397537",
-              queryReleScore: 0.0,
-              sales_tip_text: ["19K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "406",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 8790,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/open/f4fa7cae2b7241a694a3bf06b768954e-goods.jpeg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-29%",
-              },
-              item_type: 0,
-              page_alt:
-                "food dehydrator machine adjustable temperature 72h timer 5 tray dehydrators for food and jerky   treats herbs snacks led display 240w electric food dryer recipe book",
-              current_sku_id: 17607665841569,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 1 BUSINESS DAY",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 4 left",
                     tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"YASHE","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: YASHE",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#6 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Small Appliances & Accessories: Stainless Steel","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"1853"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"1853"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Small Appliances & Accessories: Stainless Steel",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#6 BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#6 BEST-SELLING ITEM",
-                    ranking_id: "1853",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/184963180f9cd86aeb4f6fee6b5b2909c8cd1e24.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/open/f4fa7cae2b7241a694a3bf06b768954e-goods.jpeg",
-                url: "https://img.kwcdn.com/product/b558f8466349547fd75bd709ca8cfaed438e98b9.goods.000001.jpeg",
-              },
-              title:
-                "Food Dehydrator Machine Adjustable Temperature & 72H Timer, 5-Tray Dehydrators for Food And Jerky, Fruit, Dog Treats, Herbs, Snacks, LED Display, 240W Electric Food Dryer, Recipe Book",
-              sales_tip_text_list: ["8.9K+", "sold"],
-              sold_quantity_percent: 6,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "1422850582",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGo/hJYRWCdcSqOz2NjgmAGh0NnBlMiTrq1i+JaI6es9geh+KqRg/AIsgeRFLUJmemiEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "5099388582912659310",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "1422850582",
-                g: "601099913932645",
-                scene_id: "3",
-                show_price: "3534",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "72",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "1041659615786242286",
-                ts: "1762677696798",
-              },
-              activity_type: 13,
-              mall_id: 634418220056823,
-              sales_num: "8.9K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099913932645&_oak_mp_inf=EOXe4Nan1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2Ff4fa7cae2b7241a694a3bf06b768954e-goods.jpeg&spec_gallery_id=3385102220&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzUzNA&_oak_gallery_order=1422850582%2C1271341805%2C868701887%2C758979669%2C1538752836",
-              extend_fields: {
-                sale_fire_flag: true,
-                mall_view_type: 2,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099913932645&_oak_mp_inf=EOXe4Nan1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2Ff4fa7cae2b7241a694a3bf06b768954e-goods.jpeg&spec_gallery_id=3385102220&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzUzNA&_oak_gallery_order=1422850582%2C1271341805%2C868701887%2C758979669%2C1538752836&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112716975570890597",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "1422850582,1271341805,868701887,758979669,1538752836",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#6 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Small Appliances & Accessories: Stainless Steel","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"1853"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"1853"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Small Appliances & Accessories: Stainless Steel",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#6 BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#6 BEST-SELLING ITEM",
-                  ranking_id: "1853",
-                },
-              ],
-              show_index: 72,
-              price_info: {
-                split_price_text: ["$", "35", ".34", ""],
-                reduction_text: ["-29", "%"],
-                price: 3534,
-                market_price_str: "$49.99",
-                market_price: 4999,
-                price_schema: "35.34",
-                currency: "USD",
-                price_text: ["$", "35.34", ""],
-                price_str: "$35.34",
-                reduction: 290,
-                market_price_text: ["$", "49.99", ""],
-              },
-              image: {
-                width: 1500,
-                id: 3385102220,
-                url_id: "5099388582912659310",
-                url: "https://img.kwcdn.com/product/open/f4fa7cae2b7241a694a3bf06b768954e-goods.jpeg",
-                height: 1500,
-              },
-              sales_tip: "8.9K+ sold",
-              visible: true,
-              goods_id: 601099913932645,
-              opt_id: 1854,
-              seo_link_url:
-                "/food-dehydrator-machine-adjustable-temperature-72h-timer-5-tray-dehydrators-for-food-and-jerky--treats-herbs-snacks-led-display-240w-electric-food-dryer-recipe-book-g-601099913932645.html?&_oak_mp_inf=EOXe4Nan1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPHRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2Ff4fa7cae2b7241a694a3bf06b768954e-goods.jpeg&spec_gallery_id=3385102220&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzUzNA&_oak_gallery_order=1422850582%2C1271341805%2C868701887%2C758979669%2C1538752836",
-              queryReleScore: 0.0,
-              sales_tip_text: ["8.9K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "1,018",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 7400,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/f5f6bf52-65ee-4e68-bee7-00f46ed89dfe.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "",
-              },
-              item_type: 0,
-              page_alt:
-                "50pcs disposable shower drain hair catcher stickers   plastic mesh filter covers for bathroom bathtub   hair   blocker for sink and floor drains",
-              current_sku_id: 17598920003396,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Ships earliest in 13h",
-                        },
-                      ],
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91137,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Bath","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"746"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"746"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Bath",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "BEST-SELLING ITEM",
-                    ranking_id: "746",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/dfef4f37e690db48fae8508233413b20100ced92.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/f5f6bf52-65ee-4e68-bee7-00f46ed89dfe.jpg",
-                url: "https://img.kwcdn.com/product/05ab0c8d4ef1ab15771c0ba1ad9ab03f53fa1035.goods.000001.jpeg",
-              },
-              title:
-                "50pcs Disposable Shower Drain Hair Catcher Stickers - Easy-to-Use Plastic Mesh Filter Covers For Bathroom & Bathtub, Efficient Hair & Debris Blocker For Sink And Floor Drains",
-              sales_tip_text_list: ["10K+", "sold"],
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "414830292",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGo4mjD58cOdyKXLq6xF2azG9N3xaQxjsLMbzEbGymjO10gzFUI6C0iALvQpVkvjTRAEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "3158791871139929485",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "2140921545",
-                g: "601100284634786",
-                scene_id: "3",
-                show_price: "673",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "73",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "9114730707206459345",
-                ts: "1762677696798",
-              },
-              mall_id: 634418221549804,
-              sales_num: "10K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601100284634786&_oak_mp_inf=EKLNwoep1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Ff5f6bf52-65ee-4e68-bee7-00f46ed89dfe.jpg&spec_gallery_id=601100284634786&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Njcz&_oak_gallery_order=2140921545%2C414830292%2C1910320416%2C37896958%2C1361192270",
-              extend_fields: {
-                support_tag_carousel: true,
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "2140921545,414830292,1910320416,37896958,1361192270",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Bath","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"746"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"746"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Bath",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "BEST-SELLING ITEM",
-                  ranking_id: "746",
-                },
-              ],
-              show_index: 73,
-              price_info: {
-                split_price_text: ["$", "6", ".73", ""],
-                reduction_text: [],
-                price: 673,
-                price_schema: "6.73",
-                currency: "USD",
-                price_text: ["$", "6.73", ""],
-                price_str: "$6.73",
-              },
-              image: {
-                width: 375,
-                id: 601100284634786,
-                url_id: "3158791871139929485",
-                url: "https://img.kwcdn.com/product/fancy/f5f6bf52-65ee-4e68-bee7-00f46ed89dfe.jpg",
-                height: 375,
-              },
-              sales_tip: "10K+ sold",
-              visible: true,
-              goods_id: 601100284634786,
-              opt_id: 749,
-              seo_link_url:
-                "/50pcs-disposable-shower-drain-hair-catcher-stickers--plastic-mesh-filter-covers-for-bathroom-bathtub--hair--blocker-for-sink-and-floor-drains-g-601100284634786.html?&_oak_mp_inf=EKLNwoep1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Ff5f6bf52-65ee-4e68-bee7-00f46ed89dfe.jpg&spec_gallery_id=601100284634786&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Njcz&_oak_gallery_order=2140921545%2C414830292%2C1910320416%2C37896958%2C1361192270",
-              queryReleScore: 0.0,
-              sales_tip_text: ["10K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.5,
-                hidden_comment: false,
-                comment_num_tips: "952",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 8770,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/0e16a32f-e9c3-411e-b388-1fe8ea8ae8eb.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "",
-              },
-              item_type: 0,
-              page_alt:
-                "  large digital alarm wall clock large led dual alarm brightness adjustment date daylight saving time temperature 12 24 hour switch suitable for living room bedroom office decoration gifts suitable for students during the back to school   bedroom decor   contemporary   precision   durable abs material temperature   alarm clock office workers gift  ",
-              current_sku_id: 17592684206423,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"TIMESS","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: TIMESS",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Home Decor Products","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"751"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"751"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Home Decor Products",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "BEST-SELLING ITEM",
-                    ranking_id: "751",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/d8e441e4dea2812d235c4d968a37ff9e1f96b467.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/0e16a32f-e9c3-411e-b388-1fe8ea8ae8eb.jpg",
-                url: "https://img.kwcdn.com/product/bbf341d0d8b4d370324d1f2285ffa60d5a768103.goods.000001.jpeg",
-              },
-              title:
-                "TIMESS Large Digital Alarm Wall Clock, Large LED/dual Alarm/brightness Adjustment/date/daylight Saving Time/temperature/12/24 Hour Switch, Suitable for Living Room, Bedroom, Office Decoration Gifts, Suitable for Students During The Back-to-school, Student Essentials, Bedroom Decor, Sleek Design, Contemporary Timepiece, Precision Timekeeping, Durable Abs Material, Temperature Display, Dual Alarm Clock, Office Workers, Gift Shoppers",
-              sales_tip_text_list: ["50K+", "sold"],
-              sold_quantity_percent: 40,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "32201379",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoSyJw3WXERvhXAO4qPX779Q5yKgzZgoFuDYvqcdTVMpzkZM/7A2l6scTycK51okD/EIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "4423917624327285383",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "32201379",
-                g: "601099603570563",
-                scene_id: "3",
-                show_price: "1171",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "74",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "6343936311688039289",
-                ts: "1762677696798",
-              },
-              activity_type: 13,
-              mall_id: 634418215765263,
-              sales_num: "50K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099603570563&_oak_name_id=6343936311688039289&_oak_mp_inf=EIPf4cKm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F0e16a32f-e9c3-411e-b388-1fe8ea8ae8eb.jpg&spec_gallery_id=2215885836&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTE3MQ&_oak_gallery_order=32201379%2C1878629625%2C1446098084%2C1172611545%2C2063783011",
-              extend_fields: {
-                sale_fire_flag: true,
-                mall_view_type: 2,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099603570563&_oak_name_id=6343936311688039289&_oak_mp_inf=EIPf4cKm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F0e16a32f-e9c3-411e-b388-1fe8ea8ae8eb.jpg&spec_gallery_id=2215885836&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTE3MQ&_oak_gallery_order=32201379%2C1878629625%2C1446098084%2C1172611545%2C2063783011&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112727963414261635",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "32201379,1878629625,1446098084,1172611545,2063783011",
-                  _oak_name_id: "6343936311688039289",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Home Decor Products","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"751"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"751"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Home Decor Products",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "BEST-SELLING ITEM",
-                  ranking_id: "751",
-                },
-              ],
-              show_index: 74,
-              price_info: {
-                split_price_text: ["$", "11", ".71", ""],
-                reduction_text: [],
-                price: 1171,
-                price_schema: "11.71",
-                currency: "USD",
-                price_text: ["$", "11.71", ""],
-                price_str: "$11.71",
-              },
-              image: {
-                width: 800,
-                id: 2215885836,
-                url_id: "4423917624327285383",
-                url: "https://img.kwcdn.com/product/fancy/0e16a32f-e9c3-411e-b388-1fe8ea8ae8eb.jpg",
-                height: 800,
-              },
-              sales_tip: "50K+ sold",
-              visible: true,
-              goods_id: 601099603570563,
-              opt_id: 755,
-              seo_link_url:
-                "/-large-digital-alarm-wall-clock-large-led-dual-alarm-brightness-adjustment-date-daylight-saving-time-temperature-12-24-hour-switch-suitable-for-living-room-bedroom-office-decoration-gifts-suitable-for-students-during-the-back-to-school--bedroom-decor--contemporary--precision--durable-abs-material-temperature--alarm-clock-office-workers-gift--g-601099603570563.html?&_oak_name_id=6343936311688039289&_oak_mp_inf=EIPf4cKm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F0e16a32f-e9c3-411e-b388-1fe8ea8ae8eb.jpg&spec_gallery_id=2215885836&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTE3MQ&_oak_gallery_order=32201379%2C1878629625%2C1446098084%2C1172611545%2C2063783011",
-              queryReleScore: 0.0,
-              sales_tip_text: ["50K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.7,
-                hidden_comment: false,
-                comment_num_tips: "6,836",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 7370,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/5a04be57-1ad8-403a-9488-d62088437d54.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-18%",
-              },
-              item_type: 0,
-              page_alt:
-                "24 48pcs black stainless steel flatware set   polish families hotels knives forks spoons cutlery set with gift box for 8   durable   polished dishwasher safe   halloween parties weddings banquets silverware set",
-              current_sku_id: 17597636322409,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                  {
-                    color: "#FFEFD3",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"LVABZ","brand_authorized_type":1}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand Official Store: LVABZ",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#1 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Dining & Entertaining: Stainless Steel","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"1725"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"1725"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Dining & Entertaining: Stainless Steel",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#1 BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#1 BEST-SELLING ITEM",
-                    ranking_id: "1725",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/20368c4497e9ba8bb0780b831ef4dfa369497934.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/5a04be57-1ad8-403a-9488-d62088437d54.jpg",
-                url: "https://img.kwcdn.com/product/e1df31a7428f13d606f114947a1794dfbb1b553e.goods.000001.jpeg",
-              },
-              title:
-                "24/48pcs Black Stainless Steel Flatware Set, Mirror Polish Families Hotels Knives Forks Spoons Cutlery Set with Gift Box for 8 Persons, Durable, Mirror Polished, Dishwasher Safe, Perfect for Halloween, Parties, Weddings, Banquets, Silverware Set",
-              sales_tip_text_list: ["47K+", "sold"],
-              sold_quantity_percent: 49,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "717944354",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoEzMVqnol4McqFYxPkBHVuWN7WdZkRcTs4Mkk3QFaVZboa4nUZN9OBzMcUth5JyqwEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "1589535725292491207",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "717944354",
-                g: "601099634452598",
-                scene_id: "3",
-                show_price: "1065",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "75",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "6238168411120635899",
-                ts: "1762677696798",
-              },
-              activity_type: 13,
-              mall_id: 634418216359848,
-              sales_num: "47K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099634452598&_oak_mp_inf=EPbQvtGm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F5a04be57-1ad8-403a-9488-d62088437d54.jpg&spec_gallery_id=601099634452598&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTA2NQ&_oak_gallery_order=717944354%2C1842317833%2C1165456329%2C106401940%2C489935604",
-              extend_fields: {
-                sale_fire_flag: true,
-                mall_view_type: 2,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099634452598&_oak_mp_inf=EPbQvtGm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F5a04be57-1ad8-403a-9488-d62088437d54.jpg&spec_gallery_id=601099634452598&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTA2NQ&_oak_gallery_order=717944354%2C1842317833%2C1165456329%2C106401940%2C489935604&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112723555821529206",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "717944354,1842317833,1165456329,106401940,489935604",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#1 BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Dining & Entertaining: Stainless Steel","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"1725"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"1725"}}}',
-                  },
-                  prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Dining & Entertaining: Stainless Steel",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#1 BEST-SELLING ITEM",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#1 BEST-SELLING ITEM",
-                  ranking_id: "1725",
-                },
-              ],
-              show_index: 75,
-              price_info: {
-                split_price_text: ["$", "10", ".65", ""],
-                reduction_text: ["-18", "%"],
-                price: 1065,
-                market_price_str: "$13.00",
-                market_price: 1300,
-                price_schema: "10.65",
-                currency: "USD",
-                price_text: ["$", "10.65", ""],
-                price_str: "$10.65",
-                reduction: 180,
-                market_price_text: ["$", "13.00", ""],
-              },
-              image: {
-                width: 375,
-                id: 601099634452598,
-                url_id: "1589535725292491207",
-                url: "https://img.kwcdn.com/product/fancy/5a04be57-1ad8-403a-9488-d62088437d54.jpg",
-                height: 375,
-              },
-              sales_tip: "47K+ sold",
-              visible: true,
-              goods_id: 601099634452598,
-              opt_id: 1726,
-              seo_link_url:
-                "/24-48pcs-black-stainless-steel-flatware-set--polish-families-hotels-knives-forks-spoons-cutlery-set-with-gift-box-for-8--durable--polished-dishwasher-safe--halloween-parties-weddings-banquets-silverware-set-g-601099634452598.html?&_oak_mp_inf=EPbQvtGm1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F5a04be57-1ad8-403a-9488-d62088437d54.jpg&spec_gallery_id=601099634452598&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTA2NQ&_oak_gallery_order=717944354%2C1842317833%2C1165456329%2C106401940%2C489935604",
-              queryReleScore: 0.0,
-              sales_tip_text: ["47K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.8,
-                hidden_comment: false,
-                comment_num_tips: "6,500",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 5,
-                percent: 8470,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/4bbd1421-7668-4756-a213-e25eff452426.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-22%",
-              },
-              item_type: 0,
-              page_alt:
-                "1pc thick soft comforter lamb quilt ultra breathable   cover quilt double sided box   solid color comforter for bedroom warm autumn and winter comforter gift home decor",
-              current_sku_id: 17592965750898,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 2 BUSINESS DAYS",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"ASPMIZ","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: ASPMIZ",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Bedding","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"737"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"737"}}}',
-                    },
-                    prompt_tag_text:
-                      "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Bedding",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "TOP RATED",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "TOP RATED",
-                    ranking_id: "737",
-                  },
-                  {
-                    color: "#555555",
-                    ext_map: {
-                      lowest_tag_up_flag: "3",
-                      lowest_price_before_title: "90d lowest",
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91048,
-                    text: "Lowest price in 90 days",
-                    tag_series: 2,
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/ce3dc40c145af5874e53253be8b53f6a427e7c3e.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/4bbd1421-7668-4756-a213-e25eff452426.jpg",
-                url: "https://img.kwcdn.com/product/a545017b3a774ade4cdf421e88299da74543babc.goods.000001.jpeg",
-              },
-              title:
-                "1pc Thick Soft Comforter Lamb Quilt, Ultra Breathable All Season Cover Quilt Double-Sided, Box Stitch Solid Color Comforter for Bedroom Warm Autumn And Winter Comforter, Gift, Home Decor",
-              sales_tip_text_list: ["29K+", "sold"],
-              sold_quantity_percent: 35,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "492619359",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGorsJvx6foHo/0XhQqNGFqrYXdHKhOb79Yrr2KEywcnCubyRw5G7LurOGpOHc5yv9TEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "7299996978308223720",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "492619359",
-                g: "601099713718923",
-                scene_id: "3",
-                show_price: "2606",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "76",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "6735875514392315083",
-                ts: "1762677696798",
-              },
-              activity_type: 13,
-              mall_id: 634418218101089,
-              sales_num: "29K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099713718923&_oak_name_id=6735875514392315083&_oak_mp_inf=EIvVpPem1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4bbd1421-7668-4756-a213-e25eff452426.jpg&spec_gallery_id=2588247309&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjYwNg&_oak_gallery_order=492619359%2C1722891194%2C1186352842%2C364573295%2C1655515371",
-              extend_fields: {
-                sale_fire_flag: true,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099713718923&_oak_name_id=6735875514392315083&_oak_mp_inf=EIvVpPem1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4bbd1421-7668-4756-a213-e25eff452426.jpg&spec_gallery_id=2588247309&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjYwNg&_oak_gallery_order=492619359%2C1722891194%2C1186352842%2C364573295%2C1655515371&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112716966762850955",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "492619359,1722891194,1186352842,364573295,1655515371",
-                  _oak_name_id: "6735875514392315083",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Bedding","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"737"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"737"}}}',
-                  },
-                  prompt_tag_text:
-                    "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Bedding",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "TOP RATED",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "TOP RATED",
-                  ranking_id: "737",
-                },
-                {
-                  color: "#555555",
-                  ext_map: {
-                    lowest_tag_up_flag: "3",
-                    lowest_price_before_title: "90d lowest",
-                  },
-                  marketing_tag_type: 1000,
-                  tag_id: 91048,
-                  text: "Lowest price in 90 days",
-                  tag_series: 2,
-                },
-              ],
-              show_index: 76,
-              price_info: {
-                split_price_text: ["$", "26", ".06", ""],
-                reduction_text: ["-22", "%"],
-                price: 2606,
-                market_price_str: "$33.68",
-                market_price: 3368,
-                price_schema: "26.06",
-                currency: "USD",
-                price_text: ["$", "26.06", ""],
-                price_str: "$26.06",
-                reduction: 220,
-                market_price_text: ["$", "33.68", ""],
-              },
-              image: {
-                width: 800,
-                id: 2588247309,
-                url_id: "7299996978308223720",
-                url: "https://img.kwcdn.com/product/fancy/4bbd1421-7668-4756-a213-e25eff452426.jpg",
-                height: 800,
-              },
-              sales_tip: "29K+ sold",
-              visible: true,
-              goods_id: 601099713718923,
-              opt_id: 739,
-              seo_link_url:
-                "/1pc-thick-soft-comforter-lamb-quilt-ultra-breathable--cover-quilt-double-sided-box--solid-color-comforter-for-bedroom-warm-autumn-and-winter-comforter-gift-home-decor-g-601099713718923.html?&_oak_name_id=6735875514392315083&_oak_mp_inf=EIvVpPem1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4bbd1421-7668-4756-a213-e25eff452426.jpg&spec_gallery_id=2588247309&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjYwNg&_oak_gallery_order=492619359%2C1722891194%2C1186352842%2C364573295%2C1655515371",
-              queryReleScore: 0.0,
-              sales_tip_text: ["29K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.9,
-                hidden_comment: false,
-                comment_num_tips: "5,395",
-              },
-              adult_goods: false,
-            },
-            {
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/fce62cea-f045-44bc-afb8-2f3c65667f79.jpg",
-              ware_house_type: 0,
-              benefit_text: {
-                text: "-13%",
-              },
-              item_type: 0,
-              page_alt:
-                "2pcs plug in light controlled sensor   light with dusk to dawn sensor light control switch suitable for   bedrooms childrens rooms kitchens stairs ideal as christmas thanksgiving valentines day new year gifts best for christmas   thanksgiving",
-              current_sku_id: 17594884544125,
-              tags_info: {
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"#4 TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Lighting & Accessories","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"773"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"773"}}}',
-                    },
-                    prompt_tag_text:
-                      "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Lighting & Accessories",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "#4 TOP RATED",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "#4 TOP RATED",
-                    ranking_id: "773",
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/805c9f36789dc1febbcbab2aea8dfa1927b5aa23.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/fce62cea-f045-44bc-afb8-2f3c65667f79.jpg",
-                url: "https://img.kwcdn.com/product/2bc0495c247a1abe63585b751f49ab35cd57430b.goods.000001.jpeg",
-              },
-              title:
-                "[Smart Night Light] 2pcs Smart Night Light | Plug-in Light-Controlled Sensor with Dusk-to-Dawn Sensor Light Control Switch for Corridors, Bedrooms, Children's Rooms, Kitchens, Stairs - Ideal Christmas, Thanksgiving, Valentine's Day, New Year Gifts",
-              sales_tip_text_list: ["82K+", "sold"],
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "0",
-                mid: "69999906",
-                final_creative_id: "1562147595",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoBThicNrKpdH7645t/ZBr89QcvbXL/l7ZmD2Mo2OuEeMvW2J/FgdKWFvI25fBXNJ8EIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "6115019336848632103",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "1562147595",
-                g: "601099656169115",
-                scene_id: "3",
-                show_price: "442",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "77",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "5972486477584578766",
-                ts: "1762677696798",
-              },
-              mall_id: 6073293533710,
-              sales_num: "82K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099656169115&_oak_name_id=5972486477584578766&_oak_mp_inf=EJuN7Num1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Ffce62cea-f045-44bc-afb8-2f3c65667f79.jpg&spec_gallery_id=3408344705&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDQy&_oak_gallery_order=1562147595%2C318058635%2C1436232864%2C236691926%2C919822085",
-              extend_fields: {
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099656169115&_oak_name_id=5972486477584578766&_oak_mp_inf=EJuN7Num1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Ffce62cea-f045-44bc-afb8-2f3c65667f79.jpg&spec_gallery_id=3408344705&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDQy&_oak_gallery_order=1562147595%2C318058635%2C1436232864%2C236691926%2C919822085&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "1562147595,318058635,1436232864,236691926,919822085",
-                  _oak_name_id: "5972486477584578766",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"#4 TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Lighting & Accessories","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"773"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"773"}}}',
-                  },
-                  prompt_tag_text:
-                    "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Lighting & Accessories",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "#4 TOP RATED",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "#4 TOP RATED",
-                  ranking_id: "773",
-                },
-              ],
-              show_index: 77,
-              price_info: {
-                split_price_text: ["$", "4", ".42", ""],
-                reduction_text: ["-13", "%"],
-                price: 442,
-                market_price_str: "$5.12",
-                market_price: 512,
-                price_schema: "4.42",
-                currency: "USD",
-                price_text: ["$", "4.42", ""],
-                price_str: "$4.42",
-                market_price_text: ["$", "5.12", ""],
-              },
-              image: {
-                width: 800,
-                id: 3408344705,
-                url_id: "6115019336848632103",
-                url: "https://img.kwcdn.com/product/fancy/fce62cea-f045-44bc-afb8-2f3c65667f79.jpg",
-                height: 800,
-              },
-              sales_tip: "82K+ sold",
-              visible: true,
-              goods_id: 601099656169115,
-              opt_id: 777,
-              seo_link_url:
-                "/2pcs-plug-in-light-controlled-sensor--light-with-dusk-to-dawn-sensor-light-control-switch-suitable-for--bedrooms-childrens-rooms-kitchens-stairs-ideal-as-christmas-thanksgiving-valentines-day-new-year-gifts-best-for-christmas--thanksgiving-g-601099656169115.html?&_oak_name_id=5972486477584578766&_oak_mp_inf=EJuN7Num1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Ffce62cea-f045-44bc-afb8-2f3c65667f79.jpg&spec_gallery_id=3408344705&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDQy&_oak_gallery_order=1562147595%2C318058635%2C1436232864%2C236691926%2C919822085",
-              queryReleScore: 0.0,
-              sales_tip_text: ["82K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.8,
-                hidden_comment: false,
-                comment_num_tips: "5,050",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 3,
-                percent: 7090,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/37400b08-598c-45d1-ab4a-d8432049991a.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "-25%",
-              },
-              item_type: 0,
-              page_alt:
-                "2pcs bamboo breakfast tray with folding legs handles extra wide stable   bed tray table for eating working drawing portable foldable design for sofa bed   bedside table natural look christmas gifts",
-              current_sku_id: 17594026355658,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Ships earliest in 11h",
-                        },
-                      ],
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91137,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                  {
-                    color: "#FFEFD3",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"INNOVATIVE LIFE","brand_authorized_type":1}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand Official Store: INNOVATIVE LIFE",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Dining & Entertaining","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"1725"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"1725"}}}',
-                    },
-                    prompt_tag_text:
-                      "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Dining & Entertaining",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "TOP RATED",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "TOP RATED",
-                    ranking_id: "1725",
-                  },
-                  {
-                    color: "#555555",
-                    ext_map: {
-                      lowest_tag_up_flag: "1",
-                      lowest_price_before_title: "Lowest ever",
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91048,
-                    text: "Lowest price ever",
-                    tag_series: 2,
-                  },
-                ],
-              },
-              video: {
-                icon_url:
-                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                video_url:
-                  "https://goods-vod.kwcdn.com/goods-video/dbc8c873aee16342ccab123be8bdc4fcf3f72446.f30.mp4",
-                image_url:
-                  "https://img.kwcdn.com/product/fancy/37400b08-598c-45d1-ab4a-d8432049991a.jpg",
-                url: "https://img.kwcdn.com/product/37799ba6045b2c8a30f876ddfd5021abcd4b2ef5.goods.000001.jpeg",
-              },
-              title:
-                "2pcs Bamboo Breakfast Tray with Folding Legs & Handles - Extra Wide Stable Food-Safe Bed Tray Table for Eating, Working, Drawing - Portable Foldable Design for Sofa, Bed, Lazy People, Bedside Table | Natural Look | Christmas Gifts",
-              sales_tip_text_list: ["13K+", "sold"],
-              sold_quantity_percent: 17,
-              p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
-                item_type: "0",
-                ad_goods: "1",
-                mid: "69999906",
-                final_creative_id: "286398038",
-                sort_by_type: "873027542",
-                st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGo40/m9A2sCa9YlmqUamKf6O0HA/xZRVgCg8sO3i2A7aXbRmA4bHztRb/sOWRIFEU1EIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
-                scene: "opt",
-                image_url_id: "466528750639889615",
-                show_currency: "USD",
-                no_result: "0",
-                offset: "40",
-                engine_creative_id: "286398038",
-                g: "601099579948305",
-                scene_id: "3",
-                show_price: "1241",
-                opt_id: "36",
-                ts_req: "0",
-                version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
-                gin_fallback: "0",
-                opt_type: "0",
-                goods_source: "rec",
-                idx: "78",
-                region: "211",
-                bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "688110658950885746",
-                ts: "1762677696798",
-              },
-              activity_type: 13,
-              mall_id: 634418213933714,
-              sales_num: "13K+",
-              link_url:
-                "goods.html?_bg_fs=1&goods_id=601099579948305&_oak_mp_inf=EJH6v7em1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F37400b08-598c-45d1-ab4a-d8432049991a.jpg&spec_gallery_id=2149532693&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTI0MQ&_oak_gallery_order=286398038%2C474654757%2C640654632%2C393963004%2C526042267",
-              extend_fields: {
-                sale_fire_flag: true,
-                mall_view_type: 2,
-                floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099579948305&_oak_mp_inf=EJH6v7em1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F37400b08-598c-45d1-ab4a-d8432049991a.jpg&spec_gallery_id=2149532693&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTI0MQ&_oak_gallery_order=286398038%2C474654757%2C640654632%2C393963004%2C526042267&goods_pop_style=1&floating_when_add_to_cart=1",
-                support_tag_carousel: true,
-                detail_id: "112725765456395537",
-                sku_extra_param: {
-                  _oak_gallery_order:
-                    "286398038,474654757,640654632,393963004,526042267",
-                },
-              },
-              goods_tags: [
-                {
-                  icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                  ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Dining & Entertaining","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"1725"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"1725"}}}',
-                  },
-                  prompt_tag_text:
-                    "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                  footer: {
-                    color: "#555555",
-                    text: " in Dining & Entertaining",
-                    font: 14,
-                  },
-                  marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                  header: {
-                    text_style: 2,
-                    color: "#FFFFFF",
-                    back_color: "#0A8800",
-                    text: "TOP RATED",
-                    font: 12,
-                  },
-                  tag_id: 91020,
-                  ranking_type: "TOP RATED",
-                  ranking_id: "1725",
-                },
-                {
-                  color: "#555555",
-                  ext_map: {
-                    lowest_tag_up_flag: "1",
-                    lowest_price_before_title: "Lowest ever",
-                  },
-                  marketing_tag_type: 1000,
-                  tag_id: 91048,
-                  text: "Lowest price ever",
-                  tag_series: 2,
-                },
-              ],
-              show_index: 78,
-              price_info: {
-                split_price_text: ["$", "12", ".41", ""],
-                reduction_text: ["-25", "%"],
-                price: 1241,
-                market_price_str: "$16.77",
-                market_price: 1677,
-                price_schema: "12.41",
-                currency: "USD",
-                price_text: ["$", "12.41", ""],
-                price_str: "$12.41",
-                reduction: 250,
-                market_price_text: ["$", "16.77", ""],
-              },
-              image: {
-                width: 1400,
-                id: 2149532693,
-                url_id: "466528750639889615",
-                url: "https://img.kwcdn.com/product/fancy/37400b08-598c-45d1-ab4a-d8432049991a.jpg",
-                height: 1400,
-              },
-              sales_tip: "13K+ sold",
-              visible: true,
-              goods_id: 601099579948305,
-              opt_id: 1726,
-              seo_link_url:
-                "/2pcs-bamboo-breakfast-tray-with-folding-legs-handles-extra-wide-stable--bed-tray-table-for-eating-working-drawing-portable-foldable-design-for-sofa-bed--bedside-table-natural-look-christmas-gifts-g-601099579948305.html?&_oak_mp_inf=EJH6v7em1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F37400b08-598c-45d1-ab4a-d8432049991a.jpg&spec_gallery_id=2149532693&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTI0MQ&_oak_gallery_order=286398038%2C474654757%2C640654632%2C393963004%2C526042267",
-              queryReleScore: 0.0,
-              sales_tip_text: ["13K+", "sold"],
-              opt_type: 3,
-              comment: {
-                goods_score: 4.9,
-                hidden_comment: false,
-                comment_num_tips: "2,137",
-              },
-              adult_goods: false,
-            },
-            {
-              shipping_info: {
-                titleType: 0,
-                shippingMethod: 101,
-                dayNum: 4,
-                percent: 8790,
-              },
-              thumb_url:
-                "https://img.kwcdn.com/product/fancy/85a24a4f-7528-4c0b-979d-5636a3a3cfc6.jpg",
-              ware_house_type: 1,
-              benefit_text: {
-                text: "",
-              },
-              item_type: 0,
-              page_alt:
-                "  for   8 bite sized 2   dual non stick plates for quick release     family breakfasts double sided waffle maker waffle maker electric nonstick waffle machin for restaurant",
-              current_sku_id: 17596728582399,
-              tags_info: {
-                mix_benefit_tags: [
-                  {
-                    tag_rich_text: {
-                      support_promotion: false,
-                      text_rich: [
-                        {
-                          font_weight: 400,
-                          font_color: "#0A8800",
-                          font_size: 14,
-                          id: 2,
-                          type: 0,
-                          value: "Fastest : 1 BUSINESS DAY",
-                        },
-                      ],
-                    },
-                    tag_id: 1016,
-                  },
-                ],
-                title_header_tags: [
-                  {
-                    color: "#0A8800",
-                    ext_map: {
-                      local_explanation:
-                        '{"title":"Local warehouse","content":"Items with the \\"Local\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.","button":{"text":"OK"}}',
-                    },
-                    marketing_tag_type: 1000,
-                    tag_id: 91050,
-                    text: "Local",
-                    tag_series: 2,
-                  },
-                ],
-                mall_tag: [
-                  {
-                    color: "#FFFFFF",
-                    ext_map: {
-                      bg_start_color: "#6F3D91",
-                      bg_end_color: "#520E6F",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                    marketing_tag_type: 2701,
-                    width: 39,
-                    tag_id: 91130,
-                    text: "Star store",
-                    tag_series: 2,
-                    url: "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                    height: 39,
-                  },
-                  {
-                    color: "#000000",
-                    ext_map: {
-                      brand_info:
-                        '{"brand_name":"OSTBA","brand_authorized_type":2}',
-                      brand_tag_text_style: "1",
-                    },
-                    bg_url:
-                      "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                    marketing_tag_type: 2700,
-                    width: 39,
-                    tag_id: 91007,
-                    text: "Brand: OSTBA",
-                    tag_series: 2,
-                    height: 39,
-                  },
-                ],
-                goods_tags: [
-                  {
-                    icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
-                    ext_map: {
-                      ranking_list_rich_text:
-                        '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Small Appliances & Accessories","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"1853"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"1853"}}}',
-                    },
-                    prompt_tag_text:
-                      "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                    footer: {
-                      color: "#555555",
-                      text: " in Small Appliances & Accessories",
-                      font: 14,
-                    },
-                    marketing_tag_type: 2100,
-                    rtl_icon_url:
-                      "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
-                    header: {
-                      text_style: 2,
-                      color: "#FFFFFF",
-                      back_color: "#0A8800",
-                      text: "BEST-SELLING ITEM",
-                      font: 12,
-                    },
-                    tag_id: 91020,
-                    ranking_type: "BEST-SELLING ITEM",
-                    ranking_id: "1853",
                   },
                 ],
               },
@@ -15627,124 +8680,7243 @@ export const fetchProductByCategory = async () => {
                 video_url: "",
               },
               title:
-                "Mini Waffle Maker for, Makes 8 Bite-Sized 2'' Waffles, Dual Non-Stick Plates for Quick Release & Easy Cleaning, Perfect for Family Breakfasts, Double Sided Waffle Maker, Waffle Maker Electric Nonstick, Waffle Machin for Restaurant",
-              sales_tip_text_list: ["3.8K+", "sold"],
-              sold_quantity_percent: 21,
+                "Women's Elegant Sleeveless Hooded Jacket - Mid-Length Coat with Adjustable Drawstring Hood, Solid Color Blouse (No ), Machine Washable, Versatile for Casual & Professional Wear, Easy-Care Outerwear for Dresses/Skirts/Blouses - Stylish &",
+              sales_tip_text_list: [],
+              display_end_time_percent: 21,
+              sold_quantity_percent: 57,
               p_rec: {
-                list_id: "category_list_f1d7fce4f0904fcaa5567bfe6da6428c",
+                skc_id: "17597466082343",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
                 item_type: "0",
                 ad_goods: "0",
                 mid: "69999906",
-                final_creative_id: "2059500646",
+                final_creative_id: "1232325179",
                 sort_by_type: "873027542",
                 st_model_point:
-                  "CnAc6MjuPct/QwFcMI+FaY4R0sYYCQkRSXPJkI49jSDu/aAgNo9jULAHjYtXIwa/9uUWWcFF0H7hiIolkBYDmwGoMJ01Sck177Ht97xixmYZaloNoEBX4u+RnldadAeeRTwaqSzB3mqWWa36s6rUU38BEIIBGGQiJDA1ZmM2YjVkLWRiY2YtNDcwNy04MDk5LTA1YmM2MjQyODcxNw==",
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxwyVjqAHfZyWsP9Croubh6cDUW+sMR7GNFLLwdo2LkDs6EH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
                 scene: "opt",
-                image_url_id: "371655340045544931",
-                show_currency: "USD",
+                image_url_id: "4385323903216291665",
+                show_currency: "CAD",
                 no_result: "0",
-                offset: "40",
-                engine_creative_id: "2059500646",
-                g: "601099914248613",
+                offset: "80",
+                engine_creative_id: "1232325179",
+                g: "601102657205789",
                 scene_id: "3",
-                show_price: "1063",
-                opt_id: "36",
+                show_price: "2527",
+                opt_id: "721",
                 ts_req: "0",
                 version: "5",
-                search_id:
-                  "iQwgJrg95NNuzoYN2Q-b9SmZPYT-yImUHMvNk2sgGq0GuA7TFKCTGguIRv6jUCge",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
                 gin_fallback: "0",
                 opt_type: "0",
                 goods_source: "rec",
-                idx: "79",
-                region: "211",
+                idx: "85",
+                region: "37",
                 bid: "69999705",
-                cloud_env: "udpm1",
-                creative_title_id: "7374877406926208927",
-                ts: "1762677696798",
+                cloud_env: "usm1",
+                creative_title_id: "1288858955355417336",
+                ts: "1763223031259",
               },
-              activity_type: 13,
-              mall_id: 634418220056823,
-              sales_num: "3.8K+",
+              activity_type: 2,
+              mall_id: 634418221917612,
+              sales_num: "6K+",
               link_url:
-                "goods.html?_bg_fs=1&goods_id=601099914248613&_oak_mp_inf=EKWD9Nan1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F85a24a4f-7528-4c0b-979d-5636a3a3cfc6.jpg&spec_gallery_id=3388879745&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTA2Mw&_oak_gallery_order=2059500646%2C1446879015%2C1056268081%2C698227409%2C81325937",
+                "goods.html?_bg_fs=1&goods_id=601102657205789&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fe0b80880-3f1c-4cc3-b804-6fb5670e58b3.jpg&spec_id=16068&spec_gallery_id=461605&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_gallery_order=1232325179%2C821553622%2C382333614%2C1808806056%2C71979161&spec_ids=16068,3002,16057,16091,16062,16102&_oak_name_id=1288858955355417336&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+              selected_spec_ids: [16068, 3002, 16057, 16091, 16062, 16102],
               extend_fields: {
                 sale_fire_flag: true,
-                mall_view_type: 2,
                 floating_link_url:
-                  "goods.html?_bg_fs=1&goods_id=601099914248613&_oak_mp_inf=EKWD9Nan1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F85a24a4f-7528-4c0b-979d-5636a3a3cfc6.jpg&spec_gallery_id=3388879745&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTA2Mw&_oak_gallery_order=2059500646%2C1446879015%2C1056268081%2C698227409%2C81325937&goods_pop_style=1&floating_when_add_to_cart=1",
+                  "goods.html?_bg_fs=1&goods_id=601102657205789&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fe0b80880-3f1c-4cc3-b804-6fb5670e58b3.jpg&spec_id=16068&spec_gallery_id=461605&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_gallery_order=1232325179%2C821553622%2C382333614%2C1808806056%2C71979161&spec_ids=16068,3002,16057,16091,16062,16102&_oak_name_id=1288858955355417336&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
                 support_tag_carousel: true,
-                detail_id: "112716952535761317",
+                detail_id: "112736912901158429",
                 sku_extra_param: {
                   _oak_gallery_order:
-                    "2059500646,1446879015,1056268081,698227409,81325937",
+                    "1232325179,821553622,382333614,1808806056,71979161",
+                  _oak_name_id: "1288858955355417336",
                 },
               },
               goods_tags: [
                 {
                   icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/3d766c5d-90c1-44c9-ae11-25159c96fa25.png.slim.png",
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
                   ext_map: {
-                    ranking_list_rich_text:
-                      '{"text_rich":[{"type":0,"value":"BEST-SELLING ITEM","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Small Appliances & Accessories","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Best sellers","ranking_opt_id":"1853"},"impr":{"ranking_type":"Best sellers","ranking_opt_id":"1853"}}}',
+                    stock_type: "1",
+                    simply_stock_tag_text: "4 LEFT!",
                   },
                   prompt_tag_text:
-                    "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 4 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 85,
+              price_info: {
+                reduction_text: ["-77", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "25.27", ""],
+                price_str: "CA$25.27",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "25", ".27", ""],
+                currency_str: "CA$",
+                price: 2527,
+                market_price_str: "111.48",
+                market_price: 11148,
+                price_schema: "25.27",
+                currency: "CAD",
+                reduction: 770,
+                market_price_text: ["", "111.48", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 461605,
+                url_id: "4385323903216291665",
+                url: "https://img.kwcdn.com/product/fancy/e0b80880-3f1c-4cc3-b804-6fb5670e58b3.jpg",
+                height: 1800,
+              },
+              sales_tip: "6K+ sold",
+              visible: true,
+              goods_id: 601102657205789,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "25", ".27", ""],
+                    reduction_text: ["-77", "%"],
+                    price: 2527,
+                    market_price_str: "111.48",
+                    market_price: 11148,
+                    price_schema: "25.27",
+                    currency: "CAD",
+                    price_text: ["CA$", "25.27", ""],
+                    price_str: "CA$25.27",
+                    price_color: "#FB7701",
+                    reduction: 770,
+                    market_price_text: ["", "111.48", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 461605,
+                    url: "https://img.kwcdn.com/product/fancy/e0b80880-3f1c-4cc3-b804-6fb5670e58b3.jpg",
+                    height: 1800,
+                  },
+                  color: "(247,238,214,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-sleeveless-hooded-jacket--length-coat-with-adjustable-drawstring-hood-solid-color-blouse--washable-versatile-for-casual-professional-wear--outerwear-for-dresses-skirts-blouses-stylish-g-601102657205789.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fe0b80880-3f1c-4cc3-b804-6fb5670e58b3.jpg&spec_id=16068&spec_gallery_id=461605&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  spec_id: 16068,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/dec144a3-d4f1-413c-a47a-b3a99e983bda.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102657205789&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fe0b80880-3f1c-4cc3-b804-6fb5670e58b3.jpg&spec_id=16068&spec_gallery_id=461605&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/e0b80880-3f1c-4cc3-b804-6fb5670e58b3.jpg",
+                  price_str: "25.28",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "25", ".27", ""],
+                    reduction_text: ["-77", "%"],
+                    price: 2527,
+                    market_price_str: "111.48",
+                    market_price: 11148,
+                    price_schema: "25.27",
+                    currency: "CAD",
+                    price_text: ["CA$", "25.27", ""],
+                    price_str: "CA$25.27",
+                    price_color: "#FB7701",
+                    reduction: 770,
+                    market_price_text: ["", "111.48", ""],
+                  },
+                  image: {
+                    width: 5400,
+                    id: 330338,
+                    url: "https://img.kwcdn.com/product/fancy/09551d22-3ce5-4ae3-8b89-82934dc26f7b.jpg",
+                    height: 7200,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-sleeveless-hooded-jacket--length-coat-with-adjustable-drawstring-hood-solid-color-blouse--washable-versatile-for-casual-professional-wear--outerwear-for-dresses-skirts-blouses-stylish-g-601102657205789.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F09551d22-3ce5-4ae3-8b89-82934dc26f7b.jpg&spec_id=3002&spec_gallery_id=330338&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/529000c6-16e9-481f-956b-b1efe6296030.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102657205789&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F09551d22-3ce5-4ae3-8b89-82934dc26f7b.jpg&spec_id=3002&spec_gallery_id=330338&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/09551d22-3ce5-4ae3-8b89-82934dc26f7b.jpg",
+                  price_str: "25.28",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "25", ".27", ""],
+                    reduction_text: ["-77", "%"],
+                    price: 2527,
+                    market_price_str: "111.48",
+                    market_price: 11148,
+                    price_schema: "25.27",
+                    currency: "CAD",
+                    price_text: ["CA$", "25.27", ""],
+                    price_str: "CA$25.27",
+                    price_color: "#FB7701",
+                    reduction: 770,
+                    market_price_text: ["", "111.48", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 461593,
+                    url: "https://img.kwcdn.com/product/fancy/f08d2b33-dc85-4945-a0ec-640f311f46f8.jpg",
+                    height: 1800,
+                  },
+                  color: "(255,182,193,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-sleeveless-hooded-jacket--length-coat-with-adjustable-drawstring-hood-solid-color-blouse--washable-versatile-for-casual-professional-wear--outerwear-for-dresses-skirts-blouses-stylish-g-601102657205789.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Ff08d2b33-dc85-4945-a0ec-640f311f46f8.jpg&spec_id=16057&spec_gallery_id=461593&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  spec_id: 16057,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/b93d987c-4fe0-478f-aed7-ad9528358c7f.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102657205789&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Ff08d2b33-dc85-4945-a0ec-640f311f46f8.jpg&spec_id=16057&spec_gallery_id=461593&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/f08d2b33-dc85-4945-a0ec-640f311f46f8.jpg",
+                  price_str: "25.28",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "25", ".27", ""],
+                    reduction_text: ["-76", "%"],
+                    price: 2527,
+                    market_price_str: "109.10",
+                    market_price: 10910,
+                    price_schema: "25.27",
+                    currency: "CAD",
+                    price_text: ["CA$", "25.27", ""],
+                    price_str: "CA$25.27",
+                    price_color: "#FB7701",
+                    reduction: 760,
+                    market_price_text: ["", "109.10", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 461613,
+                    url: "https://img.kwcdn.com/product/fancy/588e744d-6cf8-4ef0-b8c8-6a241fa4b91d.jpg",
+                    height: 1800,
+                  },
+                  color: "(46,78,126,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-sleeveless-hooded-jacket--length-coat-with-adjustable-drawstring-hood-solid-color-blouse--washable-versatile-for-casual-professional-wear--outerwear-for-dresses-skirts-blouses-stylish-g-601102657205789.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F588e744d-6cf8-4ef0-b8c8-6a241fa4b91d.jpg&spec_id=16091&spec_gallery_id=461613&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  spec_id: 16091,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/034fa16c-30df-4a39-960f-043013cedf35.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102657205789&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F588e744d-6cf8-4ef0-b8c8-6a241fa4b91d.jpg&spec_id=16091&spec_gallery_id=461613&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/588e744d-6cf8-4ef0-b8c8-6a241fa4b91d.jpg",
+                  price_str: "25.28",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "25", ".27", ""],
+                    reduction_text: ["-77", "%"],
+                    price: 2527,
+                    market_price_str: "111.48",
+                    market_price: 11148,
+                    price_schema: "25.27",
+                    currency: "CAD",
+                    price_text: ["CA$", "25.27", ""],
+                    price_str: "CA$25.27",
+                    price_color: "#FB7701",
+                    reduction: 770,
+                    market_price_text: ["", "111.48", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 461617,
+                    url: "https://img.kwcdn.com/product/fancy/48f93c4e-a6ce-4b93-8998-67068a57bb07.jpg",
+                    height: 1800,
+                  },
+                  color: "(153,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-sleeveless-hooded-jacket--length-coat-with-adjustable-drawstring-hood-solid-color-blouse--washable-versatile-for-casual-professional-wear--outerwear-for-dresses-skirts-blouses-stylish-g-601102657205789.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F48f93c4e-a6ce-4b93-8998-67068a57bb07.jpg&spec_id=16062&spec_gallery_id=461617&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  spec_id: 16062,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/23a43078-f338-41e7-b12f-aea0ff3fba4a.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102657205789&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F48f93c4e-a6ce-4b93-8998-67068a57bb07.jpg&spec_id=16062&spec_gallery_id=461617&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/48f93c4e-a6ce-4b93-8998-67068a57bb07.jpg",
+                  price_str: "25.28",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "25", ".27", ""],
+                    reduction_text: ["-77", "%"],
+                    price: 2527,
+                    market_price_str: "111.48",
+                    market_price: 11148,
+                    price_schema: "25.27",
+                    currency: "CAD",
+                    price_text: ["CA$", "25.27", ""],
+                    price_str: "CA$25.27",
+                    price_color: "#FB7701",
+                    reduction: 770,
+                    market_price_text: ["", "111.48", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 461621,
+                    url: "https://img.kwcdn.com/product/fancy/4acc7169-f1e2-4f51-ad45-46c559b77874.jpg",
+                    height: 1800,
+                  },
+                  color: "(96,57,18,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-sleeveless-hooded-jacket--length-coat-with-adjustable-drawstring-hood-solid-color-blouse--washable-versatile-for-casual-professional-wear--outerwear-for-dresses-skirts-blouses-stylish-g-601102657205789.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4acc7169-f1e2-4f51-ad45-46c559b77874.jpg&spec_id=16102&spec_gallery_id=461621&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  spec_id: 16102,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/12a0d4ea-9414-4e4a-886a-1fe7b4ee6080.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102657205789&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4acc7169-f1e2-4f51-ad45-46c559b77874.jpg&spec_id=16102&spec_gallery_id=461621&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/4acc7169-f1e2-4f51-ad45-46c559b77874.jpg",
+                  price_str: "25.28",
+                },
+              ],
+              spec_ids: "16068,3002,16057,16091,16062,16102",
+              display_end_time: 1763701199,
+              seo_link_url:
+                "/ca/womens-elegant-sleeveless-hooded-jacket--length-coat-with-adjustable-drawstring-hood-solid-color-blouse--washable-versatile-for-casual-professional-wear--outerwear-for-dresses-skirts-blouses-stylish-g-601102657205789.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fe0b80880-3f1c-4cc3-b804-6fb5670e58b3.jpg&spec_id=16068&spec_gallery_id=461605&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUyNw&_oak_gallery_order=1232325179%2C821553622%2C382333614%2C1808806056%2C71979161&_oak_name_id=1288858955355417336&_oak_mp_inf=EJ3s7PKx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKqbocKoMw%3D%3D&spec_ids=16068,3002,16057,16091,16062,16102",
+              queryReleScore: 0.0,
+              sales_tip_text: ["6K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 4.8,
+                hidden_comment: true,
+                comment_num_tips: "30",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/b6085314/f7863147-82ba-4ed9-ab70-5809e83f7524/429476d1ac1428011bc2d2811e78b0da.jpeg",
+              thumb_url:
+                "https://img.kwcdn.com/product/b6085314/f7863147-82ba-4ed9-ab70-5809e83f7524/429476d1ac1428011bc2d2811e78b0da.jpeg",
+              after_price_tip_text: ["In", "3", "carts"],
+              ware_house_type: 1,
+              benefit_text: {
+                text: "-28%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens vintage thickened trench coat for fall winter heavy warm classic solid color coat elegant outerwear for casual special occasions hand washable cold weather outer coat",
+              current_sku_id: 17616854104519,
+              tags_info: {
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                  {
+                    color: "#0A8800",
+                    ext_map: {},
+                    marketing_tag_type: 1000,
+                    tag_id: 91050,
+                    text: "Local",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women's Vintage Thickened Trench Coat for Fall & Winter - Heavy Warm Classic Solid Color Coat, Elegant Outerwear for, Casual & Special Occasions - Hand Washable Cold Weather Outer Coat",
+              sales_tip_text_list: [],
+              display_end_time_percent: 48,
+              sold_quantity_percent: 0,
+              p_rec: {
+                skc_id: "17598347661295",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "852262592",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxwwizFNRGsy4M1O4hv8vqwJiQSeVIg3fLHoOLfIMzMLI3EH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "1831106259306567870",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "852262592",
+                g: "601104868948345",
+                scene_id: "3",
+                show_price: "4374",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "86",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "3447127029323786316",
+                ts: "1763223031259",
+              },
+              activity_type: 100,
+              mall_id: 634418225550665,
+              sales_num: "0",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601104868948345&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fb6085314%2Ff7863147-82ba-4ed9-ab70-5809e83f7524%2F429476d1ac1428011bc2d2811e78b0da.jpeg&spec_id=19079&spec_gallery_id=524720&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDM3NA&_oak_gallery_order=852262592%2C1067304431%2C1436029619%2C689226121%2C1491850113&spec_ids=19079,20081&_oak_mp_inf=EPnyvpG61ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+              selected_spec_ids: [19079, 20081],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601104868948345&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fb6085314%2Ff7863147-82ba-4ed9-ab70-5809e83f7524%2F429476d1ac1428011bc2d2811e78b0da.jpeg&spec_id=19079&spec_gallery_id=524720&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDM3NA&_oak_gallery_order=852262592%2C1067304431%2C1436029619%2C689226121%2C1491850113&spec_ids=19079,20081&_oak_mp_inf=EPnyvpG61ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112717120936917369",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "852262592,1067304431,1436029619,689226121,1491850113",
+                },
+              },
+              goods_tags: [],
+              show_index: 86,
+              price_info: {
+                reduction_text: ["-28", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "43.74", ""],
+                price_str: "CA$43.74",
+                split_price_text: ["CA$", "43", ".74", ""],
+                currency_str: "CA$",
+                price: 4374,
+                market_price_str: "61.04",
+                market_price: 6104,
+                price_schema: "43.74",
+                currency: "CAD",
+                reduction: 280,
+                market_price_text: ["", "61.04", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 524720,
+                url_id: "1831106259306567870",
+                url: "https://img.kwcdn.com/product/b6085314/f7863147-82ba-4ed9-ab70-5809e83f7524/429476d1ac1428011bc2d2811e78b0da.jpeg",
+                height: 1800,
+              },
+              sales_tip: "",
+              visible: true,
+              goods_id: 601104868948345,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "43", ".74", ""],
+                    reduction_text: ["-28", "%"],
+                    price: 4374,
+                    market_price_str: "61.04",
+                    market_price: 6104,
+                    price_schema: "43.74",
+                    currency: "CAD",
+                    price_text: ["CA$", "43.74", ""],
+                    price_str: "CA$43.74",
+                    reduction: 280,
+                    market_price_text: ["", "61.04", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 524720,
+                    url: "https://img.kwcdn.com/product/b6085314/f7863147-82ba-4ed9-ab70-5809e83f7524/429476d1ac1428011bc2d2811e78b0da.jpeg",
+                    height: 1800,
+                  },
+                  color: "",
+                  seo_link_url:
+                    "/ca/womens-vintage-thickened-trench-coat-for-fall-winter-heavy-warm-classic-solid-color-coat-elegant-outerwear-for-casual-special-occasions-hand-washable-cold-weather-outer-coat-g-601104868948345.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fb6085314%2Ff7863147-82ba-4ed9-ab70-5809e83f7524%2F429476d1ac1428011bc2d2811e78b0da.jpeg&spec_id=19079&spec_gallery_id=524720&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDM3NA&_oak_mp_inf=EPnyvpG61ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  spec_id: 19079,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/e50312c3-12b6-45c0-b9d8-b07285974085.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104868948345&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fb6085314%2Ff7863147-82ba-4ed9-ab70-5809e83f7524%2F429476d1ac1428011bc2d2811e78b0da.jpeg&spec_id=19079&spec_gallery_id=524720&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDM3NA&_oak_mp_inf=EPnyvpG61ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/b6085314/f7863147-82ba-4ed9-ab70-5809e83f7524/429476d1ac1428011bc2d2811e78b0da.jpeg",
+                  price_str: "48.14",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "43", ".74", ""],
+                    reduction_text: ["-28", "%"],
+                    price: 4374,
+                    market_price_str: "61.04",
+                    market_price: 6104,
+                    price_schema: "43.74",
+                    currency: "CAD",
+                    price_text: ["CA$", "43.74", ""],
+                    price_str: "CA$43.74",
+                    reduction: 280,
+                    market_price_text: ["", "61.04", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 524724,
+                    url: "https://img.kwcdn.com/product/5ef45ef9/11e6bf02-c9e1-48cb-a6e6-40f32deb08d3/ee2e904fed399ec80f9cf9980482d0b7.jpeg",
+                    height: 1800,
+                  },
+                  color: "",
+                  seo_link_url:
+                    "/ca/womens-vintage-thickened-trench-coat-for-fall-winter-heavy-warm-classic-solid-color-coat-elegant-outerwear-for-casual-special-occasions-hand-washable-cold-weather-outer-coat-g-601104868948345.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2F5ef45ef9%2F11e6bf02-c9e1-48cb-a6e6-40f32deb08d3%2Fee2e904fed399ec80f9cf9980482d0b7.jpeg&spec_id=20081&spec_gallery_id=524724&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDM3NA&_oak_mp_inf=EPnyvpG61ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  spec_id: 20081,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/536ea794-e481-4551-96e2-3dcbd79c8fa1.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104868948345&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2F5ef45ef9%2F11e6bf02-c9e1-48cb-a6e6-40f32deb08d3%2Fee2e904fed399ec80f9cf9980482d0b7.jpeg&spec_id=20081&spec_gallery_id=524724&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDM3NA&_oak_mp_inf=EPnyvpG61ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/5ef45ef9/11e6bf02-c9e1-48cb-a6e6-40f32deb08d3/ee2e904fed399ec80f9cf9980482d0b7.jpeg",
+                  price_str: "48.14",
+                },
+              ],
+              spec_ids: "19079,20081",
+              display_end_time: 1764565199,
+              seo_link_url:
+                "/ca/womens-vintage-thickened-trench-coat-for-fall-winter-heavy-warm-classic-solid-color-coat-elegant-outerwear-for-casual-special-occasions-hand-washable-cold-weather-outer-coat-g-601104868948345.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fb6085314%2Ff7863147-82ba-4ed9-ab70-5809e83f7524%2F429476d1ac1428011bc2d2811e78b0da.jpeg&spec_id=19079&spec_gallery_id=524720&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDM3NA&_oak_gallery_order=852262592%2C1067304431%2C1436029619%2C689226121%2C1491850113&_oak_mp_inf=EPnyvpG61ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D&spec_ids=19079,20081",
+              queryReleScore: 0.0,
+              sales_tip_text: [],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/96f3996f-095e-45f8-8162-35adb2ffe92c.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/96f3996f-095e-45f8-8162-35adb2ffe92c.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-40%",
+              },
+              item_type: 0,
+              page_alt:
+                "elegant fashion autumn winter new solid color adult womens suit collar long sleeve casual loose versatile long coat yd88",
+              current_sku_id: 17605660710855,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "YD88 Women's Suit Collar Long Coat, Elegant Fashion Solid Color, Long Sleeve Casual Loose Versatile, Autumn/Winter",
+              sales_tip_text_list: [],
+              display_end_time_percent: 23,
+              sold_quantity_percent: 2,
+              p_rec: {
+                skc_id: "17595730982776",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "1605428068",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxwy9Dviy6xlFpJi8OmgsIjZBoTeDDf05HQCn9IG3FBXK5EH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "1927552026753131695",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1605428068",
+                g: "601102637187348",
+                scene_id: "3",
+                show_price: "3836",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "87",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "6197211130115909934",
+                ts: "1763223031259",
+              },
+              activity_type: 13,
+              mall_id: 634418222147857,
+              sales_num: "5.1K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601102637187348&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F96f3996f-095e-45f8-8162-35adb2ffe92c.jpg&spec_id=16105&spec_gallery_id=405252&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgzNg&_oak_gallery_order=1605428068%2C1876654198%2C1343654317%2C42358924%2C92368451&spec_ids=16105,3002&_oak_name_id=6197211130115909934&_oak_mp_inf=EJSCp%2Bmx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+              selected_spec_ids: [16105, 3002],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601102637187348&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F96f3996f-095e-45f8-8162-35adb2ffe92c.jpg&spec_id=16105&spec_gallery_id=405252&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgzNg&_oak_gallery_order=1605428068%2C1876654198%2C1343654317%2C42358924%2C92368451&spec_ids=16105,3002&_oak_name_id=6197211130115909934&_oak_mp_inf=EJSCp%2Bmx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112741240743444756",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1605428068,1876654198,1343654317,42358924,92368451",
+                  _oak_name_id: "6197211130115909934",
+                },
+              },
+              goods_tags: [],
+              show_index: 87,
+              price_info: {
+                reduction_text: ["-40", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "38.36", ""],
+                price_str: "CA$38.36",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "38", ".36", ""],
+                currency_str: "CA$",
+                price: 3836,
+                market_price_str: "65.00",
+                market_price: 6500,
+                price_schema: "38.36",
+                currency: "CAD",
+                reduction: 400,
+                market_price_text: ["", "65.00", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1340,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 405252,
+                url_id: "1927552026753131695",
+                url: "https://img.kwcdn.com/product/fancy/96f3996f-095e-45f8-8162-35adb2ffe92c.jpg",
+                height: 1785,
+              },
+              sales_tip: "5.1K+ sold",
+              visible: true,
+              goods_id: 601102637187348,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "38", ".36", ""],
+                    reduction_text: ["-40", "%"],
+                    price: 3836,
+                    market_price_str: "65.00",
+                    market_price: 6500,
+                    price_schema: "38.36",
+                    currency: "CAD",
+                    price_text: ["CA$", "38.36", ""],
+                    price_str: "CA$38.36",
+                    price_color: "#FB7701",
+                    reduction: 400,
+                    market_price_text: ["", "65.00", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 405252,
+                    url: "https://img.kwcdn.com/product/fancy/96f3996f-095e-45f8-8162-35adb2ffe92c.jpg",
+                    height: 1785,
+                  },
+                  color: "(168,132,98,1)",
+                  seo_link_url:
+                    "/ca/elegant-fashion-autumn-winter-new-solid-color-adult-womens-suit-collar-long-sleeve-casual-loose-versatile-long-coat-yd88-g-601102637187348.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F96f3996f-095e-45f8-8162-35adb2ffe92c.jpg&spec_id=16105&spec_gallery_id=405252&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgzNg&_oak_mp_inf=EJSCp%2Bmx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  spec_id: 16105,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/27fe46e7-67c1-4ccc-b899-6e04a18e5a0f.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102637187348&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F96f3996f-095e-45f8-8162-35adb2ffe92c.jpg&spec_id=16105&spec_gallery_id=405252&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgzNg&_oak_mp_inf=EJSCp%2Bmx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/96f3996f-095e-45f8-8162-35adb2ffe92c.jpg",
+                  price_str: "38.37",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "38", ".36", ""],
+                    reduction_text: ["-34", "%"],
+                    price: 3836,
+                    market_price_str: "58.18",
+                    market_price: 5818,
+                    price_schema: "38.36",
+                    currency: "CAD",
+                    price_text: ["CA$", "38.36", ""],
+                    price_str: "CA$38.36",
+                    price_color: "#FB7701",
+                    reduction: 340,
+                    market_price_text: ["", "58.18", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 527230,
+                    url: "https://img.kwcdn.com/product/fancy/662437e3-9961-4f2b-b301-daf96b79c852.jpg",
+                    height: 1785,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/elegant-fashion-autumn-winter-new-solid-color-adult-womens-suit-collar-long-sleeve-casual-loose-versatile-long-coat-yd88-g-601102637187348.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F662437e3-9961-4f2b-b301-daf96b79c852.jpg&spec_id=3002&spec_gallery_id=527230&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgzNg&_oak_mp_inf=EJSCp%2Bmx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/temu-avi/image-crop/46be8c1c-b50a-4e9e-a4f7-713ecd5a7e79.jpg",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102637187348&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F662437e3-9961-4f2b-b301-daf96b79c852.jpg&spec_id=3002&spec_gallery_id=527230&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgzNg&_oak_mp_inf=EJSCp%2Bmx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/662437e3-9961-4f2b-b301-daf96b79c852.jpg",
+                  price_str: "38.37",
+                },
+              ],
+              spec_ids: "16105,3002",
+              display_end_time: 1763355599,
+              seo_link_url:
+                "/ca/elegant-fashion-autumn-winter-new-solid-color-adult-womens-suit-collar-long-sleeve-casual-loose-versatile-long-coat-yd88-g-601102637187348.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F96f3996f-095e-45f8-8162-35adb2ffe92c.jpg&spec_id=16105&spec_gallery_id=405252&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgzNg&_oak_gallery_order=1605428068%2C1876654198%2C1343654317%2C42358924%2C92368451&_oak_name_id=6197211130115909934&_oak_mp_inf=EJSCp%2Bmx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D&spec_ids=16105,3002",
+              queryReleScore: 0.0,
+              sales_tip_text: ["5.1K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 4.5,
+                hidden_comment: true,
+                comment_num_tips: "10",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/3289c209-62ca-4935-817b-019399300ac9.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/3289c209-62ca-4935-817b-019399300ac9.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-37%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens casual hooded jacket elegant cow print plush coat machine washable zippered pockets suitable for autumn winter",
+              current_sku_id: 17596794121690,
+              tags_info: {},
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women's Casual Hooded Jacket. Elegant Cow Print Plush Coat, Machine Washable, Zippered Pockets, Suitable for Autumn/Winter",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17593489127730",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "1940563000",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw+NgsLRWBTpSBOBvopXV2FihSnFW39wjymmFAmHBePauEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "7336348652310690098",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1940563000",
+                g: "601100673398819",
+                scene_id: "3",
+                show_price: "3067",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "88",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "1723361385624493644",
+                ts: "1763223031259",
+              },
+              mall_id: 634418211758084,
+              sales_num: "4K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601100673398819&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3289c209-62ca-4935-817b-019399300ac9.jpg&spec_id=3002&spec_gallery_id=103816&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzA2Nw&_oak_gallery_order=1940563000%2C2061759168%2C1858226515%2C2111175247%2C736967680&spec_ids=3002&_oak_name_id=1723361385624493644&_oak_mp_inf=EKPw8sCq1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+              selected_spec_ids: [3002],
+              extend_fields: {
+                sale_fire_flag: true,
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601100673398819&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3289c209-62ca-4935-817b-019399300ac9.jpg&spec_id=3002&spec_gallery_id=103816&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzA2Nw&_oak_gallery_order=1940563000%2C2061759168%2C1858226515%2C2111175247%2C736967680&spec_ids=3002&_oak_name_id=1723361385624493644&_oak_mp_inf=EKPw8sCq1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1940563000,2061759168,1858226515,2111175247,736967680",
+                  _oak_name_id: "1723361385624493644",
+                },
+              },
+              goods_tags: [],
+              show_index: 88,
+              price_info: {
+                split_price_text: ["CA$", "30", ".67", ""],
+                currency_str: "CA$",
+                reduction_text: ["-37", "%"],
+                price: 3067,
+                market_price_str: "48.97",
+                market_price: 4897,
+                market_price_type: 1,
+                price_schema: "30.67",
+                currency: "CAD",
+                price_text: ["CA$", "30.67", ""],
+                price_str: "CA$30.67",
+                market_price_text: ["", "48.97", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 103816,
+                url_id: "7336348652310690098",
+                url: "https://img.kwcdn.com/product/fancy/3289c209-62ca-4935-817b-019399300ac9.jpg",
+                height: 1800,
+              },
+              sales_tip: "4K+ sold",
+              visible: true,
+              goods_id: 601100673398819,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "30", ".67", ""],
+                    reduction_text: [],
+                    price: 3067,
+                    market_price_str: "48.97",
+                    market_price: 4897,
+                    price_schema: "30.67",
+                    currency: "CAD",
+                    price_text: ["CA$", "30.67", ""],
+                    price_str: "CA$30.67",
+                    market_price_text: ["", "48.97", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 103816,
+                    url: "https://img.kwcdn.com/product/fancy/3289c209-62ca-4935-817b-019399300ac9.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-casual-hooded-jacket-elegant-cow-print-plush-coat-machine-washable-zippered-pockets-suitable-for-autumn-winter-g-601100673398819.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3289c209-62ca-4935-817b-019399300ac9.jpg&spec_id=3002&spec_gallery_id=103816&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzA2Nw&_oak_mp_inf=EKPw8sCq1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/815790c2-7fe2-4e40-85b0-b86a10f3e025.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601100673398819&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3289c209-62ca-4935-817b-019399300ac9.jpg&spec_id=3002&spec_gallery_id=103816&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzA2Nw&_oak_mp_inf=EKPw8sCq1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/3289c209-62ca-4935-817b-019399300ac9.jpg",
+                  price_str: "30.67",
+                },
+              ],
+              spec_ids: "3002",
+              seo_link_url:
+                "/ca/womens-casual-hooded-jacket-elegant-cow-print-plush-coat-machine-washable-zippered-pockets-suitable-for-autumn-winter-g-601100673398819.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3289c209-62ca-4935-817b-019399300ac9.jpg&spec_id=3002&spec_gallery_id=103816&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzA2Nw&_oak_gallery_order=1940563000%2C2061759168%2C1858226515%2C2111175247%2C736967680&_oak_name_id=1723361385624493644&_oak_mp_inf=EKPw8sCq1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D&spec_ids=3002",
+              queryReleScore: 0.0,
+              sales_tip_text: ["4K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 4.8,
+                hidden_comment: false,
+                comment_num_tips: "52",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fmket/62d5094459ae2c1b0aafd703c018e7b3.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fmket/62d5094459ae2c1b0aafd703c018e7b3.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "",
+              },
+              item_type: 0,
+              page_alt:
+                "womens casual short jacket with drawstring pockets light pink loose fit button   long sleeves   fall winter casual outerwear relaxed fit jacket functional pockets",
+              current_sku_id: 17605658103584,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "8 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 8 left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/658f52a9e7a49ce569a83c3003d41471100b5594gs2CV.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fmket/62d5094459ae2c1b0aafd703c018e7b3.jpg",
+                url: "https://img.kwcdn.com/product/16b0cf377d60191eb32d804f0f13b1d8f5240225.temu.000001.jpeg",
+              },
+              title:
+                "Women'S Casual Short Jacket with Drawstring Pockets - Light Pink, Loose Fit, Button-Up Front, Long Sleeves, Perfect for Fall/Winter, Casual Outerwear | Relaxed Fit Jacket | Functional Pockets",
+              sales_tip_text_list: [],
+              display_end_time_percent: 52,
+              sold_quantity_percent: 87,
+              p_rec: {
+                skc_id: "17595730312541",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "1322053592",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw7C1M9zmaa5o1gnshSyGiL/b53rxuOwsAa6qzs0ZOMvqEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "7947140624329044730",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1322053592",
+                g: "601102636492483",
+                scene_id: "3",
+                show_price: "4061",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "89",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "5075318321822488555",
+                ts: "1763223031259",
+              },
+              activity_type: 13,
+              mall_id: 634418225173256,
+              sales_num: "4.4K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601102636492483&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F62d5094459ae2c1b0aafd703c018e7b3.jpg&spec_id=16057&spec_gallery_id=5&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDA2MQ&_oak_gallery_order=1322053592%2C310375269%2C792003092%2C1776001594&spec_ids=16057&_oak_name_id=5075318321822488555&_oak_mp_inf=EMPN%2FOix1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+              selected_spec_ids: [16057],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601102636492483&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F62d5094459ae2c1b0aafd703c018e7b3.jpg&spec_id=16057&spec_gallery_id=5&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDA2MQ&_oak_gallery_order=1322053592%2C310375269%2C792003092%2C1776001594&spec_ids=16057&_oak_name_id=5075318321822488555&_oak_mp_inf=EMPN%2FOix1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112701737160943299",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1322053592,310375269,792003092,1776001594",
+                  _oak_name_id: "5075318321822488555",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "8 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 8 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 89,
+              price_info: {
+                split_price_text: ["CA$", "40", ".61", ""],
+                currency_str: "CA$",
+                reduction_text: [],
+                price: 4061,
+                price_schema: "40.61",
+                currency: "CAD",
+                price_text: ["CA$", "40.61", ""],
+                price_str: "CA$40.61",
+                price_color: "#FB7701",
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1500,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 5,
+                url_id: "7947140624329044730",
+                url: "https://img.kwcdn.com/product/fmket/62d5094459ae2c1b0aafd703c018e7b3.jpg",
+                height: 2000,
+              },
+              sales_tip: "4.4K+ sold",
+              visible: true,
+              goods_id: 601102636492483,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "40", ".61", ""],
+                    reduction_text: [],
+                    price: 4061,
+                    price_schema: "40.61",
+                    currency: "CAD",
+                    price_text: ["CA$", "40.61", ""],
+                    price_str: "CA$40.61",
+                    price_color: "#FB7701",
+                  },
+                  image: {
+                    width: 1500,
+                    id: 5,
+                    url: "https://img.kwcdn.com/product/fmket/62d5094459ae2c1b0aafd703c018e7b3.jpg",
+                    height: 2000,
+                  },
+                  color: "(255,182,193,1)",
+                  seo_link_url:
+                    "/ca/womens-casual-short-jacket-with-drawstring-pockets-light-pink-loose-fit-button--long-sleeves--fall-winter-casual-outerwear-relaxed-fit-jacket-functional-pockets-g-601102636492483.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F62d5094459ae2c1b0aafd703c018e7b3.jpg&spec_id=16057&spec_gallery_id=5&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDA2MQ&_oak_mp_inf=EMPN%2FOix1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  spec_id: 16057,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/3de38208-da67-42cb-ab15-605cb59aaf7d.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102636492483&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F62d5094459ae2c1b0aafd703c018e7b3.jpg&spec_id=16057&spec_gallery_id=5&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDA2MQ&_oak_mp_inf=EMPN%2FOix1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fmket/62d5094459ae2c1b0aafd703c018e7b3.jpg",
+                  price_str: "43.00",
+                },
+              ],
+              spec_ids: "16057",
+              display_end_time: 1764392399,
+              seo_link_url:
+                "/ca/womens-casual-short-jacket-with-drawstring-pockets-light-pink-loose-fit-button--long-sleeves--fall-winter-casual-outerwear-relaxed-fit-jacket-functional-pockets-g-601102636492483.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F62d5094459ae2c1b0aafd703c018e7b3.jpg&spec_id=16057&spec_gallery_id=5&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDA2MQ&_oak_gallery_order=1322053592%2C310375269%2C792003092%2C1776001594&_oak_name_id=5075318321822488555&_oak_mp_inf=EMPN%2FOix1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D&spec_ids=16057",
+              queryReleScore: 0.0,
+              sales_tip_text: ["4.4K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "5",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fmket/589a45e53d6a9322e2b4120f182e1095.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fmket/589a45e53d6a9322e2b4120f182e1095.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-14%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens elegant double breasted trench coat with belt long sleeve button   pockets and belted waist   fall winter casual to formal wear casual outerwear belted waist coat   design",
+              current_sku_id: 17613617536115,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "9 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 9 left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women'S Elegant Double-Breasted Trench Coat with Belt - Long Sleeve, Button-Up Front, Pockets, and Belted Waist, Perfect for Fall/Winter, Casual to Formal Wear, Casual Outerwear | Belted Waist Coat | Structured Design",
+              sales_tip_text_list: [],
+              display_end_time_percent: 22,
+              sold_quantity_percent: 0,
+              p_rec: {
+                skc_id: "17597572838878",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "478293078",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw+G1cNJlRDWf39lxyQpAswIiU1nuG7PuHtriTTh/8WIEEH4YbiIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "7711267747918986803",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "478293078",
+                g: "601104201261938",
+                scene_id: "3",
+                show_price: "5533",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "90",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "7479391531976622628",
+                ts: "1763223031259",
+              },
+              activity_type: 13,
+              mall_id: 634418221875060,
+              sales_num: "2.5K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601104201261938&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F589a45e53d6a9322e2b4120f182e1095.jpg&spec_id=16054&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTUzMw&_oak_gallery_order=478293078%2C493873854%2C1220634183%2C1400138253%2C2039243411&spec_ids=16054&_oak_name_id=7479391531976622628&_oak_mp_inf=EPLGjtO31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+              selected_spec_ids: [16054],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601104201261938&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F589a45e53d6a9322e2b4120f182e1095.jpg&spec_id=16054&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTUzMw&_oak_gallery_order=478293078%2C493873854%2C1220634183%2C1400138253%2C2039243411&spec_ids=16054&_oak_name_id=7479391531976622628&_oak_mp_inf=EPLGjtO31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112741238587564914",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "478293078,493873854,1220634183,1400138253,2039243411",
+                  _oak_name_id: "7479391531976622628",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "9 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 9 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 90,
+              price_info: {
+                reduction_text: ["-14", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "55.33", ""],
+                price_str: "CA$55.33",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "55", ".33", ""],
+                currency_str: "CA$",
+                price: 5533,
+                market_price_str: "64.69",
+                market_price: 6469,
+                price_schema: "55.33",
+                currency: "CAD",
+                reduction: 140,
+                market_price_text: ["", "64.69", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1500,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 1,
+                url_id: "7711267747918986803",
+                url: "https://img.kwcdn.com/product/fmket/589a45e53d6a9322e2b4120f182e1095.jpg",
+                height: 2000,
+              },
+              sales_tip: "2.5K+ sold",
+              visible: true,
+              goods_id: 601104201261938,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "55", ".33", ""],
+                    reduction_text: ["-14", "%"],
+                    price: 5533,
+                    market_price_str: "64.69",
+                    market_price: 6469,
+                    price_schema: "55.33",
+                    currency: "CAD",
+                    price_text: ["CA$", "55.33", ""],
+                    price_str: "CA$55.33",
+                    price_color: "#FB7701",
+                    reduction: 140,
+                    market_price_text: ["", "64.69", ""],
+                  },
+                  image: {
+                    width: 1500,
+                    id: 1,
+                    url: "https://img.kwcdn.com/product/fmket/589a45e53d6a9322e2b4120f182e1095.jpg",
+                    height: 2000,
+                  },
+                  color: "(255,255,240,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-double-breasted-trench-coat-with-belt-long-sleeve-button--pockets-and-belted-waist--fall-winter-casual-to-formal-wear-casual-outerwear-belted-waist-coat--design-g-601104201261938.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F589a45e53d6a9322e2b4120f182e1095.jpg&spec_id=16054&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTUzMw&_oak_mp_inf=EPLGjtO31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  spec_id: 16054,
+                  color_image:
+                    "https://img.kwcdn.com/product/temu-avi/image-crop/636a3643-fc58-4513-9184-10c4ad49b984.jpg",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104201261938&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F589a45e53d6a9322e2b4120f182e1095.jpg&spec_id=16054&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTUzMw&_oak_mp_inf=EPLGjtO31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fmket/589a45e53d6a9322e2b4120f182e1095.jpg",
+                  price_str: "58.30",
+                },
+              ],
+              spec_ids: "16054",
+              display_end_time: 1765256399,
+              seo_link_url:
+                "/ca/womens-elegant-double-breasted-trench-coat-with-belt-long-sleeve-button--pockets-and-belted-waist--fall-winter-casual-to-formal-wear-casual-outerwear-belted-waist-coat--design-g-601104201261938.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F589a45e53d6a9322e2b4120f182e1095.jpg&spec_id=16054&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTUzMw&_oak_gallery_order=478293078%2C493873854%2C1220634183%2C1400138253%2C2039243411&_oak_name_id=7479391531976622628&_oak_mp_inf=EPLGjtO31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKubocKoMw%3D%3D&spec_ids=16054",
+              queryReleScore: 0.0,
+              sales_tip_text: ["2.5K+", "sold"],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/aaef0554-ca0c-456b-b0a3-9b95241bd874.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/aaef0554-ca0c-456b-b0a3-9b95241bd874.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-28%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens black alternative jacket   fit winter vest with front zipper padded bust adjustable cuffs warm cardigan for cold weather versatile layering piece stylish outerwear durable outerwear",
+              current_sku_id: 17592233258901,
+              tags_info: {},
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women'S Black Alternative Jacket - Slim Fit Winter Vest with Front Zipper, Padded Bust & Adjustable Cuffs, Warm Cardigan for Cold Weather, Versatile Layering Piece, Stylish Outerwear, Durable Outerwear",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17592196724977",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "959043026",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw9+G+bHMqJ915nCFeAaDzlGVGfwA19pjEA1Uv8ODpvFYEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "7101605835307323070",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "959043026",
+                g: "601099520488019",
+                scene_id: "3",
+                show_price: "2705",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "91",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "4106780455376348329",
+                ts: "1763223031259",
+              },
+              mall_id: 5177737241611,
+              sales_num: "4.4K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601099520488019&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Faaef0554-ca0c-456b-b0a3-9b95241bd874.jpg&spec_id=3002&spec_gallery_id=922&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcwNQ&_oak_gallery_order=959043026%2C814019306%2C847579537%2C1994821646%2C886534402&spec_ids=3002&_oak_name_id=4106780455376348329&_oak_mp_inf=ENPkkpum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+              selected_spec_ids: [3002],
+              extend_fields: {
+                sale_fire_flag: true,
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601099520488019&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Faaef0554-ca0c-456b-b0a3-9b95241bd874.jpg&spec_id=3002&spec_gallery_id=922&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcwNQ&_oak_gallery_order=959043026%2C814019306%2C847579537%2C1994821646%2C886534402&spec_ids=3002&_oak_name_id=4106780455376348329&_oak_mp_inf=ENPkkpum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "959043026,814019306,847579537,1994821646,886534402",
+                  _oak_name_id: "4106780455376348329",
+                },
+              },
+              goods_tags: [],
+              show_index: 91,
+              price_info: {
+                split_price_text: ["CA$", "27", ".05", ""],
+                currency_str: "CA$",
+                reduction_text: ["-28", "%"],
+                price: 2705,
+                market_price_str: "37.79",
+                market_price: 3779,
+                market_price_type: 1,
+                price_schema: "27.05",
+                currency: "CAD",
+                price_text: ["CA$", "27.05", ""],
+                price_str: "CA$27.05",
+                market_price_text: ["", "37.79", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1340,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 922,
+                url_id: "7101605835307323070",
+                url: "https://img.kwcdn.com/product/fancy/aaef0554-ca0c-456b-b0a3-9b95241bd874.jpg",
+                height: 1785,
+              },
+              sales_tip: "4.4K+ sold",
+              visible: true,
+              goods_id: 601099520488019,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "27", ".05", ""],
+                    reduction_text: [],
+                    price: 2705,
+                    market_price_str: "37.79",
+                    market_price: 3779,
+                    price_schema: "27.05",
+                    currency: "CAD",
+                    price_text: ["CA$", "27.05", ""],
+                    price_str: "CA$27.05",
+                    market_price_text: ["", "37.79", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 922,
+                    url: "https://img.kwcdn.com/product/fancy/aaef0554-ca0c-456b-b0a3-9b95241bd874.jpg",
+                    height: 1785,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-black-alternative-jacket--fit-winter-vest-with-front-zipper-padded-bust-adjustable-cuffs-warm-cardigan-for-cold-weather-versatile-layering-piece-stylish-outerwear-durable-outerwear-g-601099520488019.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Faaef0554-ca0c-456b-b0a3-9b95241bd874.jpg&spec_id=3002&spec_gallery_id=922&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcwNQ&_oak_mp_inf=ENPkkpum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/88b1b33a-1d57-11ee-abb2-0a580a69ec8a.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099520488019&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Faaef0554-ca0c-456b-b0a3-9b95241bd874.jpg&spec_id=3002&spec_gallery_id=922&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcwNQ&_oak_mp_inf=ENPkkpum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/aaef0554-ca0c-456b-b0a3-9b95241bd874.jpg",
+                  price_str: "27.05",
+                },
+              ],
+              spec_ids: "3002",
+              seo_link_url:
+                "/ca/womens-black-alternative-jacket--fit-winter-vest-with-front-zipper-padded-bust-adjustable-cuffs-warm-cardigan-for-cold-weather-versatile-layering-piece-stylish-outerwear-durable-outerwear-g-601099520488019.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Faaef0554-ca0c-456b-b0a3-9b95241bd874.jpg&spec_id=3002&spec_gallery_id=922&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcwNQ&_oak_gallery_order=959043026%2C814019306%2C847579537%2C1994821646%2C886534402&_oak_name_id=4106780455376348329&_oak_mp_inf=ENPkkpum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D&spec_ids=3002",
+              queryReleScore: 0.0,
+              sales_tip_text: ["4.4K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 4.8,
+                hidden_comment: false,
+                comment_num_tips: "1,540",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/755fa522-e3cb-4c79-b11b-f66718d3f75e.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/755fa522-e3cb-4c79-b11b-f66718d3f75e.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "",
+              },
+              item_type: 0,
+              page_alt:
+                "womens cozy fleece lined   length winter coat warm   with pockets zip up long sleeves and button details   cold weather winter coat",
+              current_sku_id: 17610594519664,
+              tags_info: {
+                goods_tags: [
+                  {
+                    ext_map: {
+                      ranking_list_rich_text:
+                        '{"text_rich":[{"type":0,"value":"NEW ARRIVAL","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"New product","ranking_opt_id":"721"},"impr":{"ranking_type":"New product","ranking_opt_id":"721"}}}',
+                    },
+                    footer: {
+                      color: "#555555",
+                      text: " in Women's Coats & Jackets",
+                      font: 14,
+                    },
+                    marketing_tag_type: 2100,
+                    header: {
+                      text_style: 2,
+                      color: "#FFFFFF",
+                      back_color: "#0A8800",
+                      text: "NEW ARRIVAL",
+                      font: 12,
+                    },
+                    tag_id: 91020,
+                    ranking_type: "New product",
+                    ranking_id: "721",
+                  },
+                ],
+              },
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/b685382a7ae15cea5704a0ef353e0d5ee2db56fcgs2CV.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fancy/755fa522-e3cb-4c79-b11b-f66718d3f75e.jpg",
+                url: "https://img.kwcdn.com/product/b220b578325cc34a95a18a5330ac66fb6b1ed6b7.temu.000001.jpeg",
+              },
+              title:
+                "Women'S Winter Coat - Thickened Non-Stretch Fabric, Loose Fit Mid-Length Trench Coat with Full-Zip Front, Side Pockets - Cold Weather Outerwear for Everyday & Formal",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17596860037935",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "2102330891",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw/d5MeLLW64pUx05chDWPgCdLcNZOD9n1JmlvsV0Q8hPEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "1185830403795802693",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "2102330891",
+                g: "601103591734468",
+                scene_id: "3",
+                show_price: "6269",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "92",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "7272206382902759099",
+                ts: "1763223031259",
+              },
+              mall_id: 634418220860527,
+              sales_num: "888",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601103591734468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F755fa522-e3cb-4c79-b11b-f66718d3f75e.jpg&spec_id=15060&spec_gallery_id=410278&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjI2OQ&_oak_gallery_order=2102330891%2C717139550%2C100987514%2C2050152472%2C961050166&spec_ids=15060,3002,2&_oak_mp_inf=EMT5u7C11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+              selected_spec_ids: [15060, 3002, 2],
+              extend_fields: {
+                sale_fire_flag: true,
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601103591734468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F755fa522-e3cb-4c79-b11b-f66718d3f75e.jpg&spec_id=15060&spec_gallery_id=410278&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjI2OQ&_oak_gallery_order=2102330891%2C717139550%2C100987514%2C2050152472%2C961050166&spec_ids=15060,3002,2&_oak_mp_inf=EMT5u7C11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "2102330891,717139550,100987514,2050152472,961050166",
+                },
+              },
+              goods_tags: [
+                {
+                  ext_map: {
+                    ranking_list_rich_text:
+                      '{"text_rich":[{"type":0,"value":"NEW ARRIVAL","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"New product","ranking_opt_id":"721"},"impr":{"ranking_type":"New product","ranking_opt_id":"721"}}}',
+                  },
                   footer: {
                     color: "#555555",
-                    text: " in Small Appliances & Accessories",
+                    text: " in Women's Coats & Jackets",
                     font: 14,
                   },
                   marketing_tag_type: 2100,
-                  rtl_icon_url:
-                    "https://aimg.kwcdn.com/upload_aimg/srch/d548f0ad-c7cc-4201-bafd-789daa2c1455.png.slim.png",
                   header: {
                     text_style: 2,
                     color: "#FFFFFF",
                     back_color: "#0A8800",
-                    text: "BEST-SELLING ITEM",
+                    text: "NEW ARRIVAL",
                     font: 12,
                   },
                   tag_id: 91020,
-                  ranking_type: "BEST-SELLING ITEM",
-                  ranking_id: "1853",
+                  ranking_type: "New product",
+                  ranking_id: "721",
                 },
               ],
-              show_index: 79,
+              show_index: 92,
               price_info: {
-                split_price_text: ["$", "10", ".63", ""],
+                split_price_text: ["CA$", "62", ".69", ""],
+                currency_str: "CA$",
                 reduction_text: [],
-                price: 1063,
-                price_schema: "10.63",
-                currency: "USD",
-                price_text: ["$", "10.63", ""],
-                price_str: "$10.63",
+                price: 6269,
+                price_schema: "62.69",
+                currency: "CAD",
+                price_text: ["CA$", "62.69", ""],
+                price_str: "CA$62.69",
               },
               image: {
-                width: 1471,
-                id: 3388879745,
-                url_id: "371655340045544931",
-                url: "https://img.kwcdn.com/product/fancy/85a24a4f-7528-4c0b-979d-5636a3a3cfc6.jpg",
-                height: 1471,
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 410278,
+                url_id: "1185830403795802693",
+                url: "https://img.kwcdn.com/product/fancy/755fa522-e3cb-4c79-b11b-f66718d3f75e.jpg",
+                height: 1800,
               },
-              sales_tip: "3.8K+ sold",
+              sales_tip: "888 sold",
               visible: true,
-              goods_id: 601099914248613,
-              opt_id: 1854,
+              goods_id: 601103591734468,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "62", ".69", ""],
+                    reduction_text: [],
+                    price: 6269,
+                    price_schema: "62.69",
+                    currency: "CAD",
+                    price_text: ["CA$", "62.69", ""],
+                    price_str: "CA$62.69",
+                  },
+                  image: {
+                    width: 1350,
+                    id: 410278,
+                    url: "https://img.kwcdn.com/product/fancy/755fa522-e3cb-4c79-b11b-f66718d3f75e.jpg",
+                    height: 1800,
+                  },
+                  color: "(238,222,176,1)",
+                  seo_link_url:
+                    "/ca/womens-cozy-fleece-lined--length-winter-coat-warm--with-pockets-zip-up-long-sleeves-and-button-details--cold-weather-winter-coat-g-601103591734468.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F755fa522-e3cb-4c79-b11b-f66718d3f75e.jpg&spec_id=15060&spec_gallery_id=410278&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjI2OQ&_oak_mp_inf=EMT5u7C11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  spec_id: 15060,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/ee0c687f-9633-4aa1-9290-892598d18def.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103591734468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F755fa522-e3cb-4c79-b11b-f66718d3f75e.jpg&spec_id=15060&spec_gallery_id=410278&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjI2OQ&_oak_mp_inf=EMT5u7C11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/755fa522-e3cb-4c79-b11b-f66718d3f75e.jpg",
+                  price_str: "62.69",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "62", ".52", ""],
+                    reduction_text: [],
+                    price: 6252,
+                    market_price_str: "115.23",
+                    market_price: 11523,
+                    price_schema: "62.52",
+                    currency: "CAD",
+                    price_text: ["CA$", "62.52", ""],
+                    price_str: "CA$62.52",
+                    market_price_text: ["", "115.23", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 410287,
+                    url: "https://img.kwcdn.com/product/fancy/3af1afce-d709-4f35-b6c6-950adf01bf18.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-cozy-fleece-lined--length-winter-coat-warm--with-pockets-zip-up-long-sleeves-and-button-details--cold-weather-winter-coat-g-601103591734468.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3af1afce-d709-4f35-b6c6-950adf01bf18.jpg&spec_id=3002&spec_gallery_id=410287&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjI1Mg&_oak_mp_inf=EMT5u7C11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/e7a1085e-b947-4f5c-90f3-3f426dd10e43.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103591734468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3af1afce-d709-4f35-b6c6-950adf01bf18.jpg&spec_id=3002&spec_gallery_id=410287&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjI1Mg&_oak_mp_inf=EMT5u7C11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/3af1afce-d709-4f35-b6c6-950adf01bf18.jpg",
+                  price_str: "62.52",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "65", ".05", ""],
+                    reduction_text: [],
+                    price: 6505,
+                    price_schema: "65.05",
+                    currency: "CAD",
+                    price_text: ["CA$", "65.05", ""],
+                    price_str: "CA$65.05",
+                  },
+                  image: {
+                    width: 1350,
+                    id: 410297,
+                    url: "https://img.kwcdn.com/product/fancy/bfed8ee9-76d6-48c3-8e5f-21dc536babf9.jpg",
+                    height: 1800,
+                  },
+                  color: "(255,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-cozy-fleece-lined--length-winter-coat-warm--with-pockets-zip-up-long-sleeves-and-button-details--cold-weather-winter-coat-g-601103591734468.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fbfed8ee9-76d6-48c3-8e5f-21dc536babf9.jpg&spec_id=2&spec_gallery_id=410297&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjUwNQ&_oak_mp_inf=EMT5u7C11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  spec_id: 2,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/3f6e1dcc-b085-4c25-8f87-b709b48777f2.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103591734468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fbfed8ee9-76d6-48c3-8e5f-21dc536babf9.jpg&spec_id=2&spec_gallery_id=410297&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjUwNQ&_oak_mp_inf=EMT5u7C11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/bfed8ee9-76d6-48c3-8e5f-21dc536babf9.jpg",
+                  price_str: "65.05",
+                },
+              ],
+              spec_ids: "15060,3002,2",
               seo_link_url:
-                "/-for--8-bite-sized-2--dual-non-stick-plates-for-quick-release---family-breakfasts-double-sided-waffle-maker-waffle-maker-electric-nonstick-waffle-machin-for-restaurant-g-601099914248613.html?&_oak_mp_inf=EKWD9Nan1ogBGi5jYXRlZ29yeV9saXN0X2YxZDdmY2U0ZjA5MDRmY2FhNTU2N2JmZTZkYTY0MjhjIPLRnL6mMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F85a24a4f-7528-4c0b-979d-5636a3a3cfc6.jpg&spec_gallery_id=3388879745&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTA2Mw&_oak_gallery_order=2059500646%2C1446879015%2C1056268081%2C698227409%2C81325937",
+                "/ca/womens-cozy-fleece-lined--length-winter-coat-warm--with-pockets-zip-up-long-sleeves-and-button-details--cold-weather-winter-coat-g-601103591734468.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F755fa522-e3cb-4c79-b11b-f66718d3f75e.jpg&spec_id=15060&spec_gallery_id=410278&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjI2OQ&_oak_gallery_order=2102330891%2C717139550%2C100987514%2C2050152472%2C961050166&_oak_mp_inf=EMT5u7C11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D&spec_ids=15060,3002,2",
               queryReleScore: 0.0,
-              sales_tip_text: ["3.8K+", "sold"],
+              sales_tip_text: ["888", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "2",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/dac0e485-8c3c-4d4c-b619-73f7ac7bcfcd.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/dac0e485-8c3c-4d4c-b619-73f7ac7bcfcd.jpg",
+              ware_house_type: 1,
+              benefit_text: {
+                text: "-66%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens stretchy open front cardigan jacket asymmetrical hem coat machine washable everyday chic outerwear for women black office party casual outfits elegant cardigan",
+              current_sku_id: 17602657752670,
+              tags_info: {
+                title_header_tags: [
+                  {
+                    color: "#0A8800",
+                    ext_map: {},
+                    marketing_tag_type: 1000,
+                    tag_id: 91050,
+                    text: "Local",
+                    tag_series: 2,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "1 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 1 Left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/b8bc54e04303bcb474f915ca4160ac248b8c288c.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fancy/dac0e485-8c3c-4d4c-b619-73f7ac7bcfcd.jpg",
+                url: "https://img.kwcdn.com/product/c3e87cd089a01b7c7ac90e7e5e949d1b2ec96448.goods.000001.jpeg",
+              },
+              title:
+                "Women's Stretchy Open Front Cardigan Jacket - Asymmetrical Hem Coat, Machine Washable Everyday Chic Outerwear for Women Black, Office, Party, Casual Outfits, Elegant Cardigan",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17595027420230",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "277410605",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxwzqcWHhQU9138l0ITPxiSC89b+UTSb3eAORDwjlaiFRwEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "3288724349521389888",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "277410605",
+                g: "601102029749075",
+                scene_id: "3",
+                show_price: "2237",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "93",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "1621590040870609856",
+                ts: "1763223031259",
+              },
+              mall_id: 634418223682437,
+              sales_num: "5.2K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601102029749075&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdac0e485-8c3c-4d4c-b619-73f7ac7bcfcd.jpg&spec_id=3002&spec_gallery_id=236233&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjIzNw&_oak_gallery_order=277410605%2C959358586&spec_ids=3002&_oak_name_id=1621590040870609856&_oak_mp_inf=ENP208ev1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+              selected_spec_ids: [3002],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601102029749075&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdac0e485-8c3c-4d4c-b619-73f7ac7bcfcd.jpg&spec_id=3002&spec_gallery_id=236233&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjIzNw&_oak_gallery_order=277410605%2C959358586&spec_ids=3002&_oak_name_id=1621590040870609856&_oak_mp_inf=ENP208ev1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order: "277410605,959358586",
+                  _oak_name_id: "1621590040870609856",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "1 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 1 Left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 93,
+              price_info: {
+                split_price_text: ["CA$", "22", ".37", ""],
+                currency_str: "CA$",
+                reduction_text: ["-66", "%"],
+                price: 2237,
+                market_price_str: "66.29",
+                market_price: 6629,
+                market_price_type: 1,
+                price_schema: "22.37",
+                currency: "CAD",
+                price_text: ["CA$", "22.37", ""],
+                price_str: "CA$22.37",
+                market_price_text: ["", "66.29", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 236233,
+                url_id: "3288724349521389888",
+                url: "https://img.kwcdn.com/product/fancy/dac0e485-8c3c-4d4c-b619-73f7ac7bcfcd.jpg",
+                height: 1800,
+              },
+              sales_tip: "5.2K+ sold",
+              visible: true,
+              goods_id: 601102029749075,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "22", ".37", ""],
+                    reduction_text: [],
+                    price: 2237,
+                    market_price_str: "66.29",
+                    market_price: 6629,
+                    price_schema: "22.37",
+                    currency: "CAD",
+                    price_text: ["CA$", "22.37", ""],
+                    price_str: "CA$22.37",
+                    market_price_text: ["", "66.29", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 236233,
+                    url: "https://img.kwcdn.com/product/fancy/dac0e485-8c3c-4d4c-b619-73f7ac7bcfcd.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-stretchy-open-front-cardigan-jacket-asymmetrical-hem-coat-machine-washable-everyday-chic-outerwear-for-women-black-office-party-casual-outfits-elegant-cardigan-g-601102029749075.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdac0e485-8c3c-4d4c-b619-73f7ac7bcfcd.jpg&spec_id=3002&spec_gallery_id=236233&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjIzNw&_oak_mp_inf=ENP208ev1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/fbd3f345-c724-460e-804a-1697fcf76f5a.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102029749075&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdac0e485-8c3c-4d4c-b619-73f7ac7bcfcd.jpg&spec_id=3002&spec_gallery_id=236233&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjIzNw&_oak_mp_inf=ENP208ev1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/dac0e485-8c3c-4d4c-b619-73f7ac7bcfcd.jpg",
+                  price_str: "22.37",
+                },
+              ],
+              spec_ids: "3002",
+              seo_link_url:
+                "/ca/womens-stretchy-open-front-cardigan-jacket-asymmetrical-hem-coat-machine-washable-everyday-chic-outerwear-for-women-black-office-party-casual-outfits-elegant-cardigan-g-601102029749075.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdac0e485-8c3c-4d4c-b619-73f7ac7bcfcd.jpg&spec_id=3002&spec_gallery_id=236233&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjIzNw&_oak_gallery_order=277410605%2C959358586&_oak_name_id=1621590040870609856&_oak_mp_inf=ENP208ev1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D&spec_ids=3002",
+              queryReleScore: 0.0,
+              sales_tip_text: ["5.2K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 4.3,
+                hidden_comment: true,
+                comment_num_tips: "3",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fmket/bb439c68c4e2e1ec31006bca48825ef5.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fmket/bb439c68c4e2e1ec31006bca48825ef5.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-24%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens elegant     jacket with collar zippered pocket tailored   coat for office casual formal wear durable outerwear no   machine washable stand collar design",
+              current_sku_id: 17608938544067,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "7 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 7 left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/190764414e3628c6736d8978cec26ae4de9b8b1egs2CV.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fmket/bb439c68c4e2e1ec31006bca48825ef5.jpg",
+                url: "https://img.kwcdn.com/product/57aec5c9e419d66ffefd7058ddf097d0271274a0.temu.000001.jpeg",
+              },
+              title:
+                "Women's Elegant Structured Blazer Jacket with Collar & Zippered Pocket - Tailored All-Season Coat for Office, Casual & Formal Wear, Durable Outerwear (No-Stretch Fit) - Machine Washable, Stand Collar Design",
+              sales_tip_text_list: [],
+              display_end_time_percent: 48,
+              sold_quantity_percent: 7,
+              p_rec: {
+                skc_id: "17596481819502",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "265347803",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw74KrBnJi+QkkDZ7LDe0ABO+CZPKWC6aJsEi81G5r9J8EH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "3214107637394363528",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "265347803",
+                g: "601103276436067",
+                scene_id: "3",
+                show_price: "2800",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "94",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "64520884570646152",
+                ts: "1763223031259",
+              },
+              activity_type: 13,
+              mall_id: 634418221061284,
+              sales_num: "2.6K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601103276436067&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Fbb439c68c4e2e1ec31006bca48825ef5.jpg&spec_id=15066&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjgwMA&_oak_gallery_order=265347803%2C1710661056%2C1255138724%2C314201163%2C1089494980&spec_ids=15066&_oak_name_id=64520884570646152&_oak_mp_inf=EOPUj5q01ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+              selected_spec_ids: [15066],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601103276436067&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Fbb439c68c4e2e1ec31006bca48825ef5.jpg&spec_id=15066&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjgwMA&_oak_gallery_order=265347803%2C1710661056%2C1255138724%2C314201163%2C1089494980&spec_ids=15066&_oak_name_id=64520884570646152&_oak_mp_inf=EOPUj5q01ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112717229124807267",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "265347803,1710661056,1255138724,314201163,1089494980",
+                  _oak_name_id: "64520884570646152",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "7 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 7 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 94,
+              price_info: {
+                reduction_text: ["-24", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "28.00", ""],
+                price_str: "CA$28.00",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "28", ".00", ""],
+                currency_str: "CA$",
+                price: 2800,
+                market_price_str: "36.92",
+                market_price: 3692,
+                price_schema: "28.00",
+                currency: "CAD",
+                reduction: 240,
+                market_price_text: ["", "36.92", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1500,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 2,
+                url_id: "3214107637394363528",
+                url: "https://img.kwcdn.com/product/fmket/bb439c68c4e2e1ec31006bca48825ef5.jpg",
+                height: 2000,
+              },
+              sales_tip: "2.6K+ sold",
+              visible: true,
+              goods_id: 601103276436067,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "28", ".00", ""],
+                    reduction_text: ["-24", "%"],
+                    price: 2800,
+                    market_price_str: "36.92",
+                    market_price: 3692,
+                    price_schema: "28.00",
+                    currency: "CAD",
+                    price_text: ["CA$", "28.00", ""],
+                    price_str: "CA$28.00",
+                    price_color: "#FB7701",
+                    reduction: 240,
+                    market_price_text: ["", "36.92", ""],
+                  },
+                  image: {
+                    width: 1500,
+                    id: 2,
+                    url: "https://img.kwcdn.com/product/fmket/bb439c68c4e2e1ec31006bca48825ef5.jpg",
+                    height: 2000,
+                  },
+                  color: "(139,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant---jacket-with-collar-zippered-pocket-tailored--coat-for-office-casual-formal-wear-durable-outerwear-no--machine-washable-stand-collar-design-g-601103276436067.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Fbb439c68c4e2e1ec31006bca48825ef5.jpg&spec_id=15066&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjgwMA&_oak_mp_inf=EOPUj5q01ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  spec_id: 15066,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/7fa7f5b3-0e50-4090-a892-3bc39c7fa3f0.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103276436067&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Fbb439c68c4e2e1ec31006bca48825ef5.jpg&spec_id=15066&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjgwMA&_oak_mp_inf=EOPUj5q01ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fmket/bb439c68c4e2e1ec31006bca48825ef5.jpg",
+                  price_str: "32.69",
+                },
+              ],
+              spec_ids: "15066",
+              display_end_time: 1764565199,
+              seo_link_url:
+                "/ca/womens-elegant---jacket-with-collar-zippered-pocket-tailored--coat-for-office-casual-formal-wear-durable-outerwear-no--machine-washable-stand-collar-design-g-601103276436067.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Fbb439c68c4e2e1ec31006bca48825ef5.jpg&spec_id=15066&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjgwMA&_oak_gallery_order=265347803%2C1710661056%2C1255138724%2C314201163%2C1089494980&_oak_name_id=64520884570646152&_oak_mp_inf=EOPUj5q01ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D&spec_ids=15066",
+              queryReleScore: 0.0,
+              sales_tip_text: ["2.6K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "2",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/9006a5e1-a359-4552-832f-4b7466e196ef.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/9006a5e1-a359-4552-832f-4b7466e196ef.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-47%",
+              },
+              item_type: 0,
+              page_alt:
+                "  womens lightweight longline trench coat autumn winter belted windbreaker with double breasted front adjustable waist tie   shoulders a line regular fit no lining design for casual to formal outfits versatile outerwear elegant style polished   stylish outerwear  ",
+              current_sku_id: 17603687725894,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "DIQIUVY Women'S Lightweight Longline Trench Coat - Autumn Winter Belted Windbreaker with Double-Breasted Front, Adjustable Waist Tie & Structured Shoulders, A-Line Regular Fit, No-Lining Design for Casual to Formal Outfits, Versatile Outerwear, Elegant Style, Polished Finish, Stylish Outerwear, Office Attire",
+              sales_tip_text_list: [],
+              display_end_time_percent: 23,
+              sold_quantity_percent: 0,
+              p_rec: {
+                skc_id: "17595267336157",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "1764447891",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw/Hah86SgqdGfgp5BRljSrvhWDVU1LcRTTDBiXTvMHCMEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "1614188779256250510",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1764447891",
+                g: "601101960607137",
+                scene_id: "3",
+                show_price: "2707",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "95",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "4851145653876884341",
+                ts: "1763223031260",
+              },
+              activity_type: 13,
+              mall_id: 634418211097932,
+              sales_num: "7.9K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601101960607137&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9006a5e1-a359-4552-832f-4b7466e196ef.jpg&spec_id=16105&spec_gallery_id=314335&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcwNw&_oak_gallery_order=1764447891%2C1792315802%2C852937468%2C1400474856%2C1223855632&spec_ids=16105&_oak_name_id=4851145653876884341&_oak_mp_inf=EKHr16av1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+              selected_spec_ids: [16105],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601101960607137&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9006a5e1-a359-4552-832f-4b7466e196ef.jpg&spec_id=16105&spec_gallery_id=314335&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcwNw&_oak_gallery_order=1764447891%2C1792315802%2C852937468%2C1400474856%2C1223855632&spec_ids=16105&_oak_name_id=4851145653876884341&_oak_mp_inf=EKHr16av1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112741269600269729",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1764447891,1792315802,852937468,1400474856,1223855632",
+                  _oak_name_id: "4851145653876884341",
+                },
+              },
+              goods_tags: [],
+              show_index: 95,
+              price_info: {
+                reduction_text: ["-47", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "27.07", ""],
+                price_str: "CA$27.07",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "27", ".07", ""],
+                currency_str: "CA$",
+                price: 2707,
+                market_price_str: "51.79",
+                market_price: 5179,
+                price_schema: "27.07",
+                currency: "CAD",
+                reduction: 470,
+                market_price_text: ["", "51.79", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 314335,
+                url_id: "1614188779256250510",
+                url: "https://img.kwcdn.com/product/fancy/9006a5e1-a359-4552-832f-4b7466e196ef.jpg",
+                height: 1800,
+              },
+              sales_tip: "7.9K+ sold",
+              visible: true,
+              goods_id: 601101960607137,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "27", ".07", ""],
+                    reduction_text: ["-47", "%"],
+                    price: 2707,
+                    market_price_str: "51.79",
+                    market_price: 5179,
+                    price_schema: "27.07",
+                    currency: "CAD",
+                    price_text: ["CA$", "27.07", ""],
+                    price_str: "CA$27.07",
+                    price_color: "#FB7701",
+                    reduction: 470,
+                    market_price_text: ["", "51.79", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 314335,
+                    url: "https://img.kwcdn.com/product/fancy/9006a5e1-a359-4552-832f-4b7466e196ef.jpg",
+                    height: 1800,
+                  },
+                  color: "(168,132,98,1)",
+                  seo_link_url:
+                    "/ca/-womens-lightweight-longline-trench-coat-autumn-winter-belted-windbreaker-with-double-breasted-front-adjustable-waist-tie--shoulders-a-line-regular-fit-no-lining-design-for-casual-to-formal-outfits-versatile-outerwear-elegant-style-polished--stylish-outerwear--g-601101960607137.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9006a5e1-a359-4552-832f-4b7466e196ef.jpg&spec_id=16105&spec_gallery_id=314335&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcwNw&_oak_mp_inf=EKHr16av1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  spec_id: 16105,
+                  color_image:
+                    "https://img.kwcdn.com/product/temu-avi/image-crop/d9bad595-f701-4e49-924c-595c337a76d0.jpg",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601101960607137&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9006a5e1-a359-4552-832f-4b7466e196ef.jpg&spec_id=16105&spec_gallery_id=314335&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcwNw&_oak_mp_inf=EKHr16av1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/9006a5e1-a359-4552-832f-4b7466e196ef.jpg",
+                  price_str: "27.08",
+                },
+              ],
+              spec_ids: "16105",
+              display_end_time: 1763355599,
+              seo_link_url:
+                "/ca/-womens-lightweight-longline-trench-coat-autumn-winter-belted-windbreaker-with-double-breasted-front-adjustable-waist-tie--shoulders-a-line-regular-fit-no-lining-design-for-casual-to-formal-outfits-versatile-outerwear-elegant-style-polished--stylish-outerwear--g-601101960607137.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9006a5e1-a359-4552-832f-4b7466e196ef.jpg&spec_id=16105&spec_gallery_id=314335&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcwNw&_oak_gallery_order=1764447891%2C1792315802%2C852937468%2C1400474856%2C1223855632&_oak_name_id=4851145653876884341&_oak_mp_inf=EKHr16av1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIKybocKoMw%3D%3D&spec_ids=16105",
+              queryReleScore: 0.0,
+              sales_tip_text: ["7.9K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "11",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/934bbfc0-fa1e-4458-b5b7-300c3728dbe4.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/934bbfc0-fa1e-4458-b5b7-300c3728dbe4.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-43%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens elegant plush winter coat double breasted collar jacket with white piping full length hanger friendly button closure machine washable outerwear for formal events cold weather autumn winter coat rack ready",
+              current_sku_id: 17609995197097,
+              tags_info: {
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "1 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 1 Left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/854a29e26d376a1e57bb9b477555b08a10e440b6gs2CV.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fancy/934bbfc0-fa1e-4458-b5b7-300c3728dbe4.jpg",
+                url: "https://img.kwcdn.com/product/db4015ab189eefead5d1456b18405a9abb14b8b6.temu.000001.jpeg",
+              },
+              title:
+                "Women's Elegant Plush Winter Coat - Double-Breasted Collar Jacket with White Piping, Full-Length Hanger-Friendly Button Closure, Machine Washable Outerwear for, Formal Events & Cold Weather (Autumn/Winter) - Coat Rack Ready",
+              sales_tip_text_list: [],
+              display_end_time_percent: 48,
+              sold_quantity_percent: 19,
+              p_rec: {
+                skc_id: "17596719492904",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "1970800571",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw/Hah86SgqdGfgp5BRljSruyB+5zUpXYIUoGyZf1ucJxEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "7911707485137034529",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1970800571",
+                g: "601103472484248",
+                scene_id: "3",
+                show_price: "3539",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "96",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "8781262284624612830",
+                ts: "1763223031260",
+              },
+              activity_type: 100,
+              mall_id: 6318960698746,
+              sales_num: "4.2K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601103472484248&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F934bbfc0-fa1e-4458-b5b7-300c3728dbe4.jpg&spec_id=2001&spec_gallery_id=421137&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzUzOQ&_oak_gallery_order=1970800571%2C1451680534%2C183123507&spec_ids=2001&_oak_name_id=8781262284624612830&_oak_mp_inf=EJi%2Fzfe01ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+              selected_spec_ids: [2001],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601103472484248&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F934bbfc0-fa1e-4458-b5b7-300c3728dbe4.jpg&spec_id=2001&spec_gallery_id=421137&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzUzOQ&_oak_gallery_order=1970800571%2C1451680534%2C183123507&spec_ids=2001&_oak_name_id=8781262284624612830&_oak_mp_inf=EJi%2Fzfe01ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112701731750305688",
+                sku_extra_param: {
+                  _oak_gallery_order: "1970800571,1451680534,183123507",
+                  _oak_name_id: "8781262284624612830",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "1 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 1 Left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 96,
+              price_info: {
+                reduction_text: ["-43", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "35.39", ""],
+                price_str: "CA$35.39",
+                split_price_text: ["CA$", "35", ".39", ""],
+                currency_str: "CA$",
+                price: 3539,
+                market_price_str: "62.99",
+                market_price: 6299,
+                price_schema: "35.39",
+                currency: "CAD",
+                reduction: 430,
+                market_price_text: ["", "62.99", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 421137,
+                url_id: "7911707485137034529",
+                url: "https://img.kwcdn.com/product/fancy/934bbfc0-fa1e-4458-b5b7-300c3728dbe4.jpg",
+                height: 1800,
+              },
+              sales_tip: "4.2K+ sold",
+              visible: true,
+              goods_id: 601103472484248,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "35", ".39", ""],
+                    reduction_text: ["-43", "%"],
+                    price: 3539,
+                    market_price_str: "62.99",
+                    market_price: 6299,
+                    price_schema: "35.39",
+                    currency: "CAD",
+                    price_text: ["CA$", "35.39", ""],
+                    price_str: "CA$35.39",
+                    reduction: 430,
+                    market_price_text: ["", "62.99", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 421137,
+                    url: "https://img.kwcdn.com/product/fancy/934bbfc0-fa1e-4458-b5b7-300c3728dbe4.jpg",
+                    height: 1800,
+                  },
+                  color: "(255,255,255,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-plush-winter-coat-double-breasted-collar-jacket-with-white-piping-full-length-hanger-friendly-button-closure-machine-washable-outerwear-for-formal-events-cold-weather-autumn-winter-coat-rack-ready-g-601103472484248.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F934bbfc0-fa1e-4458-b5b7-300c3728dbe4.jpg&spec_id=2001&spec_gallery_id=421137&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzUzOQ&_oak_mp_inf=EJi%2Fzfe01ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+                  spec_id: 2001,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/e12eb338-8447-423f-8f36-2466750dfad6.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103472484248&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F934bbfc0-fa1e-4458-b5b7-300c3728dbe4.jpg&spec_id=2001&spec_gallery_id=421137&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzUzOQ&_oak_mp_inf=EJi%2Fzfe01ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/934bbfc0-fa1e-4458-b5b7-300c3728dbe4.jpg",
+                  price_str: "43.76",
+                },
+              ],
+              spec_ids: "2001",
+              display_end_time: 1764565199,
+              seo_link_url:
+                "/ca/womens-elegant-plush-winter-coat-double-breasted-collar-jacket-with-white-piping-full-length-hanger-friendly-button-closure-machine-washable-outerwear-for-formal-events-cold-weather-autumn-winter-coat-rack-ready-g-601103472484248.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F934bbfc0-fa1e-4458-b5b7-300c3728dbe4.jpg&spec_id=2001&spec_gallery_id=421137&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzUzOQ&_oak_gallery_order=1970800571%2C1451680534%2C183123507&_oak_name_id=8781262284624612830&_oak_mp_inf=EJi%2Fzfe01ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D&spec_ids=2001",
+              queryReleScore: 0.0,
+              sales_tip_text: ["4.2K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "1",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/572ed5ac-7709-45df-8ec7-c7335199edd0.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/572ed5ac-7709-45df-8ec7-c7335199edd0.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "",
+              },
+              item_type: 0,
+              page_alt:
+                "womens winter warm jacket coat elegant collar solid color   navy blue   outerwear for office casual   hand   clean non stretch luxury  ",
+              current_sku_id: 17613812301320,
+              tags_info: {},
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women's Winter Warm Jacket Coat - Elegant Collar & Solid Color (Black/Brown/Navy/ Blue) - All-Season Outerwear for Office, Casual & Special Events - Hand Wash/Dry Clean - Non-Stretch Luxury Blazer",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17597620300030",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "398169858",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw6WVcHyG8tyrSiTFTHxEW1CE6oT04+a3z4T3Qjck4G2iEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "1631735278123918305",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "398169858",
+                g: "601104242790218",
+                scene_id: "3",
+                show_price: "4499",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "97",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "7128173047590229302",
+                ts: "1763223031260",
+              },
+              mall_id: 634418212313040,
+              sales_num: "5.7K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601104242790218&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F572ed5ac-7709-45df-8ec7-c7335199edd0.jpg&spec_id=3002&spec_gallery_id=503473&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDQ5OQ&_oak_gallery_order=398169858%2C1471471429%2C1063839374%2C1234002720&spec_ids=3002&_oak_name_id=7128173047590229302&_oak_mp_inf=EMqe9ea31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+              selected_spec_ids: [3002],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601104242790218&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F572ed5ac-7709-45df-8ec7-c7335199edd0.jpg&spec_id=3002&spec_gallery_id=503473&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDQ5OQ&_oak_gallery_order=398169858%2C1471471429%2C1063839374%2C1234002720&spec_ids=3002&_oak_name_id=7128173047590229302&_oak_mp_inf=EMqe9ea31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "398169858,1471471429,1063839374,1234002720",
+                  _oak_name_id: "7128173047590229302",
+                },
+              },
+              goods_tags: [],
+              show_index: 97,
+              price_info: {
+                split_price_text: ["CA$", "44", ".99", ""],
+                currency_str: "CA$",
+                reduction_text: [],
+                price: 4499,
+                price_schema: "44.99",
+                currency: "CAD",
+                price_text: ["CA$", "44.99", ""],
+                price_str: "CA$44.99",
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 503473,
+                url_id: "1631735278123918305",
+                url: "https://img.kwcdn.com/product/fancy/572ed5ac-7709-45df-8ec7-c7335199edd0.jpg",
+                height: 1800,
+              },
+              sales_tip: "5.7K+ sold",
+              visible: true,
+              goods_id: 601104242790218,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "44", ".99", ""],
+                    reduction_text: [],
+                    price: 4499,
+                    price_schema: "44.99",
+                    currency: "CAD",
+                    price_text: ["CA$", "44.99", ""],
+                    price_str: "CA$44.99",
+                  },
+                  image: {
+                    width: 1350,
+                    id: 503473,
+                    url: "https://img.kwcdn.com/product/fancy/572ed5ac-7709-45df-8ec7-c7335199edd0.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-warm-jacket-coat-elegant-collar-solid-color--navy-blue--outerwear-for-office-casual--hand--clean-non-stretch-luxury--g-601104242790218.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F572ed5ac-7709-45df-8ec7-c7335199edd0.jpg&spec_id=3002&spec_gallery_id=503473&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDQ5OQ&_oak_mp_inf=EMqe9ea31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/ef0074a7-6253-462c-b9d6-3b761dfad6cf.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104242790218&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F572ed5ac-7709-45df-8ec7-c7335199edd0.jpg&spec_id=3002&spec_gallery_id=503473&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDQ5OQ&_oak_mp_inf=EMqe9ea31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/572ed5ac-7709-45df-8ec7-c7335199edd0.jpg",
+                  price_str: "44.99",
+                },
+              ],
+              spec_ids: "3002",
+              seo_link_url:
+                "/ca/womens-winter-warm-jacket-coat-elegant-collar-solid-color--navy-blue--outerwear-for-office-casual--hand--clean-non-stretch-luxury--g-601104242790218.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F572ed5ac-7709-45df-8ec7-c7335199edd0.jpg&spec_id=3002&spec_gallery_id=503473&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDQ5OQ&_oak_gallery_order=398169858%2C1471471429%2C1063839374%2C1234002720&_oak_name_id=7128173047590229302&_oak_mp_inf=EMqe9ea31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D&spec_ids=3002",
+              queryReleScore: 0.0,
+              sales_tip_text: ["5.7K+", "sold"],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/36dfa2b1-c54c-4380-92a8-1271f1c63749.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/36dfa2b1-c54c-4380-92a8-1271f1c63749.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-14%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens cozy fleece lined hooded jacket plaid pattern long sleeve button   flared hem casual winter outerwear for fall winter brown plaid winter jacket fall fashion elegant style",
+              current_sku_id: 17611073799449,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women's Cozy Fleece-Lined Hooded Jacket, Plaid Pattern Long Sleeve Button-Up Front Flared Hem, Casual Winter Outerwear for Fall & Winter, Brown & Plaid, Winter Jacket Fall Fashion Elegant Style",
+              sales_tip_text_list: [],
+              display_end_time_percent: 23,
+              sold_quantity_percent: 4,
+              p_rec: {
+                skc_id: "17596973246077",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "1085401770",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw+8C6jw9TmSkeio35SDnypkcXGv8WE+lzcKlCuO+PqVpEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "7363584647592860590",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1085401770",
+                g: "601103690325291",
+                scene_id: "3",
+                show_price: "3250",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "98",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "3283456304056247024",
+                ts: "1763223031260",
+              },
+              activity_type: 13,
+              mall_id: 634418226164697,
+              sales_num: "181",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601103690325291&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F36dfa2b1-c54c-4380-92a8-1271f1c63749.jpg&spec_id=16067&spec_gallery_id=445773&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzI1MA&_oak_gallery_order=1085401770%2C1336478339%2C839415126%2C1963910866&spec_ids=16067&_oak_name_id=3283456304056247024&_oak_mp_inf=EKu6vd%2B11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+              selected_spec_ids: [16067],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601103690325291&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F36dfa2b1-c54c-4380-92a8-1271f1c63749.jpg&spec_id=16067&spec_gallery_id=445773&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzI1MA&_oak_gallery_order=1085401770%2C1336478339%2C839415126%2C1963910866&spec_ids=16067&_oak_name_id=3283456304056247024&_oak_mp_inf=EKu6vd%2B11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112741165958978859",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1085401770,1336478339,839415126,1963910866",
+                  _oak_name_id: "3283456304056247024",
+                },
+              },
+              goods_tags: [],
+              show_index: 98,
+              price_info: {
+                reduction_text: ["-14", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "32.50", ""],
+                price_str: "CA$32.50",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "32", ".50", ""],
+                currency_str: "CA$",
+                price: 3250,
+                market_price_str: "37.88",
+                market_price: 3788,
+                price_schema: "32.50",
+                currency: "CAD",
+                reduction: 140,
+                market_price_text: ["", "37.88", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 2127,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 445773,
+                url_id: "7363584647592860590",
+                url: "https://img.kwcdn.com/product/fancy/36dfa2b1-c54c-4380-92a8-1271f1c63749.jpg",
+                height: 2835,
+              },
+              sales_tip: "181 sold",
+              visible: true,
+              goods_id: 601103690325291,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "32", ".50", ""],
+                    reduction_text: ["-14", "%"],
+                    price: 3250,
+                    market_price_str: "37.88",
+                    market_price: 3788,
+                    price_schema: "32.50",
+                    currency: "CAD",
+                    price_text: ["CA$", "32.50", ""],
+                    price_str: "CA$32.50",
+                    price_color: "#FB7701",
+                    reduction: 140,
+                    market_price_text: ["", "37.88", ""],
+                  },
+                  image: {
+                    width: 2127,
+                    id: 445773,
+                    url: "https://img.kwcdn.com/product/fancy/36dfa2b1-c54c-4380-92a8-1271f1c63749.jpg",
+                    height: 2835,
+                  },
+                  color: "(255,199,115,1)",
+                  seo_link_url:
+                    "/ca/womens-cozy-fleece-lined-hooded-jacket-plaid-pattern-long-sleeve-button--flared-hem-casual-winter-outerwear-for-fall-winter-brown-plaid-winter-jacket-fall-fashion-elegant-style-g-601103690325291.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F36dfa2b1-c54c-4380-92a8-1271f1c63749.jpg&spec_id=16067&spec_gallery_id=445773&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzI1MA&_oak_mp_inf=EKu6vd%2B11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+                  spec_id: 16067,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/675406ad-ceb4-4b21-9c9b-de198899880f.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103690325291&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F36dfa2b1-c54c-4380-92a8-1271f1c63749.jpg&spec_id=16067&spec_gallery_id=445773&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzI1MA&_oak_mp_inf=EKu6vd%2B11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/36dfa2b1-c54c-4380-92a8-1271f1c63749.jpg",
+                  price_str: "38.74",
+                },
+              ],
+              spec_ids: "16067",
+              display_end_time: 1763355599,
+              seo_link_url:
+                "/ca/womens-cozy-fleece-lined-hooded-jacket-plaid-pattern-long-sleeve-button--flared-hem-casual-winter-outerwear-for-fall-winter-brown-plaid-winter-jacket-fall-fashion-elegant-style-g-601103690325291.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F36dfa2b1-c54c-4380-92a8-1271f1c63749.jpg&spec_id=16067&spec_gallery_id=445773&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzI1MA&_oak_gallery_order=1085401770%2C1336478339%2C839415126%2C1963910866&_oak_name_id=3283456304056247024&_oak_mp_inf=EKu6vd%2B11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D&spec_ids=16067",
+              queryReleScore: 0.0,
+              sales_tip_text: ["181", "sold"],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/2cdb1cac-e20e-4e24-9a9e-969da61de1cd.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/2cdb1cac-e20e-4e24-9a9e-969da61de1cd.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-45%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens elegant winter coat long sleeve hooded jacket with full zip front non stretch fabric side pockets cold weather outerwear for everyday formal events office wear durable construction   seasonal fashion",
+              current_sku_id: 17602965066476,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+              },
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/a9407ef4cd5c542c6cf9c2550412fe283ad287c2gs2CV.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fancy/2cdb1cac-e20e-4e24-9a9e-969da61de1cd.jpg",
+                url: "https://img.kwcdn.com/product/b9261f593e9f1c017c5c9fbc478c2cff1dd2d817.temu.000001.jpeg",
+              },
+              title:
+                "Women'S Elegant Winter Coat - Long Sleeve Hooded Jacket with Full-Zip Front, Non-Stretch Fabric, Side Pockets - Cold Weather Outerwear for Everyday & Formal Events, Office Wear, Durable Construction, Classic Design, Seasonal Fashion",
+              sales_tip_text_list: [],
+              display_end_time_percent: 7,
+              sold_quantity_percent: 4,
+              p_rec: {
+                skc_id: "17595099757546",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "1370294614",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxww2eQkZ/fWeMUiNdy42RFHDiEpovgF6hZtWEYdwxvjUbEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "7958462310236953350",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1370294614",
+                g: "601102091480880",
+                scene_id: "3",
+                show_price: "3934",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "99",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "280036965849630483",
+                ts: "1763223031260",
+              },
+              activity_type: 13,
+              mall_id: 2532772973037,
+              sales_num: "8K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601102091480880&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2cdb1cac-e20e-4e24-9a9e-969da61de1cd.jpg&spec_id=3002&spec_gallery_id=258050&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzkzNA&_oak_gallery_order=1370294614&spec_ids=3002&_oak_name_id=280036965849630483&_oak_mp_inf=ELDei%2BWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+              selected_spec_ids: [3002],
+              extend_fields: {
+                sale_fire_flag: true,
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601102091480880&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2cdb1cac-e20e-4e24-9a9e-969da61de1cd.jpg&spec_id=3002&spec_gallery_id=258050&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzkzNA&_oak_gallery_order=1370294614&spec_ids=3002&_oak_name_id=280036965849630483&_oak_mp_inf=ELDei%2BWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112732451403263792",
+                sku_extra_param: {
+                  _oak_gallery_order: "1370294614",
+                  _oak_name_id: "280036965849630483",
+                },
+              },
+              goods_tags: [],
+              show_index: 99,
+              price_info: {
+                reduction_text: ["-45", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "39.34", ""],
+                price_str: "CA$39.34",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "39", ".34", ""],
+                currency_str: "CA$",
+                price: 3934,
+                market_price_str: "72.38",
+                market_price: 7238,
+                price_schema: "39.34",
+                currency: "CAD",
+                reduction: 450,
+                market_price_text: ["", "72.38", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1340,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 258050,
+                url_id: "7958462310236953350",
+                url: "https://img.kwcdn.com/product/fancy/2cdb1cac-e20e-4e24-9a9e-969da61de1cd.jpg",
+                height: 1785,
+              },
+              sales_tip: "8K+ sold",
+              visible: true,
+              goods_id: 601102091480880,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "39", ".34", ""],
+                    reduction_text: ["-45", "%"],
+                    price: 3934,
+                    market_price_str: "72.38",
+                    market_price: 7238,
+                    price_schema: "39.34",
+                    currency: "CAD",
+                    price_text: ["CA$", "39.34", ""],
+                    price_str: "CA$39.34",
+                    price_color: "#FB7701",
+                    reduction: 450,
+                    market_price_text: ["", "72.38", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 258050,
+                    url: "https://img.kwcdn.com/product/fancy/2cdb1cac-e20e-4e24-9a9e-969da61de1cd.jpg",
+                    height: 1785,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-winter-coat-long-sleeve-hooded-jacket-with-full-zip-front-non-stretch-fabric-side-pockets-cold-weather-outerwear-for-everyday-formal-events-office-wear-durable-construction--seasonal-fashion-g-601102091480880.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2cdb1cac-e20e-4e24-9a9e-969da61de1cd.jpg&spec_id=3002&spec_gallery_id=258050&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzkzNA&_oak_mp_inf=ELDei%2BWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/eff70e0f-f55a-47cf-8bd9-62d2a1194ffb.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102091480880&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2cdb1cac-e20e-4e24-9a9e-969da61de1cd.jpg&spec_id=3002&spec_gallery_id=258050&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzkzNA&_oak_mp_inf=ELDei%2BWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/2cdb1cac-e20e-4e24-9a9e-969da61de1cd.jpg",
+                  price_str: "39.35",
+                },
+              ],
+              spec_ids: "3002",
+              display_end_time: 1763787599,
+              seo_link_url:
+                "/ca/womens-elegant-winter-coat-long-sleeve-hooded-jacket-with-full-zip-front-non-stretch-fabric-side-pockets-cold-weather-outerwear-for-everyday-formal-events-office-wear-durable-construction--seasonal-fashion-g-601102091480880.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2cdb1cac-e20e-4e24-9a9e-969da61de1cd.jpg&spec_id=3002&spec_gallery_id=258050&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzkzNA&_oak_gallery_order=1370294614&_oak_name_id=280036965849630483&_oak_mp_inf=ELDei%2BWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D&spec_ids=3002",
+              queryReleScore: 0.0,
+              sales_tip_text: ["8K+", "sold"],
               opt_type: 3,
               comment: {
                 goods_score: 4.7,
                 hidden_comment: false,
-                comment_num_tips: "485",
+                comment_num_tips: "64",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/open/ba07d58169a74f01a5357c1f5f912a51-goods.jpeg",
+              thumb_url:
+                "https://img.kwcdn.com/product/open/ba07d58169a74f01a5357c1f5f912a51-goods.jpeg",
+              ware_house_type: 1,
+              benefit_text: {
+                text: "-50%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens autumn winter jacket color block corduroy coat with lapel collar button front closure soft light friendly warm outerwear casual to semi formal long sleeve jacket in pinkpurplenavy single breasted design for fall winter layering",
+              current_sku_id: 17611008266403,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                  {
+                    color: "#0A8800",
+                    ext_map: {},
+                    marketing_tag_type: 1000,
+                    tag_id: 91050,
+                    text: "Local",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women'S Autumn & Winter Jacket - Color-Block Corduroy Coat with Lapel Collar & Button Front Closure, Soft Light -Friendly Warm Outerwear, Casual to Semi-Formal Long Sleeve Jacket in PinkPurpleNavy, Single-Breasted Design for Fall Winter Layering",
+              sales_tip_text_list: [],
+              display_end_time_percent: 52,
+              sold_quantity_percent: 0,
+              p_rec: {
+                skc_id: "17596958030694",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "1402531434",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw9onh+2S47Iaa5rvnUpDYiXJCCpRH+N2GvcZUywn++JDEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "1854335218114622030",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1402531434",
+                g: "601103677358209",
+                scene_id: "3",
+                show_price: "2664",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "100",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "3794276860861313015",
+                ts: "1763223031260",
+              },
+              activity_type: 13,
+              mall_id: 634418219746492,
+              sales_num: "8.6K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601103677358209&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2Fba07d58169a74f01a5357c1f5f912a51-goods.jpeg&spec_id=21263&spec_gallery_id=423089&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY2NA&_oak_gallery_order=1402531434%2C2098314406%2C1037910395%2C789411320%2C1117327585&spec_ids=21263,16057&_oak_name_id=3794276860861313015&_oak_mp_inf=EIGBptm11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+              selected_spec_ids: [21263, 16057],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601103677358209&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2Fba07d58169a74f01a5357c1f5f912a51-goods.jpeg&spec_id=21263&spec_gallery_id=423089&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY2NA&_oak_gallery_order=1402531434%2C2098314406%2C1037910395%2C789411320%2C1117327585&spec_ids=21263,16057&_oak_name_id=3794276860861313015&_oak_mp_inf=EIGBptm11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112730149820858497",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1402531434,2098314406,1037910395,789411320,1117327585",
+                  _oak_name_id: "3794276860861313015",
+                },
+              },
+              goods_tags: [],
+              show_index: 100,
+              price_info: {
+                reduction_text: ["-50", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "26.64", ""],
+                price_str: "CA$26.64",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "26", ".64", ""],
+                currency_str: "CA$",
+                price: 2664,
+                market_price_str: "53.53",
+                market_price: 5353,
+                price_schema: "26.64",
+                currency: "CAD",
+                reduction: 500,
+                market_price_text: ["", "53.53", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1920,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 423089,
+                url_id: "1854335218114622030",
+                url: "https://img.kwcdn.com/product/open/ba07d58169a74f01a5357c1f5f912a51-goods.jpeg",
+                height: 2560,
+              },
+              sales_tip: "8.6K+ sold",
+              visible: true,
+              goods_id: 601103677358209,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "26", ".64", ""],
+                    reduction_text: ["-50", "%"],
+                    price: 2664,
+                    market_price_str: "53.53",
+                    market_price: 5353,
+                    price_schema: "26.64",
+                    currency: "CAD",
+                    price_text: ["CA$", "26.64", ""],
+                    price_str: "CA$26.64",
+                    price_color: "#FB7701",
+                    reduction: 500,
+                    market_price_text: ["", "53.53", ""],
+                  },
+                  image: {
+                    width: 1920,
+                    id: 423089,
+                    url: "https://img.kwcdn.com/product/open/ba07d58169a74f01a5357c1f5f912a51-goods.jpeg",
+                    height: 2560,
+                  },
+                  color: "(255,255,254,1)",
+                  seo_link_url:
+                    "/ca/womens-autumn-winter-jacket-color-block-corduroy-coat-with-lapel-collar-button-front-closure-soft-light-friendly-warm-outerwear-casual-to-semi-formal-long-sleeve-jacket-in-pinkpurplenavy-single-breasted-design-for-fall-winter-layering-g-601103677358209.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2Fba07d58169a74f01a5357c1f5f912a51-goods.jpeg&spec_id=21263&spec_gallery_id=423089&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY2NA&_oak_mp_inf=EIGBptm11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+                  spec_id: 21263,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/dca96ea1-7057-42ac-bdec-ae4a6d025682.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103677358209&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2Fba07d58169a74f01a5357c1f5f912a51-goods.jpeg&spec_id=21263&spec_gallery_id=423089&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY2NA&_oak_mp_inf=EIGBptm11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/open/ba07d58169a74f01a5357c1f5f912a51-goods.jpeg",
+                  price_str: "30.79",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "26", ".64", ""],
+                    reduction_text: ["-50", "%"],
+                    price: 2664,
+                    market_price_str: "53.53",
+                    market_price: 5353,
+                    price_schema: "26.64",
+                    currency: "CAD",
+                    price_text: ["CA$", "26.64", ""],
+                    price_str: "CA$26.64",
+                    price_color: "#FB7701",
+                    reduction: 500,
+                    market_price_text: ["", "53.53", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 423094,
+                    url: "https://img.kwcdn.com/product/open/416c7c1913d148b5ace0927030d0ef51-goods.jpeg",
+                    height: 1800,
+                  },
+                  color: "(255,182,193,1)",
+                  seo_link_url:
+                    "/ca/womens-autumn-winter-jacket-color-block-corduroy-coat-with-lapel-collar-button-front-closure-soft-light-friendly-warm-outerwear-casual-to-semi-formal-long-sleeve-jacket-in-pinkpurplenavy-single-breasted-design-for-fall-winter-layering-g-601103677358209.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F416c7c1913d148b5ace0927030d0ef51-goods.jpeg&spec_id=16057&spec_gallery_id=423094&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY2NA&_oak_mp_inf=EIGBptm11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+                  spec_id: 16057,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/10faf35f-23f0-4a85-9531-e960ade03961.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103677358209&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F416c7c1913d148b5ace0927030d0ef51-goods.jpeg&spec_id=16057&spec_gallery_id=423094&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY2NA&_oak_mp_inf=EIGBptm11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/open/416c7c1913d148b5ace0927030d0ef51-goods.jpeg",
+                  price_str: "30.79",
+                },
+              ],
+              spec_ids: "21263,16057",
+              display_end_time: 1764392399,
+              seo_link_url:
+                "/ca/womens-autumn-winter-jacket-color-block-corduroy-coat-with-lapel-collar-button-front-closure-soft-light-friendly-warm-outerwear-casual-to-semi-formal-long-sleeve-jacket-in-pinkpurplenavy-single-breasted-design-for-fall-winter-layering-g-601103677358209.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2Fba07d58169a74f01a5357c1f5f912a51-goods.jpeg&spec_id=21263&spec_gallery_id=423089&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY2NA&_oak_gallery_order=1402531434%2C2098314406%2C1037910395%2C789411320%2C1117327585&_oak_name_id=3794276860861313015&_oak_mp_inf=EIGBptm11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK2bocKoMw%3D%3D&spec_ids=21263,16057",
+              queryReleScore: 0.0,
+              sales_tip_text: ["8.6K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "1",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/c8df768e-0ef9-4d2f-a8ea-c8feb331a2a2.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/c8df768e-0ef9-4d2f-a8ea-c8feb331a2a2.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-27%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens elegant winter coat with like collar belted full length jacket classic button front machine washable long outerwear for parties casual solid color fall winter warm   no stretch",
+              current_sku_id: 17613948359800,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "7 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 7 left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/0af0e5f9ec3b75046ff2763520085ae1a4205d01gs2CV.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fancy/c8df768e-0ef9-4d2f-a8ea-c8feb331a2a2.jpg",
+                url: "https://img.kwcdn.com/product/7d996a7c6c8e9867a113f7861c89aca030ab8482.temu.000001.jpeg",
+              },
+              title:
+                "Women's Elegant Winter Coat with -Like Collar - Belted Full-Length Jacket, Classic Button Front & Machine Washable - Long Outerwear for, Parties, Casual (Solid Color) - Fall/Winter Warm Blazer (No Stretch)",
+              sales_tip_text_list: [],
+              display_end_time_percent: 23,
+              sold_quantity_percent: 40,
+              p_rec: {
+                skc_id: "17597653363952",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "632022052",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw++HPfbOiTISLXWn9uu+GDvqDiifLj4E3bMOapLiaNGhEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "2943083353941898253",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "632022052",
+                g: "601104271688776",
+                scene_id: "3",
+                show_price: "3974",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "101",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "7335367563241532551",
+                ts: "1763223031260",
+              },
+              activity_type: 13,
+              mall_id: 634418224178501,
+              sales_num: "890",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601104271688776&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc8df768e-0ef9-4d2f-a8ea-c8feb331a2a2.jpg&spec_id=15067&spec_gallery_id=501677&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzk3NA&_oak_gallery_order=632022052%2C269388267%2C947485813%2C814279563%2C1718736320&spec_ids=15067&_oak_name_id=7335367563241532551&_oak_mp_inf=EMiI2fS31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+              selected_spec_ids: [15067],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601104271688776&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc8df768e-0ef9-4d2f-a8ea-c8feb331a2a2.jpg&spec_id=15067&spec_gallery_id=501677&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzk3NA&_oak_gallery_order=632022052%2C269388267%2C947485813%2C814279563%2C1718736320&spec_ids=15067&_oak_name_id=7335367563241532551&_oak_mp_inf=EMiI2fS31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112737211183285320",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "632022052,269388267,947485813,814279563,1718736320",
+                  _oak_name_id: "7335367563241532551",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "7 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 7 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 101,
+              price_info: {
+                reduction_text: ["-27", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "39.74", ""],
+                price_str: "CA$39.74",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "39", ".74", ""],
+                currency_str: "CA$",
+                price: 3974,
+                market_price_str: "54.61",
+                market_price: 5461,
+                price_schema: "39.74",
+                currency: "CAD",
+                reduction: 270,
+                market_price_text: ["", "54.61", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 501677,
+                url_id: "2943083353941898253",
+                url: "https://img.kwcdn.com/product/fancy/c8df768e-0ef9-4d2f-a8ea-c8feb331a2a2.jpg",
+                height: 1800,
+              },
+              sales_tip: "890 sold",
+              visible: true,
+              goods_id: 601104271688776,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "39", ".74", ""],
+                    reduction_text: ["-27", "%"],
+                    price: 3974,
+                    market_price_str: "54.61",
+                    market_price: 5461,
+                    price_schema: "39.74",
+                    currency: "CAD",
+                    price_text: ["CA$", "39.74", ""],
+                    price_str: "CA$39.74",
+                    price_color: "#FB7701",
+                    reduction: 270,
+                    market_price_text: ["", "54.61", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 501677,
+                    url: "https://img.kwcdn.com/product/fancy/c8df768e-0ef9-4d2f-a8ea-c8feb331a2a2.jpg",
+                    height: 1800,
+                  },
+                  color: "(195,176,145,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-winter-coat-with-like-collar-belted-full-length-jacket-classic-button-front-machine-washable-long-outerwear-for-parties-casual-solid-color-fall-winter-warm--no-stretch-g-601104271688776.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc8df768e-0ef9-4d2f-a8ea-c8feb331a2a2.jpg&spec_id=15067&spec_gallery_id=501677&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzk3NA&_oak_mp_inf=EMiI2fS31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  spec_id: 15067,
+                  color_image:
+                    "https://img.kwcdn.com/product/temu-avi/image-crop/dd9f5dca-9a29-4a05-8bff-a17def4dfc9b.jpg",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104271688776&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc8df768e-0ef9-4d2f-a8ea-c8feb331a2a2.jpg&spec_id=15067&spec_gallery_id=501677&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzk3NA&_oak_mp_inf=EMiI2fS31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/c8df768e-0ef9-4d2f-a8ea-c8feb331a2a2.jpg",
+                  price_str: "43.64",
+                },
+              ],
+              spec_ids: "15067",
+              display_end_time: 1763355599,
+              seo_link_url:
+                "/ca/womens-elegant-winter-coat-with-like-collar-belted-full-length-jacket-classic-button-front-machine-washable-long-outerwear-for-parties-casual-solid-color-fall-winter-warm--no-stretch-g-601104271688776.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc8df768e-0ef9-4d2f-a8ea-c8feb331a2a2.jpg&spec_id=15067&spec_gallery_id=501677&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzk3NA&_oak_gallery_order=632022052%2C269388267%2C947485813%2C814279563%2C1718736320&_oak_name_id=7335367563241532551&_oak_mp_inf=EMiI2fS31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D&spec_ids=15067",
+              queryReleScore: 0.0,
+              sales_tip_text: ["890", "sold"],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fmket/8a959c46252513070961f275af920ffe.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fmket/8a959c46252513070961f275af920ffe.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-26%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens winter cape style faux fur lined hooded cardigan burgundy plush open front oversized coat for cold weather middle eastern inspired     only ladies winter coats cold   cape style outerwear luxury  ",
+              current_sku_id: 17592345078139,
+              tags_info: {},
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/5503b9e28a53ae66e075551f59d5ca02adb2cb90.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fmket/8a959c46252513070961f275af920ffe.jpg",
+                url: "https://img.kwcdn.com/product/ed5704d3034e4830014fddd27cea8715ee089fcd.goods.000001.jpeg",
+              },
+              title:
+                "Women's Winter Cape-Style Faux Fur-Lined Hooded Cardigan - Burgundy Plush Open Front Oversized Coat for Cold Weather, Middle Eastern-Inspired Elegance, Dry Clean Only, Ladies Winter Coats, Cold Weather Apparel, Cape Style Outerwear, Luxury Fabric Coat",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17592227433896",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "1603401568",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw5Q/fPxff/btP4fijuGAAZ6JUFrx+RuEyw2LU9EJYEekEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "5297997390181835216",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1603401568",
+                g: "601099541009468",
+                scene_id: "3",
+                show_price: "5168",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "102",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "5047383798991594561",
+                ts: "1763223031260",
+              },
+              mall_id: 634418212700207,
+              sales_num: "2.1K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601099541009468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F8a959c46252513070961f275af920ffe.jpg&spec_id=17084&spec_gallery_id=9&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTE2OA&_oak_gallery_order=1603401568%2C1647944929%2C759431470%2C952800538%2C1118708977&spec_ids=17084,3002,16062,16080,15067,16057&_oak_name_id=5047383798991594561&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+              selected_spec_ids: [17084, 3002, 16062, 16080, 15067, 16057],
+              extend_fields: {
+                sale_fire_flag: true,
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601099541009468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F8a959c46252513070961f275af920ffe.jpg&spec_id=17084&spec_gallery_id=9&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTE2OA&_oak_gallery_order=1603401568%2C1647944929%2C759431470%2C952800538%2C1118708977&spec_ids=17084,3002,16062,16080,15067,16057&_oak_name_id=5047383798991594561&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1603401568,1647944929,759431470,952800538,1118708977",
+                  _oak_name_id: "5047383798991594561",
+                },
+              },
+              goods_tags: [],
+              show_index: 102,
+              price_info: {
+                split_price_text: ["CA$", "51", ".68", ""],
+                currency_str: "CA$",
+                reduction_text: ["-26", "%"],
+                price: 5168,
+                market_price_str: "70.19",
+                market_price: 7019,
+                market_price_type: 1,
+                price_schema: "51.68",
+                currency: "CAD",
+                price_text: ["CA$", "51.68", ""],
+                price_str: "CA$51.68",
+                market_price_text: ["", "70.19", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1500,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 9,
+                url_id: "5297997390181835216",
+                url: "https://img.kwcdn.com/product/fmket/8a959c46252513070961f275af920ffe.jpg",
+                height: 2000,
+              },
+              sales_tip: "2.1K+ sold",
+              visible: true,
+              goods_id: 601099541009468,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "51", ".68", ""],
+                    reduction_text: [],
+                    price: 5168,
+                    market_price_str: "70.19",
+                    market_price: 7019,
+                    price_schema: "51.68",
+                    currency: "CAD",
+                    price_text: ["CA$", "51.68", ""],
+                    price_str: "CA$51.68",
+                    market_price_text: ["", "70.19", ""],
+                  },
+                  image: {
+                    width: 1500,
+                    id: 9,
+                    url: "https://img.kwcdn.com/product/fmket/8a959c46252513070961f275af920ffe.jpg",
+                    height: 2000,
+                  },
+                  color: "",
+                  seo_link_url:
+                    "/ca/womens-winter-cape-style-faux-fur-lined-hooded-cardigan-burgundy-plush-open-front-oversized-coat-for-cold-weather-middle-eastern-inspired---only-ladies-winter-coats-cold--cape-style-outerwear-luxury--g-601099541009468.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F8a959c46252513070961f275af920ffe.jpg&spec_id=17084&spec_gallery_id=9&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTE2OA&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  spec_id: 17084,
+                  color_image:
+                    "https://img.kwcdn.com/product/0b508a22-cfe7-11ee-9ab3-0a580a68bd19.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099541009468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F8a959c46252513070961f275af920ffe.jpg&spec_id=17084&spec_gallery_id=9&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTE2OA&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fmket/8a959c46252513070961f275af920ffe.jpg",
+                  price_str: "51.68",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "40", ".20", ""],
+                    reduction_text: [],
+                    price: 4020,
+                    market_price_str: "70.19",
+                    market_price: 7019,
+                    price_schema: "40.20",
+                    currency: "CAD",
+                    price_text: ["CA$", "40.20", ""],
+                    price_str: "CA$40.20",
+                    market_price_text: ["", "70.19", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 1836,
+                    url: "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/9d9f54d8a5676094d0b581173f771823.jpg",
+                    height: 1785,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-cape-style-faux-fur-lined-hooded-cardigan-burgundy-plush-open-front-oversized-coat-for-cold-weather-middle-eastern-inspired---only-ladies-winter-coats-cold--cape-style-outerwear-luxury--g-601099541009468.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F9d9f54d8a5676094d0b581173f771823.jpg&spec_id=3002&spec_gallery_id=1836&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDAyMA&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/91323546-a60c-11ee-9a28-0a580a68bd19.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099541009468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F9d9f54d8a5676094d0b581173f771823.jpg&spec_id=3002&spec_gallery_id=1836&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDAyMA&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/9d9f54d8a5676094d0b581173f771823.jpg",
+                  price_str: "40.20",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "42", ".02", ""],
+                    reduction_text: [],
+                    price: 4202,
+                    market_price_str: "129.38",
+                    market_price: 12938,
+                    price_schema: "42.02",
+                    currency: "CAD",
+                    price_text: ["CA$", "42.02", ""],
+                    price_str: "CA$42.02",
+                    market_price_text: ["", "129.38", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 1833,
+                    url: "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4af515eaba662301325ad43f12cbf7af.jpg",
+                    height: 1785,
+                  },
+                  color: "(153,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-cape-style-faux-fur-lined-hooded-cardigan-burgundy-plush-open-front-oversized-coat-for-cold-weather-middle-eastern-inspired---only-ladies-winter-coats-cold--cape-style-outerwear-luxury--g-601099541009468.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F4af515eaba662301325ad43f12cbf7af.jpg&spec_id=16062&spec_gallery_id=1833&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDIwMg&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  spec_id: 16062,
+                  color_image:
+                    "https://img.kwcdn.com/product/fecefa6e-a60a-11ee-855e-0a580a68bd19.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099541009468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F4af515eaba662301325ad43f12cbf7af.jpg&spec_id=16062&spec_gallery_id=1833&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDIwMg&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4af515eaba662301325ad43f12cbf7af.jpg",
+                  price_str: "42.02",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "42", ".02", ""],
+                    reduction_text: [],
+                    price: 4202,
+                    market_price_str: "70.19",
+                    market_price: 7019,
+                    price_schema: "42.02",
+                    currency: "CAD",
+                    price_text: ["CA$", "42.02", ""],
+                    price_str: "CA$42.02",
+                    market_price_text: ["", "70.19", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 1844,
+                    url: "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/8eb3366928fa0921edf3cdb2078dff57.jpg",
+                    height: 1785,
+                  },
+                  color: "(128,128,128,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-cape-style-faux-fur-lined-hooded-cardigan-burgundy-plush-open-front-oversized-coat-for-cold-weather-middle-eastern-inspired---only-ladies-winter-coats-cold--cape-style-outerwear-luxury--g-601099541009468.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F8eb3366928fa0921edf3cdb2078dff57.jpg&spec_id=16080&spec_gallery_id=1844&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDIwMg&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  spec_id: 16080,
+                  color_image:
+                    "https://img.kwcdn.com/product/ef9b3dd8-a60e-11ee-8875-0a580a68bd19.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099541009468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F8eb3366928fa0921edf3cdb2078dff57.jpg&spec_id=16080&spec_gallery_id=1844&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDIwMg&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/8eb3366928fa0921edf3cdb2078dff57.jpg",
+                  price_str: "42.02",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "50", ".90", ""],
+                    reduction_text: [],
+                    price: 5090,
+                    market_price_str: "70.19",
+                    market_price: 7019,
+                    price_schema: "50.90",
+                    currency: "CAD",
+                    price_text: ["CA$", "50.90", ""],
+                    price_str: "CA$50.90",
+                    market_price_text: ["", "70.19", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 2152,
+                    url: "https://img.kwcdn.com/product/fancy/043713ff-70b0-4c15-8080-0b03e0a3391b.jpg",
+                    height: 1785,
+                  },
+                  color: "(195,176,145,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-cape-style-faux-fur-lined-hooded-cardigan-burgundy-plush-open-front-oversized-coat-for-cold-weather-middle-eastern-inspired---only-ladies-winter-coats-cold--cape-style-outerwear-luxury--g-601099541009468.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F043713ff-70b0-4c15-8080-0b03e0a3391b.jpg&spec_id=15067&spec_gallery_id=2152&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTA5MA&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  spec_id: 15067,
+                  color_image:
+                    "https://img.kwcdn.com/product/121a0a70-cfe4-11ee-9a28-0a580a68bd19.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099541009468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F043713ff-70b0-4c15-8080-0b03e0a3391b.jpg&spec_id=15067&spec_gallery_id=2152&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTA5MA&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/043713ff-70b0-4c15-8080-0b03e0a3391b.jpg",
+                  price_str: "50.90",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "53", ".85", ""],
+                    reduction_text: [],
+                    price: 5385,
+                    market_price_str: "68.33",
+                    market_price: 6833,
+                    price_schema: "53.85",
+                    currency: "CAD",
+                    price_text: ["CA$", "53.85", ""],
+                    price_str: "CA$53.85",
+                    market_price_text: ["", "68.33", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 1839,
+                    url: "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/cabdf65045f5eb075afa0960065d9122.jpg",
+                    height: 1785,
+                  },
+                  color: "(255,182,193,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-cape-style-faux-fur-lined-hooded-cardigan-burgundy-plush-open-front-oversized-coat-for-cold-weather-middle-eastern-inspired---only-ladies-winter-coats-cold--cape-style-outerwear-luxury--g-601099541009468.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2Fcabdf65045f5eb075afa0960065d9122.jpg&spec_id=16057&spec_gallery_id=1839&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTM4NQ&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  spec_id: 16057,
+                  color_image:
+                    "https://img.kwcdn.com/product/187c6016-a60e-11ee-9ab3-0a580a68bd19.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099541009468&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2Fcabdf65045f5eb075afa0960065d9122.jpg&spec_id=16057&spec_gallery_id=1839&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTM4NQ&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/cabdf65045f5eb075afa0960065d9122.jpg",
+                  price_str: "53.85",
+                },
+              ],
+              spec_ids: "17084,3002,16062,16080,15067,16057",
+              seo_link_url:
+                "/ca/womens-winter-cape-style-faux-fur-lined-hooded-cardigan-burgundy-plush-open-front-oversized-coat-for-cold-weather-middle-eastern-inspired---only-ladies-winter-coats-cold--cape-style-outerwear-luxury--g-601099541009468.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F8a959c46252513070961f275af920ffe.jpg&spec_id=17084&spec_gallery_id=9&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTE2OA&_oak_gallery_order=1603401568%2C1647944929%2C759431470%2C952800538%2C1118708977&_oak_name_id=5047383798991594561&_oak_mp_inf=ELyo96Sm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D&spec_ids=17084,3002,16062,16080,15067,16057",
+              queryReleScore: 0.0,
+              sales_tip_text: ["2.1K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 4.7,
+                hidden_comment: false,
+                comment_num_tips: "374",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fmket/881c34d9a37032ee941b511a5001bb2f.jpeg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fmket/881c34d9a37032ee941b511a5001bb2f.jpeg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-23%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens vintage 1985   lettering 1985 print cardigan jacket black white   zipper front casual winter coat with pockets fall clothes for women jacket for women fall outfits for women autumn clothes women jackets for women",
+              current_sku_id: 17603500800775,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "3 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 3 left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/649185c37556675d577708255edb07da41a8755egs2CV.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fmket/881c34d9a37032ee941b511a5001bb2f.jpeg",
+                url: "https://img.kwcdn.com/product/2a70c7adac8d52c2138f7fd0a83ce130e7b6a8a7.temu.000001.jpeg",
+              },
+              title:
+                "Women'S Vintage 1985 New York Lettering & 1985 Print Cardigan Jacket - Black & White Patchwork Zipper Front, Casual Winter Coat with Pockets, Fall Clothes For Women, Jacket For Women, Fall Outfits For Women, Autumn Clothes Women, Jackets For Women",
+              sales_tip_text_list: [],
+              display_end_time_percent: 52,
+              sold_quantity_percent: 61,
+              p_rec: {
+                skc_id: "17595223811192",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "1710603884",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw19tv6uOf8HAxfUr3UNy4WQQTYRSdOjTaHVWBc2dYs/jEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "4456216893672671940",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1710603884",
+                g: "601102197900611",
+                scene_id: "3",
+                show_price: "2630",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "103",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "5592749635616432726",
+                ts: "1763223031260",
+              },
+              activity_type: 13,
+              mall_id: 2648221582378,
+              sales_num: "8.7K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601102197900611&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F881c34d9a37032ee941b511a5001bb2f.jpeg&spec_id=147390&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjYzMA&_oak_gallery_order=1710603884%2C2104033928%2C446526775&spec_ids=147390,2&_oak_mp_inf=EMOK65ew1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+              selected_spec_ids: [147390, 2],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601102197900611&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F881c34d9a37032ee941b511a5001bb2f.jpeg&spec_id=147390&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjYzMA&_oak_gallery_order=1710603884%2C2104033928%2C446526775&spec_ids=147390,2&_oak_mp_inf=EMOK65ew1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112710447203665219",
+                sku_extra_param: {
+                  _oak_gallery_order: "1710603884,2104033928,446526775",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "3 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 3 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 103,
+              price_info: {
+                reduction_text: ["-23", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "26.30", ""],
+                price_str: "CA$26.30",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "26", ".30", ""],
+                currency_str: "CA$",
+                price: 2630,
+                market_price_str: "34.18",
+                market_price: 3418,
+                price_schema: "26.30",
+                currency: "CAD",
+                reduction: 230,
+                market_price_text: ["", "34.18", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1340,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 1,
+                url_id: "4456216893672671940",
+                url: "https://img.kwcdn.com/product/fmket/881c34d9a37032ee941b511a5001bb2f.jpeg",
+                height: 1785,
+              },
+              sales_tip: "8.7K+ sold",
+              visible: true,
+              goods_id: 601102197900611,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "26", ".30", ""],
+                    reduction_text: ["-23", "%"],
+                    price: 2630,
+                    market_price_str: "34.18",
+                    market_price: 3418,
+                    price_schema: "26.30",
+                    currency: "CAD",
+                    price_text: ["CA$", "26.30", ""],
+                    price_str: "CA$26.30",
+                    price_color: "#FB7701",
+                    reduction: 230,
+                    market_price_text: ["", "34.18", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 1,
+                    url: "https://img.kwcdn.com/product/fmket/881c34d9a37032ee941b511a5001bb2f.jpeg",
+                    height: 1785,
+                  },
+                  color: "",
+                  seo_link_url:
+                    "/ca/womens-vintage-1985--lettering-1985-print-cardigan-jacket-black-white--zipper-front-casual-winter-coat-with-pockets-fall-clothes-for-women-jacket-for-women-fall-outfits-for-women-autumn-clothes-women-jackets-for-women-g-601102197900611.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F881c34d9a37032ee941b511a5001bb2f.jpeg&spec_id=147390&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjYzMA&_oak_mp_inf=EMOK65ew1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  spec_id: 147390,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/3a3883c2-8d09-449b-88f4-01ec985cdb96.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102197900611&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F881c34d9a37032ee941b511a5001bb2f.jpeg&spec_id=147390&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjYzMA&_oak_mp_inf=EMOK65ew1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fmket/881c34d9a37032ee941b511a5001bb2f.jpeg",
+                  price_str: "27.34",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "25", ".38", ""],
+                    reduction_text: ["-25", "%"],
+                    price: 2538,
+                    market_price_str: "34.18",
+                    market_price: 3418,
+                    price_schema: "25.38",
+                    currency: "CAD",
+                    price_text: ["CA$", "25.38", ""],
+                    price_str: "CA$25.38",
+                    price_color: "#FB7701",
+                    reduction: 250,
+                    market_price_text: ["", "34.18", ""],
+                  },
+                  image: {
+                    width: 1500,
+                    id: 533541,
+                    url: "https://img.kwcdn.com/product/algo_check/auto/29258226b9d0669b0128b8ad9506bd60_1762238940452.jpg",
+                    height: 2000,
+                  },
+                  color: "(255,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-vintage-1985--lettering-1985-print-cardigan-jacket-black-white--zipper-front-casual-winter-coat-with-pockets-fall-clothes-for-women-jacket-for-women-fall-outfits-for-women-autumn-clothes-women-jackets-for-women-g-601102197900611.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Falgo_check%2Fauto%2F29258226b9d0669b0128b8ad9506bd60_1762238940452.jpg&spec_id=2&spec_gallery_id=533541&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUzOA&_oak_mp_inf=EMOK65ew1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  spec_id: 2,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/04de116e-eb3c-4e44-9d42-0bd09d2d7957.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102197900611&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Falgo_check%2Fauto%2F29258226b9d0669b0128b8ad9506bd60_1762238940452.jpg&spec_id=2&spec_gallery_id=533541&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUzOA&_oak_mp_inf=EMOK65ew1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/algo_check/auto/29258226b9d0669b0128b8ad9506bd60_1762238940452.jpg",
+                  price_str: "26.42",
+                },
+              ],
+              spec_ids: "147390,2",
+              display_end_time: 1764392399,
+              seo_link_url:
+                "/ca/womens-vintage-1985--lettering-1985-print-cardigan-jacket-black-white--zipper-front-casual-winter-coat-with-pockets-fall-clothes-for-women-jacket-for-women-fall-outfits-for-women-autumn-clothes-women-jackets-for-women-g-601102197900611.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F881c34d9a37032ee941b511a5001bb2f.jpeg&spec_id=147390&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjYzMA&_oak_gallery_order=1710603884%2C2104033928%2C446526775&_oak_mp_inf=EMOK65ew1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D&spec_ids=147390,2",
+              queryReleScore: 0.0,
+              sales_tip_text: ["8.7K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "3",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/d816895f-897c-4129-aed6-8a821070a6fb.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/d816895f-897c-4129-aed6-8a821070a6fb.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-10%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens elegant winter coat jacket sleeveless faux fur like texture with   buttons soft brown tones machine washable durable outerwear sophisticated style seasonal fashion warm fall winter outerwear for casual or formal events",
+              current_sku_id: 17613805945507,
+              tags_info: {},
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women'S Elegant Winter Coat Jacket - Sleeveless Faux Fur-like Texture with Golden-Tone Buttons, Soft & Brown Tones, Machine Washable, Durable Outerwear, Sophisticated Style, Seasonal Fashion, Warm Fall/Winter Outerwear for Casual or Formal Events",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17597619201871",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "1932652346",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw2sA9NE6k3O3TAkU1bRVlh8hOcZ8AfgfqmidfxFwliFCEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "6137953002456508935",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1932652346",
+                g: "601104241787751",
+                scene_id: "3",
+                show_price: "2965",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "104",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "7301610958984432079",
+                ts: "1763223031260",
+              },
+              mall_id: 634418225659878,
+              sales_num: "7.1K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601104241787751&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd816895f-897c-4129-aed6-8a821070a6fb.jpg&spec_id=15067&spec_gallery_id=494134&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk2NQ&_oak_gallery_order=1932652346%2C661476884%2C516184461%2C1593007741%2C1289223939&spec_ids=15067,2001,3002,16068&_oak_name_id=7301610958984432079&_oak_mp_inf=EOeGuOa31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+              selected_spec_ids: [15067, 2001, 3002, 16068],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601104241787751&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd816895f-897c-4129-aed6-8a821070a6fb.jpg&spec_id=15067&spec_gallery_id=494134&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk2NQ&_oak_gallery_order=1932652346%2C661476884%2C516184461%2C1593007741%2C1289223939&spec_ids=15067,2001,3002,16068&_oak_name_id=7301610958984432079&_oak_mp_inf=EOeGuOa31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1932652346,661476884,516184461,1593007741,1289223939",
+                  _oak_name_id: "7301610958984432079",
+                },
+              },
+              goods_tags: [],
+              show_index: 104,
+              price_info: {
+                split_price_text: ["CA$", "29", ".65", ""],
+                currency_str: "CA$",
+                reduction_text: ["-10", "%"],
+                price: 2965,
+                market_price_str: "33.01",
+                market_price: 3301,
+                market_price_type: 1,
+                price_schema: "29.65",
+                currency: "CAD",
+                price_text: ["CA$", "29.65", ""],
+                price_str: "CA$29.65",
+                market_price_text: ["", "33.01", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1340,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 494134,
+                url_id: "6137953002456508935",
+                url: "https://img.kwcdn.com/product/fancy/d816895f-897c-4129-aed6-8a821070a6fb.jpg",
+                height: 1785,
+              },
+              sales_tip: "7.1K+ sold",
+              visible: true,
+              goods_id: 601104241787751,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "29", ".65", ""],
+                    reduction_text: [],
+                    price: 2965,
+                    market_price_str: "33.01",
+                    market_price: 3301,
+                    price_schema: "29.65",
+                    currency: "CAD",
+                    price_text: ["CA$", "29.65", ""],
+                    price_str: "CA$29.65",
+                    market_price_text: ["", "33.01", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 494134,
+                    url: "https://img.kwcdn.com/product/fancy/d816895f-897c-4129-aed6-8a821070a6fb.jpg",
+                    height: 1785,
+                  },
+                  color: "(195,176,145,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-winter-coat-jacket-sleeveless-faux-fur-like-texture-with--buttons-soft-brown-tones-machine-washable-durable-outerwear-sophisticated-style-seasonal-fashion-warm-fall-winter-outerwear-for-casual-or-formal-events-g-601104241787751.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd816895f-897c-4129-aed6-8a821070a6fb.jpg&spec_id=15067&spec_gallery_id=494134&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk2NQ&_oak_mp_inf=EOeGuOa31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  spec_id: 15067,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/9dd00324-53b7-4fbd-9117-4eab3a6c3d99.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104241787751&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd816895f-897c-4129-aed6-8a821070a6fb.jpg&spec_id=15067&spec_gallery_id=494134&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk2NQ&_oak_mp_inf=EOeGuOa31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/d816895f-897c-4129-aed6-8a821070a6fb.jpg",
+                  price_str: "29.65",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "29", ".08", ""],
+                    reduction_text: [],
+                    price: 2908,
+                    market_price_str: "35.41",
+                    market_price: 3541,
+                    price_schema: "29.08",
+                    currency: "CAD",
+                    price_text: ["CA$", "29.08", ""],
+                    price_str: "CA$29.08",
+                    market_price_text: ["", "35.41", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 494144,
+                    url: "https://img.kwcdn.com/product/fancy/49825878-cab9-4843-8d50-7484597de431.jpg",
+                    height: 1785,
+                  },
+                  color: "(255,255,255,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-winter-coat-jacket-sleeveless-faux-fur-like-texture-with--buttons-soft-brown-tones-machine-washable-durable-outerwear-sophisticated-style-seasonal-fashion-warm-fall-winter-outerwear-for-casual-or-formal-events-g-601104241787751.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F49825878-cab9-4843-8d50-7484597de431.jpg&spec_id=2001&spec_gallery_id=494144&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjkwOA&_oak_mp_inf=EOeGuOa31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  spec_id: 2001,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/e43bf76f-03d0-4330-ab56-b220e9163b09.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104241787751&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F49825878-cab9-4843-8d50-7484597de431.jpg&spec_id=2001&spec_gallery_id=494144&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjkwOA&_oak_mp_inf=EOeGuOa31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK6bocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/49825878-cab9-4843-8d50-7484597de431.jpg",
+                  price_str: "29.08",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "29", ".48", ""],
+                    reduction_text: [],
+                    price: 2948,
+                    market_price_str: "35.41",
+                    market_price: 3541,
+                    price_schema: "29.48",
+                    currency: "CAD",
+                    price_text: ["CA$", "29.48", ""],
+                    price_str: "CA$29.48",
+                    market_price_text: ["", "35.41", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 494129,
+                    url: "https://img.kwcdn.com/product/fancy/ecb27fc3-16f7-411e-9a83-c22f02963134.jpg",
+                    height: 1785,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-winter-coat-jacket-sleeveless-faux-fur-like-texture-with--buttons-soft-brown-tones-machine-washable-durable-outerwear-sophisticated-style-seasonal-fashion-warm-fall-winter-outerwear-for-casual-or-formal-events-g-601104241787751.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fecb27fc3-16f7-411e-9a83-c22f02963134.jpg&spec_id=3002&spec_gallery_id=494129&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk0OA&_oak_mp_inf=EOeGuOa31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/154d32fd-76d4-4d96-8f7d-a5a9d3381b78.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104241787751&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fecb27fc3-16f7-411e-9a83-c22f02963134.jpg&spec_id=3002&spec_gallery_id=494129&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk0OA&_oak_mp_inf=EOeGuOa31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/ecb27fc3-16f7-411e-9a83-c22f02963134.jpg",
+                  price_str: "29.48",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "29", ".54", ""],
+                    reduction_text: [],
+                    price: 2954,
+                    market_price_str: "35.41",
+                    market_price: 3541,
+                    price_schema: "29.54",
+                    currency: "CAD",
+                    price_text: ["CA$", "29.54", ""],
+                    price_str: "CA$29.54",
+                    market_price_text: ["", "35.41", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 494139,
+                    url: "https://img.kwcdn.com/product/fancy/91182853-d4f4-446b-a86b-750fad6adc81.jpg",
+                    height: 1785,
+                  },
+                  color: "(247,238,214,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-winter-coat-jacket-sleeveless-faux-fur-like-texture-with--buttons-soft-brown-tones-machine-washable-durable-outerwear-sophisticated-style-seasonal-fashion-warm-fall-winter-outerwear-for-casual-or-formal-events-g-601104241787751.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F91182853-d4f4-446b-a86b-750fad6adc81.jpg&spec_id=16068&spec_gallery_id=494139&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk1NA&_oak_mp_inf=EOeGuOa31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  spec_id: 16068,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/0237e8aa-11cc-44ad-bdf5-da3cad8382e3.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104241787751&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F91182853-d4f4-446b-a86b-750fad6adc81.jpg&spec_id=16068&spec_gallery_id=494139&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk1NA&_oak_mp_inf=EOeGuOa31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/91182853-d4f4-446b-a86b-750fad6adc81.jpg",
+                  price_str: "29.54",
+                },
+              ],
+              spec_ids: "15067,2001,3002,16068",
+              seo_link_url:
+                "/ca/womens-elegant-winter-coat-jacket-sleeveless-faux-fur-like-texture-with--buttons-soft-brown-tones-machine-washable-durable-outerwear-sophisticated-style-seasonal-fashion-warm-fall-winter-outerwear-for-casual-or-formal-events-g-601104241787751.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd816895f-897c-4129-aed6-8a821070a6fb.jpg&spec_id=15067&spec_gallery_id=494134&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk2NQ&_oak_gallery_order=1932652346%2C661476884%2C516184461%2C1593007741%2C1289223939&_oak_name_id=7301610958984432079&_oak_mp_inf=EOeGuOa31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D&spec_ids=15067,2001,3002,16068",
+              queryReleScore: 0.0,
+              sales_tip_text: ["7.1K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "2",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/191dc190-cead-4ecf-8e4e-10aae2e6293a.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/191dc190-cead-4ecf-8e4e-10aae2e6293a.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-17%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens black   full zip hooded jacket with   brand pocket heavy duty winter ready windproof coat for skiing snowboarding outdoor s casual to professional machine washable",
+              current_sku_id: 17614623476831,
+              tags_info: {
+                goods_tags: [
+                  {
+                    ext_map: {
+                      ranking_list_rich_text:
+                        '{"text_rich":[{"type":0,"value":"NEW ARRIVAL","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"New product","ranking_opt_id":"721"},"impr":{"ranking_type":"New product","ranking_opt_id":"721"}}}',
+                    },
+                    footer: {
+                      color: "#555555",
+                      text: " in Women's Coats & Jackets",
+                      font: 14,
+                    },
+                    marketing_tag_type: 2100,
+                    header: {
+                      text_style: 2,
+                      color: "#FFFFFF",
+                      back_color: "#0A8800",
+                      text: "NEW ARRIVAL",
+                      font: 12,
+                    },
+                    tag_id: 91020,
+                    ranking_type: "New product",
+                    ranking_id: "721",
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women's Black All-Season/Full-Zip Hooded Jacket with Pink Logo & Brand Pocket/Heavy-Duty Winter-Ready Windproof Coat for Skiing, Snowboarding, Outdoors/Casual to Professional (Machine Washable)",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17597813233401",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "301063615",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw2Wl3ZZGWf9IvnpV1PQeHdHwxbaheaFmGTyNZWRTkOLXEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "4397846093245250096",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "301063615",
+                g: "601104408254749",
+                scene_id: "3",
+                show_price: "2888",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "105",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "5182041040679713375",
+                ts: "1763223031260",
+              },
+              mall_id: 634418220075423,
+              sales_num: "8.5K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601104408254749&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F191dc190-cead-4ecf-8e4e-10aae2e6293a.jpg&spec_id=3002&spec_gallery_id=481785&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjg4OA&_oak_gallery_order=301063615%2C1855415716%2C1279341776&spec_ids=3002&_oak_name_id=5182041040679713375&_oak_mp_inf=EJ2y6LW41ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+              selected_spec_ids: [3002],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601104408254749&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F191dc190-cead-4ecf-8e4e-10aae2e6293a.jpg&spec_id=3002&spec_gallery_id=481785&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjg4OA&_oak_gallery_order=301063615%2C1855415716%2C1279341776&spec_ids=3002&_oak_name_id=5182041040679713375&_oak_mp_inf=EJ2y6LW41ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order: "301063615,1855415716,1279341776",
+                  _oak_name_id: "5182041040679713375",
+                },
+              },
+              goods_tags: [
+                {
+                  ext_map: {
+                    ranking_list_rich_text:
+                      '{"text_rich":[{"type":0,"value":"NEW ARRIVAL","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"New product","ranking_opt_id":"721"},"impr":{"ranking_type":"New product","ranking_opt_id":"721"}}}',
+                  },
+                  footer: {
+                    color: "#555555",
+                    text: " in Women's Coats & Jackets",
+                    font: 14,
+                  },
+                  marketing_tag_type: 2100,
+                  header: {
+                    text_style: 2,
+                    color: "#FFFFFF",
+                    back_color: "#0A8800",
+                    text: "NEW ARRIVAL",
+                    font: 12,
+                  },
+                  tag_id: 91020,
+                  ranking_type: "New product",
+                  ranking_id: "721",
+                },
+              ],
+              show_index: 105,
+              price_info: {
+                split_price_text: ["CA$", "28", ".88", ""],
+                currency_str: "CA$",
+                reduction_text: ["-17", "%"],
+                price: 2888,
+                market_price_str: "34.95",
+                market_price: 3495,
+                market_price_type: 2,
+                price_schema: "28.88",
+                currency: "CAD",
+                price_text: ["CA$", "28.88", ""],
+                price_str: "CA$28.88",
+                market_price_text: ["", "34.95", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 481785,
+                url_id: "4397846093245250096",
+                url: "https://img.kwcdn.com/product/fancy/191dc190-cead-4ecf-8e4e-10aae2e6293a.jpg",
+                height: 1800,
+              },
+              sales_tip: "8.5K+ sold",
+              visible: true,
+              goods_id: 601104408254749,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "28", ".88", ""],
+                    reduction_text: [],
+                    price: 2888,
+                    market_price_str: "34.95",
+                    market_price: 3495,
+                    price_schema: "28.88",
+                    currency: "CAD",
+                    price_text: ["CA$", "28.88", ""],
+                    price_str: "CA$28.88",
+                    market_price_text: ["", "34.95", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 481785,
+                    url: "https://img.kwcdn.com/product/fancy/191dc190-cead-4ecf-8e4e-10aae2e6293a.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-black--full-zip-hooded-jacket-with--brand-pocket-heavy-duty-winter-ready-windproof-coat-for-skiing-snowboarding-outdoor-s-casual-to-professional-machine-washable-g-601104408254749.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F191dc190-cead-4ecf-8e4e-10aae2e6293a.jpg&spec_id=3002&spec_gallery_id=481785&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjg4OA&_oak_mp_inf=EJ2y6LW41ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/566fd947-7336-4af2-9365-0cef39db1929.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104408254749&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F191dc190-cead-4ecf-8e4e-10aae2e6293a.jpg&spec_id=3002&spec_gallery_id=481785&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjg4OA&_oak_mp_inf=EJ2y6LW41ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/191dc190-cead-4ecf-8e4e-10aae2e6293a.jpg",
+                  price_str: "28.88",
+                },
+              ],
+              spec_ids: "3002",
+              seo_link_url:
+                "/ca/womens-black--full-zip-hooded-jacket-with--brand-pocket-heavy-duty-winter-ready-windproof-coat-for-skiing-snowboarding-outdoor-s-casual-to-professional-machine-washable-g-601104408254749.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F191dc190-cead-4ecf-8e4e-10aae2e6293a.jpg&spec_id=3002&spec_gallery_id=481785&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjg4OA&_oak_gallery_order=301063615%2C1855415716%2C1279341776&_oak_name_id=5182041040679713375&_oak_mp_inf=EJ2y6LW41ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D&spec_ids=3002",
+              queryReleScore: 0.0,
+              sales_tip_text: ["8.5K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "2",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/068080f5-5f1c-47ca-a642-9a60bcf32747.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/068080f5-5f1c-47ca-a642-9a60bcf32747.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-82%",
+              },
+              item_type: 0,
+              page_alt:
+                "vintage inspired long sleeve suede jacket for women chic stand collar with front buttons soft deer velvet texture ideal for   fashion versatile jacket vintage jacket delicate   suede jacket",
+              current_sku_id: 17592863060237,
+              tags_info: {
+                goods_tags: [
+                  {
+                    ext_map: {
+                      ranking_list_rich_text:
+                        '{"text_rich":[{"type":0,"value":"TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"721"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"721"}}}',
+                    },
+                    footer: {
+                      color: "#555555",
+                      text: " in Women's Coats & Jackets",
+                      font: 14,
+                    },
+                    marketing_tag_type: 2100,
+                    header: {
+                      text_style: 2,
+                      color: "#FFFFFF",
+                      back_color: "#0A8800",
+                      text: "TOP RATED",
+                      font: 12,
+                    },
+                    tag_id: 91020,
+                    ranking_type: "Top rated",
+                    ranking_id: "721",
+                  },
+                ],
+              },
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/c9dc4bd220af91930bc7c88a43677fd69db7e7cb.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fancy/068080f5-5f1c-47ca-a642-9a60bcf32747.jpg",
+                url: "https://img.kwcdn.com/product/a0402e1ef95a57ca25825f7e1055d88d718b54f8.goods.000001.jpeg",
+              },
+              title:
+                "Chic Soft Suede Jacket - Vintage-Inspired Long Sleeve for Women - Front Buttons, Deer Velvet Texture, Ideal for Spring/Fall Fashion, Versatile Jacket|Vintage Jacket|Delicate Craftsmanship",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17592388321453",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "614776641",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw26GL8AZv94CjUDsSSBc0EgeAQ1QagkqeULitDBhaXmbEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "7119031958475864199",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "614776641",
+                g: "601099688047248",
+                scene_id: "3",
+                show_price: "2373",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "106",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "3948634420687514654",
+                ts: "1763223031260",
+              },
+              mall_id: 634418215534439,
+              sales_num: "5.4K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601099688047248&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F068080f5-5f1c-47ca-a642-9a60bcf32747.jpg&spec_id=16110&spec_gallery_id=12704&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM3Mw&_oak_gallery_order=614776641%2C853634429%2C1868421146%2C2038346375%2C543271568&spec_ids=16110,3002,16098,16068&_oak_name_id=3948634420687514654&_oak_mp_inf=EJDlheum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+              selected_spec_ids: [16110, 3002, 16098, 16068],
+              extend_fields: {
+                sale_fire_flag: true,
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601099688047248&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F068080f5-5f1c-47ca-a642-9a60bcf32747.jpg&spec_id=16110&spec_gallery_id=12704&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM3Mw&_oak_gallery_order=614776641%2C853634429%2C1868421146%2C2038346375%2C543271568&spec_ids=16110,3002,16098,16068&_oak_name_id=3948634420687514654&_oak_mp_inf=EJDlheum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "614776641,853634429,1868421146,2038346375,543271568",
+                  _oak_name_id: "3948634420687514654",
+                },
+              },
+              goods_tags: [
+                {
+                  ext_map: {
+                    ranking_list_rich_text:
+                      '{"text_rich":[{"type":0,"value":"TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"721"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"721"}}}',
+                  },
+                  footer: {
+                    color: "#555555",
+                    text: " in Women's Coats & Jackets",
+                    font: 14,
+                  },
+                  marketing_tag_type: 2100,
+                  header: {
+                    text_style: 2,
+                    color: "#FFFFFF",
+                    back_color: "#0A8800",
+                    text: "TOP RATED",
+                    font: 12,
+                  },
+                  tag_id: 91020,
+                  ranking_type: "Top rated",
+                  ranking_id: "721",
+                },
+              ],
+              show_index: 106,
+              price_info: {
+                split_price_text: ["CA$", "23", ".73", ""],
+                currency_str: "CA$",
+                reduction_text: ["-82", "%"],
+                price: 2373,
+                market_price_str: "139.23",
+                market_price: 13923,
+                market_price_type: 1,
+                price_schema: "23.73",
+                currency: "CAD",
+                price_text: ["CA$", "23.73", ""],
+                price_str: "CA$23.73",
+                market_price_text: ["", "139.23", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 12704,
+                url_id: "7119031958475864199",
+                url: "https://img.kwcdn.com/product/fancy/068080f5-5f1c-47ca-a642-9a60bcf32747.jpg",
+                height: 1800,
+              },
+              sales_tip: "5.4K+ sold",
+              visible: true,
+              goods_id: 601099688047248,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "23", ".73", ""],
+                    reduction_text: [],
+                    price: 2373,
+                    market_price_str: "139.23",
+                    market_price: 13923,
+                    price_schema: "23.73",
+                    currency: "CAD",
+                    price_text: ["CA$", "23.73", ""],
+                    price_str: "CA$23.73",
+                    market_price_text: ["", "139.23", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 12704,
+                    url: "https://img.kwcdn.com/product/fancy/068080f5-5f1c-47ca-a642-9a60bcf32747.jpg",
+                    height: 1800,
+                  },
+                  color: "(176,119,72,1)",
+                  seo_link_url:
+                    "/ca/vintage-inspired-long-sleeve-suede-jacket-for-women-chic-stand-collar-with-front-buttons-soft-deer-velvet-texture-ideal-for--fashion-versatile-jacket-vintage-jacket-delicate--suede-jacket-g-601099688047248.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F068080f5-5f1c-47ca-a642-9a60bcf32747.jpg&spec_id=16110&spec_gallery_id=12704&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM3Mw&_oak_mp_inf=EJDlheum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  spec_id: 16110,
+                  color_image: "",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099688047248&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F068080f5-5f1c-47ca-a642-9a60bcf32747.jpg&spec_id=16110&spec_gallery_id=12704&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM3Mw&_oak_mp_inf=EJDlheum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/068080f5-5f1c-47ca-a642-9a60bcf32747.jpg",
+                  price_str: "23.73",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "23", ".76", ""],
+                    reduction_text: [],
+                    price: 2376,
+                    market_price_str: "130.08",
+                    market_price: 13008,
+                    price_schema: "23.76",
+                    currency: "CAD",
+                    price_text: ["CA$", "23.76", ""],
+                    price_str: "CA$23.76",
+                    market_price_text: ["", "130.08", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 22802,
+                    url: "https://img.kwcdn.com/product/fancy/18d537eb-915d-49a5-ac83-0ea46dd4723f.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/vintage-inspired-long-sleeve-suede-jacket-for-women-chic-stand-collar-with-front-buttons-soft-deer-velvet-texture-ideal-for--fashion-versatile-jacket-vintage-jacket-delicate--suede-jacket-g-601099688047248.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F18d537eb-915d-49a5-ac83-0ea46dd4723f.jpg&spec_id=3002&spec_gallery_id=22802&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM3Ng&_oak_mp_inf=EJDlheum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/027061cc-76ba-4d58-843a-8144fb6bc33d.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099688047248&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F18d537eb-915d-49a5-ac83-0ea46dd4723f.jpg&spec_id=3002&spec_gallery_id=22802&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM3Ng&_oak_mp_inf=EJDlheum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/18d537eb-915d-49a5-ac83-0ea46dd4723f.jpg",
+                  price_str: "23.76",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "23", ".76", ""],
+                    reduction_text: [],
+                    price: 2376,
+                    market_price_str: "139.23",
+                    market_price: 13923,
+                    price_schema: "23.76",
+                    currency: "CAD",
+                    price_text: ["CA$", "23.76", ""],
+                    price_str: "CA$23.76",
+                    market_price_text: ["", "139.23", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 22807,
+                    url: "https://img.kwcdn.com/product/fancy/b14b90ca-9bc6-49f8-a18b-ea59e0a0a5a2.jpg",
+                    height: 1800,
+                  },
+                  color: "(78,96,20,1)",
+                  seo_link_url:
+                    "/ca/vintage-inspired-long-sleeve-suede-jacket-for-women-chic-stand-collar-with-front-buttons-soft-deer-velvet-texture-ideal-for--fashion-versatile-jacket-vintage-jacket-delicate--suede-jacket-g-601099688047248.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb14b90ca-9bc6-49f8-a18b-ea59e0a0a5a2.jpg&spec_id=16098&spec_gallery_id=22807&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM3Ng&_oak_mp_inf=EJDlheum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  spec_id: 16098,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/f3cd8114-cd02-45d7-98ef-4eac5439f616.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099688047248&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb14b90ca-9bc6-49f8-a18b-ea59e0a0a5a2.jpg&spec_id=16098&spec_gallery_id=22807&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM3Ng&_oak_mp_inf=EJDlheum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/b14b90ca-9bc6-49f8-a18b-ea59e0a0a5a2.jpg",
+                  price_str: "23.76",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "23", ".76", ""],
+                    reduction_text: [],
+                    price: 2376,
+                    market_price_str: "139.23",
+                    market_price: 13923,
+                    price_schema: "23.76",
+                    currency: "CAD",
+                    price_text: ["CA$", "23.76", ""],
+                    price_str: "CA$23.76",
+                    market_price_text: ["", "139.23", ""],
+                  },
+                  image: {
+                    width: 3000,
+                    id: 49854,
+                    url: "https://img.kwcdn.com/product/fancy/fa2edb38-93d9-48c2-9f57-fd17ecbc6efa.jpg",
+                    height: 4000,
+                  },
+                  color: "(247,238,214,1)",
+                  seo_link_url:
+                    "/ca/vintage-inspired-long-sleeve-suede-jacket-for-women-chic-stand-collar-with-front-buttons-soft-deer-velvet-texture-ideal-for--fashion-versatile-jacket-vintage-jacket-delicate--suede-jacket-g-601099688047248.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Ffa2edb38-93d9-48c2-9f57-fd17ecbc6efa.jpg&spec_id=16068&spec_gallery_id=49854&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM3Ng&_oak_mp_inf=EJDlheum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  spec_id: 16068,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/8fc0e34c-2525-4e17-b4b4-f2b80a3b3b94.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099688047248&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Ffa2edb38-93d9-48c2-9f57-fd17ecbc6efa.jpg&spec_id=16068&spec_gallery_id=49854&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM3Ng&_oak_mp_inf=EJDlheum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/fa2edb38-93d9-48c2-9f57-fd17ecbc6efa.jpg",
+                  price_str: "23.76",
+                },
+              ],
+              spec_ids: "16110,3002,16098,16068",
+              seo_link_url:
+                "/ca/vintage-inspired-long-sleeve-suede-jacket-for-women-chic-stand-collar-with-front-buttons-soft-deer-velvet-texture-ideal-for--fashion-versatile-jacket-vintage-jacket-delicate--suede-jacket-g-601099688047248.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F068080f5-5f1c-47ca-a642-9a60bcf32747.jpg&spec_id=16110&spec_gallery_id=12704&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM3Mw&_oak_gallery_order=614776641%2C853634429%2C1868421146%2C2038346375%2C543271568&_oak_name_id=3948634420687514654&_oak_mp_inf=EJDlheum1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D&spec_ids=16110,3002,16098,16068",
+              queryReleScore: 0.0,
+              sales_tip_text: ["5.4K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 4.8,
+                hidden_comment: false,
+                comment_num_tips: "2,113",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/open/2024-07-23/1721706634986-734cad443a3d4e5792c4c71b92360e00-goods.jpeg",
+              thumb_url:
+                "https://img.kwcdn.com/product/open/2024-07-23/1721706634986-734cad443a3d4e5792c4c71b92360e00-goods.jpeg",
+              after_price_tip_text: ["20", "viewed"],
+              ware_house_type: 1,
+              benefit_text: {
+                text: "-21%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens   fluffy fleece jacket with full zip closure folded collar warm winter coat long sleeve casual outerwear soft fleece lining solid color brown   for everyday special occasions versatile   wear",
+              current_sku_id: 17615743817686,
+              tags_info: {
+                title_header_tags: [
+                  {
+                    color: "#0A8800",
+                    ext_map: {},
+                    marketing_tag_type: 1000,
+                    tag_id: 91050,
+                    text: "Local",
+                    tag_series: 2,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "2 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 2 left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women'S All-Season Fluffy Fleece Jacket with Full-Zip Closure & Folded Collar - Warm Winter Coat, Long Sleeve Casual Outerwear, Soft Fleece Lining, Solid Color (Brown Shown) for Everyday & Special Occasions, Versatile All-Season Wear",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17598083517997",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "1923652088",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw2sRNH7HEEvIwxKz3yzJL5ruuVedx9FBQU2bXORMwytiEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "2576892643356295018",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1923652088",
+                g: "601104643150761",
+                scene_id: "3",
+                show_price: "3005",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "107",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "521160374942772327",
+                ts: "1763223031261",
+              },
+              mall_id: 634418224248982,
+              sales_num: "0",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601104643150761&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2024-07-23%2F1721706634986-734cad443a3d4e5792c4c71b92360e00-goods.jpeg&spec_id=2001&spec_gallery_id=508411&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzAwNQ&_oak_gallery_order=1923652088%2C1713264614%2C1501064475%2C543371480%2C809862918&spec_ids=2001&_oak_mp_inf=EKmn6aW51ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+              selected_spec_ids: [2001],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601104643150761&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2024-07-23%2F1721706634986-734cad443a3d4e5792c4c71b92360e00-goods.jpeg&spec_id=2001&spec_gallery_id=508411&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzAwNQ&_oak_gallery_order=1923652088%2C1713264614%2C1501064475%2C543371480%2C809862918&spec_ids=2001&_oak_mp_inf=EKmn6aW51ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1923652088,1713264614,1501064475,543371480,809862918",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "2 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 2 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 107,
+              price_info: {
+                split_price_text: ["CA$", "30", ".05", ""],
+                currency_str: "CA$",
+                reduction_text: ["-21", "%"],
+                price: 3005,
+                market_price_str: "38.14",
+                market_price: 3814,
+                market_price_type: 1,
+                price_schema: "30.05",
+                currency: "CAD",
+                price_text: ["CA$", "30.05", ""],
+                price_str: "CA$30.05",
+                market_price_text: ["", "38.14", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1500,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 508411,
+                url_id: "2576892643356295018",
+                url: "https://img.kwcdn.com/product/open/2024-07-23/1721706634986-734cad443a3d4e5792c4c71b92360e00-goods.jpeg",
+                height: 2000,
+              },
+              sales_tip: "",
+              visible: true,
+              goods_id: 601104643150761,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "30", ".05", ""],
+                    reduction_text: [],
+                    price: 3005,
+                    market_price_str: "38.14",
+                    market_price: 3814,
+                    price_schema: "30.05",
+                    currency: "CAD",
+                    price_text: ["CA$", "30.05", ""],
+                    price_str: "CA$30.05",
+                    market_price_text: ["", "38.14", ""],
+                  },
+                  image: {
+                    width: 1500,
+                    id: 508411,
+                    url: "https://img.kwcdn.com/product/open/2024-07-23/1721706634986-734cad443a3d4e5792c4c71b92360e00-goods.jpeg",
+                    height: 2000,
+                  },
+                  color: "(255,255,255,1)",
+                  seo_link_url:
+                    "/ca/womens--fluffy-fleece-jacket-with-full-zip-closure-folded-collar-warm-winter-coat-long-sleeve-casual-outerwear-soft-fleece-lining-solid-color-brown--for-everyday-special-occasions-versatile--wear-g-601104643150761.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2024-07-23%2F1721706634986-734cad443a3d4e5792c4c71b92360e00-goods.jpeg&spec_id=2001&spec_gallery_id=508411&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzAwNQ&_oak_mp_inf=EKmn6aW51ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  spec_id: 2001,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/16d4bb45-6c10-4580-bbe6-dc07c42f0453.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104643150761&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2024-07-23%2F1721706634986-734cad443a3d4e5792c4c71b92360e00-goods.jpeg&spec_id=2001&spec_gallery_id=508411&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzAwNQ&_oak_mp_inf=EKmn6aW51ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/open/2024-07-23/1721706634986-734cad443a3d4e5792c4c71b92360e00-goods.jpeg",
+                  price_str: "30.05",
+                },
+              ],
+              spec_ids: "2001",
+              seo_link_url:
+                "/ca/womens--fluffy-fleece-jacket-with-full-zip-closure-folded-collar-warm-winter-coat-long-sleeve-casual-outerwear-soft-fleece-lining-solid-color-brown--for-everyday-special-occasions-versatile--wear-g-601104643150761.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2024-07-23%2F1721706634986-734cad443a3d4e5792c4c71b92360e00-goods.jpeg&spec_id=2001&spec_gallery_id=508411&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzAwNQ&_oak_gallery_order=1923652088%2C1713264614%2C1501064475%2C543371480%2C809862918&_oak_mp_inf=EKmn6aW51ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D&spec_ids=2001",
+              queryReleScore: 0.0,
+              sales_tip_text: [],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fmket/f51c1cec9f3ebb20216d0243dc847808.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fmket/f51c1cec9f3ebb20216d0243dc847808.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-26%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens elegant   coat thick winter warm collar   classic notch collar   beige tartan print   outerwear for fall winter machine washable non stretch casual to",
+              current_sku_id: 17605287277546,
+              tags_info: {
+                goods_tags: [
+                  {
+                    ext_map: {
+                      ranking_list_rich_text:
+                        '{"text_rich":[{"type":0,"value":"NEW ARRIVAL","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"New product","ranking_opt_id":"721"},"impr":{"ranking_type":"New product","ranking_opt_id":"721"}}}',
+                    },
+                    footer: {
+                      color: "#555555",
+                      text: " in Women's Coats & Jackets",
+                      font: 14,
+                    },
+                    marketing_tag_type: 2100,
+                    header: {
+                      text_style: 2,
+                      color: "#FFFFFF",
+                      back_color: "#0A8800",
+                      text: "NEW ARRIVAL",
+                      font: 12,
+                    },
+                    tag_id: 91020,
+                    ranking_type: "New product",
+                    ranking_id: "721",
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women's Elegant Plaid Jacket Coat - Thick Winter Warm Collar & Lapels, Classic Notch Collar, Brown/Black/Beige Tartan Print, Structured Outerwear for Fall/Winter, Machine Washable (Non-Stretch) Casual to",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17595642036384",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "883610505",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw33JfAYvXYLRDH0v2NI3l1ufHi7cs6wYzaY807TVclDuEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "4258415456818436824",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "883610505",
+                g: "601102558908756",
+                scene_id: "3",
+                show_price: "3809",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "108",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "4078556856369187641",
+                ts: "1763223031261",
+              },
+              mall_id: 59105422641,
+              sales_num: "6.9K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601102558908756&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Ff51c1cec9f3ebb20216d0243dc847808.jpg&spec_id=15099&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgwOQ&_oak_gallery_order=883610505%2C489606875%2C128662992%2C1078989590%2C1251722258&spec_ids=15099&_oak_name_id=4078556856369187641&_oak_mp_inf=ENSi%2FcOx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+              selected_spec_ids: [15099],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601102558908756&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Ff51c1cec9f3ebb20216d0243dc847808.jpg&spec_id=15099&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgwOQ&_oak_gallery_order=883610505%2C489606875%2C128662992%2C1078989590%2C1251722258&spec_ids=15099&_oak_name_id=4078556856369187641&_oak_mp_inf=ENSi%2FcOx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "883610505,489606875,128662992,1078989590,1251722258",
+                  _oak_name_id: "4078556856369187641",
+                },
+              },
+              goods_tags: [
+                {
+                  ext_map: {
+                    ranking_list_rich_text:
+                      '{"text_rich":[{"type":0,"value":"NEW ARRIVAL","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"New product","ranking_opt_id":"721"},"impr":{"ranking_type":"New product","ranking_opt_id":"721"}}}',
+                  },
+                  footer: {
+                    color: "#555555",
+                    text: " in Women's Coats & Jackets",
+                    font: 14,
+                  },
+                  marketing_tag_type: 2100,
+                  header: {
+                    text_style: 2,
+                    color: "#FFFFFF",
+                    back_color: "#0A8800",
+                    text: "NEW ARRIVAL",
+                    font: 12,
+                  },
+                  tag_id: 91020,
+                  ranking_type: "New product",
+                  ranking_id: "721",
+                },
+              ],
+              show_index: 108,
+              price_info: {
+                split_price_text: ["CA$", "38", ".09", ""],
+                currency_str: "CA$",
+                reduction_text: ["-26", "%"],
+                price: 3809,
+                market_price_str: "51.83",
+                market_price: 5183,
+                market_price_type: 1,
+                price_schema: "38.09",
+                currency: "CAD",
+                price_text: ["CA$", "38.09", ""],
+                price_str: "CA$38.09",
+                market_price_text: ["", "51.83", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 1,
+                url_id: "4258415456818436824",
+                url: "https://img.kwcdn.com/product/fmket/f51c1cec9f3ebb20216d0243dc847808.jpg",
+                height: 1800,
+              },
+              sales_tip: "6.9K+ sold",
+              visible: true,
+              goods_id: 601102558908756,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "38", ".09", ""],
+                    reduction_text: [],
+                    price: 3809,
+                    market_price_str: "51.83",
+                    market_price: 5183,
+                    price_schema: "38.09",
+                    currency: "CAD",
+                    price_text: ["CA$", "38.09", ""],
+                    price_str: "CA$38.09",
+                    market_price_text: ["", "51.83", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 1,
+                    url: "https://img.kwcdn.com/product/fmket/f51c1cec9f3ebb20216d0243dc847808.jpg",
+                    height: 1800,
+                  },
+                  color: "(210,105,30,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant--coat-thick-winter-warm-collar--classic-notch-collar--beige-tartan-print--outerwear-for-fall-winter-machine-washable-non-stretch-casual-to-g-601102558908756.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Ff51c1cec9f3ebb20216d0243dc847808.jpg&spec_id=15099&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgwOQ&_oak_mp_inf=ENSi%2FcOx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  spec_id: 15099,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/9d51ce85-e163-4417-8361-6ebdbaa8586d.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102558908756&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Ff51c1cec9f3ebb20216d0243dc847808.jpg&spec_id=15099&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgwOQ&_oak_mp_inf=ENSi%2FcOx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fmket/f51c1cec9f3ebb20216d0243dc847808.jpg",
+                  price_str: "38.09",
+                },
+              ],
+              spec_ids: "15099",
+              seo_link_url:
+                "/ca/womens-elegant--coat-thick-winter-warm-collar--classic-notch-collar--beige-tartan-print--outerwear-for-fall-winter-machine-washable-non-stretch-casual-to-g-601102558908756.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2Ff51c1cec9f3ebb20216d0243dc847808.jpg&spec_id=15099&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgwOQ&_oak_gallery_order=883610505%2C489606875%2C128662992%2C1078989590%2C1251722258&_oak_name_id=4078556856369187641&_oak_mp_inf=ENSi%2FcOx1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwIK%2BbocKoMw%3D%3D&spec_ids=15099",
+              queryReleScore: 0.0,
+              sales_tip_text: ["6.9K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 4.5,
+                hidden_comment: true,
+                comment_num_tips: "10",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/13f553c8-d7e3-47cd-8808-9c62a26288c7.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/13f553c8-d7e3-47cd-8808-9c62a26288c7.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-5%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens elegant beige lapel jacket   tailored   with notch collar   fit machine washable professional coat for office or casual wear trench coat",
+              current_sku_id: 17610406168786,
+              tags_info: {},
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women's Elegant Beige Lapel Jacket - All-Season Tailored Blazer with Notch Collar & Structured Fit, Machine Washable Professional Coat for, Office, or Casual Wear - Trench Coat",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17596817671430",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "1837942721",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxwzU4s8/RVxLzMBrIdeyw2KXJWeA2i8XejnwPPVaPCTZlEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "2332331291920812359",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1837942721",
+                g: "601103555668743",
+                scene_id: "3",
+                show_price: "6604",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "109",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "9191684952365356920",
+                ts: "1763223031261",
+              },
+              mall_id: 634418217955144,
+              sales_num: "1.3K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601103555668743&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F13f553c8-d7e3-47cd-8808-9c62a26288c7.jpg&spec_id=16068&spec_gallery_id=482618&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjYwNA&_oak_gallery_order=1837942721%2C618850060%2C1068448882&spec_ids=16068&_oak_name_id=9191684952365356920&_oak_mp_inf=EIfWop%2B11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D",
+              selected_spec_ids: [16068],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601103555668743&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F13f553c8-d7e3-47cd-8808-9c62a26288c7.jpg&spec_id=16068&spec_gallery_id=482618&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjYwNA&_oak_gallery_order=1837942721%2C618850060%2C1068448882&spec_ids=16068&_oak_name_id=9191684952365356920&_oak_mp_inf=EIfWop%2B11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order: "1837942721,618850060,1068448882",
+                  _oak_name_id: "9191684952365356920",
+                },
+              },
+              goods_tags: [],
+              show_index: 109,
+              price_info: {
+                split_price_text: ["CA$", "66", ".04", ""],
+                currency_str: "CA$",
+                reduction_text: ["-5", "%"],
+                price: 6604,
+                market_price_str: "69.78",
+                market_price: 6978,
+                market_price_type: 2,
+                price_schema: "66.04",
+                currency: "CAD",
+                price_text: ["CA$", "66.04", ""],
+                price_str: "CA$66.04",
+                market_price_text: ["", "69.78", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 482618,
+                url_id: "2332331291920812359",
+                url: "https://img.kwcdn.com/product/fancy/13f553c8-d7e3-47cd-8808-9c62a26288c7.jpg",
+                height: 1800,
+              },
+              sales_tip: "1.3K+ sold",
+              visible: true,
+              goods_id: 601103555668743,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "66", ".04", ""],
+                    reduction_text: [],
+                    price: 6604,
+                    market_price_str: "69.78",
+                    market_price: 6978,
+                    price_schema: "66.04",
+                    currency: "CAD",
+                    price_text: ["CA$", "66.04", ""],
+                    price_str: "CA$66.04",
+                    market_price_text: ["", "69.78", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 482618,
+                    url: "https://img.kwcdn.com/product/fancy/13f553c8-d7e3-47cd-8808-9c62a26288c7.jpg",
+                    height: 1800,
+                  },
+                  color: "(247,238,214,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-beige-lapel-jacket--tailored--with-notch-collar--fit-machine-washable-professional-coat-for-office-or-casual-wear-trench-coat-g-601103555668743.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F13f553c8-d7e3-47cd-8808-9c62a26288c7.jpg&spec_id=16068&spec_gallery_id=482618&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjYwNA&_oak_mp_inf=EIfWop%2B11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D",
+                  spec_id: 16068,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/1132f601-97c4-4c3d-a578-11c109bb3e1e.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103555668743&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F13f553c8-d7e3-47cd-8808-9c62a26288c7.jpg&spec_id=16068&spec_gallery_id=482618&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjYwNA&_oak_mp_inf=EIfWop%2B11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/13f553c8-d7e3-47cd-8808-9c62a26288c7.jpg",
+                  price_str: "66.04",
+                },
+              ],
+              spec_ids: "16068",
+              seo_link_url:
+                "/ca/womens-elegant-beige-lapel-jacket--tailored--with-notch-collar--fit-machine-washable-professional-coat-for-office-or-casual-wear-trench-coat-g-601103555668743.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F13f553c8-d7e3-47cd-8808-9c62a26288c7.jpg&spec_id=16068&spec_gallery_id=482618&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjYwNA&_oak_gallery_order=1837942721%2C618850060%2C1068448882&_oak_name_id=9191684952365356920&_oak_mp_inf=EIfWop%2B11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D&spec_ids=16068",
+              queryReleScore: 0.0,
+              sales_tip_text: ["1.3K+", "sold"],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/8f3dfff0-0e5f-41f3-8741-51d01053725e.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/8f3dfff0-0e5f-41f3-8741-51d01053725e.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-46%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens winter coat long length cold weather jacket with full zip front closure loose fit hooded outerwear non stretch fabric for everyday formal events ladies winter coats",
+              current_sku_id: 17615116970785,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "9 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 9 left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women'S Winter Coat - Long Length Cold Weather Jacket with Full-Zip Front Closure, Loose Fit Hooded Outerwear, Non-Stretch Fabric for Everyday & Formal Events, Ladies Winter Coats",
+              sales_tip_text_list: [],
+              display_end_time_percent: 48,
+              sold_quantity_percent: 0,
+              p_rec: {
+                skc_id: "17597931826367",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "572923868",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxww/3uG5d2+UTfKD0ZYAb5Y5IJourBEwWJMSiBwd9HAZjEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "6385746003997024733",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "572923868",
+                g: "601101923947593",
+                scene_id: "3",
+                show_price: "3884",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "110",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "5188223663662800614",
+                ts: "1763223031261",
+              },
+              activity_type: 13,
+              mall_id: 634418222936978,
+              sales_num: "4.8K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601101923947593&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F8f3dfff0-0e5f-41f3-8741-51d01053725e.jpg&spec_id=64967&spec_gallery_id=518540&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzg4NA&_oak_gallery_order=572923868%2C312522722%2C710913076%2C429200392&spec_ids=64967,3002,15082&_oak_mp_inf=EMmompWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D",
+              selected_spec_ids: [64967, 3002, 15082],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601101923947593&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F8f3dfff0-0e5f-41f3-8741-51d01053725e.jpg&spec_id=64967&spec_gallery_id=518540&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzg4NA&_oak_gallery_order=572923868%2C312522722%2C710913076%2C429200392&spec_ids=64967,3002,15082&_oak_mp_inf=EMmompWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112719506069820489",
+                sku_extra_param: {
+                  _oak_gallery_order: "572923868,312522722,710913076,429200392",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "9 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 9 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 110,
+              price_info: {
+                reduction_text: ["-46", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "38.84", ""],
+                price_str: "CA$38.84",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "38", ".84", ""],
+                currency_str: "CA$",
+                price: 3884,
+                market_price_str: "73.08",
+                market_price: 7308,
+                price_schema: "38.84",
+                currency: "CAD",
+                reduction: 460,
+                market_price_text: ["", "73.08", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 518540,
+                url_id: "6385746003997024733",
+                url: "https://img.kwcdn.com/product/fancy/8f3dfff0-0e5f-41f3-8741-51d01053725e.jpg",
+                height: 1800,
+              },
+              sales_tip: "4.8K+ sold",
+              visible: true,
+              goods_id: 601101923947593,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "38", ".84", ""],
+                    reduction_text: ["-46", "%"],
+                    price: 3884,
+                    market_price_str: "73.08",
+                    market_price: 7308,
+                    price_schema: "38.84",
+                    currency: "CAD",
+                    price_text: ["CA$", "38.84", ""],
+                    price_str: "CA$38.84",
+                    price_color: "#FB7701",
+                    reduction: 460,
+                    market_price_text: ["", "73.08", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 518540,
+                    url: "https://img.kwcdn.com/product/fancy/8f3dfff0-0e5f-41f3-8741-51d01053725e.jpg",
+                    height: 1800,
+                  },
+                  color: "",
+                  seo_link_url:
+                    "/ca/womens-winter-coat-long-length-cold-weather-jacket-with-full-zip-front-closure-loose-fit-hooded-outerwear-non-stretch-fabric-for-everyday-formal-events-ladies-winter-coats-g-601101923947593.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F8f3dfff0-0e5f-41f3-8741-51d01053725e.jpg&spec_id=64967&spec_gallery_id=518540&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzg4NA&_oak_mp_inf=EMmompWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D",
+                  spec_id: 64967,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/5be60060-5120-4891-984d-7a8b69a5aca1.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601101923947593&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F8f3dfff0-0e5f-41f3-8741-51d01053725e.jpg&spec_id=64967&spec_gallery_id=518540&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzg4NA&_oak_mp_inf=EMmompWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/8f3dfff0-0e5f-41f3-8741-51d01053725e.jpg",
+                  price_str: "44.25",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "43", ".32", ""],
+                    reduction_text: ["-60", "%"],
+                    price: 4332,
+                    market_price_str: "108.99",
+                    market_price: 10899,
+                    price_schema: "43.32",
+                    currency: "CAD",
+                    price_text: ["CA$", "43.32", ""],
+                    price_str: "CA$43.32",
+                    price_color: "#FB7701",
+                    reduction: 600,
+                    market_price_text: ["", "108.99", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 515248,
+                    url: "https://img.kwcdn.com/product/fancy/858a219c-0fba-46ed-addb-5347b29d84be.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-coat-long-length-cold-weather-jacket-with-full-zip-front-closure-loose-fit-hooded-outerwear-non-stretch-fabric-for-everyday-formal-events-ladies-winter-coats-g-601101923947593.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F858a219c-0fba-46ed-addb-5347b29d84be.jpg&spec_id=3002&spec_gallery_id=515248&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDMzMg&_oak_mp_inf=EMmompWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/temu-avi/image-crop/8f3914ae-8814-4323-9631-95b8600fe52b.jpg",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601101923947593&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F858a219c-0fba-46ed-addb-5347b29d84be.jpg&spec_id=3002&spec_gallery_id=515248&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDMzMg&_oak_mp_inf=EMmompWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/858a219c-0fba-46ed-addb-5347b29d84be.jpg",
+                  price_str: "43.33",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "49", ".54", ""],
+                    reduction_text: ["-32", "%"],
+                    price: 4954,
+                    market_price_str: "73.08",
+                    market_price: 7308,
+                    price_schema: "49.54",
+                    currency: "CAD",
+                    price_text: ["CA$", "49.54", ""],
+                    price_str: "CA$49.54",
+                    price_color: "#FB7701",
+                    reduction: 320,
+                    market_price_text: ["", "73.08", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 518535,
+                    url: "https://img.kwcdn.com/product/fancy/ffd084f0-9c5d-4311-b7a3-e2b0477eb47f.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,100,0,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-coat-long-length-cold-weather-jacket-with-full-zip-front-closure-loose-fit-hooded-outerwear-non-stretch-fabric-for-everyday-formal-events-ladies-winter-coats-g-601101923947593.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fffd084f0-9c5d-4311-b7a3-e2b0477eb47f.jpg&spec_id=15082&spec_gallery_id=518535&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDk1NA&_oak_mp_inf=EMmompWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D",
+                  spec_id: 15082,
+                  color_image:
+                    "https://img.kwcdn.com/product/temu-avi/image-crop/e7ee60b8-c996-4671-9a5d-03c7ce3b856a.jpg",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601101923947593&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fffd084f0-9c5d-4311-b7a3-e2b0477eb47f.jpg&spec_id=15082&spec_gallery_id=518535&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDk1NA&_oak_mp_inf=EMmompWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/ffd084f0-9c5d-4311-b7a3-e2b0477eb47f.jpg",
+                  price_str: "54.94",
+                },
+              ],
+              spec_ids: "64967,3002,15082",
+              display_end_time: 1764565199,
+              seo_link_url:
+                "/ca/womens-winter-coat-long-length-cold-weather-jacket-with-full-zip-front-closure-loose-fit-hooded-outerwear-non-stretch-fabric-for-everyday-formal-events-ladies-winter-coats-g-601101923947593.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F8f3dfff0-0e5f-41f3-8741-51d01053725e.jpg&spec_id=64967&spec_gallery_id=518540&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzg4NA&_oak_gallery_order=572923868%2C312522722%2C710913076%2C429200392&_oak_mp_inf=EMmompWv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILCbocKoMw%3D%3D&spec_ids=64967,3002,15082",
+              queryReleScore: 0.0,
+              sales_tip_text: ["4.8K+", "sold"],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/83ef88fb-6cfd-4fca-98cc-eed00615e9fa.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/83ef88fb-6cfd-4fca-98cc-eed00615e9fa.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-48%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens elegant and fashionable womens casual   print jacket womens autumn and winter hooded jacket autumn and winter style",
+              current_sku_id: 17610800915342,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "3 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 3 left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women's elegant and fashionable Women's casual plaid print jacket Women's autumn and winter hooded jacket autumn and winter style",
+              sales_tip_text_list: [],
+              display_end_time_percent: 52,
+              sold_quantity_percent: 71,
+              p_rec: {
+                skc_id: "17596907670515",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "1748092236",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw0++lJa3Kj/I5iXOWJXBC0SVSAV56DPbTLFB4f5gzV5ZEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "441424780636009461",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1748092236",
+                g: "601103633836962",
+                scene_id: "3",
+                show_price: "2693",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "111",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "7131875951703912881",
+                ts: "1763223031261",
+              },
+              activity_type: 13,
+              mall_id: 634418225592231,
+              sales_num: "4.1K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601103633836962&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F83ef88fb-6cfd-4fca-98cc-eed00615e9fa.jpg&spec_id=16057&spec_gallery_id=467409&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY5Mw&_oak_gallery_order=1748092236%2C1320548982%2C1715376200%2C1185744118%2C1286793398&spec_ids=16057&_oak_name_id=7131875951703912881&_oak_mp_inf=EKLXxcS11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+              selected_spec_ids: [16057],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601103633836962&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F83ef88fb-6cfd-4fca-98cc-eed00615e9fa.jpg&spec_id=16057&spec_gallery_id=467409&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY5Mw&_oak_gallery_order=1748092236%2C1320548982%2C1715376200%2C1185744118%2C1286793398&spec_ids=16057&_oak_name_id=7131875951703912881&_oak_mp_inf=EKLXxcS11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112664383494843298",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1748092236,1320548982,1715376200,1185744118,1286793398",
+                  _oak_name_id: "7131875951703912881",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "3 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 3 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 111,
+              price_info: {
+                reduction_text: ["-48", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "26.93", ""],
+                price_str: "CA$26.93",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "26", ".93", ""],
+                currency_str: "CA$",
+                price: 2693,
+                market_price_str: "52.38",
+                market_price: 5238,
+                price_schema: "26.93",
+                currency: "CAD",
+                reduction: 480,
+                market_price_text: ["", "52.38", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 467409,
+                url_id: "441424780636009461",
+                url: "https://img.kwcdn.com/product/fancy/83ef88fb-6cfd-4fca-98cc-eed00615e9fa.jpg",
+                height: 1800,
+              },
+              sales_tip: "4.1K+ sold",
+              visible: true,
+              goods_id: 601103633836962,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "26", ".93", ""],
+                    reduction_text: ["-48", "%"],
+                    price: 2693,
+                    market_price_str: "52.38",
+                    market_price: 5238,
+                    price_schema: "26.93",
+                    currency: "CAD",
+                    price_text: ["CA$", "26.93", ""],
+                    price_str: "CA$26.93",
+                    price_color: "#FB7701",
+                    reduction: 480,
+                    market_price_text: ["", "52.38", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 467409,
+                    url: "https://img.kwcdn.com/product/fancy/83ef88fb-6cfd-4fca-98cc-eed00615e9fa.jpg",
+                    height: 1800,
+                  },
+                  color: "(255,182,193,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-and-fashionable-womens-casual--print-jacket-womens-autumn-and-winter-hooded-jacket-autumn-and-winter-style-g-601103633836962.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F83ef88fb-6cfd-4fca-98cc-eed00615e9fa.jpg&spec_id=16057&spec_gallery_id=467409&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY5Mw&_oak_mp_inf=EKLXxcS11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  spec_id: 16057,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/f422022b-0fb7-45d1-b35f-07bb5c38f6b4.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103633836962&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F83ef88fb-6cfd-4fca-98cc-eed00615e9fa.jpg&spec_id=16057&spec_gallery_id=467409&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY5Mw&_oak_mp_inf=EKLXxcS11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/83ef88fb-6cfd-4fca-98cc-eed00615e9fa.jpg",
+                  price_str: "30.38",
+                },
+              ],
+              spec_ids: "16057",
+              display_end_time: 1764392399,
+              seo_link_url:
+                "/ca/womens-elegant-and-fashionable-womens-casual--print-jacket-womens-autumn-and-winter-hooded-jacket-autumn-and-winter-style-g-601103633836962.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F83ef88fb-6cfd-4fca-98cc-eed00615e9fa.jpg&spec_id=16057&spec_gallery_id=467409&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY5Mw&_oak_gallery_order=1748092236%2C1320548982%2C1715376200%2C1185744118%2C1286793398&_oak_name_id=7131875951703912881&_oak_mp_inf=EKLXxcS11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D&spec_ids=16057",
+              queryReleScore: 0.0,
+              sales_tip_text: ["4.1K+", "sold"],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/ba9eda76-12ed-4849-aac0-90b07508b56f.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/ba9eda76-12ed-4849-aac0-90b07508b56f.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-69%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens windproof jacket lightweight   outdoor coat with detachable hood multi zipper pockets adjustable cuffs vibrant color for fishing casual wear windbreaker jacket",
+              current_sku_id: 17602756395901,
+              tags_info: {
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "5 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 5 left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/176660b5fa5b5483883736f0e85e048cfea383ad.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fancy/ba9eda76-12ed-4849-aac0-90b07508b56f.jpg",
+                url: "https://img.kwcdn.com/product/4e179a22d4c3e6d309f4e7384bdfcffb5ef587bb.goods.000001.jpeg",
+              },
+              title:
+                "Women'S Windproof Jacket - Lightweight All-Season Outdoor Coat with Detachable Hood, Multi-Zipper Pockets & Adjustable Cuffs, Vibrant Color for, Fishing & Casual Wear, Windbreaker Jacket",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17595050921200",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "1676758246",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw+/xm4ZBL4SRV22IlbixDvrthak2mP12XHTpDT5pc3KuEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "2972539590957160838",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1676758246",
+                g: "601102048935166",
+                scene_id: "3",
+                show_price: "2710",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "112",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "2755849126643736264",
+                ts: "1763223031261",
+              },
+              mall_id: 634418221947862,
+              sales_num: "8K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601102048935166&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fba9eda76-12ed-4849-aac0-90b07508b56f.jpg&spec_id=16054&spec_gallery_id=243558&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcxMA&_oak_gallery_order=1676758246%2C717539451%2C2062634413%2C1586884971%2C502894423&spec_ids=16054,3002,2&_oak_name_id=2755849126643736264&_oak_mp_inf=EP755tCv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+              selected_spec_ids: [16054, 3002, 2],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601102048935166&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fba9eda76-12ed-4849-aac0-90b07508b56f.jpg&spec_id=16054&spec_gallery_id=243558&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcxMA&_oak_gallery_order=1676758246%2C717539451%2C2062634413%2C1586884971%2C502894423&spec_ids=16054,3002,2&_oak_name_id=2755849126643736264&_oak_mp_inf=EP755tCv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1676758246,717539451,2062634413,1586884971,502894423",
+                  _oak_name_id: "2755849126643736264",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "5 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 5 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 112,
+              price_info: {
+                split_price_text: ["CA$", "27", ".10", ""],
+                currency_str: "CA$",
+                reduction_text: ["-69", "%"],
+                price: 2710,
+                market_price_str: "89.07",
+                market_price: 8907,
+                market_price_type: 1,
+                price_schema: "27.10",
+                currency: "CAD",
+                price_text: ["CA$", "27.10", ""],
+                price_str: "CA$27.10",
+                market_price_text: ["", "89.07", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 243558,
+                url_id: "2972539590957160838",
+                url: "https://img.kwcdn.com/product/fancy/ba9eda76-12ed-4849-aac0-90b07508b56f.jpg",
+                height: 1800,
+              },
+              sales_tip: "8K+ sold",
+              visible: true,
+              goods_id: 601102048935166,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "27", ".10", ""],
+                    reduction_text: [],
+                    price: 2710,
+                    market_price_str: "89.07",
+                    market_price: 8907,
+                    price_schema: "27.10",
+                    currency: "CAD",
+                    price_text: ["CA$", "27.10", ""],
+                    price_str: "CA$27.10",
+                    market_price_text: ["", "89.07", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 243558,
+                    url: "https://img.kwcdn.com/product/fancy/ba9eda76-12ed-4849-aac0-90b07508b56f.jpg",
+                    height: 1800,
+                  },
+                  color: "(255,255,240,1)",
+                  seo_link_url:
+                    "/ca/womens-windproof-jacket-lightweight--outdoor-coat-with-detachable-hood-multi-zipper-pockets-adjustable-cuffs-vibrant-color-for-fishing-casual-wear-windbreaker-jacket-g-601102048935166.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fba9eda76-12ed-4849-aac0-90b07508b56f.jpg&spec_id=16054&spec_gallery_id=243558&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcxMA&_oak_mp_inf=EP755tCv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  spec_id: 16054,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/1452b3d9-06e7-4834-b205-be72d35f80e9.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102048935166&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fba9eda76-12ed-4849-aac0-90b07508b56f.jpg&spec_id=16054&spec_gallery_id=243558&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcxMA&_oak_mp_inf=EP755tCv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/ba9eda76-12ed-4849-aac0-90b07508b56f.jpg",
+                  price_str: "27.10",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "28", ".61", ""],
+                    reduction_text: [],
+                    price: 2861,
+                    market_price_str: "31.58",
+                    market_price: 3158,
+                    price_schema: "28.61",
+                    currency: "CAD",
+                    price_text: ["CA$", "28.61", ""],
+                    price_str: "CA$28.61",
+                    market_price_text: ["", "31.58", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 243547,
+                    url: "https://img.kwcdn.com/product/fancy/8757741d-6150-4853-bde3-2523a6063ab6.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-windproof-jacket-lightweight--outdoor-coat-with-detachable-hood-multi-zipper-pockets-adjustable-cuffs-vibrant-color-for-fishing-casual-wear-windbreaker-jacket-g-601102048935166.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F8757741d-6150-4853-bde3-2523a6063ab6.jpg&spec_id=3002&spec_gallery_id=243547&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjg2MQ&_oak_mp_inf=EP755tCv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/43ddce1a-b226-40b4-ad4a-bc77377338c7.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102048935166&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F8757741d-6150-4853-bde3-2523a6063ab6.jpg&spec_id=3002&spec_gallery_id=243547&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjg2MQ&_oak_mp_inf=EP755tCv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/8757741d-6150-4853-bde3-2523a6063ab6.jpg",
+                  price_str: "28.61",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "28", ".84", ""],
+                    reduction_text: [],
+                    price: 2884,
+                    market_price_str: "37.38",
+                    market_price: 3738,
+                    price_schema: "28.84",
+                    currency: "CAD",
+                    price_text: ["CA$", "28.84", ""],
+                    price_str: "CA$28.84",
+                    market_price_text: ["", "37.38", ""],
+                  },
+                  image: {
+                    width: 1349,
+                    id: 243542,
+                    url: "https://img.kwcdn.com/product/fancy/b76acf49-73e6-477b-9564-0e0be0644521.jpg",
+                    height: 1800,
+                  },
+                  color: "(255,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-windproof-jacket-lightweight--outdoor-coat-with-detachable-hood-multi-zipper-pockets-adjustable-cuffs-vibrant-color-for-fishing-casual-wear-windbreaker-jacket-g-601102048935166.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb76acf49-73e6-477b-9564-0e0be0644521.jpg&spec_id=2&spec_gallery_id=243542&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjg4NA&_oak_mp_inf=EP755tCv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  spec_id: 2,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/aa488495-0786-412f-9318-dc30b1fe93c2.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601102048935166&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb76acf49-73e6-477b-9564-0e0be0644521.jpg&spec_id=2&spec_gallery_id=243542&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjg4NA&_oak_mp_inf=EP755tCv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/b76acf49-73e6-477b-9564-0e0be0644521.jpg",
+                  price_str: "28.84",
+                },
+              ],
+              spec_ids: "16054,3002,2",
+              seo_link_url:
+                "/ca/womens-windproof-jacket-lightweight--outdoor-coat-with-detachable-hood-multi-zipper-pockets-adjustable-cuffs-vibrant-color-for-fishing-casual-wear-windbreaker-jacket-g-601102048935166.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fba9eda76-12ed-4849-aac0-90b07508b56f.jpg&spec_id=16054&spec_gallery_id=243558&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjcxMA&_oak_gallery_order=1676758246%2C717539451%2C2062634413%2C1586884971%2C502894423&_oak_name_id=2755849126643736264&_oak_mp_inf=EP755tCv1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D&spec_ids=16054,3002,2",
+              queryReleScore: 0.0,
+              sales_tip_text: ["8K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 4.8,
+                hidden_comment: true,
+                comment_num_tips: "28",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/2d53b39c-f615-4378-9cf2-e718eb27faee.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/2d53b39c-f615-4378-9cf2-e718eb27faee.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-34%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens elegant winter coat with luxurious heart shaped faux fur collar     jacket   washable outerwear for parties weddings cold weather no collar",
+              current_sku_id: 17614000696009,
+              tags_info: {
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "1 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 1 Left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women's Elegant Winter Coat with Luxurious Heart-Shaped Faux-Fur Collar & - All-Season Black/Brown Jacket, -like, Machine Washable Outerwear for Parties, Weddings & Cold Weather (No- Collar)",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17597665613578",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "208733244",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw1jMWZt3hvWdB3hW4nEPskydJ1WcRY5436o24cGQfFK8EH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "8386806600185112059",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "208733244",
+                g: "601104282127695",
+                scene_id: "3",
+                show_price: "4674",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "113",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "3977579382859255488",
+                ts: "1763223031261",
+              },
+              mall_id: 634418216969609,
+              sales_num: "6.5K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601104282127695&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2d53b39c-f615-4378-9cf2-e718eb27faee.jpg&spec_id=3002&spec_gallery_id=494329&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDY3NA&_oak_gallery_order=208733244%2C481400187&spec_ids=3002,2001&_oak_mp_inf=EM%2Ba1vm31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+              selected_spec_ids: [3002, 2001],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601104282127695&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2d53b39c-f615-4378-9cf2-e718eb27faee.jpg&spec_id=3002&spec_gallery_id=494329&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDY3NA&_oak_gallery_order=208733244%2C481400187&spec_ids=3002,2001&_oak_mp_inf=EM%2Ba1vm31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order: "208733244,481400187",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "1 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 1 Left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 113,
+              price_info: {
+                split_price_text: ["CA$", "46", ".74", ""],
+                currency_str: "CA$",
+                reduction_text: ["-34", "%"],
+                price: 4674,
+                market_price_str: "70.94",
+                market_price: 7094,
+                market_price_type: 1,
+                price_schema: "46.74",
+                currency: "CAD",
+                price_text: ["CA$", "46.74", ""],
+                price_str: "CA$46.74",
+                market_price_text: ["", "70.94", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 494329,
+                url_id: "8386806600185112059",
+                url: "https://img.kwcdn.com/product/fancy/2d53b39c-f615-4378-9cf2-e718eb27faee.jpg",
+                height: 1800,
+              },
+              sales_tip: "6.5K+ sold",
+              visible: true,
+              goods_id: 601104282127695,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "46", ".74", ""],
+                    reduction_text: [],
+                    price: 4674,
+                    market_price_str: "70.94",
+                    market_price: 7094,
+                    price_schema: "46.74",
+                    currency: "CAD",
+                    price_text: ["CA$", "46.74", ""],
+                    price_str: "CA$46.74",
+                    market_price_text: ["", "70.94", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 494329,
+                    url: "https://img.kwcdn.com/product/fancy/2d53b39c-f615-4378-9cf2-e718eb27faee.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-winter-coat-with-luxurious-heart-shaped-faux-fur-collar---jacket--washable-outerwear-for-parties-weddings-cold-weather-no-collar-g-601104282127695.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2d53b39c-f615-4378-9cf2-e718eb27faee.jpg&spec_id=3002&spec_gallery_id=494329&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDY3NA&_oak_mp_inf=EM%2Ba1vm31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/temu-avi/image-crop/caaa2ecf-f225-4f35-864d-00fd651d8564.jpg",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104282127695&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2d53b39c-f615-4378-9cf2-e718eb27faee.jpg&spec_id=3002&spec_gallery_id=494329&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDY3NA&_oak_mp_inf=EM%2Ba1vm31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/2d53b39c-f615-4378-9cf2-e718eb27faee.jpg",
+                  price_str: "46.74",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "46", ".74", ""],
+                    reduction_text: [],
+                    price: 4674,
+                    market_price_str: "70.94",
+                    market_price: 7094,
+                    price_schema: "46.74",
+                    currency: "CAD",
+                    price_text: ["CA$", "46.74", ""],
+                    price_str: "CA$46.74",
+                    market_price_text: ["", "70.94", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 517656,
+                    url: "https://img.kwcdn.com/product/fancy/0277cafe-32de-41ef-b8a7-9d3f133db3e9.jpg",
+                    height: 1800,
+                  },
+                  color: "(255,255,255,1)",
+                  seo_link_url:
+                    "/ca/womens-elegant-winter-coat-with-luxurious-heart-shaped-faux-fur-collar---jacket--washable-outerwear-for-parties-weddings-cold-weather-no-collar-g-601104282127695.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F0277cafe-32de-41ef-b8a7-9d3f133db3e9.jpg&spec_id=2001&spec_gallery_id=517656&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDY3NA&_oak_mp_inf=EM%2Ba1vm31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  spec_id: 2001,
+                  color_image:
+                    "https://img.kwcdn.com/product/temu-avi/image-crop/2ab2e634-fa07-40ad-b38a-8ae525d85b5b.jpg",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104282127695&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F0277cafe-32de-41ef-b8a7-9d3f133db3e9.jpg&spec_id=2001&spec_gallery_id=517656&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDY3NA&_oak_mp_inf=EM%2Ba1vm31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/0277cafe-32de-41ef-b8a7-9d3f133db3e9.jpg",
+                  price_str: "46.74",
+                },
+              ],
+              spec_ids: "3002,2001",
+              seo_link_url:
+                "/ca/womens-elegant-winter-coat-with-luxurious-heart-shaped-faux-fur-collar---jacket--washable-outerwear-for-parties-weddings-cold-weather-no-collar-g-601104282127695.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2d53b39c-f615-4378-9cf2-e718eb27faee.jpg&spec_id=3002&spec_gallery_id=494329&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDY3NA&_oak_gallery_order=208733244%2C481400187&_oak_mp_inf=EM%2Ba1vm31ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D&spec_ids=3002,2001",
+              queryReleScore: 0.0,
+              sales_tip_text: ["6.5K+", "sold"],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/99135d65-4bb2-4157-a368-186f39a6a8f7.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/99135d65-4bb2-4157-a368-186f39a6a8f7.jpg",
+              after_price_tip_text: ["In", "1", "cart"],
+              ware_house_type: 1,
+              benefit_text: {
+                text: "-5%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens cardigan sweater jacket button front closure long sleeve blouse barn door sweater solid color casual winter outerwear machine washable   coat no for blouses dresses   cardigan",
+              current_sku_id: 17614878784257,
+              tags_info: {
+                title_header_tags: [
+                  {
+                    color: "#0A8800",
+                    ext_map: {},
+                    marketing_tag_type: 1000,
+                    tag_id: 91050,
+                    text: "Local",
+                    tag_series: 2,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "5 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 5 left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women's Cardigan Sweater Jacket - Button-Front Closure Long Sleeve Blouse Barn Door Sweater, Solid Color Casual Winter Outerwear, Machine Washable Spring/Fall Coat (No ) for Blouses & Dresses - Easy Care Cardigan",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17597873423162",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "1383880534",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxwzSFbqthTV5j8/KikGtuXUva6zLzZ0WSPgFkiy1WkmFsEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "8554320540543376100",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1383880534",
+                g: "601104460717334",
+                scene_id: "3",
+                show_price: "2266",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "114",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "3662860198073775680",
+                ts: "1763223031261",
+              },
+              mall_id: 634418222199523,
+              sales_num: "0",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601104460717334&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F99135d65-4bb2-4157-a368-186f39a6a8f7.jpg&spec_id=16080&spec_gallery_id=490841&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI2Ng&_oak_gallery_order=1383880534%2C1391264196%2C773018463%2C1228335732&spec_ids=16080&_oak_mp_inf=EJa66s641ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+              selected_spec_ids: [16080],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601104460717334&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F99135d65-4bb2-4157-a368-186f39a6a8f7.jpg&spec_id=16080&spec_gallery_id=490841&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI2Ng&_oak_gallery_order=1383880534%2C1391264196%2C773018463%2C1228335732&spec_ids=16080&_oak_mp_inf=EJa66s641ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1383880534,1391264196,773018463,1228335732",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "5 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 5 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 114,
+              price_info: {
+                split_price_text: ["CA$", "22", ".66", ""],
+                currency_str: "CA$",
+                reduction_text: ["-5", "%"],
+                price: 2266,
+                market_price_str: "24.04",
+                market_price: 2404,
+                market_price_type: 1,
+                price_schema: "22.66",
+                currency: "CAD",
+                price_text: ["CA$", "22.66", ""],
+                price_str: "CA$22.66",
+                market_price_text: ["", "24.04", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1500,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 490841,
+                url_id: "8554320540543376100",
+                url: "https://img.kwcdn.com/product/fancy/99135d65-4bb2-4157-a368-186f39a6a8f7.jpg",
+                height: 2000,
+              },
+              sales_tip: "",
+              visible: true,
+              goods_id: 601104460717334,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "22", ".66", ""],
+                    reduction_text: [],
+                    price: 2266,
+                    market_price_str: "24.04",
+                    market_price: 2404,
+                    price_schema: "22.66",
+                    currency: "CAD",
+                    price_text: ["CA$", "22.66", ""],
+                    price_str: "CA$22.66",
+                    market_price_text: ["", "24.04", ""],
+                  },
+                  image: {
+                    width: 1500,
+                    id: 490841,
+                    url: "https://img.kwcdn.com/product/fancy/99135d65-4bb2-4157-a368-186f39a6a8f7.jpg",
+                    height: 2000,
+                  },
+                  color: "(128,128,128,1)",
+                  seo_link_url:
+                    "/ca/womens-cardigan-sweater-jacket-button-front-closure-long-sleeve-blouse-barn-door-sweater-solid-color-casual-winter-outerwear-machine-washable--coat-no-for-blouses-dresses--cardigan-g-601104460717334.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F99135d65-4bb2-4157-a368-186f39a6a8f7.jpg&spec_id=16080&spec_gallery_id=490841&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI2Ng&_oak_mp_inf=EJa66s641ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  spec_id: 16080,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/1e9db67e-6803-4e42-8160-1d9b0cc39e9a.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104460717334&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F99135d65-4bb2-4157-a368-186f39a6a8f7.jpg&spec_id=16080&spec_gallery_id=490841&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI2Ng&_oak_mp_inf=EJa66s641ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/99135d65-4bb2-4157-a368-186f39a6a8f7.jpg",
+                  price_str: "22.66",
+                },
+              ],
+              spec_ids: "16080",
+              seo_link_url:
+                "/ca/womens-cardigan-sweater-jacket-button-front-closure-long-sleeve-blouse-barn-door-sweater-solid-color-casual-winter-outerwear-machine-washable--coat-no-for-blouses-dresses--cardigan-g-601104460717334.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F99135d65-4bb2-4157-a368-186f39a6a8f7.jpg&spec_id=16080&spec_gallery_id=490841&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI2Ng&_oak_gallery_order=1383880534%2C1391264196%2C773018463%2C1228335732&_oak_mp_inf=EJa66s641ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILGbocKoMw%3D%3D&spec_ids=16080",
+              queryReleScore: 0.0,
+              sales_tip_text: [],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/3d8ede50-355d-4f0e-ac84-ef9a65f8e4a7.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/3d8ede50-355d-4f0e-ac84-ef9a65f8e4a7.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-23%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens winter lined thickened coat regular fit with windproof cuffs zip closure suitable for cold weather moms warm coat",
+              current_sku_id: 17612725207221,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+                goods_tags: [
+                  {
+                    icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    color: "#FB7701",
+                    ext_map: {
+                      stock_type: "1",
+                      simply_stock_tag_text: "5 LEFT!",
+                    },
+                    prompt_tag_text:
+                      "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                    marketing_tag_type: 1000,
+                    rtl_icon_url:
+                      "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    tag_id: 91004,
+                    text: "Only 5 left",
+                    tag_series: 2,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women's Winter -Lined Thickened Coat, Regular Fit with Windproof Cuffs, Zip Closure, Suitable for Cold Weather, Mom's Warm Coat",
+              sales_tip_text_list: [],
+              display_end_time_percent: 52,
+              sold_quantity_percent: 72,
+              p_rec: {
+                skc_id: "17597358981290",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "379579723",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxwyAF42io7bn4VcgvenJOzo+sHtaPFf8xVoIQUJwzmdXdEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "4263838816789910754",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "379579723",
+                g: "601104017690456",
+                scene_id: "3",
+                show_price: "5977",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "115",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "9108397253299443112",
+                ts: "1763223031261",
+              },
+              activity_type: 13,
+              mall_id: 634418219514084,
+              sales_num: "8K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601104017690456&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3d8ede50-355d-4f0e-ac84-ef9a65f8e4a7.jpg&spec_id=15074&spec_gallery_id=480725&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTk3Nw&_oak_gallery_order=379579723%2C285726800%2C1542292900%2C1665269028%2C1120782632&spec_ids=15074,16102,3002&_oak_name_id=9108397253299443112&_oak_mp_inf=ENieyvu21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+              selected_spec_ids: [15074, 16102, 3002],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601104017690456&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3d8ede50-355d-4f0e-ac84-ef9a65f8e4a7.jpg&spec_id=15074&spec_gallery_id=480725&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTk3Nw&_oak_gallery_order=379579723%2C285726800%2C1542292900%2C1665269028%2C1120782632&spec_ids=15074,16102,3002&_oak_name_id=9108397253299443112&_oak_mp_inf=ENieyvu21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112730165708885848",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "379579723,285726800,1542292900,1665269028,1120782632",
+                  _oak_name_id: "9108397253299443112",
+                },
+              },
+              goods_tags: [
+                {
+                  icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  color: "#FB7701",
+                  ext_map: {
+                    stock_type: "1",
+                    simply_stock_tag_text: "5 LEFT!",
+                  },
+                  prompt_tag_text:
+                    "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag.",
+                  marketing_tag_type: 1000,
+                  rtl_icon_url:
+                    "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  tag_id: 91004,
+                  text: "Only 5 left",
+                  tag_series: 2,
+                },
+              ],
+              show_index: 115,
+              price_info: {
+                reduction_text: ["-23", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "59.77", ""],
+                price_str: "CA$59.77",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "59", ".77", ""],
+                currency_str: "CA$",
+                price: 5977,
+                market_price_str: "77.63",
+                market_price: 7763,
+                price_schema: "59.77",
+                currency: "CAD",
+                reduction: 230,
+                market_price_text: ["", "77.63", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1417,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 480725,
+                url_id: "4263838816789910754",
+                url: "https://img.kwcdn.com/product/fancy/3d8ede50-355d-4f0e-ac84-ef9a65f8e4a7.jpg",
+                height: 1890,
+              },
+              sales_tip: "8K+ sold",
+              visible: true,
+              goods_id: 601104017690456,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "59", ".77", ""],
+                    reduction_text: ["-23", "%"],
+                    price: 5977,
+                    market_price_str: "77.63",
+                    market_price: 7763,
+                    price_schema: "59.77",
+                    currency: "CAD",
+                    price_text: ["CA$", "59.77", ""],
+                    price_str: "CA$59.77",
+                    price_color: "#FB7701",
+                    reduction: 230,
+                    market_price_text: ["", "77.63", ""],
+                  },
+                  image: {
+                    width: 1417,
+                    id: 480725,
+                    url: "https://img.kwcdn.com/product/fancy/3d8ede50-355d-4f0e-ac84-ef9a65f8e4a7.jpg",
+                    height: 1890,
+                  },
+                  color: "(51,161,201,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-lined-thickened-coat-regular-fit-with-windproof-cuffs-zip-closure-suitable-for-cold-weather-moms-warm-coat-g-601104017690456.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3d8ede50-355d-4f0e-ac84-ef9a65f8e4a7.jpg&spec_id=15074&spec_gallery_id=480725&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTk3Nw&_oak_mp_inf=ENieyvu21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+                  spec_id: 15074,
+                  color_image:
+                    "https://img.kwcdn.com/product/temu-avi/image-crop/3d0715d4-d89f-4f05-a16c-1537bf34a3d4.jpg",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104017690456&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3d8ede50-355d-4f0e-ac84-ef9a65f8e4a7.jpg&spec_id=15074&spec_gallery_id=480725&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTk3Nw&_oak_mp_inf=ENieyvu21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/3d8ede50-355d-4f0e-ac84-ef9a65f8e4a7.jpg",
+                  price_str: "74.49",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "59", ".92", ""],
+                    reduction_text: ["-22", "%"],
+                    price: 5992,
+                    market_price_str: "77.63",
+                    market_price: 7763,
+                    price_schema: "59.92",
+                    currency: "CAD",
+                    price_text: ["CA$", "59.92", ""],
+                    price_str: "CA$59.92",
+                    price_color: "#FB7701",
+                    reduction: 220,
+                    market_price_text: ["", "77.63", ""],
+                  },
+                  image: {
+                    width: 1417,
+                    id: 480732,
+                    url: "https://img.kwcdn.com/product/fancy/be33b170-f1a0-4ddc-9ce6-fddaa163777f.jpg",
+                    height: 1890,
+                  },
+                  color: "(96,57,18,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-lined-thickened-coat-regular-fit-with-windproof-cuffs-zip-closure-suitable-for-cold-weather-moms-warm-coat-g-601104017690456.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fbe33b170-f1a0-4ddc-9ce6-fddaa163777f.jpg&spec_id=16102&spec_gallery_id=480732&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTk5Mg&_oak_mp_inf=ENieyvu21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+                  spec_id: 16102,
+                  color_image:
+                    "https://img.kwcdn.com/product/temu-avi/image-crop/4544d3c2-c782-45b3-8a16-489f916f7541.jpg",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104017690456&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fbe33b170-f1a0-4ddc-9ce6-fddaa163777f.jpg&spec_id=16102&spec_gallery_id=480732&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTk5Mg&_oak_mp_inf=ENieyvu21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/be33b170-f1a0-4ddc-9ce6-fddaa163777f.jpg",
+                  price_str: "74.65",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "61", ".96", ""],
+                    reduction_text: ["-20", "%"],
+                    price: 6196,
+                    market_price_str: "77.63",
+                    market_price: 7763,
+                    price_schema: "61.96",
+                    currency: "CAD",
+                    price_text: ["CA$", "61.96", ""],
+                    price_str: "CA$61.96",
+                    price_color: "#FB7701",
+                    reduction: 200,
+                    market_price_text: ["", "77.63", ""],
+                  },
+                  image: {
+                    width: 1417,
+                    id: 480717,
+                    url: "https://img.kwcdn.com/product/fancy/e49a4d30-f8c5-463b-aadb-724f04c8212e.jpg",
+                    height: 1890,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-winter-lined-thickened-coat-regular-fit-with-windproof-cuffs-zip-closure-suitable-for-cold-weather-moms-warm-coat-g-601104017690456.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fe49a4d30-f8c5-463b-aadb-724f04c8212e.jpg&spec_id=3002&spec_gallery_id=480717&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjE5Ng&_oak_mp_inf=ENieyvu21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/17108e44-115e-402b-b380-afb3b1dbd188.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601104017690456&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fe49a4d30-f8c5-463b-aadb-724f04c8212e.jpg&spec_id=3002&spec_gallery_id=480717&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjE5Ng&_oak_mp_inf=ENieyvu21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/e49a4d30-f8c5-463b-aadb-724f04c8212e.jpg",
+                  price_str: "76.68",
+                },
+              ],
+              spec_ids: "15074,16102,3002",
+              display_end_time: 1764392399,
+              seo_link_url:
+                "/ca/womens-winter-lined-thickened-coat-regular-fit-with-windproof-cuffs-zip-closure-suitable-for-cold-weather-moms-warm-coat-g-601104017690456.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3d8ede50-355d-4f0e-ac84-ef9a65f8e4a7.jpg&spec_id=15074&spec_gallery_id=480725&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTk3Nw&_oak_gallery_order=379579723%2C285726800%2C1542292900%2C1665269028%2C1120782632&_oak_name_id=9108397253299443112&_oak_mp_inf=ENieyvu21ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D&spec_ids=15074,16102,3002",
+              queryReleScore: 0.0,
+              sales_tip_text: ["8K+", "sold"],
+              opt_type: 3,
+              comment: {},
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/market/7ccf9abbae12c438e2f6cb167b066ede_2762xToQTgV8p.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/market/7ccf9abbae12c438e2f6cb167b066ede_2762xToQTgV8p.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-44%",
+              },
+              item_type: 0,
+              page_alt:
+                "zipper solid crop jacket y2k long sleeve jacket for   womens clothing",
+              current_sku_id: 17592299813643,
+              tags_info: {
+                goods_tags: [
+                  {
+                    ext_map: {
+                      ranking_list_rich_text:
+                        '{"text_rich":[{"type":0,"value":"TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"721"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"721"}}}',
+                    },
+                    footer: {
+                      color: "#555555",
+                      text: " in Women's Coats & Jackets",
+                      font: 14,
+                    },
+                    marketing_tag_type: 2100,
+                    header: {
+                      text_style: 2,
+                      color: "#FFFFFF",
+                      back_color: "#0A8800",
+                      text: "TOP RATED",
+                      font: 12,
+                    },
+                    tag_id: 91020,
+                    ranking_type: "Top rated",
+                    ranking_id: "721",
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Zipper Solid Crop Jacket, Y2K Long Sleeve Jacket For Spring & Fall, Women's Clothing",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17592214986055",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "1193371416",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw4EHfu64xTCgFeS7OgMZnDixOChnK5zEJ2ceL3M12kl5EH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "9197977893886190120",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "1193371416",
+                g: "601099536339361",
+                scene_id: "3",
+                show_price: "1614",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "116",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "7270632941872431314",
+                ts: "1763223031261",
+              },
+              mall_id: 634418211842057,
+              sales_num: "9.4K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601099536339361&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F7ccf9abbae12c438e2f6cb167b066ede_2762xToQTgV8p.jpg&spec_id=3002&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTYxNA&_oak_gallery_order=1193371416%2C909038367%2C378319949%2C1018003137%2C2076711813&spec_ids=3002,16093,16091&_oak_name_id=7270632941872431314&_oak_mp_inf=EKGj2qKm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+              selected_spec_ids: [3002, 16093, 16091],
+              extend_fields: {
+                sale_fire_flag: true,
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601099536339361&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F7ccf9abbae12c438e2f6cb167b066ede_2762xToQTgV8p.jpg&spec_id=3002&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTYxNA&_oak_gallery_order=1193371416%2C909038367%2C378319949%2C1018003137%2C2076711813&spec_ids=3002,16093,16091&_oak_name_id=7270632941872431314&_oak_mp_inf=EKGj2qKm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "1193371416,909038367,378319949,1018003137,2076711813",
+                  _oak_name_id: "7270632941872431314",
+                },
+              },
+              goods_tags: [
+                {
+                  ext_map: {
+                    ranking_list_rich_text:
+                      '{"text_rich":[{"type":0,"value":"TOP RATED","font_size":12,"pc_font_size":14,"font_color":"#0A8800","font_weight":400,"padding_end":3,"id":1,"corner_left_top":6,"corner_left_bottom":0,"corner_right_top":0,"corner_right_bottom":6,"start_edge":3,"end_edge":3,"top_edge":2,"bottom_edge":2},{"type":0,"value":"in Women\'s Coats & Jackets","font_size":13,"pc_font_size":14,"font_color":"#555555","font_weight":400,"id":2}],"track":{"click":{"ranking_type":"Top rated","ranking_opt_id":"721"},"impr":{"ranking_type":"Top rated","ranking_opt_id":"721"}}}',
+                  },
+                  footer: {
+                    color: "#555555",
+                    text: " in Women's Coats & Jackets",
+                    font: 14,
+                  },
+                  marketing_tag_type: 2100,
+                  header: {
+                    text_style: 2,
+                    color: "#FFFFFF",
+                    back_color: "#0A8800",
+                    text: "TOP RATED",
+                    font: 12,
+                  },
+                  tag_id: 91020,
+                  ranking_type: "Top rated",
+                  ranking_id: "721",
+                },
+              ],
+              show_index: 116,
+              price_info: {
+                split_price_text: ["CA$", "16", ".14", ""],
+                currency_str: "CA$",
+                reduction_text: ["-44", "%"],
+                price: 1614,
+                market_price_str: "29.13",
+                market_price: 2913,
+                market_price_type: 1,
+                price_schema: "16.14",
+                currency: "CAD",
+                price_text: ["CA$", "16.14", ""],
+                price_str: "CA$16.14",
+                market_price_text: ["", "29.13", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 1,
+                url_id: "9197977893886190120",
+                url: "https://img.kwcdn.com/product/fancy/market/7ccf9abbae12c438e2f6cb167b066ede_2762xToQTgV8p.jpg",
+                height: 1800,
+              },
+              sales_tip: "9.4K+ sold",
+              visible: true,
+              goods_id: 601099536339361,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "16", ".14", ""],
+                    reduction_text: [],
+                    price: 1614,
+                    market_price_str: "29.13",
+                    market_price: 2913,
+                    price_schema: "16.14",
+                    currency: "CAD",
+                    price_text: ["CA$", "16.14", ""],
+                    price_str: "CA$16.14",
+                    market_price_text: ["", "29.13", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 1,
+                    url: "https://img.kwcdn.com/product/fancy/market/7ccf9abbae12c438e2f6cb167b066ede_2762xToQTgV8p.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/zipper-solid-crop-jacket-y2k-long-sleeve-jacket-for--womens-clothing-g-601099536339361.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F7ccf9abbae12c438e2f6cb167b066ede_2762xToQTgV8p.jpg&spec_id=3002&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTYxNA&_oak_mp_inf=EKGj2qKm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/67dcf0de-97e1-11ee-845d-0a580a682cb5.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099536339361&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F7ccf9abbae12c438e2f6cb167b066ede_2762xToQTgV8p.jpg&spec_id=3002&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTYxNA&_oak_mp_inf=EKGj2qKm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/market/7ccf9abbae12c438e2f6cb167b066ede_2762xToQTgV8p.jpg",
+                  price_str: "16.14",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "15", ".80", ""],
+                    reduction_text: [],
+                    price: 1580,
+                    price_schema: "15.80",
+                    currency: "CAD",
+                    price_text: ["CA$", "15.80", ""],
+                    price_str: "CA$15.80",
+                  },
+                  image: {
+                    width: 1350,
+                    id: 1993,
+                    url: "https://img.kwcdn.com/product/fancy/ec340618-5aff-46d2-8323-407436b696ac.jpg",
+                    height: 1800,
+                  },
+                  color: "(93,118,42,1)",
+                  seo_link_url:
+                    "/ca/zipper-solid-crop-jacket-y2k-long-sleeve-jacket-for--womens-clothing-g-601099536339361.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fec340618-5aff-46d2-8323-407436b696ac.jpg&spec_id=16093&spec_gallery_id=1993&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTU4MA&_oak_mp_inf=EKGj2qKm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+                  spec_id: 16093,
+                  color_image:
+                    "https://img.kwcdn.com/product/9e6b3248-fc7f-11ee-ae8f-0a580a68bd19.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099536339361&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fec340618-5aff-46d2-8323-407436b696ac.jpg&spec_id=16093&spec_gallery_id=1993&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTU4MA&_oak_mp_inf=EKGj2qKm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/ec340618-5aff-46d2-8323-407436b696ac.jpg",
+                  price_str: "15.80",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "15", ".83", ""],
+                    reduction_text: [],
+                    price: 1583,
+                    price_schema: "15.83",
+                    currency: "CAD",
+                    price_text: ["CA$", "15.83", ""],
+                    price_str: "CA$15.83",
+                  },
+                  image: {
+                    width: 1350,
+                    id: 1996,
+                    url: "https://img.kwcdn.com/product/fancy/75dd46bf-1978-469d-88b8-178ca5814369.jpg",
+                    height: 1800,
+                  },
+                  color: "(46,78,126,1)",
+                  seo_link_url:
+                    "/ca/zipper-solid-crop-jacket-y2k-long-sleeve-jacket-for--womens-clothing-g-601099536339361.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F75dd46bf-1978-469d-88b8-178ca5814369.jpg&spec_id=16091&spec_gallery_id=1996&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTU4Mw&_oak_mp_inf=EKGj2qKm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+                  spec_id: 16091,
+                  color_image:
+                    "https://img.kwcdn.com/product/ff3c47e4-d2ed-11ee-855e-0a580a68bd19.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601099536339361&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F75dd46bf-1978-469d-88b8-178ca5814369.jpg&spec_id=16091&spec_gallery_id=1996&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTU4Mw&_oak_mp_inf=EKGj2qKm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/75dd46bf-1978-469d-88b8-178ca5814369.jpg",
+                  price_str: "15.83",
+                },
+              ],
+              spec_ids: "3002,16093,16091",
+              seo_link_url:
+                "/ca/zipper-solid-crop-jacket-y2k-long-sleeve-jacket-for--womens-clothing-g-601099536339361.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F7ccf9abbae12c438e2f6cb167b066ede_2762xToQTgV8p.jpg&spec_id=3002&spec_gallery_id=1&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTYxNA&_oak_gallery_order=1193371416%2C909038367%2C378319949%2C1018003137%2C2076711813&_oak_name_id=7270632941872431314&_oak_mp_inf=EKGj2qKm1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILKbocKoMw%3D%3D&spec_ids=3002,16093,16091",
+              queryReleScore: 0.0,
+              sales_tip_text: ["9.4K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 4.9,
+                hidden_comment: false,
+                comment_num_tips: "2,714",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/c2cc6ba0-7e58-4c94-aea0-46732c1b0778.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/c2cc6ba0-7e58-4c94-aea0-46732c1b0778.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-35%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens   fit fleece lined jacket elegant stand collar zip up coat with full zip front soft casual outerwear long sleeve   for fall winter everyday formal events womens fashionable jacket ladies winter coats",
+              current_sku_id: 17610439825984,
+              tags_info: {
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+              },
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/692126f0348ca9aad84c5a06ce91786d675911b4gs2CV.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fancy/c2cc6ba0-7e58-4c94-aea0-46732c1b0778.jpg",
+                url: "https://img.kwcdn.com/product/c29e165ee577c967397efd5303bba76881f17133.temu.000001.jpeg",
+              },
+              title:
+                "Women'S Slim-Fit Fleece-Lined Jacket - Elegant Stand Collar Zip-Up Coat with Full-Zip Front, Soft Casual Outerwear, Long Sleeve Winter Warmth for, Fall/Winter Everyday & Formal Events - Women'S Fashionable Jacket, Ladies Winter Coats",
+              sales_tip_text_list: [],
+              display_end_time_percent: 48,
+              sold_quantity_percent: 50,
+              p_rec: {
+                skc_id: "17596824570588",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "2043286566",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw+vaRnIStdx0lp8uaKJh/g4wRdrGeNesGDlsZIyJjLJ2EH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "4385409367463600700",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "2043286566",
+                g: "601103562401822",
+                scene_id: "3",
+                show_price: "1806",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "117",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "8065138704716454836",
+                ts: "1763223031261",
+              },
+              activity_type: 100,
+              mall_id: 634418211454140,
+              sales_num: "6.5K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601103562401822&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc2cc6ba0-7e58-4c94-aea0-46732c1b0778.jpg&spec_id=3002&spec_gallery_id=418789&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTgwNg&_oak_gallery_order=2043286566%2C1638360823%2C1152272806%2C2103930872%2C543789982&spec_ids=3002,2001&_oak_mp_inf=EJ7QvaK11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D",
+              selected_spec_ids: [3002, 2001],
+              extend_fields: {
+                sale_fire_flag: true,
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601103562401822&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc2cc6ba0-7e58-4c94-aea0-46732c1b0778.jpg&spec_id=3002&spec_gallery_id=418789&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTgwNg&_oak_gallery_order=2043286566%2C1638360823%2C1152272806%2C2103930872%2C543789982&spec_ids=3002,2001&_oak_mp_inf=EJ7QvaK11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112741202499758110",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "2043286566,1638360823,1152272806,2103930872,543789982",
+                },
+              },
+              goods_tags: [],
+              show_index: 117,
+              price_info: {
+                reduction_text: ["-35", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "18.06", ""],
+                price_str: "CA$18.06",
+                split_price_text: ["CA$", "18", ".06", ""],
+                currency_str: "CA$",
+                price: 1806,
+                market_price_str: "28.03",
+                market_price: 2803,
+                price_schema: "18.06",
+                currency: "CAD",
+                reduction: 350,
+                market_price_text: ["", "28.03", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 418789,
+                url_id: "4385409367463600700",
+                url: "https://img.kwcdn.com/product/fancy/c2cc6ba0-7e58-4c94-aea0-46732c1b0778.jpg",
+                height: 1800,
+              },
+              sales_tip: "6.5K+ sold",
+              visible: true,
+              goods_id: 601103562401822,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "18", ".06", ""],
+                    reduction_text: ["-35", "%"],
+                    price: 1806,
+                    market_price_str: "28.03",
+                    market_price: 2803,
+                    price_schema: "18.06",
+                    currency: "CAD",
+                    price_text: ["CA$", "18.06", ""],
+                    price_str: "CA$18.06",
+                    reduction: 350,
+                    market_price_text: ["", "28.03", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 418789,
+                    url: "https://img.kwcdn.com/product/fancy/c2cc6ba0-7e58-4c94-aea0-46732c1b0778.jpg",
+                    height: 1800,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens--fit-fleece-lined-jacket-elegant-stand-collar-zip-up-coat-with-full-zip-front-soft-casual-outerwear-long-sleeve--for-fall-winter-everyday-formal-events-womens-fashionable-jacket-ladies-winter-coats-g-601103562401822.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc2cc6ba0-7e58-4c94-aea0-46732c1b0778.jpg&spec_id=3002&spec_gallery_id=418789&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTgwNg&_oak_mp_inf=EJ7QvaK11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/ade12f2f-4610-4037-92a6-282cc569c194.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103562401822&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc2cc6ba0-7e58-4c94-aea0-46732c1b0778.jpg&spec_id=3002&spec_gallery_id=418789&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTgwNg&_oak_mp_inf=EJ7QvaK11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/c2cc6ba0-7e58-4c94-aea0-46732c1b0778.jpg",
+                  price_str: "18.66",
+                },
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "17", ".84", ""],
+                    reduction_text: ["-32", "%"],
+                    price: 1784,
+                    market_price_str: "26.31",
+                    market_price: 2631,
+                    price_schema: "17.84",
+                    currency: "CAD",
+                    price_text: ["CA$", "17.84", ""],
+                    price_str: "CA$17.84",
+                    reduction: 320,
+                    market_price_text: ["", "26.31", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 527214,
+                    url: "https://img.kwcdn.com/product/fancy/29cb5a38-2039-48e6-8e43-68efd9565ad3.jpg",
+                    height: 1800,
+                  },
+                  color: "(255,255,255,1)",
+                  seo_link_url:
+                    "/ca/womens--fit-fleece-lined-jacket-elegant-stand-collar-zip-up-coat-with-full-zip-front-soft-casual-outerwear-long-sleeve--for-fall-winter-everyday-formal-events-womens-fashionable-jacket-ladies-winter-coats-g-601103562401822.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F29cb5a38-2039-48e6-8e43-68efd9565ad3.jpg&spec_id=2001&spec_gallery_id=527214&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc4NA&_oak_mp_inf=EJ7QvaK11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D",
+                  spec_id: 2001,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/786d55d2-300f-48fb-aad3-debd05535d64.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103562401822&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F29cb5a38-2039-48e6-8e43-68efd9565ad3.jpg&spec_id=2001&spec_gallery_id=527214&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc4NA&_oak_mp_inf=EJ7QvaK11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/29cb5a38-2039-48e6-8e43-68efd9565ad3.jpg",
+                  price_str: "18.44",
+                },
+              ],
+              spec_ids: "3002,2001",
+              display_end_time: 1764565199,
+              seo_link_url:
+                "/ca/womens--fit-fleece-lined-jacket-elegant-stand-collar-zip-up-coat-with-full-zip-front-soft-casual-outerwear-long-sleeve--for-fall-winter-everyday-formal-events-womens-fashionable-jacket-ladies-winter-coats-g-601103562401822.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc2cc6ba0-7e58-4c94-aea0-46732c1b0778.jpg&spec_id=3002&spec_gallery_id=418789&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTgwNg&_oak_gallery_order=2043286566%2C1638360823%2C1152272806%2C2103930872%2C543789982&_oak_mp_inf=EJ7QvaK11ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D&spec_ids=3002,2001",
+              queryReleScore: 0.0,
+              sales_tip_text: ["6.5K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 4.9,
+                hidden_comment: true,
+                comment_num_tips: "30",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/2cf9d9ac-bf6c-4288-ac5f-e4cdbfac21db.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/2cf9d9ac-bf6c-4288-ac5f-e4cdbfac21db.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-45%",
+              },
+              item_type: 0,
+              page_alt:
+                "elegant womens gradient color jacket with invisible pockets 100 polyester fabric regular long sleeves zipper details lightweight and   fit 185g no belt included",
+              current_sku_id: 17599617255458,
+              tags_info: {},
+              video: {
+                icon_url:
+                  "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                video_url:
+                  "https://goods-vod.kwcdn.com/goods-video/47d190dbfdf574086861292cfa419aa9ab6828fdgs2CV.f30.mp4",
+                image_url:
+                  "https://img.kwcdn.com/product/fancy/2cf9d9ac-bf6c-4288-ac5f-e4cdbfac21db.jpg",
+                url: "https://img.kwcdn.com/product/69696b9f5cd930117daf352139505414e72e8530.temu.000001.jpeg",
+              },
+              title:
+                "Elegant Women'S Gradient Color Jacket with Invisible Pockets, 100% Polyester, Fabric, Regular Long Sleeves, Zipper Details, Lightweight And Slim Fit, 185G/㎡ - No Belt Included.",
+              sales_tip_text_list: [],
+              p_rec: {
+                skc_id: "17594289088719",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "0",
+                mid: "69999906",
+                final_creative_id: "555687676",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxw++HPfbOiTISLXWn9uu+GDv46syIc/lj8Os38eRFXHnAEH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "1843202778614805250",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "555687676",
+                g: "601101389378321",
+                scene_id: "3",
+                show_price: "3952",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "118",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "3286990484086615850",
+                ts: "1763223031261",
+              },
+              mall_id: 634418222689058,
+              sales_num: "5.7K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601101389378321&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2cf9d9ac-bf6c-4288-ac5f-e4cdbfac21db.jpg&spec_id=15096&spec_gallery_id=177205&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzk1Mg&_oak_gallery_order=555687676%2C2054527139%2C1941421760%2C2104867238%2C1466362148&spec_ids=15096&_oak_name_id=3286990484086615850&_oak_mp_inf=EJHmppat1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D",
+              selected_spec_ids: [15096],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601101389378321&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2cf9d9ac-bf6c-4288-ac5f-e4cdbfac21db.jpg&spec_id=15096&spec_gallery_id=177205&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzk1Mg&_oak_gallery_order=555687676%2C2054527139%2C1941421760%2C2104867238%2C1466362148&spec_ids=15096&_oak_name_id=3286990484086615850&_oak_mp_inf=EJHmppat1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "555687676,2054527139,1941421760,2104867238,1466362148",
+                  _oak_name_id: "3286990484086615850",
+                },
+              },
+              goods_tags: [],
+              show_index: 118,
+              price_info: {
+                split_price_text: ["CA$", "39", ".52", ""],
+                currency_str: "CA$",
+                reduction_text: ["-45", "%"],
+                price: 3952,
+                market_price_str: "71.95",
+                market_price: 7195,
+                market_price_type: 1,
+                price_schema: "39.52",
+                currency: "CAD",
+                price_text: ["CA$", "39.52", ""],
+                price_str: "CA$39.52",
+                market_price_text: ["", "71.95", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1350,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 177205,
+                url_id: "1843202778614805250",
+                url: "https://img.kwcdn.com/product/fancy/2cf9d9ac-bf6c-4288-ac5f-e4cdbfac21db.jpg",
+                height: 1800,
+              },
+              sales_tip: "5.7K+ sold",
+              visible: true,
+              goods_id: 601101389378321,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "39", ".52", ""],
+                    reduction_text: [],
+                    price: 3952,
+                    market_price_str: "71.95",
+                    market_price: 7195,
+                    price_schema: "39.52",
+                    currency: "CAD",
+                    price_text: ["CA$", "39.52", ""],
+                    price_str: "CA$39.52",
+                    market_price_text: ["", "71.95", ""],
+                  },
+                  image: {
+                    width: 1350,
+                    id: 177205,
+                    url: "https://img.kwcdn.com/product/fancy/2cf9d9ac-bf6c-4288-ac5f-e4cdbfac21db.jpg",
+                    height: 1800,
+                  },
+                  color: "(148,0,211,1)",
+                  seo_link_url:
+                    "/ca/elegant-womens-gradient-color-jacket-with-invisible-pockets-100-polyester-fabric-regular-long-sleeves-zipper-details-lightweight-and--fit-185g-m2-no-belt-included-g-601101389378321.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2cf9d9ac-bf6c-4288-ac5f-e4cdbfac21db.jpg&spec_id=15096&spec_gallery_id=177205&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzk1Mg&_oak_mp_inf=EJHmppat1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D",
+                  spec_id: 15096,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/19d9f33b-08ab-4328-877c-f608086eb8d4.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601101389378321&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2cf9d9ac-bf6c-4288-ac5f-e4cdbfac21db.jpg&spec_id=15096&spec_gallery_id=177205&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzk1Mg&_oak_mp_inf=EJHmppat1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/2cf9d9ac-bf6c-4288-ac5f-e4cdbfac21db.jpg",
+                  price_str: "39.52",
+                },
+              ],
+              spec_ids: "15096",
+              seo_link_url:
+                "/ca/elegant-womens-gradient-color-jacket-with-invisible-pockets-100-polyester-fabric-regular-long-sleeves-zipper-details-lightweight-and--fit-185g-m2-no-belt-included-g-601101389378321.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2cf9d9ac-bf6c-4288-ac5f-e4cdbfac21db.jpg&spec_id=15096&spec_gallery_id=177205&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzk1Mg&_oak_gallery_order=555687676%2C2054527139%2C1941421760%2C2104867238%2C1466362148&_oak_name_id=3286990484086615850&_oak_mp_inf=EJHmppat1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D&spec_ids=15096",
+              queryReleScore: 0.0,
+              sales_tip_text: ["5.7K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "16",
+              },
+              adult_goods: false,
+            },
+            {
+              long_thumb_url:
+                "https://img.kwcdn.com/product/fancy/406735b2-d736-4644-9b69-cd1b0f8ea9ea.jpg",
+              thumb_url:
+                "https://img.kwcdn.com/product/fancy/406735b2-d736-4644-9b69-cd1b0f8ea9ea.jpg",
+              ware_house_type: 0,
+              benefit_text: {
+                text: "-42%",
+              },
+              item_type: 0,
+              page_alt:
+                "womens short medium length full zip jacket   fit black winter coat with white piping trim   collar full zip front closure machine washable lightweight outerwear for work casual formal events spring autumn jacket for women winter jacket for women jackets for women",
+              current_sku_id: 17608261084650,
+              tags_info: {
+                activity_icon_tags: [{}],
+                title_header_tags: [
+                  {
+                    ext_map: {
+                      discount_promotion_tag:
+                        '{"text_dx":0.0,"text_color":"#ffffff","width":73.0,"height":18.0,"bg_url":"https://aimg.kwcdn.com/upload_aimg/commodity/fda9b9b5-19d6-44be-8fd0-7a40b06436d5.png"}',
+                    },
+                    marketing_tag_type: 2000,
+                  },
+                ],
+              },
+              video: {
+                video_url: "",
+              },
+              title:
+                "Women's Short/Medium-Length Full-Zip Jacket - Slim-Fit Black Winter Coat with White Piping Trim, Structured Collar & Full-Zip Front Closure | Machine-Washable Lightweight Outerwear for Work, Casual & Formal Events (Spring/Autumn), Jacket For Women, Winter Jacket For Women, Jackets For Women",
+              sales_tip_text_list: [],
+              display_end_time_percent: 7,
+              sold_quantity_percent: 0,
+              p_rec: {
+                skc_id: "17596330824393",
+                list_id: "category_list_a3f55fa941104ff7b82cf21064bffeb0",
+                item_type: "0",
+                ad_goods: "1",
+                mid: "69999906",
+                final_creative_id: "996286863",
+                sort_by_type: "873027542",
+                st_model_point:
+                  "CnDB/dDUC+anFL+sL10uTEprn9BnB8uF5G3Om/8ExcjFKTLysjMuxsA98dsINPx5foyI0JdIZUtsEKJ+/AX2LE0oscCfn8SCZnXCT89rmqpxwwcTb2RifpX520/QJVF1U2EYm4HeqJDli/hIs24s3ou/EH4YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                scene: "opt",
+                image_url_id: "1327022367599936738",
+                show_currency: "CAD",
+                no_result: "0",
+                offset: "80",
+                engine_creative_id: "996286863",
+                g: "601103150332309",
+                scene_id: "3",
+                show_price: "3248",
+                opt_id: "721",
+                ts_req: "0",
+                version: "5",
+                search_id: "jufoKT98OhtiuV1wJWTU4z_XLxRkzqINicVeZwzqvE4=",
+                gin_fallback: "0",
+                opt_type: "0",
+                goods_source: "rec",
+                idx: "119",
+                region: "37",
+                bid: "69999705",
+                cloud_env: "usm1",
+                creative_title_id: "7653560259677198581",
+                ts: "1763223031261",
+              },
+              activity_type: 13,
+              mall_id: 634418224697173,
+              sales_num: "5.7K+",
+              link_url:
+                "goods.html?_bg_fs=1&goods_id=601103150332309&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F406735b2-d736-4644-9b69-cd1b0f8ea9ea.jpg&spec_id=3002&spec_gallery_id=362314&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzI0OA&_oak_gallery_order=996286863%2C885820480%2C1501557756%2C873404035%2C818936798&spec_ids=3002&_oak_name_id=7653560259677198581&_oak_mp_inf=EJXz%2Ft2z1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D",
+              selected_spec_ids: [3002],
+              extend_fields: {
+                floating_link_url:
+                  "goods.html?_bg_fs=1&goods_id=601103150332309&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F406735b2-d736-4644-9b69-cd1b0f8ea9ea.jpg&spec_id=3002&spec_gallery_id=362314&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzI0OA&_oak_gallery_order=996286863%2C885820480%2C1501557756%2C873404035%2C818936798&spec_ids=3002&_oak_name_id=7653560259677198581&_oak_mp_inf=EJXz%2Ft2z1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D&goods_pop_style=1&floating_when_add_to_cart=1",
+                support_tag_carousel: true,
+                detail_id: "112736906836228501",
+                sku_extra_param: {
+                  _oak_gallery_order:
+                    "996286863,885820480,1501557756,873404035,818936798",
+                  _oak_name_id: "7653560259677198581",
+                },
+              },
+              goods_tags: [],
+              show_index: 119,
+              price_info: {
+                reduction_text: ["-42", "%"],
+                market_price_type: 1,
+                price_text: ["CA$", "32.48", ""],
+                price_str: "CA$32.48",
+                price_color: "#FB7701",
+                split_price_text: ["CA$", "32", ".48", ""],
+                currency_str: "CA$",
+                price: 3248,
+                market_price_str: "56.68",
+                market_price: 5668,
+                price_schema: "32.48",
+                currency: "CAD",
+                reduction: 420,
+                market_price_text: ["", "56.68", ""],
+              },
+              image: {
+                cut_bottom_percent: 0,
+                cut_left_percent: 556,
+                width: 1340,
+                cut_right_percent: 556,
+                cut_top_percent: 0,
+                id: 362314,
+                url_id: "1327022367599936738",
+                url: "https://img.kwcdn.com/product/fancy/406735b2-d736-4644-9b69-cd1b0f8ea9ea.jpg",
+                height: 1785,
+              },
+              sales_tip: "5.7K+ sold",
+              visible: true,
+              goods_id: 601103150332309,
+              opt_id: 724,
+              skc_list: [
+                {
+                  price_info: {
+                    split_price_text: ["CA$", "32", ".48", ""],
+                    reduction_text: ["-42", "%"],
+                    price: 3248,
+                    market_price_str: "56.68",
+                    market_price: 5668,
+                    price_schema: "32.48",
+                    currency: "CAD",
+                    price_text: ["CA$", "32.48", ""],
+                    price_str: "CA$32.48",
+                    price_color: "#FB7701",
+                    reduction: 420,
+                    market_price_text: ["", "56.68", ""],
+                  },
+                  image: {
+                    width: 1340,
+                    id: 362314,
+                    url: "https://img.kwcdn.com/product/fancy/406735b2-d736-4644-9b69-cd1b0f8ea9ea.jpg",
+                    height: 1785,
+                  },
+                  color: "(0,0,0,1)",
+                  seo_link_url:
+                    "/ca/womens-short-medium-length-full-zip-jacket--fit-black-winter-coat-with-white-piping-trim--collar-full-zip-front-closure-machine-washable-lightweight-outerwear-for-work-casual-formal-events-spring-autumn-jacket-for-women-winter-jacket-for-women-jackets-for-women-g-601103150332309.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F406735b2-d736-4644-9b69-cd1b0f8ea9ea.jpg&spec_id=3002&spec_gallery_id=362314&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzI0OA&_oak_mp_inf=EJXz%2Ft2z1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D",
+                  spec_id: 3002,
+                  color_image:
+                    "https://img.kwcdn.com/product/fancy/b04e2282-b1f5-4e87-8a36-e83ae2119435.png",
+                  link_url:
+                    "goods.html?_bg_fs=1&goods_id=601103150332309&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F406735b2-d736-4644-9b69-cd1b0f8ea9ea.jpg&spec_id=3002&spec_gallery_id=362314&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzI0OA&_oak_mp_inf=EJXz%2Ft2z1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D",
+                  gallery_url:
+                    "https://img.kwcdn.com/product/fancy/406735b2-d736-4644-9b69-cd1b0f8ea9ea.jpg",
+                  price_str: "32.49",
+                },
+              ],
+              spec_ids: "3002",
+              display_end_time: 1763787599,
+              seo_link_url:
+                "/ca/womens-short-medium-length-full-zip-jacket--fit-black-winter-coat-with-white-piping-trim--collar-full-zip-front-closure-machine-washable-lightweight-outerwear-for-work-casual-formal-events-spring-autumn-jacket-for-women-winter-jacket-for-women-jackets-for-women-g-601103150332309.html?&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F406735b2-d736-4644-9b69-cd1b0f8ea9ea.jpg&spec_id=3002&spec_gallery_id=362314&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzI0OA&_oak_gallery_order=996286863%2C885820480%2C1501557756%2C873404035%2C818936798&_oak_name_id=7653560259677198581&_oak_mp_inf=EJXz%2Ft2z1ogBGi5jYXRlZ29yeV9saXN0X2EzZjU1ZmE5NDExMDRmZjdiODJjZjIxMDY0YmZmZWIwILObocKoMw%3D%3D&spec_ids=3002",
+              queryReleScore: 0.0,
+              sales_tip_text: ["5.7K+", "sold"],
+              opt_type: 3,
+              comment: {
+                goods_score: 5.0,
+                hidden_comment: true,
+                comment_num_tips: "2",
               },
               adult_goods: false,
             },
           ],
-          share_url: "https://share.temu.com/WSSeCWuPsvC",
+          share_url: "https://share.temu.com/wGmAbfknUo",
           extend_fields: {},
           home_opt_module_list: [],
           text_cart_button: false,
@@ -15812,7 +15984,6 @@ export const fetchProductByCategory = async () => {
       let category = await categoryRepository.findOne({
         where: { name: productData.name },
       });
-      console.log(category);
 
       let brand: Branding | null = null;
       let brandName: string | null = null;
@@ -15864,19 +16035,23 @@ export const fetchProductByCategory = async () => {
         list_id: productData.list_id,
         good_id: productData.id,
         name: productData.title,
-        price: toNumber(productData.price),
+        price: toNumber(productData.price ?? "0"),
         market_price: productData.market_price,
         price_str: productData.price_str,
         show_price: productData.show_price,
         currency: productData.currency,
         origin_image_url: productData.image,
         image_url: productData.image_url,
-        discount: toNumber(productData.discount),
+        discount: toNumber(productData.discount ?? "0"),
         sell_count: productData.sales,
         star_store: productData.mall_tag?.[0]?.text || null,
         brand_id: brand?.id,
         category_id: category?.id,
-        total_star: parseFloat(productData.comment?.goods_score),
+        total_star: Number.isFinite(
+          parseFloat(productData.comment?.goods_score ?? "0")
+        )
+          ? parseFloat(productData.comment?.goods_score ?? "0")
+          : 0,
         total_comment: Number(productData.comment?.comment_num_tips) || 0,
       };
 
