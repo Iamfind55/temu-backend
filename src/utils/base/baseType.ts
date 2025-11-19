@@ -25,6 +25,20 @@ export enum BaseStatus {
   INACTIVE = "INACTIVE",
 }
 
+export enum EDeposit {
+  PENDING = "pending",
+  DRAFF = "draff",
+  COMPLETED = "completed",
+  DELETED = "deleted",
+  REJECTED = "rejected",
+}
+
+export enum EUserType {
+  STAFF = "STAFF",
+  CUSTOMER = "CUSTOMER",
+  SHOP = "SHOP",
+}
+
 export enum ERolesStaff {
   ADMIN = "admin",
   SUPER_ADMIN = "supper admin",
@@ -35,4 +49,5 @@ export interface TokenData {
   id: string;
   username: string;
   type?: string;
+  role:string
 }

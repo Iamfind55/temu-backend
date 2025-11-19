@@ -24,6 +24,8 @@ import { AttributeValue } from "./modules/attributeValue/entity";
 import { CategoryAttribute } from "./modules/categoryAttribute";
 import { ShopFollower } from "./modules/shopFollower";
 import { ProductTag } from "./modules/productTag";
+import { Deposit } from "./modules/deposit";
+import { Withdraw } from "./modules/withdraw";
 const AppDataSource = new DataSource({
   type: "postgres",
   host: config.db_host, // Replace with your PostgreSQL host
@@ -58,6 +60,8 @@ const AppDataSource = new DataSource({
     CategoryAttribute,
     ShopFollower,
     ProductTag,
+    Deposit,
+    Withdraw
   ],
   migrations: ["migrations/*.ts"],
   subscribers: [],

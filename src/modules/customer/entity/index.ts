@@ -9,6 +9,8 @@ import { TransactionHistory } from "../../transactionHistory";
 import { OrderDetail } from "../../orderDetail";
 import { CustomerType } from "../types";
 import { ShopFollower } from "../../shopFollower";
+import { Deposit } from "../../deposit/entity";
+import { Withdraw } from "../../withdraw";
 
 @Entity()
 export class Customer extends BaseEntity {
@@ -107,4 +109,10 @@ export class Customer extends BaseEntity {
 
   @OneToMany(() => ShopFollower, (follower) => follower.customer)
   followedShops?: ShopFollower[];
+
+  @OneToMany(() => Withdraw, (w) => w.customer)
+  withdraw?: Withdraw[];
+
+  @OneToMany(() => Deposit, (deposit) => deposit.customer)
+  deposits?: Deposit[];
 }

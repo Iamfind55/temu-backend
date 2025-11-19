@@ -19,20 +19,10 @@ let Branding = class Branding extends baseEntity_1.BaseEntity {
 exports.Branding = Branding;
 __decorate([
     (0, typeorm_1.Column)({
-        type: "json",
+        type: "text",
         nullable: false,
-        default: {
-            name_en: "",
-            name_es: "",
-            name_ms: "",
-            name_jp: "",
-            name_th: "",
-            name_vi: "",
-            name_zh: "",
-            name_zh_tw: "",
-        },
     }),
-    __metadata("design:type", Object)
+    __metadata("design:type", String)
 ], Branding.prototype, "name", void 0);
 __decorate([
     (0, typeorm_1.Column)({ nullable: true }),

@@ -118,6 +118,7 @@ class ShopService {
                 }
                 shop.status = types_1.ShopStatus.ACTIVE;
                 shop.isOtpEnable = true;
+                shop.isVerified = true;
                 yield shopRepository.save(shop);
                 const token = new auth_middleware_1.AuthMiddlewareService().genShopToken(shop);
                 return (0, success_handler_1.handleSuccess)({ token, data: shop });
@@ -225,7 +226,7 @@ class ShopService {
     }
     static updateShopMethodMapingData(data, shop) {
         const existingPaymentMethods = shop.payment_method || [];
-        const updatedPaymentMethods = data.payment_method;
+        const updatedPaymentMethods = data.payment_method || [];
         // Update existing methods or add new ones
         const updatePaymentMethodData = existingPaymentMethods.map((method) => {
             const existPaymentMethodUpdate = updatedPaymentMethods.find((paymentMethod) => (paymentMethod === null || paymentMethod === void 0 ? void 0 : paymentMethod.id) === (method === null || method === void 0 ? void 0 : method.id) && (paymentMethod === null || paymentMethod === void 0 ? void 0 : paymentMethod.id) != null);
@@ -562,15 +563,31 @@ class ShopService {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
             const shopRepository = (0, typeorm_1.getRepository)(entity_1.Shop);
             try {
-                const shopDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyShopForgotPasswordToken(data.token);
-                if (!shopDataFromToken)
+                // const shopDataFromToken =
+                //   new AuthMiddlewareService().verifyShopForgotPasswordToken(data.token);
+                if (!data.email || !data.new_password || !data.otp) {
                     return (0, error_handler_1.handleError)(config_1.config.message.invalid_token, 404, null);
-                const shop = yield shopRepository.findOneById(shopDataFromToken.id);
+                }
+                const validatePassStrong = (0, helper_1.validateStrongPassword)(data.new_password);
+                if (!validatePassStrong) {
+                    return (0, error_handler_1.handleError)("Password must be at least 8 characters and include uppercase, lowercase, number, and special character.", 400, null);
+                }
+                const shop = yield shopRepository.findOne({
+                    where: { email: data.email, is_active: true },
+                });
                 if (!shop) {
                     return (0, error_handler_1.handleError)("Shop not found", 404, null);
                 }
+                const { otp, isVerified } = shop;
+                if (!isVerified) {
+                    return (0, error_handler_1.handleError)("Please verify your OTP code", 404, null);
+                }
+                if (otp != data.otp) {
+                    return (0, error_handler_1.handleError)("The OTP is invalid", 404, null);
+                }
                 // Hash the password
                 const newPass = yield (0, helper_1.hashPassword)(data === null || data === void 0 ? void 0 : data.new_password);
+                shop.isVerified = false;
                 shopRepository.merge(shop, { password: newPass });
                 const updatedShop = yield shopRepository.save(shop);
                 return (0, success_handler_1.handleSuccess)(updatedShop);
@@ -582,9 +599,8 @@ class ShopService {
     }
     static sendOtpEmail(email, otp, customer) {
         return __awaiter(this, void 0, void 0, function* () {
-            var _a, _b;
             try {
-                console.log(" Sending OTP email...");
+                console.log(" Sending OTP email...", customer.email);
                 // Create transporter
                 const transporter = nodemailer.createTransport({
                     host: config_1.config.smtp.host,
@@ -610,7 +626,10 @@ class ShopService {
               />
             </div>
             <div>
-              <p style="font-size:16px;">Hi, ${(_b = (_a = customer.fullname) !== null && _a !== void 0 ? _a : customer.username) !== null && _b !== void 0 ? _b : customer.store_name}</p>
+              <p style="font-size:16px;">Hi, ${(customer === null || customer === void 0 ? void 0 : customer.fullname) ||
+                    (customer === null || customer === void 0 ? void 0 : customer.username) ||
+                    (customer === null || customer === void 0 ? void 0 : customer.store_name) ||
+                    (customer === null || customer === void 0 ? void 0 : customer.email)}</p>
               <p>Please verify your email address using the following verification code:</p>
               <h1 style="letter-spacing:5px; color:#007bff; font-size:32px; margin:10px 0;">${otp}</h1>
               <p style="font-size:14px; color:#555;">This code will expire in <strong>5 minutes</strong>.</p>
@@ -638,7 +657,7 @@ class ShopService {
                 const mailOptions = {
                     from: `"Temu" <${config_1.config.smtp.user}>`,
                     to: email,
-                    subject: `Your OTP Code`,
+                    subject: `${otp} is your verification code`,
                     text: `Your OTP code is ${otp}. It will expire in 5 minutes.`,
                     html: htmlContent,
                 };
@@ -653,7 +672,7 @@ class ShopService {
             }
         });
     }
-    static sendResetPasswordEmail(email, resetLink) {
+    static sendResetPasswordEmail(email, otp) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 // Create a transporter
@@ -671,7 +690,7 @@ class ShopService {
                     from: `"Temu" <${config_1.config.smtp.user}>`, // sender address
                     to: email, // recipient email
                     subject: `Reset Your Password ${Date.now().toString()}`, // Subject line
-                    text: `You requested a password reset. Click the link below to reset your password: ${resetLink}`,
+                    text: `You requested a password reset. Please copy the otp below to reset password`,
                     // html: `<p>You requested a password reset.</p>
                     //      <p>Click the link below to reset your password:</p>
                     //      <a href="${resetLink}" target="_blank">${resetLink}</a>`,
@@ -679,7 +698,7 @@ class ShopService {
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
           <h2 style="color: #444;">Password Reset Request</h2>
           <p>You requested a password reset. Click the button below to reset your password:</p>
-          <a href="${resetLink}" target="_blank"
+          <div"
             style="
               display: inline-block;
               background-color: #ff6600;
@@ -689,12 +708,9 @@ class ShopService {
               border-radius: 6px;
               font-weight: bold;
             ">
-            Reset Password
-          </a>
-          <p style="margin-top: 20px;">
-            Or, copy and paste this link into your browser:<br>
-            <a href="${resetLink}" target="_blank" style="color: #ff6600;">${resetLink}</a>
-          </p>
+           Your otp code: ${otp}
+          </div>
+         
           <p>If you didn’t request this, please ignore this email.</p>
           <hr style="margin-top: 30px; border: none; border-top: 1px solid #ddd;">
           <p style="font-size: 12px; color: #888;">© ${new Date().getFullYear()} Temu. All rights reserved.</p>

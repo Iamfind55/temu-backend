@@ -45,7 +45,7 @@ class ShopProductService {
                 });
                 if (!shop)
                     return (0, error_handler_1.handleError)("Shop not found.", 404, null);
-                if (shop.shop_vip < product.product_vip)
+                if ((shop === null || shop === void 0 ? void 0 : shop.shop_vip) && shop.shop_vip < product.product_vip)
                     return (0, error_handler_1.handleError)(`You cannot apply this product VIP [${product.product_vip}] because you are in [${shop.shop_vip}].`, 404, null);
                 const existShopProduct = yield shopProductRepository.findOne({
                     where: {
@@ -92,7 +92,7 @@ class ShopProductService {
                     }),
                 ]);
                 const productsAvailability = products.filter((item) => {
-                    return shop.shop_vip >= item.product_vip;
+                    return (shop === null || shop === void 0 ? void 0 : shop.shop_vip) && shop.shop_vip >= item.product_vip;
                 });
                 if (productsAvailability.length === 0) {
                     return (0, error_handler_1.handleError)("No products were added - some may already exist in your shop.", 402, null);
@@ -180,7 +180,7 @@ class ShopProductService {
                         break;
                     }
                     const productsAvailability = products.filter((item) => {
-                        if (item && shop.shop_vip >= item.product_vip) {
+                        if (item && (shop === null || shop === void 0 ? void 0 : shop.shop_vip) && shop.shop_vip >= item.product_vip) {
                             return item;
                         }
                     });
@@ -250,7 +250,7 @@ class ShopProductService {
                     return (0, error_handler_1.handleError)("Shop not found.", 404, null);
                 if (!shop)
                     return (0, error_handler_1.handleError)("Shop not found.", 404, null);
-                if (shop.shop_vip < data.vip)
+                if ((shop === null || shop === void 0 ? void 0 : shop.shop_vip) && (shop === null || shop === void 0 ? void 0 : shop.shop_vip) < data.vip)
                     return (0, error_handler_1.handleError)(`You cannot apply these product VIP [${data.vip}] because you are in [${shop.shop_vip}].`, 404, null);
                 let results = [];
                 let continues = true;
@@ -274,7 +274,7 @@ class ShopProductService {
                         break;
                     }
                     const productsAvailability = products.filter((item) => {
-                        if (item && shop.shop_vip >= item.product_vip) {
+                        if (item && (shop === null || shop === void 0 ? void 0 : shop.shop_vip) && shop.shop_vip >= item.product_vip) {
                             return item;
                         }
                     });
@@ -385,6 +385,7 @@ class ShopProductService {
                 const queryBuilder = shopProductRepository.createQueryBuilder("shopProduct");
                 // Add LEFT JOIN with Product
                 queryBuilder.leftJoinAndSelect("shopProduct.productData", "product");
+                queryBuilder.leftJoinAndSelect("product.productTag", "productTag");
                 // Select specific fields for both shopProduct and product
                 queryBuilder.select([
                     // Fields from shopProduct
@@ -404,58 +405,28 @@ class ShopProductService {
                     "product.total_star",
                     "product.product_vip",
                     "product.product_top",
+                    "productTag.id",
+                    "productTag.text_rich",
+                    "productTag.local_title",
+                    "productTag.text_rich",
+                    "productTag.local_title",
+                    "productTag.content",
+                    "productTag.prompt_tag_text",
+                    "productTag.footer_text",
+                    "productTag.header_text",
                 ]);
                 // Add keyword filter
                 if (where === null || where === void 0 ? void 0 : where.keyword) {
                     queryBuilder.andWhere(new typeorm_1.Brackets((qb) => {
-                        qb.where("product.name ->> 'name_en' ILIKE :keyword", {
+                        qb.where("product.name ILIKE :keyword", {
                             keyword: `%${where.keyword}%`,
                         })
-                            // .orWhere("product.name ->> 'name_es' ILIKE :keyword", {
-                            //   keyword: `%${where.keyword}%`,
-                            // })
-                            // .orWhere("product.name ->> 'name_ms' ILIKE :keyword", {
-                            //   keyword: `%${where.keyword}%`,
-                            // })
-                            // .orWhere("product.name ->> 'name_jp' ILIKE :keyword", {
-                            //   keyword: `%${where.keyword}%`,
-                            // })
-                            // .orWhere("product.name ->> 'name_th' ILIKE :keyword", {
-                            //   keyword: `%${where.keyword}%`,
-                            // })
-                            // .orWhere("product.name ->> 'name_vi' ILIKE :keyword", {
-                            //   keyword: `%${where.keyword}%`,
-                            // })
-                            // .orWhere("product.name ->> 'name_zh' ILIKE :keyword", {
-                            //   keyword: `%${where.keyword}%`,
-                            // })
-                            // .orWhere("product.name ->> 'name_zh_tw' ILIKE :keyword", {
-                            //   keyword: `%${where.keyword}%`,
-                            // })
-                            .orWhere("product.description ->> 'name_en' ILIKE :keyword", {
+                            .orWhere("product.name ILIKE :keyword", {
+                            keyword: `%${where.keyword}%`,
+                        })
+                            .orWhere("product.description ILIKE :keyword", {
                             keyword: `%${where.keyword}%`,
                         });
-                        // .orWhere("product.description ->> 'name_es' ILIKE :keyword", {
-                        //   keyword: `%${where.keyword}%`,
-                        // })
-                        // .orWhere("product.description ->> 'name_ms' ILIKE :keyword", {
-                        //   keyword: `%${where.keyword}%`,
-                        // })
-                        // .orWhere("product.description ->> 'name_jp' ILIKE :keyword", {
-                        //   keyword: `%${where.keyword}%`,
-                        // })
-                        // .orWhere("product.description ->> 'name_th' ILIKE :keyword", {
-                        //   keyword: `%${where.keyword}%`,
-                        // })
-                        // .orWhere("product.description ->> 'name_vi' ILIKE :keyword", {
-                        //   keyword: `%${where.keyword}%`,
-                        // })
-                        // .orWhere("product.description ->> 'name_zh' ILIKE :keyword", {
-                        //   keyword: `%${where.keyword}%`,
-                        // })
-                        // .orWhere("product.description ->> 'name_zh_tw' ILIKE :keyword", {
-                        //   keyword: `%${where.keyword}%`,
-                        // });
                     }));
                 }
                 queryBuilder.andWhere("shopProduct.shop_id = :shopId", {
@@ -508,9 +479,10 @@ class ShopProductService {
             var _b, _c, _d, _e;
             const shopProductRepository = (0, typeorm_1.getRepository)(entity_1.ShopProduct);
             try {
-                const queryBuilder = shopProductRepository.createQueryBuilder("shopProduct");
-                // Add LEFT JOIN with Product
-                queryBuilder.leftJoinAndSelect("shopProduct.productData", "product");
+                const queryBuilder = shopProductRepository
+                    .createQueryBuilder("shopProduct")
+                    .leftJoinAndSelect("shopProduct.productData", "product")
+                    .leftJoinAndSelect("product.productTag", "productTag");
                 queryBuilder.andWhere("shopProduct.id = :shopProductId", {
                     shopProductId: id,
                 });
@@ -533,6 +505,7 @@ class ShopProductService {
                 return (0, success_handler_1.handleSuccess)(shopProduct);
             }
             catch (error) {
+                console.log(error);
                 return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
             }
         });

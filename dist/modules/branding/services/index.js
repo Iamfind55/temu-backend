@@ -10,32 +10,29 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BrandingService = void 0;
+const typeorm_1 = require("typeorm");
 const config_1 = require("../../../config");
+const auth_middleware_1 = require("../../../middlewares/auth.middleware");
+const baseType_1 = require("../../../utils/base/baseType");
 const error_handler_1 = require("../../../utils/response/error.handler");
 const success_handler_1 = require("../../../utils/response/success.handler");
-const typeorm_1 = require("typeorm");
 const entity_1 = require("../entity");
-const baseType_1 = require("../../../utils/base/baseType");
-const auth_middleware_1 = require("../../../middlewares/auth.middleware");
 class BrandingService {
     static createBranding(_a) {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
-            var _b;
             const brandingRepository = (0, typeorm_1.getRepository)(entity_1.Branding);
             try {
                 const staffDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyStaffToken(req);
                 if (!staffDataFromToken)
                     return (0, error_handler_1.handleError)(config_1.config.message.invalid_token, 404, null);
-                if (!((_b = data === null || data === void 0 ? void 0 : data.name) === null || _b === void 0 ? void 0 : _b.name_en)) {
+                if (!(data === null || data === void 0 ? void 0 : data.name)) {
                     return (0, error_handler_1.handleError)("Validation Error", 400, null);
                 }
                 // Check if brand with the same name already exists
                 const existingBrand = yield brandingRepository
                     .createQueryBuilder("branding")
                     .andWhere("branding.is_active = :isActive", { isActive: true })
-                    .andWhere("branding.name->>'name_en' = :name_en", {
-                    name_en: data.name.name_en,
-                })
+                    .andWhere("branding.name = :name", { name: data.name })
                     .getOne();
                 if (existingBrand) {
                     return (0, error_handler_1.handleError)("Brand with the same name already exists", 400, null);
@@ -51,7 +48,6 @@ class BrandingService {
     }
     static updateBranding(_a) {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
-            var _b;
             const brandingRepository = (0, typeorm_1.getRepository)(entity_1.Branding);
             try {
                 const staffDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyStaffToken(req);
@@ -62,14 +58,14 @@ class BrandingService {
                     return (0, error_handler_1.handleError)("Branding not found", 404, null);
                 }
                 // Check if another brand already has the same name
-                if ((_b = data.name) === null || _b === void 0 ? void 0 : _b.name_en) {
+                if (data.name) {
                     // Check if another brand has the same name_en (or another relevant language field)
                     const existingBranding = yield brandingRepository
                         .createQueryBuilder("branding")
                         .where("branding.id != :id", { id: data.id })
                         .andWhere("branding.is_active = :isActive", { isActive: true })
-                        .andWhere("branding.name->>'name_en' = :name_en", {
-                        name_en: data.name.name_en,
+                        .andWhere("branding.name = :name", {
+                        name: data.name,
                     })
                         .getOne();
                     if (existingBranding) {
@@ -118,7 +114,7 @@ class BrandingService {
                     .where({ is_active: true });
                 if (where === null || where === void 0 ? void 0 : where.keyword) {
                     queryBuilder.andWhere(new typeorm_1.Brackets((qb) => {
-                        qb.where("branding.name ->> 'name_en' ILIKE :keyword", {
+                        qb.where("branding.name ILIKE :keyword", {
                             keyword: `%${where.keyword}%`,
                         });
                     }));

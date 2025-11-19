@@ -309,11 +309,11 @@ class ProductService {
                 });
                 console.log(`🔍 Found ${categories.length} categories.`);
                 for (const category of categories) {
-                    if (!category.oringImageURL) {
+                    if (!category.oring_image_url) {
                         console.log(`⏭️ Skipped category ${category.id}: No origin image`);
                         continue;
                     }
-                    const imageUrl = `${category.oringImageURL}?${params}`;
+                    const imageUrl = `${category.oring_image_url}?${params}`;
                     console.log(`⬆️ Uploading category ${category.id}...`);
                     try {
                         // 2️⃣ Prepare form data for Cloudinary
@@ -359,8 +359,8 @@ class ProductService {
     //       take: 10,
     //     });
     //     for (const category of categories) {
-    //       if (!category.oringImageURL) continue; // skip if no image
-    //       const imageUrl = `${category.oringImageURL}?${params}`;
+    //       if (!category.oring_image_url) continue; // skip if no image
+    //       const imageUrl = `${category.oring_image_url}?${params}`;
     //       console.log(`Uploading category ${category.id}: ${imageUrl}`);
     //       // 2️⃣ Prepare form data for Cloudinary
     //       const formData = new FormData();
@@ -975,50 +975,62 @@ class ProductService {
                 var _b, _c;
                 const subCategory = (_b = opt.child_opts) === null || _b === void 0 ? void 0 : _b.map((child) => {
                     return {
+                        opt_id: child.opt_id,
                         opt_name: child.opt_name,
+                        list_id: opt.p_rec.list_id,
                         child_images: child.image_url,
                     };
                 });
                 return {
+                    opt_id: opt.opt_id,
+                    list_id: opt.p_rec.list_id,
                     opt_name: opt.opt_name,
                     child_images: ((_c = opt.child_opts) === null || _c === void 0 ? void 0 : _c.map((child) => child.image_url)) || [],
                     sub_opt_name: subCategory === null || subCategory === void 0 ? void 0 : subCategory.map((sub) => sub.opt_name),
+                    sub_list_id: subCategory.map((sub) => sub.list_id),
+                    sub_opt_id: subCategory.map((sub) => sub.opt_id),
                     sub_child_images1: subCategory === null || subCategory === void 0 ? void 0 : subCategory.map((sub) => sub.child_images),
                 };
             });
             const categoryRepository = (0, typeorm_1.getRepository)(category_1.Category);
-            for (const parent of response) {
-                const parentCategory = categoryRepository.create({
-                    name: parent.opt_name,
-                    oringImageURL: parent.child_images[0] || "",
-                    parent_id: "5f0933c8-472b-4c20-bf2d-7f965cecad0f",
-                    status: baseType_1.BaseStatus.ACTIVE,
+            for (const category of response) {
+                const updateCategory = yield categoryRepository.findOne({
+                    where: { name: category.opt_name },
                 });
-                yield categoryRepository.save(parentCategory);
-                // Insert second-level categories
-                if (parent.sub_opt_name && parent.sub_child_images1) {
-                    for (let i = 0; i < parent.sub_opt_name.length; i++) {
-                        const subName = parent.sub_opt_name[i];
-                        let subCategory = yield categoryRepository
-                            .createQueryBuilder("category")
-                            .where(`category.name = :name AND category.parent_id = :parentId`, {
-                            name: subName,
-                            parentId: parentCategory.id,
-                        })
-                            .getOne();
-                        if (!subCategory) {
-                            subCategory = categoryRepository.create({
-                                name: subName,
-                                oringImageURL: parent.sub_child_images1[i] || "",
-                                parent_id: parentCategory.id,
-                                status: baseType_1.BaseStatus.ACTIVE,
-                            });
-                            const created = yield categoryRepository.save(subCategory);
-                            console.log(created);
-                        }
-                    }
-                }
+                console.log(updateCategory);
             }
+            // for (const parent of response) {
+            //   const parentCategory = categoryRepository.create({
+            //     name: parent.opt_name,
+            //     oring_image_url: parent.child_images[0] || "",
+            //     parent_id: "5f0933c8-472b-4c20-bf2d-7f965cecad0f",
+            //     status: BaseStatus.ACTIVE,
+            //   });
+            //   await categoryRepository.save(parentCategory);
+            //   // Insert second-level categories
+            //   if (parent.sub_opt_name && parent.sub_child_images1) {
+            //     for (let i = 0; i < parent.sub_opt_name.length; i++) {
+            //       const subName = parent.sub_opt_name[i];
+            //       let subCategory = await categoryRepository
+            //         .createQueryBuilder("category")
+            //         .where(`category.name = :name AND category.parent_id = :parentId`, {
+            //           name: subName,
+            //           parentId: parentCategory.id,
+            //         })
+            //         .getOne();
+            //       if (!subCategory) {
+            //         subCategory = categoryRepository.create({
+            //           name: subName,
+            //           oring_image_url: parent.sub_child_images1[i] || "",
+            //           parent_id: parentCategory.id,
+            //           status: BaseStatus.ACTIVE,
+            //         });
+            //         const created = await categoryRepository.save(subCategory);
+            //         console.log(created);
+            //       }
+            //     }
+            //   }
+            // }
             console.log("Added category completed");
         });
     }
@@ -21768,7 +21780,7 @@ class ProductService {
                 const categoryIds = (data === null || data === void 0 ? void 0 : data.category_id)
                     ? yield this.findCategoryParents(data.category_id)
                     : [];
-                productRepository.merge(product, Object.assign(Object.assign({}, data), { category_ids: categoryIds, updated_by: staffDataFromToken.id }));
+                productRepository.merge(product, Object.assign(Object.assign({}, data), { category_ids: categoryIds, updated_by: staffDataFromToken === null || staffDataFromToken === void 0 ? void 0 : staffDataFromToken.id }));
                 const updatedProduct = yield productRepository.save(product);
                 return (0, success_handler_1.handleSuccess)(updatedProduct);
             }
@@ -21812,36 +21824,77 @@ class ProductService {
     }
     static getBestSellingProducts(_b, info_1) {
         return __awaiter(this, arguments, void 0, function* ({ req, where, page, limit, sortedBy, }, info) {
-            const queryBuilder = this.buildBaseQuery({ req, where, page, limit, sortedBy }, info);
-            // queryBuilder.orderBy({ sell_count: "DESC" });
+            const queryBuilder = yield this.buildBaseQuery({ req, where, page, limit, sortedBy }, info);
             return this.executeQuery(queryBuilder, info);
         });
     }
     static getSimilarProducts(_b, info_1) {
         return __awaiter(this, arguments, void 0, function* ({ req, where, page, limit, }, info) {
-            var _c;
             const productRepository = (0, typeorm_1.getRepository)(entity_1.Product);
-            const queryBuilder = this.buildBaseQuery({ req, where, page, limit, sortedBy: baseType_1.BaseOrderByInput.created_at_DESC }, info);
+            const queryBuilder = yield this.buildBaseQuery({ req, where, page, limit, sortedBy: baseType_1.BaseOrderByInput.created_at_DESC }, info);
             if (where === null || where === void 0 ? void 0 : where.product_id) {
                 const product = yield productRepository.findOne({
                     where: { id: where.product_id },
-                    select: ["category_ids", "brand_id"],
+                    select: ["category_id", "brand_id"],
                 });
-                if ((_c = product === null || product === void 0 ? void 0 : product.category_ids) === null || _c === void 0 ? void 0 : _c.length) {
-                    queryBuilder.andWhere("product.category_ids::jsonb @> :category_ids", {
-                        category_ids: JSON.stringify(product.category_ids),
-                    });
-                }
-                if (product === null || product === void 0 ? void 0 : product.brand_id) {
-                    queryBuilder.orWhere("product.brand_id = :brand_id", {
-                        brand_id: product.brand_id,
-                    });
+                if (product) {
+                    queryBuilder.andWhere(new typeorm_1.Brackets((qb) => {
+                        if (product.category_id) {
+                            qb.where("product.category_id = :category_id", {
+                                category_id: product.category_id,
+                            });
+                        }
+                        if (product.brand_id) {
+                            qb.orWhere("product.brand_id = :brand_id", {
+                                brand_id: product.brand_id,
+                            });
+                        }
+                    }));
                 }
             }
-            queryBuilder.addOrderBy("RANDOM()").take(limit);
+            // random result
+            // queryBuilder.addOrderBy("RANDOM()").take(limit);
             return this.executeQuery(queryBuilder, info);
         });
     }
+    // static async getSimilarProducts(
+    //   {
+    //     req,
+    //     where,
+    //     page,
+    //     limit,
+    //   }: {
+    //     req: Request;
+    //     where: Partial<SimilarProductWhereInput>;
+    //     page: number;
+    //     limit: number;
+    //   },
+    //   info: GraphQLResolveInfo
+    // ) {
+    //   const productRepository = getRepository(Product);
+    //   const queryBuilder = this.buildBaseQuery(
+    //     { req, where, page, limit, sortedBy: BaseOrderByInput.created_at_DESC },
+    //     info
+    //   );
+    //   if (where?.product_id) {
+    //     const product = await productRepository.findOne({
+    //       where: { id: where.product_id },
+    //       select: ["category_id", "brand_id"],
+    //     });
+    //     if (product?.category_id) {
+    //       queryBuilder.andWhere("product.category_id =:...category_id)", {
+    //         category_ids: where.category_ids,
+    //       });
+    //     }
+    //     if (product?.brand_id) {
+    //       queryBuilder.orWhere("product.brand_id = :brand_id", {
+    //         brand_id: product.brand_id,
+    //       });
+    //     }
+    //   }
+    //   queryBuilder.addOrderBy("RANDOM()").take(limit);
+    //   return this.executeQuery(queryBuilder, info);
+    // }
     static searchProducts(_b) {
         return __awaiter(this, arguments, void 0, function* ({ where, page, limit, sortedBy, }) {
             const productRepository = (0, typeorm_1.getRepository)(entity_1.Product);
@@ -21889,116 +21942,324 @@ class ProductService {
             }
         });
     }
-    static buildProductQuery({ req, where, page, limit, sortedBy, }, info, isAdmin) {
-        const queryBuilder = this.buildBaseQuery({ req, where, page, limit, sortedBy }, info, isAdmin);
-        if (isAdmin) {
-            queryBuilder
-                .leftJoinAndSelect("product.categoryData", "category")
-                .leftJoinAndSelect("product.brandData", "brand");
-        }
-        return this.executeQuery(queryBuilder, info);
-    }
-    static buildBaseQuery({ req, where, page, limit, sortedBy, }, info, isAdmin = false) {
-        var _b, _c, _d;
-        const productRepository = (0, typeorm_1.getRepository)(entity_1.Product);
-        const queryBuilder = productRepository
-            .createQueryBuilder("product")
-            .where("product.is_active = :isActive", { isActive: true });
-        const selectFields = (0, graphqlUtils_1.getRequestedFields)(info, "getProducts.data");
-        if (selectFields === null || selectFields === void 0 ? void 0 : selectFields.length) {
-            const fields = selectFields
-                .filter((field) => field !== "shopProductStatus")
-                .map((field) => `product.${field}`);
-            queryBuilder.select(fields);
-        }
-        if (!isAdmin) {
-            try {
-                const shopDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyShopToken(req);
-                if (shopDataFromToken === null || shopDataFromToken === void 0 ? void 0 : shopDataFromToken.id) {
-                    queryBuilder.leftJoinAndSelect("product.shopProducts", "shopProduct", "shopProduct.shop_id = :shopId", { shopId: shopDataFromToken.id });
-                }
+    static buildProductQuery(_b, info_1, isAdmin_1) {
+        return __awaiter(this, arguments, void 0, function* ({ req, where, page, limit, sortedBy, }, info, isAdmin) {
+            const queryBuilder = yield this.buildBaseQuery({ req, where, page, limit, sortedBy }, info, isAdmin);
+            if (isAdmin) {
+                queryBuilder
+                    .leftJoinAndSelect("product.categoryData", "category")
+                    .leftJoinAndSelect("product.brandData", "brand");
             }
-            catch (error) { }
-        }
-        if (where === null || where === void 0 ? void 0 : where.keyword) {
-            queryBuilder.andWhere(new typeorm_1.Brackets((qb) => {
-                qb.where("product.name ILIKE :keyword", {
-                    keyword: `%${where.keyword}%`,
-                }).orWhere("product.description ILIKE :keyword", {
-                    keyword: `%${where.keyword}%`,
+            return this.executeQuery(queryBuilder, info);
+        });
+    }
+    // private static buildBaseQuery(
+    //   {
+    //     req,
+    //     where,
+    //     page,
+    //     limit,
+    //     sortedBy,
+    //   }: {
+    //     req: Request;
+    //     where: Partial<ProductWhereInput>;
+    //     page: number;
+    //     limit: number;
+    //     sortedBy: BaseOrderByInput;
+    //   },
+    //   info: GraphQLResolveInfo,
+    //   isAdmin = false
+    // ) {
+    //   const productRepository = getRepository(Product);
+    //   const queryBuilder = productRepository
+    //     .createQueryBuilder("product")
+    //     .leftJoinAndSelect("product.productTag", "productTag")
+    //     .leftJoinAndSelect("product.brandData", "brandData")
+    //     .where("product.is_active = :isActive", { isActive: true });
+    //   const selectFields = getRequestedFields(info, "getProducts.data");
+    //   if (selectFields?.length) {
+    //     // const fields = selectFields
+    //     //   .filter((field) => field !== "shopProductStatus")
+    //     //   .filter((field) => !["shopProductStatus", "productTag"].includes(field))
+    //     //   .map((field) => `product.${field}`);
+    //     // fields.push("product.created_at");
+    //     const fields = Array.from(
+    //       new Set(
+    //         selectFields
+    //           .filter(
+    //             (field) =>
+    //               !["shopProductStatus", "productTag", "brandData"].includes(
+    //                 field
+    //               )
+    //           )
+    //           .map((field) => `product.${field}`)
+    //           .concat("product.created_at")
+    //       )
+    //     );
+    //     if (!fields.includes("product.created_at"))
+    //       fields.push("product.created_at");
+    //     queryBuilder.select([
+    //       ...fields,
+    //       "productTag.id",
+    //       "productTag.text_rich",
+    //       "productTag.local_title",
+    //       "productTag.content",
+    //       "productTag.prompt_tag_text",
+    //       "productTag.footer_text",
+    //       "productTag.header_text",
+    //       "brandData.id",
+    //       "brandData.name",
+    //       "brandData.image",
+    //       "brandData.status",
+    //     ]);
+    //     // queryBuilder.select([
+    //     //   ...fields,
+    //     //   "productTag.id",
+    //     //   "productTag.text_rich",
+    //     //   "productTag.local_title",
+    //     // ]);
+    //     // queryBuilder.select(fields);
+    //   }
+    //   if (!isAdmin) {
+    //     try {
+    //       const shopDataFromToken = new AuthMiddlewareService().verifyShopToken(
+    //         req
+    //       );
+    //       if (shopDataFromToken?.id) {
+    //         queryBuilder.leftJoinAndSelect(
+    //           "product.shopProducts",
+    //           "shopProduct",
+    //           "shopProduct.shop_id = :shopId",
+    //           { shopId: shopDataFromToken.id }
+    //         );
+    //       }
+    //     } catch (error) {}
+    //   }
+    //   if (where?.keyword) {
+    //     queryBuilder.andWhere(
+    //       new Brackets((qb) => {
+    //         qb.where("product.name ILIKE :keyword", {
+    //           keyword: `%${where.keyword}%`,
+    //         }).orWhere("product.description ILIKE :keyword", {
+    //           keyword: `%${where.keyword}%`,
+    //         });
+    //       })
+    //     );
+    //   }
+    //   if (where?.status)
+    //     queryBuilder.andWhere("product.status = :status", {
+    //       status: where.status,
+    //     });
+    //   if (where?.category_id)
+    //     queryBuilder.andWhere("product.category_ids::jsonb @> :category_id", {
+    //       category_id: JSON.stringify([where.category_id]),
+    //     });
+    //   if (where?.category_ids?.length)
+    //     queryBuilder.andWhere(
+    //       "product.category_ids::jsonb ?| array[:...category_ids]",
+    //       {
+    //         category_ids: where.category_ids,
+    //       }
+    //     );
+    //   if (where?.brand_id)
+    //     queryBuilder.andWhere("product.brand_id = :brand_id", {
+    //       brand_id: where.brand_id,
+    //     });
+    //   if (where?.product_top)
+    //     queryBuilder.andWhere("product.product_top = :product_top", {
+    //       product_top: where.product_top,
+    //     });
+    //   if (where?.product_vip || where?.product_vip === 0)
+    //     queryBuilder.andWhere("product.product_vip = :product_vip", {
+    //       product_vip: where.product_vip,
+    //     });
+    //   if (where?.price_between) {
+    //     queryBuilder
+    //       .andWhere("product.price >= :minPrice", {
+    //         minPrice: where.price_between[0],
+    //       })
+    //       .andWhere("product.price <= :maxPrice", {
+    //         maxPrice: where.price_between[1],
+    //       });
+    //   }
+    //   if (where?.quantity !== undefined) {
+    //     queryBuilder.andWhere(
+    //       `product.quantity ${where.quantity > 0 ? ">=" : "<="} :quantity`,
+    //       { quantity: where.quantity > 0 ? 1 : 0 }
+    //     );
+    //   }
+    //   if (
+    //     where?.createdAtBetween?.startDate &&
+    //     where?.createdAtBetween?.endDate
+    //   ) {
+    //     queryBuilder.andWhere(
+    //       "DATE(product.created_at) BETWEEN :startDate AND :endDate",
+    //       {
+    //         startDate: where.createdAtBetween.startDate,
+    //         endDate: where.createdAtBetween.endDate,
+    //       }
+    //     );
+    //   }
+    //   // within 30 day, 15 day, 7 day
+    //   if (where?.within) {
+    //     const days = where.within;
+    //     const fromDate = new Date();
+    //     fromDate.setDate(fromDate.getDate() - days);
+    //     queryBuilder.andWhere("product.created_at >= :fromDate", { fromDate });
+    //   }
+    //   // 5 Star rate
+    //   if (where?.star_top) {
+    //     queryBuilder.andWhere("product.total_star >= 4");
+    //     queryBuilder.orderBy("RANDOM()");
+    //   } else if (where?.discount && where?.discount > 0) {
+    //     queryBuilder.andWhere("product.discount >= :discount", {
+    //       discount: where.discount,
+    //     });
+    //     queryBuilder.orderBy("RANDOM()");
+    //   } else if (where?.offer) {
+    //     queryBuilder.andWhere("product.discount >0");
+    //     queryBuilder.orderBy("RANDOM()");
+    //   } else {
+    //     queryBuilder.orderBy(this.order(sortedBy, where?.price_between) as any);
+    //   }
+    //   queryBuilder.skip((page - 1) * limit).take(limit);
+    //   return queryBuilder;
+    // }
+    static buildBaseQuery(_b, info_1) {
+        return __awaiter(this, arguments, void 0, function* ({ req, where, page, limit, sortedBy, }, info, isAdmin = false) {
+            var _c, _d, _e;
+            const productRepository = (0, typeorm_1.getRepository)(entity_1.Product);
+            const queryBuilder = productRepository
+                .createQueryBuilder("product")
+                .leftJoinAndSelect("product.productTag", "productTag")
+                .leftJoinAndSelect("product.brandData", "brandData")
+                .where("product.is_active = :isActive", { isActive: true });
+            const selectFields = (0, graphqlUtils_1.getRequestedFields)(info, "getProducts.data");
+            // Select requested fields + required relations
+            if (selectFields === null || selectFields === void 0 ? void 0 : selectFields.length) {
+                const fields = Array.from(new Set(selectFields
+                    .filter((field) => !["shopProductStatus", "productTag", "brandData"].includes(field))
+                    .map((field) => `product.${field}`)
+                    .concat("product.created_at")));
+                queryBuilder.select([
+                    ...fields,
+                    "productTag.id",
+                    "productTag.text_rich",
+                    "productTag.local_title",
+                    "productTag.content",
+                    "productTag.prompt_tag_text",
+                    "productTag.footer_text",
+                    "productTag.header_text",
+                    "brandData.id",
+                    "brandData.name",
+                    "brandData.image",
+                    "brandData.status",
+                ]);
+            }
+            // Shop-specific filter
+            if (!isAdmin) {
+                try {
+                    const shopDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyShopToken(req);
+                    if (shopDataFromToken === null || shopDataFromToken === void 0 ? void 0 : shopDataFromToken.id) {
+                        queryBuilder.leftJoinAndSelect("product.shopProducts", "shopProduct", "shopProduct.shop_id = :shopId", { shopId: shopDataFromToken.id });
+                    }
+                }
+                catch (error) { }
+            }
+            // Keyword search
+            if (where === null || where === void 0 ? void 0 : where.keyword) {
+                queryBuilder.andWhere(new typeorm_1.Brackets((qb) => {
+                    qb.where("product.name ILIKE :keyword", {
+                        keyword: `%${where.keyword}%`,
+                    }).orWhere("product.description ILIKE :keyword", {
+                        keyword: `%${where.keyword}%`,
+                    });
+                }));
+            }
+            // Filters
+            if (where === null || where === void 0 ? void 0 : where.status)
+                queryBuilder.andWhere("product.status = :status", {
+                    status: where.status,
                 });
-            }));
-        }
-        if (where === null || where === void 0 ? void 0 : where.status)
-            queryBuilder.andWhere("product.status = :status", {
-                status: where.status,
-            });
-        if (where === null || where === void 0 ? void 0 : where.category_id)
-            queryBuilder.andWhere("product.category_ids::jsonb @> :category_id", {
-                category_id: JSON.stringify([where.category_id]),
-            });
-        if ((_b = where === null || where === void 0 ? void 0 : where.category_ids) === null || _b === void 0 ? void 0 : _b.length)
-            queryBuilder.andWhere("product.category_ids::jsonb ?| array[:...category_ids]", {
-                category_ids: where.category_ids,
-            });
-        if (where === null || where === void 0 ? void 0 : where.brand_id)
-            queryBuilder.andWhere("product.brand_id = :brand_id", {
-                brand_id: where.brand_id,
-            });
-        if (where === null || where === void 0 ? void 0 : where.product_top)
-            queryBuilder.andWhere("product.product_top = :product_top", {
-                product_top: where.product_top,
-            });
-        if ((where === null || where === void 0 ? void 0 : where.product_vip) || (where === null || where === void 0 ? void 0 : where.product_vip) === 0)
-            queryBuilder.andWhere("product.product_vip = :product_vip", {
-                product_vip: where.product_vip,
-            });
-        if (where === null || where === void 0 ? void 0 : where.price_between) {
-            queryBuilder
-                .andWhere("product.price >= :minPrice", {
-                minPrice: where.price_between[0],
-            })
-                .andWhere("product.price <= :maxPrice", {
-                maxPrice: where.price_between[1],
-            });
-        }
-        if ((where === null || where === void 0 ? void 0 : where.quantity) !== undefined) {
-            queryBuilder.andWhere(`product.quantity ${where.quantity > 0 ? ">=" : "<="} :quantity`, { quantity: where.quantity > 0 ? 1 : 0 });
-        }
-        if (((_c = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _c === void 0 ? void 0 : _c.startDate) &&
-            ((_d = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _d === void 0 ? void 0 : _d.endDate)) {
-            queryBuilder.andWhere("DATE(product.created_at) BETWEEN :startDate AND :endDate", {
-                startDate: where.createdAtBetween.startDate,
-                endDate: where.createdAtBetween.endDate,
-            });
-        }
-        // within 30 day, 15 day, 7 day
-        if (where === null || where === void 0 ? void 0 : where.within) {
-            const days = where.within;
-            const fromDate = new Date();
-            fromDate.setDate(fromDate.getDate() - days);
-            queryBuilder.andWhere("product.created_at >= :fromDate", { fromDate });
-        }
-        // 5 Star rate
-        if (where === null || where === void 0 ? void 0 : where.star_top) {
-            queryBuilder.andWhere("product.total_star >= 4");
-            queryBuilder.orderBy("RANDOM()");
-        }
-        else if ((where === null || where === void 0 ? void 0 : where.discount) && (where === null || where === void 0 ? void 0 : where.discount) > 0) {
-            queryBuilder.andWhere("product.discount >= :discount", {
-                discount: where.discount,
-            });
-            queryBuilder.orderBy("RANDOM()");
-        }
-        else if (where === null || where === void 0 ? void 0 : where.offer) {
-            queryBuilder.andWhere("product.discount >0");
-            queryBuilder.orderBy("RANDOM()");
-        }
-        else {
-            queryBuilder.orderBy(this.order(sortedBy, where === null || where === void 0 ? void 0 : where.price_between));
-        }
-        queryBuilder.skip((page - 1) * limit).take(limit);
-        return queryBuilder;
+            if (where === null || where === void 0 ? void 0 : where.category_id) {
+                const categoryRepository = (0, typeorm_1.getRepository)(category_1.Category);
+                const childCategories = yield categoryRepository.find({
+                    where: { parent_id: where.category_id, is_active: true },
+                    select: ["id"],
+                });
+                const level1Ids = childCategories.map((c) => c.id);
+                // Level 2 children
+                let level2Ids = [];
+                if (level1Ids.length) {
+                    const childCategoriesLevel2 = yield categoryRepository.find({
+                        where: { parent_id: (0, typeorm_1.In)(level1Ids), is_active: true },
+                        select: ["id"],
+                    });
+                    level2Ids = childCategoriesLevel2.map((c) => c.id);
+                }
+                const categoryIds = [where.category_id, ...level1Ids, ...level2Ids];
+                queryBuilder.andWhere("product.category_id IN (:...category_ids)", {
+                    category_ids: categoryIds,
+                });
+            }
+            if ((_c = where === null || where === void 0 ? void 0 : where.category_ids) === null || _c === void 0 ? void 0 : _c.length) {
+                queryBuilder.andWhere("product.category_id IN (:...category_ids)", {
+                    category_ids: where.category_ids,
+                });
+            }
+            if (where === null || where === void 0 ? void 0 : where.brand_id)
+                queryBuilder.andWhere("product.brand_id = :brand_id", {
+                    brand_id: where.brand_id,
+                });
+            if (where === null || where === void 0 ? void 0 : where.product_top)
+                queryBuilder.andWhere("product.product_top = :product_top", {
+                    product_top: where.product_top,
+                });
+            if ((where === null || where === void 0 ? void 0 : where.product_vip) || (where === null || where === void 0 ? void 0 : where.product_vip) === 0)
+                queryBuilder.andWhere("product.product_vip = :product_vip", {
+                    product_vip: where.product_vip,
+                });
+            if (where === null || where === void 0 ? void 0 : where.price_between) {
+                queryBuilder
+                    .andWhere("product.price >= :minPrice", {
+                    minPrice: where.price_between[0],
+                })
+                    .andWhere("product.price <= :maxPrice", {
+                    maxPrice: where.price_between[1],
+                });
+            }
+            if ((where === null || where === void 0 ? void 0 : where.quantity) !== undefined) {
+                queryBuilder.andWhere(`product.quantity ${where.quantity > 0 ? ">=" : "<="} :quantity`, { quantity: where.quantity > 0 ? 1 : 0 });
+            }
+            if (((_d = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _d === void 0 ? void 0 : _d.startDate) &&
+                ((_e = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _e === void 0 ? void 0 : _e.endDate)) {
+                queryBuilder.andWhere("DATE(product.created_at) BETWEEN :startDate AND :endDate", {
+                    startDate: where.createdAtBetween.startDate,
+                    endDate: where.createdAtBetween.endDate,
+                });
+            }
+            if (where === null || where === void 0 ? void 0 : where.within) {
+                const days = where.within;
+                const fromDate = new Date();
+                fromDate.setDate(fromDate.getDate() - days);
+                queryBuilder.andWhere("product.created_at >= :fromDate", { fromDate });
+            }
+            // Randomized queries for offers or top-rated
+            if (((where === null || where === void 0 ? void 0 : where.discount) && (where === null || where === void 0 ? void 0 : where.discount) > 0) || (where === null || where === void 0 ? void 0 : where.offer)) {
+                queryBuilder.addSelect("RANDOM()", "rand_order");
+                queryBuilder.orderBy("rand_order");
+            }
+            else if (where === null || where === void 0 ? void 0 : where.star_top) {
+                queryBuilder.andWhere("product.total_star >= 5");
+                queryBuilder.addSelect("RANDOM()", "rand_order");
+                queryBuilder.orderBy("rand_order");
+            }
+            else {
+                queryBuilder.orderBy(this.order(sortedBy, where === null || where === void 0 ? void 0 : where.price_between));
+            }
+            queryBuilder.skip((page - 1) * limit).take(limit);
+            return queryBuilder;
+        });
     }
     static executeQuery(queryBuilder, info) {
         return __awaiter(this, void 0, void 0, function* () {

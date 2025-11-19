@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ERolesStaff = exports.BaseStatus = exports.BaseOrderByInput = void 0;
+exports.ERolesStaff = exports.EDeposit = exports.BaseStatus = exports.BaseOrderByInput = void 0;
 var BaseOrderByInput;
 (function (BaseOrderByInput) {
     BaseOrderByInput["created_at_ASC"] = "created_at_ASC";
@@ -19,6 +19,13 @@ var BaseStatus;
     BaseStatus["ACTIVE"] = "ACTIVE";
     BaseStatus["INACTIVE"] = "INACTIVE";
 })(BaseStatus || (exports.BaseStatus = BaseStatus = {}));
+var EDeposit;
+(function (EDeposit) {
+    EDeposit["PENDING"] = "pending";
+    EDeposit["DRAFF"] = "draff";
+    EDeposit["COMPLETED"] = "completed";
+    EDeposit["DELETED"] = "deleted";
+})(EDeposit || (exports.EDeposit = EDeposit = {}));
 var ERolesStaff;
 (function (ERolesStaff) {
     ERolesStaff["ADMIN"] = "admin";

@@ -88,8 +88,8 @@ exports.shopSchema = `
 
   input CreateShopInput {
     fullname: String
-    username: String!
-    password: String!
+    username: String
+    password: String
     email: String!
     dob: Date
     phone_number: String
@@ -97,7 +97,7 @@ exports.shopSchema = `
     status: ShopStatus
     remark: String
     shop_address: String
-    profit: Float!
+    profit: Float
     id_card_info: ShopIdCardInfoInput
     store_name: String
   }
@@ -130,7 +130,8 @@ exports.shopSchema = `
 
   input ShopResetPasswordInput {
     new_password: String!
-    token: String!
+    otp: String!
+    email: String!
   }
 
   input UpdateShopInformationInput {

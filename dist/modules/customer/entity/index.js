@@ -20,11 +20,12 @@ const transactionHistory_1 = require("../../transactionHistory");
 const orderDetail_1 = require("../../orderDetail");
 const types_1 = require("../types");
 const shopFollower_1 = require("../../shopFollower");
+const entity_1 = require("../../deposit/entity");
 let Customer = class Customer extends baseEntity_1.BaseEntity {
 };
 exports.Customer = Customer;
 __decorate([
-    (0, typeorm_1.Column)({ nullable: false }),
+    (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)
 ], Customer.prototype, "firstName", void 0);
 __decorate([
@@ -32,15 +33,15 @@ __decorate([
     __metadata("design:type", String)
 ], Customer.prototype, "lastName", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ nullable: false, unique: false }),
+    (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)
 ], Customer.prototype, "username", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ nullable: false }),
+    (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)
 ], Customer.prototype, "password", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ nullable: true }),
+    (0, typeorm_1.Column)({ nullable: false, unique: true }),
     __metadata("design:type", String)
 ], Customer.prototype, "email", void 0);
 __decorate([
@@ -60,10 +61,26 @@ __decorate([
     __metadata("design:type", String)
 ], Customer.prototype, "customer_address", void 0);
 __decorate([
+    (0, typeorm_1.Column)({ nullable: true }),
+    __metadata("design:type", String)
+], Customer.prototype, "otp", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ nullable: true }),
+    __metadata("design:type", Date)
+], Customer.prototype, "otpExpire_at", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ default: false }),
+    __metadata("design:type", Boolean)
+], Customer.prototype, "isOtpEnable", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ default: false }),
+    __metadata("design:type", Boolean)
+], Customer.prototype, "isVerified", void 0);
+__decorate([
     (0, typeorm_1.Column)({
         type: "enum",
         enum: baseType_1.BaseStatus,
-        default: baseType_1.BaseStatus.ACTIVE,
+        default: baseType_1.BaseStatus.INACTIVE,
     }),
     __metadata("design:type", String)
 ], Customer.prototype, "status", void 0);
@@ -123,6 +140,10 @@ __decorate([
     (0, typeorm_1.OneToMany)(() => shopFollower_1.ShopFollower, (follower) => follower.customer),
     __metadata("design:type", Array)
 ], Customer.prototype, "followedShops", void 0);
+__decorate([
+    (0, typeorm_1.OneToMany)(() => entity_1.Deposit, (deposit) => deposit.customer),
+    __metadata("design:type", Array)
+], Customer.prototype, "deposits", void 0);
 exports.Customer = Customer = __decorate([
     (0, typeorm_1.Entity)()
 ], Customer);

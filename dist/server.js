@@ -38,7 +38,6 @@ const wallet_1 = require("./modules/wallet");
 const schema_2 = require("./schema");
 const db_1 = require("./utils/db");
 const pubsub_1 = __importDefault(require("./utils/pubsub"));
-const fetchProduct_1 = require("./modules/product/utils/fetchProduct");
 const { WebSocketServer } = require("ws");
 const app = (0, express_1.default)();
 const startApp = () => __awaiter(void 0, void 0, void 0, function* () {
@@ -106,7 +105,10 @@ const startApp = () => __awaiter(void 0, void 0, void 0, function* () {
     // ProductService.fetchTemuCategoryOptList();
     // ProductService.uploadCategoryToStorage();
     // ProductService.fetchTemuProduct()
-    (0, fetchProduct_1.fetchProducts)();
+    // fetchProducts()
+    // fetchProductByCategory();
+    // productReview();
+    // getTemuProductData();
     const clearAllData = () => __awaiter(void 0, void 0, void 0, function* () {
         const productRepository = (0, typeorm_1.getRepository)(product_1.Product);
         const categoryRepository = (0, typeorm_1.getRepository)(category_1.Category);

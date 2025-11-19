@@ -25,6 +25,7 @@ export interface TransactionHistoryWhereInput {
 export enum ETransactionHistoryIdentifier {
   RECHARGE = "RECHARGE",
   WITHDRAW = "WITHDRAW",
+  DEPOSIT = "DEPOSIT",
 }
 
 export enum ECoinType {

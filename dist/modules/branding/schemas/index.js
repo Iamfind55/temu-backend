@@ -4,7 +4,7 @@ exports.brandingSchema = void 0;
 exports.brandingSchema = `
   type Branding {
     id: ID
-    name: NameTranslateBaseType
+    name: String
     image: String
     status: BaseStatus
     created_by: String
@@ -13,14 +13,14 @@ exports.brandingSchema = `
   } 
 
   input CreateBrandingInput {
-    name: NameTranslateBaseInput
+    name: String
     image: String
     status: BaseStatus = ACTIVE
   }
 
   input UpdateBrandingInput {
     id: ID!
-    name: NameTranslateBaseInput
+    name: String
     image: String
     status: BaseStatus
   }

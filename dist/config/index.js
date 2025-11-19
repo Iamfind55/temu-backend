@@ -39,6 +39,7 @@ exports.config = {
         incorrect_data: "INCORRECT_DATA",
         invalid_data: "INVALID_DATA",
         wallet_not_found: "WALLET_NOT_FOUND",
+        user_not_found: "USER_NOT_FOUND",
         shop_not_found: "SHOP_NOT_FOUND",
         username_already_exist: "USERNAME_ALREADY_EXIST",
     },

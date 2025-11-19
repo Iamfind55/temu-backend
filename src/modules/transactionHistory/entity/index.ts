@@ -1,4 +1,4 @@
-import { Entity, Column, ManyToOne, JoinColumn } from "typeorm";
+import { Entity, Column, ManyToOne, JoinColumn, OneToOne } from "typeorm";
 import { BaseEntity } from "../../../utils/base/baseEntity";
 import { BaseStatus } from "../../../utils/base/baseType";
 import {
@@ -8,6 +8,8 @@ import {
 } from "../types";
 import { Customer } from "../../customer";
 import { Shop } from "../../shop";
+import { Deposit } from "../../deposit/entity";
+import { Withdraw } from "../../withdraw";
 
 @Entity()
 export class TransactionHistory extends BaseEntity {
@@ -43,17 +45,10 @@ export class TransactionHistory extends BaseEntity {
 
   @Column({
     type: "enum",
-    enum: BaseStatus,
-    default: BaseStatus.ACTIVE,
-  })
-  status!: BaseStatus;
-
-  @Column({
-    type: "enum",
     enum: ETransactionStatus,
     default: ETransactionStatus.PENDING,
   })
-  transaction_status!: ETransactionStatus;
+  status!: ETransactionStatus;
 
   @ManyToOne(() => Customer, (customer) => customer.transaction_histories, {
     nullable: true,
@@ -66,4 +61,15 @@ export class TransactionHistory extends BaseEntity {
   })
   @JoinColumn({ name: "shop_id" })
   shop?: Shop;
+
+  @OneToOne(() => Deposit, deposit => deposit.transaction, {
+    nullable: true,
+  })
+  deposit?: Deposit;
+
+
+  @OneToOne(() => Withdraw, withdraw => withdraw.transaction, {
+    nullable: true,
+  })
+  withdraw?: Withdraw;
 }

@@ -417,7 +417,7 @@ export class TransactionHistoryService {
           }
 
           // Update the transaction status
-          transactionHistory.transaction_status = ETransactionStatus.APPROVED;
+          transactionHistory.status = ETransactionStatus.APPROVED;
           transactionHistory.approved_by = staffDataFromToken.id;
           const updatedTransactionHistory =
             await transactionalEntityManager.save(
@@ -509,7 +509,7 @@ export class TransactionHistoryService {
           }
 
           // Update the transaction status
-          transactionHistory.transaction_status = ETransactionStatus.APPROVED;
+          transactionHistory.status = ETransactionStatus.APPROVED;
           transactionHistory.approved_by = staffDataFromToken.id;
           const updatedTransactionHistory =
             await transactionalEntityManager.save(
@@ -585,7 +585,7 @@ export class TransactionHistoryService {
           }
 
           // Update the transaction status
-          transactionHistory.transaction_status = ETransactionStatus.REJECTED;
+          transactionHistory.status = ETransactionStatus.REJECTED;
           transactionHistory.rejected_by = staffDataFromToken.id;
           const updatedTransactionHistory =
             await transactionalEntityManager.save(

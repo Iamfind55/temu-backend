@@ -35,6 +35,7 @@ const attribute_1 = require("../modules/attribute");
 const entity_1 = require("../modules/attributeValue/entity");
 const categoryAttribute_1 = require("../modules/categoryAttribute");
 const shopFollower_1 = require("../modules/shopFollower");
+const productTag_1 = require("../modules/productTag");
 const connectDB = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield (0, typeorm_1.createConnection)({
@@ -70,6 +71,7 @@ const connectDB = () => __awaiter(void 0, void 0, void 0, function* () {
                 entity_1.AttributeValue,
                 categoryAttribute_1.CategoryAttribute,
                 shopFollower_1.ShopFollower,
+                productTag_1.ProductTag
             ],
             migrations: ["migrations/*.ts"],
         })

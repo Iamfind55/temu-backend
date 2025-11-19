@@ -24,6 +24,8 @@ import { AttributeValue } from "../modules/attributeValue/entity";
 import { CategoryAttribute } from "../modules/categoryAttribute";
 import { ShopFollower } from "../modules/shopFollower";
 import { ProductTag } from "../modules/productTag";
+import { Deposit } from "../modules/deposit";
+import { Withdraw } from "../modules/withdraw";
 
 export const connectDB = async () => {
   try {
@@ -60,7 +62,9 @@ export const connectDB = async () => {
         AttributeValue,
         CategoryAttribute,
         ShopFollower,
-        ProductTag
+        ProductTag,
+        Deposit,
+        Withdraw
       ],
       migrations: ["migrations/*.ts"],
     })

@@ -5,9 +5,13 @@ exports.productCommentSchema = `
   type ProductComment {
     id: ID
     comment: String
+    score: Int
+    time_ms: DateTime
+    pictures: String
     cusomter_id: String
     product_id: String
     status: BaseStatus
+    customer: Customer
     created_by: String
     created_at: DateTime
     updated_at: DateTime

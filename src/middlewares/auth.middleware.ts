@@ -60,7 +60,7 @@ export class AuthMiddlewareService {
     try {
       // Generate JWT token
       const token = jwt.sign(
-        { id: data.id, role: data.role },
+        { id: data.id, role: data.role, type: "STAFF" },
         config.staff_jwt_secret_key,
         {
           expiresIn: "15d", // Token expiration time

@@ -19,11 +19,12 @@ const transactionHistory_1 = require("../../transactionHistory");
 const order_1 = require("../../order");
 const orderDetail_1 = require("../../orderDetail");
 const shopFollower_1 = require("../../shopFollower");
+const entity_1 = require("../../deposit/entity");
 let Shop = class Shop extends baseEntity_1.BaseEntity {
 };
 exports.Shop = Shop;
 __decorate([
-    (0, typeorm_1.Column)({ nullable: false }),
+    (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)
 ], Shop.prototype, "fullname", void 0);
 __decorate([
@@ -70,6 +71,10 @@ __decorate([
     (0, typeorm_1.Column)({ default: false }),
     __metadata("design:type", Boolean)
 ], Shop.prototype, "isOtpEnable", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ default: false }),
+    __metadata("design:type", Boolean)
+], Shop.prototype, "isVerified", void 0);
 __decorate([
     (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", Date)
@@ -172,6 +177,10 @@ __decorate([
     (0, typeorm_1.OneToMany)(() => shopFollower_1.ShopFollower, (follower) => follower.shop),
     __metadata("design:type", Array)
 ], Shop.prototype, "followers", void 0);
+__decorate([
+    (0, typeorm_1.OneToMany)(() => entity_1.Deposit, (deposit) => deposit.shop),
+    __metadata("design:type", Array)
+], Shop.prototype, "deposits", void 0);
 exports.Shop = Shop = __decorate([
     (0, typeorm_1.Entity)()
 ], Shop);

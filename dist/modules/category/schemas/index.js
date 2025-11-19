@@ -6,7 +6,7 @@ exports.categorySchema = `
     id: ID
     name: String
     image: String
-    oringImageURL:String
+    oring_image_url:String
     status: BaseStatus
     parent_id: String
     parent_data: Category
@@ -20,7 +20,7 @@ exports.categorySchema = `
   input CreateCategoryInput {
     name: String
     image: String
-    oringImageURL:String
+    oring_image_url:String
     status: BaseStatus = ACTIVE
     recommended: Boolean
     parent_id: String
@@ -31,7 +31,7 @@ exports.categorySchema = `
     id: ID!
     name: String
     image: String
-    oringImageURL:String
+    oring_image_url:String
     status: BaseStatus
     recommended: Boolean
     parent_id: String

@@ -3,6 +3,8 @@ import { BaseEntity } from "../../../utils/base/baseEntity";
 import { BaseStatus } from "../../../utils/base/baseType";
 import { Shop } from "../../shop";
 import { Customer } from "../../customer";
+import { Deposit } from "../../deposit";
+import { Withdraw } from "../../withdraw";
 
 @Entity()
 export class Wallet extends BaseEntity {
@@ -44,4 +46,14 @@ export class Wallet extends BaseEntity {
   @OneToOne(() => Customer, (customer) => customer.wallet, { nullable: true })
   @JoinColumn({ name: "customer_id" })
   customer?: Customer;
+
+  @OneToOne(() => Deposit, deposit => deposit.wallet, {
+    nullable: true,
+  })
+  deposit?: Deposit;
+
+  @OneToOne(() => Withdraw, deposit => deposit.wallet, {
+    nullable: true,
+  })
+  withdraw?: Deposit;
 }

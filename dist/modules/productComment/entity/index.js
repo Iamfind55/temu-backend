@@ -17,9 +17,25 @@ let ProductComment = class ProductComment extends baseEntity_1.BaseEntity {
 };
 exports.ProductComment = ProductComment;
 __decorate([
-    (0, typeorm_1.Column)({ type: "text", nullable: false, default: "" }),
+    (0, typeorm_1.Column)({ type: "text", nullable: true }),
+    __metadata("design:type", String)
+], ProductComment.prototype, "goods_id", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ type: "text", nullable: false }),
     __metadata("design:type", String)
 ], ProductComment.prototype, "comment", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ type: "int", nullable: false, default: 0 }),
+    __metadata("design:type", Number)
+], ProductComment.prototype, "score", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ type: "date", nullable: true }),
+    __metadata("design:type", Date)
+], ProductComment.prototype, "time_ms", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ type: "text", nullable: true }),
+    __metadata("design:type", String)
+], ProductComment.prototype, "pictures", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)

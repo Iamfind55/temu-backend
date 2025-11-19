@@ -2,23 +2,39 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.productSchema = void 0;
 exports.productSchema = `
+  type ProductTag {
+    id: ID
+    text_rich: [String]
+    local_title: String
+    content: String
+    prompt_tag_text: String
+    footer_text: String
+    header_text: String
+  }
   type Product {
     id: ID
     name: String
     description: String
     images: [String]
+    origin_image_url: String
     cover_image: String
     price: Float
+    market_price:Float
+    price_str: String
+    currency: String
+    show_price: String
     discount: Float
     discount_end: Date
     quantity: Int
     sku: String
     spu: String
-    total_star: Int
+    total_star: Float
     total_comment: Int
+    star_store: String
     category_ids: [String]
     categories: [Category]
     categoryData: Category
+    productTag: [ProductTag]
     brandData: Branding
     brand_id: String
     status: BaseStatus
@@ -26,7 +42,7 @@ exports.productSchema = `
     recommended: Boolean
     product_top: Int
     product_vip: Int
-    sell_count: Int
+    sell_count: String
     created_by: String
     created_at: DateTime
     updated_at: DateTime 
@@ -42,7 +58,7 @@ exports.productSchema = `
     quantity: Int
     sku: String
     spu: String
-    total_star: Int
+    total_star: Float
     total_comment: Int
     category_id: String
     brand_id: String
@@ -64,7 +80,7 @@ exports.productSchema = `
     quantity: Int
     sku: String
     spu: String
-    total_star: Int
+    total_star: Float
     total_comment: Int
     category_id: String
     brand_id: String
@@ -134,6 +150,37 @@ exports.productSchema = `
     error: Error
   } 
 
+  type TemuProductDataResponse {
+    success: Boolean!
+    source: String
+    data: JSON
+    product: JSON
+    reviews: JSON
+    categories: JSON
+    activityInfo: JSON
+    productInfo: JSON
+    completeData: JSON
+    headersData: JSON
+    reviewStore:JSON
+    cartScene:JSON
+    deliveryTag:JSON
+    error: Error
+  }
+
+  type TemuAPIResponse {
+    success: Boolean!
+    data: JSON
+    status: Int
+    error: Error
+  }
+
+  type FetchAllReviewsResponse {
+    success: Boolean!
+    totalProducts: Int!
+    totalReviewsFetched: Int!
+    errors: [String!]!
+  }
+
   type Query {
     getProducts(where: ProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessProductResponseMany!
     adminGetProducts(where: ProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessProductResponseMany!
@@ -141,6 +188,41 @@ exports.productSchema = `
     getSimilarProducts(where: SimilarProductWhereInput, limit: Int): SuccessProductResponseMany!
     searchProducts(where: SearchProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessSearchProductResponseMany!
     getProduct(id: ID!): SuccessProductResponseOne!
+    getTemuProductData(productUrl: String!): TemuProductDataResponse!
+    getTemuReviews(
+      goodsId: String!
+      page: Int
+      size: Int
+      cookies: String
+      antiContent: String
+      verifyAuthToken: String
+      xPhanData: String
+      referer: String
+    ): TemuAPIResponse!
+    callTemuAPI(
+      endpoint: String!
+      method: String
+      queryParams: String
+      body: String
+      cookies: String
+      antiContent: String
+      verifyAuthToken: String
+      xPhanData: String
+      referer: String
+    ): TemuAPIResponse!
+    getTemuReviewsAuto(
+      productUrl: String!
+      goodsId: String!
+    ): TemuAPIResponse!
+    fetchAllProductReviews(
+      page: Int
+      limit: Int
+      cookies: String
+      antiContent: String
+      verifyAuthToken: String
+      xPhanData: String
+      referer: String
+    ): FetchAllReviewsResponse!
   }
 
   type Mutation {

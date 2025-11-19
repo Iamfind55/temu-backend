@@ -17,6 +17,7 @@ const typeorm_1 = require("typeorm");
 const entity_1 = require("../entity");
 const baseType_1 = require("../../../utils/base/baseType");
 const auth_middleware_1 = require("../../../middlewares/auth.middleware");
+const customer_1 = require("../../customer");
 class ProductCommentService {
     static createProductComment(_a) {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
@@ -84,27 +85,81 @@ class ProductCommentService {
             }
         });
     }
+    // static async getProductComments({
+    //   where,
+    //   page,
+    //   limit,
+    //   sortedBy,
+    // }: {
+    //   where: Partial<ProductCommentWhereInput>;
+    //   page: number;
+    //   limit: number;
+    //   sortedBy: BaseOrderByInput;
+    // }): Promise<Response<ProductComment[] | null>> {
+    //   const productCommentgRepository = getRepository(ProductComment);
+    //   try {
+    //     const order = this.order(sortedBy);
+    //     const queryBuilder = productCommentgRepository
+    //       .createQueryBuilder("productComment")
+    //       .where({ is_active: true });
+    //     if (where?.comment) {
+    //       queryBuilder.andWhere(
+    //         new Brackets((qb) => {
+    //           qb.where("productComment.comment ILIKE :comment", {
+    //             comment: `%${where.comment}%`,
+    //           });
+    //         })
+    //       );
+    //     }
+    //     if (
+    //       where?.createdAtBetween?.startDate &&
+    //       where?.createdAtBetween?.endDate
+    //     ) {
+    //       queryBuilder.andWhere(
+    //         "DATE(productComment.created_at) BETWEEN :startDate AND :endDate",
+    //         {
+    //           startDate: where.createdAtBetween.startDate,
+    //           endDate: where?.createdAtBetween?.endDate,
+    //         }
+    //       );
+    //     }
+    //     // Pagination and sorting
+    //     queryBuilder
+    //       .skip((page - 1) * limit)
+    //       .take(limit)
+    //       .orderBy(order as any);
+    //     const [productComments, total] = await queryBuilder.getManyAndCount();
+    //     return handleSuccessWithTotalData(productComments, total);
+    //   } catch (error: any) {
+    //     return handleError(
+    //       config.message.internal_server_error,
+    //       500,
+    //       error.message
+    //     );
+    //   }
+    // }
     static getProductComments(_a) {
         return __awaiter(this, arguments, void 0, function* ({ where, page, limit, sortedBy, }) {
-            var _b, _c, _d;
-            const productCommentgRepository = (0, typeorm_1.getRepository)(entity_1.ProductComment);
+            var _b, _c;
+            const productCommentRepository = (0, typeorm_1.getRepository)(entity_1.ProductComment);
+            const customerRepository = (0, typeorm_1.getRepository)(customer_1.Customer);
             try {
                 const order = this.order(sortedBy);
-                const queryBuilder = productCommentgRepository
-                    .createQueryBuilder("productComment")
-                    .where({ is_active: true });
+                const queryBuilder = productCommentRepository
+                    .createQueryBuilder("pc")
+                    .where("pc.status = :active", { active: baseType_1.BaseStatus.ACTIVE });
+                // Filter by comment text
                 if (where === null || where === void 0 ? void 0 : where.comment) {
-                    queryBuilder.andWhere(new typeorm_1.Brackets((qb) => {
-                        qb.where("productComment.comment ILIKE :comment", {
-                            comment: `%${where.comment}%`,
-                        });
-                    }));
+                    queryBuilder.andWhere("pc.comment ILIKE :comment", {
+                        comment: `%${where.comment}%`,
+                    });
                 }
+                // Filter by date range
                 if (((_b = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _b === void 0 ? void 0 : _b.startDate) &&
                     ((_c = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _c === void 0 ? void 0 : _c.endDate)) {
-                    queryBuilder.andWhere("DATE(productComment.created_at) BETWEEN :startDate AND :endDate", {
+                    queryBuilder.andWhere("DATE(pc.created_at) BETWEEN :startDate AND :endDate", {
                         startDate: where.createdAtBetween.startDate,
-                        endDate: (_d = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _d === void 0 ? void 0 : _d.endDate,
+                        endDate: where.createdAtBetween.endDate,
                     });
                 }
                 // Pagination and sorting
@@ -112,8 +167,15 @@ class ProductCommentService {
                     .skip((page - 1) * limit)
                     .take(limit)
                     .orderBy(order);
-                const [productComments, total] = yield queryBuilder.getManyAndCount();
-                return (0, success_handler_1.handleSuccessWithTotalData)(productComments, total);
+                // Execute query
+                const [comments, total] = yield queryBuilder.getManyAndCount();
+                // Manual join: fetch customers by customer_id
+                const customerIds = comments.map((c) => c.customer_id);
+                const customers = yield customerRepository.findByIds(customerIds);
+                // Attach customer data to each comment
+                const commentsWithCustomer = comments.map((comment) => (Object.assign(Object.assign({}, comment), { customer: customers.find((c) => c.id === comment.customer_id) })));
+                console.log(commentsWithCustomer);
+                return (0, success_handler_1.handleSuccessWithTotalData)(commentsWithCustomer, total);
             }
             catch (error) {
                 return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
