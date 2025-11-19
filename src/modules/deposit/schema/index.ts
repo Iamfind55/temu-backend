@@ -33,6 +33,7 @@ export const depositSchema = `
     draff
     completed
     deleted
+    rejected
   }
 
   enum EUserType {

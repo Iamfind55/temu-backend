@@ -32,6 +32,25 @@ export const withdrawSchema = `
     note: String
   }
 
+  enum ECoinType {
+    ERC20
+    TRC20
+    BTC
+  }
+
+  enum EDeposit {
+    pending
+    draff
+    completed
+    deleted
+    rejected
+  }
+
+  enum EUserType {
+    STAFF
+    CUSTOMER
+    SHOP
+  }
   input ApproveWithdrawInput {
     id: ID!
   }
