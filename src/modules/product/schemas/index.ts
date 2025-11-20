@@ -182,7 +182,7 @@ export const productSchema = `
     getProducts(where: ProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessProductResponseMany!
     adminGetProducts(where: ProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessProductResponseMany!
     getBestSellingProducts(where: ProductBestSellingWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessProductResponseMany!
-    getSimilarProducts(where: SimilarProductWhereInput, limit: Int): SuccessProductResponseMany!
+    getSimilarProducts(where: SimilarProductWhereInput, limit: Int,page: Int,sortedBy: BaseOrderByInput): SuccessProductResponseMany!
     searchProducts(where: SearchProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessSearchProductResponseMany!
     getProduct(id: ID!): SuccessProductResponseOne!
     getTemuProductData(productUrl: String!): TemuProductDataResponse!
