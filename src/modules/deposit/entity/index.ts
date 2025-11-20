@@ -70,10 +70,4 @@ export class Deposit extends BaseEntity {
     })
     @JoinColumn({ name: "transaction_id" })
     transaction?: TransactionHistory;
-
-    @OneToOne(() => Wallet, wallet => wallet.deposit, {
-        nullable: true,
-    })
-    @JoinColumn({ name: "wallet_id" })
-    wallet?: Wallet;
 }

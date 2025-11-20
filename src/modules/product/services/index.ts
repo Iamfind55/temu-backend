@@ -23,6 +23,7 @@ import {
 } from "../types";
 import * as cheerio from "cheerio";
 import puppeteer from "puppeteer";
+import { ProductTag } from "../../productTag";
 
 export class ProductService {
   // User only clone data from dhlshopping api
@@ -23254,12 +23255,12 @@ export class ProductService {
             banner?.position == "top"
               ? "2"
               : banner?.position == "center"
-              ? "3"
-              : banner?.position == "center_top"
-              ? "4"
-              : banner?.position == "bottom"
-              ? "5"
-              : "1",
+                ? "3"
+                : banner?.position == "center_top"
+                  ? "4"
+                  : banner?.position == "bottom"
+                    ? "5"
+                    : "1",
         };
         await BannerService.createBanner({ data, req });
         count++;
@@ -23786,57 +23787,81 @@ export class ProductService {
     );
     return this.executeQuery(queryBuilder, info);
   }
+  // static async getSimilarProducts(
+  //   {
+  //     req,
+  //     where,
+  //     page,
+  //     limit,
+  //   }: {
+  //     req: Request;
+  //     where: Partial<SimilarProductWhereInput>;
+  //     page: number;
+  //     limit: number;
+  //   },
+  //   info: GraphQLResolveInfo
+  // ) {
+  //   const productRepository = getRepository(Product);
 
-  static async getSimilarProducts(
-    {
-      req,
-      where,
-      page,
-      limit,
-    }: {
-      req: Request;
-      where: Partial<SimilarProductWhereInput>;
-      page: number;
-      limit: number;
-    },
-    info: GraphQLResolveInfo
-  ) {
-    const productRepository = getRepository(Product);
+  //   // Create simple query without DISTINCT for random ordering
+  //   const queryBuilder = productRepository
+  //     .createQueryBuilder("product")
+  //     .where("product.is_active = :is_active", { is_active: true })
+  //     .andWhere("product.status = :status", { status: "ACTIVE" });
 
-    const queryBuilder = await this.buildBaseQuery(
-      { req, where, page, limit, sortedBy: BaseOrderByInput.created_at_DESC },
-      info
-    );
+  //   // Add joins based on GraphQL selections
+  //   const fields = getRequestedFields(info, "getSimilarProducts.data");
+  //   if (fields.includes("categoryData")) {
+  //     queryBuilder.leftJoinAndSelect("product.categoryData", "categoryData");
+  //   }
+  //   if (fields.includes("brandData")) {
+  //     queryBuilder.leftJoinAndSelect("product.brandData", "brandData");
+  //   }
+  //   if (fields.includes("productTag")) {
+  //     queryBuilder.leftJoinAndSelect("product.productTag", "productTag");
+  //   }
 
-    if (where?.product_id) {
-      const product = await productRepository.findOne({
-        where: { id: where.product_id },
-        select: ["category_id", "brand_id"],
-      });
+  //   if (where?.product_id) {
+  //     // Use createQueryBuilder to avoid DISTINCT issues
+  //     const product = await productRepository
+  //       .createQueryBuilder("product")
+  //       .select(["product.category_id", "product.brand_id"])
+  //       .where("product.id = :id", { id: where.product_id })
+  //       .getOne();
 
-      if (product) {
-        queryBuilder.andWhere(
-          new Brackets((qb) => {
-            if (product.category_id) {
-              qb.where("product.category_id = :category_id", {
-                category_id: product.category_id,
-              });
-            }
+  //     if (product) {
+  //       // Exclude the original product
+  //       queryBuilder.andWhere("product.id != :product_id", {
+  //         product_id: where.product_id,
+  //       });
 
-            if (product.brand_id) {
-              qb.orWhere("product.brand_id = :brand_id", {
-                brand_id: product.brand_id,
-              });
-            }
-          })
-        );
-      }
-    }
+  //       // Same category OR same brand
+  //       queryBuilder.andWhere(
+  //         new Brackets((qb) => {
+  //           if (product.category_id) {
+  //             qb.where("product.category_id = :category_id", {
+  //               category_id: product.category_id,
+  //             });
+  //           }
 
-    // random result
-    // queryBuilder.addOrderBy("RANDOM()").take(limit);
-    return this.executeQuery(queryBuilder, info);
-  }
+  //           if (product.brand_id) {
+  //             qb.orWhere("product.brand_id = :brand_id", {
+  //               brand_id: product.brand_id,
+  //             });
+  //           }
+  //         })
+  //       );
+  //     }
+  //   }
+
+  //   // Randomize results and limit
+  //   queryBuilder.orderBy("RANDOM()").take(limit || 10);
+
+  //   const products = await queryBuilder.getMany();
+  //   const total = products.length;
+
+  //   return handleSuccessWithTotalData(products, total);
+  // }
 
   // static async getSimilarProducts(
   //   {
@@ -23879,6 +23904,131 @@ export class ProductService {
   //   return this.executeQuery(queryBuilder, info);
   // }
 
+
+  static async getSimilarProducts(
+    {
+      req,
+      where,
+      page = 1,
+      limit = 10,
+    }: {
+      req: Request;
+      where: Partial<SimilarProductWhereInput>;
+      page: number;
+      limit: number;
+    },
+    info: GraphQLResolveInfo
+  ) {
+    const productRepository = getRepository(Product);
+    const productTagRepository = getRepository(ProductTag);
+    const brandingRepository = getRepository(Branding);
+
+    try {
+      if (!where?.product_id) {
+        return handleSuccessWithTotalData([], 0);
+      }
+
+      // Get reference product
+      const product = await productRepository
+        .createQueryBuilder("product")
+        .select(["product.category_id", "product.brand_id"])
+        .where("product.id = :id", { id: where.product_id })
+        .getOne();
+
+      if (!product || (!product.category_id && !product.brand_id)) {
+        return handleSuccessWithTotalData([], 0);
+      }
+
+      // Build count query first
+      const countQueryBuilder = productRepository
+        .createQueryBuilder("product")
+        .where("product.is_active = :is_active", { is_active: true })
+        .andWhere("product.status = :status", { status: "ACTIVE" })
+        .andWhere("product.id != :product_id", { product_id: where.product_id });
+
+      // Same category OR same brand
+      countQueryBuilder.andWhere(
+        new Brackets((qb) => {
+          if (product.category_id) {
+            qb.where("product.category_id = :category_id", {
+              category_id: product.category_id,
+            });
+          }
+          if (product.brand_id) {
+            qb.orWhere("product.brand_id = :brand_id", {
+              brand_id: product.brand_id,
+            });
+          }
+        })
+      );
+
+      // Get total count
+      const total = await countQueryBuilder.getCount();
+
+      // Build query for products WITHOUT joins to avoid DISTINCT
+      const queryBuilder = productRepository
+        .createQueryBuilder("product")
+        .where("product.is_active = :is_active", { is_active: true })
+        .andWhere("product.status = :status", { status: "ACTIVE" })
+        .andWhere("product.id != :product_id", { product_id: where.product_id });
+
+      // Same category OR same brand
+      queryBuilder.andWhere(
+        new Brackets((qb) => {
+          if (product.category_id) {
+            qb.where("product.category_id = :category_id", {
+              category_id: product.category_id,
+            });
+          }
+          if (product.brand_id) {
+            qb.orWhere("product.brand_id = :brand_id", {
+              brand_id: product.brand_id,
+            });
+          }
+        })
+      );
+
+      // Pagination
+      const skip = (page - 1) * limit;
+      queryBuilder.skip(skip).take(limit);
+
+      // Random order
+      queryBuilder.orderBy("RANDOM()");
+
+      // Execute query
+      const products = await queryBuilder.getMany();
+
+      // Manually fetch productTag and brandData for each product
+      for (const prod of products) {
+        // Fetch productTag
+        prod.productTag = await productTagRepository
+          .createQueryBuilder("productTag")
+          .where("productTag.product_id = :product_id", { product_id: prod.id })
+          .andWhere("productTag.is_active = :is_active", { is_active: true })
+          .getMany();
+
+        // Fetch brandData
+        if (prod.brand_id) {
+          prod.brandData = await brandingRepository
+            .createQueryBuilder("branding")
+            .where("branding.id = :id", { id: prod.brand_id })
+            .andWhere("branding.is_active = :is_active", { is_active: true })
+            .getOne() || undefined;
+        }
+      }
+
+      return handleSuccessWithTotalData(products, total);
+    } catch (error: any) {
+      console.error("getSimilarProducts error:", error);
+      return handleError(
+        config.message.internal_server_error,
+        500,
+        error.message
+      );
+    }
+  }
+
+
   static async searchProducts({
     where,
     page,
@@ -23919,9 +24069,14 @@ export class ProductService {
       const productRepository = getRepository(Product);
       const categoryRepository = getRepository(Category);
 
-      const product = await productRepository.findOne({
-        where: { id, is_active: true },
-      });
+      const product = await productRepository
+        .createQueryBuilder("product")
+        .leftJoinAndSelect("product.productTag", "productTag")
+        .leftJoinAndSelect("product.brandData", "brandData")
+        .where("product.id = :id", { id })
+        .andWhere("product.is_active = :is_active", { is_active: true })
+        .getOne();
+
       if (!product) return handleError("Product not found", 404, null);
 
       if (product?.category_ids?.length) {
@@ -24230,7 +24385,7 @@ export class ProductService {
             { shopId: shopDataFromToken.id }
           );
         }
-      } catch (error) {}
+      } catch (error) { }
     }
 
     // Keyword search
@@ -24245,6 +24400,7 @@ export class ProductService {
         })
       );
     }
+
 
     // Filters
     if (where?.status)

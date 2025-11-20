@@ -47,11 +47,6 @@ export class Wallet extends BaseEntity {
   @JoinColumn({ name: "customer_id" })
   customer?: Customer;
 
-  @OneToOne(() => Deposit, deposit => deposit.wallet, {
-    nullable: true,
-  })
-  deposit?: Deposit;
-
   @OneToOne(() => Withdraw, deposit => deposit.wallet, {
     nullable: true,
   })

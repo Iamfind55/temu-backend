@@ -23,6 +23,7 @@ export interface ProductModel extends BaseType {
 }
 
 export interface ProductWhereInput {
+  product_id?: string;
   keyword: string;
   category_id: string;
   category_ids: [string];
