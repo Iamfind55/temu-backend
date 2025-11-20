@@ -406,7 +406,7 @@ export class TransactionHistoryService {
               where: {
                 id: id,
                 is_active: true,
-                transaction_status: ETransactionStatus.PENDING,
+                status: ETransactionStatus.PENDING,
                 // identifier: ETransactionHistoryIdentifier.RECHARGE,
               } as any,
             }
@@ -465,6 +465,8 @@ export class TransactionHistoryService {
 
       return result;
     } catch (error: any) {
+      console.log(error);
+
       return handleError(
         config.message.internal_server_error,
         500,
@@ -498,7 +500,7 @@ export class TransactionHistoryService {
               where: {
                 id: id,
                 is_active: true,
-                transaction_status: ETransactionStatus.PENDING,
+                status: ETransactionStatus.PENDING,
                 identifier: ETransactionHistoryIdentifier.WITHDRAW,
               } as any,
             }
@@ -575,7 +577,7 @@ export class TransactionHistoryService {
               where: {
                 id: id,
                 is_active: true,
-                transaction_status: ETransactionStatus.PENDING,
+                status: ETransactionStatus.PENDING,
               } as any,
             }
           );
@@ -621,7 +623,7 @@ export class TransactionHistoryService {
         transactionHistoryRepository.createQueryBuilder("transactionHistory");
 
       queryBuilder.where(
-        "transactionHistory.transaction_status = :transactionHistory",
+        "transactionHistory.status = :transactionHistory",
         {
           transactionHistory: ETransactionStatus.PENDING,
         }

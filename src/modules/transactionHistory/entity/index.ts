@@ -43,12 +43,19 @@ export class TransactionHistory extends BaseEntity {
   @Column({ nullable: true })
   approved_by!: string;
 
-  @Column({
+   @Column({
     type: "enum",
     enum: ETransactionStatus,
     default: ETransactionStatus.PENDING,
   })
   status!: ETransactionStatus;
+
+  // @Column({
+  //   type: "enum",
+  //   enum: ETransactionStatus,
+  //   default: ETransactionStatus.PENDING,
+  // })
+  // transaction_status!: ETransactionStatus;
 
   @ManyToOne(() => Customer, (customer) => customer.transaction_histories, {
     nullable: true,
