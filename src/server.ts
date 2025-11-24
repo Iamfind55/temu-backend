@@ -23,7 +23,7 @@ import { TransactionHistory } from "./modules/transactionHistory";
 import { Wallet } from "./modules/wallet";
 import { typeDefs } from "./schema";
 import { connectDB } from "./utils/db";
-import { getTemuProductData } from "./utils/fetchProduct";
+import { getTemuProductData, productReview } from "./utils/fetchProduct";
 import pubsub from "./utils/pubsub";
 import { fetchProductByCategory } from "./modules/product/utils/fetchProduct";
 
@@ -110,7 +110,7 @@ const startApp = async () => {
   // ProductService.uploadCategoryToStorage();
   // ProductService.fetchTemuProduct()
   // fetchProducts()
-  // fetchProductByCategory();
+  fetchProductByCategory();
   // productReview();
   // getTemuProductData();
   const clearAllData = async () => {

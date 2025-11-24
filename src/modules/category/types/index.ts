@@ -9,6 +9,7 @@ export interface CategoryModel extends BaseType {
   image: string;
   oring_image_url:string
   status: BaseStatus;
+  parent_id?: string;
   attributes?: string[];
 }
 

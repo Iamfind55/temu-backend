@@ -20,6 +20,42 @@ export const categoryQuery = {
     context: any,
     info: GraphQLResolveInfo
   ) => CategoryService.getCategories({ where, page, limit, sortedBy }, info),
+
+  getMainCategories: async (
+    _: any,
+    {
+      where,
+      page = 1,
+      limit = 10,
+      sortedBy = BaseOrderByInput.created_at_DESC,
+    }: {
+      where: CategoryWhereInput;
+      page: number;
+      limit: number;
+      sortedBy: BaseOrderByInput;
+    },
+    context: any,
+    info: GraphQLResolveInfo
+  ) => CategoryService.getMainCategories({ where, page, limit, sortedBy }, info),
+
+  getSubcategories: async (
+    _: any,
+    {
+      where,
+      page = 1,
+      limit = 10,
+      sortedBy = BaseOrderByInput.created_at_DESC,
+    }: {
+      where: CategoryWhereInput;
+      page: number;
+      limit: number;
+      sortedBy: BaseOrderByInput;
+    },
+    context: any,
+    info: GraphQLResolveInfo
+  ) => CategoryService.getSubCategories({ where, page, limit, sortedBy }, info),
+
+
   adminGetCategories: async (
     _: any,
     {

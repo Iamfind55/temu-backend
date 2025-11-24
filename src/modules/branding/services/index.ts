@@ -1,4 +1,3 @@
-import { Request } from "express";
 import { Brackets, getRepository } from "typeorm";
 import { config } from "../../../config";
 import { AuthMiddlewareService } from "../../../middlewares/auth.middleware";
@@ -11,6 +10,7 @@ import {
 } from "../../../utils/response/success.handler";
 import { Branding } from "../entity";
 import { BrandingModel, BrandingWhereInput } from "../types";
+import { Request } from "express";
 
 export class BrandingService {
   static async createBranding({
@@ -74,11 +74,14 @@ export class BrandingService {
     req: Request;
   }): Promise<Response<Branding | null>> {
     const brandingRepository = getRepository(Branding);
+    console.log(req.headers);
 
     try {
       const staffDataFromToken = new AuthMiddlewareService().verifyStaffToken(
         req
       );
+      console.log(staffDataFromToken);
+
 
       if (!staffDataFromToken)
         return handleError(config.message.invalid_token, 404, null);

@@ -24016,7 +24016,6 @@ export class ProductService {
             .getOne() || undefined;
         }
       }
-
       return handleSuccessWithTotalData(products, total);
     } catch (error: any) {
       console.error("getSimilarProducts error:", error);
@@ -24428,7 +24427,6 @@ export class ProductService {
       }
 
       const categoryIds = [where.category_id, ...level1Ids, ...level2Ids];
-
       queryBuilder.andWhere("product.category_id IN (:...category_ids)", {
         category_ids: categoryIds,
       });
@@ -24483,6 +24481,8 @@ export class ProductService {
       const fromDate = new Date();
       fromDate.setDate(fromDate.getDate() - days);
       queryBuilder.andWhere("product.created_at >= :fromDate", { fromDate });
+      queryBuilder.addSelect("RANDOM()", "rand_order");
+      queryBuilder.orderBy("rand_order");
     }
 
     // Randomized queries for offers or top-rated
