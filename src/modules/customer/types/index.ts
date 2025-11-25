@@ -13,7 +13,7 @@ export interface CustomerModel extends BaseType {
   image: string;
   customer_address: string;
   status: BaseStatus;
-  payment_method: [PaymentMethod];
+  payment_method: PaymentMethod;
 }
 export interface RegisterCustomerInput extends BaseType {
   email: string;

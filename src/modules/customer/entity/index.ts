@@ -70,26 +70,16 @@ export class Customer extends BaseEntity {
   @Column({
     type: "json",
     nullable: true,
-    default: [
-      {
-        id: uuidv4(),
-        code: "USDT",
-        bank_name: "",
-        bank_account_name: "",
-        bank_account_number: "",
-        is_enable: true,
-      },
-      {
-        id: uuidv4(),
-        code: "BANK",
-        bank_name: "",
-        bank_account_name: "",
-        bank_account_number: "",
-        is_enable: true,
-      },
-    ],
+    default: {
+      id: uuidv4(),
+      code: "USDT",
+      bank_name: "",
+      bank_account_name: "",
+      bank_account_number: "",
+      is_enable: true,
+    },
   })
-  payment_method?: [PaymentMethod];
+  payment_method?: PaymentMethod;
 
   @OneToMany(() => Order, (order) => order.customerData) // Define OneToMany relationship
   orders?: Order[]; // Correct type is ShopProduct[], not Product[]

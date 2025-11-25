@@ -21,7 +21,7 @@ export interface OrderModel extends BaseType {
   payment_status: PaymentStatus;
   delivery_type: EDeliveryType;
   order_details: [OrderDetailModel];
-  logistics_id: string
+  // logistics_id: string
 }
 
 export interface OrderWhereInput {

@@ -428,8 +428,8 @@ export class CustomerService {
       }
 
       // Handle payment method updates
-      if (data.payment_method && Array.isArray(data.payment_method)) {
-        // Assign the updated payment methods back to the shop entity
+      if (data.payment_method && typeof data.payment_method === 'object') {
+        // Merge the updated payment method with existing payment method
         const updatePaymentMethodData = this.updateCustomerMethodMapingData(
           data as any,
           shop
@@ -453,22 +453,24 @@ export class CustomerService {
   }
 
   static updateCustomerMethodMapingData(data: Customer, shop: Customer) {
-    const existingPaymentMethods: PaymentMethod[] = shop.payment_method || [];
-    const updatedPaymentMethods: PaymentMethod[] = data?.payment_method || [];
+    const existingPaymentMethod: PaymentMethod | undefined = shop.payment_method;
+    const updatedPaymentMethod: PaymentMethod | undefined = data?.payment_method;
 
-    // Update existing methods or add new ones
-    const updatePaymentMethodData = existingPaymentMethods.map((method) => {
-      const existPaymentMethodUpdate = updatedPaymentMethods.find(
-        (paymentMethod) =>
-          paymentMethod?.id === method?.id && paymentMethod?.id != null
-      );
+    // If no updated payment method is provided, return the existing one
+    if (!updatedPaymentMethod) {
+      return existingPaymentMethod;
+    }
 
-      if (existPaymentMethodUpdate) {
-        return { ...method, ...existPaymentMethodUpdate };
-      }
+    // If there's no existing payment method, return the updated one
+    if (!existingPaymentMethod) {
+      return updatedPaymentMethod;
+    }
 
-      return method;
-    });
+    // Merge existing and updated payment method
+    const updatePaymentMethodData = {
+      ...existingPaymentMethod,
+      ...updatedPaymentMethod,
+    };
 
     return updatePaymentMethodData;
   }

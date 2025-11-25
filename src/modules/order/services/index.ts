@@ -33,6 +33,37 @@ import { Logistics } from "../../logistics";
 export class OrderService {
   static counter: number = 0;
 
+  // Helper method to parse sell_count strings like "3.8K+", "1.2M+", "500", etc.
+  static parseSellCount(sellCount: string | number | null | undefined): number {
+    if (!sellCount) return 0;
+
+    // Convert to string and remove spaces, convert to uppercase
+    const cleanValue = sellCount.toString().trim().toUpperCase();
+
+    // Remove "+" if present
+    const withoutPlus = cleanValue.replace("+", "");
+
+    // Check if it's a simple number
+    if (!isNaN(Number(withoutPlus))) {
+      return Math.floor(Number(withoutPlus));
+    }
+
+    // Parse K (thousands)
+    if (withoutPlus.includes("K")) {
+      const num = parseFloat(withoutPlus.replace("K", ""));
+      return Math.floor(num * 1000);
+    }
+
+    // Parse M (millions)
+    if (withoutPlus.includes("M")) {
+      const num = parseFloat(withoutPlus.replace("M", ""));
+      return Math.floor(num * 1000000);
+    }
+
+    // If we can't parse it, return 0
+    return 0;
+  }
+
   static async countNewOrder({
     req,
     order_status,
@@ -107,6 +138,7 @@ export class OrderService {
         data,
         isAdmin: false,
       });
+      console.log(orders);
 
       return handleSuccess(orders);
     } catch (error: any) {
@@ -384,64 +416,99 @@ export class OrderService {
               address_id: data.address_id,
               payment_slip: data.payment_slip,
               delivery_type: data.delivery_type,
-              logistics_id: data.logistics_id,
+              // logistics_id: data.logistics_id,
               order_status:
                 !isAdmin &&
-                existingCustomerWallet.total_balance < totalOrderPrice
+                  existingCustomerWallet.total_balance < totalOrderPrice
                   ? OrderStatus.FAILED
                   : OrderStatus.NO_PICKUP,
               payment_status:
                 !isAdmin &&
-                existingCustomerWallet.total_balance < totalOrderPrice
+                  existingCustomerWallet.total_balance < totalOrderPrice
                   ? PaymentStatus.FAILED
                   : PaymentStatus.COMPLETED,
             } as any);
-            console.log(data.logistics_id);
+            // console.log(data.logistics_id);
             console.log(newOrder);
 
             const savedOrder: any = await orderRepository.save(newOrder);
             const savedOrderDetails = await Promise.all(
               orderData.order_details.map(async (detail: any) => {
                 if (shop_id === "system") {
+                  // Get current product sell_count
+                  const product = await entityManager.findOne(Product, {
+                    where: { id: detail.product_id },
+                    select: ["id", "sell_count"],
+                  });
+
+                  const currentSellCount = this.parseSellCount(
+                    product?.sell_count || "0"
+                  );
+                  const newSellCount = currentSellCount + detail.quantity;
+
                   await entityManager
                     .createQueryBuilder()
                     .update(Product)
                     .set({
                       quantity: () => "quantity - :quantity",
-                      sell_count: () => "sell_count + :sell_count",
+                      sell_count: newSellCount.toString(),
                     })
                     .where("id = :id", {
                       id: detail.product_id,
                       quantity: detail.quantity,
-                      sell_count: detail.quantity,
                     })
                     .execute();
                 } else {
+                  // Update ShopProduct sell_count
+                  const shopProduct = await entityManager.findOne(ShopProduct, {
+                    where: {
+                      product_id: detail.product_id,
+                      shop_id: shop_id,
+                    },
+                    select: ["id", "sell_count"],
+                  });
+
+                  const currentShopSellCount = this.parseSellCount(
+                    shopProduct?.sell_count || "0"
+                  );
+                  const newShopSellCount =
+                    currentShopSellCount + detail.quantity;
+
                   await entityManager
                     .createQueryBuilder()
                     .update(ShopProduct)
                     .set({
                       quantity: () => "quantity - :quantity",
-                      sell_count: () => "sell_count + :sell_count",
+                      sell_count: newShopSellCount.toString(),
                     })
                     .where("product_id = :product_id AND shop_id = :shopId", {
                       product_id: detail.product_id,
                       shopId: shop_id,
                       quantity: detail.quantity,
-                      sell_count: detail.quantity,
                     })
                     .execute();
+
+                  // Update Product sell_count
+                  const product = await entityManager.findOne(Product, {
+                    where: { id: detail.product_id },
+                    select: ["id", "sell_count"],
+                  });
+
+                  const currentSellCount = this.parseSellCount(
+                    product?.sell_count || "0"
+                  );
+                  const newSellCount = currentSellCount + detail.quantity;
+
                   await entityManager
                     .createQueryBuilder()
                     .update(Product)
                     .set({
                       quantity: () => "quantity - :quantity",
-                      sell_count: () => "sell_count + :sell_count",
+                      sell_count: newSellCount.toString(),
                     })
                     .where("id = :id", {
                       id: detail.product_id,
                       quantity: detail.quantity,
-                      sell_count: detail.quantity,
                     })
                     .execute();
                 }
@@ -456,12 +523,12 @@ export class OrderService {
                   delivery_type: data.delivery_type,
                   order_status:
                     !isAdmin &&
-                    existingCustomerWallet.total_balance < totalOrderPrice
+                      existingCustomerWallet.total_balance < totalOrderPrice
                       ? OrderStatus.FAILED
                       : OrderStatus.NO_PICKUP,
                   payment_status:
                     !isAdmin &&
-                    existingCustomerWallet.total_balance < totalOrderPrice
+                      existingCustomerWallet.total_balance < totalOrderPrice
                       ? PaymentStatus.FAILED
                       : PaymentStatus.COMPLETED,
                 } as any);
@@ -503,9 +570,8 @@ export class OrderService {
 
               const _data = {
                 title: "New Order Received!",
-                description: `${customerData?.firstName} ${
-                  customerData?.lastName || ""
-                } has placed a new order from your shop. Please review and fulfill it promptly.`,
+                description: `${customerData?.firstName} ${customerData?.lastName || ""
+                  } has placed a new order from your shop. Please review and fulfill it promptly.`,
                 shop_id: order.shop_id,
                 reference_id: order.id,
                 data: details,
@@ -832,46 +898,80 @@ export class OrderService {
         const updatedOrderDetails = await Promise.all(
           orderDetails.map(async (orderDetail) => {
             if (!orderDetail.shop_id) {
-              await entityManager
-                .createQueryBuilder()
-                .update(Product)
-                .set({
-                  quantity: () => "quantity - :quantity",
-                  sell_count: () => "sell_count + :sell_count",
-                })
-                .where("id = :id", {
-                  id: orderDetail.product_id,
-                  quantity: orderDetail.quantity,
-                  sell_count: orderDetail.quantity,
-                })
-                .execute();
-            } else {
-              await entityManager
-                .createQueryBuilder()
-                .update(ShopProduct)
-                .set({
-                  quantity: () => "quantity - :quantity",
-                  sell_count: () => "sell_count + :sell_count",
-                })
-                .where("product_id = :product_id AND shop_id = :shopId", {
-                  product_id: orderDetail.product_id,
-                  shopId: orderDetail.shop_id,
-                  quantity: orderDetail.quantity,
-                  sell_count: orderDetail.quantity,
-                })
-                .execute();
+              // Get current product sell_count
+              const product = await entityManager.findOne(Product, {
+                where: { id: orderDetail.product_id },
+                select: ["id", "sell_count"],
+              });
+
+              const currentSellCount = this.parseSellCount(
+                product?.sell_count || 0
+              );
+              const newSellCount = currentSellCount + orderDetail.quantity;
 
               await entityManager
                 .createQueryBuilder()
                 .update(Product)
                 .set({
                   quantity: () => "quantity - :quantity",
-                  sell_count: () => "sell_count + :sell_count",
+                  sell_count: newSellCount.toString(),
                 })
                 .where("id = :id", {
                   id: orderDetail.product_id,
                   quantity: orderDetail.quantity,
-                  sell_count: orderDetail.quantity,
+                })
+                .execute();
+            } else {
+              // Update ShopProduct sell_count
+              const shopProduct = await entityManager.findOne(ShopProduct, {
+                where: {
+                  product_id: orderDetail.product_id,
+                  shop_id: orderDetail.shop_id,
+                },
+                select: ["id", "sell_count"],
+              });
+
+              const currentShopSellCount = this.parseSellCount(
+                shopProduct?.sell_count || 0
+              );
+              const newShopSellCount =
+                currentShopSellCount + orderDetail.quantity;
+
+              await entityManager
+                .createQueryBuilder()
+                .update(ShopProduct)
+                .set({
+                  quantity: () => "quantity - :quantity",
+                  sell_count: newShopSellCount.toString(),
+                })
+                .where("product_id = :product_id AND shop_id = :shopId", {
+                  product_id: orderDetail.product_id,
+                  shopId: orderDetail.shop_id,
+                  quantity: orderDetail.quantity,
+                })
+                .execute();
+
+              // Update Product sell_count
+              const product = await entityManager.findOne(Product, {
+                where: { id: orderDetail.product_id },
+                select: ["id", "sell_count"],
+              });
+
+              const currentSellCount = this.parseSellCount(
+                product?.sell_count || 0
+              );
+              const newSellCount = currentSellCount + orderDetail.quantity;
+
+              await entityManager
+                .createQueryBuilder()
+                .update(Product)
+                .set({
+                  quantity: () => "quantity - :quantity",
+                  sell_count: newSellCount.toString(),
+                })
+                .where("id = :id", {
+                  id: orderDetail.product_id,
+                  quantity: orderDetail.quantity,
                 })
                 .execute();
             }
@@ -926,9 +1026,8 @@ export class OrderService {
 
           const _data = {
             title: "New Order Received!",
-            description: `${customerData?.firstName} ${
-              customerData?.lastName || ""
-            } has placed a new order from your shop. Please review and fulfill it promptly.`,
+            description: `${customerData?.firstName} ${customerData?.lastName || ""
+              } has placed a new order from your shop. Please review and fulfill it promptly.`,
             shop_id: existOrder.shop_id,
             reference_id: existOrder.id,
             data: details,
@@ -1129,7 +1228,7 @@ export class OrderService {
               "success"
             ),
           });
-        } catch (error) {}
+        } catch (error) { }
 
         return handleSuccess({
           ...existOrder,
@@ -1344,7 +1443,7 @@ export class OrderService {
                     ...data,
                   }),
                 });
-              } catch (error) {}
+              } catch (error) { }
             }
           })
         );

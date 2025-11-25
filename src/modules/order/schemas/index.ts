@@ -70,7 +70,6 @@ export const orderSchema = `
     payment_slip: String
     address_id: ID
     delivery_type: DeliveryTypeEnum
-    logistics_id: ID
   }
 
   input AdminUpdateOrderByStatusInput {

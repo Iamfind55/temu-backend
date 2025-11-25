@@ -110,7 +110,7 @@ const startApp = async () => {
   // ProductService.uploadCategoryToStorage();
   // ProductService.fetchTemuProduct()
   // fetchProducts()
-  fetchProductByCategory();
+  // fetchProductByCategory();
   // productReview();
   // getTemuProductData();
   const clearAllData = async () => {
