@@ -1660,6 +1660,15 @@ export class OrderService {
       }
       // Add pagination and sorting
       const [orderField, orderDirection] = this.order(sortedBy);
+
+      // Ensure the order field is selected if we have custom select
+      if (selectFields?.length) {
+        const orderFieldName = orderField.replace("order.", "");
+        if (!selectFields.includes(orderFieldName)) {
+          queryBuilder.addSelect(`order.${orderFieldName}`);
+        }
+      }
+
       queryBuilder
         .skip((page - 1) * limit)
         .take(limit)
