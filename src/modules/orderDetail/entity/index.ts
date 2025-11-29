@@ -6,7 +6,6 @@ import { OrderStatus, PaymentStatus, SignInStatus } from "../../order/types";
 import { EDeliveryType } from "../../../utils/base/baseEnum";
 import { Customer } from "../../customer";
 import { Shop } from "../../shop";
-import { Order } from "../../order/entity";
 
 @Entity()
 export class OrderDetail extends BaseEntity {

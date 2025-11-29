@@ -138,8 +138,6 @@ export class OrderService {
         data,
         isAdmin: false,
       });
-      console.log(orders);
-
       return handleSuccess(orders);
     } catch (error: any) {
       console.error("Error creating order with transaction:", error);
@@ -1486,10 +1484,12 @@ export class OrderService {
 
       // Verify token based on user type
       let userDataFromToken;
-      const selectFields = getRequestedFields(info, "shopGetOrders.data");
+      let selectFields;
+
       switch (userType) {
         case "shop":
           userDataFromToken = new AuthMiddlewareService().verifyShopToken(req);
+          selectFields = getRequestedFields(info, "shopGetOrders.data");
           // Add LEFT JOIN with Product
           queryBuilder.leftJoinAndSelect("order.customerData", "customer");
           queryBuilder.leftJoinAndSelect("order.shop", "shop");
@@ -1499,6 +1499,7 @@ export class OrderService {
             const fields = selectFields
               .filter((field) => field != "customerData")
               .filter((field) => field != "shop")
+              .filter((field) => field != "order_details")
               .map((field) => `order.${field}`);
             queryBuilder.select([
               // Fields from shopProduct
@@ -1530,22 +1531,14 @@ export class OrderService {
           userDataFromToken = new AuthMiddlewareService().verifyCustomerToken(
             req
           );
+          selectFields = getRequestedFields(info, "customerGetOrders.data");
           queryBuilder.leftJoinAndSelect("order.logistics", "logistics");
 
-          // if (selectFields?.length) {
-          //   const fields = selectFields
-          //     .filter((field) => field != "customerData")
-          //     .map((field) => `order.${field}`);
-          //   queryBuilder.select([
-          //     // Order fields
-          //     ...fields,
-          //   ]);
-          //   console.log(fields);
-
-          // }
           if (selectFields?.length) {
             const fields = selectFields
               .filter((field) => field !== "customerData")
+              .filter((field) => field !== "logistics")
+              .filter((field) => field !== "order_details")
               .map((field) => `order.${field}`);
 
             queryBuilder.select([
@@ -1561,16 +1554,18 @@ export class OrderService {
           break;
         case "admin":
           userDataFromToken = new AuthMiddlewareService().verifyStaffToken(req);
+          selectFields = getRequestedFields(info, "getOrders.data");
 
-          // // Add LEFT JOIN with Product
+          // Add LEFT JOIN with Product
           queryBuilder.leftJoinAndSelect("order.customerData", "customer");
           queryBuilder.leftJoinAndSelect("order.shop", "shop");
           queryBuilder.leftJoinAndSelect("order.logistics", "logistics");
           if (selectFields?.length) {
             const fields = selectFields
-              .filter((field) => field != "customerData")
-              .filter((field) => field != "shop")
-              .map((field) => `order.${field}`);
+              .filter((field: string) => field != "customerData")
+              .filter((field: string) => field != "shop")
+              .filter((field: string) => field != "order_details")
+              .map((field: string) => `order.${field}`);
             queryBuilder.select([
               // Fields from customer
               "customer.id",
@@ -1672,6 +1667,46 @@ export class OrderService {
 
       // Execute the query
       const [orders, total] = await queryBuilder.getManyAndCount();
+
+      // Manually load order_details if requested
+      if (selectFields?.includes("order_details") && orders.length > 0) {
+        const orderDetailRepository = getRepository(OrderDetail);
+        const orderIds = orders.map((order) => order.id);
+
+        const orderDetails = await orderDetailRepository.find({
+          where: {
+            order_id: In(orderIds),
+            is_active: true,
+          },
+          select: [
+            "id",
+            "product_id",
+            "shop_id",
+            "quantity",
+            "price",
+            "discount",
+            "order_id",
+            "order_no",
+            "address_id",
+            "order_status",
+            "payment_status",
+          ],
+        });
+
+        // Group order_details by order_id
+        const orderDetailsMap = orderDetails.reduce((acc, detail) => {
+          if (!acc[detail.order_id]) {
+            acc[detail.order_id] = [];
+          }
+          acc[detail.order_id].push(detail);
+          return acc;
+        }, {} as Record<string, any[]>);
+
+        // Attach order_details to each order
+        orders.forEach((order) => {
+          (order as any).order_details = orderDetailsMap[order.id] || [];
+        });
+      }
 
       return handleSuccessWithTotalData(orders, total);
     } catch (error: any) {

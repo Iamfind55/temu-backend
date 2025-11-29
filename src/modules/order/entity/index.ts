@@ -1,4 +1,4 @@
-import { Entity, Column, ManyToOne, JoinColumn, OneToMany } from "typeorm";
+import { Entity, Column, ManyToOne, JoinColumn } from "typeorm";
 import { BaseEntity } from "../../../utils/base/baseEntity";
 import { BaseStatus } from "../../../utils/base/baseType";
 import { OrderStatus, PaymentStatus, SignInStatus } from "../types";
@@ -6,7 +6,6 @@ import { EDeliveryType } from "../../../utils/base/baseEnum";
 import { Customer } from "../../customer";
 import { Shop } from "../../shop";
 import { Logistics } from "../../logistics";
-import { OrderDetail } from "../../orderDetail";
 
 @Entity()
 export class Order extends BaseEntity {
