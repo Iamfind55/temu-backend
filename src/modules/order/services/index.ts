@@ -1128,6 +1128,7 @@ export class OrderService {
       const shopDataFromToken = new AuthMiddlewareService().verifyShopToken(
         req
       );
+
       if (!shopDataFromToken)
         return handleError(config.message.invalid_token, 404, null);
 
@@ -1140,7 +1141,6 @@ export class OrderService {
           payment_status: PaymentStatus.COMPLETED,
         },
       });
-
       if (!existOrder) {
         return handleError("Order not found", 404, null);
       }
@@ -1148,6 +1148,9 @@ export class OrderService {
       const existingWallet = await walletRepository.findOne({
         where: { shop_id: shopDataFromToken.id, is_active: true },
       });
+      console.log(shopDataFromToken);
+      
+      console.log(existingWallet);
 
       if (!existingWallet) {
         return handleError(config.message.wallet_not_found, 404, null);

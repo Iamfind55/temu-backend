@@ -59,16 +59,16 @@ export class TransactionHistoryService {
           })
         );
       }
-      if (where?.identifier) {
-        queryBuilder.andWhere(
-          new Brackets((qb) => {
-            qb.where("transaction_history.identifier = :identifier", {
-              identifier: `${where.identifier}`,
-            });
-          })
-        );
-      }
+      const identifier =
+        where?.identifier ?? ETransactionHistoryIdentifier.RECHARGE;
 
+      queryBuilder.andWhere(
+        new Brackets((qb) => {
+          qb.where("transaction_history.identifier = :identifier", {
+            identifier,
+          });
+        })
+      );
       if (
         where?.createdAtBetween?.startDate &&
         where?.createdAtBetween?.endDate
@@ -390,7 +390,6 @@ export class TransactionHistoryService {
   }): Promise<Response<TransactionHistory | null>> {
     // Use a transactional entity manager
     const entityManager = getManager();
-
     try {
       const staffDataFromToken = new AuthMiddlewareService().verifyStaffToken(
         req
@@ -407,7 +406,7 @@ export class TransactionHistoryService {
                 id: id,
                 is_active: true,
                 status: ETransactionStatus.PENDING,
-                // identifier: ETransactionHistoryIdentifier.RECHARGE,
+                identifier: ETransactionHistoryIdentifier.RECHARGE,
               } as any,
             }
           );

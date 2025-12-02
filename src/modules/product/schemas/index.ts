@@ -12,9 +12,10 @@ export const productSchema = `
     id: ID
     name: String
     description: String
+    cover_image: String
     images: [String]
     origin_image_url: String
-    cover_image: String
+    image_url: String
     price: Float
     market_price:Float
     price_str: String
@@ -46,10 +47,9 @@ export const productSchema = `
   } 
 
   input CreateProductInput {
-    name: NameTranslateBaseInput
-    description: NameTranslateBaseInput
+    name: String
     images: [String]
-    cover_image: String
+    image_url: String
     price: Float
     discount: Float
     quantity: Int
@@ -68,10 +68,9 @@ export const productSchema = `
 
   input UpdateProductInput {
     id: ID!
-    name: NameTranslateBaseInput
-    description: NameTranslateBaseInput
+    name: String
     images: [String]
-    cover_image: String
+    image_url: String
     price: Float
     discount: Float
     quantity: Int
@@ -84,7 +83,7 @@ export const productSchema = `
     recommended: Boolean
     product_top: Int
     product_vip: Int
-    sell_count: Int
+    sell_count: String
     status: BaseStatus = ACTIVE
   }
 
@@ -133,9 +132,8 @@ export const productSchema = `
 
   type SearchProduct {
     id: ID!
-    name: NameTranslateBaseType
-    description: NameTranslateBaseType
-    cover_image: String
+    name: String
+    image_url: String
     price: Float
     status: BaseStatus
   }

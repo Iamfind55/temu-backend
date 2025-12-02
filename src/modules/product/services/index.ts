@@ -23619,7 +23619,7 @@ export class ProductService {
       if (!staffDataFromToken)
         return handleError(config.message.invalid_token, 404, null);
 
-      if (!data?.name || !data?.cover_image) {
+      if (!data?.name || !data?.image_url) {
         return handleError(
           "Validation Error: Missing required fields",
           400,
@@ -23659,6 +23659,8 @@ export class ProductService {
     try {
       const productRepository = getRepository(Product);
 
+      console.log(data);
+
       const staffDataFromToken = new AuthMiddlewareService().verifyStaffToken(
         req
       );
@@ -23673,6 +23675,7 @@ export class ProductService {
         : [];
       productRepository.merge(product, {
         ...data,
+        sell_count: data?.sell_count,
         category_ids: categoryIds,
         updated_by: staffDataFromToken?.id as string | undefined,
       });
@@ -24072,6 +24075,7 @@ export class ProductService {
         .createQueryBuilder("product")
         .leftJoinAndSelect("product.productTag", "productTag")
         .leftJoinAndSelect("product.brandData", "brandData")
+        .leftJoinAndSelect("product.categoryData", "categoryData")
         .where("product.id = :id", { id })
         .andWhere("product.is_active = :is_active", { is_active: true })
         .getOne();
@@ -24086,6 +24090,7 @@ export class ProductService {
           categories.find((category) => category.id === id)
         ) as any;
       }
+
 
       return handleSuccess(product);
     } catch (error: any) {

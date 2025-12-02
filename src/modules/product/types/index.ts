@@ -3,9 +3,8 @@ import { DateBetween } from "../../shopProduct";
 
 export interface ProductModel extends BaseType {
   name: string;
-  description: string;
   images: [string];
-  cover_image: string;
+  image_url: string;
   price: number;
   discount: number;
   quantity: number;
