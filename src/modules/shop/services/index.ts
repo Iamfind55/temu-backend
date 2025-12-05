@@ -233,8 +233,8 @@ export class ShopService {
       if (data?.password) data.password = await hashPassword(data?.password);
 
       // Handle payment method updates
-      if (data.payment_method && Array.isArray(data.payment_method)) {
-        // Assign the updated payment methods back to the shop entity
+      if (data.payment_method && typeof data.payment_method === 'object') {
+        // Assign the updated payment method back to the shop entity
         const updatePaymentMethodData = this.updateShopMethodMapingData(
           data,
           shop
@@ -363,22 +363,14 @@ export class ShopService {
   }
 
   static updateShopMethodMapingData(data: Shop, shop: Shop) {
-    const existingPaymentMethods: PaymentMethod[] = shop.payment_method || [];
-    const updatedPaymentMethods: PaymentMethod[] = data.payment_method || [];
+    const existingPaymentMethod: PaymentMethod = shop.payment_method || {} as PaymentMethod;
+    const updatedPaymentMethod: PaymentMethod = data.payment_method || {} as PaymentMethod;
 
-    // Update existing methods or add new ones
-    const updatePaymentMethodData = existingPaymentMethods.map((method) => {
-      const existPaymentMethodUpdate = updatedPaymentMethods.find(
-        (paymentMethod) =>
-          paymentMethod?.id === method?.id && paymentMethod?.id != null
-      );
-
-      if (existPaymentMethodUpdate) {
-        return { ...method, ...existPaymentMethodUpdate };
-      }
-
-      return method;
-    });
+    // Merge existing payment method with updated values
+    const updatePaymentMethodData = {
+      ...existingPaymentMethod,
+      ...updatedPaymentMethod,
+    };
 
     return updatePaymentMethodData;
   }

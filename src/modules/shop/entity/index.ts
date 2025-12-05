@@ -96,30 +96,44 @@ export class Shop extends BaseEntity {
   })
   status!: ShopStatus;
 
+  // @Column({
+  //   type: "json",
+  //   nullable: true,
+  //   default: [
+  //     {
+  //       id: uuidv4(),
+  //       code: "USDT",
+  //       bank_name: "",
+  //       bank_account_name: "",
+  //       bank_account_number: "",
+  //       is_enable: true,
+  //     },
+  //     {
+  //       id: uuidv4(),
+  //       code: "BANK",
+  //       bank_name: "",
+  //       bank_account_name: "",
+  //       bank_account_number: "",
+  //       is_enable: true,
+  //     },
+  //   ],
+  // })
+  // payment_method!: [PaymentMethod];
+
   @Column({
     type: "json",
     nullable: true,
-    default: [
-      {
-        id: uuidv4(),
-        code: "USDT",
-        bank_name: "",
-        bank_account_name: "",
-        bank_account_number: "",
-        is_enable: true,
-      },
-      {
-        id: uuidv4(),
-        code: "BANK",
-        bank_name: "",
-        bank_account_name: "",
-        bank_account_number: "",
-        is_enable: true,
-      },
-    ],
+    default: {
+      id: uuidv4(),
+      code: "USDT",
+      bank_name: "",
+      bank_account_name: "",
+      bank_account_number: "",
+      is_enable: true,
+    },
   })
-  payment_method!: [PaymentMethod];
-
+  payment_method?: PaymentMethod;
+  
   @OneToOne(() => Wallet, (wallet) => wallet.shop)
   wallet?: Wallet;
 
