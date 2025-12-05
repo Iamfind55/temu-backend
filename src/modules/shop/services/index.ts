@@ -169,6 +169,9 @@ export class ShopService {
       if (!shop) {
         return handleError("Accont not found please try again", 400, null);
       }
+      if (shop.isVerified) {
+        return handleError("Account is already verified", 400, null);
+      }
       if (!shop.otp || shop.otp !== otp) {
         return handleError("Invalid OTP, please try again", 400, null);
       }

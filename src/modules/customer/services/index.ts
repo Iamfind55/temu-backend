@@ -162,7 +162,6 @@ export class CustomerService {
         return handleError(config.message.user_not_found, 404, null);
       }
       const { otp: customerOtp, isVerified, otpExpire_at } = customer;
-      console.log(isVerified);
 
       if (isVerified) {
         return handleError("The OTP is expires", 404, null);
