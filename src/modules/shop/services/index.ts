@@ -101,7 +101,6 @@ export class ShopService {
     req: Request;
   }): Promise<Response<ShopLoginResponse | null>> {
     const shopRepository = getRepository(Shop);
-    console.log(data);
 
     try {
       // Validation
@@ -333,12 +332,10 @@ export class ShopService {
       // Hash the password
       if (data?.password) {
         data.password = await hashPassword(data.password);
-      } else {
-        delete data.password; // TypeScript-safe way to "remove" the property
       }
 
       // Handle payment method updates
-      if (data.payment_method && Array.isArray(data.payment_method)) {
+      if (data.payment_method) {
         // Assign the updated payment methods back to the shop entity
         const updatePaymentMethodData = this.updateShopMethodMapingData(
           data as any,
@@ -348,8 +345,12 @@ export class ShopService {
         data.payment_method = updatePaymentMethodData as any;
       }
 
+
       // Merge and save the shop data
       shopRepository.merge(shop, data as any);
+      if (shop.status === ShopStatus.PENDING) {
+        shop.status = ShopStatus.ACTIVE;
+      }
       const updatedShop = await shopRepository.save(shop);
 
       return handleSuccess(updatedShop);
@@ -708,12 +709,12 @@ export class ShopService {
         return handleError("Invalid username or password.", 404, null);
       }
 
-      if (shop.status !== ShopStatus.ACTIVE)
-        return handleError(
-          "Your shop is not active now. Please contact the admin to check the details.",
-          404,
-          { status: shop.status }
-        );
+      // if (shop.status !== ShopStatus.ACTIVE)
+      //   return handleError(
+      //     "Your shop is not active now. Please contact the admin to check the details.",
+      //     404,
+      //     { status: shop.status }
+      //   );
 
       // Generate JWT token
       const token = new AuthMiddlewareService().genShopToken(shop);

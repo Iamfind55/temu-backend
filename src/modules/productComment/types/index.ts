@@ -13,3 +13,10 @@ export interface ProductCommentWhereInput {
   status: BaseStatus;
   createdAtBetween: DateBetween;
 }
+
+export interface CommentByProductWhereInput {
+  productId: string;
+  comment: string;
+  status: BaseStatus;
+  createdAtBetween: DateBetween;
+}

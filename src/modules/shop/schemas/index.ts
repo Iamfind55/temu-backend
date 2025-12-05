@@ -119,7 +119,7 @@ export const shopSchema = `
     image: ShopImageInput
     status: ShopStatus
     shop_vip: Int
-    payment_method: [PaymentMethodInput]
+    payment_method: PaymentMethodInput
     profit: Float
     id_card_info: ShopIdCardInfoInput
     store_name: String
@@ -143,7 +143,7 @@ export const shopSchema = `
     image: ShopImageInput
     status: BaseStatus
     shop_vip: Int
-    payment_method: [PaymentMethodInput]
+    payment_method: PaymentMethodInput
     id_card_info: ShopIdCardInfoInput
     store_name: String
   } 

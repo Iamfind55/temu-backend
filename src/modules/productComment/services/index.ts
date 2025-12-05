@@ -6,7 +6,7 @@ import {
   handleSuccess,
   handleSuccessWithTotalData,
 } from "../../../utils/response/success.handler";
-import { ProductCommentModel, ProductCommentWhereInput } from "../types";
+import { ProductCommentModel, ProductCommentWhereInput, CommentByProductWhereInput } from "../types";
 import { Brackets, getRepository, Like } from "typeorm";
 import { ProductComment } from "../entity";
 import { BaseOrderByInput, BaseStatus } from "../../../utils/base/baseType";
@@ -280,6 +280,84 @@ export class ProductCommentService {
       }
 
       return handleSuccess(productComment);
+    } catch (error: any) {
+      return handleError(
+        config.message.internal_server_error,
+        500,
+        error.message
+      );
+    }
+  }
+
+  static async getProductCommentProductID({
+    where,
+    page,
+    limit,
+    sortedBy,
+  }: {
+    where: Partial<CommentByProductWhereInput>;
+    page: number;
+    limit: number;
+    sortedBy: BaseOrderByInput;
+  }): Promise<Response<ProductComment[] | null>> {
+    const productCommentRepository = getRepository(ProductComment);
+    const customerRepository = getRepository(Customer);
+
+    try {
+      const order = this.order(sortedBy);
+
+      const queryBuilder = productCommentRepository
+        .createQueryBuilder("pc")
+        .where("pc.status = :active", { active: BaseStatus.ACTIVE });
+
+      // Filter by product_id
+      if (where?.productId) {
+        queryBuilder.andWhere("pc.product_id = :productId", {
+          productId: where.productId,
+        });
+      }
+
+      // Filter by comment text
+      if (where?.comment) {
+        queryBuilder.andWhere("pc.comment ILIKE :comment", {
+          comment: `%${where.comment}%`,
+        });
+      }
+
+      // Filter by date range
+      if (
+        where?.createdAtBetween?.startDate &&
+        where?.createdAtBetween?.endDate
+      ) {
+        queryBuilder.andWhere(
+          "DATE(pc.created_at) BETWEEN :startDate AND :endDate",
+          {
+            startDate: where.createdAtBetween.startDate,
+            endDate: where.createdAtBetween.endDate,
+          }
+        );
+      }
+
+      // Pagination and sorting
+      queryBuilder
+        .skip((page - 1) * limit)
+        .take(limit)
+        .orderBy(order as any);
+
+      // Execute query
+      const [comments, total] = await queryBuilder.getManyAndCount();
+
+      // Manual join: fetch customers by customer_id
+      const customerIds = comments.map((c) => c.customer_id);
+      const customers = await customerRepository.findByIds(customerIds);
+
+      // Attach customer data to each comment
+      const commentsWithCustomer = comments.map((comment) => ({
+        ...comment,
+        customer: customers.find((c) => c.id === comment.customer_id),
+      }));
+
+      return handleSuccessWithTotalData(commentsWithCustomer, total);
     } catch (error: any) {
       return handleError(
         config.message.internal_server_error,

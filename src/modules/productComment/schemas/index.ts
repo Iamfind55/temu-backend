@@ -34,7 +34,12 @@ export const productCommentSchema = `
     status: BaseStatus
     createdAtBetween: DateBetweenInput
   }
-
+   input CommentByProductWhereInput {
+    productId: String
+    comment: String
+    status: BaseStatus
+    createdAtBetween: DateBetweenInput
+  }
   type SuccessProductCommentResponseOne {
     success: Boolean!
     data: ProductComment
@@ -51,6 +56,7 @@ export const productCommentSchema = `
   type Query {
     getProductComments(where: ProductCommentWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessProductCommentResponseMany!
     getProductComment(id: ID!): SuccessProductCommentResponseOne!
+    getProductCommentProductID(where: CommentByProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessProductCommentResponseMany!
   }
 
   type Mutation {

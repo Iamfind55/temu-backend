@@ -72,6 +72,7 @@ export interface PaymentMethod {
 export enum ShopStatus {
   PENDING = "PENDING",
   ACTIVE = "ACTIVE",
+  APPROVED = "APPROVED",
   FROZEN = "FROZEN",
   INACTIVE = "INACTIVE",
 }
