@@ -101,10 +101,11 @@ export class ShopService {
     req: Request;
   }): Promise<Response<ShopLoginResponse | null>> {
     const shopRepository = getRepository(Shop);
+    console.log(data);
 
     try {
       // Validation
-      if (!data?.username || !data?.password) {
+      if (!data?.email || !data?.password) {
         return handleError("Validation Error", 400, null);
       }
 
@@ -139,12 +140,14 @@ export class ShopService {
           shop_id: savedShop?.id,
           name: savedShop?.fullname,
         } as any);
-      } catch (error) {}
+      } catch (error) { }
 
       const email = savedShop.email;
       this.sendOtpEmail(email, otp, savedShop);
       return handleSuccess({ token: "", data: savedShop });
     } catch (error: any) {
+      console.log(error);
+
       return handleError(
         config.message.internal_server_error,
         500,
@@ -379,7 +382,7 @@ export class ShopService {
 
     return updatePaymentMethodData;
   }
-static async shopRendOTP({
+  static async shopRendOTP({
     data,
     req,
   }: {
@@ -1001,12 +1004,11 @@ static async shopRendOTP({
               />
             </div>
             <div>
-              <p style="font-size:16px;">Hi, ${
-                customer?.fullname ||
-                customer?.username ||
-                customer?.store_name ||
-                customer?.email
-              }</p>
+              <p style="font-size:16px;">Hi, ${customer?.fullname ||
+        customer?.username ||
+        customer?.store_name ||
+        customer?.email
+        }</p>
               <p>Please verify your email address using the following verification code:</p>
               <h1 style="letter-spacing:5px; color:#007bff; font-size:32px; margin:10px 0;">${otp}</h1>
               <p style="font-size:14px; color:#555;">This code will expire in <strong>5 minutes</strong>.</p>
@@ -1220,38 +1222,38 @@ static async shopRendOTP({
         data.request_vip === "1"
           ? 15000
           : data.request_vip === "2"
-          ? 30000
-          : data.request_vip === "3"
-          ? 45000
-          : data.request_vip === "4"
-          ? 60000
-          : data.request_vip === "5"
-          ? 75000
-          : 1500;
+            ? 30000
+            : data.request_vip === "3"
+              ? 45000
+              : data.request_vip === "4"
+                ? 60000
+                : data.request_vip === "5"
+                  ? 75000
+                  : 1500;
       const addBalanceAmount =
         data.request_vip === "1"
           ? 1500
           : data.request_vip === "2"
-          ? 3000
-          : data.request_vip === "3"
-          ? 4500
-          : data.request_vip === "4"
-          ? 6000
-          : data.request_vip === "5"
-          ? 7500
-          : 15000;
+            ? 3000
+            : data.request_vip === "3"
+              ? 4500
+              : data.request_vip === "4"
+                ? 6000
+                : data.request_vip === "5"
+                  ? 7500
+                  : 15000;
       const profit =
         data.request_vip === "1"
           ? 25
           : data.request_vip === "2"
-          ? 30
-          : data.request_vip === "3"
-          ? 35
-          : data.request_vip === "4"
-          ? 40
-          : data.request_vip === "5"
-          ? 45
-          : 25;
+            ? 30
+            : data.request_vip === "3"
+              ? 35
+              : data.request_vip === "4"
+                ? 40
+                : data.request_vip === "5"
+                  ? 45
+                  : 25;
 
       if (!existingWallet) return handleError("Wallet not found", 404, null);
       if (

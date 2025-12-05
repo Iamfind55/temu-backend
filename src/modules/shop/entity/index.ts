@@ -25,7 +25,7 @@ export class Shop extends BaseEntity {
   @Column({ nullable: true })
   store_name?: string;
 
-  @Column({ nullable: false })
+  @Column({ nullable: true })
   username?: string;
 
   @Column({ nullable: false })
