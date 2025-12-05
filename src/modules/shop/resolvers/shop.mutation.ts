@@ -1,4 +1,5 @@
 import {
+  ResendOtpShopInput,
   ShopRequestVIPData,
   ShopResetPassword,
   ShopVerifyOTPInput,
@@ -70,6 +71,11 @@ export const shopMutation = {
     { req }: { req: Request }
   ) => ShopService.shopResetPassword({ data: data, req }),
 
+  shopResendOTP: async (
+      _: any,
+      { data }: { data: Shop },
+      { req }: { req: Request }
+    ) => ShopService.shopRendOTP({ data: data, req }),
   shopRequestVIP: async (
     _: any,
     { data }: { data: ShopRequestVIPData },

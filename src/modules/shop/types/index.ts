@@ -93,7 +93,9 @@ export interface ShopRequestVIPData {
   requested_at: Date;
 }
 
-
+export interface ResendOtpShopInput{
+  email: string;
+}
 export interface ShopVerifyOTPInput {
   email: string;
   otp: string;

@@ -64,6 +64,27 @@ export class OrderService {
     return 0;
   }
 
+  static formatSellCount(count: number): string {
+    if (count >= 1000000) {
+      // Format as millions (M)
+      const millions = count / 1000000;
+      const roundedMillions = Math.round(millions * 10) / 10;
+      return roundedMillions % 1 === 0
+        ? `${Math.floor(roundedMillions)}M+`
+        : `${roundedMillions.toFixed(1)}M+`;
+    } else if (count >= 1000) {
+      // Format as thousands (K)
+      const thousands = count / 1000;
+      const roundedThousands = Math.round(thousands * 10) / 10;
+      return roundedThousands % 1 === 0
+        ? `${Math.floor(roundedThousands)}K+`
+        : `${roundedThousands.toFixed(1)}K+`;
+    } else {
+      // Return as is for numbers less than 1000
+      return count.toString();
+    }
+  }
+
   static async countNewOrder({
     req,
     order_status,
@@ -427,7 +448,6 @@ export class OrderService {
                   : PaymentStatus.COMPLETED,
             } as any);
             // console.log(data.logistics_id);
-            console.log(newOrder);
 
             const savedOrder: any = await orderRepository.save(newOrder);
             const savedOrderDetails = await Promise.all(
@@ -449,7 +469,7 @@ export class OrderService {
                     .update(Product)
                     .set({
                       quantity: () => "quantity - :quantity",
-                      sell_count: newSellCount.toString(),
+                      sell_count: this.formatSellCount(newSellCount),
                     })
                     .where("id = :id", {
                       id: detail.product_id,
@@ -477,7 +497,7 @@ export class OrderService {
                     .update(ShopProduct)
                     .set({
                       quantity: () => "quantity - :quantity",
-                      sell_count: newShopSellCount.toString(),
+                      sell_count: this.formatSellCount(newShopSellCount),
                     })
                     .where("product_id = :product_id AND shop_id = :shopId", {
                       product_id: detail.product_id,
@@ -502,7 +522,7 @@ export class OrderService {
                     .update(Product)
                     .set({
                       quantity: () => "quantity - :quantity",
-                      sell_count: newSellCount.toString(),
+                      sell_count: this.formatSellCount(newSellCount),
                     })
                     .where("id = :id", {
                       id: detail.product_id,
@@ -1148,9 +1168,6 @@ export class OrderService {
       const existingWallet = await walletRepository.findOne({
         where: { shop_id: shopDataFromToken.id, is_active: true },
       });
-      console.log(shopDataFromToken);
-      
-      console.log(existingWallet);
 
       if (!existingWallet) {
         return handleError(config.message.wallet_not_found, 404, null);

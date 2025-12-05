@@ -34,6 +34,7 @@ import { Staff } from "../../staff";
 import { INotificationType, NotificationService } from "../../notification";
 import { OtpService } from "../utils/helpers";
 import { addMinutes } from "date-fns";
+import { ResendOtpCustomerInput } from "../../customer";
 const nodemailer = require("nodemailer");
 
 export class ShopService {
@@ -378,7 +379,49 @@ export class ShopService {
 
     return updatePaymentMethodData;
   }
+static async shopRendOTP({
+    data,
+    req,
+  }: {
+    data: Shop;
+    req: Request;
+  }): Promise<Response<Shop | null>> {
+    const customerRepository = getRepository(Shop);
+    try {
+      const { email } = data;
 
+      // Validation
+      if (!email) {
+        return handleError("Validation Error", 400, null);
+      }
+
+      const shop = await customerRepository.findOneBy({
+        email: email,
+      });
+
+      if (!shop) {
+        return handleError(config.message.user_not_found, 404, null);
+      }
+
+      const otpExpires = addMinutes(new Date(), 5);
+      const newOTP = OtpService.generateOtp();
+      shop.otp = newOTP;
+      shop.otpExpire_at = otpExpires;
+      shop.isVerified = false;
+      const savedShop = await customerRepository.save(shop);
+      await ShopService.sendOtpEmail(email, newOTP, savedShop);
+
+      return handleSuccess({ token: null, data: savedShop } as any);
+    } catch (error: any) {
+      console.log(error);
+
+      return handleError(
+        config.message.internal_server_error,
+        500,
+        error.message
+      );
+    }
+  }
   static async deleteShop({
     id,
     req,

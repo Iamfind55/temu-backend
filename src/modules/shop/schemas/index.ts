@@ -165,6 +165,9 @@ export const shopSchema = `
     email: String!
     otp: String!
   }
+   input ResendOtpInput {
+    email: String!
+  }
 
   type ShopLoginType {
     token: String!
@@ -213,6 +216,7 @@ export const shopSchema = `
     error: Error
   } 
 
+  
   type SuccessShopRequestVIPResponseMany {
     success: Boolean!
     total: Int
@@ -240,7 +244,7 @@ export const shopSchema = `
     deleteShop(id: ID!): SuccessShopResponseOne!
     shopLogin(where: ShopWhereLoginInput): ShopLoginResponse!
     shopForgotPassword(email: String!): SuccessShopForgotPasswordResponse!
-
+    shopResendOTP(data: ResendOtpInput!): SuccessShopResponseOne!
     shopRequestVIP(data: ShopRequestVIPInput!): SuccessShopRequestVIPResponseOne!
     adminApproveShopRequestVIP(id: ID!): SuccessShopRequestVIPResponseOne!
     adminRejectShopRequestVIP(id: ID!): SuccessShopRequestVIPResponseOne!
