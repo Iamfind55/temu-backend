@@ -884,16 +884,24 @@ export class ShopService {
       }
 
       // Generate JWT token with expiration
-      const token = new AuthMiddlewareService().genShopForgotPasswordToken(
-        existEmail
-      );
+      // const token = new AuthMiddlewareService().genShopForgotPasswordToken(
+      //   existEmail
+      // );
 
-      // Generate a reset password link
-      const resetLink = `${config.client_url}/reset-password?token=${token}`;
+      // // Generate a reset password link
+      // const resetLink = `${config.client_url}/reset-password?token=${token}`;
 
-      // Send mail with reset password link
-      await this.sendResetPasswordEmail(email, resetLink);
+      // // Send mail with reset password link
+      // await this.sendResetPasswordEmail(email, resetLink);
 
+      const otpExpires = addMinutes(new Date(), 5);
+      const newOTP = OtpService.generateOtp();
+      existEmail.otp = newOTP;
+      existEmail.otpExpire_at = otpExpires;
+      existEmail.isVerified = false;
+      const savedCustomer = await shopRepository.save(existEmail);
+
+      await ShopService.sendOtpEmail(email, newOTP, savedCustomer);
       return handleSuccess(null);
     } catch (error: any) {
       return handleError(
