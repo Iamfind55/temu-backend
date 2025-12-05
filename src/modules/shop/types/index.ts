@@ -34,7 +34,7 @@ export interface ShopWhereInput {
 }
 
 export interface ShopWhereLoginInput {
-  username: string;
+  email: string;
   password: string;
 }
 

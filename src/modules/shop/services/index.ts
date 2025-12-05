@@ -279,7 +279,8 @@ export class ShopService {
         return handleError("Shop not found", 404, null);
       }
 
-      shopRepository.merge(shop, { status: ShopStatus.ACTIVE });
+      shopRepository.merge(shop, { status: ShopStatus.APPROVED });
+
 
       const updatedShop = await shopRepository.save(shop);
 
@@ -674,30 +675,22 @@ export class ShopService {
     const shopRepository = getRepository(Shop);
 
     try {
-      const { username, password } = where;
+      const { email, password } = where;
       // Validate input
-      if (!username || !password) {
-        return handleError("Username and password are required.", 400, null);
+      if (!email || !password) {
+        return handleError("Email and password are required.", 400, null);
       }
 
       const queryBuilder = shopRepository.createQueryBuilder("shop");
 
-      // Fetch user from database
+      // Fetch user from database by email
       const shop = await queryBuilder
         .where("shop.is_active = :isActive", { isActive: true }) // Ensure only active shops
-        .andWhere(
-          new Brackets((db) => {
-            // Use Brackets to ensure correct grouping
-            db.where("shop.username = :username", { username }).orWhere(
-              "shop.email = :email",
-              { email: username }
-            );
-          })
-        )
+        .andWhere("shop.email = :email", { email })
         .getOne();
 
       if (!shop) {
-        return handleError("Invalid username or password", 400, null);
+        return handleError("Invalid email or password", 400, null);
       }
 
       // Compare passwords
@@ -706,7 +699,7 @@ export class ShopService {
         shop?.password || ""
       );
       if (!isPasswordValid) {
-        return handleError("Invalid username or password.", 404, null);
+        return handleError("Invalid email or password.", 404, null);
       }
 
       // if (shop.status !== ShopStatus.ACTIVE)

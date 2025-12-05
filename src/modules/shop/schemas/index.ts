@@ -43,7 +43,7 @@ export const shopSchema = `
     shop_address: String
     image: ShopImageType
     id_card_info: ShopIdCardInfo
-    payment_method: [PaymentMethodType]
+    payment_method: PaymentMethodType
     status: ShopStatus
     shop_vip: Int
     profit: Float
@@ -157,7 +157,7 @@ export const shopSchema = `
   }
 
   input ShopWhereLoginInput {
-    username: String!
+    email: String!
     password: String!
   }
 
