@@ -20,6 +20,7 @@ import { getRequestedFields } from "../../../utils/graphqlUtils";
 import { Product } from "../../product";
 import { Category } from "../../category";
 import { Shop } from "../../shop/entity";
+import { ShopStatus } from "../../shop/types";
 
 export class ShopProductService {
   static async createShopProduct({
@@ -41,6 +42,7 @@ export class ShopProductService {
       if (!shopDataFromToken)
         return handleError(config.message.invalid_token, 404, null);
 
+
       if (!data.quantity || !data.product_id) {
         return handleError("Validation Error", 400, null);
       }
@@ -58,6 +60,9 @@ export class ShopProductService {
       });
 
       if (!shop) return handleError("Shop not found.", 404, null);
+      if (shop.status !== ShopStatus.APPROVED) {
+        return handleError("Your shop account is currently under review. Access will be granted after administrative approval.", 400, null);
+      }
       if (shop?.shop_vip && shop.shop_vip < product.product_vip)
         return handleError(
           `You cannot apply this product VIP [${product.product_vip}] because you are in [${shop.shop_vip}].`,

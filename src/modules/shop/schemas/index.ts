@@ -102,6 +102,7 @@ export const shopSchema = `
   enum ShopStatus {
     ACTIVE
     INACTIVE
+    APPROVED
     FROZEN
     PENDING
   }

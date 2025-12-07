@@ -7,6 +7,7 @@ import {
   ShopRequestVIPData,
   ShopRequestStatus,
   ShopStatus,
+  EProfitVIP,
 } from "../types";
 import { v4 as uuidv4 } from "uuid";
 import { Wallet } from "../../wallet";
@@ -43,7 +44,7 @@ export class Shop extends BaseEntity {
   @Column({ nullable: true, unique: false, default: 0 })
   shop_vip?: number;
 
-  @Column({ type: "float", default: 20.0 })
+  @Column({ type: "float", default: EProfitVIP.NORMOL })
   profit?: number;
 
   @Column({ nullable: true })

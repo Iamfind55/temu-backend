@@ -252,8 +252,7 @@ export class ProductCommentService {
         ...comment,
         customer: customers.find((c) => c.id === comment.customer_id),
       }));
-      console.log(commentsWithCustomer);
-      
+
 
       return handleSuccessWithTotalData(commentsWithCustomer, total);
     } catch (error: any) {

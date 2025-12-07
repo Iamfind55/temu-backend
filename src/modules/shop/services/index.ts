@@ -16,6 +16,9 @@ import {
   ShopWhereInput,
   ShopWhereLoginInput,
   ShopVerifyOTPInput,
+  EProfitVIP,
+  EShopRechargeBalance,
+  EShopAmountBalance,
 } from "../types";
 import { Brackets, getManager, getRepository } from "typeorm";
 import { Shop } from "../entity";
@@ -948,6 +951,7 @@ export class ShopService {
       }
 
       const { otp, isVerified } = shop;
+
       if (!isVerified) {
         return handleError("Please verify your OTP code", 404, null);
       }
@@ -1189,7 +1193,7 @@ export class ShopService {
 
       if (
         shop?.request_vip_data?.request_status === ShopRequestStatus.APPROVED &&
-        Number(5) === Number(shop?.request_vip_data?.request_vip)
+        Number(3) === Number(shop?.request_vip_data?.request_vip)
       ) {
         return handleError(
           "You cannot request VIP because you are at the end of your VIP period.",
@@ -1217,40 +1221,28 @@ export class ShopService {
       const existingWallet = await WalletService.getShopWallet({ req });
       const balance =
         data.request_vip === "1"
-          ? 15000
+          ? EShopRechargeBalance.VIP1
           : data.request_vip === "2"
-            ? 30000
+            ? EShopRechargeBalance.VIP2
             : data.request_vip === "3"
-              ? 45000
-              : data.request_vip === "4"
-                ? 60000
-                : data.request_vip === "5"
-                  ? 75000
-                  : 1500;
+              ? EShopRechargeBalance.VIP3
+              : EShopRechargeBalance.NORMOL;
       const addBalanceAmount =
         data.request_vip === "1"
-          ? 1500
+          ? EShopAmountBalance.VIP1
           : data.request_vip === "2"
-            ? 3000
+            ? EShopAmountBalance.VIP2
             : data.request_vip === "3"
-              ? 4500
-              : data.request_vip === "4"
-                ? 6000
-                : data.request_vip === "5"
-                  ? 7500
-                  : 15000;
+              ? EShopAmountBalance.VIP3
+              : EShopAmountBalance.NORMOL;
       const profit =
         data.request_vip === "1"
-          ? 25
+          ? EProfitVIP.VIP1
           : data.request_vip === "2"
-            ? 30
+            ? EProfitVIP.VIP2
             : data.request_vip === "3"
-              ? 35
-              : data.request_vip === "4"
-                ? 40
-                : data.request_vip === "5"
-                  ? 45
-                  : 25;
+              ? EProfitVIP.VIP3
+              : EProfitVIP.NORMOL;
 
       if (!existingWallet) return handleError("Wallet not found", 404, null);
       if (
@@ -1259,11 +1251,7 @@ export class ShopService {
         (Number(existingWallet.data?.total_recharged) < balance &&
           data.request_vip === "2") ||
         (Number(existingWallet.data?.total_recharged) < balance &&
-          data.request_vip === "3") ||
-        (Number(existingWallet.data?.total_recharged) < balance &&
-          data.request_vip === "4") ||
-        (Number(existingWallet.data?.total_recharged) < balance &&
-          data.request_vip === "5")
+          data.request_vip === "3")
       ) {
         return handleError(
           `Your balance not enough to apply VIP ${data.request_vip}`,

@@ -1,3 +1,5 @@
+import { ShopStatus } from "../../modules/shop";
+
 export interface BaseType {
   id: string;
   is_active: boolean;
@@ -49,5 +51,6 @@ export interface TokenData {
   id: string;
   username: string;
   type?: string;
-  role:string
+  role:string;
+  status: ShopStatus
 }
