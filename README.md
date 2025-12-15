@@ -90,3 +90,21 @@ npx typeorm-ts-node-commonjs migration:run -d src/data-source.ts
    ```
 # temu-api
 # temu-api
+
+# UPDATE product VIP
+UPDATE product p
+SET product_vip = t.level_vip
+FROM (
+    SELECT 
+        id,
+        NTILE(4) OVER (ORDER BY price) - 1 AS level_vip
+    FROM product
+) t
+WHERE p.id = t.id;
+
+# SELECT product VIP
+SELECT 
+  id,
+  price,
+  NTILE(4) OVER (ORDER BY price) - 1 AS product_vip
+FROM product;

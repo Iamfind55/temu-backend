@@ -235,7 +235,7 @@ export class CustomerService {
           customer_id: savedCustomer?.id,
           name: savedCustomer?.firstName,
         } as any);
-      } catch (error) {}
+      } catch (error) { }
 
       return handleSuccess({ token, data: savedCustomer } as any);
     } catch (error: any) {

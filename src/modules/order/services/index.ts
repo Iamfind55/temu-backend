@@ -1919,7 +1919,6 @@ export class OrderService {
         relations: { logistics: true },
       });
 
-      console.log(order);
 
       if (!order) {
         return handleError("Order not found", 404, null);

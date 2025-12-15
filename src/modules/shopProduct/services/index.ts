@@ -373,8 +373,6 @@ export class ShopProductService {
         where: { id: shopDataFromToken.id },
       });
       if (!shop) return handleError("Shop not found.", 404, null);
-
-      if (!shop) return handleError("Shop not found.", 404, null);
       if (shop?.shop_vip && shop?.shop_vip < data.vip)
         return handleError(
           `You cannot apply these product VIP [${data.vip}] because you are in [${shop.shop_vip}].`,

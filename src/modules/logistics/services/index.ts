@@ -151,7 +151,7 @@ export class LogisticsService {
         return handleError("logistic not found", 404, null);
       }
 
-      // await logisticRepository.remove(logistic);
+      // Soft delete: set is_active to false instead of removing
       logisticRepository.merge(logistic, { is_active: false });
       await logisticRepository.save(logistic);
 
@@ -178,7 +178,9 @@ export class LogisticsService {
   }) {
     const logisticRepository = getRepository(Logistics);
     try {
-      const query = logisticRepository.createQueryBuilder("logistics");
+      const query = logisticRepository
+        .createQueryBuilder("logistics")
+        .where("logistics.is_active = :isActive", { isActive: true });
 
       // Filtering
       if (where) {
