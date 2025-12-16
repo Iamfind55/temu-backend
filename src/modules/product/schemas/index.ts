@@ -145,37 +145,6 @@ export const productSchema = `
     error: Error
   } 
 
-  type TemuProductDataResponse {
-    success: Boolean!
-    source: String
-    data: JSON
-    product: JSON
-    reviews: JSON
-    categories: JSON
-    activityInfo: JSON
-    productInfo: JSON
-    completeData: JSON
-    headersData: JSON
-    reviewStore:JSON
-    cartScene:JSON
-    deliveryTag:JSON
-    error: Error
-  }
-
-  type TemuAPIResponse {
-    success: Boolean!
-    data: JSON
-    status: Int
-    error: Error
-  }
-
-  type FetchAllReviewsResponse {
-    success: Boolean!
-    totalProducts: Int!
-    totalReviewsFetched: Int!
-    errors: [String!]!
-  }
-
   type Query {
     getProducts(where: ProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessProductResponseMany!
     adminGetProducts(where: ProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessProductResponseMany!
@@ -183,41 +152,6 @@ export const productSchema = `
     getSimilarProducts(where: SimilarProductWhereInput, limit: Int,page: Int,sortedBy: BaseOrderByInput): SuccessProductResponseMany!
     searchProducts(where: SearchProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessSearchProductResponseMany!
     getProduct(id: ID!): SuccessProductResponseOne!
-    getTemuProductData(productUrl: String!): TemuProductDataResponse!
-    getTemuReviews(
-      goodsId: String!
-      page: Int
-      size: Int
-      cookies: String
-      antiContent: String
-      verifyAuthToken: String
-      xPhanData: String
-      referer: String
-    ): TemuAPIResponse!
-    callTemuAPI(
-      endpoint: String!
-      method: String
-      queryParams: String
-      body: String
-      cookies: String
-      antiContent: String
-      verifyAuthToken: String
-      xPhanData: String
-      referer: String
-    ): TemuAPIResponse!
-    getTemuReviewsAuto(
-      productUrl: String!
-      goodsId: String!
-    ): TemuAPIResponse!
-    fetchAllProductReviews(
-      page: Int
-      limit: Int
-      cookies: String
-      antiContent: String
-      verifyAuthToken: String
-      xPhanData: String
-      referer: String
-    ): FetchAllReviewsResponse!
   }
 
   type Mutation {

@@ -411,6 +411,7 @@ export class ShopService {
       shop.otp = newOTP;
       shop.otpExpire_at = otpExpires;
       shop.isVerified = false;
+      
       const savedShop = await customerRepository.save(shop);
       await ShopService.sendOtpEmail(email, newOTP, savedShop);
 

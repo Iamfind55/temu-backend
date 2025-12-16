@@ -23738,6 +23738,7 @@ export class ProductService {
     },
     info: GraphQLResolveInfo
   ) {
+
     return this.buildProductQuery(
       { req, where, page, limit, sortedBy },
       info,
@@ -24387,6 +24388,15 @@ export class ProductService {
             "shopProduct",
             "shopProduct.shop_id = :shopId",
             { shopId: shopDataFromToken.id }
+          );
+          queryBuilder.addSelect(
+            `
+        CASE
+          WHEN shopProduct.id IS NOT NULL THEN 'ON_SHELF'
+          ELSE 'UN_SHELF'
+        END
+        `,
+            "shopProductStatus"
           );
         }
       } catch (error) { }
