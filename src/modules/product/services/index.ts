@@ -24382,7 +24382,7 @@ export class ProductService {
         const shopDataFromToken = new AuthMiddlewareService().verifyShopToken(
           req
         );
-        
+
         if (shopDataFromToken?.id) {
           queryBuilder.leftJoinAndSelect(
             "product.shopProducts",
@@ -24461,9 +24461,16 @@ export class ProductService {
       queryBuilder.andWhere("product.product_top = :product_top", {
         product_top: where.product_top,
       });
-    if (where?.product_vip || where?.product_vip === 0)
+    // if (where?.product_vip || where?.product_vip === 0)
+    //   queryBuilder.andWhere("product.product_vip = :product_vip", {
+    //     product_vip: where.product_vip,
+    //   });
+    if (where?.product_vip || where?.product_vip !== 0)
       queryBuilder.andWhere("product.product_vip = :product_vip", {
         product_vip: where.product_vip,
+      }); else if (where?.product_vip === 0)
+      queryBuilder.andWhere("product.product_vip = :product_vip", {
+        product_vip: 0,
       });
     if (where?.price_between) {
       queryBuilder
