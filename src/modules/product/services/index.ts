@@ -24465,13 +24465,13 @@ export class ProductService {
     //   queryBuilder.andWhere("product.product_vip = :product_vip", {
     //     product_vip: where.product_vip,
     //   });
-    if (where?.product_vip || where?.product_vip !== 0)
+    if (where?.product_vip === undefined || where?.product_vip === null) {
+      queryBuilder.andWhere("product.product_vip = 0");
+    } else {
       queryBuilder.andWhere("product.product_vip = :product_vip", {
         product_vip: where.product_vip,
-      }); else if (where?.product_vip === 0)
-      queryBuilder.andWhere("product.product_vip = :product_vip", {
-        product_vip: 0,
       });
+    }
     if (where?.price_between) {
       queryBuilder
         .andWhere("product.price >= :minPrice", {
