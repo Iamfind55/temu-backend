@@ -146,12 +146,14 @@ export class ShopProductService {
       ]);
 
       const productsAvailability = products.filter((item) => {
-        return shop?.shop_vip && shop.shop_vip >= item.product_vip;
-      });
+        const shopVip = Number(shop?.shop_vip ?? 0);
+        const productVip = Number(item.product_vip ?? 0);
 
+        return shopVip >= productVip;
+      });
       if (productsAvailability.length === 0) {
         return handleError(
-          "No products were added - vip products already exist in your shop.",
+          "No products were added - VIP products not available.",
           402,
           null
         );
