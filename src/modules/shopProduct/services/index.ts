@@ -148,9 +148,10 @@ export class ShopProductService {
       const productsAvailability = products.filter((item) => {
         return shop?.shop_vip && shop.shop_vip >= item.product_vip;
       });
+
       if (productsAvailability.length === 0) {
         return handleError(
-          "No products were added - some may already exist in your shop.",
+          "No products were added - vip products already exist in your shop.",
           402,
           null
         );

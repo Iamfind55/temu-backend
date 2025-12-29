@@ -24382,6 +24382,7 @@ export class ProductService {
         const shopDataFromToken = new AuthMiddlewareService().verifyShopToken(
           req
         );
+        
         if (shopDataFromToken?.id) {
           queryBuilder.leftJoinAndSelect(
             "product.shopProducts",
