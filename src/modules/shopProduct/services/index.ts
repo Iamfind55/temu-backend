@@ -145,20 +145,41 @@ export class ShopProductService {
         }),
       ]);
 
-      const productsAvailability = products.filter((item) => {
-        const shopVip = Number(shop?.shop_vip ?? 0);
-        const productVip = Number(item.product_vip ?? 0);
+      // const productsAvailability = products.filter((item) => {
+      const shopVip = Number(shop?.shop_vip ?? 0);
+      //   const productVip = Number(item.product_vip ?? 0);
 
-        return shopVip >= productVip;
-      });
-      if (productsAvailability.length === 0) {
+      //   return shopVip >= productVip;
+      // });
+      // if (productsAvailability.length === 0) {
+      //   return handleError(
+      //     "No products were added - VIP products not available.",
+      //     402,
+      //     null
+      //   );
+      // }
+      const productsAvailability = products.filter(
+        (item) => shopVip >= Number(item.product_vip ?? 0)
+      );
+
+      const vipBlockedProducts = products.filter(
+        (item) => shopVip < Number(item.product_vip ?? 0)
+      );
+      if (productsAvailability.length === 0 && vipBlockedProducts.length > 0) {
         return handleError(
-          "No products were added - VIP products not available.",
-          402,
+          `Your shop VIP level (${shopVip}) is lower than the required product VIP.`,
+          403,
           null
         );
       }
 
+      if (productsAvailability.length === 0) {
+        return handleError(
+          "No products were added.",
+          404,
+          null
+        );
+      }
       // Check for existing shop products
       const existingShopProducts = await shopProductRepository.find({
         where: {
@@ -376,12 +397,16 @@ export class ShopProductService {
         where: { id: shopDataFromToken.id },
       });
       if (!shop) return handleError("Shop not found.", 404, null);
-      if (shop?.shop_vip && shop?.shop_vip < data.vip)
+      const shopVip = Number(shop?.shop_vip ?? 0);
+      const productVip = Number(data?.vip ?? 0);
+
+      if (shopVip < productVip) {
         return handleError(
-          `You cannot apply these product VIP [${data.vip}] because you are in [${shop.shop_vip}].`,
+          `You cannot apply these product VIP [${productVip}] because you are in [${shopVip}].`,
           404,
           null
         );
+      }
 
       let results = [];
       let continues = true;
@@ -408,11 +433,11 @@ export class ShopProductService {
         }
 
         const productsAvailability = products.filter((item) => {
-          if (item && shop?.shop_vip && shop.shop_vip >= item.product_vip) {
-            return item;
-          }
-        });
+          const shopVip = Number(shop?.shop_vip ?? 0);
+          const productVip = Number(item?.product_vip ?? 0);
 
+          return shopVip >= productVip;
+        });
         // Check for existing shop products
         const existingShopProducts = await shopProductRepository.find({
           where: {
@@ -420,6 +445,7 @@ export class ShopProductService {
             shop_id: shopDataFromToken.id,
           },
         });
+
 
         const existingProductMap = new Map(
           existingShopProducts.map((ep) => [ep.product_id, ep])

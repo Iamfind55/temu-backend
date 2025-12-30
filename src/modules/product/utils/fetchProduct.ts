@@ -8221,6312 +8221,6312 @@ export const fetchProductByCategory = async () => {
     // }
 
     // const result = await response.json();
-     const data ={
-    "result": {
+    const data = {
+      "result": {
         "server_time": 1765212500598,
         "data": {
-            "popup_map": {},
-            "control_param": {
-                "preload_size": 24,
-                "page_size": 40
+          "popup_map": {},
+          "control_param": {
+            "preload_size": 24,
+            "page_size": 40
+          },
+          "total_price": {
+            "total_price_text": [
+              "Add ",
+              "0",
+              " item to cart",
+              ": ",
+              "",
+              "$",
+              "0"
+            ],
+            "price": 0,
+            "price_text": [
+              "Add ",
+              "0",
+              " item to cart",
+              ": ",
+              "",
+              "$",
+              "0"
+            ]
+          },
+          "call_opt": 0,
+          "pattern": 0,
+          "filter_region": {
+            "p_search": {
+              "offset": "160",
+              "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+              "item_type": "0",
+              "g": "0",
+              "scene_id": "3",
+              "mid": "69999906",
+              "opt_id": "1603",
+              "ts_req": "0",
+              "version": "5",
+              "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+              "scene": "opt",
+              "gin_fallback": "0",
+              "opt_type": "0",
+              "goods_source": "search",
+              "idx": "-1",
+              "region": "211",
+              "no_result": "0",
+              "bid": "69999705",
+              "cloud_env": "udpm1",
+              "ts": "1765212500598"
             },
-            "total_price": {
-                "total_price_text": [
-                    "Add ",
-                    "0",
-                    " item to cart",
-                    ": ",
-                    "",
-                    "$",
-                    "0"
+            "outer_filter": [
+              {
+                "identifier": "100",
+                "side_name": "Sort by",
+                "filter_list": [
+                  {
+                    "filter": "0:1",
+                    "name": "Relevance"
+                  },
+                  {
+                    "filter": "1:1",
+                    "name": "Top sales"
+                  },
+                  {
+                    "filter": "3:1",
+                    "name": "Most recent"
+                  },
+                  {
+                    "filter": "2:0",
+                    "name": "Price low to high"
+                  },
+                  {
+                    "filter": "2:1",
+                    "name": "Price high to low"
+                  }
                 ],
-                "price": 0,
-                "price_text": [
-                    "Add ",
-                    "0",
-                    " item to cart",
-                    ": ",
-                    "",
-                    "$",
-                    "0"
-                ]
-            },
-            "call_opt": 0,
-            "pattern": 0,
-            "filter_region": {
+                "view_more": 7,
+                "name": "Sort by"
+              }
+            ],
+            "rank_colum_filter": [
+              {
+                "name": "Relevance",
                 "p_search": {
-                    "offset": "160",
-                    "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                    "item_type": "0",
-                    "g": "0",
-                    "scene_id": "3",
-                    "mid": "69999906",
-                    "opt_id": "1603",
-                    "ts_req": "0",
-                    "version": "5",
-                    "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                    "scene": "opt",
-                    "gin_fallback": "0",
-                    "opt_type": "0",
-                    "goods_source": "search",
-                    "idx": "-1",
-                    "region": "211",
-                    "no_result": "0",
-                    "bid": "69999705",
-                    "cloud_env": "udpm1",
-                    "ts": "1765212500598"
+                  "offset": "160",
+                  "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                  "item_type": "0",
+                  "g": "0",
+                  "scene_id": "3",
+                  "mid": "69999906",
+                  "opt_id": "1603",
+                  "ts_req": "0",
+                  "version": "5",
+                  "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                  "scene": "opt",
+                  "gin_fallback": "0",
+                  "opt_type": "0",
+                  "goods_source": "search",
+                  "idx": "0",
+                  "region": "211",
+                  "no_result": "0",
+                  "bid": "69999705",
+                  "cloud_env": "udpm1",
+                  "ts": "1765212500598"
                 },
-                "outer_filter": [
-                    {
-                        "identifier": "100",
-                        "side_name": "Sort by",
-                        "filter_list": [
-                            {
-                                "filter": "0:1",
-                                "name": "Relevance"
-                            },
-                            {
-                                "filter": "1:1",
-                                "name": "Top sales"
-                            },
-                            {
-                                "filter": "3:1",
-                                "name": "Most recent"
-                            },
-                            {
-                                "filter": "2:0",
-                                "name": "Price low to high"
-                            },
-                            {
-                                "filter": "2:1",
-                                "name": "Price high to low"
-                            }
-                        ],
-                        "view_more": 7,
-                        "name": "Sort by"
-                    }
-                ],
-                "rank_colum_filter": [
-                    {
-                        "name": "Relevance",
-                        "p_search": {
-                            "offset": "160",
-                            "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                            "item_type": "0",
-                            "g": "0",
-                            "scene_id": "3",
-                            "mid": "69999906",
-                            "opt_id": "1603",
-                            "ts_req": "0",
-                            "version": "5",
-                            "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                            "scene": "opt",
-                            "gin_fallback": "0",
-                            "opt_type": "0",
-                            "goods_source": "search",
-                            "idx": "0",
-                            "region": "211",
-                            "no_result": "0",
-                            "bid": "69999705",
-                            "cloud_env": "udpm1",
-                            "ts": "1765212500598"
-                        },
-                        "id": 0,
-                        "sort": [
-                            1
-                        ]
-                    },
-                    {
-                        "name": "Top sales",
-                        "p_search": {
-                            "offset": "160",
-                            "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                            "item_type": "0",
-                            "g": "0",
-                            "scene_id": "3",
-                            "mid": "69999906",
-                            "opt_id": "1603",
-                            "ts_req": "0",
-                            "version": "5",
-                            "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                            "scene": "opt",
-                            "gin_fallback": "0",
-                            "opt_type": "0",
-                            "goods_source": "search",
-                            "idx": "1",
-                            "region": "211",
-                            "no_result": "0",
-                            "bid": "69999705",
-                            "cloud_env": "udpm1",
-                            "ts": "1765212500598"
-                        },
-                        "id": 1,
-                        "sort": [
-                            1
-                        ]
-                    },
-                    {
-                        "name": "Most recent",
-                        "p_search": {
-                            "offset": "160",
-                            "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                            "item_type": "0",
-                            "g": "0",
-                            "scene_id": "3",
-                            "mid": "69999906",
-                            "opt_id": "1603",
-                            "ts_req": "0",
-                            "version": "5",
-                            "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                            "scene": "opt",
-                            "gin_fallback": "0",
-                            "opt_type": "0",
-                            "goods_source": "search",
-                            "idx": "2",
-                            "region": "211",
-                            "no_result": "0",
-                            "bid": "69999705",
-                            "cloud_env": "udpm1",
-                            "ts": "1765212500598"
-                        },
-                        "id": 3,
-                        "sort": [
-                            1
-                        ]
-                    },
-                    {
-                        "name": "Price low to high",
-                        "p_search": {
-                            "offset": "160",
-                            "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                            "item_type": "0",
-                            "g": "0",
-                            "scene_id": "3",
-                            "mid": "69999906",
-                            "opt_id": "1603",
-                            "ts_req": "0",
-                            "version": "5",
-                            "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                            "scene": "opt",
-                            "gin_fallback": "0",
-                            "opt_type": "0",
-                            "goods_source": "search",
-                            "idx": "3",
-                            "region": "211",
-                            "no_result": "0",
-                            "bid": "69999705",
-                            "cloud_env": "udpm1",
-                            "ts": "1765212500598"
-                        },
-                        "id": 2,
-                        "sort": [
-                            0
-                        ]
-                    },
-                    {
-                        "name": "Price high to low",
-                        "p_search": {
-                            "offset": "160",
-                            "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                            "item_type": "0",
-                            "g": "0",
-                            "scene_id": "3",
-                            "mid": "69999906",
-                            "opt_id": "1603",
-                            "ts_req": "0",
-                            "version": "5",
-                            "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                            "scene": "opt",
-                            "gin_fallback": "0",
-                            "opt_type": "0",
-                            "goods_source": "search",
-                            "idx": "4",
-                            "region": "211",
-                            "no_result": "0",
-                            "bid": "69999705",
-                            "cloud_env": "udpm1",
-                            "ts": "1765212500598"
-                        },
-                        "id": 2,
-                        "sort": [
-                            1
-                        ]
-                    }
+                "id": 0,
+                "sort": [
+                  1
                 ]
+              },
+              {
+                "name": "Top sales",
+                "p_search": {
+                  "offset": "160",
+                  "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                  "item_type": "0",
+                  "g": "0",
+                  "scene_id": "3",
+                  "mid": "69999906",
+                  "opt_id": "1603",
+                  "ts_req": "0",
+                  "version": "5",
+                  "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                  "scene": "opt",
+                  "gin_fallback": "0",
+                  "opt_type": "0",
+                  "goods_source": "search",
+                  "idx": "1",
+                  "region": "211",
+                  "no_result": "0",
+                  "bid": "69999705",
+                  "cloud_env": "udpm1",
+                  "ts": "1765212500598"
+                },
+                "id": 1,
+                "sort": [
+                  1
+                ]
+              },
+              {
+                "name": "Most recent",
+                "p_search": {
+                  "offset": "160",
+                  "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                  "item_type": "0",
+                  "g": "0",
+                  "scene_id": "3",
+                  "mid": "69999906",
+                  "opt_id": "1603",
+                  "ts_req": "0",
+                  "version": "5",
+                  "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                  "scene": "opt",
+                  "gin_fallback": "0",
+                  "opt_type": "0",
+                  "goods_source": "search",
+                  "idx": "2",
+                  "region": "211",
+                  "no_result": "0",
+                  "bid": "69999705",
+                  "cloud_env": "udpm1",
+                  "ts": "1765212500598"
+                },
+                "id": 3,
+                "sort": [
+                  1
+                ]
+              },
+              {
+                "name": "Price low to high",
+                "p_search": {
+                  "offset": "160",
+                  "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                  "item_type": "0",
+                  "g": "0",
+                  "scene_id": "3",
+                  "mid": "69999906",
+                  "opt_id": "1603",
+                  "ts_req": "0",
+                  "version": "5",
+                  "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                  "scene": "opt",
+                  "gin_fallback": "0",
+                  "opt_type": "0",
+                  "goods_source": "search",
+                  "idx": "3",
+                  "region": "211",
+                  "no_result": "0",
+                  "bid": "69999705",
+                  "cloud_env": "udpm1",
+                  "ts": "1765212500598"
+                },
+                "id": 2,
+                "sort": [
+                  0
+                ]
+              },
+              {
+                "name": "Price high to low",
+                "p_search": {
+                  "offset": "160",
+                  "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                  "item_type": "0",
+                  "g": "0",
+                  "scene_id": "3",
+                  "mid": "69999906",
+                  "opt_id": "1603",
+                  "ts_req": "0",
+                  "version": "5",
+                  "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                  "scene": "opt",
+                  "gin_fallback": "0",
+                  "opt_type": "0",
+                  "goods_source": "search",
+                  "idx": "4",
+                  "region": "211",
+                  "no_result": "0",
+                  "bid": "69999705",
+                  "cloud_env": "udpm1",
+                  "ts": "1765212500598"
+                },
+                "id": 2,
+                "sort": [
+                  1
+                ]
+              }
+            ]
+          },
+          "quick_look": {
+            "icon_url": "https://aimg.kwcdn.com/upload_aimg/transaction/6dbc3f74-d7eb-463e-8397-cc1101ecba8e.png.slim.png",
+            "act_border_color": "#222222",
+            "back_rgb": "rgba(255,255,255,0.80)",
+            "border_color": "#CDCDCD",
+            "text": {
+              "color": "#000000",
+              "text": "Quick look"
             },
-            "quick_look": {
-                "icon_url": "https://aimg.kwcdn.com/upload_aimg/transaction/6dbc3f74-d7eb-463e-8397-cc1101ecba8e.png.slim.png",
-                "act_border_color": "#222222",
-                "back_rgb": "rgba(255,255,255,0.80)",
-                "border_color": "#CDCDCD",
-                "text": {
+            "open": true
+          },
+          "title": "Swimming, Diving & Water Sports",
+          "default_row_cnt": 0,
+          "opt_list": [
+            {
+              "tab_type": 0,
+              "image_url": "https://img.kwcdn.com/product/1e14dde1819/2e3ac988-f07d-41c3-959f-731e645b162b_213x213.png",
+              "p_rec": {
+                "offset": "160",
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "g": "0",
+                "scene_id": "3",
+                "mid": "69999906",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "scene": "opt",
+                "gin_fallback": "0",
+                "opt_hash_id": "836418868",
+                "opt_type": "2",
+                "goods_source": "rec",
+                "idx": "-1",
+                "region": "211",
+                "no_result": "0",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "ts": "1765212500607"
+              },
+              "disable_dup": false,
+              "pattern": 0,
+              "opt_type": 2,
+              "opt_name": "Swimming, Diving & Water Sports",
+              "priority": 0,
+              "opt_id": 1603,
+              "is_featured": false
+            }
+          ],
+          "goods_list": [
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/7d453d37-e9f2-4a79-9699-0ed204f997f9.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-74%"
+              },
+              "item_type": 0,
+              "page_alt": "spearfishing buoy hi visibility inflatable   buoy float   with dive   suitable for   diving freediving snorkeling swimming",
+              "current_sku_id": 17592373585833,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "ext_map": {
+                      "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
+                    },
+                    "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                    "footer": {
+                      "color": "#555555",
+                      "text": " in Swimming, Diving & Water Sports",
+                      "font": 14
+                    },
+                    "marketing_tag_type": 2100,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                    "header": {
+                      "text_style": 2,
+                      "color": "#FFFFFF",
+                      "back_color": "#0A8800",
+                      "text": "BEST-SELLING ITEM",
+                      "font": 12
+                    },
+                    "tag_id": 91020,
+                    "ranking_type": "BEST-SELLING ITEM",
+                    "ranking_id": "1603"
+                  },
+                  {
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "tagType": "11"
+                    },
+                    "tag_type": 11,
+                    "marketing_tag_type": 1000,
+                    "tag_id": 91019,
+                    "text": "Store coupon: $3.94 off $34.46+",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/61a7c5518f81e756661e51dc63aac9003e89858ags2CV.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/7d453d37-e9f2-4a79-9699-0ed204f997f9.jpg",
+                "url": "https://img.kwcdn.com/product/02de3ab4770a8ea57693f5b8d7fb3320913d3ded.temu.000001.jpeg"
+              },
+              "title": "[Spearfishing Buoy] Spearfishing Buoy - Hi-Visibility Inflatable Torpedo Buoy Float Signal With Dive Safety Flag - Suitable For Scuba Diving, Freediving, Snorkeling, Swimming",
+              "sales_tip_text_list": [
+                "1.5K+",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "1263795319",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthYupDlpPiNIkJvpjg8bF0m0JfBIIYah1JYHd65yYmXF6BTiFZYSJ2ZylPhX2TgLHgEH0YbiIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "6152298317286269483",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1263795319",
+                "g": "601099554305080",
+                "scene_id": "3",
+                "show_price": "2974",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "160",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "3888264745052385457",
+                "ts": "1765212500594"
+              },
+              "mall_id": 5900766945713,
+              "sales_num": "1.5K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099554305080&_oak_mp_inf=ELjooqum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F7d453d37-e9f2-4a79-9699-0ed204f997f9.jpg&spec_gallery_id=2109876846&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk3NA&_oak_gallery_order=1263795319%2C740642491%2C2146027519%2C2067369426%2C863729672",
+              "extend_fields": {
+                "sale_fire_flag": true,
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1263795319,740642491,2146027519,2067369426,863729672"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "ext_map": {
+                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
+                  },
+                  "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                  "footer": {
+                    "color": "#555555",
+                    "text": " in Swimming, Diving & Water Sports",
+                    "font": 14
+                  },
+                  "marketing_tag_type": 2100,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                  "header": {
+                    "text_style": 2,
+                    "color": "#FFFFFF",
+                    "back_color": "#0A8800",
+                    "text": "BEST-SELLING ITEM",
+                    "font": 12
+                  },
+                  "tag_id": 91020,
+                  "ranking_type": "BEST-SELLING ITEM",
+                  "ranking_id": "1603"
+                },
+                {
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "tagType": "11"
+                  },
+                  "tag_type": 11,
+                  "marketing_tag_type": 1000,
+                  "tag_id": 91019,
+                  "text": "Store coupon: $3.94 off $34.46+",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 160,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "29",
+                  ".74",
+                  ""
+                ],
+                "reduction_text": [
+                  "-74",
+                  "%"
+                ],
+                "price": 2974,
+                "market_price_str": "$114.45",
+                "market_price": 11445,
+                "market_price_type": 1,
+                "price_schema": "29.74",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "29.74",
+                  ""
+                ],
+                "price_str": "$29.74",
+                "market_price_text": [
+                  "$",
+                  "114.45",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 1000,
+                "id": 2109876846,
+                "url_id": "6152298317286269483",
+                "url": "https://img.kwcdn.com/product/fancy/7d453d37-e9f2-4a79-9699-0ed204f997f9.jpg",
+                "height": 1000
+              },
+              "sales_tip": "1.5K+ sold",
+              "visible": true,
+              "goods_id": 601099554305080,
+              "opt_id": 1604,
+              "seo_link_url": "/spearfishing-buoy-hi-visibility-inflatable--buoy-float--with-dive--suitable-for--diving-freediving-snorkeling-swimming-g-601099554305080.html?&_oak_mp_inf=ELjooqum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F7d453d37-e9f2-4a79-9699-0ed204f997f9.jpg&spec_gallery_id=2109876846&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk3NA&_oak_gallery_order=1263795319%2C740642491%2C2146027519%2C2067369426%2C863729672",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "1.5K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.8,
+                "hidden_comment": false,
+                "comment_num_tips": "60"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/aisc_image/algo/pass/d4df9d12-7af8-4cf1-98f6-b1b3e837fc30.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-17%"
+              },
+              "item_type": 0,
+              "page_alt": "  3mm neoprene long water boots full coverage ankle arch support sand proof durable neoprene for diving beach volleyball surfing snorkeling outdoor   unisex mens womens black with turquoise accent surf booties for men high quality diving boots swimming slippers for women sporty design hand wash   shoes grip surfing booties swimming accessories",
+              "current_sku_id": 17602944174314,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "ext_map": {
+                      "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#2 NEW ARRIVAL\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"}}}"
+                    },
+                    "prompt_tag_text": "'New Arrival' means that this product listing was created by the seller within the last 60 days and is currently trending in sales on the platform. If another seller lists the same product later, their listing may also qualify for the 'New Arrival' label. Please note that this label indicates a new listing, which may not necessarily be a new product on the platform.",
+                    "footer": {
+                      "color": "#555555",
+                      "text": " in Swimming, Diving & Water Sports",
+                      "font": 14
+                    },
+                    "marketing_tag_type": 2100,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                    "header": {
+                      "text_style": 2,
+                      "color": "#FFFFFF",
+                      "back_color": "#0A8800",
+                      "text": "#2 NEW ARRIVAL",
+                      "font": 12
+                    },
+                    "tag_id": 91020,
+                    "ranking_type": "#2 NEW ARRIVAL",
+                    "ranking_id": "1603"
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/a26c5a7ecaf938da7c6bed1040b41eee02207f13gs2CV.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/aisc_image/algo/pass/d4df9d12-7af8-4cf1-98f6-b1b3e837fc30.jpg",
+                "url": "https://img.kwcdn.com/product/2d11e6b36f9fa3d2c9a78d74dbd1e29999f64fbc.temu.000001.jpeg"
+              },
+              "title": "VOFIW 3mm Neoprene Long Water boots - Full-Coverage Ankle & Arch Support, Sand-Proof Durable Neoprene for Diving, Beach Volleyball, Surfing, Snorkeling & Outdoor Water Sports - Unisex Men's & Women's (Black with Turquoise Accent), Surf Booties for Men, High Quality  Diving Boots, Swimming Slippers for Women, Sporty Design, Hand Wash Only, Swim Shoes Grip, Surfing Booties, Swimming Accessories",
+              "sales_tip_text_list": [
+                "1.6K+",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "2062629172",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Qtnrx21rTaDQYD3VWRTlAhu2//Rs1PA1bSCPhjHzWndEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "7360071760555927294",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "2062629172",
+                "g": "601102086866592",
+                "scene_id": "3",
+                "show_price": "1181",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "161",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "1099888506907199569",
+                "ts": "1765212500594"
+              },
+              "mall_id": 634418214418705,
+              "sales_num": "1.6K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601102086866592&_oak_name_id=1099888506907199569&_oak_mp_inf=EKCN8uKv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Faisc_image%2Falgo%2Fpass%2Fd4df9d12-7af8-4cf1-98f6-b1b3e837fc30.jpg&spec_gallery_id=208132341089&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTE4MQ&_oak_gallery_order=2062629172%2C2128742649%2C1742924099%2C1685547681%2C206593630",
+              "extend_fields": {
+                "sale_fire_flag": true,
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601102086866592&_oak_name_id=1099888506907199569&_oak_mp_inf=EKCN8uKv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Faisc_image%2Falgo%2Fpass%2Fd4df9d12-7af8-4cf1-98f6-b1b3e837fc30.jpg&spec_gallery_id=208132341089&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTE4MQ&_oak_gallery_order=2062629172%2C2128742649%2C1742924099%2C1685547681%2C206593630&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "2062629172,2128742649,1742924099,1685547681,206593630",
+                  "_oak_name_id": "1099888506907199569"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "ext_map": {
+                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#2 NEW ARRIVAL\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"}}}"
+                  },
+                  "prompt_tag_text": "'New Arrival' means that this product listing was created by the seller within the last 60 days and is currently trending in sales on the platform. If another seller lists the same product later, their listing may also qualify for the 'New Arrival' label. Please note that this label indicates a new listing, which may not necessarily be a new product on the platform.",
+                  "footer": {
+                    "color": "#555555",
+                    "text": " in Swimming, Diving & Water Sports",
+                    "font": 14
+                  },
+                  "marketing_tag_type": 2100,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                  "header": {
+                    "text_style": 2,
+                    "color": "#FFFFFF",
+                    "back_color": "#0A8800",
+                    "text": "#2 NEW ARRIVAL",
+                    "font": 12
+                  },
+                  "tag_id": 91020,
+                  "ranking_type": "#2 NEW ARRIVAL",
+                  "ranking_id": "1603"
+                }
+              ],
+              "show_index": 161,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "11",
+                  ".81",
+                  ""
+                ],
+                "reduction_text": [
+                  "-17",
+                  "%"
+                ],
+                "price": 1181,
+                "market_price_str": "$14.26",
+                "market_price": 1426,
+                "market_price_type": 1,
+                "price_schema": "11.81",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "11.81",
+                  ""
+                ],
+                "price_str": "$11.81",
+                "market_price_text": [
+                  "$",
+                  "14.26",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 1500,
+                "id": 208132341089,
+                "url_id": "7360071760555927294",
+                "url": "https://img.kwcdn.com/product/aisc_image/algo/pass/d4df9d12-7af8-4cf1-98f6-b1b3e837fc30.jpg",
+                "height": 1500
+              },
+              "sales_tip": "1.6K+ sold",
+              "visible": true,
+              "goods_id": 601102086866592,
+              "opt_id": 1604,
+              "seo_link_url": "/-3mm-neoprene-long-water-boots-full-coverage-ankle-arch-support-sand-proof-durable-neoprene-for-diving-beach-volleyball-surfing-snorkeling-outdoor--unisex-mens-womens-black-with-turquoise-accent-surf-booties-for-men-high-quality-diving-boots-swimming-slippers-for-women-sporty-design-hand-wash--shoes-grip-surfing-booties-swimming-accessories-g-601102086866592.html?&_oak_name_id=1099888506907199569&_oak_mp_inf=EKCN8uKv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Faisc_image%2Falgo%2Fpass%2Fd4df9d12-7af8-4cf1-98f6-b1b3e837fc30.jpg&spec_gallery_id=208132341089&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTE4MQ&_oak_gallery_order=2062629172%2C2128742649%2C1742924099%2C1685547681%2C206593630",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "1.6K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 5.0,
+                "hidden_comment": true,
+                "comment_num_tips": "3"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/market/6d87986357ced96bbc9d91ae0bbbad8f_8zu9e6JgOEZj9.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-60%"
+              },
+              "item_type": 0,
+              "page_alt": "1pc   black resin diving suit hanger multi functional with clip hook for   bcd   gear ideal for travel storage  ",
+              "current_sku_id": 17593599208068,
+              "tags_info": {
+                "mall_tag": [
+                  {
+                    "color": "#FFEFD3",
+                    "ext_map": {
+                      "brand_info": "{\"brand_name\":\"HITURBO\",\"brand_authorized_type\":1}",
+                      "brand_tag_text_style": "1"
+                    },
+                    "bg_url": "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
+                    "marketing_tag_type": 2700,
+                    "width": 39,
+                    "tag_id": 91007,
+                    "text": "Brand Official Store: HITURBO",
+                    "tag_series": 2,
+                    "url": "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
+                    "height": 39
+                  }
+                ],
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "9 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 9 LEFT",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "[HiTurbo Diving Suit Hanger] HiTurbo Black Resin Diving Suit Hanger - 1pc Multi-Functional with Clip & Hook for Scuba, BCD, Water Sports Gear - Ideal for Travel & Storage, HITURBO",
+              "sales_tip_text_list": [
+                "671",
+                "sold"
+              ],
+              "sold_quantity_percent": 0,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "500053503",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0YK53N3FkBsDEc9wS0QKQ22L1WZYBnA14124W+Aa7YVFEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "6242375773210015784",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "500053503",
+                "g": "601099854570847",
+                "scene_id": "3",
+                "show_price": "1302",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "162",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "3651860420288562367",
+                "ts": "1765212500595"
+              },
+              "activity_type": 13,
+              "mall_id": 634418212913085,
+              "sales_num": "671",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099854570847&_oak_name_id=3651860420288562367&_oak_mp_inf=EN%2FKubqn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F6d87986357ced96bbc9d91ae0bbbad8f_8zu9e6JgOEZj9.jpg&spec_gallery_id=4&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMwMg&_oak_gallery_order=500053503%2C545613463%2C314731342%2C1070518493%2C283478468",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099854570847&_oak_name_id=3651860420288562367&_oak_mp_inf=EN%2FKubqn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F6d87986357ced96bbc9d91ae0bbbad8f_8zu9e6JgOEZj9.jpg&spec_gallery_id=4&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMwMg&_oak_gallery_order=500053503%2C545613463%2C314731342%2C1070518493%2C283478468&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "detail_id": "112776340071998815",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "500053503,545613463,314731342,1070518493,283478468",
+                  "_oak_name_id": "3651860420288562367"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "9 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 9 LEFT",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 162,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "13",
+                  ".02",
+                  ""
+                ],
+                "reduction_text": [
+                  "-60",
+                  "%"
+                ],
+                "price": 1302,
+                "market_price_str": "$32.99",
+                "market_price": 3299,
+                "market_price_type": 1,
+                "price_schema": "13.02",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "13.02",
+                  ""
+                ],
+                "price_str": "$13.02",
+                "reduction": 600,
+                "market_price_text": [
+                  "$",
+                  "32.99",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 2000,
+                "id": 4,
+                "url_id": "6242375773210015784",
+                "url": "https://img.kwcdn.com/product/fancy/market/6d87986357ced96bbc9d91ae0bbbad8f_8zu9e6JgOEZj9.jpg",
+                "height": 2000
+              },
+              "sales_tip": "671 sold",
+              "visible": true,
+              "goods_id": 601099854570847,
+              "opt_id": 1604,
+              "seo_link_url": "/1pc--black-resin-diving-suit-hanger-multi-functional-with-clip-hook-for--bcd--gear-ideal-for-travel-storage--g-601099854570847.html?&_oak_name_id=3651860420288562367&_oak_mp_inf=EN%2FKubqn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F6d87986357ced96bbc9d91ae0bbbad8f_8zu9e6JgOEZj9.jpg&spec_gallery_id=4&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMwMg&_oak_gallery_order=500053503%2C545613463%2C314731342%2C1070518493%2C283478468",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "671",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 5.0,
+                "hidden_comment": true,
+                "comment_num_tips": "2"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/2c57eaad-c138-42b0-ad71-5da38b77bbf3.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-72%"
+              },
+              "item_type": 0,
+              "page_alt": "trendy jacquard swim cap long hair swim cap   women   a large swim cap designed for females",
+              "current_sku_id": 17592451512570,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "color": "#555555",
+                    "ext_map": {
+                      "lowest_tag_up_flag": "2",
+                      "lowest_price_before_title": "6m lowest"
+                    },
+                    "marketing_tag_type": 1000,
+                    "tag_id": 91048,
+                    "text": "Lowest price in half year",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "Trendy Jacquard Swim Cap, Long Hair Swim Cap. Perfect for Women, This Is a Large Swim Cap Designed for Females.",
+              "sales_tip_text_list": [
+                "12K+",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "614944726",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0SWZuOoqwGI8Kiaom4IWh4GQdcxe7wAV3djmjhvDBZuHEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "6155523269462468687",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "614944726",
+                "g": "601099576697086",
+                "scene_id": "3",
+                "show_price": "232",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "163",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "2604154338682564742",
+                "ts": "1765212500595"
+              },
+              "mall_id": 634418212736120,
+              "sales_num": "12K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099576697086&_oak_name_id=2604154338682564742&_oak_mp_inf=EP7B%2BbWm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2c57eaad-c138-42b0-ad71-5da38b77bbf3.jpg&spec_gallery_id=2148722189&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjMy&_oak_gallery_order=614944726%2C2143213326%2C2129418827%2C256036006%2C941537675",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "614944726,2143213326,2129418827,256036006,941537675",
+                  "_oak_name_id": "2604154338682564742"
+                }
+              },
+              "goods_tags": [
+                {
+                  "color": "#555555",
+                  "ext_map": {
+                    "lowest_tag_up_flag": "2",
+                    "lowest_price_before_title": "6m lowest"
+                  },
+                  "marketing_tag_type": 1000,
+                  "tag_id": 91048,
+                  "text": "Lowest price in half year",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 163,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "2",
+                  ".32",
+                  ""
+                ],
+                "reduction_text": [
+                  "-72",
+                  "%"
+                ],
+                "price": 232,
+                "market_price_str": "$8.45",
+                "market_price": 845,
+                "market_price_type": 1,
+                "price_schema": "2.32",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "2.32",
+                  ""
+                ],
+                "price_str": "$2.32",
+                "market_price_text": [
+                  "$",
+                  "8.45",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 1000,
+                "id": 2148722189,
+                "url_id": "6155523269462468687",
+                "url": "https://img.kwcdn.com/product/fancy/2c57eaad-c138-42b0-ad71-5da38b77bbf3.jpg",
+                "height": 1000
+              },
+              "sales_tip": "12K+ sold",
+              "visible": true,
+              "goods_id": 601099576697086,
+              "opt_id": 1607,
+              "seo_link_url": "/trendy-jacquard-swim-cap-long-hair-swim-cap--women--a-large-swim-cap-designed-for-females-g-601099576697086.html?&_oak_name_id=2604154338682564742&_oak_mp_inf=EP7B%2BbWm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2c57eaad-c138-42b0-ad71-5da38b77bbf3.jpg&spec_gallery_id=2148722189&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjMy&_oak_gallery_order=614944726%2C2143213326%2C2129418827%2C256036006%2C941537675",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "12K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.6,
+                "hidden_comment": false,
+                "comment_num_tips": "709"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/d80750ea-ed5c-4571-9d91-9834ff827123.jpg",
+              "after_price_tip_text": [
+                "1",
+                "viewed"
+              ],
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": ""
+              },
+              "item_type": 0,
+              "page_alt": "1pc ultra soft microfiber beach towel quick dry lightweight 59 05x27 55 inches pink     in white dress ideal for   travel   camping perfect gift for valentines day mothers day birthdays more beach accessories",
+              "current_sku_id": 17595637390339,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "color": "#555555",
+                    "ext_map": {
+                      "lowest_tag_up_flag": "2",
+                      "lowest_price_before_title": "6m lowest"
+                    },
+                    "marketing_tag_type": 1000,
+                    "tag_id": 91048,
+                    "text": "Lowest price in half year",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "1pc Ultra-Soft Microfiber Beach Towel, Quick-Dry & Lightweight - 59.05x27.55 Inches, Pink Floral Design with Woman in White Dress - Ideal for Vacation, Yoga, Travel, Swim, Fitness, Camping - Perfect Gift for Valentine'S Day, Mother'S Day, Birthdays & More, Beach Accessories",
+              "sales_tip_text_list": [],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "1",
+                "mid": "69999906",
+                "final_creative_id": "1823542854",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Z2BEOVD8HtjN2lFtHHL5xwExfWy5EvB2gBruAbP2f2qEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "4466293049028213391",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1823542854",
+                "g": "601100327333857",
+                "scene_id": "3",
+                "show_price": "995",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "organicPoint": "CoABEpuHEOL7bnb6by3AYkNrQ5EvN19g6HsURvnHNLf84yNZsXp91/mmsO7XMqwFdXG7Xq3Dxs493ViVrnLkT/p/0cJwBMmMNrh1vEWQxSOPnMef3+iTGStKK1gJvQttMDhEpWZdyYH/0EtUxF374zlmFBhZSSyuHUgauqh2SiTsXOkQeBh2",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "164",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "5836932261870286218",
+                "ts": "1765212500595"
+              },
+              "mall_id": 634418218777790,
+              "sales_num": "0",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601100327333857&_oak_mp_inf=EOHf8Jup1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd80750ea-ed5c-4571-9d91-9834ff827123.jpg&spec_gallery_id=4986359650&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTk1&_oak_gallery_order=1823542854%2C1826508779%2C1658880811%2C975845102%2C445285343",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1823542854,1826508779,1658880811,975845102,445285343"
+                }
+              },
+              "goods_tags": [
+                {
+                  "color": "#555555",
+                  "ext_map": {
+                    "lowest_tag_up_flag": "2",
+                    "lowest_price_before_title": "6m lowest"
+                  },
+                  "marketing_tag_type": 1000,
+                  "tag_id": 91048,
+                  "text": "Lowest price in half year",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 164,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "9",
+                  ".95",
+                  ""
+                ],
+                "reduction_text": [],
+                "price": 995,
+                "price_schema": "9.95",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "9.95",
+                  ""
+                ],
+                "price_str": "$9.95"
+              },
+              "image": {
+                "width": 1200,
+                "id": 4986359650,
+                "url_id": "4466293049028213391",
+                "url": "https://img.kwcdn.com/product/fancy/d80750ea-ed5c-4571-9d91-9834ff827123.jpg",
+                "height": 1200
+              },
+              "sales_tip": "",
+              "visible": true,
+              "goods_id": 601100327333857,
+              "opt_id": 1605,
+              "seo_link_url": "/1pc-ultra-soft-microfiber-beach-towel-quick-dry-lightweight-59-05x27-55-inches-pink---in-white-dress-ideal-for--travel--camping-perfect-gift-for-valentines-day-mothers-day-birthdays-more-beach-accessories-g-601100327333857.html?&_oak_mp_inf=EOHf8Jup1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd80750ea-ed5c-4571-9d91-9834ff827123.jpg&spec_gallery_id=4986359650&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTk1&_oak_gallery_order=1823542854%2C1826508779%2C1658880811%2C975845102%2C445285343",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/05b4431c-03ba-4377-ab72-a2ddef36398a.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-73%"
+              },
+              "item_type": 0,
+              "page_alt": "1pc   kids cartoon dinosaur swim cap comfortable fashion swimming hat for boys mixed colors textile material",
+              "current_sku_id": 17593001014859,
+              "tags_info": {
+                "mall_tag": [
+                  {
+                    "color": "#FFFFFF",
+                    "ext_map": {
+                      "bg_start_color": "#6F3D91",
+                      "bg_end_color": "#520E6F"
+                    },
+                    "bg_url": "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
+                    "marketing_tag_type": 2701,
+                    "width": 39,
+                    "tag_id": 91130,
+                    "text": "Star store",
+                    "tag_series": 2,
+                    "url": "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
+                    "height": 39
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/605e624cff95df283bdc4eb75f5ac135ab2f4a11gs2CV.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/05b4431c-03ba-4377-ab72-a2ddef36398a.jpg",
+                "url": "https://img.kwcdn.com/product/9cf7daae093fe034a8a0de79be6f7449469b7e08.temu.000001.jpeg"
+              },
+              "title": "1pc Lwersimmg Kids Cartoon Dinosaur Swim Cap, Comfortable Fashion Swimming Hat for Boys, Mixed Colors, Textile Material",
+              "sales_tip_text_list": [
+                "1K+",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "1634142781",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0drtrBwDjBJauHWimzdwIktUnBIZMQA/V8jmOEBbUErOEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "7940652195408447039",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1634142781",
+                "g": "601099722057373",
+                "scene_id": "3",
+                "show_price": "234",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "165",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "6013802061030343589",
+                "ts": "1765212500595"
+              },
+              "mall_id": 4728540369038,
+              "sales_num": "1K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099722057373&_oak_name_id=6013802061030343589&_oak_mp_inf=EJ3Nofum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F05b4431c-03ba-4377-ab72-a2ddef36398a.jpg&spec_gallery_id=2613669685&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM0&_oak_gallery_order=1634142781%2C1060035853%2C540651101%2C744708881",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1634142781,1060035853,540651101,744708881",
+                  "_oak_name_id": "6013802061030343589"
+                }
+              },
+              "goods_tags": [],
+              "show_index": 165,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "2",
+                  ".34",
+                  ""
+                ],
+                "reduction_text": [
+                  "-73",
+                  "%"
+                ],
+                "price": 234,
+                "market_price_str": "$8.88",
+                "market_price": 888,
+                "market_price_type": 1,
+                "price_schema": "2.34",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "2.34",
+                  ""
+                ],
+                "price_str": "$2.34",
+                "market_price_text": [
+                  "$",
+                  "8.88",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 1000,
+                "id": 2613669685,
+                "url_id": "7940652195408447039",
+                "url": "https://img.kwcdn.com/product/fancy/05b4431c-03ba-4377-ab72-a2ddef36398a.jpg",
+                "height": 1000
+              },
+              "sales_tip": "1K+ sold",
+              "visible": true,
+              "goods_id": 601099722057373,
+              "opt_id": 1607,
+              "seo_link_url": "/1pc--kids-cartoon-dinosaur-swim-cap-comfortable-fashion-swimming-hat-for-boys-mixed-colors-textile-material-g-601099722057373.html?&_oak_name_id=6013802061030343589&_oak_mp_inf=EJ3Nofum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F05b4431c-03ba-4377-ab72-a2ddef36398a.jpg&spec_gallery_id=2613669685&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM0&_oak_gallery_order=1634142781%2C1060035853%2C540651101%2C744708881",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "1K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 5.0,
+                "hidden_comment": true,
+                "comment_num_tips": "3"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/d754c1f4-09f1-43c3-bdf4-1b1bf5b693a2.jpg",
+              "ware_house_type": 1,
+              "benefit_text": {
+                "text": "-30%"
+              },
+              "item_type": 0,
+              "page_alt": "handmade   high   steel   sword christmas gifts adult accessories costume accessories decorations collectiles not sharp",
+              "current_sku_id": 17592778124420,
+              "tags_info": {
+                "title_header_tags": [
+                  {
+                    "color": "#0A8800",
+                    "ext_map": {
+                      "local_explanation": "{\"title\":\"Local warehouse\",\"content\":\"Items with the \\\"Local\\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.\",\"button\":{\"text\":\"OK\"}}"
+                    },
+                    "marketing_tag_type": 1000,
+                    "tag_id": 91050,
+                    "text": "Local",
+                    "tag_series": 2
+                  }
+                ],
+                "goods_tags": [
+                  {
+                    "color": "#555555",
+                    "ext_map": {
+                      "lowest_tag_up_flag": "1",
+                      "lowest_price_before_title": "Lowest ever"
+                    },
+                    "marketing_tag_type": 1000,
+                    "tag_id": 91048,
+                    "text": "Lowest price ever",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/ae83b94931a6d76c7dd80e9506dd4c7df12af1b2.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/d754c1f4-09f1-43c3-bdf4-1b1bf5b693a2.jpg",
+                "url": "https://img.kwcdn.com/product/32b9839c242e0d01d23cae222643bb4292c17015.goods.000001.jpeg"
+              },
+              "title": "Handmade Katana, High Manganese Steel, Japanese Samurai Sword, Christmas Gifts, Adult Accessories, Costume Accessories, Decorations, Collectiles, Not Sharp",
+              "sales_tip_text_list": [
+                "119",
+                "sold"
+              ],
+              "sold_quantity_percent": 0,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "1786388939",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0TLIqRWMS7TD3SH5YafjSdW8PGc1tIW1HkGZ8ZA3x0UzEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "2070729301502230719",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1786388939",
+                "g": "601099666083262",
+                "scene_id": "3",
+                "show_price": "3823",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "166",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "8245773850916045113",
+                "ts": "1765212500595"
+              },
+              "activity_type": 27,
+              "mall_id": 634418217620191,
+              "sales_num": "119",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099666083262&_oak_name_id=8245773850916045113&_oak_mp_inf=EL6byeCm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd754c1f4-09f1-43c3-bdf4-1b1bf5b693a2.jpg&spec_gallery_id=2422456600&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgyMw&_oak_gallery_order=1786388939%2C390001667%2C1483202319",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "detail_id": "112782924357520830",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1786388939,390001667,1483202319",
+                  "_oak_name_id": "8245773850916045113"
+                }
+              },
+              "goods_tags": [
+                {
+                  "color": "#555555",
+                  "ext_map": {
+                    "lowest_tag_up_flag": "1",
+                    "lowest_price_before_title": "Lowest ever"
+                  },
+                  "marketing_tag_type": 1000,
+                  "tag_id": 91048,
+                  "text": "Lowest price ever",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 166,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "38",
+                  ".23",
+                  ""
+                ],
+                "reduction_text": [
+                  "-30",
+                  "%"
+                ],
+                "price": 3823,
+                "market_price_str": "$55.10",
+                "market_price": 5510,
+                "market_price_type": 1,
+                "price_schema": "38.23",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "38.23",
+                  ""
+                ],
+                "price_str": "$38.23",
+                "reduction": 300,
+                "market_price_text": [
+                  "$",
+                  "55.10",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 2000,
+                "id": 2422456600,
+                "url_id": "2070729301502230719",
+                "url": "https://img.kwcdn.com/product/fancy/d754c1f4-09f1-43c3-bdf4-1b1bf5b693a2.jpg",
+                "height": 2000
+              },
+              "sales_tip": "119 sold",
+              "visible": true,
+              "goods_id": 601099666083262,
+              "opt_id": 1604,
+              "seo_link_url": "/handmade--high--steel--sword-christmas-gifts-adult-accessories-costume-accessories-decorations-collectiles-not-sharp-g-601099666083262.html?&_oak_name_id=8245773850916045113&_oak_mp_inf=EL6byeCm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd754c1f4-09f1-43c3-bdf4-1b1bf5b693a2.jpg&spec_gallery_id=2422456600&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgyMw&_oak_gallery_order=1786388939%2C390001667%2C1483202319",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "119",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.9,
+                "hidden_comment": true,
+                "comment_num_tips": "17"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/6c8b30d7-8352-47a1-ac84-5cdf683f19f6.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": ""
+              },
+              "item_type": 0,
+              "page_alt": "1pc adjustable eva foam swim aid belt black safety   device for kids beginners adults universal size pool training vest for swimming lessons  ",
+              "current_sku_id": 17602505623783,
+              "tags_info": {},
+              "video": {
+                "video_url": ""
+              },
+              "title": "1pc Adjustable EVA Foam Swim Aid Belt/Black Safety Floatation Device for Kids, Beginners & Adults/Universal Size Pool Training Vest for Swimming Lessons & Water Safety",
+              "sales_tip_text_list": [
+                "294",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "1294794739",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Wr3AL4TL/22zYU8g8Uh1gxYTImeT/BB1ktGc9s1hUm4EH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "8722781017039061251",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1294794739",
+                "g": "601101999519546",
+                "scene_id": "3",
+                "show_price": "948",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "167",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "5758617352049438302",
+                "ts": "1765212500595"
+              },
+              "mall_id": 634418210310086,
+              "sales_num": "294",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601101999519546&_oak_mp_inf=ELrunrmv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F6c8b30d7-8352-47a1-ac84-5cdf683f19f6.jpg&spec_gallery_id=204629694671&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTQ4&_oak_gallery_order=1294794739%2C1129363313%2C910591292%2C1880961641%2C584188750",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601101999519546&_oak_mp_inf=ELrunrmv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F6c8b30d7-8352-47a1-ac84-5cdf683f19f6.jpg&spec_gallery_id=204629694671&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTQ4&_oak_gallery_order=1294794739%2C1129363313%2C910591292%2C1880961641%2C584188750&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1294794739,1129363313,910591292,1880961641,584188750"
+                }
+              },
+              "goods_tags": [],
+              "show_index": 167,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "9",
+                  ".48",
+                  ""
+                ],
+                "reduction_text": [],
+                "price": 948,
+                "price_schema": "9.48",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "9.48",
+                  ""
+                ],
+                "price_str": "$9.48"
+              },
+              "image": {
+                "width": 1280,
+                "id": 204629694671,
+                "url_id": "8722781017039061251",
+                "url": "https://img.kwcdn.com/product/fancy/6c8b30d7-8352-47a1-ac84-5cdf683f19f6.jpg",
+                "height": 1280
+              },
+              "sales_tip": "294 sold",
+              "visible": true,
+              "goods_id": 601101999519546,
+              "opt_id": 1607,
+              "seo_link_url": "/1pc-adjustable-eva-foam-swim-aid-belt-black-safety--device-for-kids-beginners-adults-universal-size-pool-training-vest-for-swimming-lessons--g-601101999519546.html?&_oak_mp_inf=ELrunrmv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F6c8b30d7-8352-47a1-ac84-5cdf683f19f6.jpg&spec_gallery_id=204629694671&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTQ4&_oak_gallery_order=1294794739%2C1129363313%2C910591292%2C1880961641%2C584188750",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "294",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.8,
+                "hidden_comment": true,
+                "comment_num_tips": "6"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/9f995f34-af24-4fc1-ba5d-5b6e07be8951.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": ""
+              },
+              "item_type": 0,
+              "page_alt": "hd electroplated swimming goggles waterproof anti fog small   racing goggles new years gift valentines day gift",
+              "current_sku_id": 17593900719136,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "1 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 1 LEFT",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "HD electroplated swimming goggles, waterproof, anti fog, small frame design racing goggles, New Year's gift, Valentine's Day gift",
+              "sales_tip_text_list": [
+                "1.1K+",
+                "sold"
+              ],
+              "sold_quantity_percent": 10,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "1743560340",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0caEZOb1gnpUXORFnVqZRqCWu8VhZz9SlyhdSYX4V6U0EH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "7117053988980979807",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1743560340",
+                "g": "601099919163426",
+                "scene_id": "3",
+                "show_price": "999",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "168",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "5829725591236903055",
+                "ts": "1765212500595"
+              },
+              "activity_type": 13,
+              "mall_id": 3833823550069,
+              "sales_num": "1.1K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099919163426&_oak_name_id=5829725591236903055&_oak_mp_inf=EKKAoNmn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9f995f34-af24-4fc1-ba5d-5b6e07be8951.jpg&spec_gallery_id=3404794125&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTk5&_oak_gallery_order=1743560340%2C2076782884%2C581232432%2C485891164%2C162647515",
+              "extend_fields": {
+                "sale_fire_flag": true,
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099919163426&_oak_name_id=5829725591236903055&_oak_mp_inf=EKKAoNmn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9f995f34-af24-4fc1-ba5d-5b6e07be8951.jpg&spec_gallery_id=3404794125&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTk5&_oak_gallery_order=1743560340%2C2076782884%2C581232432%2C485891164%2C162647515&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "detail_id": "112771934173724706",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1743560340,2076782884,581232432,485891164,162647515",
+                  "_oak_name_id": "5829725591236903055"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "1 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 1 LEFT",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 168,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "9",
+                  ".99",
+                  ""
+                ],
+                "reduction_text": [],
+                "price": 999,
+                "price_schema": "9.99",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "9.99",
+                  ""
+                ],
+                "price_str": "$9.99"
+              },
+              "image": {
+                "width": 800,
+                "id": 3404794125,
+                "url_id": "7117053988980979807",
+                "url": "https://img.kwcdn.com/product/fancy/9f995f34-af24-4fc1-ba5d-5b6e07be8951.jpg",
+                "height": 800
+              },
+              "sales_tip": "1.1K+ sold",
+              "visible": true,
+              "goods_id": 601099919163426,
+              "opt_id": 1607,
+              "seo_link_url": "/hd-electroplated-swimming-goggles-waterproof-anti-fog-small--racing-goggles-new-years-gift-valentines-day-gift-g-601099919163426.html?&_oak_name_id=5829725591236903055&_oak_mp_inf=EKKAoNmn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9f995f34-af24-4fc1-ba5d-5b6e07be8951.jpg&spec_gallery_id=3404794125&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTk5&_oak_gallery_order=1743560340%2C2076782884%2C581232432%2C485891164%2C162647515",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "1.1K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 5.0,
+                "hidden_comment": true,
+                "comment_num_tips": "5"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/open/2023-12-15/1702642286532-1e90b493ea7141758b5142edeeed92e3-goods.jpeg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-89%"
+              },
+              "item_type": 0,
+              "page_alt": "1pair colors swim fins unisex frog type girdles swimming hand fins flippers finger webbed gloves paddle plus   adult   swimming hand fins gloves with half cut design for swimming surfing",
+              "current_sku_id": 17592309452122,
+              "tags_info": {},
+              "video": {
+                "video_url": ""
+              },
+              "title": "1Pair colors Swim fins Unisex Frog Type Girdles Swimming Hand Fins Flippers Finger Webbed Gloves Paddle Plus S/M/L Adult Water Sports Swimming Hand Fins Gloves with Half-Cut Design for Swimming Surfing",
+              "sales_tip_text_list": [
+                "7.6K+",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "760443445",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0ZKdPph/u5/cYwaHVn2mkEFKPmuFbtQOzv9orGx0iFRgEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "6555264276063851892",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "760443445",
+                "g": "601099538641747",
+                "scene_id": "3",
+                "show_price": "378",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "169",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "5825208690327428681",
+                "ts": "1765212500595"
+              },
+              "mall_id": 634418211655841,
+              "sales_num": "7.6K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099538641747&_oak_name_id=5825208690327428681&_oak_mp_inf=ENPm5qOm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2023-12-15%2F1702642286532-1e90b493ea7141758b5142edeeed92e3-goods.jpeg&spec_gallery_id=2071670466&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzc4&_oak_gallery_order=760443445%2C80952720%2C670939247%2C1891330212%2C1716445259",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099538641747&_oak_name_id=5825208690327428681&_oak_mp_inf=ENPm5qOm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2023-12-15%2F1702642286532-1e90b493ea7141758b5142edeeed92e3-goods.jpeg&spec_gallery_id=2071670466&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzc4&_oak_gallery_order=760443445%2C80952720%2C670939247%2C1891330212%2C1716445259&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "760443445,80952720,670939247,1891330212,1716445259",
+                  "_oak_name_id": "5825208690327428681"
+                }
+              },
+              "goods_tags": [],
+              "show_index": 169,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "3",
+                  ".78",
+                  ""
+                ],
+                "reduction_text": [
+                  "-89",
+                  "%"
+                ],
+                "price": 378,
+                "market_price_str": "$37.06",
+                "market_price": 3706,
+                "market_price_type": 1,
+                "price_schema": "3.78",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "3.78",
+                  ""
+                ],
+                "price_str": "$3.78",
+                "market_price_text": [
+                  "$",
+                  "37.06",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 1400,
+                "id": 2071670466,
+                "url_id": "6555264276063851892",
+                "url": "https://img.kwcdn.com/product/open/2023-12-15/1702642286532-1e90b493ea7141758b5142edeeed92e3-goods.jpeg",
+                "height": 1400
+              },
+              "sales_tip": "7.6K+ sold",
+              "visible": true,
+              "goods_id": 601099538641747,
+              "opt_id": 1607,
+              "seo_link_url": "/1pair-colors-swim-fins-unisex-frog-type-girdles-swimming-hand-fins-flippers-finger-webbed-gloves-paddle-plus--adult--swimming-hand-fins-gloves-with-half-cut-design-for-swimming-surfing-g-601099538641747.html?&_oak_name_id=5825208690327428681&_oak_mp_inf=ENPm5qOm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2023-12-15%2F1702642286532-1e90b493ea7141758b5142edeeed92e3-goods.jpeg&spec_gallery_id=2071670466&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzc4&_oak_gallery_order=760443445%2C80952720%2C670939247%2C1891330212%2C1716445259",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "7.6K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.7,
+                "hidden_comment": false,
+                "comment_num_tips": "71"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/87b0a2e27b0a1924574dd95a71c7228e.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-79%"
+              },
+              "item_type": 0,
+              "page_alt": "1pc 180   swimming glasses clear swimming goggles suitable for underwater activities swimming",
+              "current_sku_id": 17592319659153,
+              "tags_info": {},
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/2491e6953ca8a8c1408f6e996bf0739582d278e8.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/87b0a2e27b0a1924574dd95a71c7228e.jpg",
+                "url": "https://img.kwcdn.com/product/e065f3a98d02c2f90d3c2d081f743ce276b97971.goods.000001.jpeg"
+              },
+              "title": "1pc 180° Wide View Clear Swimming Goggles for Underwater Activities, Swimming, Unobstructed Vision",
+              "sales_tip_text_list": [
+                "1.9K+",
+                "sold"
+              ],
+              "sold_quantity_percent": 0,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "1405821784",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0evCxaHyzHYJwJw0Gyjq013+y9phQ5Pw5vxXDLZgC26qEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "5764835891078169362",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1405821784",
+                "g": "601099541043921",
+                "scene_id": "3",
+                "show_price": "1633",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "170",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "876664725969693765",
+                "ts": "1765212500595"
+              },
+              "activity_type": 100,
+              "mall_id": 6023333088322,
+              "sales_num": "1.9K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099541043921&_oak_name_id=876664725969693765&_oak_mp_inf=ENG1%2BaSm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F87b0a2e27b0a1924574dd95a71c7228e.jpg&spec_gallery_id=2072720743&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTYzMw&_oak_gallery_order=1405821784%2C1258096835%2C1411365033%2C558638050%2C1782017849",
+              "extend_fields": {
+                "sale_fire_flag": true,
+                "support_tag_carousel": true,
+                "detail_id": "112765346826377937",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1405821784,1258096835,1411365033,558638050,1782017849",
+                  "_oak_name_id": "876664725969693765"
+                }
+              },
+              "goods_tags": [],
+              "show_index": 170,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "16",
+                  ".33",
+                  ""
+                ],
+                "reduction_text": [
+                  "-79",
+                  "%"
+                ],
+                "price": 1633,
+                "market_price_str": "$80.55",
+                "market_price": 8055,
+                "market_price_type": 1,
+                "price_schema": "16.33",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "16.33",
+                  ""
+                ],
+                "price_str": "$16.33",
+                "reduction": 790,
+                "market_price_text": [
+                  "$",
+                  "80.55",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 800,
+                "id": 2072720743,
+                "url_id": "5764835891078169362",
+                "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/87b0a2e27b0a1924574dd95a71c7228e.jpg",
+                "height": 800
+              },
+              "sales_tip": "1.9K+ sold",
+              "visible": true,
+              "goods_id": 601099541043921,
+              "opt_id": 1607,
+              "seo_link_url": "/1pc-180--swimming-glasses-clear-swimming-goggles-suitable-for-underwater-activities-swimming-g-601099541043921.html?&_oak_name_id=876664725969693765&_oak_mp_inf=ENG1%2BaSm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F87b0a2e27b0a1924574dd95a71c7228e.jpg&spec_gallery_id=2072720743&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTYzMw&_oak_gallery_order=1405821784%2C1258096835%2C1411365033%2C558638050%2C1782017849",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "1.9K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.7,
+                "hidden_comment": false,
+                "comment_num_tips": "55"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/c7e0c758-2f12-431b-aba7-0299e24ca0dc.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": ""
+              },
+              "item_type": 0,
+              "page_alt": "1pc   thermal neoprene wetsuit snorkel hood with flow ventilation adjustable straps clear visor black   diving surfing sailing cap for men women snorkeling gear underwater sports accessory",
+              "current_sku_id": 17599388176097,
+              "tags_info": {
+                "mall_tag": [
+                  {
+                    "color": "#FFEFD3",
+                    "ext_map": {
+                      "brand_info": "{\"brand_name\":\"HITURBO\",\"brand_authorized_type\":1}",
+                      "brand_tag_text_style": "1"
+                    },
+                    "bg_url": "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
+                    "marketing_tag_type": 2700,
+                    "width": 39,
+                    "tag_id": 91007,
+                    "text": "Brand Official Store: HITURBO",
+                    "tag_series": 2,
+                    "url": "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
+                    "height": 39
+                  }
+                ],
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "4 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 4 LEFT",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "[HITURBO Snorkel Hood] HITURBO Thermal Neoprene Wetsuit Snorkel Hood - 1pc Black Scuba Diving Cap with Flow Ventilation, Adjustable Straps & Clear Visor for Men & Women - Surfing, Sailing, Snorkeling Gear, Underwater Sports Accessory",
+              "sales_tip_text_list": [
+                "83",
+                "sold"
+              ],
+              "sold_quantity_percent": 0,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "517271371",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0cl4X6u5NRu32SPHVXKXMgY08Li/R/SJ5JkV8aOP4iVJEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "3304346522877886255",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "517271371",
+                "g": "601101343541145",
+                "scene_id": "3",
+                "show_price": "1446",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "171",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "6012951435558352946",
+                "ts": "1765212500595"
+              },
+              "activity_type": 13,
+              "mall_id": 634418212913085,
+              "sales_num": "83",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601101343541145&_oak_name_id=6012951435558352946&_oak_mp_inf=EJmPuYCt1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc7e0c758-2f12-431b-aba7-0299e24ca0dc.jpg&spec_gallery_id=202670537573&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQ0Ng&_oak_gallery_order=517271371%2C714712571%2C1735757228%2C1029531887%2C530557664",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601101343541145&_oak_name_id=6012951435558352946&_oak_mp_inf=EJmPuYCt1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc7e0c758-2f12-431b-aba7-0299e24ca0dc.jpg&spec_gallery_id=202670537573&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQ0Ng&_oak_gallery_order=517271371%2C714712571%2C1735757228%2C1029531887%2C530557664&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "detail_id": "112710362915096473",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "517271371,714712571,1735757228,1029531887,530557664",
+                  "_oak_name_id": "6012951435558352946"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "4 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 4 LEFT",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 171,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "14",
+                  ".46",
+                  ""
+                ],
+                "reduction_text": [],
+                "price": 1446,
+                "price_schema": "14.46",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "14.46",
+                  ""
+                ],
+                "price_str": "$14.46"
+              },
+              "image": {
+                "width": 959,
+                "id": 202670537573,
+                "url_id": "3304346522877886255",
+                "url": "https://img.kwcdn.com/product/fancy/c7e0c758-2f12-431b-aba7-0299e24ca0dc.jpg",
+                "height": 959
+              },
+              "sales_tip": "83 sold",
+              "visible": true,
+              "goods_id": 601101343541145,
+              "opt_id": 1604,
+              "seo_link_url": "/1pc--thermal-neoprene-wetsuit-snorkel-hood-with-flow-ventilation-adjustable-straps-clear-visor-black--diving-surfing-sailing-cap-for-men-women-snorkeling-gear-underwater-sports-accessory-g-601101343541145.html?&_oak_name_id=6012951435558352946&_oak_mp_inf=EJmPuYCt1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc7e0c758-2f12-431b-aba7-0299e24ca0dc.jpg&spec_gallery_id=202670537573&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQ0Ng&_oak_gallery_order=517271371%2C714712571%2C1735757228%2C1029531887%2C530557664",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "83",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/1766c3d9-4ca5-4cc6-a406-9b988d2516f4.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-50%"
+              },
+              "item_type": 0,
+              "page_alt": "diving 45 angle oral power inflator bcd k type   copper and nylon construction",
+              "current_sku_id": 17592634215130,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "tagType": "11"
+                    },
+                    "tag_type": 11,
+                    "marketing_tag_type": 1000,
+                    "tag_id": 91019,
+                    "text": "Store coupon: $4.92 off $39.38+",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "[Copper Diving Inflator] 45° Angle Copper and Nylon Diving Oral Power Inflator - BCD K-Type Compensator",
+              "sales_tip_text_list": [
+                "834",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "123544376",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Ujv4Vy+hVX7IcqbijUOcthkk48t+Jra/rcrXix8RdgaEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "7962343075114089915",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "123544376",
+                "g": "601099629332862",
+                "scene_id": "3",
+                "show_price": "2211",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "172",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "6085350685482008163",
+                "ts": "1765212500595"
+              },
+              "mall_id": 4781553045983,
+              "sales_num": "834",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099629332862&_oak_mp_inf=EP6Shs%2Bm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F1766c3d9-4ca5-4cc6-a406-9b988d2516f4.jpg&spec_gallery_id=2312780195&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjIxMQ&_oak_gallery_order=123544376%2C1832640877%2C121634141%2C1156578205%2C1136574831",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "123544376,1832640877,121634141,1156578205,1136574831"
+                }
+              },
+              "goods_tags": [
+                {
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "tagType": "11"
+                  },
+                  "tag_type": 11,
+                  "marketing_tag_type": 1000,
+                  "tag_id": 91019,
+                  "text": "Store coupon: $4.92 off $39.38+",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 172,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "22",
+                  ".11",
+                  ""
+                ],
+                "reduction_text": [
+                  "-50",
+                  "%"
+                ],
+                "price": 2211,
+                "market_price_str": "$44.98",
+                "market_price": 4498,
+                "market_price_type": 1,
+                "price_schema": "22.11",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "22.11",
+                  ""
+                ],
+                "price_str": "$22.11",
+                "market_price_text": [
+                  "$",
+                  "44.98",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 800,
+                "id": 2312780195,
+                "url_id": "7962343075114089915",
+                "url": "https://img.kwcdn.com/product/fancy/1766c3d9-4ca5-4cc6-a406-9b988d2516f4.jpg",
+                "height": 800
+              },
+              "sales_tip": "834 sold",
+              "visible": true,
+              "goods_id": 601099629332862,
+              "opt_id": 1604,
+              "seo_link_url": "/diving-45-angle-oral-power-inflator-bcd-k-type--copper-and-nylon-construction-g-601099629332862.html?&_oak_mp_inf=EP6Shs%2Bm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F1766c3d9-4ca5-4cc6-a406-9b988d2516f4.jpg&spec_gallery_id=2312780195&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjIxMQ&_oak_gallery_order=123544376%2C1832640877%2C121634141%2C1156578205%2C1136574831",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "834",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/market/474c44bcceb45fa2293aa37e0cfffcc5_v4Vtq9Nz2XpN0.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-86%"
+              },
+              "item_type": 0,
+              "page_alt": "  adjustable swimming snorkel with silicone mouthpiece black front breathing tube for diving snorkeling   for adults durable pvc material ideal for     snorkeling gear adjustable snorkel durable snorkel",
+              "current_sku_id": 17592821027777,
+              "tags_info": {
+                "mall_tag": [
+                  {
+                    "color": "#FFFFFF",
+                    "ext_map": {
+                      "bg_start_color": "#6F3D91",
+                      "bg_end_color": "#520E6F"
+                    },
+                    "bg_url": "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
+                    "marketing_tag_type": 2701,
+                    "width": 39,
+                    "tag_id": 91130,
+                    "text": "Star store",
+                    "tag_series": 2,
+                    "url": "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
+                    "height": 39
+                  },
+                  {
                     "color": "#000000",
-                    "text": "Quick look"
+                    "ext_map": {
+                      "brand_info": "{\"brand_name\":\"QINGSONG\",\"brand_authorized_type\":2}",
+                      "brand_tag_text_style": "1"
+                    },
+                    "bg_url": "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
+                    "marketing_tag_type": 2700,
+                    "width": 39,
+                    "tag_id": 91007,
+                    "text": "Brand: QINGSONG",
+                    "tag_series": 2,
+                    "height": 39
+                  }
+                ],
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "ext_map": {
+                      "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#7 BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports in Yellow\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
+                    },
+                    "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                    "footer": {
+                      "color": "#555555",
+                      "text": " in Swimming, Diving & Water Sports in Yellow",
+                      "font": 14
+                    },
+                    "marketing_tag_type": 2100,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                    "header": {
+                      "text_style": 2,
+                      "color": "#FFFFFF",
+                      "back_color": "#0A8800",
+                      "text": "#7 BEST-SELLING ITEM",
+                      "font": 12
+                    },
+                    "tag_id": 91020,
+                    "ranking_type": "#7 BEST-SELLING ITEM",
+                    "ranking_id": "1603"
+                  },
+                  {
+                    "color": "#555555",
+                    "ext_map": {
+                      "lowest_tag_up_flag": "1",
+                      "lowest_price_before_title": "Lowest ever"
+                    },
+                    "marketing_tag_type": 1000,
+                    "tag_id": 91048,
+                    "text": "Lowest price ever",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "[Adjustable Swimming Snorkel] QINGSONG Adjustable Swimming Snorkel with Silicone Mouthpiece - Black, Front Breathing Tube for Diving & Snorkeling, Comfortable Fit for Adults, Durable PVC Material, Ideal for Water Sports & Recreation, Snorkeling Gear | Adjustable Snorkel | Durable Snorkel",
+              "sales_tip_text_list": [
+                "3.2K+",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "946410180",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0WYBaGpqBDgc73o0+y+ULAEGNH346+W4fYzs1oTmTh/gEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "6389858610145786934",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "946410180",
+                "g": "601099676620970",
+                "scene_id": "3",
+                "show_price": "686",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "173",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "8154591677713401079",
+                "ts": "1765212500595"
+              },
+              "mall_id": 634418213775709,
+              "sales_num": "3.2K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099676620970&_oak_name_id=8154591677713401079&_oak_mp_inf=EKqxzOWm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F474c44bcceb45fa2293aa37e0cfffcc5_v4Vtq9Nz2XpN0.jpg&spec_gallery_id=4&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Njg2&_oak_gallery_order=946410180%2C101268136%2C2020969186%2C1346886372%2C1599808053",
+              "extend_fields": {
+                "mall_view_type": 2,
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099676620970&_oak_name_id=8154591677713401079&_oak_mp_inf=EKqxzOWm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F474c44bcceb45fa2293aa37e0cfffcc5_v4Vtq9Nz2XpN0.jpg&spec_gallery_id=4&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Njg2&_oak_gallery_order=946410180%2C101268136%2C2020969186%2C1346886372%2C1599808053&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "946410180,101268136,2020969186,1346886372,1599808053",
+                  "_oak_name_id": "8154591677713401079"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "ext_map": {
+                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#7 BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports in Yellow\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
+                  },
+                  "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                  "footer": {
+                    "color": "#555555",
+                    "text": " in Swimming, Diving & Water Sports in Yellow",
+                    "font": 14
+                  },
+                  "marketing_tag_type": 2100,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                  "header": {
+                    "text_style": 2,
+                    "color": "#FFFFFF",
+                    "back_color": "#0A8800",
+                    "text": "#7 BEST-SELLING ITEM",
+                    "font": 12
+                  },
+                  "tag_id": 91020,
+                  "ranking_type": "#7 BEST-SELLING ITEM",
+                  "ranking_id": "1603"
                 },
-                "open": true
+                {
+                  "color": "#555555",
+                  "ext_map": {
+                    "lowest_tag_up_flag": "1",
+                    "lowest_price_before_title": "Lowest ever"
+                  },
+                  "marketing_tag_type": 1000,
+                  "tag_id": 91048,
+                  "text": "Lowest price ever",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 173,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "6",
+                  ".86",
+                  ""
+                ],
+                "reduction_text": [
+                  "-86",
+                  "%"
+                ],
+                "price": 686,
+                "market_price_str": "$51.55",
+                "market_price": 5155,
+                "market_price_type": 1,
+                "price_schema": "6.86",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "6.86",
+                  ""
+                ],
+                "price_str": "$6.86",
+                "market_price_text": [
+                  "$",
+                  "51.55",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 800,
+                "id": 4,
+                "url_id": "6389858610145786934",
+                "url": "https://img.kwcdn.com/product/fancy/market/474c44bcceb45fa2293aa37e0cfffcc5_v4Vtq9Nz2XpN0.jpg",
+                "height": 800
+              },
+              "sales_tip": "3.2K+ sold",
+              "visible": true,
+              "goods_id": 601099676620970,
+              "opt_id": 1604,
+              "seo_link_url": "/-adjustable-swimming-snorkel-with-silicone-mouthpiece-black-front-breathing-tube-for-diving-snorkeling--for-adults-durable-pvc-material-ideal-for---snorkeling-gear-adjustable-snorkel-durable-snorkel-g-601099676620970.html?&_oak_name_id=8154591677713401079&_oak_mp_inf=EKqxzOWm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F474c44bcceb45fa2293aa37e0cfffcc5_v4Vtq9Nz2XpN0.jpg&spec_gallery_id=4&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Njg2&_oak_gallery_order=946410180%2C101268136%2C2020969186%2C1346886372%2C1599808053",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "3.2K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.8,
+                "hidden_comment": true,
+                "comment_num_tips": "5"
+              },
+              "adult_goods": false
             },
-            "title": "Swimming, Diving & Water Sports",
-            "default_row_cnt": 0,
-            "opt_list": [
-                {
-                    "tab_type": 0,
-                    "image_url": "https://img.kwcdn.com/product/1e14dde1819/2e3ac988-f07d-41c3-959f-731e645b162b_213x213.png",
-                    "p_rec": {
-                        "offset": "160",
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "g": "0",
-                        "scene_id": "3",
-                        "mid": "69999906",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "scene": "opt",
-                        "gin_fallback": "0",
-                        "opt_hash_id": "836418868",
-                        "opt_type": "2",
-                        "goods_source": "rec",
-                        "idx": "-1",
-                        "region": "211",
-                        "no_result": "0",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "ts": "1765212500607"
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/901617dc-d265-4ed0-aa26-b2b5aa25ad15.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-87%"
+              },
+              "item_type": 0,
+              "page_alt": "sup paddle board fish   black high quality durable material aerodynamic design for   stability maneuverability fit for most sup boards sleek fins design",
+              "current_sku_id": 17600808898956,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "3 LEFT!"
                     },
-                    "disable_dup": false,
-                    "pattern": 0,
-                    "opt_type": 2,
-                    "opt_name": "Swimming, Diving & Water Sports",
-                    "priority": 0,
-                    "opt_id": 1603,
-                    "is_featured": false
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 3 LEFT",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/b452d4684dd1040e5f863ca187808d390bfb35ce.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/901617dc-d265-4ed0-aa26-b2b5aa25ad15.jpg",
+                "url": "https://img.kwcdn.com/product/d05ccdc7f66bf0fb947c4fc47ea7f100a2fe1c4b.goods.000001.jpeg"
+              },
+              "title": "SUP Paddle Board Fish Tail Fin - Black High-Quality Durable Material, Aerodynamic Design for Enhanced Stability & Maneuverability - Fit for Most SUP Boards, Sleek Fins Design",
+              "sales_tip_text_list": [
+                "489",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "86309079",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0SWcT8jNse96pAZRAjiAEm4KNbmvEaXdSEcXMm8IbQcEEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "2625110076895805359",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "86309079",
+                "g": "601101641728647",
+                "scene_id": "3",
+                "show_price": "655",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "174",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "4946957388056276839",
+                "ts": "1765212500595"
+              },
+              "mall_id": 634418224173469,
+              "sales_num": "489",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601101641728647&_oak_name_id=4946957388056276839&_oak_mp_inf=EIeF0Y6u1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F901617dc-d265-4ed0-aa26-b2b5aa25ad15.jpg&spec_gallery_id=203488922420&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjU1&_oak_gallery_order=86309079%2C1434315401%2C1144741206%2C918148635%2C982896628",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "86309079,1434315401,1144741206,918148635,982896628",
+                  "_oak_name_id": "4946957388056276839"
                 }
-            ],
-            "goods_list": [
+              },
+              "goods_tags": [
                 {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/7d453d37-e9f2-4a79-9699-0ed204f997f9.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-74%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "spearfishing buoy hi visibility inflatable   buoy float   with dive   suitable for   diving freediving snorkeling swimming",
-                    "current_sku_id": 17592373585833,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "ext_map": {
-                                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
-                                },
-                                "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                                "footer": {
-                                    "color": "#555555",
-                                    "text": " in Swimming, Diving & Water Sports",
-                                    "font": 14
-                                },
-                                "marketing_tag_type": 2100,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                                "header": {
-                                    "text_style": 2,
-                                    "color": "#FFFFFF",
-                                    "back_color": "#0A8800",
-                                    "text": "BEST-SELLING ITEM",
-                                    "font": 12
-                                },
-                                "tag_id": 91020,
-                                "ranking_type": "BEST-SELLING ITEM",
-                                "ranking_id": "1603"
-                            },
-                            {
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "tagType": "11"
-                                },
-                                "tag_type": 11,
-                                "marketing_tag_type": 1000,
-                                "tag_id": 91019,
-                                "text": "Store coupon: $3.94 off $34.46+",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/61a7c5518f81e756661e51dc63aac9003e89858ags2CV.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/7d453d37-e9f2-4a79-9699-0ed204f997f9.jpg",
-                        "url": "https://img.kwcdn.com/product/02de3ab4770a8ea57693f5b8d7fb3320913d3ded.temu.000001.jpeg"
-                    },
-                    "title": "[Spearfishing Buoy] Spearfishing Buoy - Hi-Visibility Inflatable Torpedo Buoy Float Signal With Dive Safety Flag - Suitable For Scuba Diving, Freediving, Snorkeling, Swimming",
-                    "sales_tip_text_list": [
-                        "1.5K+",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "1263795319",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthYupDlpPiNIkJvpjg8bF0m0JfBIIYah1JYHd65yYmXF6BTiFZYSJ2ZylPhX2TgLHgEH0YbiIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "6152298317286269483",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1263795319",
-                        "g": "601099554305080",
-                        "scene_id": "3",
-                        "show_price": "2974",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "160",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "3888264745052385457",
-                        "ts": "1765212500594"
-                    },
-                    "mall_id": 5900766945713,
-                    "sales_num": "1.5K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099554305080&_oak_mp_inf=ELjooqum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F7d453d37-e9f2-4a79-9699-0ed204f997f9.jpg&spec_gallery_id=2109876846&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk3NA&_oak_gallery_order=1263795319%2C740642491%2C2146027519%2C2067369426%2C863729672",
-                    "extend_fields": {
-                        "sale_fire_flag": true,
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1263795319,740642491,2146027519,2067369426,863729672"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "ext_map": {
-                                "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
-                            },
-                            "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                            "footer": {
-                                "color": "#555555",
-                                "text": " in Swimming, Diving & Water Sports",
-                                "font": 14
-                            },
-                            "marketing_tag_type": 2100,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                            "header": {
-                                "text_style": 2,
-                                "color": "#FFFFFF",
-                                "back_color": "#0A8800",
-                                "text": "BEST-SELLING ITEM",
-                                "font": 12
-                            },
-                            "tag_id": 91020,
-                            "ranking_type": "BEST-SELLING ITEM",
-                            "ranking_id": "1603"
-                        },
-                        {
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "tagType": "11"
-                            },
-                            "tag_type": 11,
-                            "marketing_tag_type": 1000,
-                            "tag_id": 91019,
-                            "text": "Store coupon: $3.94 off $34.46+",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 160,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "29",
-                            ".74",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-74",
-                            "%"
-                        ],
-                        "price": 2974,
-                        "market_price_str": "$114.45",
-                        "market_price": 11445,
-                        "market_price_type": 1,
-                        "price_schema": "29.74",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "29.74",
-                            ""
-                        ],
-                        "price_str": "$29.74",
-                        "market_price_text": [
-                            "$",
-                            "114.45",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 1000,
-                        "id": 2109876846,
-                        "url_id": "6152298317286269483",
-                        "url": "https://img.kwcdn.com/product/fancy/7d453d37-e9f2-4a79-9699-0ed204f997f9.jpg",
-                        "height": 1000
-                    },
-                    "sales_tip": "1.5K+ sold",
-                    "visible": true,
-                    "goods_id": 601099554305080,
-                    "opt_id": 1604,
-                    "seo_link_url": "/spearfishing-buoy-hi-visibility-inflatable--buoy-float--with-dive--suitable-for--diving-freediving-snorkeling-swimming-g-601099554305080.html?&_oak_mp_inf=ELjooqum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F7d453d37-e9f2-4a79-9699-0ed204f997f9.jpg&spec_gallery_id=2109876846&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjk3NA&_oak_gallery_order=1263795319%2C740642491%2C2146027519%2C2067369426%2C863729672",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "1.5K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.8,
-                        "hidden_comment": false,
-                        "comment_num_tips": "60"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/aisc_image/algo/pass/d4df9d12-7af8-4cf1-98f6-b1b3e837fc30.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-17%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "  3mm neoprene long water boots full coverage ankle arch support sand proof durable neoprene for diving beach volleyball surfing snorkeling outdoor   unisex mens womens black with turquoise accent surf booties for men high quality diving boots swimming slippers for women sporty design hand wash   shoes grip surfing booties swimming accessories",
-                    "current_sku_id": 17602944174314,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "ext_map": {
-                                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#2 NEW ARRIVAL\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"}}}"
-                                },
-                                "prompt_tag_text": "'New Arrival' means that this product listing was created by the seller within the last 60 days and is currently trending in sales on the platform. If another seller lists the same product later, their listing may also qualify for the 'New Arrival' label. Please note that this label indicates a new listing, which may not necessarily be a new product on the platform.",
-                                "footer": {
-                                    "color": "#555555",
-                                    "text": " in Swimming, Diving & Water Sports",
-                                    "font": 14
-                                },
-                                "marketing_tag_type": 2100,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                                "header": {
-                                    "text_style": 2,
-                                    "color": "#FFFFFF",
-                                    "back_color": "#0A8800",
-                                    "text": "#2 NEW ARRIVAL",
-                                    "font": 12
-                                },
-                                "tag_id": 91020,
-                                "ranking_type": "#2 NEW ARRIVAL",
-                                "ranking_id": "1603"
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/a26c5a7ecaf938da7c6bed1040b41eee02207f13gs2CV.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/aisc_image/algo/pass/d4df9d12-7af8-4cf1-98f6-b1b3e837fc30.jpg",
-                        "url": "https://img.kwcdn.com/product/2d11e6b36f9fa3d2c9a78d74dbd1e29999f64fbc.temu.000001.jpeg"
-                    },
-                    "title": "VOFIW 3mm Neoprene Long Water boots - Full-Coverage Ankle & Arch Support, Sand-Proof Durable Neoprene for Diving, Beach Volleyball, Surfing, Snorkeling & Outdoor Water Sports - Unisex Men's & Women's (Black with Turquoise Accent), Surf Booties for Men, High Quality  Diving Boots, Swimming Slippers for Women, Sporty Design, Hand Wash Only, Swim Shoes Grip, Surfing Booties, Swimming Accessories",
-                    "sales_tip_text_list": [
-                        "1.6K+",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "2062629172",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Qtnrx21rTaDQYD3VWRTlAhu2//Rs1PA1bSCPhjHzWndEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "7360071760555927294",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "2062629172",
-                        "g": "601102086866592",
-                        "scene_id": "3",
-                        "show_price": "1181",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "161",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "1099888506907199569",
-                        "ts": "1765212500594"
-                    },
-                    "mall_id": 634418214418705,
-                    "sales_num": "1.6K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601102086866592&_oak_name_id=1099888506907199569&_oak_mp_inf=EKCN8uKv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Faisc_image%2Falgo%2Fpass%2Fd4df9d12-7af8-4cf1-98f6-b1b3e837fc30.jpg&spec_gallery_id=208132341089&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTE4MQ&_oak_gallery_order=2062629172%2C2128742649%2C1742924099%2C1685547681%2C206593630",
-                    "extend_fields": {
-                        "sale_fire_flag": true,
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601102086866592&_oak_name_id=1099888506907199569&_oak_mp_inf=EKCN8uKv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Faisc_image%2Falgo%2Fpass%2Fd4df9d12-7af8-4cf1-98f6-b1b3e837fc30.jpg&spec_gallery_id=208132341089&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTE4MQ&_oak_gallery_order=2062629172%2C2128742649%2C1742924099%2C1685547681%2C206593630&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "2062629172,2128742649,1742924099,1685547681,206593630",
-                            "_oak_name_id": "1099888506907199569"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "ext_map": {
-                                "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#2 NEW ARRIVAL\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"}}}"
-                            },
-                            "prompt_tag_text": "'New Arrival' means that this product listing was created by the seller within the last 60 days and is currently trending in sales on the platform. If another seller lists the same product later, their listing may also qualify for the 'New Arrival' label. Please note that this label indicates a new listing, which may not necessarily be a new product on the platform.",
-                            "footer": {
-                                "color": "#555555",
-                                "text": " in Swimming, Diving & Water Sports",
-                                "font": 14
-                            },
-                            "marketing_tag_type": 2100,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                            "header": {
-                                "text_style": 2,
-                                "color": "#FFFFFF",
-                                "back_color": "#0A8800",
-                                "text": "#2 NEW ARRIVAL",
-                                "font": 12
-                            },
-                            "tag_id": 91020,
-                            "ranking_type": "#2 NEW ARRIVAL",
-                            "ranking_id": "1603"
-                        }
-                    ],
-                    "show_index": 161,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "11",
-                            ".81",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-17",
-                            "%"
-                        ],
-                        "price": 1181,
-                        "market_price_str": "$14.26",
-                        "market_price": 1426,
-                        "market_price_type": 1,
-                        "price_schema": "11.81",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "11.81",
-                            ""
-                        ],
-                        "price_str": "$11.81",
-                        "market_price_text": [
-                            "$",
-                            "14.26",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 1500,
-                        "id": 208132341089,
-                        "url_id": "7360071760555927294",
-                        "url": "https://img.kwcdn.com/product/aisc_image/algo/pass/d4df9d12-7af8-4cf1-98f6-b1b3e837fc30.jpg",
-                        "height": 1500
-                    },
-                    "sales_tip": "1.6K+ sold",
-                    "visible": true,
-                    "goods_id": 601102086866592,
-                    "opt_id": 1604,
-                    "seo_link_url": "/-3mm-neoprene-long-water-boots-full-coverage-ankle-arch-support-sand-proof-durable-neoprene-for-diving-beach-volleyball-surfing-snorkeling-outdoor--unisex-mens-womens-black-with-turquoise-accent-surf-booties-for-men-high-quality-diving-boots-swimming-slippers-for-women-sporty-design-hand-wash--shoes-grip-surfing-booties-swimming-accessories-g-601102086866592.html?&_oak_name_id=1099888506907199569&_oak_mp_inf=EKCN8uKv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Faisc_image%2Falgo%2Fpass%2Fd4df9d12-7af8-4cf1-98f6-b1b3e837fc30.jpg&spec_gallery_id=208132341089&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTE4MQ&_oak_gallery_order=2062629172%2C2128742649%2C1742924099%2C1685547681%2C206593630",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "1.6K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 5.0,
-                        "hidden_comment": true,
-                        "comment_num_tips": "3"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/market/6d87986357ced96bbc9d91ae0bbbad8f_8zu9e6JgOEZj9.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-60%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "1pc   black resin diving suit hanger multi functional with clip hook for   bcd   gear ideal for travel storage  ",
-                    "current_sku_id": 17593599208068,
-                    "tags_info": {
-                        "mall_tag": [
-                            {
-                                "color": "#FFEFD3",
-                                "ext_map": {
-                                    "brand_info": "{\"brand_name\":\"HITURBO\",\"brand_authorized_type\":1}",
-                                    "brand_tag_text_style": "1"
-                                },
-                                "bg_url": "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
-                                "marketing_tag_type": 2700,
-                                "width": 39,
-                                "tag_id": 91007,
-                                "text": "Brand Official Store: HITURBO",
-                                "tag_series": 2,
-                                "url": "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
-                                "height": 39
-                            }
-                        ],
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "9 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 9 LEFT",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "[HiTurbo Diving Suit Hanger] HiTurbo Black Resin Diving Suit Hanger - 1pc Multi-Functional with Clip & Hook for Scuba, BCD, Water Sports Gear - Ideal for Travel & Storage, HITURBO",
-                    "sales_tip_text_list": [
-                        "671",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 0,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "500053503",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0YK53N3FkBsDEc9wS0QKQ22L1WZYBnA14124W+Aa7YVFEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "6242375773210015784",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "500053503",
-                        "g": "601099854570847",
-                        "scene_id": "3",
-                        "show_price": "1302",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "162",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "3651860420288562367",
-                        "ts": "1765212500595"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 634418212913085,
-                    "sales_num": "671",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099854570847&_oak_name_id=3651860420288562367&_oak_mp_inf=EN%2FKubqn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F6d87986357ced96bbc9d91ae0bbbad8f_8zu9e6JgOEZj9.jpg&spec_gallery_id=4&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMwMg&_oak_gallery_order=500053503%2C545613463%2C314731342%2C1070518493%2C283478468",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099854570847&_oak_name_id=3651860420288562367&_oak_mp_inf=EN%2FKubqn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F6d87986357ced96bbc9d91ae0bbbad8f_8zu9e6JgOEZj9.jpg&spec_gallery_id=4&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMwMg&_oak_gallery_order=500053503%2C545613463%2C314731342%2C1070518493%2C283478468&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "detail_id": "112776340071998815",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "500053503,545613463,314731342,1070518493,283478468",
-                            "_oak_name_id": "3651860420288562367"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "9 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 9 LEFT",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 162,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "13",
-                            ".02",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-60",
-                            "%"
-                        ],
-                        "price": 1302,
-                        "market_price_str": "$32.99",
-                        "market_price": 3299,
-                        "market_price_type": 1,
-                        "price_schema": "13.02",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "13.02",
-                            ""
-                        ],
-                        "price_str": "$13.02",
-                        "reduction": 600,
-                        "market_price_text": [
-                            "$",
-                            "32.99",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 2000,
-                        "id": 4,
-                        "url_id": "6242375773210015784",
-                        "url": "https://img.kwcdn.com/product/fancy/market/6d87986357ced96bbc9d91ae0bbbad8f_8zu9e6JgOEZj9.jpg",
-                        "height": 2000
-                    },
-                    "sales_tip": "671 sold",
-                    "visible": true,
-                    "goods_id": 601099854570847,
-                    "opt_id": 1604,
-                    "seo_link_url": "/1pc--black-resin-diving-suit-hanger-multi-functional-with-clip-hook-for--bcd--gear-ideal-for-travel-storage--g-601099854570847.html?&_oak_name_id=3651860420288562367&_oak_mp_inf=EN%2FKubqn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F6d87986357ced96bbc9d91ae0bbbad8f_8zu9e6JgOEZj9.jpg&spec_gallery_id=4&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMwMg&_oak_gallery_order=500053503%2C545613463%2C314731342%2C1070518493%2C283478468",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "671",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 5.0,
-                        "hidden_comment": true,
-                        "comment_num_tips": "2"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/2c57eaad-c138-42b0-ad71-5da38b77bbf3.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-72%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "trendy jacquard swim cap long hair swim cap   women   a large swim cap designed for females",
-                    "current_sku_id": 17592451512570,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "color": "#555555",
-                                "ext_map": {
-                                    "lowest_tag_up_flag": "2",
-                                    "lowest_price_before_title": "6m lowest"
-                                },
-                                "marketing_tag_type": 1000,
-                                "tag_id": 91048,
-                                "text": "Lowest price in half year",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "Trendy Jacquard Swim Cap, Long Hair Swim Cap. Perfect for Women, This Is a Large Swim Cap Designed for Females.",
-                    "sales_tip_text_list": [
-                        "12K+",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "614944726",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0SWZuOoqwGI8Kiaom4IWh4GQdcxe7wAV3djmjhvDBZuHEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "6155523269462468687",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "614944726",
-                        "g": "601099576697086",
-                        "scene_id": "3",
-                        "show_price": "232",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "163",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "2604154338682564742",
-                        "ts": "1765212500595"
-                    },
-                    "mall_id": 634418212736120,
-                    "sales_num": "12K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099576697086&_oak_name_id=2604154338682564742&_oak_mp_inf=EP7B%2BbWm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2c57eaad-c138-42b0-ad71-5da38b77bbf3.jpg&spec_gallery_id=2148722189&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjMy&_oak_gallery_order=614944726%2C2143213326%2C2129418827%2C256036006%2C941537675",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "614944726,2143213326,2129418827,256036006,941537675",
-                            "_oak_name_id": "2604154338682564742"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "color": "#555555",
-                            "ext_map": {
-                                "lowest_tag_up_flag": "2",
-                                "lowest_price_before_title": "6m lowest"
-                            },
-                            "marketing_tag_type": 1000,
-                            "tag_id": 91048,
-                            "text": "Lowest price in half year",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 163,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "2",
-                            ".32",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-72",
-                            "%"
-                        ],
-                        "price": 232,
-                        "market_price_str": "$8.45",
-                        "market_price": 845,
-                        "market_price_type": 1,
-                        "price_schema": "2.32",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "2.32",
-                            ""
-                        ],
-                        "price_str": "$2.32",
-                        "market_price_text": [
-                            "$",
-                            "8.45",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 1000,
-                        "id": 2148722189,
-                        "url_id": "6155523269462468687",
-                        "url": "https://img.kwcdn.com/product/fancy/2c57eaad-c138-42b0-ad71-5da38b77bbf3.jpg",
-                        "height": 1000
-                    },
-                    "sales_tip": "12K+ sold",
-                    "visible": true,
-                    "goods_id": 601099576697086,
-                    "opt_id": 1607,
-                    "seo_link_url": "/trendy-jacquard-swim-cap-long-hair-swim-cap--women--a-large-swim-cap-designed-for-females-g-601099576697086.html?&_oak_name_id=2604154338682564742&_oak_mp_inf=EP7B%2BbWm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F2c57eaad-c138-42b0-ad71-5da38b77bbf3.jpg&spec_gallery_id=2148722189&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjMy&_oak_gallery_order=614944726%2C2143213326%2C2129418827%2C256036006%2C941537675",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "12K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.6,
-                        "hidden_comment": false,
-                        "comment_num_tips": "709"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/d80750ea-ed5c-4571-9d91-9834ff827123.jpg",
-                    "after_price_tip_text": [
-                        "1",
-                        "viewed"
-                    ],
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": ""
-                    },
-                    "item_type": 0,
-                    "page_alt": "1pc ultra soft microfiber beach towel quick dry lightweight 59 05x27 55 inches pink     in white dress ideal for   travel   camping perfect gift for valentines day mothers day birthdays more beach accessories",
-                    "current_sku_id": 17595637390339,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "color": "#555555",
-                                "ext_map": {
-                                    "lowest_tag_up_flag": "2",
-                                    "lowest_price_before_title": "6m lowest"
-                                },
-                                "marketing_tag_type": 1000,
-                                "tag_id": 91048,
-                                "text": "Lowest price in half year",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "1pc Ultra-Soft Microfiber Beach Towel, Quick-Dry & Lightweight - 59.05x27.55 Inches, Pink Floral Design with Woman in White Dress - Ideal for Vacation, Yoga, Travel, Swim, Fitness, Camping - Perfect Gift for Valentine'S Day, Mother'S Day, Birthdays & More, Beach Accessories",
-                    "sales_tip_text_list": [],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "1",
-                        "mid": "69999906",
-                        "final_creative_id": "1823542854",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Z2BEOVD8HtjN2lFtHHL5xwExfWy5EvB2gBruAbP2f2qEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "4466293049028213391",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1823542854",
-                        "g": "601100327333857",
-                        "scene_id": "3",
-                        "show_price": "995",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "organicPoint": "CoABEpuHEOL7bnb6by3AYkNrQ5EvN19g6HsURvnHNLf84yNZsXp91/mmsO7XMqwFdXG7Xq3Dxs493ViVrnLkT/p/0cJwBMmMNrh1vEWQxSOPnMef3+iTGStKK1gJvQttMDhEpWZdyYH/0EtUxF374zlmFBhZSSyuHUgauqh2SiTsXOkQeBh2",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "164",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "5836932261870286218",
-                        "ts": "1765212500595"
-                    },
-                    "mall_id": 634418218777790,
-                    "sales_num": "0",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601100327333857&_oak_mp_inf=EOHf8Jup1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd80750ea-ed5c-4571-9d91-9834ff827123.jpg&spec_gallery_id=4986359650&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTk1&_oak_gallery_order=1823542854%2C1826508779%2C1658880811%2C975845102%2C445285343",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1823542854,1826508779,1658880811,975845102,445285343"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "color": "#555555",
-                            "ext_map": {
-                                "lowest_tag_up_flag": "2",
-                                "lowest_price_before_title": "6m lowest"
-                            },
-                            "marketing_tag_type": 1000,
-                            "tag_id": 91048,
-                            "text": "Lowest price in half year",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 164,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "9",
-                            ".95",
-                            ""
-                        ],
-                        "reduction_text": [],
-                        "price": 995,
-                        "price_schema": "9.95",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "9.95",
-                            ""
-                        ],
-                        "price_str": "$9.95"
-                    },
-                    "image": {
-                        "width": 1200,
-                        "id": 4986359650,
-                        "url_id": "4466293049028213391",
-                        "url": "https://img.kwcdn.com/product/fancy/d80750ea-ed5c-4571-9d91-9834ff827123.jpg",
-                        "height": 1200
-                    },
-                    "sales_tip": "",
-                    "visible": true,
-                    "goods_id": 601100327333857,
-                    "opt_id": 1605,
-                    "seo_link_url": "/1pc-ultra-soft-microfiber-beach-towel-quick-dry-lightweight-59-05x27-55-inches-pink---in-white-dress-ideal-for--travel--camping-perfect-gift-for-valentines-day-mothers-day-birthdays-more-beach-accessories-g-601100327333857.html?&_oak_mp_inf=EOHf8Jup1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd80750ea-ed5c-4571-9d91-9834ff827123.jpg&spec_gallery_id=4986359650&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTk1&_oak_gallery_order=1823542854%2C1826508779%2C1658880811%2C975845102%2C445285343",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/05b4431c-03ba-4377-ab72-a2ddef36398a.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-73%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "1pc   kids cartoon dinosaur swim cap comfortable fashion swimming hat for boys mixed colors textile material",
-                    "current_sku_id": 17593001014859,
-                    "tags_info": {
-                        "mall_tag": [
-                            {
-                                "color": "#FFFFFF",
-                                "ext_map": {
-                                    "bg_start_color": "#6F3D91",
-                                    "bg_end_color": "#520E6F"
-                                },
-                                "bg_url": "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                                "marketing_tag_type": 2701,
-                                "width": 39,
-                                "tag_id": 91130,
-                                "text": "Star store",
-                                "tag_series": 2,
-                                "url": "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                                "height": 39
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/605e624cff95df283bdc4eb75f5ac135ab2f4a11gs2CV.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/05b4431c-03ba-4377-ab72-a2ddef36398a.jpg",
-                        "url": "https://img.kwcdn.com/product/9cf7daae093fe034a8a0de79be6f7449469b7e08.temu.000001.jpeg"
-                    },
-                    "title": "1pc Lwersimmg Kids Cartoon Dinosaur Swim Cap, Comfortable Fashion Swimming Hat for Boys, Mixed Colors, Textile Material",
-                    "sales_tip_text_list": [
-                        "1K+",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "1634142781",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0drtrBwDjBJauHWimzdwIktUnBIZMQA/V8jmOEBbUErOEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "7940652195408447039",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1634142781",
-                        "g": "601099722057373",
-                        "scene_id": "3",
-                        "show_price": "234",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "165",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "6013802061030343589",
-                        "ts": "1765212500595"
-                    },
-                    "mall_id": 4728540369038,
-                    "sales_num": "1K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099722057373&_oak_name_id=6013802061030343589&_oak_mp_inf=EJ3Nofum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F05b4431c-03ba-4377-ab72-a2ddef36398a.jpg&spec_gallery_id=2613669685&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM0&_oak_gallery_order=1634142781%2C1060035853%2C540651101%2C744708881",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1634142781,1060035853,540651101,744708881",
-                            "_oak_name_id": "6013802061030343589"
-                        }
-                    },
-                    "goods_tags": [],
-                    "show_index": 165,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "2",
-                            ".34",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-73",
-                            "%"
-                        ],
-                        "price": 234,
-                        "market_price_str": "$8.88",
-                        "market_price": 888,
-                        "market_price_type": 1,
-                        "price_schema": "2.34",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "2.34",
-                            ""
-                        ],
-                        "price_str": "$2.34",
-                        "market_price_text": [
-                            "$",
-                            "8.88",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 1000,
-                        "id": 2613669685,
-                        "url_id": "7940652195408447039",
-                        "url": "https://img.kwcdn.com/product/fancy/05b4431c-03ba-4377-ab72-a2ddef36398a.jpg",
-                        "height": 1000
-                    },
-                    "sales_tip": "1K+ sold",
-                    "visible": true,
-                    "goods_id": 601099722057373,
-                    "opt_id": 1607,
-                    "seo_link_url": "/1pc--kids-cartoon-dinosaur-swim-cap-comfortable-fashion-swimming-hat-for-boys-mixed-colors-textile-material-g-601099722057373.html?&_oak_name_id=6013802061030343589&_oak_mp_inf=EJ3Nofum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F05b4431c-03ba-4377-ab72-a2ddef36398a.jpg&spec_gallery_id=2613669685&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM0&_oak_gallery_order=1634142781%2C1060035853%2C540651101%2C744708881",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "1K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 5.0,
-                        "hidden_comment": true,
-                        "comment_num_tips": "3"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/d754c1f4-09f1-43c3-bdf4-1b1bf5b693a2.jpg",
-                    "ware_house_type": 1,
-                    "benefit_text": {
-                        "text": "-30%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "handmade   high   steel   sword christmas gifts adult accessories costume accessories decorations collectiles not sharp",
-                    "current_sku_id": 17592778124420,
-                    "tags_info": {
-                        "title_header_tags": [
-                            {
-                                "color": "#0A8800",
-                                "ext_map": {
-                                    "local_explanation": "{\"title\":\"Local warehouse\",\"content\":\"Items with the \\\"Local\\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.\",\"button\":{\"text\":\"OK\"}}"
-                                },
-                                "marketing_tag_type": 1000,
-                                "tag_id": 91050,
-                                "text": "Local",
-                                "tag_series": 2
-                            }
-                        ],
-                        "goods_tags": [
-                            {
-                                "color": "#555555",
-                                "ext_map": {
-                                    "lowest_tag_up_flag": "1",
-                                    "lowest_price_before_title": "Lowest ever"
-                                },
-                                "marketing_tag_type": 1000,
-                                "tag_id": 91048,
-                                "text": "Lowest price ever",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/ae83b94931a6d76c7dd80e9506dd4c7df12af1b2.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/d754c1f4-09f1-43c3-bdf4-1b1bf5b693a2.jpg",
-                        "url": "https://img.kwcdn.com/product/32b9839c242e0d01d23cae222643bb4292c17015.goods.000001.jpeg"
-                    },
-                    "title": "Handmade Katana, High Manganese Steel, Japanese Samurai Sword, Christmas Gifts, Adult Accessories, Costume Accessories, Decorations, Collectiles, Not Sharp",
-                    "sales_tip_text_list": [
-                        "119",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 0,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "1786388939",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0TLIqRWMS7TD3SH5YafjSdW8PGc1tIW1HkGZ8ZA3x0UzEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "2070729301502230719",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1786388939",
-                        "g": "601099666083262",
-                        "scene_id": "3",
-                        "show_price": "3823",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "166",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "8245773850916045113",
-                        "ts": "1765212500595"
-                    },
-                    "activity_type": 27,
-                    "mall_id": 634418217620191,
-                    "sales_num": "119",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099666083262&_oak_name_id=8245773850916045113&_oak_mp_inf=EL6byeCm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd754c1f4-09f1-43c3-bdf4-1b1bf5b693a2.jpg&spec_gallery_id=2422456600&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgyMw&_oak_gallery_order=1786388939%2C390001667%2C1483202319",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "detail_id": "112782924357520830",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1786388939,390001667,1483202319",
-                            "_oak_name_id": "8245773850916045113"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "color": "#555555",
-                            "ext_map": {
-                                "lowest_tag_up_flag": "1",
-                                "lowest_price_before_title": "Lowest ever"
-                            },
-                            "marketing_tag_type": 1000,
-                            "tag_id": 91048,
-                            "text": "Lowest price ever",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 166,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "38",
-                            ".23",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-30",
-                            "%"
-                        ],
-                        "price": 3823,
-                        "market_price_str": "$55.10",
-                        "market_price": 5510,
-                        "market_price_type": 1,
-                        "price_schema": "38.23",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "38.23",
-                            ""
-                        ],
-                        "price_str": "$38.23",
-                        "reduction": 300,
-                        "market_price_text": [
-                            "$",
-                            "55.10",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 2000,
-                        "id": 2422456600,
-                        "url_id": "2070729301502230719",
-                        "url": "https://img.kwcdn.com/product/fancy/d754c1f4-09f1-43c3-bdf4-1b1bf5b693a2.jpg",
-                        "height": 2000
-                    },
-                    "sales_tip": "119 sold",
-                    "visible": true,
-                    "goods_id": 601099666083262,
-                    "opt_id": 1604,
-                    "seo_link_url": "/handmade--high--steel--sword-christmas-gifts-adult-accessories-costume-accessories-decorations-collectiles-not-sharp-g-601099666083262.html?&_oak_name_id=8245773850916045113&_oak_mp_inf=EL6byeCm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMDk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd754c1f4-09f1-43c3-bdf4-1b1bf5b693a2.jpg&spec_gallery_id=2422456600&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzgyMw&_oak_gallery_order=1786388939%2C390001667%2C1483202319",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "119",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.9,
-                        "hidden_comment": true,
-                        "comment_num_tips": "17"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/6c8b30d7-8352-47a1-ac84-5cdf683f19f6.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": ""
-                    },
-                    "item_type": 0,
-                    "page_alt": "1pc adjustable eva foam swim aid belt black safety   device for kids beginners adults universal size pool training vest for swimming lessons  ",
-                    "current_sku_id": 17602505623783,
-                    "tags_info": {},
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "1pc Adjustable EVA Foam Swim Aid Belt/Black Safety Floatation Device for Kids, Beginners & Adults/Universal Size Pool Training Vest for Swimming Lessons & Water Safety",
-                    "sales_tip_text_list": [
-                        "294",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "1294794739",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Wr3AL4TL/22zYU8g8Uh1gxYTImeT/BB1ktGc9s1hUm4EH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "8722781017039061251",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1294794739",
-                        "g": "601101999519546",
-                        "scene_id": "3",
-                        "show_price": "948",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "167",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "5758617352049438302",
-                        "ts": "1765212500595"
-                    },
-                    "mall_id": 634418210310086,
-                    "sales_num": "294",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601101999519546&_oak_mp_inf=ELrunrmv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F6c8b30d7-8352-47a1-ac84-5cdf683f19f6.jpg&spec_gallery_id=204629694671&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTQ4&_oak_gallery_order=1294794739%2C1129363313%2C910591292%2C1880961641%2C584188750",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601101999519546&_oak_mp_inf=ELrunrmv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F6c8b30d7-8352-47a1-ac84-5cdf683f19f6.jpg&spec_gallery_id=204629694671&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTQ4&_oak_gallery_order=1294794739%2C1129363313%2C910591292%2C1880961641%2C584188750&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1294794739,1129363313,910591292,1880961641,584188750"
-                        }
-                    },
-                    "goods_tags": [],
-                    "show_index": 167,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "9",
-                            ".48",
-                            ""
-                        ],
-                        "reduction_text": [],
-                        "price": 948,
-                        "price_schema": "9.48",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "9.48",
-                            ""
-                        ],
-                        "price_str": "$9.48"
-                    },
-                    "image": {
-                        "width": 1280,
-                        "id": 204629694671,
-                        "url_id": "8722781017039061251",
-                        "url": "https://img.kwcdn.com/product/fancy/6c8b30d7-8352-47a1-ac84-5cdf683f19f6.jpg",
-                        "height": 1280
-                    },
-                    "sales_tip": "294 sold",
-                    "visible": true,
-                    "goods_id": 601101999519546,
-                    "opt_id": 1607,
-                    "seo_link_url": "/1pc-adjustable-eva-foam-swim-aid-belt-black-safety--device-for-kids-beginners-adults-universal-size-pool-training-vest-for-swimming-lessons--g-601101999519546.html?&_oak_mp_inf=ELrunrmv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F6c8b30d7-8352-47a1-ac84-5cdf683f19f6.jpg&spec_gallery_id=204629694671&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTQ4&_oak_gallery_order=1294794739%2C1129363313%2C910591292%2C1880961641%2C584188750",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "294",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.8,
-                        "hidden_comment": true,
-                        "comment_num_tips": "6"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/9f995f34-af24-4fc1-ba5d-5b6e07be8951.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": ""
-                    },
-                    "item_type": 0,
-                    "page_alt": "hd electroplated swimming goggles waterproof anti fog small   racing goggles new years gift valentines day gift",
-                    "current_sku_id": 17593900719136,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "1 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 1 LEFT",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "HD electroplated swimming goggles, waterproof, anti fog, small frame design racing goggles, New Year's gift, Valentine's Day gift",
-                    "sales_tip_text_list": [
-                        "1.1K+",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 10,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "1743560340",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0caEZOb1gnpUXORFnVqZRqCWu8VhZz9SlyhdSYX4V6U0EH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "7117053988980979807",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1743560340",
-                        "g": "601099919163426",
-                        "scene_id": "3",
-                        "show_price": "999",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "168",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "5829725591236903055",
-                        "ts": "1765212500595"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 3833823550069,
-                    "sales_num": "1.1K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099919163426&_oak_name_id=5829725591236903055&_oak_mp_inf=EKKAoNmn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9f995f34-af24-4fc1-ba5d-5b6e07be8951.jpg&spec_gallery_id=3404794125&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTk5&_oak_gallery_order=1743560340%2C2076782884%2C581232432%2C485891164%2C162647515",
-                    "extend_fields": {
-                        "sale_fire_flag": true,
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099919163426&_oak_name_id=5829725591236903055&_oak_mp_inf=EKKAoNmn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9f995f34-af24-4fc1-ba5d-5b6e07be8951.jpg&spec_gallery_id=3404794125&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTk5&_oak_gallery_order=1743560340%2C2076782884%2C581232432%2C485891164%2C162647515&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "detail_id": "112771934173724706",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1743560340,2076782884,581232432,485891164,162647515",
-                            "_oak_name_id": "5829725591236903055"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "1 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 1 LEFT",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 168,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "9",
-                            ".99",
-                            ""
-                        ],
-                        "reduction_text": [],
-                        "price": 999,
-                        "price_schema": "9.99",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "9.99",
-                            ""
-                        ],
-                        "price_str": "$9.99"
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 3404794125,
-                        "url_id": "7117053988980979807",
-                        "url": "https://img.kwcdn.com/product/fancy/9f995f34-af24-4fc1-ba5d-5b6e07be8951.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "1.1K+ sold",
-                    "visible": true,
-                    "goods_id": 601099919163426,
-                    "opt_id": 1607,
-                    "seo_link_url": "/hd-electroplated-swimming-goggles-waterproof-anti-fog-small--racing-goggles-new-years-gift-valentines-day-gift-g-601099919163426.html?&_oak_name_id=5829725591236903055&_oak_mp_inf=EKKAoNmn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F9f995f34-af24-4fc1-ba5d-5b6e07be8951.jpg&spec_gallery_id=3404794125&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTk5&_oak_gallery_order=1743560340%2C2076782884%2C581232432%2C485891164%2C162647515",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "1.1K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 5.0,
-                        "hidden_comment": true,
-                        "comment_num_tips": "5"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/open/2023-12-15/1702642286532-1e90b493ea7141758b5142edeeed92e3-goods.jpeg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-89%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "1pair colors swim fins unisex frog type girdles swimming hand fins flippers finger webbed gloves paddle plus   adult   swimming hand fins gloves with half cut design for swimming surfing",
-                    "current_sku_id": 17592309452122,
-                    "tags_info": {},
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "1Pair colors Swim fins Unisex Frog Type Girdles Swimming Hand Fins Flippers Finger Webbed Gloves Paddle Plus S/M/L Adult Water Sports Swimming Hand Fins Gloves with Half-Cut Design for Swimming Surfing",
-                    "sales_tip_text_list": [
-                        "7.6K+",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "760443445",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0ZKdPph/u5/cYwaHVn2mkEFKPmuFbtQOzv9orGx0iFRgEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "6555264276063851892",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "760443445",
-                        "g": "601099538641747",
-                        "scene_id": "3",
-                        "show_price": "378",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "169",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "5825208690327428681",
-                        "ts": "1765212500595"
-                    },
-                    "mall_id": 634418211655841,
-                    "sales_num": "7.6K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099538641747&_oak_name_id=5825208690327428681&_oak_mp_inf=ENPm5qOm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2023-12-15%2F1702642286532-1e90b493ea7141758b5142edeeed92e3-goods.jpeg&spec_gallery_id=2071670466&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzc4&_oak_gallery_order=760443445%2C80952720%2C670939247%2C1891330212%2C1716445259",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099538641747&_oak_name_id=5825208690327428681&_oak_mp_inf=ENPm5qOm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2023-12-15%2F1702642286532-1e90b493ea7141758b5142edeeed92e3-goods.jpeg&spec_gallery_id=2071670466&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzc4&_oak_gallery_order=760443445%2C80952720%2C670939247%2C1891330212%2C1716445259&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "760443445,80952720,670939247,1891330212,1716445259",
-                            "_oak_name_id": "5825208690327428681"
-                        }
-                    },
-                    "goods_tags": [],
-                    "show_index": 169,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "3",
-                            ".78",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-89",
-                            "%"
-                        ],
-                        "price": 378,
-                        "market_price_str": "$37.06",
-                        "market_price": 3706,
-                        "market_price_type": 1,
-                        "price_schema": "3.78",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "3.78",
-                            ""
-                        ],
-                        "price_str": "$3.78",
-                        "market_price_text": [
-                            "$",
-                            "37.06",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 1400,
-                        "id": 2071670466,
-                        "url_id": "6555264276063851892",
-                        "url": "https://img.kwcdn.com/product/open/2023-12-15/1702642286532-1e90b493ea7141758b5142edeeed92e3-goods.jpeg",
-                        "height": 1400
-                    },
-                    "sales_tip": "7.6K+ sold",
-                    "visible": true,
-                    "goods_id": 601099538641747,
-                    "opt_id": 1607,
-                    "seo_link_url": "/1pair-colors-swim-fins-unisex-frog-type-girdles-swimming-hand-fins-flippers-finger-webbed-gloves-paddle-plus--adult--swimming-hand-fins-gloves-with-half-cut-design-for-swimming-surfing-g-601099538641747.html?&_oak_name_id=5825208690327428681&_oak_mp_inf=ENPm5qOm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2023-12-15%2F1702642286532-1e90b493ea7141758b5142edeeed92e3-goods.jpeg&spec_gallery_id=2071670466&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mzc4&_oak_gallery_order=760443445%2C80952720%2C670939247%2C1891330212%2C1716445259",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "7.6K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.7,
-                        "hidden_comment": false,
-                        "comment_num_tips": "71"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/87b0a2e27b0a1924574dd95a71c7228e.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-79%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "1pc 180   swimming glasses clear swimming goggles suitable for underwater activities swimming",
-                    "current_sku_id": 17592319659153,
-                    "tags_info": {},
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/2491e6953ca8a8c1408f6e996bf0739582d278e8.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/87b0a2e27b0a1924574dd95a71c7228e.jpg",
-                        "url": "https://img.kwcdn.com/product/e065f3a98d02c2f90d3c2d081f743ce276b97971.goods.000001.jpeg"
-                    },
-                    "title": "1pc 180° Wide View Clear Swimming Goggles for Underwater Activities, Swimming, Unobstructed Vision",
-                    "sales_tip_text_list": [
-                        "1.9K+",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 0,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "1405821784",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0evCxaHyzHYJwJw0Gyjq013+y9phQ5Pw5vxXDLZgC26qEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "5764835891078169362",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1405821784",
-                        "g": "601099541043921",
-                        "scene_id": "3",
-                        "show_price": "1633",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "170",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "876664725969693765",
-                        "ts": "1765212500595"
-                    },
-                    "activity_type": 100,
-                    "mall_id": 6023333088322,
-                    "sales_num": "1.9K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099541043921&_oak_name_id=876664725969693765&_oak_mp_inf=ENG1%2BaSm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F87b0a2e27b0a1924574dd95a71c7228e.jpg&spec_gallery_id=2072720743&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTYzMw&_oak_gallery_order=1405821784%2C1258096835%2C1411365033%2C558638050%2C1782017849",
-                    "extend_fields": {
-                        "sale_fire_flag": true,
-                        "support_tag_carousel": true,
-                        "detail_id": "112765346826377937",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1405821784,1258096835,1411365033,558638050,1782017849",
-                            "_oak_name_id": "876664725969693765"
-                        }
-                    },
-                    "goods_tags": [],
-                    "show_index": 170,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "16",
-                            ".33",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-79",
-                            "%"
-                        ],
-                        "price": 1633,
-                        "market_price_str": "$80.55",
-                        "market_price": 8055,
-                        "market_price_type": 1,
-                        "price_schema": "16.33",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "16.33",
-                            ""
-                        ],
-                        "price_str": "$16.33",
-                        "reduction": 790,
-                        "market_price_text": [
-                            "$",
-                            "80.55",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 2072720743,
-                        "url_id": "5764835891078169362",
-                        "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/87b0a2e27b0a1924574dd95a71c7228e.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "1.9K+ sold",
-                    "visible": true,
-                    "goods_id": 601099541043921,
-                    "opt_id": 1607,
-                    "seo_link_url": "/1pc-180--swimming-glasses-clear-swimming-goggles-suitable-for-underwater-activities-swimming-g-601099541043921.html?&_oak_name_id=876664725969693765&_oak_mp_inf=ENG1%2BaSm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F87b0a2e27b0a1924574dd95a71c7228e.jpg&spec_gallery_id=2072720743&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTYzMw&_oak_gallery_order=1405821784%2C1258096835%2C1411365033%2C558638050%2C1782017849",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "1.9K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.7,
-                        "hidden_comment": false,
-                        "comment_num_tips": "55"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/c7e0c758-2f12-431b-aba7-0299e24ca0dc.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": ""
-                    },
-                    "item_type": 0,
-                    "page_alt": "1pc   thermal neoprene wetsuit snorkel hood with flow ventilation adjustable straps clear visor black   diving surfing sailing cap for men women snorkeling gear underwater sports accessory",
-                    "current_sku_id": 17599388176097,
-                    "tags_info": {
-                        "mall_tag": [
-                            {
-                                "color": "#FFEFD3",
-                                "ext_map": {
-                                    "brand_info": "{\"brand_name\":\"HITURBO\",\"brand_authorized_type\":1}",
-                                    "brand_tag_text_style": "1"
-                                },
-                                "bg_url": "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
-                                "marketing_tag_type": 2700,
-                                "width": 39,
-                                "tag_id": 91007,
-                                "text": "Brand Official Store: HITURBO",
-                                "tag_series": 2,
-                                "url": "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
-                                "height": 39
-                            }
-                        ],
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "4 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 4 LEFT",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "[HITURBO Snorkel Hood] HITURBO Thermal Neoprene Wetsuit Snorkel Hood - 1pc Black Scuba Diving Cap with Flow Ventilation, Adjustable Straps & Clear Visor for Men & Women - Surfing, Sailing, Snorkeling Gear, Underwater Sports Accessory",
-                    "sales_tip_text_list": [
-                        "83",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 0,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "517271371",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0cl4X6u5NRu32SPHVXKXMgY08Li/R/SJ5JkV8aOP4iVJEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "3304346522877886255",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "517271371",
-                        "g": "601101343541145",
-                        "scene_id": "3",
-                        "show_price": "1446",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "171",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "6012951435558352946",
-                        "ts": "1765212500595"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 634418212913085,
-                    "sales_num": "83",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601101343541145&_oak_name_id=6012951435558352946&_oak_mp_inf=EJmPuYCt1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc7e0c758-2f12-431b-aba7-0299e24ca0dc.jpg&spec_gallery_id=202670537573&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQ0Ng&_oak_gallery_order=517271371%2C714712571%2C1735757228%2C1029531887%2C530557664",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601101343541145&_oak_name_id=6012951435558352946&_oak_mp_inf=EJmPuYCt1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc7e0c758-2f12-431b-aba7-0299e24ca0dc.jpg&spec_gallery_id=202670537573&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQ0Ng&_oak_gallery_order=517271371%2C714712571%2C1735757228%2C1029531887%2C530557664&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "detail_id": "112710362915096473",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "517271371,714712571,1735757228,1029531887,530557664",
-                            "_oak_name_id": "6012951435558352946"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "4 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 4 LEFT",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 171,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "14",
-                            ".46",
-                            ""
-                        ],
-                        "reduction_text": [],
-                        "price": 1446,
-                        "price_schema": "14.46",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "14.46",
-                            ""
-                        ],
-                        "price_str": "$14.46"
-                    },
-                    "image": {
-                        "width": 959,
-                        "id": 202670537573,
-                        "url_id": "3304346522877886255",
-                        "url": "https://img.kwcdn.com/product/fancy/c7e0c758-2f12-431b-aba7-0299e24ca0dc.jpg",
-                        "height": 959
-                    },
-                    "sales_tip": "83 sold",
-                    "visible": true,
-                    "goods_id": 601101343541145,
-                    "opt_id": 1604,
-                    "seo_link_url": "/1pc--thermal-neoprene-wetsuit-snorkel-hood-with-flow-ventilation-adjustable-straps-clear-visor-black--diving-surfing-sailing-cap-for-men-women-snorkeling-gear-underwater-sports-accessory-g-601101343541145.html?&_oak_name_id=6012951435558352946&_oak_mp_inf=EJmPuYCt1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc7e0c758-2f12-431b-aba7-0299e24ca0dc.jpg&spec_gallery_id=202670537573&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQ0Ng&_oak_gallery_order=517271371%2C714712571%2C1735757228%2C1029531887%2C530557664",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "83",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/1766c3d9-4ca5-4cc6-a406-9b988d2516f4.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-50%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "diving 45 angle oral power inflator bcd k type   copper and nylon construction",
-                    "current_sku_id": 17592634215130,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "tagType": "11"
-                                },
-                                "tag_type": 11,
-                                "marketing_tag_type": 1000,
-                                "tag_id": 91019,
-                                "text": "Store coupon: $4.92 off $39.38+",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "[Copper Diving Inflator] 45° Angle Copper and Nylon Diving Oral Power Inflator - BCD K-Type Compensator",
-                    "sales_tip_text_list": [
-                        "834",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "123544376",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Ujv4Vy+hVX7IcqbijUOcthkk48t+Jra/rcrXix8RdgaEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "7962343075114089915",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "123544376",
-                        "g": "601099629332862",
-                        "scene_id": "3",
-                        "show_price": "2211",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "172",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "6085350685482008163",
-                        "ts": "1765212500595"
-                    },
-                    "mall_id": 4781553045983,
-                    "sales_num": "834",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099629332862&_oak_mp_inf=EP6Shs%2Bm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F1766c3d9-4ca5-4cc6-a406-9b988d2516f4.jpg&spec_gallery_id=2312780195&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjIxMQ&_oak_gallery_order=123544376%2C1832640877%2C121634141%2C1156578205%2C1136574831",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "123544376,1832640877,121634141,1156578205,1136574831"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "tagType": "11"
-                            },
-                            "tag_type": 11,
-                            "marketing_tag_type": 1000,
-                            "tag_id": 91019,
-                            "text": "Store coupon: $4.92 off $39.38+",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 172,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "22",
-                            ".11",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-50",
-                            "%"
-                        ],
-                        "price": 2211,
-                        "market_price_str": "$44.98",
-                        "market_price": 4498,
-                        "market_price_type": 1,
-                        "price_schema": "22.11",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "22.11",
-                            ""
-                        ],
-                        "price_str": "$22.11",
-                        "market_price_text": [
-                            "$",
-                            "44.98",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 2312780195,
-                        "url_id": "7962343075114089915",
-                        "url": "https://img.kwcdn.com/product/fancy/1766c3d9-4ca5-4cc6-a406-9b988d2516f4.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "834 sold",
-                    "visible": true,
-                    "goods_id": 601099629332862,
-                    "opt_id": 1604,
-                    "seo_link_url": "/diving-45-angle-oral-power-inflator-bcd-k-type--copper-and-nylon-construction-g-601099629332862.html?&_oak_mp_inf=EP6Shs%2Bm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMHk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F1766c3d9-4ca5-4cc6-a406-9b988d2516f4.jpg&spec_gallery_id=2312780195&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjIxMQ&_oak_gallery_order=123544376%2C1832640877%2C121634141%2C1156578205%2C1136574831",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "834",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/market/474c44bcceb45fa2293aa37e0cfffcc5_v4Vtq9Nz2XpN0.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-86%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "  adjustable swimming snorkel with silicone mouthpiece black front breathing tube for diving snorkeling   for adults durable pvc material ideal for     snorkeling gear adjustable snorkel durable snorkel",
-                    "current_sku_id": 17592821027777,
-                    "tags_info": {
-                        "mall_tag": [
-                            {
-                                "color": "#FFFFFF",
-                                "ext_map": {
-                                    "bg_start_color": "#6F3D91",
-                                    "bg_end_color": "#520E6F"
-                                },
-                                "bg_url": "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                                "marketing_tag_type": 2701,
-                                "width": 39,
-                                "tag_id": 91130,
-                                "text": "Star store",
-                                "tag_series": 2,
-                                "url": "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                                "height": 39
-                            },
-                            {
-                                "color": "#000000",
-                                "ext_map": {
-                                    "brand_info": "{\"brand_name\":\"QINGSONG\",\"brand_authorized_type\":2}",
-                                    "brand_tag_text_style": "1"
-                                },
-                                "bg_url": "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                                "marketing_tag_type": 2700,
-                                "width": 39,
-                                "tag_id": 91007,
-                                "text": "Brand: QINGSONG",
-                                "tag_series": 2,
-                                "height": 39
-                            }
-                        ],
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "ext_map": {
-                                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#7 BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports in Yellow\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
-                                },
-                                "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                                "footer": {
-                                    "color": "#555555",
-                                    "text": " in Swimming, Diving & Water Sports in Yellow",
-                                    "font": 14
-                                },
-                                "marketing_tag_type": 2100,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                                "header": {
-                                    "text_style": 2,
-                                    "color": "#FFFFFF",
-                                    "back_color": "#0A8800",
-                                    "text": "#7 BEST-SELLING ITEM",
-                                    "font": 12
-                                },
-                                "tag_id": 91020,
-                                "ranking_type": "#7 BEST-SELLING ITEM",
-                                "ranking_id": "1603"
-                            },
-                            {
-                                "color": "#555555",
-                                "ext_map": {
-                                    "lowest_tag_up_flag": "1",
-                                    "lowest_price_before_title": "Lowest ever"
-                                },
-                                "marketing_tag_type": 1000,
-                                "tag_id": 91048,
-                                "text": "Lowest price ever",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "[Adjustable Swimming Snorkel] QINGSONG Adjustable Swimming Snorkel with Silicone Mouthpiece - Black, Front Breathing Tube for Diving & Snorkeling, Comfortable Fit for Adults, Durable PVC Material, Ideal for Water Sports & Recreation, Snorkeling Gear | Adjustable Snorkel | Durable Snorkel",
-                    "sales_tip_text_list": [
-                        "3.2K+",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "946410180",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0WYBaGpqBDgc73o0+y+ULAEGNH346+W4fYzs1oTmTh/gEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "6389858610145786934",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "946410180",
-                        "g": "601099676620970",
-                        "scene_id": "3",
-                        "show_price": "686",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "173",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "8154591677713401079",
-                        "ts": "1765212500595"
-                    },
-                    "mall_id": 634418213775709,
-                    "sales_num": "3.2K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099676620970&_oak_name_id=8154591677713401079&_oak_mp_inf=EKqxzOWm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F474c44bcceb45fa2293aa37e0cfffcc5_v4Vtq9Nz2XpN0.jpg&spec_gallery_id=4&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Njg2&_oak_gallery_order=946410180%2C101268136%2C2020969186%2C1346886372%2C1599808053",
-                    "extend_fields": {
-                        "mall_view_type": 2,
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099676620970&_oak_name_id=8154591677713401079&_oak_mp_inf=EKqxzOWm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F474c44bcceb45fa2293aa37e0cfffcc5_v4Vtq9Nz2XpN0.jpg&spec_gallery_id=4&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Njg2&_oak_gallery_order=946410180%2C101268136%2C2020969186%2C1346886372%2C1599808053&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "946410180,101268136,2020969186,1346886372,1599808053",
-                            "_oak_name_id": "8154591677713401079"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "ext_map": {
-                                "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#7 BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports in Yellow\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
-                            },
-                            "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                            "footer": {
-                                "color": "#555555",
-                                "text": " in Swimming, Diving & Water Sports in Yellow",
-                                "font": 14
-                            },
-                            "marketing_tag_type": 2100,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                            "header": {
-                                "text_style": 2,
-                                "color": "#FFFFFF",
-                                "back_color": "#0A8800",
-                                "text": "#7 BEST-SELLING ITEM",
-                                "font": 12
-                            },
-                            "tag_id": 91020,
-                            "ranking_type": "#7 BEST-SELLING ITEM",
-                            "ranking_id": "1603"
-                        },
-                        {
-                            "color": "#555555",
-                            "ext_map": {
-                                "lowest_tag_up_flag": "1",
-                                "lowest_price_before_title": "Lowest ever"
-                            },
-                            "marketing_tag_type": 1000,
-                            "tag_id": 91048,
-                            "text": "Lowest price ever",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 173,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "6",
-                            ".86",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-86",
-                            "%"
-                        ],
-                        "price": 686,
-                        "market_price_str": "$51.55",
-                        "market_price": 5155,
-                        "market_price_type": 1,
-                        "price_schema": "6.86",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "6.86",
-                            ""
-                        ],
-                        "price_str": "$6.86",
-                        "market_price_text": [
-                            "$",
-                            "51.55",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 4,
-                        "url_id": "6389858610145786934",
-                        "url": "https://img.kwcdn.com/product/fancy/market/474c44bcceb45fa2293aa37e0cfffcc5_v4Vtq9Nz2XpN0.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "3.2K+ sold",
-                    "visible": true,
-                    "goods_id": 601099676620970,
-                    "opt_id": 1604,
-                    "seo_link_url": "/-adjustable-swimming-snorkel-with-silicone-mouthpiece-black-front-breathing-tube-for-diving-snorkeling--for-adults-durable-pvc-material-ideal-for---snorkeling-gear-adjustable-snorkel-durable-snorkel-g-601099676620970.html?&_oak_name_id=8154591677713401079&_oak_mp_inf=EKqxzOWm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2F474c44bcceb45fa2293aa37e0cfffcc5_v4Vtq9Nz2XpN0.jpg&spec_gallery_id=4&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Njg2&_oak_gallery_order=946410180%2C101268136%2C2020969186%2C1346886372%2C1599808053",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "3.2K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.8,
-                        "hidden_comment": true,
-                        "comment_num_tips": "5"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/901617dc-d265-4ed0-aa26-b2b5aa25ad15.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-87%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "sup paddle board fish   black high quality durable material aerodynamic design for   stability maneuverability fit for most sup boards sleek fins design",
-                    "current_sku_id": 17600808898956,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "3 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 3 LEFT",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/b452d4684dd1040e5f863ca187808d390bfb35ce.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/901617dc-d265-4ed0-aa26-b2b5aa25ad15.jpg",
-                        "url": "https://img.kwcdn.com/product/d05ccdc7f66bf0fb947c4fc47ea7f100a2fe1c4b.goods.000001.jpeg"
-                    },
-                    "title": "SUP Paddle Board Fish Tail Fin - Black High-Quality Durable Material, Aerodynamic Design for Enhanced Stability & Maneuverability - Fit for Most SUP Boards, Sleek Fins Design",
-                    "sales_tip_text_list": [
-                        "489",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "86309079",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0SWcT8jNse96pAZRAjiAEm4KNbmvEaXdSEcXMm8IbQcEEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "2625110076895805359",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "86309079",
-                        "g": "601101641728647",
-                        "scene_id": "3",
-                        "show_price": "655",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "174",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "4946957388056276839",
-                        "ts": "1765212500595"
-                    },
-                    "mall_id": 634418224173469,
-                    "sales_num": "489",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601101641728647&_oak_name_id=4946957388056276839&_oak_mp_inf=EIeF0Y6u1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F901617dc-d265-4ed0-aa26-b2b5aa25ad15.jpg&spec_gallery_id=203488922420&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjU1&_oak_gallery_order=86309079%2C1434315401%2C1144741206%2C918148635%2C982896628",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "86309079,1434315401,1144741206,918148635,982896628",
-                            "_oak_name_id": "4946957388056276839"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "3 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 3 LEFT",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 174,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "6",
-                            ".55",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-87",
-                            "%"
-                        ],
-                        "price": 655,
-                        "market_price_str": "$50.39",
-                        "market_price": 5039,
-                        "market_price_type": 1,
-                        "price_schema": "6.55",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "6.55",
-                            ""
-                        ],
-                        "price_str": "$6.55",
-                        "market_price_text": [
-                            "$",
-                            "50.39",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 203488922420,
-                        "url_id": "2625110076895805359",
-                        "url": "https://img.kwcdn.com/product/fancy/901617dc-d265-4ed0-aa26-b2b5aa25ad15.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "489 sold",
-                    "visible": true,
-                    "goods_id": 601101641728647,
-                    "opt_id": 1605,
-                    "seo_link_url": "/sup-paddle-board-fish--black-high-quality-durable-material-aerodynamic-design-for--stability-maneuverability-fit-for-most-sup-boards-sleek-fins-design-g-601101641728647.html?&_oak_name_id=4946957388056276839&_oak_mp_inf=EIeF0Y6u1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F901617dc-d265-4ed0-aa26-b2b5aa25ad15.jpg&spec_gallery_id=203488922420&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjU1&_oak_gallery_order=86309079%2C1434315401%2C1144741206%2C918148635%2C982896628",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "489",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/market/task22/317b43bee55226b0f60ed81358fbceae_1721177450532.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-79%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "eva hot pressed flying fish swimming floating board   design floating  ",
-                    "current_sku_id": 17592305003526,
-                    "tags_info": {},
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "EVA Hot-pressed Flying Fish Swimming Floating Board, Streamlined Design Floating Kickboard",
-                    "sales_tip_text_list": [
-                        "5.9K+",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "1",
-                        "mid": "69999906",
-                        "final_creative_id": "919245549",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0ZaYhDHltOcZaZIvcAC+UBQXQ/JGnnjOAaVKw6G096RREH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "104257991898061533",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "919245549",
-                        "g": "601099515437353",
-                        "scene_id": "3",
-                        "show_price": "1021",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "organicPoint": "CoABboPbRRadG+ighideOgZDZbSo2rrPSQj0wwEN75RC7TzRgCyu/YpFc/h04E8CdDPKeFaVM3KvENggJDc0qxNMfZdtnw9U925JW/KoLjboQAPXAVMMFPpdpRNaWvhGwqe/muI2T5fQZSlAW3y+HMpBeAPJaJwpU0E8iSeenxpRESUQeBh2",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "175",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "8784416057601793440",
-                        "ts": "1765212500595"
-                    },
-                    "mall_id": 2773470155998,
-                    "sales_num": "5.9K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099515437353&_oak_name_id=8784416057601793440&_oak_mp_inf=EKnC3pim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2Ftask22%2F317b43bee55226b0f60ed81358fbceae_1721177450532.jpg&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTAyMQ&_oak_gallery_order=919245549%2C399747500%2C1475425164%2C1279461094%2C1706644588",
-                    "extend_fields": {
-                        "sale_fire_flag": true,
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099515437353&_oak_name_id=8784416057601793440&_oak_mp_inf=EKnC3pim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2Ftask22%2F317b43bee55226b0f60ed81358fbceae_1721177450532.jpg&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTAyMQ&_oak_gallery_order=919245549%2C399747500%2C1475425164%2C1279461094%2C1706644588&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "919245549,399747500,1475425164,1279461094,1706644588",
-                            "_oak_name_id": "8784416057601793440"
-                        }
-                    },
-                    "goods_tags": [],
-                    "show_index": 175,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "10",
-                            ".21",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-79",
-                            "%"
-                        ],
-                        "price": 1021,
-                        "market_price_str": "$50.44",
-                        "market_price": 5044,
-                        "market_price_type": 1,
-                        "price_schema": "10.21",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "10.21",
-                            ""
-                        ],
-                        "price_str": "$10.21",
-                        "market_price_text": [
-                            "$",
-                            "50.44",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 2,
-                        "url_id": "104257991898061533",
-                        "url": "https://img.kwcdn.com/product/fancy/market/task22/317b43bee55226b0f60ed81358fbceae_1721177450532.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "5.9K+ sold",
-                    "visible": true,
-                    "goods_id": 601099515437353,
-                    "opt_id": 1607,
-                    "seo_link_url": "/eva-hot-pressed-flying-fish-swimming-floating-board--design-floating--g-601099515437353.html?&_oak_name_id=8784416057601793440&_oak_mp_inf=EKnC3pim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2Ftask22%2F317b43bee55226b0f60ed81358fbceae_1721177450532.jpg&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTAyMQ&_oak_gallery_order=919245549%2C399747500%2C1475425164%2C1279461094%2C1706644588",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "5.9K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.9,
-                        "hidden_comment": false,
-                        "comment_num_tips": "83"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/open/1d249fd0c58141139d3bd4c9d5be12ad-goods.jpeg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-78%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "silicone u shaped nasal plug anti choking swimming nose clip for adults     with comfortable   fit for snorkeling   activities white nose plugs for swimming snorkeling essentials         silicone swim training aid lightweight gear flexible material swim accessory beginner swimmers",
-                    "current_sku_id": 17599287318512,
-                    "tags_info": {},
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "[U-Shaped Nasal Plug] Silicone U-Shaped Nasal Plug - Anti-Choking Swimming Nose Clip for Adults & Youngsters, Ergonomic Design with Comfortable Soft Pad, Fit for Snorkeling & Deep Water Activities (White), Nose Plugs for Swimming, Snorkeling Essentials, Water Sports Gear, Clear Silicone Gear, Highquality Silicone, Swim Training Aid, Lightweight Gear, Flexible Material, Swim Accessory, Beginner Swimmers",
-                    "sales_tip_text_list": [
-                        "1K+",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 71,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "2099847295",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Y/uI/pBKVtyi8HQPIboaQK3/yivOGIkJgIZBpysOaiGEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "7133381679968639408",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "2099847295",
-                        "g": "601101322695366",
-                        "scene_id": "3",
-                        "show_price": "252",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "176",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "8388586436059248946",
-                        "ts": "1765212500595"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 634418214727145,
-                    "sales_num": "1K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601101322695366&_oak_name_id=8388586436059248946&_oak_mp_inf=EMblwPas1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F1d249fd0c58141139d3bd4c9d5be12ad-goods.jpeg&spec_gallery_id=201914972225&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUy&_oak_gallery_order=2099847295%2C954247845%2C1892341846%2C1155131777%2C1710628962",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "detail_id": "112705992039281350",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "2099847295,954247845,1892341846,1155131777,1710628962",
-                            "_oak_name_id": "8388586436059248946"
-                        }
-                    },
-                    "goods_tags": [],
-                    "show_index": 176,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "2",
-                            ".52",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-78",
-                            "%"
-                        ],
-                        "price": 252,
-                        "market_price_str": "$11.69",
-                        "market_price": 1169,
-                        "market_price_type": 1,
-                        "price_schema": "2.52",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "2.52",
-                            ""
-                        ],
-                        "price_str": "$2.52",
-                        "reduction": 780,
-                        "market_price_text": [
-                            "$",
-                            "11.69",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 201914972225,
-                        "url_id": "7133381679968639408",
-                        "url": "https://img.kwcdn.com/product/open/1d249fd0c58141139d3bd4c9d5be12ad-goods.jpeg",
-                        "height": 800
-                    },
-                    "sales_tip": "1K+ sold",
-                    "visible": true,
-                    "goods_id": 601101322695366,
-                    "opt_id": 1607,
-                    "seo_link_url": "/silicone-u-shaped-nasal-plug-anti-choking-swimming-nose-clip-for-adults---with-comfortable--fit-for-snorkeling--activities-white-nose-plugs-for-swimming-snorkeling-essentials-----silicone-swim-training-aid-lightweight-gear-flexible-material-swim-accessory-beginner-swimmers-g-601101322695366.html?&_oak_name_id=8388586436059248946&_oak_mp_inf=EMblwPas1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F1d249fd0c58141139d3bd4c9d5be12ad-goods.jpeg&spec_gallery_id=201914972225&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUy&_oak_gallery_order=2099847295%2C954247845%2C1892341846%2C1155131777%2C1710628962",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "1K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.8,
-                        "hidden_comment": true,
-                        "comment_num_tips": "13"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/515d4ea7-2924-44c4-b0d6-137a75cac654.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-82%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "adult full face snorkeling mask 180 panoramic dry snorkeling mask detachable camera and adjustable shoulder straps suitable for beginners swimming practice snorkeling equipment",
-                    "current_sku_id": 17593877752942,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "color": "#555555",
-                                "ext_map": {
-                                    "lowest_tag_up_flag": "5",
-                                    "lowest_price_before_title": "30d lowest"
-                                },
-                                "marketing_tag_type": 1000,
-                                "tag_id": 91048,
-                                "text": "Lowest price in 30 days",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/b3e3c5382ca79e281af97be6a6d2490255c47fdb.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/515d4ea7-2924-44c4-b0d6-137a75cac654.jpg",
-                        "url": "https://img.kwcdn.com/product/711cd87b88f1325817407b9426fb03dd1d141490.goods.000001.jpeg"
-                    },
-                    "title": "[180° Panoramic] Adult Full Face Snorkeling Mask | 180° Panoramic | Dry Snorkeling | Detachable Camera | Adjustable Shoulder Straps | Suitable for Beginners | Swimming Practice",
-                    "sales_tip_text_list": [
-                        "7.3K+",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 0,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "928992794",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0XpqQ/W7sl/3BKpzaiyVhgWpNdXyziLtia2YMVnMwKosEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "1631247132297258998",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "355123505",
-                        "g": "601099913861042",
-                        "scene_id": "3",
-                        "show_price": "1329",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "177",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "1774582740837722701",
-                        "ts": "1765212500595"
-                    },
-                    "activity_type": 27,
-                    "mall_id": 634418218399070,
-                    "sales_num": "7.3K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099913861042&_oak_name_id=1774582740837722701&_oak_mp_inf=ELKv3Nan1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F515d4ea7-2924-44c4-b0d6-137a75cac654.jpg&spec_gallery_id=601099913861042&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMyOQ&_oak_gallery_order=355123505%2C928992794%2C1361749498%2C995536780%2C128030536",
-                    "extend_fields": {
-                        "sale_fire_flag": true,
-                        "sales_icon": {
-                            "width": 14,
-                            "url": "https://aimg.kwcdn.com/upload_aimg/rec/69915afb-37a6-421d-be3e-271bb2068906.png.slim.png",
-                            "height": 14
-                        },
-                        "support_tag_carousel": true,
-                        "detail_id": "112785176111552434",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "355123505,928992794,1361749498,995536780,128030536",
-                            "_oak_name_id": "1774582740837722701"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "color": "#555555",
-                            "ext_map": {
-                                "lowest_tag_up_flag": "5",
-                                "lowest_price_before_title": "30d lowest"
-                            },
-                            "marketing_tag_type": 1000,
-                            "tag_id": 91048,
-                            "text": "Lowest price in 30 days",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 177,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "13",
-                            ".29",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-82",
-                            "%"
-                        ],
-                        "price": 1329,
-                        "market_price_str": "$73.98",
-                        "market_price": 7398,
-                        "market_price_type": 1,
-                        "price_schema": "13.29",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "13.29",
-                            ""
-                        ],
-                        "price_str": "$13.29",
-                        "reduction": 820,
-                        "market_price_text": [
-                            "$",
-                            "73.98",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 375,
-                        "id": 601099913861042,
-                        "url_id": "1631247132297258998",
-                        "url": "https://img.kwcdn.com/product/fancy/515d4ea7-2924-44c4-b0d6-137a75cac654.jpg",
-                        "height": 375
-                    },
-                    "sales_tip": "7.3K+ sold",
-                    "visible": true,
-                    "goods_id": 601099913861042,
-                    "opt_id": 1604,
-                    "seo_link_url": "/adult-full-face-snorkeling-mask-180-panoramic-dry-snorkeling-mask-detachable-camera-and-adjustable-shoulder-straps-suitable-for-beginners-swimming-practice-snorkeling-equipment-g-601099913861042.html?&_oak_name_id=1774582740837722701&_oak_mp_inf=ELKv3Nan1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F515d4ea7-2924-44c4-b0d6-137a75cac654.jpg&spec_gallery_id=601099913861042&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMyOQ&_oak_gallery_order=355123505%2C928992794%2C1361749498%2C995536780%2C128030536",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "7.3K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.9,
-                        "hidden_comment": true,
-                        "comment_num_tips": "17"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/dbdc56f5-53fb-48e0-82ee-35ee7d237713.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-12%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "professional silicone short fins   with air permeable holes durable mesh carry bag black for swimming training   use swimming accessories sleek swimwear flexible material",
-                    "current_sku_id": 17602966413203,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "2 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 2 LEFT",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "Professional Silicone Short Fins - Ergonomic Design with Air-Permeable Holes, Durable Mesh Carry Bag, Black for Swimming Training & All-Season Use, Swimming Accessories, Sleek Swimwear, Flexible Material",
-                    "sales_tip_text_list": [
-                        "52",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 0,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "325489310",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Wza1uzFBleNv2o+yC0pmdAUUNdbagdUlzUYzcbxuPRqEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "4296036871458846636",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "325489310",
-                        "g": "601102091526426",
-                        "scene_id": "3",
-                        "show_price": "2760",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "178",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "2710081425056560508",
-                        "ts": "1765212500596"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 3736924743546,
-                    "sales_num": "52",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601102091526426&_oak_mp_inf=EJrCjuWv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdbdc56f5-53fb-48e0-82ee-35ee7d237713.jpg&spec_gallery_id=601102091526426&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjc2MA&_oak_gallery_order=325489310%2C1671402776%2C368555837%2C207132172%2C277345125",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601102091526426&_oak_mp_inf=EJrCjuWv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdbdc56f5-53fb-48e0-82ee-35ee7d237713.jpg&spec_gallery_id=601102091526426&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjc2MA&_oak_gallery_order=325489310%2C1671402776%2C368555837%2C207132172%2C277345125&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "detail_id": "112769761960501530",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "325489310,1671402776,368555837,207132172,277345125"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "2 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 2 LEFT",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 178,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "27",
-                            ".60",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-12",
-                            "%"
-                        ],
-                        "price": 2760,
-                        "market_price_str": "$31.47",
-                        "market_price": 3147,
-                        "market_price_type": 1,
-                        "price_schema": "27.60",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "27.60",
-                            ""
-                        ],
-                        "price_str": "$27.60",
-                        "reduction": 120,
-                        "market_price_text": [
-                            "$",
-                            "31.47",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 375,
-                        "id": 601102091526426,
-                        "url_id": "4296036871458846636",
-                        "url": "https://img.kwcdn.com/product/fancy/dbdc56f5-53fb-48e0-82ee-35ee7d237713.jpg",
-                        "height": 375
-                    },
-                    "sales_tip": "52 sold",
-                    "visible": true,
-                    "goods_id": 601102091526426,
-                    "opt_id": 1607,
-                    "seo_link_url": "/professional-silicone-short-fins--with-air-permeable-holes-durable-mesh-carry-bag-black-for-swimming-training--use-swimming-accessories-sleek-swimwear-flexible-material-g-601102091526426.html?&_oak_mp_inf=EJrCjuWv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdbdc56f5-53fb-48e0-82ee-35ee7d237713.jpg&spec_gallery_id=601102091526426&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjc2MA&_oak_gallery_order=325489310%2C1671402776%2C368555837%2C207132172%2C277345125",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "52",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fmket/04f0a6f6b856fe74b1051698bb583966.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-64%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "4pcs large capacity waterproof woven storage bags durable plaid design with reinforced zipper for moving luggage and snake skin storage assorted colors black   zipper pouch bags",
-                    "current_sku_id": 17594636487103,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "3 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 3 LEFT",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "4pcs Large Capacity Waterproof Woven Storage Bags - Durable Plaid Design with Reinforced Zipper for Moving, Luggage, and Snake Skin Storage, Assorted Colors (Black/White, Red/Black), Zipper Pouch Bags",
-                    "sales_tip_text_list": [
-                        "179",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 40,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "250032844",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Zh7TBjN2XI/TOp3OkBWa+kQyTak/sqn4TLp4tbCxjMhEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "7199332828565250841",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "250032844",
-                        "g": "601100082744881",
-                        "scene_id": "3",
-                        "show_price": "1230",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "179",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "3601613994213314118",
-                        "ts": "1765212500596"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 634418217794765,
-                    "sales_num": "179",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601100082744881&_oak_mp_inf=ELGcoKeo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F04f0a6f6b856fe74b1051698bb583966.jpg&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTI1OA&_oak_gallery_order=250032844%2C1519614708%2C1774796708%2C5983183%2C1286301576",
-                    "extend_fields": {
-                        "market_map": {
-                            "220001": {
-                                "showTag": false,
-                                "couponBatchSn": "",
-                                "marketingToolType": 220001,
-                                "endTime": 1766332799000,
-                                "savingPrice": 28,
-                                "appliedPrice": true,
-                                "promotionId": "A00049C-4699576579909569741175946364871030"
-                            }
-                        },
-                        "support_tag_carousel": true,
-                        "detail_id": "112782941688368689",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "250032844,1519614708,1774796708,5983183,1286301576"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "3 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 3 LEFT",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 179,
-                    "price_info": {
-                        "reduction_text": [
-                            "-65",
-                            "%"
-                        ],
-                        "market_price_type": 1,
-                        "price_text": [
-                            "$",
-                            "12.30",
-                            ""
-                        ],
-                        "price_str": "$12.30",
-                        "price_color": "#000000",
-                        "split_price_text": [
-                            "$",
-                            "12",
-                            ".30",
-                            ""
-                        ],
-                        "price": 1230,
-                        "market_price_str": "$35.59",
-                        "market_price": 3559,
-                        "price_schema": "$12.30",
-                        "currency": "USD",
-                        "reduction": 654,
-                        "market_price_text": [
-                            "$",
-                            "35.59",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 2000,
-                        "id": 2,
-                        "url_id": "7199332828565250841",
-                        "url": "https://img.kwcdn.com/product/fmket/04f0a6f6b856fe74b1051698bb583966.jpg",
-                        "height": 2000
-                    },
-                    "sales_tip": "179 sold",
-                    "visible": true,
-                    "goods_id": 601100082744881,
-                    "opt_id": 1604,
-                    "seo_link_url": "/4pcs-large-capacity-waterproof-woven-storage-bags-durable-plaid-design-with-reinforced-zipper-for-moving-luggage-and-snake-skin-storage-assorted-colors-black--zipper-pouch-bags-g-601100082744881.html?&_oak_mp_inf=ELGcoKeo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F04f0a6f6b856fe74b1051698bb583966.jpg&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTI1OA&_oak_gallery_order=250032844%2C1519614708%2C1774796708%2C5983183%2C1286301576",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "179",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 5.0,
-                        "hidden_comment": true,
-                        "comment_num_tips": "4"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/b66dbec7-6d82-4223-9ab5-907e1f0c494e.jpg",
-                    "ware_house_type": 1,
-                    "benefit_text": {
-                        "text": "-77%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "inflatable stand up paddle board sup with full accessories carry bag wide stable   surf control non slip deck   leash paddle pump for teens adults",
-                    "current_sku_id": 17593938877597,
-                    "tags_info": {
-                        "title_header_tags": [
-                            {
-                                "color": "#0A8800",
-                                "ext_map": {
-                                    "local_explanation": "{\"title\":\"Local warehouse\",\"content\":\"Items with the \\\"Local\\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.\",\"button\":{\"text\":\"OK\"}}"
-                                },
-                                "marketing_tag_type": 1000,
-                                "tag_id": 91050,
-                                "text": "Local",
-                                "tag_series": 2
-                            }
-                        ],
-                        "mall_tag": [
-                            {
-                                "color": "#FFFFFF",
-                                "ext_map": {
-                                    "bg_start_color": "#6F3D91",
-                                    "bg_end_color": "#520E6F"
-                                },
-                                "bg_url": "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                                "marketing_tag_type": 2701,
-                                "width": 39,
-                                "tag_id": 91130,
-                                "text": "Star store",
-                                "tag_series": 2,
-                                "url": "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                                "height": 39
-                            },
-                            {
-                                "color": "#FFEFD3",
-                                "ext_map": {
-                                    "brand_info": "{\"brand_name\":\"XHYHWYD\",\"brand_authorized_type\":2}",
-                                    "brand_tag_text_style": "1"
-                                },
-                                "bg_url": "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
-                                "marketing_tag_type": 2700,
-                                "width": 39,
-                                "tag_id": 91007,
-                                "text": "Brand Official Store: XHYHWYD",
-                                "tag_series": 2,
-                                "url": "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
-                                "height": 39
-                            }
-                        ],
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "ext_map": {
-                                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#6 BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
-                                },
-                                "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                                "footer": {
-                                    "color": "#555555",
-                                    "text": " in Swimming, Diving & Water Sports",
-                                    "font": 14
-                                },
-                                "marketing_tag_type": 2100,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                                "header": {
-                                    "text_style": 2,
-                                    "color": "#FFFFFF",
-                                    "back_color": "#0A8800",
-                                    "text": "#6 BEST-SELLING ITEM",
-                                    "font": 12
-                                },
-                                "tag_id": 91020,
-                                "ranking_type": "#6 BEST-SELLING ITEM",
-                                "ranking_id": "1603"
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/11c8b6de68aebce25b0732e14a994f0a1611ba7a.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/b66dbec7-6d82-4223-9ab5-907e1f0c494e.jpg",
-                        "url": "https://img.kwcdn.com/product/7a3f5953f22783dbeacae8d423c2509c274b6887.goods.000001.jpeg"
-                    },
-                    "title": "Stand Up Paddle Board (SUP), Inflatable, Wide Stable Stance, Surf Control, Non-Slip Deck, for Teens & Adults, Includes Leash, Paddle & Pump, with Full Accessories & Carry Bag",
-                    "sales_tip_text_list": [
-                        "366",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 55,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "515840370",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Sqv8OYaeaPxSa56dBEEJj6yXEB6HX3MAGUGPZWGLHAFEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "5524693092127345854",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "515840370",
-                        "g": "601099927860867",
-                        "scene_id": "3",
-                        "show_price": "8896",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "180",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "7774989920057299995",
-                        "ts": "1765212500596"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 634418219614392,
-                    "sales_num": "366",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099927860867&_oak_mp_inf=EIPtst2n1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb66dbec7-6d82-4223-9ab5-907e1f0c494e.jpg&spec_gallery_id=3436729200&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODg5Ng&_oak_gallery_order=515840370%2C1246626231%2C730044922%2C223967067",
-                    "extend_fields": {
-                        "mall_view_type": 2,
-                        "support_tag_carousel": true,
-                        "detail_id": "112763144120546947",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "515840370,1246626231,730044922,223967067"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "ext_map": {
-                                "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#6 BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
-                            },
-                            "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                            "footer": {
-                                "color": "#555555",
-                                "text": " in Swimming, Diving & Water Sports",
-                                "font": 14
-                            },
-                            "marketing_tag_type": 2100,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                            "header": {
-                                "text_style": 2,
-                                "color": "#FFFFFF",
-                                "back_color": "#0A8800",
-                                "text": "#6 BEST-SELLING ITEM",
-                                "font": 12
-                            },
-                            "tag_id": 91020,
-                            "ranking_type": "#6 BEST-SELLING ITEM",
-                            "ranking_id": "1603"
-                        }
-                    ],
-                    "show_index": 180,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "88",
-                            ".96",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-77",
-                            "%"
-                        ],
-                        "price": 8896,
-                        "market_price_str": "$389.97",
-                        "market_price": 38997,
-                        "market_price_type": 1,
-                        "price_schema": "88.96",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "88.96",
-                            ""
-                        ],
-                        "price_str": "$88.96",
-                        "reduction": 770,
-                        "market_price_text": [
-                            "$",
-                            "389.97",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 1500,
-                        "id": 3436729200,
-                        "url_id": "5524693092127345854",
-                        "url": "https://img.kwcdn.com/product/fancy/b66dbec7-6d82-4223-9ab5-907e1f0c494e.jpg",
-                        "height": 1500
-                    },
-                    "sales_tip": "366 sold",
-                    "visible": true,
-                    "goods_id": 601099927860867,
-                    "opt_id": 1605,
-                    "seo_link_url": "/inflatable-stand-up-paddle-board-sup-with-full-accessories-carry-bag-wide-stable--surf-control-non-slip-deck--leash-paddle-pump-for-teens-adults-g-601099927860867.html?&_oak_mp_inf=EIPtst2n1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb66dbec7-6d82-4223-9ab5-907e1f0c494e.jpg&spec_gallery_id=3436729200&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODg5Ng&_oak_gallery_order=515840370%2C1246626231%2C730044922%2C223967067",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "366",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.7,
-                        "hidden_comment": true,
-                        "comment_num_tips": "32"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/28de37c7-8099-41aa-991f-846a7c04de84.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-50%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "professional   diving fins with adjustable spring straps positive   high quality diving gear for men women orange red   diving gear snorkeling equipment     fins",
-                    "current_sku_id": 17597510320842,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "8 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 8 LEFT",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/5c25443b738405c0b5ea76ad4b42d3e2ba30e717gs2CV.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/28de37c7-8099-41aa-991f-846a7c04de84.jpg",
-                        "url": "https://img.kwcdn.com/product/9d6f42270898d1041c8bdf6e91894b44ca71719a.temu.000001.jpeg"
-                    },
-                    "title": "Professional Scuba Diving Fins with Adjustable Spring Straps & Positive Buoyancy - High Quality Diving Gear for Men & Women, /Orange/Red/, Scuba Diving Gear, Snorkeling Equipment, Sleek Design, Secure Fit Fins",
-                    "sales_tip_text_list": [
-                        "89",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 0,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "1",
-                        "mid": "69999906",
-                        "final_creative_id": "4072425",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0SvVH3FaiDzc8KgIImaoG/udLSgVzTv8wt6r552JJGgXEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "2304403485313163450",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1876296345",
-                        "g": "601100881698519",
-                        "scene_id": "3",
-                        "show_price": "13836",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "organicPoint": "CoABgEJl7tZbMXcBOeL7bWwmj4sEooUQLmxJKWYB22wOSlPaYLfS50adJ3o4Dm9kO0r35OuHdLwv8f0EEO8ZgO80aaT8HO/A9LItm5SHXhCktgetijazgfiGUx6kzkEo1WRHB5mCpAQfEigaNSxuMSNYtWpMXMk/0gMJ6ukPnAfMCMsQdxh1",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "181",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "2476096952869161213",
-                        "ts": "1765212500596"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 4189583606206,
-                    "sales_num": "89",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601100881698519&_oak_name_id=2476096952869161213&_oak_mp_inf=ENe9nKSr1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F28de37c7-8099-41aa-991f-846a7c04de84.jpg&spec_gallery_id=601100881698519&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTM4MzY&_oak_gallery_order=1876296345%2C4072425%2C304313827%2C802780392%2C1432421396",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "detail_id": "112745547941486295",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1876296345,4072425,304313827,802780392,1432421396",
-                            "_oak_name_id": "2476096952869161213"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "8 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 8 LEFT",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 181,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "138",
-                            ".36",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-50",
-                            "%"
-                        ],
-                        "price": 13836,
-                        "market_price_str": "$279.71",
-                        "market_price": 27971,
-                        "market_price_type": 1,
-                        "price_schema": "138.36",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "138.36",
-                            ""
-                        ],
-                        "price_str": "$138.36",
-                        "reduction": 500,
-                        "market_price_text": [
-                            "$",
-                            "279.71",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 375,
-                        "id": 601100881698519,
-                        "url_id": "2304403485313163450",
-                        "url": "https://img.kwcdn.com/product/fancy/28de37c7-8099-41aa-991f-846a7c04de84.jpg",
-                        "height": 375
-                    },
-                    "sales_tip": "89 sold",
-                    "visible": true,
-                    "goods_id": 601100881698519,
-                    "opt_id": 1604,
-                    "seo_link_url": "/-professional-diving-fins-with-adjustable-spring--heavy-duty-neoprene--paddles-quick-release-closure-non--for--freediving-snorkeling-ideal-gift-for-divers-black-durable-marine-wear---underwater-wear----reinforced-construction--enthusiasts-g-601100881698519.html?&_oak_name_id=2476096952869161213&_oak_mp_inf=ENe9nKSr1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F28de37c7-8099-41aa-991f-846a7c04de84.jpg&spec_gallery_id=601100881698519&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTM4MzY&_oak_gallery_order=1876296345%2C4072425%2C304313827%2C802780392%2C1432421396",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "89",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/847a9c89-978b-4427-8440-8460824d5281.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-83%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "reusable earplugs with 8 pairs of interchangeable ear tips ultra visually   ears in  ",
-                    "current_sku_id": 17601669947300,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "3 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 3 LEFT",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "Reusable Earplugs with 8 Pairs of Interchangeable Ear Tips, Ultra-Visually Pleasing Ears in a Device.",
-                    "sales_tip_text_list": [
-                        "327",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 10,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "1332134544",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0dmip4SY6ao64/jxBTVQTxS8WOBQvlIQz2S3KBJ+8dZvEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "9221813119479212000",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1332134544",
-                        "g": "601101822100069",
-                        "scene_id": "3",
-                        "show_price": "520",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "182",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "6656735846804101198",
-                        "ts": "1765212500596"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 634418219847049,
-                    "sales_num": "327",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601101822100069&_oak_name_id=6656735846804101198&_oak_mp_inf=EOWE0uSu1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F847a9c89-978b-4427-8440-8460824d5281.jpg&spec_gallery_id=203756552935&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTIw&_oak_gallery_order=1332134544%2C1409780197%2C721170323%2C486710235%2C2109675437",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601101822100069&_oak_name_id=6656735846804101198&_oak_mp_inf=EOWE0uSu1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F847a9c89-978b-4427-8440-8460824d5281.jpg&spec_gallery_id=203756552935&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTIw&_oak_gallery_order=1332134544%2C1409780197%2C721170323%2C486710235%2C2109675437&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "detail_id": "112782962139824741",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1332134544,1409780197,721170323,486710235,2109675437",
-                            "_oak_name_id": "6656735846804101198"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "3 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 3 LEFT",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 182,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "5",
-                            ".20",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-83",
-                            "%"
-                        ],
-                        "price": 520,
-                        "market_price_str": "$31.96",
-                        "market_price": 3196,
-                        "market_price_type": 1,
-                        "price_schema": "5.20",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "5.20",
-                            ""
-                        ],
-                        "price_str": "$5.20",
-                        "reduction": 830,
-                        "market_price_text": [
-                            "$",
-                            "31.96",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 1600,
-                        "id": 203756552935,
-                        "url_id": "9221813119479212000",
-                        "url": "https://img.kwcdn.com/product/fancy/847a9c89-978b-4427-8440-8460824d5281.jpg",
-                        "height": 1600
-                    },
-                    "sales_tip": "327 sold",
-                    "visible": true,
-                    "goods_id": 601101822100069,
-                    "opt_id": 1607,
-                    "seo_link_url": "/reusable-earplugs-with-8-pairs-of-interchangeable-ear-tips-ultra-visually--ears-in--g-601101822100069.html?&_oak_name_id=6656735846804101198&_oak_mp_inf=EOWE0uSu1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F847a9c89-978b-4427-8440-8460824d5281.jpg&spec_gallery_id=203756552935&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTIw&_oak_gallery_order=1332134544%2C1409780197%2C721170323%2C486710235%2C2109675437",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "327",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/d31ca012-7b73-46a1-b095-5898ea5a6aee.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-85%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "  adult full face snorkel mask 180 view removable pc lens adjustable strap for swimming training",
-                    "current_sku_id": 17595785802984,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "1 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 1 LEFT",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/a04862fae21c1c7abe6a7c8c99c7cfebc20fae2c.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/d31ca012-7b73-46a1-b095-5898ea5a6aee.jpg",
-                        "url": "https://img.kwcdn.com/product/bbd1cf95b59df6cb752c2bba3bcd3c0332aa2356.goods.000001.jpeg"
-                    },
-                    "title": "[180° Snorkel Mask] PIZZUJU Adult Full Face Snorkel Mask | 180° View, Removable PC Lens, Adjustable Strap, for Swimming Training",
-                    "sales_tip_text_list": [
-                        "581",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "880490850",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0ZoauDEz1mgq1FP9hOhcgAVy83xJh6JjUjlBqodEkveNEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "384843069394633488",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "880490850",
-                        "g": "601100377986699",
-                        "scene_id": "3",
-                        "show_price": "1797",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "183",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "3314358533246258228",
-                        "ts": "1765212500596"
-                    },
-                    "mall_id": 634418218399070,
-                    "sales_num": "581",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601100377986699&_oak_mp_inf=EIuthLSp1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd31ca012-7b73-46a1-b095-5898ea5a6aee.jpg&spec_gallery_id=601100377986699&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc5Nw&_oak_gallery_order=880490850%2C392566966%2C2077780672%2C767608992%2C1917008246",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601100377986699&_oak_mp_inf=EIuthLSp1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd31ca012-7b73-46a1-b095-5898ea5a6aee.jpg&spec_gallery_id=601100377986699&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc5Nw&_oak_gallery_order=880490850%2C392566966%2C2077780672%2C767608992%2C1917008246&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "880490850,392566966,2077780672,767608992,1917008246"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "1 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 1 LEFT",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 183,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "17",
-                            ".97",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-85",
-                            "%"
-                        ],
-                        "price": 1797,
-                        "market_price_str": "$126.25",
-                        "market_price": 12625,
-                        "market_price_type": 1,
-                        "price_schema": "17.97",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "17.97",
-                            ""
-                        ],
-                        "price_str": "$17.97",
-                        "market_price_text": [
-                            "$",
-                            "126.25",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 375,
-                        "id": 601100377986699,
-                        "url_id": "384843069394633488",
-                        "url": "https://img.kwcdn.com/product/fancy/d31ca012-7b73-46a1-b095-5898ea5a6aee.jpg",
-                        "height": 375
-                    },
-                    "sales_tip": "581 sold",
-                    "visible": true,
-                    "goods_id": 601100377986699,
-                    "opt_id": 1604,
-                    "seo_link_url": "/-adult-full-face-snorkel-mask-180-view-removable-pc-lens-adjustable-strap-for-swimming-training-g-601100377986699.html?&_oak_mp_inf=EIuthLSp1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd31ca012-7b73-46a1-b095-5898ea5a6aee.jpg&spec_gallery_id=601100377986699&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc5Nw&_oak_gallery_order=880490850%2C392566966%2C2077780672%2C767608992%2C1917008246",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "581",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/4d68c936-17ae-4d43-a2ed-09bb3182ffbb.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-74%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "universal silicone replacement mask strap diving mask strap swimming goggles silicone headband parts for diving and snorkeling accessories best for christmas diving accessorie goggle diving accessory",
-                    "current_sku_id": 17608653049208,
-                    "tags_info": {},
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "Universal Silicone Replacement Mask Strap, Diving Mask Strap, Swimming Goggles Silicone Headband Parts for Diving and Snorkeling Accessories, Best for Christmas, Diving Accessorie, Goggle, Diving Accessory",
-                    "sales_tip_text_list": [
-                        "257",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 50,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "867875973",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0T/R6GVNPIb99ZnMiKU9GGLSUepiQJx80QLVA/nsyQ1KEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "6324708631645056538",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "867875973",
-                        "g": "601103221787191",
-                        "scene_id": "3",
-                        "show_price": "321",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "184",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "3301598646539369245",
-                        "ts": "1765212500596"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 634418214557291,
-                    "sales_num": "257",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601103221787191&_oak_name_id=3301598646539369245&_oak_mp_inf=ELeUiIC01ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4d68c936-17ae-4d43-a2ed-09bb3182ffbb.jpg&spec_gallery_id=210169638229&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzIx&_oak_gallery_order=867875973%2C758177824%2C173485274%2C1370536570%2C1389703216",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601103221787191&_oak_name_id=3301598646539369245&_oak_mp_inf=ELeUiIC01ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4d68c936-17ae-4d43-a2ed-09bb3182ffbb.jpg&spec_gallery_id=210169638229&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzIx&_oak_gallery_order=867875973%2C758177824%2C173485274%2C1370536570%2C1389703216&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "detail_id": "112714759040600631",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "867875973,758177824,173485274,1370536570,1389703216",
-                            "_oak_name_id": "3301598646539369245"
-                        }
-                    },
-                    "goods_tags": [],
-                    "show_index": 184,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "3",
-                            ".21",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-74",
-                            "%"
-                        ],
-                        "price": 321,
-                        "market_price_str": "$12.47",
-                        "market_price": 1247,
-                        "market_price_type": 1,
-                        "price_schema": "3.21",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "3.21",
-                            ""
-                        ],
-                        "price_str": "$3.21",
-                        "reduction": 740,
-                        "market_price_text": [
-                            "$",
-                            "12.47",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 2000,
-                        "id": 210169638229,
-                        "url_id": "6324708631645056538",
-                        "url": "https://img.kwcdn.com/product/fancy/4d68c936-17ae-4d43-a2ed-09bb3182ffbb.jpg",
-                        "height": 2000
-                    },
-                    "sales_tip": "257 sold",
-                    "visible": true,
-                    "goods_id": 601103221787191,
-                    "opt_id": 1604,
-                    "seo_link_url": "/universal-silicone-replacement-mask-strap-diving-mask-strap-swimming-goggles-silicone-headband-parts-for-diving-and-snorkeling-accessories-best-for-christmas-diving-accessorie-goggle-diving-accessory-g-601103221787191.html?&_oak_name_id=3301598646539369245&_oak_mp_inf=ELeUiIC01ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4d68c936-17ae-4d43-a2ed-09bb3182ffbb.jpg&spec_gallery_id=210169638229&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzIx&_oak_gallery_order=867875973%2C758177824%2C173485274%2C1370536570%2C1389703216",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "257",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/4063c53a-f514-4ac8-992e-303422d93749.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": ""
-                    },
-                    "item_type": 0,
-                    "page_alt": "xet anti fog goggles adjustable waterproof electroplating swim goggles for adults ideal for   swimming surfing anti fog goggles adjustable headgear durable swim gear",
-                    "current_sku_id": 17594057274121,
-                    "tags_info": {},
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/25df30fef45524111b9ef230a1c98d1b8f3fb545.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/4063c53a-f514-4ac8-992e-303422d93749.jpg",
-                        "url": "https://img.kwcdn.com/product/0d92937c2b6b53972087b931e72066c5940147be.goods.000001.jpeg"
-                    },
-                    "title": "[Anti Fog Swim Goggles] XET Anti Fog Goggles | Adjustable, Waterproof Electroplating Swim Goggles for Adults | Ideal for Water Sports, Swimming, Surfing",
-                    "sales_tip_text_list": [
-                        "6.7K+",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 0,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "456086713",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0a8zXd1H3oZH9cZ7BARwDkLG8FSzRuOcuehAzezDd6DmEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "7814788700990632401",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1157580083",
-                        "g": "601099953709795",
-                        "scene_id": "3",
-                        "show_price": "877",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "185",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "8879792888104819135",
-                        "ts": "1765212500596"
-                    },
-                    "activity_type": 2,
-                    "mall_id": 4439111589945,
-                    "sales_num": "6.7K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099953709795&_oak_mp_inf=EOPF3Omn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4063c53a-f514-4ac8-992e-303422d93749.jpg&spec_gallery_id=601099953709795&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODc3&_oak_gallery_order=1157580083%2C456086713%2C1146094447%2C1786455176%2C1535315150",
-                    "extend_fields": {
-                        "sale_fire_flag": true,
-                        "support_tag_carousel": true,
-                        "detail_id": "112774131410215651",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1157580083,456086713,1146094447,1786455176,1535315150"
-                        }
-                    },
-                    "goods_tags": [],
-                    "show_index": 185,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "8",
-                            ".77",
-                            ""
-                        ],
-                        "reduction_text": [],
-                        "price": 877,
-                        "price_schema": "8.77",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "8.77",
-                            ""
-                        ],
-                        "price_str": "$8.77"
-                    },
-                    "image": {
-                        "width": 375,
-                        "id": 601099953709795,
-                        "url_id": "7814788700990632401",
-                        "url": "https://img.kwcdn.com/product/fancy/4063c53a-f514-4ac8-992e-303422d93749.jpg",
-                        "height": 375
-                    },
-                    "sales_tip": "6.7K+ sold",
-                    "visible": true,
-                    "goods_id": 601099953709795,
-                    "opt_id": 1607,
-                    "seo_link_url": "/xet-anti-fog-goggles-adjustable-waterproof-electroplating-swim-goggles-for-adults-ideal-for--swimming-surfing-anti-fog-goggles-adjustable-headgear-durable-swim-gear-g-601099953709795.html?&_oak_mp_inf=EOPF3Omn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4063c53a-f514-4ac8-992e-303422d93749.jpg&spec_gallery_id=601099953709795&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODc3&_oak_gallery_order=1157580083%2C456086713%2C1146094447%2C1786455176%2C1535315150",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "6.7K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.7,
-                        "hidden_comment": true,
-                        "comment_num_tips": "7"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/c1ea0630-385b-4965-96a5-daed68cb0dda.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-77%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "diving snorkeling fins for men women diving fins comfortable lightweight swimming flippers swimming diving training equipment",
-                    "current_sku_id": 17592353826359,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "9 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 9 LEFT",
-                                "tag_series": 2
-                            },
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "ext_map": {
-                                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports in Black\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
-                                },
-                                "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                                "footer": {
-                                    "color": "#555555",
-                                    "text": " in Swimming, Diving & Water Sports in Black",
-                                    "font": 14
-                                },
-                                "marketing_tag_type": 2100,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                                "header": {
-                                    "text_style": 2,
-                                    "color": "#FFFFFF",
-                                    "back_color": "#0A8800",
-                                    "text": "BEST-SELLING ITEM",
-                                    "font": 12
-                                },
-                                "tag_id": 91020,
-                                "ranking_type": "BEST-SELLING ITEM",
-                                "ranking_id": "1603"
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/66ac2ccbbabdf7ae103426f4137b1a1e56948598.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/c1ea0630-385b-4965-96a5-daed68cb0dda.jpg",
-                        "url": "https://img.kwcdn.com/product/83866a95e1491f4a2fb891f2a4c5f50da98d0b16.goods.000001.jpeg"
-                    },
-                    "title": "Diving Snorkeling Fins For Men Women, Diving Fins, Comfortable Lightweight Swimming Flippers, Swimming Diving Training Equipment",
-                    "sales_tip_text_list": [
-                        "1.4K+",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 0,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "329437527",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0ZVnWGuuHTwQjRBKywRlKUYFT7S9QPbV2gaaYnoAjNlSEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "7091419113526771351",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1931585832",
-                        "g": "601099548951908",
-                        "scene_id": "3",
-                        "show_price": "8278",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "186",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "7024757183076749711",
-                        "ts": "1765212500596"
-                    },
-                    "activity_type": 100,
-                    "mall_id": 997524303255,
-                    "sales_num": "1.4K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099548951908&_oak_mp_inf=EOSK3Kim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc1ea0630-385b-4965-96a5-daed68cb0dda.jpg&spec_gallery_id=601099548951908&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODI3OA&_oak_gallery_order=1931585832%2C329437527%2C1987532121%2C2096688552%2C268845943",
-                    "extend_fields": {
-                        "sale_fire_flag": true,
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099548951908&_oak_mp_inf=EOSK3Kim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc1ea0630-385b-4965-96a5-daed68cb0dda.jpg&spec_gallery_id=601099548951908&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODI3OA&_oak_gallery_order=1931585832%2C329437527%2C1987532121%2C2096688552%2C268845943&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "detail_id": "112763152064513380",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1931585832,329437527,1987532121,2096688552,268845943"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "9 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 9 LEFT",
-                            "tag_series": 2
-                        },
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "ext_map": {
-                                "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports in Black\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
-                            },
-                            "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                            "footer": {
-                                "color": "#555555",
-                                "text": " in Swimming, Diving & Water Sports in Black",
-                                "font": 14
-                            },
-                            "marketing_tag_type": 2100,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                            "header": {
-                                "text_style": 2,
-                                "color": "#FFFFFF",
-                                "back_color": "#0A8800",
-                                "text": "BEST-SELLING ITEM",
-                                "font": 12
-                            },
-                            "tag_id": 91020,
-                            "ranking_type": "BEST-SELLING ITEM",
-                            "ranking_id": "1603"
-                        }
-                    ],
-                    "show_index": 186,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "82",
-                            ".78",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-77",
-                            "%"
-                        ],
-                        "price": 8278,
-                        "market_price_str": "$376.04",
-                        "market_price": 37604,
-                        "market_price_type": 1,
-                        "price_schema": "82.78",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "82.78",
-                            ""
-                        ],
-                        "price_str": "$82.78",
-                        "reduction": 770,
-                        "market_price_text": [
-                            "$",
-                            "376.04",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 375,
-                        "id": 601099548951908,
-                        "url_id": "7091419113526771351",
-                        "url": "https://img.kwcdn.com/product/fancy/c1ea0630-385b-4965-96a5-daed68cb0dda.jpg",
-                        "height": 375
-                    },
-                    "sales_tip": "1.4K+ sold",
-                    "visible": true,
-                    "goods_id": 601099548951908,
-                    "opt_id": 1604,
-                    "seo_link_url": "/diving-snorkeling-fins-for-men-women-diving-fins-comfortable-lightweight-swimming-flippers-swimming-diving-training-equipment-g-601099548951908.html?&_oak_mp_inf=EOSK3Kim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc1ea0630-385b-4965-96a5-daed68cb0dda.jpg&spec_gallery_id=601099548951908&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODI3OA&_oak_gallery_order=1931585832%2C329437527%2C1987532121%2C2096688552%2C268845943",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "1.4K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.9,
-                        "hidden_comment": true,
-                        "comment_num_tips": "12"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/72f9a09b-5880-4811-811c-0b098f4049f5.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-25%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "2pcs 8pcs silicone earplugs washable and reusable sleep earplugs noise cancelling earplugs swimming earplugs comfortable earplugs suitable for sleep swimming concerts travel snoring studying   environments and work settings work",
-                    "current_sku_id": 17610919845257,
-                    "tags_info": {},
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "2pcs/8pcs silicone earplugs - washable and reusable sleep earplugs, noise-cancelling earplugs, swimming earplugs, comfortable earplugs suitable for sleep, swimming, concerts, travel, snoring, studying, noisy environments and work settings.,  Work",
-                    "sales_tip_text_list": [
-                        "145",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 0,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "278019354",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0WUN5zs56DSbZa1stJOdsQt1qk0FriaY8k2ILFVDjfPPEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "4623130881870006997",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "278019354",
-                        "g": "601103658238559",
-                        "scene_id": "3",
-                        "show_price": "178",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "187",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "1953702334591085912",
-                        "ts": "1765212500597"
-                    },
-                    "activity_type": 27,
-                    "mall_id": 634418221387033,
-                    "sales_num": "145",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601103658238559&_oak_name_id=1953702334591085912&_oak_mp_inf=EN%2BEl9C11ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F72f9a09b-5880-4811-811c-0b098f4049f5.jpg&spec_gallery_id=212544527733&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc4&_oak_gallery_order=278019354%2C1530760971%2C137973446%2C1014357172%2C1686443345",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601103658238559&_oak_name_id=1953702334591085912&_oak_mp_inf=EN%2BEl9C11ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F72f9a09b-5880-4811-811c-0b098f4049f5.jpg&spec_gallery_id=212544527733&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc4&_oak_gallery_order=278019354%2C1530760971%2C137973446%2C1014357172%2C1686443345&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "detail_id": "112782932771324511",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "278019354,1530760971,137973446,1014357172,1686443345",
-                            "_oak_name_id": "1953702334591085912"
-                        }
-                    },
-                    "goods_tags": [],
-                    "show_index": 187,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "1",
-                            ".78",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-25",
-                            "%"
-                        ],
-                        "price": 178,
-                        "market_price_str": "$2.40",
-                        "market_price": 240,
-                        "market_price_type": 1,
-                        "price_schema": "1.78",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "1.78",
-                            ""
-                        ],
-                        "price_str": "$1.78",
-                        "reduction": 250,
-                        "market_price_text": [
-                            "$",
-                            "2.40",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 212544527733,
-                        "url_id": "4623130881870006997",
-                        "url": "https://img.kwcdn.com/product/fancy/72f9a09b-5880-4811-811c-0b098f4049f5.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "145 sold",
-                    "visible": true,
-                    "goods_id": 601103658238559,
-                    "opt_id": 1607,
-                    "seo_link_url": "/2pcs-8pcs-silicone-earplugs-washable-and-reusable-sleep-earplugs-noise-cancelling-earplugs-swimming-earplugs-comfortable-earplugs-suitable-for-sleep-swimming-concerts-travel-snoring-studying--environments-and-work-settings-work-g-601103658238559.html?&_oak_name_id=1953702334591085912&_oak_mp_inf=EN%2BEl9C11ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F72f9a09b-5880-4811-811c-0b098f4049f5.jpg&spec_gallery_id=212544527733&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc4&_oak_gallery_order=278019354%2C1530760971%2C137973446%2C1014357172%2C1686443345",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "145",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/50fc1ff7-8391-470b-a45a-3ef1eca87660.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-76%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "full face snorkeling mask with adjustable headband 180 degree panoramic view durable pc material   design for swimming boating   ideal for boys girls snorkeling gear boating equipment   mask",
-                    "current_sku_id": 17592347121901,
-                    "tags_info": {
-                        "mall_tag": [
-                            {
-                                "color": "#FFFFFF",
-                                "ext_map": {
-                                    "bg_start_color": "#6F3D91",
-                                    "bg_end_color": "#520E6F"
-                                },
-                                "bg_url": "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
-                                "marketing_tag_type": 2701,
-                                "width": 39,
-                                "tag_id": 91130,
-                                "text": "Star store",
-                                "tag_series": 2,
-                                "url": "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
-                                "height": 39
-                            },
-                            {
-                                "color": "#FFEFD3",
-                                "ext_map": {
-                                    "brand_info": "{\"brand_name\":\"BOKEFA\",\"brand_authorized_type\":1}",
-                                    "brand_tag_text_style": "1"
-                                },
-                                "bg_url": "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
-                                "marketing_tag_type": 2700,
-                                "width": 39,
-                                "tag_id": 91007,
-                                "text": "Brand Official Store: BOKEFA",
-                                "tag_series": 2,
-                                "url": "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
-                                "height": 39
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/04868b7d800a391611f418451c7f4b00b03ca1b4.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/50fc1ff7-8391-470b-a45a-3ef1eca87660.jpg",
-                        "url": "https://img.kwcdn.com/product/cf5803aaa3106ca5981b2b933a572c96b274a539.goods.000001.jpeg"
-                    },
-                    "title": "Full-Face Snorkeling Mask with Adjustable Headband & 180-Degree Panoramic View - Durable PC Material, Easy-to-Use Design for Swimming, Boating & Water Sports - Ideal For Boys & Girls, Snorkeling Gear, Boating Equipment, Secure Fit Mask",
-                    "sales_tip_text_list": [
-                        "6.4K+",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "1231839679",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0bEHYC2+P4qFlS0N5W+gsFZ9kdZkidNbWrLO8qgg/rv7EH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "8275832186706799070",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1231839679",
-                        "g": "601099547244704",
-                        "scene_id": "3",
-                        "show_price": "1429",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "188",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "835581623396673848",
-                        "ts": "1765212500597"
-                    },
-                    "mall_id": 95715448189,
-                    "sales_num": "6.4K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099547244704&_oak_mp_inf=EKDx86em1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F50fc1ff7-8391-470b-a45a-3ef1eca87660.jpg&spec_gallery_id=2104304750&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQyOQ&_oak_gallery_order=1231839679%2C2084759647%2C1947665382%2C922775740%2C94070975",
-                    "extend_fields": {
-                        "sale_fire_flag": true,
-                        "mall_view_type": 2,
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099547244704&_oak_mp_inf=EKDx86em1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F50fc1ff7-8391-470b-a45a-3ef1eca87660.jpg&spec_gallery_id=2104304750&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQyOQ&_oak_gallery_order=1231839679%2C2084759647%2C1947665382%2C922775740%2C94070975&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1231839679,2084759647,1947665382,922775740,94070975"
-                        }
-                    },
-                    "goods_tags": [],
-                    "show_index": 188,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "14",
-                            ".29",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-76",
-                            "%"
-                        ],
-                        "price": 1429,
-                        "market_price_str": "$61.47",
-                        "market_price": 6147,
-                        "market_price_type": 1,
-                        "price_schema": "14.29",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "14.29",
-                            ""
-                        ],
-                        "price_str": "$14.29",
-                        "market_price_text": [
-                            "$",
-                            "61.47",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 1500,
-                        "id": 2104304750,
-                        "url_id": "8275832186706799070",
-                        "url": "https://img.kwcdn.com/product/fancy/50fc1ff7-8391-470b-a45a-3ef1eca87660.jpg",
-                        "height": 1500
-                    },
-                    "sales_tip": "6.4K+ sold",
-                    "visible": true,
-                    "goods_id": 601099547244704,
-                    "opt_id": 1604,
-                    "seo_link_url": "/-adjustable-full-face-snorkeling-mask-for-kids-180-degree-panoramic-view-easy-to-carry-use-swim-gear-adjustable-headgear--mask-g-601099547244704.html?&_oak_mp_inf=EKDx86em1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F50fc1ff7-8391-470b-a45a-3ef1eca87660.jpg&spec_gallery_id=2104304750&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQyOQ&_oak_gallery_order=1231839679%2C2084759647%2C1947665382%2C922775740%2C94070975",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "6.4K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 5.0,
-                        "hidden_comment": true,
-                        "comment_num_tips": "27"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/3d4fc606-cb33-4c18-b58b-c6442d4d9084.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-83%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "1 pc womens beach bag travel bag storage bag storage box makeup bag backpack foldable large capacity suitable for outdoor travel travel essentials camping essentials halloween decor christmas decor fall decor birthday decor",
-                    "current_sku_id": 17607936618117,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "ext_map": {
-                                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
-                                },
-                                "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                                "footer": {
-                                    "color": "#555555",
-                                    "text": " in Swimming, Diving & Water Sports",
-                                    "font": 14
-                                },
-                                "marketing_tag_type": 2100,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                                "header": {
-                                    "text_style": 2,
-                                    "color": "#FFFFFF",
-                                    "back_color": "#0A8800",
-                                    "text": "BEST-SELLING ITEM",
-                                    "font": 12
-                                },
-                                "tag_id": 91020,
-                                "ranking_type": "BEST-SELLING ITEM",
-                                "ranking_id": "1603"
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/baea2abc1e99e5fbe564ab0cbc9114cdd5f0ccedgs2CV.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/3d4fc606-cb33-4c18-b58b-c6442d4d9084.jpg",
-                        "url": "https://img.kwcdn.com/product/d9575907ed4a0625ad5b8c50371c30b81a18a8e3.temu.000001.jpeg"
-                    },
-                    "title": "1 Pc Women's Beach Bag, Travel Bag, Storage Bag, Storage Box, Makeup Bag & Backpack - Foldable, Large-Capacity, Suitable for Outdoor Travel, Travel Essentials, Camping Essentials, Halloween Decor, Christmas Decor, Fall Decor, Birthday Decor",
-                    "sales_tip_text_list": [
-                        "961",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 7,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "1",
-                        "mid": "69999906",
-                        "final_creative_id": "1973284743",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0YlqB1DTcxfKbjv82sAWJwOfKvXQ30xWulW6UF6dlywNEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "440361922757479751",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1973284743",
-                        "g": "601103091125458",
-                        "scene_id": "3",
-                        "show_price": "668",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "organicPoint": "CoABboPbRRadG+ighideOgZDZYNICKGmFJuXcjPAjCGfjOgvcTIXuj56TUKCv8bWPmrAeFaVM3KvENggJDc0qxNMfYu/IIV5Rzieqr7HAMzJ+8sPAPARYHyA8L4n6tEUw8NFkNPvUwRAkuiQfNC6N/+b53XrTKejFFQ7+fRN64fOGroQehh4",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "189",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "2191032013559229418",
-                        "ts": "1765212500597"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 634418225539466,
-                    "sales_num": "961",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601103091125458&_oak_name_id=2191032013559229418&_oak_mp_inf=ENKZ4cGz1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3d4fc606-cb33-4c18-b58b-c6442d4d9084.jpg&spec_gallery_id=209351747356&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjY4&_oak_gallery_order=1973284743%2C109818510%2C1200737846%2C485661990%2C519767234",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "detail_id": "112708202018065618",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1973284743,109818510,1200737846,485661990,519767234",
-                            "_oak_name_id": "2191032013559229418"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "ext_map": {
-                                "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
-                            },
-                            "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                            "footer": {
-                                "color": "#555555",
-                                "text": " in Swimming, Diving & Water Sports",
-                                "font": 14
-                            },
-                            "marketing_tag_type": 2100,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                            "header": {
-                                "text_style": 2,
-                                "color": "#FFFFFF",
-                                "back_color": "#0A8800",
-                                "text": "BEST-SELLING ITEM",
-                                "font": 12
-                            },
-                            "tag_id": 91020,
-                            "ranking_type": "BEST-SELLING ITEM",
-                            "ranking_id": "1603"
-                        }
-                    ],
-                    "show_index": 189,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "6",
-                            ".68",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-83",
-                            "%"
-                        ],
-                        "price": 668,
-                        "market_price_str": "$40.65",
-                        "market_price": 4065,
-                        "market_price_type": 1,
-                        "price_schema": "6.68",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "6.68",
-                            ""
-                        ],
-                        "price_str": "$6.68",
-                        "reduction": 830,
-                        "market_price_text": [
-                            "$",
-                            "40.65",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 209351747356,
-                        "url_id": "440361922757479751",
-                        "url": "https://img.kwcdn.com/product/fancy/3d4fc606-cb33-4c18-b58b-c6442d4d9084.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "961 sold",
-                    "visible": true,
-                    "goods_id": 601103091125458,
-                    "opt_id": 1605,
-                    "seo_link_url": "/1-pc-womens-beach-bag-travel-bag-storage-bag-storage-box-makeup-bag-backpack-foldable-large-capacity-suitable-for-outdoor-travel-travel-essentials-camping-essentials-halloween-decor-christmas-decor-fall-decor-birthday-decor-g-601103091125458.html?&_oak_name_id=2191032013559229418&_oak_mp_inf=ENKZ4cGz1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3d4fc606-cb33-4c18-b58b-c6442d4d9084.jpg&spec_gallery_id=209351747356&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjY4&_oak_gallery_order=1973284743%2C109818510%2C1200737846%2C485661990%2C519767234",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "961",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/open/2023-03-09/1678333598275-02cd900accc0437995cd8d1ec793d70b-goods.jpeg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-40%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "waterproof swimming cap for men and women high   ears protection and long hair coverage large silicone diving cap",
-                    "current_sku_id": 17592205153884,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "ext_map": {
-                                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#10 BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports: Silicone\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
-                                },
-                                "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                                "footer": {
-                                    "color": "#555555",
-                                    "text": " in Swimming, Diving & Water Sports: Silicone",
-                                    "font": 14
-                                },
-                                "marketing_tag_type": 2100,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                                "header": {
-                                    "text_style": 2,
-                                    "color": "#FFFFFF",
-                                    "back_color": "#0A8800",
-                                    "text": "#10 BEST-SELLING ITEM",
-                                    "font": 12
-                                },
-                                "tag_id": 91020,
-                                "ranking_type": "#10 BEST-SELLING ITEM",
-                                "ranking_id": "1603"
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "[Waterproof Swimming Cap] Waterproof Swimming Cap for Men and Women - High Elasticity, Ears Protection, and Long Hair Coverage - Large Silicone Diving Cap",
-                    "sales_tip_text_list": [
-                        "40K+",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "966123168",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0blb5aXrXPi3Sy1yfn9LQVHouxrbnXyV3M3yydL2bQJ1EH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "8082865078214408202",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "966123168",
-                        "g": "601099514836393",
-                        "scene_id": "3",
-                        "show_price": "216",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "190",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "6170763076259448796",
-                        "ts": "1765212500597"
-                    },
-                    "mall_id": 81241371846,
-                    "sales_num": "40K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099514836393&_oak_mp_inf=EKnruZim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2023-03-09%2F1678333598275-02cd900accc0437995cd8d1ec793d70b-goods.jpeg&spec_gallery_id=601099514836393&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjE2&_oak_gallery_order=966123168%2C2037256127%2C1301431733%2C1599327511%2C782732684",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099514836393&_oak_mp_inf=EKnruZim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2023-03-09%2F1678333598275-02cd900accc0437995cd8d1ec793d70b-goods.jpeg&spec_gallery_id=601099514836393&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjE2&_oak_gallery_order=966123168%2C2037256127%2C1301431733%2C1599327511%2C782732684&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "966123168,2037256127,1301431733,1599327511,782732684"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "ext_map": {
-                                "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#10 BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports: Silicone\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
-                            },
-                            "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
-                            "footer": {
-                                "color": "#555555",
-                                "text": " in Swimming, Diving & Water Sports: Silicone",
-                                "font": 14
-                            },
-                            "marketing_tag_type": 2100,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                            "header": {
-                                "text_style": 2,
-                                "color": "#FFFFFF",
-                                "back_color": "#0A8800",
-                                "text": "#10 BEST-SELLING ITEM",
-                                "font": 12
-                            },
-                            "tag_id": 91020,
-                            "ranking_type": "#10 BEST-SELLING ITEM",
-                            "ranking_id": "1603"
-                        }
-                    ],
-                    "show_index": 190,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "2",
-                            ".16",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-40",
-                            "%"
-                        ],
-                        "price": 216,
-                        "market_price_str": "$3.62",
-                        "market_price": 362,
-                        "market_price_type": 1,
-                        "price_schema": "2.16",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "2.16",
-                            ""
-                        ],
-                        "price_str": "$2.16",
-                        "market_price_text": [
-                            "$",
-                            "3.62",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 375,
-                        "id": 601099514836393,
-                        "url_id": "8082865078214408202",
-                        "url": "https://img.kwcdn.com/product/open/2023-03-09/1678333598275-02cd900accc0437995cd8d1ec793d70b-goods.jpeg",
-                        "height": 375
-                    },
-                    "sales_tip": "40K+ sold",
-                    "visible": true,
-                    "goods_id": 601099514836393,
-                    "opt_id": 1607,
-                    "seo_link_url": "/waterproof-swimming-cap-for-men-and-women-high--ears-protection-and-long-hair-coverage-large-silicone-diving-cap-g-601099514836393.html?&_oak_mp_inf=EKnruZim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2023-03-09%2F1678333598275-02cd900accc0437995cd8d1ec793d70b-goods.jpeg&spec_gallery_id=601099514836393&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjE2&_oak_gallery_order=966123168%2C2037256127%2C1301431733%2C1599327511%2C782732684",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "40K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.8,
-                        "hidden_comment": false,
-                        "comment_num_tips": "1,129"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/903596b0-6705-4932-9cff-95ef9d788e7b.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-79%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "60pcs 3set waterproof ear stickers ear protection patches for swimming showering bathing hair wash shower waterproof ear stickers",
-                    "current_sku_id": 17592482919899,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "color": "#555555",
-                                "ext_map": {
-                                    "lowest_tag_up_flag": "3",
-                                    "lowest_price_before_title": "90d lowest"
-                                },
-                                "marketing_tag_type": 1000,
-                                "tag_id": 91048,
-                                "text": "Lowest price in 90 days",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/fd4543883d10f9e1a2996d11ffc86805798dd680.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/903596b0-6705-4932-9cff-95ef9d788e7b.jpg",
-                        "url": "https://img.kwcdn.com/product/46e3e2bdca809aebb2a3e5a97a7fa7b974be87bd.goods.000001.jpeg"
-                    },
-                    "title": "60pcs/3set Waterproof Ear Stickers/Ear Protection Patches for Swimming Showering Bathing Hair Wash Shower Waterproof Ear Stickers",
-                    "sales_tip_text_list": [
-                        "8.9K+",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "1187703192",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0fCViRoXSJH1/kdOtVSzNAjmfPAwuUFzQewI1IGhPUdOEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "4861097435050838579",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1187703192",
-                        "g": "601099585758362",
-                        "scene_id": "3",
-                        "show_price": "303",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "191",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "6592387899609345389",
-                        "ts": "1765212500597"
-                    },
-                    "mall_id": 634418210947133,
-                    "sales_num": "8.9K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099585758362&_oak_name_id=6592387899609345389&_oak_mp_inf=EJrJorqm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F903596b0-6705-4932-9cff-95ef9d788e7b.jpg&spec_gallery_id=2198589154&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzAz&_oak_gallery_order=1187703192%2C893653466%2C1924045476%2C1123555523%2C623854632",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1187703192,893653466,1924045476,1123555523,623854632",
-                            "_oak_name_id": "6592387899609345389"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "color": "#555555",
-                            "ext_map": {
-                                "lowest_tag_up_flag": "3",
-                                "lowest_price_before_title": "90d lowest"
-                            },
-                            "marketing_tag_type": 1000,
-                            "tag_id": 91048,
-                            "text": "Lowest price in 90 days",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 191,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "3",
-                            ".03",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-79",
-                            "%"
-                        ],
-                        "price": 303,
-                        "market_price_str": "$14.99",
-                        "market_price": 1499,
-                        "market_price_type": 1,
-                        "price_schema": "3.03",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "3.03",
-                            ""
-                        ],
-                        "price_str": "$3.03",
-                        "market_price_text": [
-                            "$",
-                            "14.99",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 2198589154,
-                        "url_id": "4861097435050838579",
-                        "url": "https://img.kwcdn.com/product/fancy/903596b0-6705-4932-9cff-95ef9d788e7b.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "8.9K+ sold",
-                    "visible": true,
-                    "goods_id": 601099585758362,
-                    "opt_id": 1607,
-                    "seo_link_url": "/60pcs-3set-waterproof-ear-stickers-ear-protection-patches-for-swimming-showering-bathing-hair-wash-shower-waterproof-ear-stickers-g-601099585758362.html?&_oak_name_id=6592387899609345389&_oak_mp_inf=EJrJorqm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F903596b0-6705-4932-9cff-95ef9d788e7b.jpg&spec_gallery_id=2198589154&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzAz&_oak_gallery_order=1187703192%2C893653466%2C1924045476%2C1123555523%2C623854632",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "8.9K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.8,
-                        "hidden_comment": false,
-                        "comment_num_tips": "64"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/a43151d1-cfbc-427a-b7ae-84d770d73a4b.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-46%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "1 adult adjustable swimming vest     jacket for swimming pool beach suitable for swimming fishing and other  ",
-                    "current_sku_id": 17594448698817,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "1 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 1 LEFT",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "1 Adult Adjustable Swimming Vest | Yellow Nylon Buoyancy Jacket for Swimming Pool, Beach, Suitable for Swimming, Fishing and Other Water Sports.",
-                    "sales_tip_text_list": [
-                        "2.5K+",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "540067064",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0VUSMymZpinTtJ6Y0kjuDd+n4boKMLKSHl58unM65ghZEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "6139945252179572396",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1908449237",
-                        "g": "601100043387572",
-                        "scene_id": "3",
-                        "show_price": "2015",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "192",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "3043102987394303003",
-                        "ts": "1765212500597"
-                    },
-                    "mall_id": 5334369975527,
-                    "sales_num": "2.5K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601100043387572&_oak_name_id=3043102987394303003&_oak_mp_inf=ELSFvpSo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fa43151d1-cfbc-427a-b7ae-84d770d73a4b.jpg&spec_gallery_id=201988242533&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjAxNQ&_oak_gallery_order=1908449237%2C1924156707%2C700121219%2C27377183%2C1414329846",
-                    "extend_fields": {
-                        "sale_fire_flag": true,
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601100043387572&_oak_name_id=3043102987394303003&_oak_mp_inf=ELSFvpSo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fa43151d1-cfbc-427a-b7ae-84d770d73a4b.jpg&spec_gallery_id=201988242533&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjAxNQ&_oak_gallery_order=1908449237%2C1924156707%2C700121219%2C27377183%2C1414329846&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1908449237,1924156707,700121219,27377183,1414329846",
-                            "_oak_name_id": "3043102987394303003"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "1 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 1 LEFT",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 192,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "20",
-                            ".15",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-46",
-                            "%"
-                        ],
-                        "price": 2015,
-                        "market_price_str": "$37.34",
-                        "market_price": 3734,
-                        "market_price_type": 1,
-                        "price_schema": "20.15",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "20.15",
-                            ""
-                        ],
-                        "price_str": "$20.15",
-                        "market_price_text": [
-                            "$",
-                            "37.34",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 1200,
-                        "id": 201988242533,
-                        "url_id": "6139945252179572396",
-                        "url": "https://img.kwcdn.com/product/fancy/a43151d1-cfbc-427a-b7ae-84d770d73a4b.jpg",
-                        "height": 1200
-                    },
-                    "sales_tip": "2.5K+ sold",
-                    "visible": true,
-                    "goods_id": 601100043387572,
-                    "opt_id": 1607,
-                    "seo_link_url": "/adjustable-swimming-vests-for-adults--jackets-ideal-for-pools-and---swimming-fishing-and--water-activities-g-601100043387572.html?&_oak_name_id=3043102987394303003&_oak_mp_inf=ELSFvpSo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fa43151d1-cfbc-427a-b7ae-84d770d73a4b.jpg&spec_gallery_id=201988242533&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjAxNQ&_oak_gallery_order=1908449237%2C1924156707%2C700121219%2C27377183%2C1414329846",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "2.5K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 5.0,
-                        "hidden_comment": true,
-                        "comment_num_tips": "4"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/04e20322-ba63-4319-a713-4345771c6b7b.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-44%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "1pc led diving flashlight professional underwater torch waterproof usb rechargeable diving light bright outdoor abs plastic material flashlights portable diving supplies suitable for diving swimming hiking fishing light",
-                    "current_sku_id": 17604159290990,
-                    "tags_info": {
-                        "mall_tag": [
-                            {
-                                "color": "#000000",
-                                "ext_map": {
-                                    "brand_info": "{\"brand_name\":\"MACROCOSM\",\"brand_authorized_type\":2}",
-                                    "brand_tag_text_style": "1"
-                                },
-                                "bg_url": "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
-                                "marketing_tag_type": 2700,
-                                "width": 39,
-                                "tag_id": 91007,
-                                "text": "Brand: MACROCOSM",
-                                "tag_series": 2,
-                                "height": 39
-                            }
-                        ],
-                        "goods_tags": [
-                            {
-                                "color": "#555555",
-                                "ext_map": {
-                                    "lowest_tag_up_flag": "4",
-                                    "lowest_price_before_title": "60d lowest"
-                                },
-                                "marketing_tag_type": 1000,
-                                "tag_id": 91048,
-                                "text": "Lowest price in 60 days",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
-                        "video_url": "https://goods-vod.kwcdn.com/goods-video/e223f90dc794f2df5f82ded19483265be52673ad.f30.mp4",
-                        "image_url": "https://img.kwcdn.com/product/fancy/04e20322-ba63-4319-a713-4345771c6b7b.jpg",
-                        "url": "https://img.kwcdn.com/product/f9f1f794191e3c9cf1a6ca837d2b6ec2dc6a5eae.goods.000001.jpeg"
-                    },
-                    "title": "[LED Diving Flashlight] 1pc LED Diving Flashlight, Professional Underwater Torch, Waterproof USB Rechargeable Diving Light, Bright Outdoor ABS Plastic Material Flashlights, Portable Diving Supplies, Suitable for diving, swimming, hiking, Fishing Light",
-                    "sales_tip_text_list": [
-                        "237",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 50,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "105463565",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Wm5unLCHtXaP5sjWzdvmOgKe6aYtkRjSJWSU6HVFLLHEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "7612406761487025878",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "105463565",
-                        "g": "601102327774358",
-                        "scene_id": "3",
-                        "show_price": "979",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "193",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "5224670470070885523",
-                        "ts": "1765212500597"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 634418220262713,
-                    "sales_num": "237",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601102327774358&_oak_mp_inf=EJb54dWw1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F04e20322-ba63-4319-a713-4345771c6b7b.jpg&spec_gallery_id=205958181034&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTc5&_oak_gallery_order=105463565%2C1247891915%2C1984612162%2C383174982%2C1972544770",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "detail_id": "112719199416056982",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "105463565,1247891915,1984612162,383174982,1972544770"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "color": "#555555",
-                            "ext_map": {
-                                "lowest_tag_up_flag": "4",
-                                "lowest_price_before_title": "60d lowest"
-                            },
-                            "marketing_tag_type": 1000,
-                            "tag_id": 91048,
-                            "text": "Lowest price in 60 days",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 193,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "9",
-                            ".79",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-44",
-                            "%"
-                        ],
-                        "price": 979,
-                        "market_price_str": "$17.63",
-                        "market_price": 1763,
-                        "market_price_type": 1,
-                        "price_schema": "9.79",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "9.79",
-                            ""
-                        ],
-                        "price_str": "$9.79",
-                        "reduction": 440,
-                        "market_price_text": [
-                            "$",
-                            "17.63",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 205958181034,
-                        "url_id": "7612406761487025878",
-                        "url": "https://img.kwcdn.com/product/fancy/04e20322-ba63-4319-a713-4345771c6b7b.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "237 sold",
-                    "visible": true,
-                    "goods_id": 601102327774358,
-                    "opt_id": 1604,
-                    "seo_link_url": "/1pc-led-diving-flashlight-professional-underwater-torch-waterproof-usb-rechargeable-diving-light-bright-outdoor-abs-plastic-material-flashlights-portable-diving-supplies-suitable-for-diving-swimming-hiking-fishing-light-g-601102327774358.html?&_oak_mp_inf=EJb54dWw1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F04e20322-ba63-4319-a713-4345771c6b7b.jpg&spec_gallery_id=205958181034&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTc5&_oak_gallery_order=105463565%2C1247891915%2C1984612162%2C383174982%2C1972544770",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "237",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 5.0,
-                        "hidden_comment": true,
-                        "comment_num_tips": "2"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/8cff79c97cd7a0e0663c06e0ceb040f4.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-88%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "latest model waterproof hd adjustable size adult swimming goggles universal for men and women protective film included swimming gear adjustable goggles   goggles swim goggles",
-                    "current_sku_id": 17592239741207,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "5 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 5 LEFT",
-                                "tag_series": 2
-                            },
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "ext_map": {
-                                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"TOP RATED\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Top rated\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Top rated\",\"ranking_opt_id\":\"1603\"}}}"
-                                },
-                                "prompt_tag_text": "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                                "footer": {
-                                    "color": "#555555",
-                                    "text": " in Swimming, Diving & Water Sports",
-                                    "font": 14
-                                },
-                                "marketing_tag_type": 2100,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                                "header": {
-                                    "text_style": 2,
-                                    "color": "#FFFFFF",
-                                    "back_color": "#0A8800",
-                                    "text": "TOP RATED",
-                                    "font": 12
-                                },
-                                "tag_id": 91020,
-                                "ranking_type": "TOP RATED",
-                                "ranking_id": "1603"
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "[Waterproof Swimming Goggles] Waterproof HD Adjustable Size Adult Swimming Goggles - Latest Model | Universal for Men and Women, Protective Film Included, Swimming Gear, Adjustable Goggles, Comfortable Fit Goggles, Swim Goggles",
-                    "sales_tip_text_list": [
-                        "19K+",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 66,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "659256659",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Tj3YYQekswNMhL2624g9uMmzI5l2Tig2mj5M++A3IBpEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "6933712296210777187",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1663036110",
-                        "g": "601099522015669",
-                        "scene_id": "3",
-                        "show_price": "225",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "194",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "8842492285978819333",
-                        "ts": "1765212500597"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 6005557728630,
-                    "sales_num": "19K+",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601099522015669&_oak_name_id=8842492285978819333&_oak_mp_inf=ELWD8Jum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F8cff79c97cd7a0e0663c06e0ceb040f4.jpg&spec_gallery_id=2064292278&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI1&_oak_gallery_order=1663036110%2C659256659%2C1276659055%2C1192059665%2C1510956496",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099522015669&_oak_name_id=8842492285978819333&_oak_mp_inf=ELWD8Jum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F8cff79c97cd7a0e0663c06e0ceb040f4.jpg&spec_gallery_id=2064292278&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI1&_oak_gallery_order=1663036110%2C659256659%2C1276659055%2C1192059665%2C1510956496&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "detail_id": "112771940062527925",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1663036110,659256659,1276659055,1192059665,1510956496",
-                            "_oak_name_id": "8842492285978819333"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "5 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 5 LEFT",
-                            "tag_series": 2
-                        },
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "ext_map": {
-                                "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"TOP RATED\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Top rated\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Top rated\",\"ranking_opt_id\":\"1603\"}}}"
-                            },
-                            "prompt_tag_text": "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
-                            "footer": {
-                                "color": "#555555",
-                                "text": " in Swimming, Diving & Water Sports",
-                                "font": 14
-                            },
-                            "marketing_tag_type": 2100,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                            "header": {
-                                "text_style": 2,
-                                "color": "#FFFFFF",
-                                "back_color": "#0A8800",
-                                "text": "TOP RATED",
-                                "font": 12
-                            },
-                            "tag_id": 91020,
-                            "ranking_type": "TOP RATED",
-                            "ranking_id": "1603"
-                        }
-                    ],
-                    "show_index": 194,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "2",
-                            ".25",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-88",
-                            "%"
-                        ],
-                        "price": 225,
-                        "market_price_str": "$19.48",
-                        "market_price": 1948,
-                        "market_price_type": 1,
-                        "price_schema": "2.25",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "2.25",
-                            ""
-                        ],
-                        "price_str": "$2.25",
-                        "reduction": 880,
-                        "market_price_text": [
-                            "$",
-                            "19.48",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 2064292278,
-                        "url_id": "6933712296210777187",
-                        "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/8cff79c97cd7a0e0663c06e0ceb040f4.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "19K+ sold",
-                    "visible": true,
-                    "goods_id": 601099522015669,
-                    "opt_id": 1607,
-                    "seo_link_url": "/latest-model-waterproof-hd-adjustable-size-adult-swimming-goggles-universal-for-men-and-women-protective-film-included-swimming-gear-adjustable-goggles--goggles-swim-goggles-g-601099522015669.html?&_oak_name_id=8842492285978819333&_oak_mp_inf=ELWD8Jum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F8cff79c97cd7a0e0663c06e0ceb040f4.jpg&spec_gallery_id=2064292278&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI1&_oak_gallery_order=1663036110%2C659256659%2C1276659055%2C1192059665%2C1510956496",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "19K+",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 4.8,
-                        "hidden_comment": false,
-                        "comment_num_tips": "371"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/ead61f5f-cf13-495d-9746-0395933fcbc7.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": ""
-                    },
-                    "item_type": 0,
-                    "page_alt": "mermaid tail swimming fins open heel design black blue gradient durable copper material   freestyle swimming snorkeling and   mermaid accessories   gear sleek swimwear flexible swimwear diving fin swimming fin diving equipment",
-                    "current_sku_id": 17607738070740,
-                    "tags_info": {},
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "Mermaid Tail Swimming Fins - Open Heel Design, Black & Blue Gradient, Durable Copper Material, Perfect for Freestyle Swimming, Snorkeling, and Water Sports, Mermaid Accessories, Water Sports Gear, Sleek Swimwear, Flexible Swimwear, Diving Fin, Swimming Fin, Diving Equipment",
-                    "sales_tip_text_list": [
-                        "38",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "313374073",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Z/+4pSA6GA88sVKMRrPBrkpfTP6T3TFHSebsImvPrNXEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "3555827999176492178",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "313374073",
-                        "g": "601103052605898",
-                        "scene_id": "3",
-                        "show_price": "2405",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "195",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "5379367295123677639",
-                        "ts": "1765212500597"
-                    },
-                    "mall_id": 634418222283736,
-                    "sales_num": "38",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601103052605898&_oak_name_id=5379367295123677639&_oak_mp_inf=EMqTsq%2Bz1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fead61f5f-cf13-495d-9746-0395933fcbc7.jpg&spec_gallery_id=209870610083&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjQwNQ&_oak_gallery_order=313374073%2C368957105%2C2058353893%2C58115848%2C946011766",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "313374073,368957105,2058353893,58115848,946011766",
-                            "_oak_name_id": "5379367295123677639"
-                        }
-                    },
-                    "goods_tags": [],
-                    "show_index": 195,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "24",
-                            ".05",
-                            ""
-                        ],
-                        "reduction_text": [],
-                        "price": 2405,
-                        "price_schema": "24.05",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "24.05",
-                            ""
-                        ],
-                        "price_str": "$24.05"
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 209870610083,
-                        "url_id": "3555827999176492178",
-                        "url": "https://img.kwcdn.com/product/fancy/ead61f5f-cf13-495d-9746-0395933fcbc7.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "38 sold",
-                    "visible": true,
-                    "goods_id": 601103052605898,
-                    "opt_id": 1607,
-                    "seo_link_url": "/mermaid-tail-swimming-fins-open-heel-design-black-blue-gradient-durable-copper-material--freestyle-swimming-snorkeling-and--mermaid-accessories--gear-sleek-swimwear-flexible-swimwear-diving-fin-swimming-fin-diving-equipment-g-601103052605898.html?&_oak_name_id=5379367295123677639&_oak_mp_inf=EMqTsq%2Bz1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fead61f5f-cf13-495d-9746-0395933fcbc7.jpg&spec_gallery_id=209870610083&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjQwNQ&_oak_gallery_order=313374073%2C368957105%2C2058353893%2C58115848%2C946011766",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "38",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/open/9ef827eed8b34fdbb84eb82189aea43e-goods.jpeg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-85%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "waterproof dustproof heavy duty lockable survival storage case multi color orange   black locking mechanism   fishing tackle outdoor tools container with carry handle durable plastic box for camping",
-                    "current_sku_id": 17610833304956,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "ext_map": {
-                                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"NEW ARRIVAL\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"}}}"
-                                },
-                                "prompt_tag_text": "'New Arrival' means that this product listing was created by the seller within the last 60 days and is currently trending in sales on the platform. If another seller lists the same product later, their listing may also qualify for the 'New Arrival' label. Please note that this label indicates a new listing, which may not necessarily be a new product on the platform.",
-                                "footer": {
-                                    "color": "#555555",
-                                    "text": " in Swimming, Diving & Water Sports",
-                                    "font": 14
-                                },
-                                "marketing_tag_type": 2100,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                                "header": {
-                                    "text_style": 2,
-                                    "color": "#FFFFFF",
-                                    "back_color": "#0A8800",
-                                    "text": "NEW ARRIVAL",
-                                    "font": 12
-                                },
-                                "tag_id": 91020,
-                                "ranking_type": "NEW ARRIVAL",
-                                "ranking_id": "1603"
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "Waterproof & Dustproof Heavy-Duty Lockable Survival Storage Case - Multi-Color (Orange/Yellow/Green/Black) Locking Mechanism, EDC Gear, Fishing Tackle & Outdoor Tools Container with Carry Handle, Durable Plastic Box for Camping &",
-                    "sales_tip_text_list": [
-                        "30",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "578388750",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Yjvtx28hRBOqt7jbLYqNXqW+h0LTso47SQoQ36nJmByEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "3625248781230418085",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "2071688374",
-                        "g": "601103641338968",
-                        "scene_id": "3",
-                        "show_price": "264",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "196",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "1872198781153594216",
-                        "ts": "1765212500597"
-                    },
-                    "mall_id": 185159704974,
-                    "sales_num": "30",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601103641338968&_oak_mp_inf=ENjIj8i11ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F9ef827eed8b34fdbb84eb82189aea43e-goods.jpeg&spec_gallery_id=601103641338968&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY0&_oak_gallery_order=2071688374%2C1832751801%2C1779144061%2C1129810542%2C492099532",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601103641338968&_oak_mp_inf=ENjIj8i11ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F9ef827eed8b34fdbb84eb82189aea43e-goods.jpeg&spec_gallery_id=601103641338968&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY0&_oak_gallery_order=2071688374%2C1832751801%2C1779144061%2C1129810542%2C492099532&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "2071688374,1832751801,1779144061,1129810542,492099532"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "ext_map": {
-                                "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"NEW ARRIVAL\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"}}}"
-                            },
-                            "prompt_tag_text": "'New Arrival' means that this product listing was created by the seller within the last 60 days and is currently trending in sales on the platform. If another seller lists the same product later, their listing may also qualify for the 'New Arrival' label. Please note that this label indicates a new listing, which may not necessarily be a new product on the platform.",
-                            "footer": {
-                                "color": "#555555",
-                                "text": " in Swimming, Diving & Water Sports",
-                                "font": 14
-                            },
-                            "marketing_tag_type": 2100,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
-                            "header": {
-                                "text_style": 2,
-                                "color": "#FFFFFF",
-                                "back_color": "#0A8800",
-                                "text": "NEW ARRIVAL",
-                                "font": 12
-                            },
-                            "tag_id": 91020,
-                            "ranking_type": "NEW ARRIVAL",
-                            "ranking_id": "1603"
-                        }
-                    ],
-                    "show_index": 196,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "2",
-                            ".64",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-85",
-                            "%"
-                        ],
-                        "price": 264,
-                        "market_price_str": "$17.87",
-                        "market_price": 1787,
-                        "market_price_type": 1,
-                        "price_schema": "2.64",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "2.64",
-                            ""
-                        ],
-                        "price_str": "$2.64",
-                        "market_price_text": [
-                            "$",
-                            "17.87",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 375,
-                        "id": 601103641338968,
-                        "url_id": "3625248781230418085",
-                        "url": "https://img.kwcdn.com/product/open/9ef827eed8b34fdbb84eb82189aea43e-goods.jpeg",
-                        "height": 375
-                    },
-                    "sales_tip": "30 sold",
-                    "visible": true,
-                    "goods_id": 601103641338968,
-                    "opt_id": 1604,
-                    "seo_link_url": "/waterproof-dustproof-heavy-duty-lockable-survival-storage-case-multi-color-orange--black-locking-mechanism--fishing-tackle-outdoor-tools-container-with-carry-handle-durable-plastic-box-for-camping-g-601103641338968.html?&_oak_mp_inf=ENjIj8i11ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F9ef827eed8b34fdbb84eb82189aea43e-goods.jpeg&spec_gallery_id=601103641338968&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY0&_oak_gallery_order=2071688374%2C1832751801%2C1779144061%2C1129810542%2C492099532",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "30",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/b18879c0-40c1-4270-8cd1-c14f9231e580.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-88%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "adult full face snorkeling gear swimming snorkeling mask panoramic leak proof   180 with removable camera mount adult 2 sizes multi   for adult men and women",
-                    "current_sku_id": 17595404518700,
-                    "tags_info": {
-                        "mall_tag": [
-                            {
-                                "color": "#FFEFD3",
-                                "ext_map": {
-                                    "brand_info": "{\"brand_name\":\"BOKEFA\",\"brand_authorized_type\":1}",
-                                    "brand_tag_text_style": "1"
-                                },
-                                "bg_url": "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
-                                "marketing_tag_type": 2700,
-                                "width": 39,
-                                "tag_id": 91007,
-                                "text": "Brand Official Store: BOKEFA",
-                                "tag_series": 2,
-                                "url": "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
-                                "height": 39
-                            }
-                        ],
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "1 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 1 LEFT",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "Adult Full Face Snorkeling Gear, Swimming Snorkeling Mask, Panoramic Leak Proof Swimming Mask, 180° with Removable Camera Mount, Adult 2 Sizes Multi-color Choice for Adult Men and Women",
-                    "sales_tip_text_list": [
-                        "235",
-                        "sold"
-                    ],
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "2136640541",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0YUYjfIVQ7IGlLgr09iLqh/eUk3SvlZ1iKnT7FTXXpsnEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "489798625888556938",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "2136640541",
-                        "g": "601100262512600",
-                        "scene_id": "3",
-                        "show_price": "2387",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "197",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "6508517377544047877",
-                        "ts": "1765212500598"
-                    },
-                    "mall_id": 634418211182415,
-                    "sales_num": "235",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601100262512600&_oak_name_id=6508517377544047877&_oak_mp_inf=ENiv%2FPyo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb18879c0-40c1-4270-8cd1-c14f9231e580.jpg&spec_gallery_id=5067170537&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM4Nw&_oak_gallery_order=2136640541%2C1038826998%2C1989834112%2C1612373406%2C552134362",
-                    "extend_fields": {
-                        "floating_link_url": "goods.html?_bg_fs=1&goods_id=601100262512600&_oak_name_id=6508517377544047877&_oak_mp_inf=ENiv%2FPyo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb18879c0-40c1-4270-8cd1-c14f9231e580.jpg&spec_gallery_id=5067170537&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM4Nw&_oak_gallery_order=2136640541%2C1038826998%2C1989834112%2C1612373406%2C552134362&goods_pop_style=1&floating_when_add_to_cart=1",
-                        "support_tag_carousel": true,
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "2136640541,1038826998,1989834112,1612373406,552134362",
-                            "_oak_name_id": "6508517377544047877"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "1 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 1 LEFT",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 197,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "23",
-                            ".87",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-88",
-                            "%"
-                        ],
-                        "price": 2387,
-                        "market_price_str": "$207.34",
-                        "market_price": 20734,
-                        "market_price_type": 1,
-                        "price_schema": "23.87",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "23.87",
-                            ""
-                        ],
-                        "price_str": "$23.87",
-                        "market_price_text": [
-                            "$",
-                            "207.34",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 1500,
-                        "id": 5067170537,
-                        "url_id": "489798625888556938",
-                        "url": "https://img.kwcdn.com/product/fancy/b18879c0-40c1-4270-8cd1-c14f9231e580.jpg",
-                        "height": 1500
-                    },
-                    "sales_tip": "235 sold",
-                    "visible": true,
-                    "goods_id": 601100262512600,
-                    "opt_id": 1604,
-                    "seo_link_url": "/adult-full-face-snorkeling-gear-swimming-snorkeling-mask-panoramic-leak-proof--180-with-removable-camera-mount-adult-2-sizes-multi--for-adult-men-and-women-g-601100262512600.html?&_oak_name_id=6508517377544047877&_oak_mp_inf=ENiv%2FPyo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb18879c0-40c1-4270-8cd1-c14f9231e580.jpg&spec_gallery_id=5067170537&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM4Nw&_oak_gallery_order=2136640541%2C1038826998%2C1989834112%2C1612373406%2C552134362",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "235",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {
-                        "goods_score": 5.0,
-                        "hidden_comment": true,
-                        "comment_num_tips": "2"
-                    },
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/fancy/8a3b562e-20fc-40c0-a9a7-6f1765795ca7.jpg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": ""
-                    },
-                    "item_type": 0,
-                    "page_alt": "2pcs blue swimming kick board with   foam air holes adjustable pool training board for   aerobics aquatic sturdy   for beginners advanced swimmers no included",
-                    "current_sku_id": 17614064622895,
-                    "tags_info": {
-                        "goods_tags": [
-                            {
-                                "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                                "color": "#FB7701",
-                                "ext_map": {
-                                    "stock_type": "1",
-                                    "simply_stock_tag_text": "1 LEFT!"
-                                },
-                                "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                                "marketing_tag_type": 1000,
-                                "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                                "tag_id": 91004,
-                                "text": "ONLY 1 LEFT",
-                                "tag_series": 2
-                            }
-                        ]
-                    },
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "2pcs Blue Swimming Kick Board with Buoyant Foam & Air Holes - Adjustable Pool Training Board for s &, Water Aerobics, Aquatic - Sturdy Kickboard for Beginners/Advanced Swimmers (No Included)",
-                    "sales_tip_text_list": [
-                        "14",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 0,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "0",
-                        "mid": "69999906",
-                        "final_creative_id": "695487508",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0d582YqF/d4TGEG+w60Rj+L5hvigVYCj6+omPLAWIojGEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "7943853236605061676",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "695487508",
-                        "g": "601104295985637",
-                        "scene_id": "3",
-                        "show_price": "1384",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "198",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "2191307182845834413",
-                        "ts": "1765212500598"
-                    },
-                    "activity_type": 27,
-                    "mall_id": 634418221177943,
-                    "sales_num": "14",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601104295985637&_oak_name_id=2191307182845834413&_oak_mp_inf=EOWDpIC41ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F8a3b562e-20fc-40c0-a9a7-6f1765795ca7.jpg&spec_gallery_id=215670410494&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTM4NA&_oak_gallery_order=695487508%2C1251205039%2C689085035",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "detail_id": "112787335297303013",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "695487508,1251205039,689085035",
-                            "_oak_name_id": "2191307182845834413"
-                        }
-                    },
-                    "goods_tags": [
-                        {
-                            "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
-                            "color": "#FB7701",
-                            "ext_map": {
-                                "stock_type": "1",
-                                "simply_stock_tag_text": "1 LEFT!"
-                            },
-                            "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
-                            "marketing_tag_type": 1000,
-                            "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
-                            "tag_id": 91004,
-                            "text": "ONLY 1 LEFT",
-                            "tag_series": 2
-                        }
-                    ],
-                    "show_index": 198,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "13",
-                            ".84",
-                            ""
-                        ],
-                        "reduction_text": [],
-                        "price": 1384,
-                        "price_schema": "13.84",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "13.84",
-                            ""
-                        ],
-                        "price_str": "$13.84"
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 215670410494,
-                        "url_id": "7943853236605061676",
-                        "url": "https://img.kwcdn.com/product/fancy/8a3b562e-20fc-40c0-a9a7-6f1765795ca7.jpg",
-                        "height": 800
-                    },
-                    "sales_tip": "14 sold",
-                    "visible": true,
-                    "goods_id": 601104295985637,
-                    "opt_id": 1607,
-                    "seo_link_url": "/2pcs-blue-swimming-kick-board-with--foam-air-holes-adjustable-pool-training-board-for--aerobics-aquatic-sturdy--for-beginners-advanced-swimmers-no-included-g-601104295985637.html?&_oak_name_id=2191307182845834413&_oak_mp_inf=EOWDpIC41ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F8a3b562e-20fc-40c0-a9a7-6f1765795ca7.jpg&spec_gallery_id=215670410494&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTM4NA&_oak_gallery_order=695487508%2C1251205039%2C689085035",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "14",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
-                },
-                {
-                    "thumb_url": "https://img.kwcdn.com/product/open/579affb1554745f68df81077f00f3091-goods.jpeg",
-                    "ware_house_type": 0,
-                    "benefit_text": {
-                        "text": "-85%"
-                    },
-                    "item_type": 0,
-                    "page_alt": "1pc adjustable diving attachment strap hands free flashlight holder   release   for   snorkeling freediving gear compatible with flashlights torch black",
-                    "current_sku_id": 17612362575563,
-                    "tags_info": {},
-                    "video": {
-                        "video_url": ""
-                    },
-                    "title": "1pc Adjustable Diving Attachment Strap - Hands-Free Flashlight Holder with Quick-Release Buckle for Scuba, Snorkeling, Freediving Gear - Compatible with Flashlights & Torch (Black)",
-                    "sales_tip_text_list": [
-                        "30",
-                        "sold"
-                    ],
-                    "sold_quantity_percent": 50,
-                    "p_rec": {
-                        "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
-                        "item_type": "0",
-                        "ad_goods": "1",
-                        "mid": "69999906",
-                        "final_creative_id": "1398489024",
-                        "sort_by_type": "873027542",
-                        "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0TAeMhUA5NYDbmc+A/so/Yy1mZa5O2M0esD/gulfpI51EH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
-                        "scene": "opt",
-                        "image_url_id": "2316594947118599604",
-                        "show_currency": "USD",
-                        "no_result": "0",
-                        "offset": "160",
-                        "engine_creative_id": "1398489024",
-                        "g": "601103945257694",
-                        "scene_id": "3",
-                        "show_price": "474",
-                        "opt_id": "1603",
-                        "ts_req": "0",
-                        "version": "5",
-                        "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
-                        "gin_fallback": "0",
-                        "organicPoint": "CoAB0S0SVZB1Sv1WRb5zuQxhIxSd9Z46n9kOGHGtdoX9zF+BgLdqd+lfJ7Ni8ia62bYq2Cg6BCH2DdQIsF+QVy+GfkhDomyYObhMNCESI9DNPQ939nTlyq5fPIerqze8s/tUZDwA3c2ZKUMMX0DC2P7LNHgUCGDtX406W+GfdNG49RIQeBh2",
-                        "opt_type": "0",
-                        "goods_source": "rec",
-                        "idx": "199",
-                        "region": "211",
-                        "bid": "69999705",
-                        "cloud_env": "udpm1",
-                        "creative_title_id": "149225918233803211",
-                        "ts": "1765212500598"
-                    },
-                    "activity_type": 13,
-                    "mall_id": 634418211490610,
-                    "sales_num": "30",
-                    "link_url": "goods.html?_bg_fs=1&goods_id=601103945257694&_oak_name_id=149225918233803211&_oak_mp_inf=EN6lhdm21ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F579affb1554745f68df81077f00f3091-goods.jpeg&spec_gallery_id=213460767503&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDc0&_oak_gallery_order=1398489024%2C1847568357%2C1730820200%2C530560462%2C1045730964",
-                    "extend_fields": {
-                        "support_tag_carousel": true,
-                        "detail_id": "112769759972381406",
-                        "market_price_style": 1,
-                        "sku_extra_param": {
-                            "_oak_gallery_order": "1398489024,1847568357,1730820200,530560462,1045730964",
-                            "_oak_name_id": "149225918233803211"
-                        }
-                    },
-                    "goods_tags": [],
-                    "show_index": 199,
-                    "price_info": {
-                        "split_price_text": [
-                            "$",
-                            "4",
-                            ".74",
-                            ""
-                        ],
-                        "reduction_text": [
-                            "-85",
-                            "%"
-                        ],
-                        "price": 474,
-                        "market_price_str": "$33.37",
-                        "market_price": 3337,
-                        "market_price_type": 1,
-                        "price_schema": "4.74",
-                        "currency": "USD",
-                        "price_text": [
-                            "$",
-                            "4.74",
-                            ""
-                        ],
-                        "price_str": "$4.74",
-                        "reduction": 850,
-                        "market_price_text": [
-                            "$",
-                            "33.37",
-                            ""
-                        ]
-                    },
-                    "image": {
-                        "width": 800,
-                        "id": 213460767503,
-                        "url_id": "2316594947118599604",
-                        "url": "https://img.kwcdn.com/product/open/579affb1554745f68df81077f00f3091-goods.jpeg",
-                        "height": 800
-                    },
-                    "sales_tip": "30 sold",
-                    "visible": true,
-                    "goods_id": 601103945257694,
-                    "opt_id": 1604,
-                    "seo_link_url": "/1pc-adjustable-diving-attachment-strap-hands-free-flashlight-holder--release--for--snorkeling-freediving-gear-compatible-with-flashlights-torch-black-g-601103945257694.html?&_oak_name_id=149225918233803211&_oak_mp_inf=EN6lhdm21ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F579affb1554745f68df81077f00f3091-goods.jpeg&spec_gallery_id=213460767503&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDc0&_oak_gallery_order=1398489024%2C1847568357%2C1730820200%2C530560462%2C1045730964",
-                    "queryReleScore": 0.0,
-                    "sales_tip_text": [
-                        "30",
-                        "sold"
-                    ],
-                    "opt_type": 3,
-                    "comment": {},
-                    "adult_goods": false
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "3 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 3 LEFT",
+                  "tag_series": 2
                 }
-            ],
-            "share_url": "https://share.temu.com/Eus4dkJGldC",
-            "extend_fields": {},
-            "home_opt_module_list": [],
-            "text_cart_button": false,
-            "jump_type": 0,
-            "recent_word": 0,
-            "shield_all": false
+              ],
+              "show_index": 174,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "6",
+                  ".55",
+                  ""
+                ],
+                "reduction_text": [
+                  "-87",
+                  "%"
+                ],
+                "price": 655,
+                "market_price_str": "$50.39",
+                "market_price": 5039,
+                "market_price_type": 1,
+                "price_schema": "6.55",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "6.55",
+                  ""
+                ],
+                "price_str": "$6.55",
+                "market_price_text": [
+                  "$",
+                  "50.39",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 800,
+                "id": 203488922420,
+                "url_id": "2625110076895805359",
+                "url": "https://img.kwcdn.com/product/fancy/901617dc-d265-4ed0-aa26-b2b5aa25ad15.jpg",
+                "height": 800
+              },
+              "sales_tip": "489 sold",
+              "visible": true,
+              "goods_id": 601101641728647,
+              "opt_id": 1605,
+              "seo_link_url": "/sup-paddle-board-fish--black-high-quality-durable-material-aerodynamic-design-for--stability-maneuverability-fit-for-most-sup-boards-sleek-fins-design-g-601101641728647.html?&_oak_name_id=4946957388056276839&_oak_mp_inf=EIeF0Y6u1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F901617dc-d265-4ed0-aa26-b2b5aa25ad15.jpg&spec_gallery_id=203488922420&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjU1&_oak_gallery_order=86309079%2C1434315401%2C1144741206%2C918148635%2C982896628",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "489",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/market/task22/317b43bee55226b0f60ed81358fbceae_1721177450532.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-79%"
+              },
+              "item_type": 0,
+              "page_alt": "eva hot pressed flying fish swimming floating board   design floating  ",
+              "current_sku_id": 17592305003526,
+              "tags_info": {},
+              "video": {
+                "video_url": ""
+              },
+              "title": "EVA Hot-pressed Flying Fish Swimming Floating Board, Streamlined Design Floating Kickboard",
+              "sales_tip_text_list": [
+                "5.9K+",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "1",
+                "mid": "69999906",
+                "final_creative_id": "919245549",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0ZaYhDHltOcZaZIvcAC+UBQXQ/JGnnjOAaVKw6G096RREH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "104257991898061533",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "919245549",
+                "g": "601099515437353",
+                "scene_id": "3",
+                "show_price": "1021",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "organicPoint": "CoABboPbRRadG+ighideOgZDZbSo2rrPSQj0wwEN75RC7TzRgCyu/YpFc/h04E8CdDPKeFaVM3KvENggJDc0qxNMfZdtnw9U925JW/KoLjboQAPXAVMMFPpdpRNaWvhGwqe/muI2T5fQZSlAW3y+HMpBeAPJaJwpU0E8iSeenxpRESUQeBh2",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "175",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "8784416057601793440",
+                "ts": "1765212500595"
+              },
+              "mall_id": 2773470155998,
+              "sales_num": "5.9K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099515437353&_oak_name_id=8784416057601793440&_oak_mp_inf=EKnC3pim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2Ftask22%2F317b43bee55226b0f60ed81358fbceae_1721177450532.jpg&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTAyMQ&_oak_gallery_order=919245549%2C399747500%2C1475425164%2C1279461094%2C1706644588",
+              "extend_fields": {
+                "sale_fire_flag": true,
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099515437353&_oak_name_id=8784416057601793440&_oak_mp_inf=EKnC3pim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2Ftask22%2F317b43bee55226b0f60ed81358fbceae_1721177450532.jpg&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTAyMQ&_oak_gallery_order=919245549%2C399747500%2C1475425164%2C1279461094%2C1706644588&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "919245549,399747500,1475425164,1279461094,1706644588",
+                  "_oak_name_id": "8784416057601793440"
+                }
+              },
+              "goods_tags": [],
+              "show_index": 175,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "10",
+                  ".21",
+                  ""
+                ],
+                "reduction_text": [
+                  "-79",
+                  "%"
+                ],
+                "price": 1021,
+                "market_price_str": "$50.44",
+                "market_price": 5044,
+                "market_price_type": 1,
+                "price_schema": "10.21",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "10.21",
+                  ""
+                ],
+                "price_str": "$10.21",
+                "market_price_text": [
+                  "$",
+                  "50.44",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 800,
+                "id": 2,
+                "url_id": "104257991898061533",
+                "url": "https://img.kwcdn.com/product/fancy/market/task22/317b43bee55226b0f60ed81358fbceae_1721177450532.jpg",
+                "height": 800
+              },
+              "sales_tip": "5.9K+ sold",
+              "visible": true,
+              "goods_id": 601099515437353,
+              "opt_id": 1607,
+              "seo_link_url": "/eva-hot-pressed-flying-fish-swimming-floating-board--design-floating--g-601099515437353.html?&_oak_name_id=8784416057601793440&_oak_mp_inf=EKnC3pim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fmarket%2Ftask22%2F317b43bee55226b0f60ed81358fbceae_1721177450532.jpg&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTAyMQ&_oak_gallery_order=919245549%2C399747500%2C1475425164%2C1279461094%2C1706644588",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "5.9K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.9,
+                "hidden_comment": false,
+                "comment_num_tips": "83"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/open/1d249fd0c58141139d3bd4c9d5be12ad-goods.jpeg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-78%"
+              },
+              "item_type": 0,
+              "page_alt": "silicone u shaped nasal plug anti choking swimming nose clip for adults     with comfortable   fit for snorkeling   activities white nose plugs for swimming snorkeling essentials         silicone swim training aid lightweight gear flexible material swim accessory beginner swimmers",
+              "current_sku_id": 17599287318512,
+              "tags_info": {},
+              "video": {
+                "video_url": ""
+              },
+              "title": "[U-Shaped Nasal Plug] Silicone U-Shaped Nasal Plug - Anti-Choking Swimming Nose Clip for Adults & Youngsters, Ergonomic Design with Comfortable Soft Pad, Fit for Snorkeling & Deep Water Activities (White), Nose Plugs for Swimming, Snorkeling Essentials, Water Sports Gear, Clear Silicone Gear, Highquality Silicone, Swim Training Aid, Lightweight Gear, Flexible Material, Swim Accessory, Beginner Swimmers",
+              "sales_tip_text_list": [
+                "1K+",
+                "sold"
+              ],
+              "sold_quantity_percent": 71,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "2099847295",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Y/uI/pBKVtyi8HQPIboaQK3/yivOGIkJgIZBpysOaiGEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "7133381679968639408",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "2099847295",
+                "g": "601101322695366",
+                "scene_id": "3",
+                "show_price": "252",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "176",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "8388586436059248946",
+                "ts": "1765212500595"
+              },
+              "activity_type": 13,
+              "mall_id": 634418214727145,
+              "sales_num": "1K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601101322695366&_oak_name_id=8388586436059248946&_oak_mp_inf=EMblwPas1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F1d249fd0c58141139d3bd4c9d5be12ad-goods.jpeg&spec_gallery_id=201914972225&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUy&_oak_gallery_order=2099847295%2C954247845%2C1892341846%2C1155131777%2C1710628962",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "detail_id": "112705992039281350",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "2099847295,954247845,1892341846,1155131777,1710628962",
+                  "_oak_name_id": "8388586436059248946"
+                }
+              },
+              "goods_tags": [],
+              "show_index": 176,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "2",
+                  ".52",
+                  ""
+                ],
+                "reduction_text": [
+                  "-78",
+                  "%"
+                ],
+                "price": 252,
+                "market_price_str": "$11.69",
+                "market_price": 1169,
+                "market_price_type": 1,
+                "price_schema": "2.52",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "2.52",
+                  ""
+                ],
+                "price_str": "$2.52",
+                "reduction": 780,
+                "market_price_text": [
+                  "$",
+                  "11.69",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 800,
+                "id": 201914972225,
+                "url_id": "7133381679968639408",
+                "url": "https://img.kwcdn.com/product/open/1d249fd0c58141139d3bd4c9d5be12ad-goods.jpeg",
+                "height": 800
+              },
+              "sales_tip": "1K+ sold",
+              "visible": true,
+              "goods_id": 601101322695366,
+              "opt_id": 1607,
+              "seo_link_url": "/silicone-u-shaped-nasal-plug-anti-choking-swimming-nose-clip-for-adults---with-comfortable--fit-for-snorkeling--activities-white-nose-plugs-for-swimming-snorkeling-essentials-----silicone-swim-training-aid-lightweight-gear-flexible-material-swim-accessory-beginner-swimmers-g-601101322695366.html?&_oak_name_id=8388586436059248946&_oak_mp_inf=EMblwPas1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F1d249fd0c58141139d3bd4c9d5be12ad-goods.jpeg&spec_gallery_id=201914972225&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjUy&_oak_gallery_order=2099847295%2C954247845%2C1892341846%2C1155131777%2C1710628962",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "1K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.8,
+                "hidden_comment": true,
+                "comment_num_tips": "13"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/515d4ea7-2924-44c4-b0d6-137a75cac654.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-82%"
+              },
+              "item_type": 0,
+              "page_alt": "adult full face snorkeling mask 180 panoramic dry snorkeling mask detachable camera and adjustable shoulder straps suitable for beginners swimming practice snorkeling equipment",
+              "current_sku_id": 17593877752942,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "color": "#555555",
+                    "ext_map": {
+                      "lowest_tag_up_flag": "5",
+                      "lowest_price_before_title": "30d lowest"
+                    },
+                    "marketing_tag_type": 1000,
+                    "tag_id": 91048,
+                    "text": "Lowest price in 30 days",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/b3e3c5382ca79e281af97be6a6d2490255c47fdb.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/515d4ea7-2924-44c4-b0d6-137a75cac654.jpg",
+                "url": "https://img.kwcdn.com/product/711cd87b88f1325817407b9426fb03dd1d141490.goods.000001.jpeg"
+              },
+              "title": "[180° Panoramic] Adult Full Face Snorkeling Mask | 180° Panoramic | Dry Snorkeling | Detachable Camera | Adjustable Shoulder Straps | Suitable for Beginners | Swimming Practice",
+              "sales_tip_text_list": [
+                "7.3K+",
+                "sold"
+              ],
+              "sold_quantity_percent": 0,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "928992794",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0XpqQ/W7sl/3BKpzaiyVhgWpNdXyziLtia2YMVnMwKosEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "1631247132297258998",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "355123505",
+                "g": "601099913861042",
+                "scene_id": "3",
+                "show_price": "1329",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "177",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "1774582740837722701",
+                "ts": "1765212500595"
+              },
+              "activity_type": 27,
+              "mall_id": 634418218399070,
+              "sales_num": "7.3K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099913861042&_oak_name_id=1774582740837722701&_oak_mp_inf=ELKv3Nan1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F515d4ea7-2924-44c4-b0d6-137a75cac654.jpg&spec_gallery_id=601099913861042&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMyOQ&_oak_gallery_order=355123505%2C928992794%2C1361749498%2C995536780%2C128030536",
+              "extend_fields": {
+                "sale_fire_flag": true,
+                "sales_icon": {
+                  "width": 14,
+                  "url": "https://aimg.kwcdn.com/upload_aimg/rec/69915afb-37a6-421d-be3e-271bb2068906.png.slim.png",
+                  "height": 14
+                },
+                "support_tag_carousel": true,
+                "detail_id": "112785176111552434",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "355123505,928992794,1361749498,995536780,128030536",
+                  "_oak_name_id": "1774582740837722701"
+                }
+              },
+              "goods_tags": [
+                {
+                  "color": "#555555",
+                  "ext_map": {
+                    "lowest_tag_up_flag": "5",
+                    "lowest_price_before_title": "30d lowest"
+                  },
+                  "marketing_tag_type": 1000,
+                  "tag_id": 91048,
+                  "text": "Lowest price in 30 days",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 177,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "13",
+                  ".29",
+                  ""
+                ],
+                "reduction_text": [
+                  "-82",
+                  "%"
+                ],
+                "price": 1329,
+                "market_price_str": "$73.98",
+                "market_price": 7398,
+                "market_price_type": 1,
+                "price_schema": "13.29",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "13.29",
+                  ""
+                ],
+                "price_str": "$13.29",
+                "reduction": 820,
+                "market_price_text": [
+                  "$",
+                  "73.98",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 375,
+                "id": 601099913861042,
+                "url_id": "1631247132297258998",
+                "url": "https://img.kwcdn.com/product/fancy/515d4ea7-2924-44c4-b0d6-137a75cac654.jpg",
+                "height": 375
+              },
+              "sales_tip": "7.3K+ sold",
+              "visible": true,
+              "goods_id": 601099913861042,
+              "opt_id": 1604,
+              "seo_link_url": "/adult-full-face-snorkeling-mask-180-panoramic-dry-snorkeling-mask-detachable-camera-and-adjustable-shoulder-straps-suitable-for-beginners-swimming-practice-snorkeling-equipment-g-601099913861042.html?&_oak_name_id=1774582740837722701&_oak_mp_inf=ELKv3Nan1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F515d4ea7-2924-44c4-b0d6-137a75cac654.jpg&spec_gallery_id=601099913861042&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTMyOQ&_oak_gallery_order=355123505%2C928992794%2C1361749498%2C995536780%2C128030536",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "7.3K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.9,
+                "hidden_comment": true,
+                "comment_num_tips": "17"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/dbdc56f5-53fb-48e0-82ee-35ee7d237713.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-12%"
+              },
+              "item_type": 0,
+              "page_alt": "professional silicone short fins   with air permeable holes durable mesh carry bag black for swimming training   use swimming accessories sleek swimwear flexible material",
+              "current_sku_id": 17602966413203,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "2 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 2 LEFT",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "Professional Silicone Short Fins - Ergonomic Design with Air-Permeable Holes, Durable Mesh Carry Bag, Black for Swimming Training & All-Season Use, Swimming Accessories, Sleek Swimwear, Flexible Material",
+              "sales_tip_text_list": [
+                "52",
+                "sold"
+              ],
+              "sold_quantity_percent": 0,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "325489310",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Wza1uzFBleNv2o+yC0pmdAUUNdbagdUlzUYzcbxuPRqEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "4296036871458846636",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "325489310",
+                "g": "601102091526426",
+                "scene_id": "3",
+                "show_price": "2760",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "178",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "2710081425056560508",
+                "ts": "1765212500596"
+              },
+              "activity_type": 13,
+              "mall_id": 3736924743546,
+              "sales_num": "52",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601102091526426&_oak_mp_inf=EJrCjuWv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdbdc56f5-53fb-48e0-82ee-35ee7d237713.jpg&spec_gallery_id=601102091526426&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjc2MA&_oak_gallery_order=325489310%2C1671402776%2C368555837%2C207132172%2C277345125",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601102091526426&_oak_mp_inf=EJrCjuWv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdbdc56f5-53fb-48e0-82ee-35ee7d237713.jpg&spec_gallery_id=601102091526426&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjc2MA&_oak_gallery_order=325489310%2C1671402776%2C368555837%2C207132172%2C277345125&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "detail_id": "112769761960501530",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "325489310,1671402776,368555837,207132172,277345125"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "2 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 2 LEFT",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 178,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "27",
+                  ".60",
+                  ""
+                ],
+                "reduction_text": [
+                  "-12",
+                  "%"
+                ],
+                "price": 2760,
+                "market_price_str": "$31.47",
+                "market_price": 3147,
+                "market_price_type": 1,
+                "price_schema": "27.60",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "27.60",
+                  ""
+                ],
+                "price_str": "$27.60",
+                "reduction": 120,
+                "market_price_text": [
+                  "$",
+                  "31.47",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 375,
+                "id": 601102091526426,
+                "url_id": "4296036871458846636",
+                "url": "https://img.kwcdn.com/product/fancy/dbdc56f5-53fb-48e0-82ee-35ee7d237713.jpg",
+                "height": 375
+              },
+              "sales_tip": "52 sold",
+              "visible": true,
+              "goods_id": 601102091526426,
+              "opt_id": 1607,
+              "seo_link_url": "/professional-silicone-short-fins--with-air-permeable-holes-durable-mesh-carry-bag-black-for-swimming-training--use-swimming-accessories-sleek-swimwear-flexible-material-g-601102091526426.html?&_oak_mp_inf=EJrCjuWv1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMLk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fdbdc56f5-53fb-48e0-82ee-35ee7d237713.jpg&spec_gallery_id=601102091526426&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=Mjc2MA&_oak_gallery_order=325489310%2C1671402776%2C368555837%2C207132172%2C277345125",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "52",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fmket/04f0a6f6b856fe74b1051698bb583966.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-64%"
+              },
+              "item_type": 0,
+              "page_alt": "4pcs large capacity waterproof woven storage bags durable plaid design with reinforced zipper for moving luggage and snake skin storage assorted colors black   zipper pouch bags",
+              "current_sku_id": 17594636487103,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "3 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 3 LEFT",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "4pcs Large Capacity Waterproof Woven Storage Bags - Durable Plaid Design with Reinforced Zipper for Moving, Luggage, and Snake Skin Storage, Assorted Colors (Black/White, Red/Black), Zipper Pouch Bags",
+              "sales_tip_text_list": [
+                "179",
+                "sold"
+              ],
+              "sold_quantity_percent": 40,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "250032844",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Zh7TBjN2XI/TOp3OkBWa+kQyTak/sqn4TLp4tbCxjMhEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "7199332828565250841",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "250032844",
+                "g": "601100082744881",
+                "scene_id": "3",
+                "show_price": "1230",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "179",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "3601613994213314118",
+                "ts": "1765212500596"
+              },
+              "activity_type": 13,
+              "mall_id": 634418217794765,
+              "sales_num": "179",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601100082744881&_oak_mp_inf=ELGcoKeo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F04f0a6f6b856fe74b1051698bb583966.jpg&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTI1OA&_oak_gallery_order=250032844%2C1519614708%2C1774796708%2C5983183%2C1286301576",
+              "extend_fields": {
+                "market_map": {
+                  "220001": {
+                    "showTag": false,
+                    "couponBatchSn": "",
+                    "marketingToolType": 220001,
+                    "endTime": 1766332799000,
+                    "savingPrice": 28,
+                    "appliedPrice": true,
+                    "promotionId": "A00049C-4699576579909569741175946364871030"
+                  }
+                },
+                "support_tag_carousel": true,
+                "detail_id": "112782941688368689",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "250032844,1519614708,1774796708,5983183,1286301576"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "3 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 3 LEFT",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 179,
+              "price_info": {
+                "reduction_text": [
+                  "-65",
+                  "%"
+                ],
+                "market_price_type": 1,
+                "price_text": [
+                  "$",
+                  "12.30",
+                  ""
+                ],
+                "price_str": "$12.30",
+                "price_color": "#000000",
+                "split_price_text": [
+                  "$",
+                  "12",
+                  ".30",
+                  ""
+                ],
+                "price": 1230,
+                "market_price_str": "$35.59",
+                "market_price": 3559,
+                "price_schema": "$12.30",
+                "currency": "USD",
+                "reduction": 654,
+                "market_price_text": [
+                  "$",
+                  "35.59",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 2000,
+                "id": 2,
+                "url_id": "7199332828565250841",
+                "url": "https://img.kwcdn.com/product/fmket/04f0a6f6b856fe74b1051698bb583966.jpg",
+                "height": 2000
+              },
+              "sales_tip": "179 sold",
+              "visible": true,
+              "goods_id": 601100082744881,
+              "opt_id": 1604,
+              "seo_link_url": "/4pcs-large-capacity-waterproof-woven-storage-bags-durable-plaid-design-with-reinforced-zipper-for-moving-luggage-and-snake-skin-storage-assorted-colors-black--zipper-pouch-bags-g-601100082744881.html?&_oak_mp_inf=ELGcoKeo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffmket%2F04f0a6f6b856fe74b1051698bb583966.jpg&spec_gallery_id=2&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTI1OA&_oak_gallery_order=250032844%2C1519614708%2C1774796708%2C5983183%2C1286301576",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "179",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 5.0,
+                "hidden_comment": true,
+                "comment_num_tips": "4"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/b66dbec7-6d82-4223-9ab5-907e1f0c494e.jpg",
+              "ware_house_type": 1,
+              "benefit_text": {
+                "text": "-77%"
+              },
+              "item_type": 0,
+              "page_alt": "inflatable stand up paddle board sup with full accessories carry bag wide stable   surf control non slip deck   leash paddle pump for teens adults",
+              "current_sku_id": 17593938877597,
+              "tags_info": {
+                "title_header_tags": [
+                  {
+                    "color": "#0A8800",
+                    "ext_map": {
+                      "local_explanation": "{\"title\":\"Local warehouse\",\"content\":\"Items with the \\\"Local\\\" tag are items that are shipped from local warehouses within your country/region. These items are more likely to reach you faster.\",\"button\":{\"text\":\"OK\"}}"
+                    },
+                    "marketing_tag_type": 1000,
+                    "tag_id": 91050,
+                    "text": "Local",
+                    "tag_series": 2
+                  }
+                ],
+                "mall_tag": [
+                  {
+                    "color": "#FFFFFF",
+                    "ext_map": {
+                      "bg_start_color": "#6F3D91",
+                      "bg_end_color": "#520E6F"
+                    },
+                    "bg_url": "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
+                    "marketing_tag_type": 2701,
+                    "width": 39,
+                    "tag_id": 91130,
+                    "text": "Star store",
+                    "tag_series": 2,
+                    "url": "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
+                    "height": 39
+                  },
+                  {
+                    "color": "#FFEFD3",
+                    "ext_map": {
+                      "brand_info": "{\"brand_name\":\"XHYHWYD\",\"brand_authorized_type\":2}",
+                      "brand_tag_text_style": "1"
+                    },
+                    "bg_url": "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
+                    "marketing_tag_type": 2700,
+                    "width": 39,
+                    "tag_id": 91007,
+                    "text": "Brand Official Store: XHYHWYD",
+                    "tag_series": 2,
+                    "url": "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
+                    "height": 39
+                  }
+                ],
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "ext_map": {
+                      "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#6 BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
+                    },
+                    "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                    "footer": {
+                      "color": "#555555",
+                      "text": " in Swimming, Diving & Water Sports",
+                      "font": 14
+                    },
+                    "marketing_tag_type": 2100,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                    "header": {
+                      "text_style": 2,
+                      "color": "#FFFFFF",
+                      "back_color": "#0A8800",
+                      "text": "#6 BEST-SELLING ITEM",
+                      "font": 12
+                    },
+                    "tag_id": 91020,
+                    "ranking_type": "#6 BEST-SELLING ITEM",
+                    "ranking_id": "1603"
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/11c8b6de68aebce25b0732e14a994f0a1611ba7a.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/b66dbec7-6d82-4223-9ab5-907e1f0c494e.jpg",
+                "url": "https://img.kwcdn.com/product/7a3f5953f22783dbeacae8d423c2509c274b6887.goods.000001.jpeg"
+              },
+              "title": "Stand Up Paddle Board (SUP), Inflatable, Wide Stable Stance, Surf Control, Non-Slip Deck, for Teens & Adults, Includes Leash, Paddle & Pump, with Full Accessories & Carry Bag",
+              "sales_tip_text_list": [
+                "366",
+                "sold"
+              ],
+              "sold_quantity_percent": 55,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "515840370",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Sqv8OYaeaPxSa56dBEEJj6yXEB6HX3MAGUGPZWGLHAFEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "5524693092127345854",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "515840370",
+                "g": "601099927860867",
+                "scene_id": "3",
+                "show_price": "8896",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "180",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "7774989920057299995",
+                "ts": "1765212500596"
+              },
+              "activity_type": 13,
+              "mall_id": 634418219614392,
+              "sales_num": "366",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099927860867&_oak_mp_inf=EIPtst2n1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb66dbec7-6d82-4223-9ab5-907e1f0c494e.jpg&spec_gallery_id=3436729200&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODg5Ng&_oak_gallery_order=515840370%2C1246626231%2C730044922%2C223967067",
+              "extend_fields": {
+                "mall_view_type": 2,
+                "support_tag_carousel": true,
+                "detail_id": "112763144120546947",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "515840370,1246626231,730044922,223967067"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "ext_map": {
+                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#6 BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
+                  },
+                  "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                  "footer": {
+                    "color": "#555555",
+                    "text": " in Swimming, Diving & Water Sports",
+                    "font": 14
+                  },
+                  "marketing_tag_type": 2100,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                  "header": {
+                    "text_style": 2,
+                    "color": "#FFFFFF",
+                    "back_color": "#0A8800",
+                    "text": "#6 BEST-SELLING ITEM",
+                    "font": 12
+                  },
+                  "tag_id": 91020,
+                  "ranking_type": "#6 BEST-SELLING ITEM",
+                  "ranking_id": "1603"
+                }
+              ],
+              "show_index": 180,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "88",
+                  ".96",
+                  ""
+                ],
+                "reduction_text": [
+                  "-77",
+                  "%"
+                ],
+                "price": 8896,
+                "market_price_str": "$389.97",
+                "market_price": 38997,
+                "market_price_type": 1,
+                "price_schema": "88.96",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "88.96",
+                  ""
+                ],
+                "price_str": "$88.96",
+                "reduction": 770,
+                "market_price_text": [
+                  "$",
+                  "389.97",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 1500,
+                "id": 3436729200,
+                "url_id": "5524693092127345854",
+                "url": "https://img.kwcdn.com/product/fancy/b66dbec7-6d82-4223-9ab5-907e1f0c494e.jpg",
+                "height": 1500
+              },
+              "sales_tip": "366 sold",
+              "visible": true,
+              "goods_id": 601099927860867,
+              "opt_id": 1605,
+              "seo_link_url": "/inflatable-stand-up-paddle-board-sup-with-full-accessories-carry-bag-wide-stable--surf-control-non-slip-deck--leash-paddle-pump-for-teens-adults-g-601099927860867.html?&_oak_mp_inf=EIPtst2n1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb66dbec7-6d82-4223-9ab5-907e1f0c494e.jpg&spec_gallery_id=3436729200&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODg5Ng&_oak_gallery_order=515840370%2C1246626231%2C730044922%2C223967067",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "366",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.7,
+                "hidden_comment": true,
+                "comment_num_tips": "32"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/28de37c7-8099-41aa-991f-846a7c04de84.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-50%"
+              },
+              "item_type": 0,
+              "page_alt": "professional   diving fins with adjustable spring straps positive   high quality diving gear for men women orange red   diving gear snorkeling equipment     fins",
+              "current_sku_id": 17597510320842,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "8 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 8 LEFT",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/5c25443b738405c0b5ea76ad4b42d3e2ba30e717gs2CV.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/28de37c7-8099-41aa-991f-846a7c04de84.jpg",
+                "url": "https://img.kwcdn.com/product/9d6f42270898d1041c8bdf6e91894b44ca71719a.temu.000001.jpeg"
+              },
+              "title": "Professional Scuba Diving Fins with Adjustable Spring Straps & Positive Buoyancy - High Quality Diving Gear for Men & Women, /Orange/Red/, Scuba Diving Gear, Snorkeling Equipment, Sleek Design, Secure Fit Fins",
+              "sales_tip_text_list": [
+                "89",
+                "sold"
+              ],
+              "sold_quantity_percent": 0,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "1",
+                "mid": "69999906",
+                "final_creative_id": "4072425",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0SvVH3FaiDzc8KgIImaoG/udLSgVzTv8wt6r552JJGgXEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "2304403485313163450",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1876296345",
+                "g": "601100881698519",
+                "scene_id": "3",
+                "show_price": "13836",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "organicPoint": "CoABgEJl7tZbMXcBOeL7bWwmj4sEooUQLmxJKWYB22wOSlPaYLfS50adJ3o4Dm9kO0r35OuHdLwv8f0EEO8ZgO80aaT8HO/A9LItm5SHXhCktgetijazgfiGUx6kzkEo1WRHB5mCpAQfEigaNSxuMSNYtWpMXMk/0gMJ6ukPnAfMCMsQdxh1",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "181",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "2476096952869161213",
+                "ts": "1765212500596"
+              },
+              "activity_type": 13,
+              "mall_id": 4189583606206,
+              "sales_num": "89",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601100881698519&_oak_name_id=2476096952869161213&_oak_mp_inf=ENe9nKSr1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F28de37c7-8099-41aa-991f-846a7c04de84.jpg&spec_gallery_id=601100881698519&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTM4MzY&_oak_gallery_order=1876296345%2C4072425%2C304313827%2C802780392%2C1432421396",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "detail_id": "112745547941486295",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1876296345,4072425,304313827,802780392,1432421396",
+                  "_oak_name_id": "2476096952869161213"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "8 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 8 LEFT",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 181,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "138",
+                  ".36",
+                  ""
+                ],
+                "reduction_text": [
+                  "-50",
+                  "%"
+                ],
+                "price": 13836,
+                "market_price_str": "$279.71",
+                "market_price": 27971,
+                "market_price_type": 1,
+                "price_schema": "138.36",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "138.36",
+                  ""
+                ],
+                "price_str": "$138.36",
+                "reduction": 500,
+                "market_price_text": [
+                  "$",
+                  "279.71",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 375,
+                "id": 601100881698519,
+                "url_id": "2304403485313163450",
+                "url": "https://img.kwcdn.com/product/fancy/28de37c7-8099-41aa-991f-846a7c04de84.jpg",
+                "height": 375
+              },
+              "sales_tip": "89 sold",
+              "visible": true,
+              "goods_id": 601100881698519,
+              "opt_id": 1604,
+              "seo_link_url": "/-professional-diving-fins-with-adjustable-spring--heavy-duty-neoprene--paddles-quick-release-closure-non--for--freediving-snorkeling-ideal-gift-for-divers-black-durable-marine-wear---underwater-wear----reinforced-construction--enthusiasts-g-601100881698519.html?&_oak_name_id=2476096952869161213&_oak_mp_inf=ENe9nKSr1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F28de37c7-8099-41aa-991f-846a7c04de84.jpg&spec_gallery_id=601100881698519&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTM4MzY&_oak_gallery_order=1876296345%2C4072425%2C304313827%2C802780392%2C1432421396",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "89",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/847a9c89-978b-4427-8440-8460824d5281.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-83%"
+              },
+              "item_type": 0,
+              "page_alt": "reusable earplugs with 8 pairs of interchangeable ear tips ultra visually   ears in  ",
+              "current_sku_id": 17601669947300,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "3 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 3 LEFT",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "Reusable Earplugs with 8 Pairs of Interchangeable Ear Tips, Ultra-Visually Pleasing Ears in a Device.",
+              "sales_tip_text_list": [
+                "327",
+                "sold"
+              ],
+              "sold_quantity_percent": 10,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "1332134544",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0dmip4SY6ao64/jxBTVQTxS8WOBQvlIQz2S3KBJ+8dZvEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "9221813119479212000",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1332134544",
+                "g": "601101822100069",
+                "scene_id": "3",
+                "show_price": "520",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "182",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "6656735846804101198",
+                "ts": "1765212500596"
+              },
+              "activity_type": 13,
+              "mall_id": 634418219847049,
+              "sales_num": "327",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601101822100069&_oak_name_id=6656735846804101198&_oak_mp_inf=EOWE0uSu1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F847a9c89-978b-4427-8440-8460824d5281.jpg&spec_gallery_id=203756552935&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTIw&_oak_gallery_order=1332134544%2C1409780197%2C721170323%2C486710235%2C2109675437",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601101822100069&_oak_name_id=6656735846804101198&_oak_mp_inf=EOWE0uSu1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F847a9c89-978b-4427-8440-8460824d5281.jpg&spec_gallery_id=203756552935&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTIw&_oak_gallery_order=1332134544%2C1409780197%2C721170323%2C486710235%2C2109675437&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "detail_id": "112782962139824741",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1332134544,1409780197,721170323,486710235,2109675437",
+                  "_oak_name_id": "6656735846804101198"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "3 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 3 LEFT",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 182,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "5",
+                  ".20",
+                  ""
+                ],
+                "reduction_text": [
+                  "-83",
+                  "%"
+                ],
+                "price": 520,
+                "market_price_str": "$31.96",
+                "market_price": 3196,
+                "market_price_type": 1,
+                "price_schema": "5.20",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "5.20",
+                  ""
+                ],
+                "price_str": "$5.20",
+                "reduction": 830,
+                "market_price_text": [
+                  "$",
+                  "31.96",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 1600,
+                "id": 203756552935,
+                "url_id": "9221813119479212000",
+                "url": "https://img.kwcdn.com/product/fancy/847a9c89-978b-4427-8440-8460824d5281.jpg",
+                "height": 1600
+              },
+              "sales_tip": "327 sold",
+              "visible": true,
+              "goods_id": 601101822100069,
+              "opt_id": 1607,
+              "seo_link_url": "/reusable-earplugs-with-8-pairs-of-interchangeable-ear-tips-ultra-visually--ears-in--g-601101822100069.html?&_oak_name_id=6656735846804101198&_oak_mp_inf=EOWE0uSu1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F847a9c89-978b-4427-8440-8460824d5281.jpg&spec_gallery_id=203756552935&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NTIw&_oak_gallery_order=1332134544%2C1409780197%2C721170323%2C486710235%2C2109675437",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "327",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/d31ca012-7b73-46a1-b095-5898ea5a6aee.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-85%"
+              },
+              "item_type": 0,
+              "page_alt": "  adult full face snorkel mask 180 view removable pc lens adjustable strap for swimming training",
+              "current_sku_id": 17595785802984,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "1 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 1 LEFT",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/a04862fae21c1c7abe6a7c8c99c7cfebc20fae2c.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/d31ca012-7b73-46a1-b095-5898ea5a6aee.jpg",
+                "url": "https://img.kwcdn.com/product/bbd1cf95b59df6cb752c2bba3bcd3c0332aa2356.goods.000001.jpeg"
+              },
+              "title": "[180° Snorkel Mask] PIZZUJU Adult Full Face Snorkel Mask | 180° View, Removable PC Lens, Adjustable Strap, for Swimming Training",
+              "sales_tip_text_list": [
+                "581",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "880490850",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0ZoauDEz1mgq1FP9hOhcgAVy83xJh6JjUjlBqodEkveNEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "384843069394633488",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "880490850",
+                "g": "601100377986699",
+                "scene_id": "3",
+                "show_price": "1797",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "183",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "3314358533246258228",
+                "ts": "1765212500596"
+              },
+              "mall_id": 634418218399070,
+              "sales_num": "581",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601100377986699&_oak_mp_inf=EIuthLSp1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd31ca012-7b73-46a1-b095-5898ea5a6aee.jpg&spec_gallery_id=601100377986699&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc5Nw&_oak_gallery_order=880490850%2C392566966%2C2077780672%2C767608992%2C1917008246",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601100377986699&_oak_mp_inf=EIuthLSp1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd31ca012-7b73-46a1-b095-5898ea5a6aee.jpg&spec_gallery_id=601100377986699&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc5Nw&_oak_gallery_order=880490850%2C392566966%2C2077780672%2C767608992%2C1917008246&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "880490850,392566966,2077780672,767608992,1917008246"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "1 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 1 LEFT",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 183,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "17",
+                  ".97",
+                  ""
+                ],
+                "reduction_text": [
+                  "-85",
+                  "%"
+                ],
+                "price": 1797,
+                "market_price_str": "$126.25",
+                "market_price": 12625,
+                "market_price_type": 1,
+                "price_schema": "17.97",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "17.97",
+                  ""
+                ],
+                "price_str": "$17.97",
+                "market_price_text": [
+                  "$",
+                  "126.25",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 375,
+                "id": 601100377986699,
+                "url_id": "384843069394633488",
+                "url": "https://img.kwcdn.com/product/fancy/d31ca012-7b73-46a1-b095-5898ea5a6aee.jpg",
+                "height": 375
+              },
+              "sales_tip": "581 sold",
+              "visible": true,
+              "goods_id": 601100377986699,
+              "opt_id": 1604,
+              "seo_link_url": "/-adult-full-face-snorkel-mask-180-view-removable-pc-lens-adjustable-strap-for-swimming-training-g-601100377986699.html?&_oak_mp_inf=EIuthLSp1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fd31ca012-7b73-46a1-b095-5898ea5a6aee.jpg&spec_gallery_id=601100377986699&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc5Nw&_oak_gallery_order=880490850%2C392566966%2C2077780672%2C767608992%2C1917008246",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "581",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/4d68c936-17ae-4d43-a2ed-09bb3182ffbb.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-74%"
+              },
+              "item_type": 0,
+              "page_alt": "universal silicone replacement mask strap diving mask strap swimming goggles silicone headband parts for diving and snorkeling accessories best for christmas diving accessorie goggle diving accessory",
+              "current_sku_id": 17608653049208,
+              "tags_info": {},
+              "video": {
+                "video_url": ""
+              },
+              "title": "Universal Silicone Replacement Mask Strap, Diving Mask Strap, Swimming Goggles Silicone Headband Parts for Diving and Snorkeling Accessories, Best for Christmas, Diving Accessorie, Goggle, Diving Accessory",
+              "sales_tip_text_list": [
+                "257",
+                "sold"
+              ],
+              "sold_quantity_percent": 50,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "867875973",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0T/R6GVNPIb99ZnMiKU9GGLSUepiQJx80QLVA/nsyQ1KEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "6324708631645056538",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "867875973",
+                "g": "601103221787191",
+                "scene_id": "3",
+                "show_price": "321",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "184",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "3301598646539369245",
+                "ts": "1765212500596"
+              },
+              "activity_type": 13,
+              "mall_id": 634418214557291,
+              "sales_num": "257",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601103221787191&_oak_name_id=3301598646539369245&_oak_mp_inf=ELeUiIC01ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4d68c936-17ae-4d43-a2ed-09bb3182ffbb.jpg&spec_gallery_id=210169638229&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzIx&_oak_gallery_order=867875973%2C758177824%2C173485274%2C1370536570%2C1389703216",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601103221787191&_oak_name_id=3301598646539369245&_oak_mp_inf=ELeUiIC01ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4d68c936-17ae-4d43-a2ed-09bb3182ffbb.jpg&spec_gallery_id=210169638229&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzIx&_oak_gallery_order=867875973%2C758177824%2C173485274%2C1370536570%2C1389703216&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "detail_id": "112714759040600631",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "867875973,758177824,173485274,1370536570,1389703216",
+                  "_oak_name_id": "3301598646539369245"
+                }
+              },
+              "goods_tags": [],
+              "show_index": 184,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "3",
+                  ".21",
+                  ""
+                ],
+                "reduction_text": [
+                  "-74",
+                  "%"
+                ],
+                "price": 321,
+                "market_price_str": "$12.47",
+                "market_price": 1247,
+                "market_price_type": 1,
+                "price_schema": "3.21",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "3.21",
+                  ""
+                ],
+                "price_str": "$3.21",
+                "reduction": 740,
+                "market_price_text": [
+                  "$",
+                  "12.47",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 2000,
+                "id": 210169638229,
+                "url_id": "6324708631645056538",
+                "url": "https://img.kwcdn.com/product/fancy/4d68c936-17ae-4d43-a2ed-09bb3182ffbb.jpg",
+                "height": 2000
+              },
+              "sales_tip": "257 sold",
+              "visible": true,
+              "goods_id": 601103221787191,
+              "opt_id": 1604,
+              "seo_link_url": "/universal-silicone-replacement-mask-strap-diving-mask-strap-swimming-goggles-silicone-headband-parts-for-diving-and-snorkeling-accessories-best-for-christmas-diving-accessorie-goggle-diving-accessory-g-601103221787191.html?&_oak_name_id=3301598646539369245&_oak_mp_inf=ELeUiIC01ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMPk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4d68c936-17ae-4d43-a2ed-09bb3182ffbb.jpg&spec_gallery_id=210169638229&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzIx&_oak_gallery_order=867875973%2C758177824%2C173485274%2C1370536570%2C1389703216",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "257",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/4063c53a-f514-4ac8-992e-303422d93749.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": ""
+              },
+              "item_type": 0,
+              "page_alt": "xet anti fog goggles adjustable waterproof electroplating swim goggles for adults ideal for   swimming surfing anti fog goggles adjustable headgear durable swim gear",
+              "current_sku_id": 17594057274121,
+              "tags_info": {},
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/25df30fef45524111b9ef230a1c98d1b8f3fb545.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/4063c53a-f514-4ac8-992e-303422d93749.jpg",
+                "url": "https://img.kwcdn.com/product/0d92937c2b6b53972087b931e72066c5940147be.goods.000001.jpeg"
+              },
+              "title": "[Anti Fog Swim Goggles] XET Anti Fog Goggles | Adjustable, Waterproof Electroplating Swim Goggles for Adults | Ideal for Water Sports, Swimming, Surfing",
+              "sales_tip_text_list": [
+                "6.7K+",
+                "sold"
+              ],
+              "sold_quantity_percent": 0,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "456086713",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0a8zXd1H3oZH9cZ7BARwDkLG8FSzRuOcuehAzezDd6DmEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "7814788700990632401",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1157580083",
+                "g": "601099953709795",
+                "scene_id": "3",
+                "show_price": "877",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "185",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "8879792888104819135",
+                "ts": "1765212500596"
+              },
+              "activity_type": 2,
+              "mall_id": 4439111589945,
+              "sales_num": "6.7K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099953709795&_oak_mp_inf=EOPF3Omn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4063c53a-f514-4ac8-992e-303422d93749.jpg&spec_gallery_id=601099953709795&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODc3&_oak_gallery_order=1157580083%2C456086713%2C1146094447%2C1786455176%2C1535315150",
+              "extend_fields": {
+                "sale_fire_flag": true,
+                "support_tag_carousel": true,
+                "detail_id": "112774131410215651",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1157580083,456086713,1146094447,1786455176,1535315150"
+                }
+              },
+              "goods_tags": [],
+              "show_index": 185,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "8",
+                  ".77",
+                  ""
+                ],
+                "reduction_text": [],
+                "price": 877,
+                "price_schema": "8.77",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "8.77",
+                  ""
+                ],
+                "price_str": "$8.77"
+              },
+              "image": {
+                "width": 375,
+                "id": 601099953709795,
+                "url_id": "7814788700990632401",
+                "url": "https://img.kwcdn.com/product/fancy/4063c53a-f514-4ac8-992e-303422d93749.jpg",
+                "height": 375
+              },
+              "sales_tip": "6.7K+ sold",
+              "visible": true,
+              "goods_id": 601099953709795,
+              "opt_id": 1607,
+              "seo_link_url": "/xet-anti-fog-goggles-adjustable-waterproof-electroplating-swim-goggles-for-adults-ideal-for--swimming-surfing-anti-fog-goggles-adjustable-headgear-durable-swim-gear-g-601099953709795.html?&_oak_mp_inf=EOPF3Omn1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F4063c53a-f514-4ac8-992e-303422d93749.jpg&spec_gallery_id=601099953709795&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODc3&_oak_gallery_order=1157580083%2C456086713%2C1146094447%2C1786455176%2C1535315150",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "6.7K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.7,
+                "hidden_comment": true,
+                "comment_num_tips": "7"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/c1ea0630-385b-4965-96a5-daed68cb0dda.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-77%"
+              },
+              "item_type": 0,
+              "page_alt": "diving snorkeling fins for men women diving fins comfortable lightweight swimming flippers swimming diving training equipment",
+              "current_sku_id": 17592353826359,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "9 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 9 LEFT",
+                    "tag_series": 2
+                  },
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "ext_map": {
+                      "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports in Black\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
+                    },
+                    "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                    "footer": {
+                      "color": "#555555",
+                      "text": " in Swimming, Diving & Water Sports in Black",
+                      "font": 14
+                    },
+                    "marketing_tag_type": 2100,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                    "header": {
+                      "text_style": 2,
+                      "color": "#FFFFFF",
+                      "back_color": "#0A8800",
+                      "text": "BEST-SELLING ITEM",
+                      "font": 12
+                    },
+                    "tag_id": 91020,
+                    "ranking_type": "BEST-SELLING ITEM",
+                    "ranking_id": "1603"
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/66ac2ccbbabdf7ae103426f4137b1a1e56948598.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/c1ea0630-385b-4965-96a5-daed68cb0dda.jpg",
+                "url": "https://img.kwcdn.com/product/83866a95e1491f4a2fb891f2a4c5f50da98d0b16.goods.000001.jpeg"
+              },
+              "title": "Diving Snorkeling Fins For Men Women, Diving Fins, Comfortable Lightweight Swimming Flippers, Swimming Diving Training Equipment",
+              "sales_tip_text_list": [
+                "1.4K+",
+                "sold"
+              ],
+              "sold_quantity_percent": 0,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "329437527",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0ZVnWGuuHTwQjRBKywRlKUYFT7S9QPbV2gaaYnoAjNlSEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "7091419113526771351",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1931585832",
+                "g": "601099548951908",
+                "scene_id": "3",
+                "show_price": "8278",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "186",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "7024757183076749711",
+                "ts": "1765212500596"
+              },
+              "activity_type": 100,
+              "mall_id": 997524303255,
+              "sales_num": "1.4K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099548951908&_oak_mp_inf=EOSK3Kim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc1ea0630-385b-4965-96a5-daed68cb0dda.jpg&spec_gallery_id=601099548951908&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODI3OA&_oak_gallery_order=1931585832%2C329437527%2C1987532121%2C2096688552%2C268845943",
+              "extend_fields": {
+                "sale_fire_flag": true,
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099548951908&_oak_mp_inf=EOSK3Kim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc1ea0630-385b-4965-96a5-daed68cb0dda.jpg&spec_gallery_id=601099548951908&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODI3OA&_oak_gallery_order=1931585832%2C329437527%2C1987532121%2C2096688552%2C268845943&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "detail_id": "112763152064513380",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1931585832,329437527,1987532121,2096688552,268845943"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "9 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 9 LEFT",
+                  "tag_series": 2
+                },
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "ext_map": {
+                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports in Black\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
+                  },
+                  "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                  "footer": {
+                    "color": "#555555",
+                    "text": " in Swimming, Diving & Water Sports in Black",
+                    "font": 14
+                  },
+                  "marketing_tag_type": 2100,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                  "header": {
+                    "text_style": 2,
+                    "color": "#FFFFFF",
+                    "back_color": "#0A8800",
+                    "text": "BEST-SELLING ITEM",
+                    "font": 12
+                  },
+                  "tag_id": 91020,
+                  "ranking_type": "BEST-SELLING ITEM",
+                  "ranking_id": "1603"
+                }
+              ],
+              "show_index": 186,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "82",
+                  ".78",
+                  ""
+                ],
+                "reduction_text": [
+                  "-77",
+                  "%"
+                ],
+                "price": 8278,
+                "market_price_str": "$376.04",
+                "market_price": 37604,
+                "market_price_type": 1,
+                "price_schema": "82.78",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "82.78",
+                  ""
+                ],
+                "price_str": "$82.78",
+                "reduction": 770,
+                "market_price_text": [
+                  "$",
+                  "376.04",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 375,
+                "id": 601099548951908,
+                "url_id": "7091419113526771351",
+                "url": "https://img.kwcdn.com/product/fancy/c1ea0630-385b-4965-96a5-daed68cb0dda.jpg",
+                "height": 375
+              },
+              "sales_tip": "1.4K+ sold",
+              "visible": true,
+              "goods_id": 601099548951908,
+              "opt_id": 1604,
+              "seo_link_url": "/diving-snorkeling-fins-for-men-women-diving-fins-comfortable-lightweight-swimming-flippers-swimming-diving-training-equipment-g-601099548951908.html?&_oak_mp_inf=EOSK3Kim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fc1ea0630-385b-4965-96a5-daed68cb0dda.jpg&spec_gallery_id=601099548951908&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=ODI3OA&_oak_gallery_order=1931585832%2C329437527%2C1987532121%2C2096688552%2C268845943",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "1.4K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.9,
+                "hidden_comment": true,
+                "comment_num_tips": "12"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/72f9a09b-5880-4811-811c-0b098f4049f5.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-25%"
+              },
+              "item_type": 0,
+              "page_alt": "2pcs 8pcs silicone earplugs washable and reusable sleep earplugs noise cancelling earplugs swimming earplugs comfortable earplugs suitable for sleep swimming concerts travel snoring studying   environments and work settings work",
+              "current_sku_id": 17610919845257,
+              "tags_info": {},
+              "video": {
+                "video_url": ""
+              },
+              "title": "2pcs/8pcs silicone earplugs - washable and reusable sleep earplugs, noise-cancelling earplugs, swimming earplugs, comfortable earplugs suitable for sleep, swimming, concerts, travel, snoring, studying, noisy environments and work settings.,  Work",
+              "sales_tip_text_list": [
+                "145",
+                "sold"
+              ],
+              "sold_quantity_percent": 0,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "278019354",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0WUN5zs56DSbZa1stJOdsQt1qk0FriaY8k2ILFVDjfPPEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "4623130881870006997",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "278019354",
+                "g": "601103658238559",
+                "scene_id": "3",
+                "show_price": "178",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "187",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "1953702334591085912",
+                "ts": "1765212500597"
+              },
+              "activity_type": 27,
+              "mall_id": 634418221387033,
+              "sales_num": "145",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601103658238559&_oak_name_id=1953702334591085912&_oak_mp_inf=EN%2BEl9C11ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F72f9a09b-5880-4811-811c-0b098f4049f5.jpg&spec_gallery_id=212544527733&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc4&_oak_gallery_order=278019354%2C1530760971%2C137973446%2C1014357172%2C1686443345",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601103658238559&_oak_name_id=1953702334591085912&_oak_mp_inf=EN%2BEl9C11ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F72f9a09b-5880-4811-811c-0b098f4049f5.jpg&spec_gallery_id=212544527733&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc4&_oak_gallery_order=278019354%2C1530760971%2C137973446%2C1014357172%2C1686443345&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "detail_id": "112782932771324511",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "278019354,1530760971,137973446,1014357172,1686443345",
+                  "_oak_name_id": "1953702334591085912"
+                }
+              },
+              "goods_tags": [],
+              "show_index": 187,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "1",
+                  ".78",
+                  ""
+                ],
+                "reduction_text": [
+                  "-25",
+                  "%"
+                ],
+                "price": 178,
+                "market_price_str": "$2.40",
+                "market_price": 240,
+                "market_price_type": 1,
+                "price_schema": "1.78",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "1.78",
+                  ""
+                ],
+                "price_str": "$1.78",
+                "reduction": 250,
+                "market_price_text": [
+                  "$",
+                  "2.40",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 800,
+                "id": 212544527733,
+                "url_id": "4623130881870006997",
+                "url": "https://img.kwcdn.com/product/fancy/72f9a09b-5880-4811-811c-0b098f4049f5.jpg",
+                "height": 800
+              },
+              "sales_tip": "145 sold",
+              "visible": true,
+              "goods_id": 601103658238559,
+              "opt_id": 1607,
+              "seo_link_url": "/2pcs-8pcs-silicone-earplugs-washable-and-reusable-sleep-earplugs-noise-cancelling-earplugs-swimming-earplugs-comfortable-earplugs-suitable-for-sleep-swimming-concerts-travel-snoring-studying--environments-and-work-settings-work-g-601103658238559.html?&_oak_name_id=1953702334591085912&_oak_mp_inf=EN%2BEl9C11ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F72f9a09b-5880-4811-811c-0b098f4049f5.jpg&spec_gallery_id=212544527733&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTc4&_oak_gallery_order=278019354%2C1530760971%2C137973446%2C1014357172%2C1686443345",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "145",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/50fc1ff7-8391-470b-a45a-3ef1eca87660.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-76%"
+              },
+              "item_type": 0,
+              "page_alt": "full face snorkeling mask with adjustable headband 180 degree panoramic view durable pc material   design for swimming boating   ideal for boys girls snorkeling gear boating equipment   mask",
+              "current_sku_id": 17592347121901,
+              "tags_info": {
+                "mall_tag": [
+                  {
+                    "color": "#FFFFFF",
+                    "ext_map": {
+                      "bg_start_color": "#6F3D91",
+                      "bg_end_color": "#520E6F"
+                    },
+                    "bg_url": "https://aimg.kwcdn.com/upload_aimg/pho/03fdaf4a-34b2-4a01-8a7c-2b662468d77a.png.slim.png",
+                    "marketing_tag_type": 2701,
+                    "width": 39,
+                    "tag_id": 91130,
+                    "text": "Star store",
+                    "tag_series": 2,
+                    "url": "https://aimg.kwcdn.com/upload_aimg/pho/05f39254-a4b9-4289-9174-56337e13689e.png.slim.png",
+                    "height": 39
+                  },
+                  {
+                    "color": "#FFEFD3",
+                    "ext_map": {
+                      "brand_info": "{\"brand_name\":\"BOKEFA\",\"brand_authorized_type\":1}",
+                      "brand_tag_text_style": "1"
+                    },
+                    "bg_url": "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
+                    "marketing_tag_type": 2700,
+                    "width": 39,
+                    "tag_id": 91007,
+                    "text": "Brand Official Store: BOKEFA",
+                    "tag_series": 2,
+                    "url": "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
+                    "height": 39
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/04868b7d800a391611f418451c7f4b00b03ca1b4.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/50fc1ff7-8391-470b-a45a-3ef1eca87660.jpg",
+                "url": "https://img.kwcdn.com/product/cf5803aaa3106ca5981b2b933a572c96b274a539.goods.000001.jpeg"
+              },
+              "title": "Full-Face Snorkeling Mask with Adjustable Headband & 180-Degree Panoramic View - Durable PC Material, Easy-to-Use Design for Swimming, Boating & Water Sports - Ideal For Boys & Girls, Snorkeling Gear, Boating Equipment, Secure Fit Mask",
+              "sales_tip_text_list": [
+                "6.4K+",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "1231839679",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0bEHYC2+P4qFlS0N5W+gsFZ9kdZkidNbWrLO8qgg/rv7EH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "8275832186706799070",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1231839679",
+                "g": "601099547244704",
+                "scene_id": "3",
+                "show_price": "1429",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "188",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "835581623396673848",
+                "ts": "1765212500597"
+              },
+              "mall_id": 95715448189,
+              "sales_num": "6.4K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099547244704&_oak_mp_inf=EKDx86em1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F50fc1ff7-8391-470b-a45a-3ef1eca87660.jpg&spec_gallery_id=2104304750&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQyOQ&_oak_gallery_order=1231839679%2C2084759647%2C1947665382%2C922775740%2C94070975",
+              "extend_fields": {
+                "sale_fire_flag": true,
+                "mall_view_type": 2,
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099547244704&_oak_mp_inf=EKDx86em1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F50fc1ff7-8391-470b-a45a-3ef1eca87660.jpg&spec_gallery_id=2104304750&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQyOQ&_oak_gallery_order=1231839679%2C2084759647%2C1947665382%2C922775740%2C94070975&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1231839679,2084759647,1947665382,922775740,94070975"
+                }
+              },
+              "goods_tags": [],
+              "show_index": 188,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "14",
+                  ".29",
+                  ""
+                ],
+                "reduction_text": [
+                  "-76",
+                  "%"
+                ],
+                "price": 1429,
+                "market_price_str": "$61.47",
+                "market_price": 6147,
+                "market_price_type": 1,
+                "price_schema": "14.29",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "14.29",
+                  ""
+                ],
+                "price_str": "$14.29",
+                "market_price_text": [
+                  "$",
+                  "61.47",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 1500,
+                "id": 2104304750,
+                "url_id": "8275832186706799070",
+                "url": "https://img.kwcdn.com/product/fancy/50fc1ff7-8391-470b-a45a-3ef1eca87660.jpg",
+                "height": 1500
+              },
+              "sales_tip": "6.4K+ sold",
+              "visible": true,
+              "goods_id": 601099547244704,
+              "opt_id": 1604,
+              "seo_link_url": "/-adjustable-full-face-snorkeling-mask-for-kids-180-degree-panoramic-view-easy-to-carry-use-swim-gear-adjustable-headgear--mask-g-601099547244704.html?&_oak_mp_inf=EKDx86em1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F50fc1ff7-8391-470b-a45a-3ef1eca87660.jpg&spec_gallery_id=2104304750&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTQyOQ&_oak_gallery_order=1231839679%2C2084759647%2C1947665382%2C922775740%2C94070975",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "6.4K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 5.0,
+                "hidden_comment": true,
+                "comment_num_tips": "27"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/3d4fc606-cb33-4c18-b58b-c6442d4d9084.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-83%"
+              },
+              "item_type": 0,
+              "page_alt": "1 pc womens beach bag travel bag storage bag storage box makeup bag backpack foldable large capacity suitable for outdoor travel travel essentials camping essentials halloween decor christmas decor fall decor birthday decor",
+              "current_sku_id": 17607936618117,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "ext_map": {
+                      "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
+                    },
+                    "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                    "footer": {
+                      "color": "#555555",
+                      "text": " in Swimming, Diving & Water Sports",
+                      "font": 14
+                    },
+                    "marketing_tag_type": 2100,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                    "header": {
+                      "text_style": 2,
+                      "color": "#FFFFFF",
+                      "back_color": "#0A8800",
+                      "text": "BEST-SELLING ITEM",
+                      "font": 12
+                    },
+                    "tag_id": 91020,
+                    "ranking_type": "BEST-SELLING ITEM",
+                    "ranking_id": "1603"
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/baea2abc1e99e5fbe564ab0cbc9114cdd5f0ccedgs2CV.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/3d4fc606-cb33-4c18-b58b-c6442d4d9084.jpg",
+                "url": "https://img.kwcdn.com/product/d9575907ed4a0625ad5b8c50371c30b81a18a8e3.temu.000001.jpeg"
+              },
+              "title": "1 Pc Women's Beach Bag, Travel Bag, Storage Bag, Storage Box, Makeup Bag & Backpack - Foldable, Large-Capacity, Suitable for Outdoor Travel, Travel Essentials, Camping Essentials, Halloween Decor, Christmas Decor, Fall Decor, Birthday Decor",
+              "sales_tip_text_list": [
+                "961",
+                "sold"
+              ],
+              "sold_quantity_percent": 7,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "1",
+                "mid": "69999906",
+                "final_creative_id": "1973284743",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0YlqB1DTcxfKbjv82sAWJwOfKvXQ30xWulW6UF6dlywNEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "440361922757479751",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1973284743",
+                "g": "601103091125458",
+                "scene_id": "3",
+                "show_price": "668",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "organicPoint": "CoABboPbRRadG+ighideOgZDZYNICKGmFJuXcjPAjCGfjOgvcTIXuj56TUKCv8bWPmrAeFaVM3KvENggJDc0qxNMfYu/IIV5Rzieqr7HAMzJ+8sPAPARYHyA8L4n6tEUw8NFkNPvUwRAkuiQfNC6N/+b53XrTKejFFQ7+fRN64fOGroQehh4",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "189",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "2191032013559229418",
+                "ts": "1765212500597"
+              },
+              "activity_type": 13,
+              "mall_id": 634418225539466,
+              "sales_num": "961",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601103091125458&_oak_name_id=2191032013559229418&_oak_mp_inf=ENKZ4cGz1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3d4fc606-cb33-4c18-b58b-c6442d4d9084.jpg&spec_gallery_id=209351747356&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjY4&_oak_gallery_order=1973284743%2C109818510%2C1200737846%2C485661990%2C519767234",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "detail_id": "112708202018065618",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1973284743,109818510,1200737846,485661990,519767234",
+                  "_oak_name_id": "2191032013559229418"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "ext_map": {
+                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
+                  },
+                  "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                  "footer": {
+                    "color": "#555555",
+                    "text": " in Swimming, Diving & Water Sports",
+                    "font": 14
+                  },
+                  "marketing_tag_type": 2100,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                  "header": {
+                    "text_style": 2,
+                    "color": "#FFFFFF",
+                    "back_color": "#0A8800",
+                    "text": "BEST-SELLING ITEM",
+                    "font": 12
+                  },
+                  "tag_id": 91020,
+                  "ranking_type": "BEST-SELLING ITEM",
+                  "ranking_id": "1603"
+                }
+              ],
+              "show_index": 189,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "6",
+                  ".68",
+                  ""
+                ],
+                "reduction_text": [
+                  "-83",
+                  "%"
+                ],
+                "price": 668,
+                "market_price_str": "$40.65",
+                "market_price": 4065,
+                "market_price_type": 1,
+                "price_schema": "6.68",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "6.68",
+                  ""
+                ],
+                "price_str": "$6.68",
+                "reduction": 830,
+                "market_price_text": [
+                  "$",
+                  "40.65",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 800,
+                "id": 209351747356,
+                "url_id": "440361922757479751",
+                "url": "https://img.kwcdn.com/product/fancy/3d4fc606-cb33-4c18-b58b-c6442d4d9084.jpg",
+                "height": 800
+              },
+              "sales_tip": "961 sold",
+              "visible": true,
+              "goods_id": 601103091125458,
+              "opt_id": 1605,
+              "seo_link_url": "/1-pc-womens-beach-bag-travel-bag-storage-bag-storage-box-makeup-bag-backpack-foldable-large-capacity-suitable-for-outdoor-travel-travel-essentials-camping-essentials-halloween-decor-christmas-decor-fall-decor-birthday-decor-g-601103091125458.html?&_oak_name_id=2191032013559229418&_oak_mp_inf=ENKZ4cGz1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMTk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F3d4fc606-cb33-4c18-b58b-c6442d4d9084.jpg&spec_gallery_id=209351747356&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NjY4&_oak_gallery_order=1973284743%2C109818510%2C1200737846%2C485661990%2C519767234",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "961",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/open/2023-03-09/1678333598275-02cd900accc0437995cd8d1ec793d70b-goods.jpeg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-40%"
+              },
+              "item_type": 0,
+              "page_alt": "waterproof swimming cap for men and women high   ears protection and long hair coverage large silicone diving cap",
+              "current_sku_id": 17592205153884,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "ext_map": {
+                      "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#10 BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports: Silicone\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
+                    },
+                    "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                    "footer": {
+                      "color": "#555555",
+                      "text": " in Swimming, Diving & Water Sports: Silicone",
+                      "font": 14
+                    },
+                    "marketing_tag_type": 2100,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                    "header": {
+                      "text_style": 2,
+                      "color": "#FFFFFF",
+                      "back_color": "#0A8800",
+                      "text": "#10 BEST-SELLING ITEM",
+                      "font": 12
+                    },
+                    "tag_id": 91020,
+                    "ranking_type": "#10 BEST-SELLING ITEM",
+                    "ranking_id": "1603"
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "[Waterproof Swimming Cap] Waterproof Swimming Cap for Men and Women - High Elasticity, Ears Protection, and Long Hair Coverage - Large Silicone Diving Cap",
+              "sales_tip_text_list": [
+                "40K+",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "966123168",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0blb5aXrXPi3Sy1yfn9LQVHouxrbnXyV3M3yydL2bQJ1EH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "8082865078214408202",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "966123168",
+                "g": "601099514836393",
+                "scene_id": "3",
+                "show_price": "216",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "190",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "6170763076259448796",
+                "ts": "1765212500597"
+              },
+              "mall_id": 81241371846,
+              "sales_num": "40K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099514836393&_oak_mp_inf=EKnruZim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2023-03-09%2F1678333598275-02cd900accc0437995cd8d1ec793d70b-goods.jpeg&spec_gallery_id=601099514836393&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjE2&_oak_gallery_order=966123168%2C2037256127%2C1301431733%2C1599327511%2C782732684",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099514836393&_oak_mp_inf=EKnruZim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2023-03-09%2F1678333598275-02cd900accc0437995cd8d1ec793d70b-goods.jpeg&spec_gallery_id=601099514836393&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjE2&_oak_gallery_order=966123168%2C2037256127%2C1301431733%2C1599327511%2C782732684&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "966123168,2037256127,1301431733,1599327511,782732684"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "ext_map": {
+                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"#10 BEST-SELLING ITEM\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports: Silicone\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Best sellers\",\"ranking_opt_id\":\"1603\"}}}"
+                  },
+                  "prompt_tag_text": "Best-Selling Item means that this product has ranked among the top-selling products in its product category over the past 14 days. The products are ranked within each category using a combination of factors including sales and the number of buyers.",
+                  "footer": {
+                    "color": "#555555",
+                    "text": " in Swimming, Diving & Water Sports: Silicone",
+                    "font": 14
+                  },
+                  "marketing_tag_type": 2100,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                  "header": {
+                    "text_style": 2,
+                    "color": "#FFFFFF",
+                    "back_color": "#0A8800",
+                    "text": "#10 BEST-SELLING ITEM",
+                    "font": 12
+                  },
+                  "tag_id": 91020,
+                  "ranking_type": "#10 BEST-SELLING ITEM",
+                  "ranking_id": "1603"
+                }
+              ],
+              "show_index": 190,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "2",
+                  ".16",
+                  ""
+                ],
+                "reduction_text": [
+                  "-40",
+                  "%"
+                ],
+                "price": 216,
+                "market_price_str": "$3.62",
+                "market_price": 362,
+                "market_price_type": 1,
+                "price_schema": "2.16",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "2.16",
+                  ""
+                ],
+                "price_str": "$2.16",
+                "market_price_text": [
+                  "$",
+                  "3.62",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 375,
+                "id": 601099514836393,
+                "url_id": "8082865078214408202",
+                "url": "https://img.kwcdn.com/product/open/2023-03-09/1678333598275-02cd900accc0437995cd8d1ec793d70b-goods.jpeg",
+                "height": 375
+              },
+              "sales_tip": "40K+ sold",
+              "visible": true,
+              "goods_id": 601099514836393,
+              "opt_id": 1607,
+              "seo_link_url": "/waterproof-swimming-cap-for-men-and-women-high--ears-protection-and-long-hair-coverage-large-silicone-diving-cap-g-601099514836393.html?&_oak_mp_inf=EKnruZim1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F2023-03-09%2F1678333598275-02cd900accc0437995cd8d1ec793d70b-goods.jpeg&spec_gallery_id=601099514836393&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjE2&_oak_gallery_order=966123168%2C2037256127%2C1301431733%2C1599327511%2C782732684",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "40K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.8,
+                "hidden_comment": false,
+                "comment_num_tips": "1,129"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/903596b0-6705-4932-9cff-95ef9d788e7b.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-79%"
+              },
+              "item_type": 0,
+              "page_alt": "60pcs 3set waterproof ear stickers ear protection patches for swimming showering bathing hair wash shower waterproof ear stickers",
+              "current_sku_id": 17592482919899,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "color": "#555555",
+                    "ext_map": {
+                      "lowest_tag_up_flag": "3",
+                      "lowest_price_before_title": "90d lowest"
+                    },
+                    "marketing_tag_type": 1000,
+                    "tag_id": 91048,
+                    "text": "Lowest price in 90 days",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/fd4543883d10f9e1a2996d11ffc86805798dd680.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/903596b0-6705-4932-9cff-95ef9d788e7b.jpg",
+                "url": "https://img.kwcdn.com/product/46e3e2bdca809aebb2a3e5a97a7fa7b974be87bd.goods.000001.jpeg"
+              },
+              "title": "60pcs/3set Waterproof Ear Stickers/Ear Protection Patches for Swimming Showering Bathing Hair Wash Shower Waterproof Ear Stickers",
+              "sales_tip_text_list": [
+                "8.9K+",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "1187703192",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0fCViRoXSJH1/kdOtVSzNAjmfPAwuUFzQewI1IGhPUdOEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "4861097435050838579",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1187703192",
+                "g": "601099585758362",
+                "scene_id": "3",
+                "show_price": "303",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "191",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "6592387899609345389",
+                "ts": "1765212500597"
+              },
+              "mall_id": 634418210947133,
+              "sales_num": "8.9K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099585758362&_oak_name_id=6592387899609345389&_oak_mp_inf=EJrJorqm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F903596b0-6705-4932-9cff-95ef9d788e7b.jpg&spec_gallery_id=2198589154&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzAz&_oak_gallery_order=1187703192%2C893653466%2C1924045476%2C1123555523%2C623854632",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1187703192,893653466,1924045476,1123555523,623854632",
+                  "_oak_name_id": "6592387899609345389"
+                }
+              },
+              "goods_tags": [
+                {
+                  "color": "#555555",
+                  "ext_map": {
+                    "lowest_tag_up_flag": "3",
+                    "lowest_price_before_title": "90d lowest"
+                  },
+                  "marketing_tag_type": 1000,
+                  "tag_id": 91048,
+                  "text": "Lowest price in 90 days",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 191,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "3",
+                  ".03",
+                  ""
+                ],
+                "reduction_text": [
+                  "-79",
+                  "%"
+                ],
+                "price": 303,
+                "market_price_str": "$14.99",
+                "market_price": 1499,
+                "market_price_type": 1,
+                "price_schema": "3.03",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "3.03",
+                  ""
+                ],
+                "price_str": "$3.03",
+                "market_price_text": [
+                  "$",
+                  "14.99",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 800,
+                "id": 2198589154,
+                "url_id": "4861097435050838579",
+                "url": "https://img.kwcdn.com/product/fancy/903596b0-6705-4932-9cff-95ef9d788e7b.jpg",
+                "height": 800
+              },
+              "sales_tip": "8.9K+ sold",
+              "visible": true,
+              "goods_id": 601099585758362,
+              "opt_id": 1607,
+              "seo_link_url": "/60pcs-3set-waterproof-ear-stickers-ear-protection-patches-for-swimming-showering-bathing-hair-wash-shower-waterproof-ear-stickers-g-601099585758362.html?&_oak_name_id=6592387899609345389&_oak_mp_inf=EJrJorqm1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F903596b0-6705-4932-9cff-95ef9d788e7b.jpg&spec_gallery_id=2198589154&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MzAz&_oak_gallery_order=1187703192%2C893653466%2C1924045476%2C1123555523%2C623854632",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "8.9K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.8,
+                "hidden_comment": false,
+                "comment_num_tips": "64"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/a43151d1-cfbc-427a-b7ae-84d770d73a4b.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-46%"
+              },
+              "item_type": 0,
+              "page_alt": "1 adult adjustable swimming vest     jacket for swimming pool beach suitable for swimming fishing and other  ",
+              "current_sku_id": 17594448698817,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "1 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 1 LEFT",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "1 Adult Adjustable Swimming Vest | Yellow Nylon Buoyancy Jacket for Swimming Pool, Beach, Suitable for Swimming, Fishing and Other Water Sports.",
+              "sales_tip_text_list": [
+                "2.5K+",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "540067064",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0VUSMymZpinTtJ6Y0kjuDd+n4boKMLKSHl58unM65ghZEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "6139945252179572396",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1908449237",
+                "g": "601100043387572",
+                "scene_id": "3",
+                "show_price": "2015",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "192",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "3043102987394303003",
+                "ts": "1765212500597"
+              },
+              "mall_id": 5334369975527,
+              "sales_num": "2.5K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601100043387572&_oak_name_id=3043102987394303003&_oak_mp_inf=ELSFvpSo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fa43151d1-cfbc-427a-b7ae-84d770d73a4b.jpg&spec_gallery_id=201988242533&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjAxNQ&_oak_gallery_order=1908449237%2C1924156707%2C700121219%2C27377183%2C1414329846",
+              "extend_fields": {
+                "sale_fire_flag": true,
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601100043387572&_oak_name_id=3043102987394303003&_oak_mp_inf=ELSFvpSo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fa43151d1-cfbc-427a-b7ae-84d770d73a4b.jpg&spec_gallery_id=201988242533&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjAxNQ&_oak_gallery_order=1908449237%2C1924156707%2C700121219%2C27377183%2C1414329846&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1908449237,1924156707,700121219,27377183,1414329846",
+                  "_oak_name_id": "3043102987394303003"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "1 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 1 LEFT",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 192,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "20",
+                  ".15",
+                  ""
+                ],
+                "reduction_text": [
+                  "-46",
+                  "%"
+                ],
+                "price": 2015,
+                "market_price_str": "$37.34",
+                "market_price": 3734,
+                "market_price_type": 1,
+                "price_schema": "20.15",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "20.15",
+                  ""
+                ],
+                "price_str": "$20.15",
+                "market_price_text": [
+                  "$",
+                  "37.34",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 1200,
+                "id": 201988242533,
+                "url_id": "6139945252179572396",
+                "url": "https://img.kwcdn.com/product/fancy/a43151d1-cfbc-427a-b7ae-84d770d73a4b.jpg",
+                "height": 1200
+              },
+              "sales_tip": "2.5K+ sold",
+              "visible": true,
+              "goods_id": 601100043387572,
+              "opt_id": 1607,
+              "seo_link_url": "/adjustable-swimming-vests-for-adults--jackets-ideal-for-pools-and---swimming-fishing-and--water-activities-g-601100043387572.html?&_oak_name_id=3043102987394303003&_oak_mp_inf=ELSFvpSo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fa43151d1-cfbc-427a-b7ae-84d770d73a4b.jpg&spec_gallery_id=201988242533&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjAxNQ&_oak_gallery_order=1908449237%2C1924156707%2C700121219%2C27377183%2C1414329846",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "2.5K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 5.0,
+                "hidden_comment": true,
+                "comment_num_tips": "4"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/04e20322-ba63-4319-a713-4345771c6b7b.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-44%"
+              },
+              "item_type": 0,
+              "page_alt": "1pc led diving flashlight professional underwater torch waterproof usb rechargeable diving light bright outdoor abs plastic material flashlights portable diving supplies suitable for diving swimming hiking fishing light",
+              "current_sku_id": 17604159290990,
+              "tags_info": {
+                "mall_tag": [
+                  {
+                    "color": "#000000",
+                    "ext_map": {
+                      "brand_info": "{\"brand_name\":\"MACROCOSM\",\"brand_authorized_type\":2}",
+                      "brand_tag_text_style": "1"
+                    },
+                    "bg_url": "https://aimg.kwcdn.com/upload_aimg/temu/d9f58cd6-4b52-4932-a295-abc9aae28a87.jpg.slim.jpeg",
+                    "marketing_tag_type": 2700,
+                    "width": 39,
+                    "tag_id": 91007,
+                    "text": "Brand: MACROCOSM",
+                    "tag_series": 2,
+                    "height": 39
+                  }
+                ],
+                "goods_tags": [
+                  {
+                    "color": "#555555",
+                    "ext_map": {
+                      "lowest_tag_up_flag": "4",
+                      "lowest_price_before_title": "60d lowest"
+                    },
+                    "marketing_tag_type": 1000,
+                    "tag_id": 91048,
+                    "text": "Lowest price in 60 days",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/35218716-bd3d-4f5a-8877-9771d5140ddd.png.slim.png",
+                "video_url": "https://goods-vod.kwcdn.com/goods-video/e223f90dc794f2df5f82ded19483265be52673ad.f30.mp4",
+                "image_url": "https://img.kwcdn.com/product/fancy/04e20322-ba63-4319-a713-4345771c6b7b.jpg",
+                "url": "https://img.kwcdn.com/product/f9f1f794191e3c9cf1a6ca837d2b6ec2dc6a5eae.goods.000001.jpeg"
+              },
+              "title": "[LED Diving Flashlight] 1pc LED Diving Flashlight, Professional Underwater Torch, Waterproof USB Rechargeable Diving Light, Bright Outdoor ABS Plastic Material Flashlights, Portable Diving Supplies, Suitable for diving, swimming, hiking, Fishing Light",
+              "sales_tip_text_list": [
+                "237",
+                "sold"
+              ],
+              "sold_quantity_percent": 50,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "105463565",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Wm5unLCHtXaP5sjWzdvmOgKe6aYtkRjSJWSU6HVFLLHEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "7612406761487025878",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "105463565",
+                "g": "601102327774358",
+                "scene_id": "3",
+                "show_price": "979",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "193",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "5224670470070885523",
+                "ts": "1765212500597"
+              },
+              "activity_type": 13,
+              "mall_id": 634418220262713,
+              "sales_num": "237",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601102327774358&_oak_mp_inf=EJb54dWw1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F04e20322-ba63-4319-a713-4345771c6b7b.jpg&spec_gallery_id=205958181034&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTc5&_oak_gallery_order=105463565%2C1247891915%2C1984612162%2C383174982%2C1972544770",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "detail_id": "112719199416056982",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "105463565,1247891915,1984612162,383174982,1972544770"
+                }
+              },
+              "goods_tags": [
+                {
+                  "color": "#555555",
+                  "ext_map": {
+                    "lowest_tag_up_flag": "4",
+                    "lowest_price_before_title": "60d lowest"
+                  },
+                  "marketing_tag_type": 1000,
+                  "tag_id": 91048,
+                  "text": "Lowest price in 60 days",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 193,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "9",
+                  ".79",
+                  ""
+                ],
+                "reduction_text": [
+                  "-44",
+                  "%"
+                ],
+                "price": 979,
+                "market_price_str": "$17.63",
+                "market_price": 1763,
+                "market_price_type": 1,
+                "price_schema": "9.79",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "9.79",
+                  ""
+                ],
+                "price_str": "$9.79",
+                "reduction": 440,
+                "market_price_text": [
+                  "$",
+                  "17.63",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 800,
+                "id": 205958181034,
+                "url_id": "7612406761487025878",
+                "url": "https://img.kwcdn.com/product/fancy/04e20322-ba63-4319-a713-4345771c6b7b.jpg",
+                "height": 800
+              },
+              "sales_tip": "237 sold",
+              "visible": true,
+              "goods_id": 601102327774358,
+              "opt_id": 1604,
+              "seo_link_url": "/1pc-led-diving-flashlight-professional-underwater-torch-waterproof-usb-rechargeable-diving-light-bright-outdoor-abs-plastic-material-flashlights-portable-diving-supplies-suitable-for-diving-swimming-hiking-fishing-light-g-601102327774358.html?&_oak_mp_inf=EJb54dWw1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F04e20322-ba63-4319-a713-4345771c6b7b.jpg&spec_gallery_id=205958181034&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=OTc5&_oak_gallery_order=105463565%2C1247891915%2C1984612162%2C383174982%2C1972544770",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "237",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 5.0,
+                "hidden_comment": true,
+                "comment_num_tips": "2"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/8cff79c97cd7a0e0663c06e0ceb040f4.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-88%"
+              },
+              "item_type": 0,
+              "page_alt": "latest model waterproof hd adjustable size adult swimming goggles universal for men and women protective film included swimming gear adjustable goggles   goggles swim goggles",
+              "current_sku_id": 17592239741207,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "5 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 5 LEFT",
+                    "tag_series": 2
+                  },
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "ext_map": {
+                      "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"TOP RATED\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Top rated\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Top rated\",\"ranking_opt_id\":\"1603\"}}}"
+                    },
+                    "prompt_tag_text": "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
+                    "footer": {
+                      "color": "#555555",
+                      "text": " in Swimming, Diving & Water Sports",
+                      "font": 14
+                    },
+                    "marketing_tag_type": 2100,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                    "header": {
+                      "text_style": 2,
+                      "color": "#FFFFFF",
+                      "back_color": "#0A8800",
+                      "text": "TOP RATED",
+                      "font": 12
+                    },
+                    "tag_id": 91020,
+                    "ranking_type": "TOP RATED",
+                    "ranking_id": "1603"
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "[Waterproof Swimming Goggles] Waterproof HD Adjustable Size Adult Swimming Goggles - Latest Model | Universal for Men and Women, Protective Film Included, Swimming Gear, Adjustable Goggles, Comfortable Fit Goggles, Swim Goggles",
+              "sales_tip_text_list": [
+                "19K+",
+                "sold"
+              ],
+              "sold_quantity_percent": 66,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "659256659",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Tj3YYQekswNMhL2624g9uMmzI5l2Tig2mj5M++A3IBpEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "6933712296210777187",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1663036110",
+                "g": "601099522015669",
+                "scene_id": "3",
+                "show_price": "225",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "194",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "8842492285978819333",
+                "ts": "1765212500597"
+              },
+              "activity_type": 13,
+              "mall_id": 6005557728630,
+              "sales_num": "19K+",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601099522015669&_oak_name_id=8842492285978819333&_oak_mp_inf=ELWD8Jum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F8cff79c97cd7a0e0663c06e0ceb040f4.jpg&spec_gallery_id=2064292278&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI1&_oak_gallery_order=1663036110%2C659256659%2C1276659055%2C1192059665%2C1510956496",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601099522015669&_oak_name_id=8842492285978819333&_oak_mp_inf=ELWD8Jum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F8cff79c97cd7a0e0663c06e0ceb040f4.jpg&spec_gallery_id=2064292278&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI1&_oak_gallery_order=1663036110%2C659256659%2C1276659055%2C1192059665%2C1510956496&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "detail_id": "112771940062527925",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1663036110,659256659,1276659055,1192059665,1510956496",
+                  "_oak_name_id": "8842492285978819333"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "5 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 5 LEFT",
+                  "tag_series": 2
+                },
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "ext_map": {
+                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"TOP RATED\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"Top rated\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"Top rated\",\"ranking_opt_id\":\"1603\"}}}"
+                  },
+                  "prompt_tag_text": "Top Rated means that this product has an average rating of 4 stars or above. The products are ranked within each category based on factors including sales and number of buyers.",
+                  "footer": {
+                    "color": "#555555",
+                    "text": " in Swimming, Diving & Water Sports",
+                    "font": 14
+                  },
+                  "marketing_tag_type": 2100,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                  "header": {
+                    "text_style": 2,
+                    "color": "#FFFFFF",
+                    "back_color": "#0A8800",
+                    "text": "TOP RATED",
+                    "font": 12
+                  },
+                  "tag_id": 91020,
+                  "ranking_type": "TOP RATED",
+                  "ranking_id": "1603"
+                }
+              ],
+              "show_index": 194,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "2",
+                  ".25",
+                  ""
+                ],
+                "reduction_text": [
+                  "-88",
+                  "%"
+                ],
+                "price": 225,
+                "market_price_str": "$19.48",
+                "market_price": 1948,
+                "market_price_type": 1,
+                "price_schema": "2.25",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "2.25",
+                  ""
+                ],
+                "price_str": "$2.25",
+                "reduction": 880,
+                "market_price_text": [
+                  "$",
+                  "19.48",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 800,
+                "id": 2064292278,
+                "url_id": "6933712296210777187",
+                "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/8cff79c97cd7a0e0663c06e0ceb040f4.jpg",
+                "height": 800
+              },
+              "sales_tip": "19K+ sold",
+              "visible": true,
+              "goods_id": 601099522015669,
+              "opt_id": 1607,
+              "seo_link_url": "/latest-model-waterproof-hd-adjustable-size-adult-swimming-goggles-universal-for-men-and-women-protective-film-included-swimming-gear-adjustable-goggles--goggles-swim-goggles-g-601099522015669.html?&_oak_name_id=8842492285978819333&_oak_mp_inf=ELWD8Jum1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMXk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2FFancyalgo%2FVirtualModelMatting%2F8cff79c97cd7a0e0663c06e0ceb040f4.jpg&spec_gallery_id=2064292278&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjI1&_oak_gallery_order=1663036110%2C659256659%2C1276659055%2C1192059665%2C1510956496",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "19K+",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 4.8,
+                "hidden_comment": false,
+                "comment_num_tips": "371"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/ead61f5f-cf13-495d-9746-0395933fcbc7.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": ""
+              },
+              "item_type": 0,
+              "page_alt": "mermaid tail swimming fins open heel design black blue gradient durable copper material   freestyle swimming snorkeling and   mermaid accessories   gear sleek swimwear flexible swimwear diving fin swimming fin diving equipment",
+              "current_sku_id": 17607738070740,
+              "tags_info": {},
+              "video": {
+                "video_url": ""
+              },
+              "title": "Mermaid Tail Swimming Fins - Open Heel Design, Black & Blue Gradient, Durable Copper Material, Perfect for Freestyle Swimming, Snorkeling, and Water Sports, Mermaid Accessories, Water Sports Gear, Sleek Swimwear, Flexible Swimwear, Diving Fin, Swimming Fin, Diving Equipment",
+              "sales_tip_text_list": [
+                "38",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "313374073",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Z/+4pSA6GA88sVKMRrPBrkpfTP6T3TFHSebsImvPrNXEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "3555827999176492178",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "313374073",
+                "g": "601103052605898",
+                "scene_id": "3",
+                "show_price": "2405",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "195",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "5379367295123677639",
+                "ts": "1765212500597"
+              },
+              "mall_id": 634418222283736,
+              "sales_num": "38",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601103052605898&_oak_name_id=5379367295123677639&_oak_mp_inf=EMqTsq%2Bz1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fead61f5f-cf13-495d-9746-0395933fcbc7.jpg&spec_gallery_id=209870610083&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjQwNQ&_oak_gallery_order=313374073%2C368957105%2C2058353893%2C58115848%2C946011766",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "313374073,368957105,2058353893,58115848,946011766",
+                  "_oak_name_id": "5379367295123677639"
+                }
+              },
+              "goods_tags": [],
+              "show_index": 195,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "24",
+                  ".05",
+                  ""
+                ],
+                "reduction_text": [],
+                "price": 2405,
+                "price_schema": "24.05",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "24.05",
+                  ""
+                ],
+                "price_str": "$24.05"
+              },
+              "image": {
+                "width": 800,
+                "id": 209870610083,
+                "url_id": "3555827999176492178",
+                "url": "https://img.kwcdn.com/product/fancy/ead61f5f-cf13-495d-9746-0395933fcbc7.jpg",
+                "height": 800
+              },
+              "sales_tip": "38 sold",
+              "visible": true,
+              "goods_id": 601103052605898,
+              "opt_id": 1607,
+              "seo_link_url": "/mermaid-tail-swimming-fins-open-heel-design-black-blue-gradient-durable-copper-material--freestyle-swimming-snorkeling-and--mermaid-accessories--gear-sleek-swimwear-flexible-swimwear-diving-fin-swimming-fin-diving-equipment-g-601103052605898.html?&_oak_name_id=5379367295123677639&_oak_mp_inf=EMqTsq%2Bz1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fead61f5f-cf13-495d-9746-0395933fcbc7.jpg&spec_gallery_id=209870610083&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjQwNQ&_oak_gallery_order=313374073%2C368957105%2C2058353893%2C58115848%2C946011766",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "38",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/open/9ef827eed8b34fdbb84eb82189aea43e-goods.jpeg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-85%"
+              },
+              "item_type": 0,
+              "page_alt": "waterproof dustproof heavy duty lockable survival storage case multi color orange   black locking mechanism   fishing tackle outdoor tools container with carry handle durable plastic box for camping",
+              "current_sku_id": 17610833304956,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "ext_map": {
+                      "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"NEW ARRIVAL\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"}}}"
+                    },
+                    "prompt_tag_text": "'New Arrival' means that this product listing was created by the seller within the last 60 days and is currently trending in sales on the platform. If another seller lists the same product later, their listing may also qualify for the 'New Arrival' label. Please note that this label indicates a new listing, which may not necessarily be a new product on the platform.",
+                    "footer": {
+                      "color": "#555555",
+                      "text": " in Swimming, Diving & Water Sports",
+                      "font": 14
+                    },
+                    "marketing_tag_type": 2100,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                    "header": {
+                      "text_style": 2,
+                      "color": "#FFFFFF",
+                      "back_color": "#0A8800",
+                      "text": "NEW ARRIVAL",
+                      "font": 12
+                    },
+                    "tag_id": 91020,
+                    "ranking_type": "NEW ARRIVAL",
+                    "ranking_id": "1603"
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "Waterproof & Dustproof Heavy-Duty Lockable Survival Storage Case - Multi-Color (Orange/Yellow/Green/Black) Locking Mechanism, EDC Gear, Fishing Tackle & Outdoor Tools Container with Carry Handle, Durable Plastic Box for Camping &",
+              "sales_tip_text_list": [
+                "30",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "578388750",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0Yjvtx28hRBOqt7jbLYqNXqW+h0LTso47SQoQ36nJmByEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "3625248781230418085",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "2071688374",
+                "g": "601103641338968",
+                "scene_id": "3",
+                "show_price": "264",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "196",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "1872198781153594216",
+                "ts": "1765212500597"
+              },
+              "mall_id": 185159704974,
+              "sales_num": "30",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601103641338968&_oak_mp_inf=ENjIj8i11ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F9ef827eed8b34fdbb84eb82189aea43e-goods.jpeg&spec_gallery_id=601103641338968&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY0&_oak_gallery_order=2071688374%2C1832751801%2C1779144061%2C1129810542%2C492099532",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601103641338968&_oak_mp_inf=ENjIj8i11ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F9ef827eed8b34fdbb84eb82189aea43e-goods.jpeg&spec_gallery_id=601103641338968&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY0&_oak_gallery_order=2071688374%2C1832751801%2C1779144061%2C1129810542%2C492099532&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "2071688374,1832751801,1779144061,1129810542,492099532"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "ext_map": {
+                    "ranking_list_rich_text": "{\"text_rich\":[{\"type\":0,\"value\":\"NEW ARRIVAL\",\"font_size\":12,\"pc_font_size\":14,\"font_color\":\"#0A8800\",\"font_weight\":400,\"padding_end\":3,\"id\":1,\"corner_left_top\":6,\"corner_left_bottom\":0,\"corner_right_top\":0,\"corner_right_bottom\":6,\"start_edge\":3,\"end_edge\":3,\"top_edge\":2,\"bottom_edge\":2},{\"type\":0,\"value\":\"in Swimming, Diving & Water Sports\",\"font_size\":13,\"pc_font_size\":14,\"font_color\":\"#555555\",\"font_weight\":400,\"id\":2}],\"track\":{\"click\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"},\"impr\":{\"ranking_type\":\"New product\",\"ranking_opt_id\":\"1603\"}}}"
+                  },
+                  "prompt_tag_text": "'New Arrival' means that this product listing was created by the seller within the last 60 days and is currently trending in sales on the platform. If another seller lists the same product later, their listing may also qualify for the 'New Arrival' label. Please note that this label indicates a new listing, which may not necessarily be a new product on the platform.",
+                  "footer": {
+                    "color": "#555555",
+                    "text": " in Swimming, Diving & Water Sports",
+                    "font": 14
+                  },
+                  "marketing_tag_type": 2100,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/goods_details/3a667bf9-184a-4089-9631-4c4c3e6c0c27.png.slim.png",
+                  "header": {
+                    "text_style": 2,
+                    "color": "#FFFFFF",
+                    "back_color": "#0A8800",
+                    "text": "NEW ARRIVAL",
+                    "font": 12
+                  },
+                  "tag_id": 91020,
+                  "ranking_type": "NEW ARRIVAL",
+                  "ranking_id": "1603"
+                }
+              ],
+              "show_index": 196,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "2",
+                  ".64",
+                  ""
+                ],
+                "reduction_text": [
+                  "-85",
+                  "%"
+                ],
+                "price": 264,
+                "market_price_str": "$17.87",
+                "market_price": 1787,
+                "market_price_type": 1,
+                "price_schema": "2.64",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "2.64",
+                  ""
+                ],
+                "price_str": "$2.64",
+                "market_price_text": [
+                  "$",
+                  "17.87",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 375,
+                "id": 601103641338968,
+                "url_id": "3625248781230418085",
+                "url": "https://img.kwcdn.com/product/open/9ef827eed8b34fdbb84eb82189aea43e-goods.jpeg",
+                "height": 375
+              },
+              "sales_tip": "30 sold",
+              "visible": true,
+              "goods_id": 601103641338968,
+              "opt_id": 1604,
+              "seo_link_url": "/waterproof-dustproof-heavy-duty-lockable-survival-storage-case-multi-color-orange--black-locking-mechanism--fishing-tackle-outdoor-tools-container-with-carry-handle-durable-plastic-box-for-camping-g-601103641338968.html?&_oak_mp_inf=ENjIj8i11ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F9ef827eed8b34fdbb84eb82189aea43e-goods.jpeg&spec_gallery_id=601103641338968&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjY0&_oak_gallery_order=2071688374%2C1832751801%2C1779144061%2C1129810542%2C492099532",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "30",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/b18879c0-40c1-4270-8cd1-c14f9231e580.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-88%"
+              },
+              "item_type": 0,
+              "page_alt": "adult full face snorkeling gear swimming snorkeling mask panoramic leak proof   180 with removable camera mount adult 2 sizes multi   for adult men and women",
+              "current_sku_id": 17595404518700,
+              "tags_info": {
+                "mall_tag": [
+                  {
+                    "color": "#FFEFD3",
+                    "ext_map": {
+                      "brand_info": "{\"brand_name\":\"BOKEFA\",\"brand_authorized_type\":1}",
+                      "brand_tag_text_style": "1"
+                    },
+                    "bg_url": "https://aimg.kwcdn.com/upload_aimg/aftersales/f3dba53e-2a7c-4ae2-acf5-6cf50fd53c15.png",
+                    "marketing_tag_type": 2700,
+                    "width": 39,
+                    "tag_id": 91007,
+                    "text": "Brand Official Store: BOKEFA",
+                    "tag_series": 2,
+                    "url": "https://aimg.kwcdn.com/upload_aimg/aftersales/efb13335-b6b6-4984-af7d-a48dbaccb830.png",
+                    "height": 39
+                  }
+                ],
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "1 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 1 LEFT",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "Adult Full Face Snorkeling Gear, Swimming Snorkeling Mask, Panoramic Leak Proof Swimming Mask, 180° with Removable Camera Mount, Adult 2 Sizes Multi-color Choice for Adult Men and Women",
+              "sales_tip_text_list": [
+                "235",
+                "sold"
+              ],
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "2136640541",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0YUYjfIVQ7IGlLgr09iLqh/eUk3SvlZ1iKnT7FTXXpsnEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "489798625888556938",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "2136640541",
+                "g": "601100262512600",
+                "scene_id": "3",
+                "show_price": "2387",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "197",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "6508517377544047877",
+                "ts": "1765212500598"
+              },
+              "mall_id": 634418211182415,
+              "sales_num": "235",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601100262512600&_oak_name_id=6508517377544047877&_oak_mp_inf=ENiv%2FPyo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb18879c0-40c1-4270-8cd1-c14f9231e580.jpg&spec_gallery_id=5067170537&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM4Nw&_oak_gallery_order=2136640541%2C1038826998%2C1989834112%2C1612373406%2C552134362",
+              "extend_fields": {
+                "floating_link_url": "goods.html?_bg_fs=1&goods_id=601100262512600&_oak_name_id=6508517377544047877&_oak_mp_inf=ENiv%2FPyo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb18879c0-40c1-4270-8cd1-c14f9231e580.jpg&spec_gallery_id=5067170537&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM4Nw&_oak_gallery_order=2136640541%2C1038826998%2C1989834112%2C1612373406%2C552134362&goods_pop_style=1&floating_when_add_to_cart=1",
+                "support_tag_carousel": true,
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "2136640541,1038826998,1989834112,1612373406,552134362",
+                  "_oak_name_id": "6508517377544047877"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "1 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 1 LEFT",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 197,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "23",
+                  ".87",
+                  ""
+                ],
+                "reduction_text": [
+                  "-88",
+                  "%"
+                ],
+                "price": 2387,
+                "market_price_str": "$207.34",
+                "market_price": 20734,
+                "market_price_type": 1,
+                "price_schema": "23.87",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "23.87",
+                  ""
+                ],
+                "price_str": "$23.87",
+                "market_price_text": [
+                  "$",
+                  "207.34",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 1500,
+                "id": 5067170537,
+                "url_id": "489798625888556938",
+                "url": "https://img.kwcdn.com/product/fancy/b18879c0-40c1-4270-8cd1-c14f9231e580.jpg",
+                "height": 1500
+              },
+              "sales_tip": "235 sold",
+              "visible": true,
+              "goods_id": 601100262512600,
+              "opt_id": 1604,
+              "seo_link_url": "/adult-full-face-snorkeling-gear-swimming-snorkeling-mask-panoramic-leak-proof--180-with-removable-camera-mount-adult-2-sizes-multi--for-adult-men-and-women-g-601100262512600.html?&_oak_name_id=6508517377544047877&_oak_mp_inf=ENiv%2FPyo1ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2Fb18879c0-40c1-4270-8cd1-c14f9231e580.jpg&spec_gallery_id=5067170537&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MjM4Nw&_oak_gallery_order=2136640541%2C1038826998%2C1989834112%2C1612373406%2C552134362",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "235",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {
+                "goods_score": 5.0,
+                "hidden_comment": true,
+                "comment_num_tips": "2"
+              },
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/fancy/8a3b562e-20fc-40c0-a9a7-6f1765795ca7.jpg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": ""
+              },
+              "item_type": 0,
+              "page_alt": "2pcs blue swimming kick board with   foam air holes adjustable pool training board for   aerobics aquatic sturdy   for beginners advanced swimmers no included",
+              "current_sku_id": 17614064622895,
+              "tags_info": {
+                "goods_tags": [
+                  {
+                    "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                    "color": "#FB7701",
+                    "ext_map": {
+                      "stock_type": "1",
+                      "simply_stock_tag_text": "1 LEFT!"
+                    },
+                    "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                    "marketing_tag_type": 1000,
+                    "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                    "tag_id": 91004,
+                    "text": "ONLY 1 LEFT",
+                    "tag_series": 2
+                  }
+                ]
+              },
+              "video": {
+                "video_url": ""
+              },
+              "title": "2pcs Blue Swimming Kick Board with Buoyant Foam & Air Holes - Adjustable Pool Training Board for s &, Water Aerobics, Aquatic - Sturdy Kickboard for Beginners/Advanced Swimmers (No Included)",
+              "sales_tip_text_list": [
+                "14",
+                "sold"
+              ],
+              "sold_quantity_percent": 0,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "0",
+                "mid": "69999906",
+                "final_creative_id": "695487508",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0d582YqF/d4TGEG+w60Rj+L5hvigVYCj6+omPLAWIojGEH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "7943853236605061676",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "695487508",
+                "g": "601104295985637",
+                "scene_id": "3",
+                "show_price": "1384",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "198",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "2191307182845834413",
+                "ts": "1765212500598"
+              },
+              "activity_type": 27,
+              "mall_id": 634418221177943,
+              "sales_num": "14",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601104295985637&_oak_name_id=2191307182845834413&_oak_mp_inf=EOWDpIC41ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F8a3b562e-20fc-40c0-a9a7-6f1765795ca7.jpg&spec_gallery_id=215670410494&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTM4NA&_oak_gallery_order=695487508%2C1251205039%2C689085035",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "detail_id": "112787335297303013",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "695487508,1251205039,689085035",
+                  "_oak_name_id": "2191307182845834413"
+                }
+              },
+              "goods_tags": [
+                {
+                  "icon_url": "https://aimg.kwcdn.com/upload_aimg/commodity/9aad9159-3b27-4530-95a1-f01a6a3b4ce7.png.slim.png",
+                  "color": "#FB7701",
+                  "ext_map": {
+                    "stock_type": "1",
+                    "simply_stock_tag_text": "1 LEFT!"
+                  },
+                  "prompt_tag_text": "The tag means that the inventory of an item corresponds to the number of units shown in the tag. The tag refers to the item currently selected. Sellers are responsible for inventory allocation and decide whether to display the tag. A product with this inventory label may be restocked later by the seller.",
+                  "marketing_tag_type": 1000,
+                  "rtl_icon_url": "https://aimg.kwcdn.com/upload_aimg/temu/c34873d8-3ccb-4599-bedf-4dd1dbb2f5c7.png.slim.png",
+                  "tag_id": 91004,
+                  "text": "ONLY 1 LEFT",
+                  "tag_series": 2
+                }
+              ],
+              "show_index": 198,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "13",
+                  ".84",
+                  ""
+                ],
+                "reduction_text": [],
+                "price": 1384,
+                "price_schema": "13.84",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "13.84",
+                  ""
+                ],
+                "price_str": "$13.84"
+              },
+              "image": {
+                "width": 800,
+                "id": 215670410494,
+                "url_id": "7943853236605061676",
+                "url": "https://img.kwcdn.com/product/fancy/8a3b562e-20fc-40c0-a9a7-6f1765795ca7.jpg",
+                "height": 800
+              },
+              "sales_tip": "14 sold",
+              "visible": true,
+              "goods_id": 601104295985637,
+              "opt_id": 1607,
+              "seo_link_url": "/2pcs-blue-swimming-kick-board-with--foam-air-holes-adjustable-pool-training-board-for--aerobics-aquatic-sturdy--for-beginners-advanced-swimmers-no-included-g-601104295985637.html?&_oak_name_id=2191307182845834413&_oak_mp_inf=EOWDpIC41ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F8a3b562e-20fc-40c0-a9a7-6f1765795ca7.jpg&spec_gallery_id=215670410494&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=MTM4NA&_oak_gallery_order=695487508%2C1251205039%2C689085035",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "14",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            },
+            {
+              "thumb_url": "https://img.kwcdn.com/product/open/579affb1554745f68df81077f00f3091-goods.jpeg",
+              "ware_house_type": 0,
+              "benefit_text": {
+                "text": "-85%"
+              },
+              "item_type": 0,
+              "page_alt": "1pc adjustable diving attachment strap hands free flashlight holder   release   for   snorkeling freediving gear compatible with flashlights torch black",
+              "current_sku_id": 17612362575563,
+              "tags_info": {},
+              "video": {
+                "video_url": ""
+              },
+              "title": "1pc Adjustable Diving Attachment Strap - Hands-Free Flashlight Holder with Quick-Release Buckle for Scuba, Snorkeling, Freediving Gear - Compatible with Flashlights & Torch (Black)",
+              "sales_tip_text_list": [
+                "30",
+                "sold"
+              ],
+              "sold_quantity_percent": 50,
+              "p_rec": {
+                "list_id": "category_list_e8f791bc75dd46d2a90e0c69280a1b50",
+                "item_type": "0",
+                "ad_goods": "1",
+                "mid": "69999906",
+                "final_creative_id": "1398489024",
+                "sort_by_type": "873027542",
+                "st_model_point": "CnD9mrIWycxNmGP0E6Doh3asTvq7cvO5uBcEPf1Mm8vhmD7uJfY11im4s/wmnQnEaNTEqDzfN11UoPOsh8Q21ZthD1EAoSK4RPyQyA8DLzSN0TAeMhUA5NYDbmc+A/so/Yy1mZa5O2M0esD/gulfpI51EH0YbyIkMDVmYzZiNWQtZGJjZi00NzA3LTgwOTktMDViYzYyNDI4NzE3",
+                "scene": "opt",
+                "image_url_id": "2316594947118599604",
+                "show_currency": "USD",
+                "no_result": "0",
+                "offset": "160",
+                "engine_creative_id": "1398489024",
+                "g": "601103945257694",
+                "scene_id": "3",
+                "show_price": "474",
+                "opt_id": "1603",
+                "ts_req": "0",
+                "version": "5",
+                "search_id": "AxNL5h7uSfP9LUK209STmilj73D2qIjHlvqSJanomSoqzRXY9YayE0RaJoIl4o-k",
+                "gin_fallback": "0",
+                "organicPoint": "CoAB0S0SVZB1Sv1WRb5zuQxhIxSd9Z46n9kOGHGtdoX9zF+BgLdqd+lfJ7Ni8ia62bYq2Cg6BCH2DdQIsF+QVy+GfkhDomyYObhMNCESI9DNPQ939nTlyq5fPIerqze8s/tUZDwA3c2ZKUMMX0DC2P7LNHgUCGDtX406W+GfdNG49RIQeBh2",
+                "opt_type": "0",
+                "goods_source": "rec",
+                "idx": "199",
+                "region": "211",
+                "bid": "69999705",
+                "cloud_env": "udpm1",
+                "creative_title_id": "149225918233803211",
+                "ts": "1765212500598"
+              },
+              "activity_type": 13,
+              "mall_id": 634418211490610,
+              "sales_num": "30",
+              "link_url": "goods.html?_bg_fs=1&goods_id=601103945257694&_oak_name_id=149225918233803211&_oak_mp_inf=EN6lhdm21ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F579affb1554745f68df81077f00f3091-goods.jpeg&spec_gallery_id=213460767503&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDc0&_oak_gallery_order=1398489024%2C1847568357%2C1730820200%2C530560462%2C1045730964",
+              "extend_fields": {
+                "support_tag_carousel": true,
+                "detail_id": "112769759972381406",
+                "market_price_style": 1,
+                "sku_extra_param": {
+                  "_oak_gallery_order": "1398489024,1847568357,1730820200,530560462,1045730964",
+                  "_oak_name_id": "149225918233803211"
+                }
+              },
+              "goods_tags": [],
+              "show_index": 199,
+              "price_info": {
+                "split_price_text": [
+                  "$",
+                  "4",
+                  ".74",
+                  ""
+                ],
+                "reduction_text": [
+                  "-85",
+                  "%"
+                ],
+                "price": 474,
+                "market_price_str": "$33.37",
+                "market_price": 3337,
+                "market_price_type": 1,
+                "price_schema": "4.74",
+                "currency": "USD",
+                "price_text": [
+                  "$",
+                  "4.74",
+                  ""
+                ],
+                "price_str": "$4.74",
+                "reduction": 850,
+                "market_price_text": [
+                  "$",
+                  "33.37",
+                  ""
+                ]
+              },
+              "image": {
+                "width": 800,
+                "id": 213460767503,
+                "url_id": "2316594947118599604",
+                "url": "https://img.kwcdn.com/product/open/579affb1554745f68df81077f00f3091-goods.jpeg",
+                "height": 800
+              },
+              "sales_tip": "30 sold",
+              "visible": true,
+              "goods_id": 601103945257694,
+              "opt_id": 1604,
+              "seo_link_url": "/1pc-adjustable-diving-attachment-strap-hands-free-flashlight-holder--release--for--snorkeling-freediving-gear-compatible-with-flashlights-torch-black-g-601103945257694.html?&_oak_name_id=149225918233803211&_oak_mp_inf=EN6lhdm21ogBGi5jYXRlZ29yeV9saXN0X2U4Zjc5MWJjNzVkZDQ2ZDJhOTBlMGM2OTI4MGExYjUwIMbk9PavMw%3D%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Fopen%2F579affb1554745f68df81077f00f3091-goods.jpeg&spec_gallery_id=213460767503&refer_page_sn=10012&refer_source=0&freesia_scene=3&_oak_freesia_scene=3&_oak_rec_ext_1=NDc0&_oak_gallery_order=1398489024%2C1847568357%2C1730820200%2C530560462%2C1045730964",
+              "queryReleScore": 0.0,
+              "sales_tip_text": [
+                "30",
+                "sold"
+              ],
+              "opt_type": 3,
+              "comment": {},
+              "adult_goods": false
+            }
+          ],
+          "share_url": "https://share.temu.com/Eus4dkJGldC",
+          "extend_fields": {},
+          "home_opt_module_list": [],
+          "text_cart_button": false,
+          "jump_type": 0,
+          "recent_word": 0,
+          "shield_all": false
         },
         "has_more": true
-    },
-    "success": true,
-    "message": ""
-}
+      },
+      "success": true,
+      "message": ""
+    }
     const title = data.result.data.title;
     const goodsList = data?.result?.data?.goods_list || [];
 
@@ -14545,6 +14545,7 @@ export const fetchProductByCategory = async () => {
       price_str: item.price_info?.price_str,
       discount: item.price_info?.reduction_text?.join("") || "",
       sales: item.sales_num,
+      quantity: item.price_info?.reduction,
 
       link: "https://www.temu.com" + item.seo_link_url,
       shipping_info: {
@@ -14651,6 +14652,7 @@ export const fetchProductByCategory = async () => {
           ? parseFloat(productData.comment?.goods_score ?? "0")
           : 0,
         total_comment: Number(productData.comment?.comment_num_tips) || 0,
+        quantity: productData?.quantity
       };
 
       const product = productRepository.create(productDataToSave);
