@@ -94,16 +94,18 @@ export class StaffService {
         return handleError("Staff not found", 404, null);
       }
 
-      const existStaff = await staffRepository.findOne({
-        where: {
-          username: data?.username,
-          is_active: true,
-          id: Not(data?.id),
-        },
-      });
-      if (existStaff) {
-        return handleError(config.message.username_already_exist, 404, null);
-      }
+      // const existStaff = await staffRepository.findOne({
+      //   where: {
+      //     // username: data?.username,
+      //     is_active: true,
+      //     id: Not(data?.id),
+      //   },
+      // });
+      // console.log({ existStaff });
+
+      // if (!existStaff) {
+      //   return handleError("Not found account", 404, null);
+      // }
 
       // Hash the password
       if (data?.password) data.password = await hashPassword(data?.password);
@@ -291,7 +293,7 @@ export class StaffService {
 
       // Generate JWT token
       const token = new AuthMiddlewareService().genStaffToken(staff);
-      
+
       return handleSuccess({ token, data: staff } as any);
     } catch (error: any) {
       return handleError(

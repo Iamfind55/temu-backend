@@ -33,4 +33,11 @@ const pubsub = new RedisPubSub({
   subscriber,
 });
 
+export const SUBSCRIPTION_EVENTS = {
+  MESSAGE_ADDED: "MESSAGE_ADDED",
+  MESSAGE_STATUS_UPDATED: "MESSAGE_STATUS_UPDATED",
+  NEW_MESSAGE_FOR_ADMIN: "NEW_MESSAGE_FOR_ADMIN",
+  MESSAGE_DELETED: "MESSAGE_DELETED",
+};
+
 export default pubsub;

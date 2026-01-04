@@ -21,7 +21,6 @@ export class NotificationService {
   }: {
     data: Notification;
   }): Promise<Response<Notification | null>> {
-    console.log("===== starting to createNotification");
     const notificationRepository = getRepository(Notification);
 
     try {
@@ -85,9 +84,11 @@ export class NotificationService {
       const shopDataFromToken = new AuthMiddlewareService().verifyShopToken(
         req
       );
+      
       const existNotification = await notificationRepository.findOne({
         where: { id, shop_id: shopDataFromToken?.id },
       });
+
 
       if (!existNotification)
         return handleError("Notification not found", 404, null);

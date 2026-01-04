@@ -131,7 +131,7 @@ export const orderSchema = `
    shopConfirmOrder(id: ID!): SuccessOrderResponseOne!
    shopCancelOrder(id: ID!): SuccessOrderResponseOne!
    adminUpdateOrderWithStatus(data: AdminUpdateOrderByStatusInput!): SuccessOrderResponseMany!
-   # deleteOrder(id: ID!): SuccessOrderResponseOne!
+   deleteOrder(id: ID!): SuccessOrderResponseOne!
  }
 
   type Subscription {

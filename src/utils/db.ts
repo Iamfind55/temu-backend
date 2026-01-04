@@ -26,6 +26,8 @@ import { ShopFollower } from "../modules/shopFollower";
 import { ProductTag } from "../modules/productTag";
 import { Deposit } from "../modules/deposit";
 import { Withdraw } from "../modules/withdraw";
+import { Conversation } from "../modules/conversation";
+import { Message } from "../modules/message";
 
 export const connectDB = async () => {
   try {
@@ -64,7 +66,9 @@ export const connectDB = async () => {
         ShopFollower,
         ProductTag,
         Deposit,
-        Withdraw
+        Withdraw,
+        Conversation,
+        Message,
       ],
       migrations: ["migrations/*.ts"],
     })
@@ -86,5 +90,5 @@ export const connectDB = async () => {
       .catch((error) =>
         console.error("Error connecting to the database:", error)
       );
-  } catch (error) {}
+  } catch (error) { }
 };

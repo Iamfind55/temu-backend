@@ -28,7 +28,6 @@ import { Shop } from "../../shop";
 import { getRequestedFields } from "../../../utils/graphqlUtils";
 import { GraphQLResolveInfo } from "graphql";
 import pubsub from "../../../utils/pubsub";
-import { Logistics } from "../../logistics";
 
 export class OrderService {
   static counter: number = 0;
@@ -447,7 +446,6 @@ export class OrderService {
                   ? PaymentStatus.FAILED
                   : PaymentStatus.COMPLETED,
             } as any);
-            // console.log(data.logistics_id);
 
             const savedOrder: any = await orderRepository.save(newOrder);
             const savedOrderDetails = await Promise.all(
@@ -1133,6 +1131,85 @@ export class OrderService {
     }
   }
 
+  static async deleteOrder({
+    id,
+    req,
+  }: {
+    id: string;
+    req: Request;
+  }): Promise<Response<Order | null>> {
+    const orderRepository = getRepository(Order);
+    const transactionManager = getManager();
+    const walletRepository = getRepository(Wallet);
+
+    try {
+      const customerDataFromToken =
+        new AuthMiddlewareService().verifyCustomerToken(req);
+      if (!customerDataFromToken)
+        return handleError(config.message.invalid_token, 404, null);
+
+      const existOrder = await orderRepository.findOne({
+        where: {
+          id: id,
+          is_active: true,
+          customer_id: customerDataFromToken.id,
+          order_status: OrderStatus.NO_PICKUP,
+          status: BaseStatus.ACTIVE
+        },
+      });
+      if (!existOrder) {
+        return handleError("Order not found", 404, null);
+      }
+
+      return await transactionManager.transaction(async (entityManager) => {
+        // Update order status
+        existOrder.status = BaseStatus.INACTIVE;
+        existOrder.order_status = OrderStatus.DELETE;
+        existOrder.payment_status = PaymentStatus.CANCELLED;
+        existOrder.sign_in_status = SignInStatus.CANCELLED;
+        existOrder.canelled_by_customer = customerDataFromToken.id;
+
+        await entityManager.save(Order, existOrder);
+
+        await entityManager.update(
+          OrderDetail,
+          { order_id: existOrder.id }, // WHERE condition
+          {
+            order_status: OrderStatus.DELETE,
+            payment_status: PaymentStatus.CANCELLED,
+            sign_in_status: SignInStatus.CANCELLED,
+            canelled_by_customer: customerDataFromToken.id,
+          } // Update values
+        );
+
+        const wallet = await entityManager.findOne(Wallet, {
+          where: {
+            customer_id: customerDataFromToken.id,
+            is_active: true,
+          },
+          lock: { mode: "pessimistic_write" },
+        });
+
+        if (!wallet) {
+          throw new Error("Wallet not found");
+        }
+
+        wallet.total_balance = Number(
+          (Number(wallet.total_balance) + Number(existOrder.total_price)).toFixed(2)
+        );
+
+        await entityManager.save(Wallet, wallet);
+        return handleSuccess({ ...existOrder });
+      });
+    } catch (error: any) {
+      console.error("Error in payOrderFailed:", error);
+      return handleError(
+        config.message.internal_server_error,
+        500,
+        error.message
+      );
+    }
+  }
   static async shopConfirmOrder({
     id,
     req,

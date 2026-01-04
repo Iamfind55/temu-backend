@@ -17,7 +17,7 @@ export class AuthMiddlewareService {
       return decoded as TokenData;
     } catch (error: any) {
       console.error("Token verification failed:", error.message);
-      throw new Error(error);
+      return null;
     }
   }
   verifyCustomerToken(req: any): TokenData {

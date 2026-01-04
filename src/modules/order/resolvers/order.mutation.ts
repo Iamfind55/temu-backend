@@ -43,4 +43,11 @@ export const orderMutation = {
     { data }: { data: AdminUpdateOrderByStatusInput },
     { req }: { req: Request }
   ) => OrderService.adminUpdateOrderWithStatus({ data, req }),
+
+  deleteOrder: async (
+    _: any,
+    { id }: { id: string },
+    { req }: { req: Request }
+  ) => OrderService.deleteOrder({ id, req }),
+
 };

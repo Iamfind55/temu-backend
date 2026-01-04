@@ -1,30 +1,32 @@
 import { DataSource } from "typeorm";
-import { TransactionHistory } from "./modules/transactionHistory";
-import { Customer } from "./modules/customer";
-import { Shop } from "./modules/shop";
 import { config } from "./config";
+import { AboutUs } from "./modules/aboutUs";
+import { Attribute } from "./modules/attribute";
+import { AttributeValue } from "./modules/attributeValue/entity";
 import { Banner } from "./modules/banner";
 import { Branding } from "./modules/branding";
 import { Category } from "./modules/category";
-import { Staff } from "./modules/staff";
-import { ShopType } from "./modules/shopType";
-import { ShopSocial } from "./modules/shopSocial";
-import { ShopAddress } from "./modules/shopAddress";
-import { Product } from "./modules/product";
-import { ProductComment } from "./modules/productComment";
-import { ShopProduct } from "./modules/shopProduct";
-import { AboutUs } from "./modules/aboutUs";
-import { Wallet } from "./modules/wallet";
+import { CategoryAttribute } from "./modules/categoryAttribute";
+import { Conversation } from "./modules/conversation";
+import { Customer } from "./modules/customer";
+import { Deposit } from "./modules/deposit";
+import { Logistics } from "./modules/logistics";
+import { Message } from "./modules/message";
+import { Notification } from "./modules/notification";
 import { Order } from "./modules/order";
 import { OrderDetail } from "./modules/orderDetail";
-import { Notification } from "./modules/notification";
-import { Logistics } from "./modules/logistics";
-import { Attribute } from "./modules/attribute";
-import { AttributeValue } from "./modules/attributeValue/entity";
-import { CategoryAttribute } from "./modules/categoryAttribute";
-import { ShopFollower } from "./modules/shopFollower";
+import { Product } from "./modules/product";
+import { ProductComment } from "./modules/productComment";
 import { ProductTag } from "./modules/productTag";
-import { Deposit } from "./modules/deposit";
+import { Shop } from "./modules/shop";
+import { ShopAddress } from "./modules/shopAddress";
+import { ShopFollower } from "./modules/shopFollower";
+import { ShopProduct } from "./modules/shopProduct";
+import { ShopSocial } from "./modules/shopSocial";
+import { ShopType } from "./modules/shopType";
+import { Staff } from "./modules/staff";
+import { TransactionHistory } from "./modules/transactionHistory";
+import { Wallet } from "./modules/wallet";
 import { Withdraw } from "./modules/withdraw";
 const AppDataSource = new DataSource({
   type: "postgres",
@@ -61,7 +63,9 @@ const AppDataSource = new DataSource({
     ShopFollower,
     ProductTag,
     Deposit,
-    Withdraw
+    Withdraw,
+    Conversation,
+    Message,
   ],
   migrations: ["migrations/*.ts"],
   subscribers: [],

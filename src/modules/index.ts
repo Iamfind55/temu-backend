@@ -22,6 +22,8 @@ import { attributeResolvers } from "./attribute";
 import { shopFollowerResulvers } from "./shopFollower";
 import { depositResolvers } from "./deposit";
 import { withdrawResolvers } from "./withdraw";
+import { conversationResolvers } from "./conversation";
+import { messageResolvers } from "./message";
 const { GraphQLUpload } = require("graphql-upload");
 
 export const resolvers = [
@@ -49,5 +51,7 @@ export const resolvers = [
   attributeResolvers,
   shopFollowerResulvers,
   depositResolvers,
-  withdrawResolvers
+  withdrawResolvers,
+  conversationResolvers,
+  messageResolvers
 ];

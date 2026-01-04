@@ -23,6 +23,8 @@ import { walletSchema } from "../modules/wallet/schemas";
 import { shopFollowerSchemas } from "../modules/shopFollower/schema";
 import { depositSchema } from "../modules/deposit/schema";
 import { withdrawSchema } from "../modules/withdraw/schema";
+import { messageSchema } from "../modules/message/schemas";
+import { conversationSchema } from "../modules/conversation/schemas";
 
 export const typeDefs = gql`
   scalar Upload
@@ -134,4 +136,6 @@ export const typeDefs = gql`
   ${shopFollowerSchemas}
   ${depositSchema}
   ${withdrawSchema}
+  ${messageSchema}
+  ${conversationSchema}
 `;
