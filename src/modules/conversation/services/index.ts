@@ -49,26 +49,127 @@ export class ConversationService {
     }
   }
 
-  static async getConversations({
-    where,
-    page,
-    limit,
-    sortedBy,
-    req,
-  }: {
-    where: Partial<ConversationWhereInput>;
-    page: number;
-    limit: number;
-    sortedBy: BaseOrderByInput;
-    req: Request;
-  }, info: GraphQLResolveInfo): Promise<Response<Conversation[] | null>> {
+  // static async getConversations({
+  //   where,
+  //   page,
+  //   limit,
+  //   sortedBy,
+  //   req,
+  // }: {
+  //   where: Partial<ConversationWhereInput>;
+  //   page: number;
+  //   limit: number;
+  //   sortedBy: BaseOrderByInput;
+  //   req: Request;
+  // }, info: GraphQLResolveInfo): Promise<Response<Conversation[] | null>> {
+  //   const conversationRepository = getRepository(Conversation);
+
+  //   try {
+  //     const adminDataFromToken = new AuthMiddlewareService().verifyStaffToken(req);
+  //     if (!adminDataFromToken)
+  //       return handleError(config.message.invalid_token, 404, null);
+
+  //     const queryBuilder = conversationRepository
+  //       .createQueryBuilder("conversation")
+  //       .leftJoinAndMapOne(
+  //         "conversation.creator",
+  //         "shop",
+  //         "creator_shop",
+  //         "conversation.created_by::uuid = creator_shop.id"
+  //       )
+  //       .leftJoin(
+  //         subQ =>
+  //           subQ
+  //             .select("m.conversation_id", "conversation_id")
+  //             .addSelect("m.text", "last_message")
+  //             .addSelect("m.created_at", "last_message_at")
+  //             .from("message", "m")
+  //             .where(
+  //               `m.created_at = (
+  //               SELECT MAX(m2.created_at)
+  //               FROM message m2
+  //               WHERE m2.conversation_id = m.conversation_id
+  //             )`
+  //             ),
+  //         "last_message",
+  //         "last_message.conversation_id = conversation.id"
+  //       )
+  //       .leftJoin(
+  //         subQ =>
+  //           subQ
+  //             .select("m.conversation_id", "conversation_id")
+  //             .addSelect("COUNT(*)", "unread_count")
+  //             .from("message", "m")
+  //             .where("m.is_read = false")
+  //             .groupBy("m.conversation_id"),
+  //         "unread",
+  //         "unread.conversation_id = conversation.id"
+  //       )
+  //       .addSelect("last_message.last_message", "last_message")
+  //       .addSelect("last_message.last_message_at", "last_message_at")
+  //       .addSelect("COALESCE(unread.unread_count, 0)", "unread_count")
+  //       .addSelect([
+  //         "creator_shop.id",
+  //         "creator_shop.email",
+  //         "creator_shop.fullname",
+  //         "creator_shop.store_name",
+  //         "creator_shop.image",
+  //       ])
+  //       .andWhere("conversation.is_active = :isActive", { isActive: true });
+
+  //     if (where?.status) {
+  //       queryBuilder.andWhere("conversation.status = :status", { status: where.status });
+  //     }
+
+  //     if (where?.keyword) {
+  //       queryBuilder.andWhere("conversation.title ILIKE :keyword", {
+  //         keyword: `%${where.keyword}%`,
+  //       });
+  //     }
+
+  //     const [orderField, orderDirection] = this.order(sortedBy);
+  //     queryBuilder
+  //       .skip((page - 1) * limit)
+  //       .take(limit)
+  //       .orderBy(orderField, orderDirection);
+
+  //     const [conversations, total] = await queryBuilder.getManyAndCount();
+  //     console.log(conversations);
+
+  //     return handleSuccessWithTotalData(conversations, total);
+  //   } catch (error: any) {
+  //     console.error("Error getting conversations:", error);
+  //     return handleError(config.message.internal_server_error, 500, error.message);
+  //   }
+  // }
+
+  static async getConversations(
+    {
+      where,
+      page,
+      limit,
+      sortedBy,
+      req,
+    }: {
+      where: Partial<ConversationWhereInput>;
+      page: number;
+      limit: number;
+      sortedBy: BaseOrderByInput;
+      req: Request;
+    },
+    info: GraphQLResolveInfo
+  ): Promise<Response<Conversation[] | null>> {
     const conversationRepository = getRepository(Conversation);
 
     try {
-      const adminDataFromToken = new AuthMiddlewareService().verifyStaffToken(req);
+      /** 🔐 Verify admin token */
+      const adminDataFromToken =
+        new AuthMiddlewareService().verifyStaffToken(req);
+
       if (!adminDataFromToken)
         return handleError(config.message.invalid_token, 404, null);
 
+      /** 🧱 Base query */
       const queryBuilder = conversationRepository
         .createQueryBuilder("conversation")
         .leftJoinAndMapOne(
@@ -77,6 +178,37 @@ export class ConversationService {
           "creator_shop",
           "conversation.created_by::uuid = creator_shop.id"
         )
+        .leftJoin(
+          subQ =>
+            subQ
+              .select("m.conversation_id", "conversation_id")
+              .addSelect("m.text", "last_message")
+              .addSelect("m.created_at", "last_message_at")
+              .from("message", "m")
+              .where(
+                `m.created_at = (
+                SELECT MAX(m2.created_at)
+                FROM message m2
+                WHERE m2.conversation_id = m.conversation_id
+              )`
+              ),
+          "last_message",
+          "last_message.conversation_id = conversation.id"
+        )
+        .leftJoin(
+          subQ =>
+            subQ
+              .select("m.conversation_id", "conversation_id")
+              .addSelect("COUNT(*)", "unread_count")
+              .from("message", "m")
+              .where("m.is_read = false")
+              .groupBy("m.conversation_id"),
+          "unread",
+          "unread.conversation_id = conversation.id"
+        )
+        .addSelect("last_message.last_message", "last_message")
+        .addSelect("last_message.last_message_at", "last_message_at")
+        .addSelect("COALESCE(unread.unread_count, 0)", "unread_count")
         .addSelect([
           "creator_shop.id",
           "creator_shop.email",
@@ -84,10 +216,13 @@ export class ConversationService {
           "creator_shop.store_name",
           "creator_shop.image",
         ])
-        .andWhere("conversation.is_active = :isActive", { isActive: true });
+        .where("conversation.is_active = true");
 
+      /** 🔎 Filters */
       if (where?.status) {
-        queryBuilder.andWhere("conversation.status = :status", { status: where.status });
+        queryBuilder.andWhere("conversation.status = :status", {
+          status: where.status,
+        });
       }
 
       if (where?.keyword) {
@@ -96,18 +231,37 @@ export class ConversationService {
         });
       }
 
+      /** ↕ Sorting + pagination */
       const [orderField, orderDirection] = this.order(sortedBy);
-      queryBuilder
-        .skip((page - 1) * limit)
-        .take(limit)
-        .orderBy(orderField, orderDirection);
 
-      const [conversations, total] = await queryBuilder.getManyAndCount();
+      queryBuilder
+        .orderBy(orderField, orderDirection)
+        .skip((page - 1) * limit)
+        .take(limit);
+
+      /** 📦 Fetch data */
+      const { entities, raw } = await queryBuilder.getRawAndEntities();
+
+      /** 🧠 Merge computed fields */
+      const conversations = entities.map((conversation, index) => ({
+        ...conversation,
+        last_message: raw[index]?.last_message ?? null,
+        last_message_at: raw[index]?.last_message_at ?? null,
+        unread_count: Number(raw[index]?.unread_count ?? 0),
+      }));
+
+      /** 🔢 Total count */
+      const total = await queryBuilder.getCount();
+      console.log(conversations);
 
       return handleSuccessWithTotalData(conversations, total);
     } catch (error: any) {
       console.error("Error getting conversations:", error);
-      return handleError(config.message.internal_server_error, 500, error.message);
+      return handleError(
+        config.message.internal_server_error,
+        500,
+        error.message
+      );
     }
   }
 

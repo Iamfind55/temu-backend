@@ -1164,7 +1164,7 @@ export class OrderService {
       return await transactionManager.transaction(async (entityManager) => {
         // Update order status
         existOrder.status = BaseStatus.INACTIVE;
-        existOrder.order_status = OrderStatus.DELETE;
+        existOrder.order_status = OrderStatus.DELETED;
         existOrder.payment_status = PaymentStatus.CANCELLED;
         existOrder.sign_in_status = SignInStatus.CANCELLED;
         existOrder.canelled_by_customer = customerDataFromToken.id;
@@ -1175,7 +1175,7 @@ export class OrderService {
           OrderDetail,
           { order_id: existOrder.id }, // WHERE condition
           {
-            order_status: OrderStatus.DELETE,
+            order_status: OrderStatus.DELETED,
             payment_status: PaymentStatus.CANCELLED,
             sign_in_status: SignInStatus.CANCELLED,
             canelled_by_customer: customerDataFromToken.id,

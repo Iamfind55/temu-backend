@@ -39,7 +39,7 @@ export enum OrderStatus {
   CANCELLED = "CANCELLED",
   SUCCESS = "SUCCESS",
   FAILED = "FAILED",
-  DELETE = "DELETE",
+  DELETED = "DELETED",
 }
 
 export enum SignInStatus {

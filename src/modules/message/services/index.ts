@@ -55,6 +55,8 @@ export class MessageService {
         });
 
         const savedMessage = await entityManager.save(Message, message);
+        console.log(savedMessage);
+        
         // Update conversation's last_message_at
         await entityManager.update(Conversation, data.conversation_id, {
           last_message_at: new Date(),

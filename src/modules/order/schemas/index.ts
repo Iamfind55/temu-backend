@@ -33,6 +33,7 @@ export const orderSchema = `
     CANCELLED 
     SUCCESS 
     FAILED
+    DELETED
   }
 
   enum UpdateOrderStatus {
@@ -54,6 +55,7 @@ export const orderSchema = `
     CANCELLED
     SUCCESS
     FAILED
+    DELETED
   }
   enum UpdateSignInStatus {
     PACKING

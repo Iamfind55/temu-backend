@@ -9,6 +9,8 @@ export const conversationSchema = `
     is_active: Boolean
     created_at: DateTime
     updated_at: DateTime
+    last_message: String
+    unread_count: Int
   }
 
   type ConversationMember {
