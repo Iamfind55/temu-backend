@@ -22,10 +22,16 @@ export const conversationQuery = {
     info: GraphQLResolveInfo
   ) =>
     ConversationService.getConversations({ where, page, limit, sortedBy, req }, info),
+    
   getConversation: async (
     _: any,
     { id }: { id: string },
     { req }: { req: Request }
   ) => ConversationService.getConversation({ id, req }),
-
+  
+  getShopConversation: async (
+    _: any,
+    __: any,
+    { req }: { req: Request }
+  ) => ConversationService.getConversationByShop({ req }),
 };

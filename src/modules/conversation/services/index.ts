@@ -300,6 +300,34 @@ export class ConversationService {
     }
   }
 
+  static async getConversationByShop({
+    req,
+  }: {
+    req: Request;
+  }): Promise<Response<Conversation | null>> {
+    const conversationRepository = getRepository(Conversation);
+
+    try {
+      const shopDataFromToken = new AuthMiddlewareService().verifyShopToken(req);
+      if (!shopDataFromToken)
+        return handleError(config.message.invalid_token, 404, null);
+
+      const conversation = await conversationRepository
+        .createQueryBuilder("conversation")
+        .where("conversation.is_active = :isActive", { isActive: true })
+        .andWhere("conversation.created_by = :userId", { userId: shopDataFromToken.id })
+        .getOne();
+
+      if (!conversation) {
+        return handleError("Conversation not found", 404, null);
+      }
+
+      return handleSuccess(conversation);
+    } catch (error: any) {
+      console.error("Error getting conversation:", error);
+      return handleError(config.message.internal_server_error, 500, error.message);
+    }
+  }
   static order(sortedBy: BaseOrderByInput): [string, "ASC" | "DESC"] {
     switch (sortedBy) {
       case BaseOrderByInput.created_at_ASC:

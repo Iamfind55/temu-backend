@@ -74,6 +74,7 @@ export const conversationSchema = `
   type Query {
     getConversations(where: ConversationWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessConversationResponseMany!
     getConversation(id: ID!): SuccessConversationResponseOne!
+    getShopConversation: SuccessConversationResponseOne!
   }
 
   type Mutation {

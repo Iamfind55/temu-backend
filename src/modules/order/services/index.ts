@@ -1349,7 +1349,7 @@ export class OrderService {
     const orderRepository = getRepository(Order);
     const orderDetailsRepository = getRepository(OrderDetail);
     const transactionManager = getManager();
-
+    const walletRepository = getRepository(Wallet);
     try {
       const shopDataFromToken = new AuthMiddlewareService().verifyShopToken(
         req
@@ -1370,6 +1370,7 @@ export class OrderService {
       if (!existOrder) {
         return handleError("Order not found", 404, null);
       }
+
 
       return await transactionManager.transaction(async (entityManager) => {
         // Update order status
@@ -1405,6 +1406,15 @@ export class OrderService {
         });
 
         await Promise.all(updatePromises);
+        const existingCustomerWallet = await walletRepository.findOne({
+          where: { customer_id: existOrder.created_by, is_active: true },
+        });
+
+        if (!existingCustomerWallet) {
+          throw new Error("Customer's wallet not found.");
+        }
+        existingCustomerWallet.total_balance -= existOrder.total_price;
+        await entityManager.save(Wallet, existingCustomerWallet);
 
         return handleSuccess({ ...existOrder });
       });

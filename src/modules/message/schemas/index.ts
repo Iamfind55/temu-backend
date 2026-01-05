@@ -61,7 +61,6 @@ export const messageSchema = `
     attachment: String
   }
 
-  
 
   input MessageWhereInput {
     id: ID
