@@ -239,7 +239,12 @@ export class ConversationService {
       const [orderField, orderDirection] = this.order(sortedBy);
 
       queryBuilder
-        .orderBy(orderField, orderDirection)
+        .orderBy(
+          orderField === "conversation.last_message_at"
+            ? "COALESCE(last_message.last_message_at, conversation.created_at)"
+            : orderField,
+          orderDirection
+        )
         .skip((page - 1) * limit)
         .take(limit);
 
@@ -252,7 +257,23 @@ export class ConversationService {
         unread_count: Number(raw[index]?.unread_count ?? 0),
       }));
 
-      const total = await queryBuilder.getCount();
+      const totalQuery = conversationRepository
+        .createQueryBuilder("conversation")
+        .where("conversation.is_active = true");
+
+      if (where?.status) {
+        totalQuery.andWhere("conversation.status = :status", {
+          status: where.status,
+        });
+      }
+
+      if (where?.keyword) {
+        totalQuery.andWhere("conversation.title ILIKE :keyword", {
+          keyword: `%${where.keyword}%`,
+        });
+      }
+
+      const total = await totalQuery.getCount();
 
       return handleSuccessWithTotalData(conversations, total);
     } catch (error: any) {
