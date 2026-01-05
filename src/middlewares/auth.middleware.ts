@@ -9,6 +9,7 @@ export class AuthMiddlewareService {
   verifyStaffToken(req: any): TokenData | null {
     try {
       const token = req?.headers?.authorization;
+
       if (!token) {
         return null;
       }
@@ -21,7 +22,9 @@ export class AuthMiddlewareService {
     }
   }
   verifyCustomerToken(req: any): TokenData {
+
     try {
+      
       const token = req?.headers?.authorization;
       const decoded: any = jwt.verify(token, config.customer_jwt_secret_key);
       return decoded as TokenData;
@@ -33,6 +36,7 @@ export class AuthMiddlewareService {
 
   verifyShopToken(req: any): TokenData | null {
     try {
+
       const token = req?.headers?.authorization;
       const decoded: any = jwt.verify(token, config.shop_jwt_secret_key);
       return decoded as TokenData;

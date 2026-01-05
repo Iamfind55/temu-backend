@@ -28,9 +28,14 @@ export class ConversationService {
 
     try {
       const shopDataFromToken = new AuthMiddlewareService().verifyShopToken(req);
-      if (!shopDataFromToken)
-        return handleError(config.message.invalid_token, 404, null);
 
+      if (!shopDataFromToken) {
+        return handleError(config.message.invalid_token, 404, null);
+      }
+      const existingConversation = await conversationRepository.findOneBy({ created_by: shopDataFromToken.id })
+      if (existingConversation) {
+        return handleError("This account already has an active conversation", 409, null);
+      }
       return await transactionManager.transaction(async (entityManager) => {
         // Create conversation
         const conversation = conversationRepository.create({
@@ -162,14 +167,12 @@ export class ConversationService {
     const conversationRepository = getRepository(Conversation);
 
     try {
-      /** 🔐 Verify admin token */
       const adminDataFromToken =
         new AuthMiddlewareService().verifyStaffToken(req);
 
       if (!adminDataFromToken)
         return handleError(config.message.invalid_token, 404, null);
 
-      /** 🧱 Base query */
       const queryBuilder = conversationRepository
         .createQueryBuilder("conversation")
         .leftJoinAndMapOne(
@@ -196,13 +199,16 @@ export class ConversationService {
           "last_message.conversation_id = conversation.id"
         )
         .leftJoin(
-          subQ =>
-            subQ
+          subQ => {
+            const unreadSubQ = subQ
               .select("m.conversation_id", "conversation_id")
               .addSelect("COUNT(*)", "unread_count")
               .from("message", "m")
-              .where("m.is_read = false")
-              .groupBy("m.conversation_id"),
+              .where("m.is_read = false");
+
+            unreadSubQ.andWhere("m.sender_type = 'SHOP'");
+            return unreadSubQ.groupBy("m.conversation_id");
+          },
           "unread",
           "unread.conversation_id = conversation.id"
         )
@@ -218,7 +224,6 @@ export class ConversationService {
         ])
         .where("conversation.is_active = true");
 
-      /** 🔎 Filters */
       if (where?.status) {
         queryBuilder.andWhere("conversation.status = :status", {
           status: where.status,
@@ -231,7 +236,6 @@ export class ConversationService {
         });
       }
 
-      /** ↕ Sorting + pagination */
       const [orderField, orderDirection] = this.order(sortedBy);
 
       queryBuilder
@@ -239,10 +243,8 @@ export class ConversationService {
         .skip((page - 1) * limit)
         .take(limit);
 
-      /** 📦 Fetch data */
       const { entities, raw } = await queryBuilder.getRawAndEntities();
 
-      /** 🧠 Merge computed fields */
       const conversations = entities.map((conversation, index) => ({
         ...conversation,
         last_message: raw[index]?.last_message ?? null,
@@ -250,9 +252,7 @@ export class ConversationService {
         unread_count: Number(raw[index]?.unread_count ?? 0),
       }));
 
-      /** 🔢 Total count */
       const total = await queryBuilder.getCount();
-      console.log(conversations);
 
       return handleSuccessWithTotalData(conversations, total);
     } catch (error: any) {

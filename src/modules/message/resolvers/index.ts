@@ -15,6 +15,10 @@ export const messageResolvers = {
         req: context.req,
       });
     },
+    getUnreadMessage: async (_: any, args: any, context: any) => {
+      const { req } = context;
+      return await MessageService.getUnreadMessages({ req });
+    },
   },
 
   Mutation: {

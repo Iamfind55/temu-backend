@@ -7,7 +7,7 @@ import pubsub, { SUBSCRIPTION_EVENTS } from "../../../utils/pubsub";
 import { handleError } from "../../../utils/response/error.handler";
 import { Response } from "../../../utils/response/response.types";
 import { handleSuccess, handleSuccessWithTotalData } from "../../../utils/response/success.handler";
-import { Conversation } from "../../conversation";
+import { Conversation, ConversationStatus } from "../../conversation";
 import { Shop } from "../../shop";
 import { Staff } from "../../staff";
 import { Message } from "../entity";
@@ -24,6 +24,7 @@ export class MessageService {
   }): Promise<Response<Message | null>> {
     const transactionManager = getManager();
     const messageRepository = getRepository(Message);
+    const conversationRepository = getRepository(Conversation);
 
     try {
       // Try to verify shop token first
@@ -43,7 +44,20 @@ export class MessageService {
         senderId = staffDataFromToken.id;
         senderType = SenderType.ADMIN;
       }
-
+      const shopConversaction = senderType == SenderType.SHOP
+      if (!data?.conversation_id && shopConversaction) {
+        const existingConversation = await conversationRepository.findOneBy({ created_by: senderId, status: ConversationStatus.ACTIVE })
+        if (!existingConversation) {
+          const conversation = conversationRepository.create({
+            created_by: senderId,
+            status: ConversationStatus.ACTIVE,
+          })
+          const created = await conversationRepository.save(conversation)
+          data.conversation_id = created.id
+        } else {
+          data.conversation_id = existingConversation.id
+        }
+      }
       return await transactionManager.transaction(async (entityManager) => {
         const message = messageRepository.create({
           conversation_id: data.conversation_id,
@@ -55,8 +69,7 @@ export class MessageService {
         });
 
         const savedMessage = await entityManager.save(Message, message);
-        console.log(savedMessage);
-        
+
         // Update conversation's last_message_at
         await entityManager.update(Conversation, data.conversation_id, {
           last_message_at: new Date(),
@@ -67,6 +80,7 @@ export class MessageService {
           where: { id: messageId },
           relations: ["replyTo"],
         });
+
         if (completeMessage) {
           if (completeMessage.sender_type === SenderType.SHOP) {
             const shopSender = await getRepository(Shop)
@@ -101,15 +115,15 @@ export class MessageService {
         }
 
 
-        // Publish to conversation-specific subscribers
         await pubsub.publish(`${SUBSCRIPTION_EVENTS.MESSAGE_ADDED}_${data.conversation_id}`, {
-          sendMessage: { type: (data as any).reply_to_id ? MessageType.REPLY : MessageType.NEW, completeMessage },
+          sendMessage: { type: (data as any).reply_to_id ? MessageType.REPLY : MessageType.NEW, ...completeMessage },
         });
+
 
         // If message is from SHOP, notify admins
         if (senderType === SenderType.SHOP) {
           await pubsub.publish(SUBSCRIPTION_EVENTS.NEW_MESSAGE_FOR_ADMIN, {
-            newMessageForAdmin: completeMessage,
+            newMessageForAdmin: { type: (data as any).reply_to_id ? MessageType.REPLY : MessageType.NEW, ...completeMessage },
           });
         }
         return handleSuccess(savedMessage);
@@ -157,7 +171,41 @@ export class MessageService {
   }
 
 
+  static async getUnreadMessages({ req }: { req: Request }) {
+    const messageRepository = getRepository(Message);
 
+    try {
+      // Verify token
+      const userData = new AuthMiddlewareService().verifyStaffToken(req);
+      if (!userData) {
+        return handleError("Invalid token", 401, null);
+      }
+      // Fetch unread messages sent to the viewer
+      const unreadMessages = await messageRepository.find({
+        where: {
+          is_read: false,
+          sender_type: SenderType.SHOP,
+          is_active: true,
+          is_deleted: false
+        },
+        order: {
+          created_at: "ASC",
+        },
+      });
+
+      return handleSuccessWithTotalData(
+        unreadMessages,
+        unreadMessages.length
+      );
+    } catch (error: any) {
+      console.error("Error fetching unread messages:", error);
+      return handleError(
+        "Internal server error",
+        500,
+        error.message
+      );
+    }
+  }
   static async getMessages({
     where,
     page,

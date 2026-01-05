@@ -49,7 +49,7 @@ export const messageSchema = `
   }
 
   input SendMessageInput {
-    conversation_id: ID!
+    conversation_id: ID
     text: String
     attachment: String
   }
@@ -83,6 +83,12 @@ export const messageSchema = `
     error: Error
   }
 
+  type SuccessResponse {
+    total: Int
+    success: Boolean!
+    error: Error
+  } 
+
   type SuccessBooleanResponse {
     success: Boolean!
     error: Error
@@ -90,6 +96,7 @@ export const messageSchema = `
 
   type Query {
     getMessages(where: MessageWhereInput!, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessMessageResponseMany!
+    getUnreadMessage: SuccessResponse!
   }
 
   type Mutation {
