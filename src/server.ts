@@ -59,10 +59,22 @@ const startApp = async () => {
     path: "/graphql",
   });
 
-  useServer(
+  const serverCleanup = useServer(
     {
       schema,
-      context: async () => ({ pubsub }),
+      context: async (ctx) => {
+        // ctx contains connectionParams from the client
+        return {
+          pubsub,
+          connectionParams: ctx.connectionParams,
+        };
+      },
+      onConnect: async () => {
+        console.log("WebSocket client connected");
+      },
+      onDisconnect: async () => {
+        console.log("WebSocket client disconnected");
+      },
     },
     wsServer
   );
@@ -76,18 +88,25 @@ const startApp = async () => {
         async serverWillStart() {
           return {
             async drainServer() {
-              await wsServer.close(); // Ensure WebSocket server closes properly on shutdown
+              await serverCleanup.dispose(); // Properly dispose of WebSocket server
             },
           };
         },
       },
     ],
+    // Disable Apollo Server's built-in subscription support since we're using graphql-ws
+    csrfPrevention: false,
   });
 
   // Middleware
   // Allow server to receive 100MB JSON payloads
   app.use(express.json({ limit: "100mb" }));
-  app.use(cors());
+
+  // Configure CORS to allow WebSocket connections
+  app.use(cors({
+    origin: true,
+    credentials: true,
+  }));
 
   // Start Apollo Server
   await server.start();
