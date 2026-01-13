@@ -19,7 +19,7 @@ class AuthMiddlewareService {
         }
         catch (error) {
             console.error("Token verification failed:", error.message);
-            throw new Error(error);
+            return null;
         }
     }
     verifyCustomerToken(req) {
@@ -60,7 +60,7 @@ class AuthMiddlewareService {
     genStaffToken(data) {
         try {
             // Generate JWT token
-            const token = jsonwebtoken_1.default.sign({ id: data.id, role: data.role }, config_1.config.staff_jwt_secret_key, {
+            const token = jsonwebtoken_1.default.sign({ id: data.id, role: data.role, type: "STAFF" }, config_1.config.staff_jwt_secret_key, {
                 expiresIn: "15d", // Token expiration time
             });
             return token;

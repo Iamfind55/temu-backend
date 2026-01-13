@@ -17,7 +17,7 @@ exports.customerSchema = `
     created_by: String
     created_at: DateTime
     updated_at: DateTime
-    payment_method: [PaymentMethodType]
+    payment_method: PaymentMethodType
   } 
 
   enum CustomerType {
@@ -72,7 +72,7 @@ exports.customerSchema = `
     image: String
     customer_address: String
     status: BaseStatus
-    payment_method: [PaymentMethodInput]
+    payment_method: PaymentMethodInput
   }
   input UpdateCustomerInformationInput {
     firstName: String
@@ -86,7 +86,7 @@ exports.customerSchema = `
     customer_address: String
     status: BaseStatus
     customer_type: CustomerType
-    payment_method: [PaymentMethodInput]
+    payment_method: PaymentMethodInput
   }
 
   input CustomerWhereInput {

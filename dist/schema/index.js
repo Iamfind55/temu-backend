@@ -25,6 +25,9 @@ const schemas_20 = require("../modules/transactionHistory/schemas");
 const schemas_21 = require("../modules/wallet/schemas");
 const schema_1 = require("../modules/shopFollower/schema");
 const schema_2 = require("../modules/deposit/schema");
+const schema_3 = require("../modules/withdraw/schema");
+const schemas_22 = require("../modules/message/schemas");
+const schemas_23 = require("../modules/conversation/schemas");
 exports.typeDefs = (0, apollo_server_express_1.gql) `
   scalar Upload
   scalar JSON
@@ -134,4 +137,7 @@ exports.typeDefs = (0, apollo_server_express_1.gql) `
   ${schemas_2.attributeSchema}
   ${schema_1.shopFollowerSchemas}
   ${schema_2.depositSchema}
+  ${schema_3.withdrawSchema}
+  ${schemas_22.messageSchema}
+  ${schemas_23.conversationSchema}
 `;

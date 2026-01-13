@@ -22,6 +22,7 @@ exports.shopMutation = {
     shopLogin: (_1, _a, _b) => __awaiter(void 0, [_1, _a, _b], void 0, function* (_, { where }, { req }) { return services_1.ShopService.shopLogin({ where }); }),
     shopForgotPassword: (_1, _a, _b) => __awaiter(void 0, [_1, _a, _b], void 0, function* (_, { email }, { req }) { return services_1.ShopService.shopForgotPassword({ email }); }),
     shopResetPassword: (_1, _a, _b) => __awaiter(void 0, [_1, _a, _b], void 0, function* (_, { data }, { req }) { return services_1.ShopService.shopResetPassword({ data: data, req }); }),
+    shopResendOTP: (_1, _a, _b) => __awaiter(void 0, [_1, _a, _b], void 0, function* (_, { data }, { req }) { return services_1.ShopService.shopRendOTP({ data: data, req }); }),
     shopRequestVIP: (_1, _a, _b) => __awaiter(void 0, [_1, _a, _b], void 0, function* (_, { data }, { req }) { return services_1.ShopService.shopRequestVIP({ data: data, req }); }),
     adminApproveShopRequestVIP: (_1, _a, _b) => __awaiter(void 0, [_1, _a, _b], void 0, function* (_, { id }, { req }) { return services_1.ShopService.adminApproveShopRequestVIP({ id: id, req }); }),
 };

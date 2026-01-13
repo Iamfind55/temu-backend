@@ -27,8 +27,7 @@ exports.transactionHistorySchema = `
     coin_type: CoinTypeEnum
     payment_slip: String
     wallet_id: String
-    status: BaseStatus
-    transaction_status: TransactionStatusEnum
+    status: TransactionStatusEnum
     shop_id: String
     shop: Shop
     customer_id: String

@@ -2,7 +2,7 @@ export const depositSchema = `
   type Deposit {
     id: ID
     amount: Float
-    coin_type: ECoinType
+    coin_type: String
     status: EDeposit
     image: String
     note: String
@@ -22,12 +22,6 @@ export const depositSchema = `
     transaction: TransactionHistory
   }
 
-  enum ECoinType {
-    ERC20
-    TRC20
-    BTC
-  }
-
   enum EDeposit {
     pending
     draff
@@ -43,7 +37,7 @@ export const depositSchema = `
   }
 
   input CreateDepositInput {
-    coin_type: ECoinType!
+    coin_type: String!
     walled_id: String!
     amount: Float!
     payment_slip: String!

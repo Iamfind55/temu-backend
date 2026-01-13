@@ -60,6 +60,8 @@ exports.categorySchema = `
 
   type Query {
     getCategories(where: CategoryWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessCategoryResponseMany!
+    getMainCategories(where: CategoryWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessCategoryResponseMany!
+    getSubcategories(where: CategoryWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessCategoryResponseMany!
     adminGetCategories(where: CategoryWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessCategoryResponseMany!
     getAllCategories(limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessCategoryResponseMany!
     getCategory(id: ID!): SuccessCategoryResponseOne!

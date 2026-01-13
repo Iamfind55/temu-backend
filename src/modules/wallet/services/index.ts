@@ -18,6 +18,7 @@ import { Wallet } from "../entity";
 import { BaseOrderByInput, BaseStatus } from "../../../utils/base/baseType";
 import { AuthMiddlewareService } from "../../../middlewares/auth.middleware";
 import {
+  ECoinType,
   ETransactionHistoryIdentifier,
   TransactionHistory,
 } from "../../transactionHistory";
@@ -88,6 +89,7 @@ export class WalletService {
           code: 400,
         };
       }
+
 
       return await getManager().transaction(
         async (transactionEntityManager) => {
@@ -190,7 +192,10 @@ export class WalletService {
           code: 400,
         };
       }
-
+      const { coin_type } = data
+      if (!Object.values(ECoinType).includes(coin_type as ECoinType)) {
+        return handleError("Type of coin incorrect", 400);
+      }
       return await getManager().transaction(
         async (transactionEntityManager) => {
           // Fetch the active wallet inside the transaction
@@ -335,7 +340,10 @@ export class WalletService {
           );
         }
       }
-
+      const { coin_type } = data
+      if (!Object.values(ECoinType).includes(coin_type as ECoinType)) {
+        return handleError("Type of coin incorrect", 400, shopDataFromToken);
+      }
       // Determine the appropriate user ID field based on token type
       const userIdField =
         shopDataFromToken?.type === "SHOP"
@@ -399,6 +407,10 @@ export class WalletService {
         shop_id: existShop.id,
         customer_id: undefined,
       };
+      const { coin_type } = data
+      if (!Object.values(ECoinType).includes(coin_type as ECoinType)) {
+        return handleError("Type of coin incorrect", 400);
+      }
 
       // Recharge the balance using the rechargeBalance method
       const wallet = await this.rechargeBalance({
@@ -449,6 +461,10 @@ export class WalletService {
         }
       }
 
+      const { coin_type } = data
+      if (!Object.values(ECoinType).includes(coin_type as ECoinType)) {
+        return handleError("Type of coin incorrect", 400);
+      }
       // Determine the appropriate user ID field based on token type
       const userIdField =
         shopDataFromToken?.type === "SHOP"

@@ -25,6 +25,7 @@ exports.orderDetailSchema = `
     shop: Shop
     delivery_type: DeliveryTypeEnum
     customer_id: String
+    product: Product
     customerData: Customer
     logistics: Logistics
     order: Order

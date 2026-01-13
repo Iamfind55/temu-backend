@@ -29,8 +29,8 @@ export enum ETransactionHistoryIdentifier {
 }
 
 export enum ECoinType {
-  ERC20 = "ERC20",
-  TRC20 = "TRC20",
+  ETH = "ETH",
+  TRX_USDT = "BRX/USDT",
   BTC = "BTC",
 }
 

@@ -94,7 +94,7 @@ class LogisticsService {
                 if (!logistic) {
                     return (0, error_handler_1.handleError)("logistic not found", 404, null);
                 }
-                // await logisticRepository.remove(logistic);
+                // Soft delete: set is_active to false instead of removing
                 logisticRepository.merge(logistic, { is_active: false });
                 yield logisticRepository.save(logistic);
                 return (0, success_handler_1.handleSuccess)(logistic);
@@ -108,7 +108,9 @@ class LogisticsService {
         return __awaiter(this, arguments, void 0, function* ({ where, page, limit, sortedBy, }) {
             const logisticRepository = (0, typeorm_1.getRepository)(entity_1.Logistics);
             try {
-                const query = logisticRepository.createQueryBuilder("logistics");
+                const query = logisticRepository
+                    .createQueryBuilder("logistics")
+                    .where("logistics.is_active = :isActive", { isActive: true });
                 // Filtering
                 if (where) {
                     if (where.keyword) {

@@ -15,6 +15,8 @@ const baseEntity_1 = require("../../../utils/base/baseEntity");
 const baseType_1 = require("../../../utils/base/baseType");
 const shop_1 = require("../../shop");
 const customer_1 = require("../../customer");
+const deposit_1 = require("../../deposit");
+const withdraw_1 = require("../../withdraw");
 let Wallet = class Wallet extends baseEntity_1.BaseEntity {
 };
 exports.Wallet = Wallet;
@@ -68,6 +70,12 @@ __decorate([
     (0, typeorm_1.JoinColumn)({ name: "customer_id" }),
     __metadata("design:type", customer_1.Customer)
 ], Wallet.prototype, "customer", void 0);
+__decorate([
+    (0, typeorm_1.OneToOne)(() => withdraw_1.Withdraw, deposit => deposit.wallet, {
+        nullable: true,
+    }),
+    __metadata("design:type", deposit_1.Deposit)
+], Wallet.prototype, "withdraw", void 0);
 exports.Wallet = Wallet = __decorate([
     (0, typeorm_1.Entity)()
 ], Wallet);

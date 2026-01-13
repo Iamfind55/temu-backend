@@ -43,10 +43,11 @@ class TransactionHistoryService {
                         });
                     }));
                 }
+                // Only filter by identifier if provided, otherwise return all
                 if (where === null || where === void 0 ? void 0 : where.identifier) {
                     queryBuilder.andWhere(new typeorm_1.Brackets((qb) => {
                         qb.where("transaction_history.identifier = :identifier", {
-                            identifier: `${where.identifier}`,
+                            identifier: where.identifier,
                         });
                     }));
                 }
@@ -257,7 +258,7 @@ class TransactionHistoryService {
                         where: {
                             id: id,
                             is_active: true,
-                            transaction_status: types_1.ETransactionStatus.PENDING,
+                            status: types_1.ETransactionStatus.PENDING,
                             // identifier: ETransactionHistoryIdentifier.RECHARGE,
                         },
                     });
@@ -265,7 +266,7 @@ class TransactionHistoryService {
                         return (0, error_handler_1.handleError)("Transaction not found.", 404, null);
                     }
                     // Update the transaction status
-                    transactionHistory.transaction_status = types_1.ETransactionStatus.APPROVED;
+                    transactionHistory.status = types_1.ETransactionStatus.APPROVED;
                     transactionHistory.approved_by = staffDataFromToken.id;
                     const updatedTransactionHistory = yield transactionalEntityManager.save(entity_1.TransactionHistory, transactionHistory);
                     // Fetch the associated wallet
@@ -297,6 +298,7 @@ class TransactionHistoryService {
                 return result;
             }
             catch (error) {
+                console.log(error);
                 return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
             }
         });
@@ -314,7 +316,7 @@ class TransactionHistoryService {
                         where: {
                             id: id,
                             is_active: true,
-                            transaction_status: types_1.ETransactionStatus.PENDING,
+                            status: types_1.ETransactionStatus.PENDING,
                             identifier: types_1.ETransactionHistoryIdentifier.WITHDRAW,
                         },
                     });
@@ -322,7 +324,7 @@ class TransactionHistoryService {
                         throw new Error("Transaction not found");
                     }
                     // Update the transaction status
-                    transactionHistory.transaction_status = types_1.ETransactionStatus.APPROVED;
+                    transactionHistory.status = types_1.ETransactionStatus.APPROVED;
                     transactionHistory.approved_by = staffDataFromToken.id;
                     const updatedTransactionHistory = yield transactionalEntityManager.save(entity_1.TransactionHistory, transactionHistory);
                     // Fetch the associated wallet
@@ -359,14 +361,14 @@ class TransactionHistoryService {
                         where: {
                             id: id,
                             is_active: true,
-                            transaction_status: types_1.ETransactionStatus.PENDING,
+                            status: types_1.ETransactionStatus.PENDING,
                         },
                     });
                     if (!transactionHistory) {
                         throw new Error("Transaction not found");
                     }
                     // Update the transaction status
-                    transactionHistory.transaction_status = types_1.ETransactionStatus.REJECTED;
+                    transactionHistory.status = types_1.ETransactionStatus.REJECTED;
                     transactionHistory.rejected_by = staffDataFromToken.id;
                     const updatedTransactionHistory = yield transactionalEntityManager.save(entity_1.TransactionHistory, transactionHistory);
                     return updatedTransactionHistory;
@@ -383,7 +385,7 @@ class TransactionHistoryService {
             try {
                 const transactionHistoryRepository = (0, typeorm_1.getRepository)(entity_1.TransactionHistory);
                 const queryBuilder = transactionHistoryRepository.createQueryBuilder("transactionHistory");
-                queryBuilder.where("transactionHistory.transaction_status = :transactionHistory", {
+                queryBuilder.where("transactionHistory.status = :transactionHistory", {
                     transactionHistory: types_1.ETransactionStatus.PENDING,
                 });
                 if ([

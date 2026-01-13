@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SUBSCRIPTION_EVENTS = void 0;
 const graphql_redis_subscriptions_1 = require("graphql-redis-subscriptions");
 const ioredis_1 = __importDefault(require("ioredis"));
 let options = {
@@ -31,4 +32,10 @@ const pubsub = new graphql_redis_subscriptions_1.RedisPubSub({
     publisher,
     subscriber,
 });
+exports.SUBSCRIPTION_EVENTS = {
+    MESSAGE_ADDED: "MESSAGE_ADDED",
+    MESSAGE_STATUS_UPDATED: "MESSAGE_STATUS_UPDATED",
+    NEW_MESSAGE_FOR_ADMIN: "NEW_MESSAGE_FOR_ADMIN",
+    MESSAGE_DELETED: "MESSAGE_DELETED",
+};
 exports.default = pubsub;

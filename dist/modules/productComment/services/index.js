@@ -174,7 +174,6 @@ class ProductCommentService {
                 const customers = yield customerRepository.findByIds(customerIds);
                 // Attach customer data to each comment
                 const commentsWithCustomer = comments.map((comment) => (Object.assign(Object.assign({}, comment), { customer: customers.find((c) => c.id === comment.customer_id) })));
-                console.log(commentsWithCustomer);
                 return (0, success_handler_1.handleSuccessWithTotalData)(commentsWithCustomer, total);
             }
             catch (error) {
@@ -191,6 +190,55 @@ class ProductCommentService {
                     return (0, error_handler_1.handleError)("Product star not found", 404, null);
                 }
                 return (0, success_handler_1.handleSuccess)(productComment);
+            }
+            catch (error) {
+                return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
+            }
+        });
+    }
+    static getProductCommentProductID(_a) {
+        return __awaiter(this, arguments, void 0, function* ({ where, page, limit, sortedBy, }) {
+            var _b, _c;
+            const productCommentRepository = (0, typeorm_1.getRepository)(entity_1.ProductComment);
+            const customerRepository = (0, typeorm_1.getRepository)(customer_1.Customer);
+            try {
+                const order = this.order(sortedBy);
+                const queryBuilder = productCommentRepository
+                    .createQueryBuilder("pc")
+                    .where("pc.status = :active", { active: baseType_1.BaseStatus.ACTIVE });
+                // Filter by product_id
+                if (where === null || where === void 0 ? void 0 : where.productId) {
+                    queryBuilder.andWhere("pc.product_id = :productId", {
+                        productId: where.productId,
+                    });
+                }
+                // Filter by comment text
+                if (where === null || where === void 0 ? void 0 : where.comment) {
+                    queryBuilder.andWhere("pc.comment ILIKE :comment", {
+                        comment: `%${where.comment}%`,
+                    });
+                }
+                // Filter by date range
+                if (((_b = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _b === void 0 ? void 0 : _b.startDate) &&
+                    ((_c = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _c === void 0 ? void 0 : _c.endDate)) {
+                    queryBuilder.andWhere("DATE(pc.created_at) BETWEEN :startDate AND :endDate", {
+                        startDate: where.createdAtBetween.startDate,
+                        endDate: where.createdAtBetween.endDate,
+                    });
+                }
+                // Pagination and sorting
+                queryBuilder
+                    .skip((page - 1) * limit)
+                    .take(limit)
+                    .orderBy(order);
+                // Execute query
+                const [comments, total] = yield queryBuilder.getManyAndCount();
+                // Manual join: fetch customers by customer_id
+                const customerIds = comments.map((c) => c.customer_id);
+                const customers = yield customerRepository.findByIds(customerIds);
+                // Attach customer data to each comment
+                const commentsWithCustomer = comments.map((comment) => (Object.assign(Object.assign({}, comment), { customer: customers.find((c) => c.id === comment.customer_id) })));
+                return (0, success_handler_1.handleSuccessWithTotalData)(commentsWithCustomer, total);
             }
             catch (error) {
                 return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);

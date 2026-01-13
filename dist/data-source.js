@@ -1,31 +1,35 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
-const transactionHistory_1 = require("./modules/transactionHistory");
-const customer_1 = require("./modules/customer");
-const shop_1 = require("./modules/shop");
 const config_1 = require("./config");
+const aboutUs_1 = require("./modules/aboutUs");
+const attribute_1 = require("./modules/attribute");
+const entity_1 = require("./modules/attributeValue/entity");
 const banner_1 = require("./modules/banner");
 const branding_1 = require("./modules/branding");
 const category_1 = require("./modules/category");
-const staff_1 = require("./modules/staff");
-const shopType_1 = require("./modules/shopType");
-const shopSocial_1 = require("./modules/shopSocial");
-const shopAddress_1 = require("./modules/shopAddress");
-const product_1 = require("./modules/product");
-const productComment_1 = require("./modules/productComment");
-const shopProduct_1 = require("./modules/shopProduct");
-const aboutUs_1 = require("./modules/aboutUs");
-const wallet_1 = require("./modules/wallet");
+const categoryAttribute_1 = require("./modules/categoryAttribute");
+const conversation_1 = require("./modules/conversation");
+const customer_1 = require("./modules/customer");
+const deposit_1 = require("./modules/deposit");
+const logistics_1 = require("./modules/logistics");
+const message_1 = require("./modules/message");
+const notification_1 = require("./modules/notification");
 const order_1 = require("./modules/order");
 const orderDetail_1 = require("./modules/orderDetail");
-const notification_1 = require("./modules/notification");
-const logistics_1 = require("./modules/logistics");
-const attribute_1 = require("./modules/attribute");
-const entity_1 = require("./modules/attributeValue/entity");
-const categoryAttribute_1 = require("./modules/categoryAttribute");
-const shopFollower_1 = require("./modules/shopFollower");
+const product_1 = require("./modules/product");
+const productComment_1 = require("./modules/productComment");
 const productTag_1 = require("./modules/productTag");
+const shop_1 = require("./modules/shop");
+const shopAddress_1 = require("./modules/shopAddress");
+const shopFollower_1 = require("./modules/shopFollower");
+const shopProduct_1 = require("./modules/shopProduct");
+const shopSocial_1 = require("./modules/shopSocial");
+const shopType_1 = require("./modules/shopType");
+const staff_1 = require("./modules/staff");
+const transactionHistory_1 = require("./modules/transactionHistory");
+const wallet_1 = require("./modules/wallet");
+const withdraw_1 = require("./modules/withdraw");
 const AppDataSource = new typeorm_1.DataSource({
     type: "postgres",
     host: config_1.config.db_host, // Replace with your PostgreSQL host
@@ -60,6 +64,10 @@ const AppDataSource = new typeorm_1.DataSource({
         categoryAttribute_1.CategoryAttribute,
         shopFollower_1.ShopFollower,
         productTag_1.ProductTag,
+        deposit_1.Deposit,
+        withdraw_1.Withdraw,
+        conversation_1.Conversation,
+        message_1.Message,
     ],
     migrations: ["migrations/*.ts"],
     subscribers: [],

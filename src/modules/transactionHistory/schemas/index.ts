@@ -1,10 +1,4 @@
 export const transactionHistorySchema = ` 
-  enum CoinTypeEnum {
-    ERC20 
-    TRC20 
-    BTC
-  }
-
   enum TransactionIdentifierEnum {
     RECHARGE
     WITHDRAW
@@ -21,7 +15,7 @@ export const transactionHistorySchema = `
     id: ID
     identifier: TransactionIdentifierEnum
     amount: Float
-    coin_type: CoinTypeEnum
+    coin_type: String
     payment_slip: String
     wallet_id: String
     status: TransactionStatusEnum
@@ -37,7 +31,7 @@ export const transactionHistorySchema = `
 
   input TransactionHistoryWhereInput {
     identifier: TransactionIdentifierEnum
-    coin_type: CoinTypeEnum
+    coin_type: String
     createdAtBetween: DateBetweenInput
   }
 

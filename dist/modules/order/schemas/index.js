@@ -36,6 +36,7 @@ exports.orderSchema = `
     CANCELLED 
     SUCCESS 
     FAILED
+    DELETED
   }
 
   enum UpdateOrderStatus {
@@ -57,6 +58,7 @@ exports.orderSchema = `
     CANCELLED
     SUCCESS
     FAILED
+    DELETED
   }
   enum UpdateSignInStatus {
     PACKING
@@ -73,7 +75,6 @@ exports.orderSchema = `
     payment_slip: String
     address_id: ID
     delivery_type: DeliveryTypeEnum
-    logistics_id: ID
   }
 
   input AdminUpdateOrderByStatusInput {
@@ -135,7 +136,7 @@ exports.orderSchema = `
    shopConfirmOrder(id: ID!): SuccessOrderResponseOne!
    shopCancelOrder(id: ID!): SuccessOrderResponseOne!
    adminUpdateOrderWithStatus(data: AdminUpdateOrderByStatusInput!): SuccessOrderResponseMany!
-   # deleteOrder(id: ID!): SuccessOrderResponseOne!
+   deleteOrder(id: ID!): SuccessOrderResponseOne!
  }
 
   type Subscription {

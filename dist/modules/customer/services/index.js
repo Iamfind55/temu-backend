@@ -117,7 +117,6 @@ class CustomerService {
                     return (0, error_handler_1.handleError)(config_1.config.message.user_not_found, 404, null);
                 }
                 const { otp: customerOtp, isVerified, otpExpire_at } = customer;
-                console.log(isVerified);
                 if (isVerified) {
                     return (0, error_handler_1.handleError)("The OTP is expires", 404, null);
                 }
@@ -300,8 +299,8 @@ class CustomerService {
                     data.password = yield (0, helper_1.hashPassword)(data.password);
                 }
                 // Handle payment method updates
-                if (data.payment_method && Array.isArray(data.payment_method)) {
-                    // Assign the updated payment methods back to the shop entity
+                if (data.payment_method && typeof data.payment_method === 'object') {
+                    // Merge the updated payment method with existing payment method
                     const updatePaymentMethodData = this.updateCustomerMethodMapingData(data, shop);
                     data.payment_method = updatePaymentMethodData;
                 }
@@ -316,16 +315,18 @@ class CustomerService {
         });
     }
     static updateCustomerMethodMapingData(data, shop) {
-        const existingPaymentMethods = shop.payment_method || [];
-        const updatedPaymentMethods = (data === null || data === void 0 ? void 0 : data.payment_method) || [];
-        // Update existing methods or add new ones
-        const updatePaymentMethodData = existingPaymentMethods.map((method) => {
-            const existPaymentMethodUpdate = updatedPaymentMethods.find((paymentMethod) => (paymentMethod === null || paymentMethod === void 0 ? void 0 : paymentMethod.id) === (method === null || method === void 0 ? void 0 : method.id) && (paymentMethod === null || paymentMethod === void 0 ? void 0 : paymentMethod.id) != null);
-            if (existPaymentMethodUpdate) {
-                return Object.assign(Object.assign({}, method), existPaymentMethodUpdate);
-            }
-            return method;
-        });
+        const existingPaymentMethod = shop.payment_method;
+        const updatedPaymentMethod = data === null || data === void 0 ? void 0 : data.payment_method;
+        // If no updated payment method is provided, return the existing one
+        if (!updatedPaymentMethod) {
+            return existingPaymentMethod;
+        }
+        // If there's no existing payment method, return the updated one
+        if (!existingPaymentMethod) {
+            return updatedPaymentMethod;
+        }
+        // Merge existing and updated payment method
+        const updatePaymentMethodData = Object.assign(Object.assign({}, existingPaymentMethod), updatedPaymentMethod);
         return updatePaymentMethodData;
     }
     static deleteCustomer(_a) {

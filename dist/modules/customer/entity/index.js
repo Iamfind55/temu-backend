@@ -21,6 +21,7 @@ const orderDetail_1 = require("../../orderDetail");
 const types_1 = require("../types");
 const shopFollower_1 = require("../../shopFollower");
 const entity_1 = require("../../deposit/entity");
+const withdraw_1 = require("../../withdraw");
 let Customer = class Customer extends baseEntity_1.BaseEntity {
 };
 exports.Customer = Customer;
@@ -96,26 +97,16 @@ __decorate([
     (0, typeorm_1.Column)({
         type: "json",
         nullable: true,
-        default: [
-            {
-                id: (0, uuid_1.v4)(),
-                code: "USDT",
-                bank_name: "",
-                bank_account_name: "",
-                bank_account_number: "",
-                is_enable: true,
-            },
-            {
-                id: (0, uuid_1.v4)(),
-                code: "BANK",
-                bank_name: "",
-                bank_account_name: "",
-                bank_account_number: "",
-                is_enable: true,
-            },
-        ],
+        default: {
+            id: (0, uuid_1.v4)(),
+            code: "USDT",
+            bank_name: "",
+            bank_account_name: "",
+            bank_account_number: "",
+            is_enable: true,
+        },
     }),
-    __metadata("design:type", Array)
+    __metadata("design:type", Object)
 ], Customer.prototype, "payment_method", void 0);
 __decorate([
     (0, typeorm_1.OneToMany)(() => order_1.Order, (order) => order.customerData) // Define OneToMany relationship
@@ -140,6 +131,10 @@ __decorate([
     (0, typeorm_1.OneToMany)(() => shopFollower_1.ShopFollower, (follower) => follower.customer),
     __metadata("design:type", Array)
 ], Customer.prototype, "followedShops", void 0);
+__decorate([
+    (0, typeorm_1.OneToMany)(() => withdraw_1.Withdraw, (w) => w.customer),
+    __metadata("design:type", Array)
+], Customer.prototype, "withdraw", void 0);
 __decorate([
     (0, typeorm_1.OneToMany)(() => entity_1.Deposit, (deposit) => deposit.customer),
     __metadata("design:type", Array)

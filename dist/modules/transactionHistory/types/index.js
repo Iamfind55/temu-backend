@@ -5,11 +5,12 @@ var ETransactionHistoryIdentifier;
 (function (ETransactionHistoryIdentifier) {
     ETransactionHistoryIdentifier["RECHARGE"] = "RECHARGE";
     ETransactionHistoryIdentifier["WITHDRAW"] = "WITHDRAW";
+    ETransactionHistoryIdentifier["DEPOSIT"] = "DEPOSIT";
 })(ETransactionHistoryIdentifier || (exports.ETransactionHistoryIdentifier = ETransactionHistoryIdentifier = {}));
 var ECoinType;
 (function (ECoinType) {
-    ECoinType["ERC20"] = "ERC20";
-    ECoinType["TRC20"] = "TRC20";
+    ECoinType["ETH"] = "ETH";
+    ECoinType["TRX_USDT"] = "BRX/USDT";
     ECoinType["BTC"] = "BTC";
 })(ECoinType || (exports.ECoinType = ECoinType = {}));
 var ETransactionStatus;

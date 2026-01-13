@@ -19,6 +19,8 @@ const baseType_1 = require("../../../utils/base/baseType");
 const auth_middleware_1 = require("../../../middlewares/auth.middleware");
 const entity_2 = require("../../order/entity");
 const logistics_1 = require("../../logistics");
+const entity_3 = require("../../product/entity");
+const branding_1 = require("../../branding");
 class OrderService {
     static getOrderDetails(_a) {
         return __awaiter(this, arguments, void 0, function* ({ where, page, limit, sortedBy, }) {
@@ -84,9 +86,107 @@ class OrderService {
                     .leftJoinAndMapOne("order_detail.order", entity_2.Order, // entity class
                 "order", "order_detail.order_id::uuid = order.id")
                     .leftJoinAndMapOne("order_detail.logistics", logistics_1.Logistics, "logistics", "order.logistics_id = logistics.id")
+                    .leftJoinAndMapOne("order_detail.product", entity_3.Product, "product", "order_detail.product_id::uuid = product.id")
                     .leftJoinAndSelect("order_detail.customerData", "customerData")
                     .leftJoinAndSelect("order_detail.shop", "shop")
                     .where("order_detail.is_active = :active", { active: true });
+                // Add brand join for admin
+                if (userType === "admin") {
+                    queryBuilder.leftJoinAndMapOne("order_detail.brand", branding_1.Branding, "brand", "product.brand_id::uuid = brand.id");
+                }
+                // Add specific field selection for admin
+                if (userType === "admin") {
+                    queryBuilder.select([
+                        // Order detail fields
+                        "order_detail.id",
+                        "order_detail.created_at",
+                        "order_detail.updated_at",
+                        "order_detail.order_no",
+                        "order_detail.product_name",
+                        "order_detail.product_cover_image",
+                        "order_detail.sku",
+                        "order_detail.spu",
+                        "order_detail.quantity",
+                        "order_detail.price",
+                        "order_detail.discount",
+                        "order_detail.profit",
+                        "order_detail.shop_id",
+                        "order_detail.product_id",
+                        "order_detail.category_id",
+                        "order_detail.order_id",
+                        "order_detail.customer_id",
+                        "order_detail.address_id",
+                        "order_detail.status",
+                        "order_detail.payment_status",
+                        "order_detail.order_status",
+                        "order_detail.inventory",
+                        "order_detail.delivery_type",
+                        "order_detail.sign_in_status",
+                        "order_detail.canelled_by_shop",
+                        "order_detail.updated_by_admin",
+                        "order_detail.canelled_by_customer",
+                        // Order fields
+                        "order.id",
+                        "order.order_no",
+                        "order.total_quantity",
+                        "order.total_products",
+                        "order.total_price",
+                        "order.total_discount",
+                        "order.profit",
+                        "order.expected_revenue",
+                        "order.shop_id",
+                        "order.customer_id",
+                        "order.address_id",
+                        "order.payment_slip",
+                        "order.status",
+                        "order.payment_status",
+                        "order.order_status",
+                        "order.delivery_type",
+                        "order.sign_in_status",
+                        "order.logistics_id",
+                        "order.created_at",
+                        "order.updated_at",
+                        // Logistics fields
+                        "logistics.id",
+                        "logistics.company_name",
+                        "logistics.logo",
+                        "logistics.cost",
+                        "logistics.transport_modes",
+                        // Product fields
+                        "product.id",
+                        "product.name",
+                        "product.description",
+                        "product.image_url",
+                        "product.images",
+                        "product.origin_image_url",
+                        "product.cover_image",
+                        "product.price",
+                        "product.market_price",
+                        "product.discount",
+                        "product.quantity",
+                        "product.sku",
+                        "product.spu",
+                        "product.sell_count",
+                        "product.total_star",
+                        "product.total_comment",
+                        // Brand fields
+                        "brand.id",
+                        "brand.name",
+                        "brand.image",
+                        // Customer fields
+                        "customerData.id",
+                        "customerData.firstName",
+                        "customerData.lastName",
+                        "customerData.phone_number",
+                        "customerData.email",
+                        // Shop fields
+                        "shop.id",
+                        "shop.store_name",
+                        "shop.fullname",
+                        "shop.phone_number",
+                        "shop.email",
+                    ]);
+                }
                 // Add user-specific conditions
                 if (userType === "shop") {
                     queryBuilder.andWhere({ shop_id: userDataFromToken.id });

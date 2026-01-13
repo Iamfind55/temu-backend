@@ -19,4 +19,5 @@ exports.orderMutation = {
     shopCancelOrder: (_1, _a, _b) => __awaiter(void 0, [_1, _a, _b], void 0, function* (_, { id }, { req }) { return services_1.OrderService.shopCancelOrder({ id, req }); }),
     shopConfirmOrder: (_1, _a, _b) => __awaiter(void 0, [_1, _a, _b], void 0, function* (_, { id }, { req }) { return services_1.OrderService.shopConfirmOrder({ id, req }); }),
     adminUpdateOrderWithStatus: (_1, _a, _b) => __awaiter(void 0, [_1, _a, _b], void 0, function* (_, { data }, { req }) { return services_1.OrderService.adminUpdateOrderWithStatus({ data, req }); }),
+    deleteOrder: (_1, _a, _b) => __awaiter(void 0, [_1, _a, _b], void 0, function* (_, { id }, { req }) { return services_1.OrderService.deleteOrder({ id, req }); }),
 };

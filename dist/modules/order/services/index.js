@@ -31,6 +31,53 @@ const shop_1 = require("../../shop");
 const graphqlUtils_1 = require("../../../utils/graphqlUtils");
 const pubsub_1 = __importDefault(require("../../../utils/pubsub"));
 class OrderService {
+    // Helper method to parse sell_count strings like "3.8K+", "1.2M+", "500", etc.
+    static parseSellCount(sellCount) {
+        if (!sellCount)
+            return 0;
+        // Convert to string and remove spaces, convert to uppercase
+        const cleanValue = sellCount.toString().trim().toUpperCase();
+        // Remove "+" if present
+        const withoutPlus = cleanValue.replace("+", "");
+        // Check if it's a simple number
+        if (!isNaN(Number(withoutPlus))) {
+            return Math.floor(Number(withoutPlus));
+        }
+        // Parse K (thousands)
+        if (withoutPlus.includes("K")) {
+            const num = parseFloat(withoutPlus.replace("K", ""));
+            return Math.floor(num * 1000);
+        }
+        // Parse M (millions)
+        if (withoutPlus.includes("M")) {
+            const num = parseFloat(withoutPlus.replace("M", ""));
+            return Math.floor(num * 1000000);
+        }
+        // If we can't parse it, return 0
+        return 0;
+    }
+    static formatSellCount(count) {
+        if (count >= 1000000) {
+            // Format as millions (M)
+            const millions = count / 1000000;
+            const roundedMillions = Math.round(millions * 10) / 10;
+            return roundedMillions % 1 === 0
+                ? `${Math.floor(roundedMillions)}M+`
+                : `${roundedMillions.toFixed(1)}M+`;
+        }
+        else if (count >= 1000) {
+            // Format as thousands (K)
+            const thousands = count / 1000;
+            const roundedThousands = Math.round(thousands * 10) / 10;
+            return roundedThousands % 1 === 0
+                ? `${Math.floor(roundedThousands)}K+`
+                : `${roundedThousands.toFixed(1)}K+`;
+        }
+        else {
+            // Return as is for numbers less than 1000
+            return count.toString();
+        }
+    }
     static countNewOrder(_a) {
         return __awaiter(this, arguments, void 0, function* ({ req, order_status, }) {
             try {
@@ -304,7 +351,7 @@ class OrderService {
                             address_id: data.address_id,
                             payment_slip: data.payment_slip,
                             delivery_type: data.delivery_type,
-                            logistics_id: data.logistics_id,
+                            // logistics_id: data.logistics_id,
                             order_status: !isAdmin &&
                                 existingCustomerWallet.total_balance < totalOrderPrice
                                 ? types_1.OrderStatus.FAILED
@@ -314,51 +361,70 @@ class OrderService {
                                 ? types_1.PaymentStatus.FAILED
                                 : types_1.PaymentStatus.COMPLETED,
                         });
-                        console.log(data.logistics_id);
-                        console.log(newOrder);
                         const savedOrder = yield orderRepository.save(newOrder);
                         const savedOrderDetails = yield Promise.all(orderData.order_details.map((detail) => __awaiter(this, void 0, void 0, function* () {
                             if (shop_id === "system") {
+                                // Get current product sell_count
+                                const product = yield entityManager.findOne(product_1.Product, {
+                                    where: { id: detail.product_id },
+                                    select: ["id", "sell_count"],
+                                });
+                                const currentSellCount = this.parseSellCount((product === null || product === void 0 ? void 0 : product.sell_count) || "0");
+                                const newSellCount = currentSellCount + detail.quantity;
                                 yield entityManager
                                     .createQueryBuilder()
                                     .update(product_1.Product)
                                     .set({
                                     quantity: () => "quantity - :quantity",
-                                    sell_count: () => "sell_count + :sell_count",
+                                    sell_count: this.formatSellCount(newSellCount),
                                 })
                                     .where("id = :id", {
                                     id: detail.product_id,
                                     quantity: detail.quantity,
-                                    sell_count: detail.quantity,
                                 })
                                     .execute();
                             }
                             else {
+                                // Update ShopProduct sell_count
+                                const shopProduct = yield entityManager.findOne(shopProduct_1.ShopProduct, {
+                                    where: {
+                                        product_id: detail.product_id,
+                                        shop_id: shop_id,
+                                    },
+                                    select: ["id", "sell_count"],
+                                });
+                                const currentShopSellCount = this.parseSellCount((shopProduct === null || shopProduct === void 0 ? void 0 : shopProduct.sell_count) || "0");
+                                const newShopSellCount = currentShopSellCount + detail.quantity;
                                 yield entityManager
                                     .createQueryBuilder()
                                     .update(shopProduct_1.ShopProduct)
                                     .set({
                                     quantity: () => "quantity - :quantity",
-                                    sell_count: () => "sell_count + :sell_count",
+                                    sell_count: this.formatSellCount(newShopSellCount),
                                 })
                                     .where("product_id = :product_id AND shop_id = :shopId", {
                                     product_id: detail.product_id,
                                     shopId: shop_id,
                                     quantity: detail.quantity,
-                                    sell_count: detail.quantity,
                                 })
                                     .execute();
+                                // Update Product sell_count
+                                const product = yield entityManager.findOne(product_1.Product, {
+                                    where: { id: detail.product_id },
+                                    select: ["id", "sell_count"],
+                                });
+                                const currentSellCount = this.parseSellCount((product === null || product === void 0 ? void 0 : product.sell_count) || "0");
+                                const newSellCount = currentSellCount + detail.quantity;
                                 yield entityManager
                                     .createQueryBuilder()
                                     .update(product_1.Product)
                                     .set({
                                     quantity: () => "quantity - :quantity",
-                                    sell_count: () => "sell_count + :sell_count",
+                                    sell_count: this.formatSellCount(newSellCount),
                                 })
                                     .where("id = :id", {
                                     id: detail.product_id,
                                     quantity: detail.quantity,
-                                    sell_count: detail.quantity,
                                 })
                                     .execute();
                             }
@@ -688,46 +754,67 @@ class OrderService {
                     // });
                     const updatedOrderDetails = yield Promise.all(orderDetails.map((orderDetail) => __awaiter(this, void 0, void 0, function* () {
                         if (!orderDetail.shop_id) {
+                            // Get current product sell_count
+                            const product = yield entityManager.findOne(product_1.Product, {
+                                where: { id: orderDetail.product_id },
+                                select: ["id", "sell_count"],
+                            });
+                            const currentSellCount = this.parseSellCount((product === null || product === void 0 ? void 0 : product.sell_count) || 0);
+                            const newSellCount = currentSellCount + orderDetail.quantity;
                             yield entityManager
                                 .createQueryBuilder()
                                 .update(product_1.Product)
                                 .set({
                                 quantity: () => "quantity - :quantity",
-                                sell_count: () => "sell_count + :sell_count",
+                                sell_count: newSellCount.toString(),
                             })
                                 .where("id = :id", {
                                 id: orderDetail.product_id,
                                 quantity: orderDetail.quantity,
-                                sell_count: orderDetail.quantity,
                             })
                                 .execute();
                         }
                         else {
+                            // Update ShopProduct sell_count
+                            const shopProduct = yield entityManager.findOne(shopProduct_1.ShopProduct, {
+                                where: {
+                                    product_id: orderDetail.product_id,
+                                    shop_id: orderDetail.shop_id,
+                                },
+                                select: ["id", "sell_count"],
+                            });
+                            const currentShopSellCount = this.parseSellCount((shopProduct === null || shopProduct === void 0 ? void 0 : shopProduct.sell_count) || 0);
+                            const newShopSellCount = currentShopSellCount + orderDetail.quantity;
                             yield entityManager
                                 .createQueryBuilder()
                                 .update(shopProduct_1.ShopProduct)
                                 .set({
                                 quantity: () => "quantity - :quantity",
-                                sell_count: () => "sell_count + :sell_count",
+                                sell_count: newShopSellCount.toString(),
                             })
                                 .where("product_id = :product_id AND shop_id = :shopId", {
                                 product_id: orderDetail.product_id,
                                 shopId: orderDetail.shop_id,
                                 quantity: orderDetail.quantity,
-                                sell_count: orderDetail.quantity,
                             })
                                 .execute();
+                            // Update Product sell_count
+                            const product = yield entityManager.findOne(product_1.Product, {
+                                where: { id: orderDetail.product_id },
+                                select: ["id", "sell_count"],
+                            });
+                            const currentSellCount = this.parseSellCount((product === null || product === void 0 ? void 0 : product.sell_count) || 0);
+                            const newSellCount = currentSellCount + orderDetail.quantity;
                             yield entityManager
                                 .createQueryBuilder()
                                 .update(product_1.Product)
                                 .set({
                                 quantity: () => "quantity - :quantity",
-                                sell_count: () => "sell_count + :sell_count",
+                                sell_count: newSellCount.toString(),
                             })
                                 .where("id = :id", {
                                 id: orderDetail.product_id,
                                 quantity: orderDetail.quantity,
-                                sell_count: orderDetail.quantity,
                             })
                                 .execute();
                         }
@@ -841,6 +928,64 @@ class OrderService {
             }
         });
     }
+    static deleteOrder(_a) {
+        return __awaiter(this, arguments, void 0, function* ({ id, req, }) {
+            const orderRepository = (0, typeorm_1.getRepository)(entity_1.Order);
+            const transactionManager = (0, typeorm_1.getManager)();
+            const walletRepository = (0, typeorm_1.getRepository)(wallet_1.Wallet);
+            try {
+                const customerDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyCustomerToken(req);
+                if (!customerDataFromToken)
+                    return (0, error_handler_1.handleError)(config_1.config.message.invalid_token, 404, null);
+                const existOrder = yield orderRepository.findOne({
+                    where: {
+                        id: id,
+                        is_active: true,
+                        customer_id: customerDataFromToken.id,
+                        order_status: types_1.OrderStatus.NO_PICKUP,
+                        status: baseType_1.BaseStatus.ACTIVE
+                    },
+                });
+                if (!existOrder) {
+                    return (0, error_handler_1.handleError)("Order not found", 404, null);
+                }
+                return yield transactionManager.transaction((entityManager) => __awaiter(this, void 0, void 0, function* () {
+                    // Update order status
+                    existOrder.status = baseType_1.BaseStatus.INACTIVE;
+                    existOrder.order_status = types_1.OrderStatus.DELETED;
+                    existOrder.payment_status = types_1.PaymentStatus.CANCELLED;
+                    existOrder.sign_in_status = types_1.SignInStatus.CANCELLED;
+                    existOrder.canelled_by_customer = customerDataFromToken.id;
+                    yield entityManager.save(entity_1.Order, existOrder);
+                    yield entityManager.update(orderDetail_1.OrderDetail, { order_id: existOrder.id }, // WHERE condition
+                    {
+                        order_status: types_1.OrderStatus.DELETED,
+                        payment_status: types_1.PaymentStatus.CANCELLED,
+                        sign_in_status: types_1.SignInStatus.CANCELLED,
+                        canelled_by_customer: customerDataFromToken.id,
+                    } // Update values
+                    );
+                    const wallet = yield entityManager.findOne(wallet_1.Wallet, {
+                        where: {
+                            customer_id: customerDataFromToken.id,
+                            is_active: true,
+                        },
+                        lock: { mode: "pessimistic_write" },
+                    });
+                    if (!wallet) {
+                        throw new Error("Wallet not found");
+                    }
+                    wallet.total_balance = Number((Number(wallet.total_balance) + Number(existOrder.total_price)).toFixed(2));
+                    yield entityManager.save(wallet_1.Wallet, wallet);
+                    return (0, success_handler_1.handleSuccess)(Object.assign({}, existOrder));
+                }));
+            }
+            catch (error) {
+                console.error("Error in payOrderFailed:", error);
+                return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
+            }
+        });
+    }
     static shopConfirmOrder(_a) {
         return __awaiter(this, arguments, void 0, function* ({ id, req, }) {
             const orderRepository = (0, typeorm_1.getRepository)(entity_1.Order);
@@ -941,6 +1086,7 @@ class OrderService {
             const orderRepository = (0, typeorm_1.getRepository)(entity_1.Order);
             const orderDetailsRepository = (0, typeorm_1.getRepository)(orderDetail_1.OrderDetail);
             const transactionManager = (0, typeorm_1.getManager)();
+            const walletRepository = (0, typeorm_1.getRepository)(wallet_1.Wallet);
             try {
                 const shopDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyShopToken(req);
                 if (!shopDataFromToken)
@@ -979,6 +1125,14 @@ class OrderService {
                         }, "quantity", orderDetail.quantity);
                     }));
                     yield Promise.all(updatePromises);
+                    const existingCustomerWallet = yield walletRepository.findOne({
+                        where: { customer_id: existOrder.created_by, is_active: true },
+                    });
+                    if (!existingCustomerWallet) {
+                        throw new Error("Customer's wallet not found.");
+                    }
+                    existingCustomerWallet.total_balance -= existOrder.total_price;
+                    yield entityManager.save(wallet_1.Wallet, existingCustomerWallet);
                     return (0, success_handler_1.handleSuccess)(Object.assign({}, existOrder));
                 }));
             }
@@ -1093,10 +1247,11 @@ class OrderService {
                 const queryBuilder = orderRepository.createQueryBuilder("order");
                 // Verify token based on user type
                 let userDataFromToken;
-                const selectFields = (0, graphqlUtils_1.getRequestedFields)(info, "shopGetOrders.data");
+                let selectFields;
                 switch (userType) {
                     case "shop":
                         userDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyShopToken(req);
+                        selectFields = (0, graphqlUtils_1.getRequestedFields)(info, "shopGetOrders.data");
                         // Add LEFT JOIN with Product
                         queryBuilder.leftJoinAndSelect("order.customerData", "customer");
                         queryBuilder.leftJoinAndSelect("order.shop", "shop");
@@ -1105,6 +1260,7 @@ class OrderService {
                             const fields = selectFields
                                 .filter((field) => field != "customerData")
                                 .filter((field) => field != "shop")
+                                .filter((field) => field != "order_details")
                                 .map((field) => `order.${field}`);
                             queryBuilder.select([
                                 // Fields from shopProduct
@@ -1131,20 +1287,13 @@ class OrderService {
                         break;
                     case "customer":
                         userDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyCustomerToken(req);
+                        selectFields = (0, graphqlUtils_1.getRequestedFields)(info, "customerGetOrders.data");
                         queryBuilder.leftJoinAndSelect("order.logistics", "logistics");
-                        // if (selectFields?.length) {
-                        //   const fields = selectFields
-                        //     .filter((field) => field != "customerData")
-                        //     .map((field) => `order.${field}`);
-                        //   queryBuilder.select([
-                        //     // Order fields
-                        //     ...fields,
-                        //   ]);
-                        //   console.log(fields);
-                        // }
                         if (selectFields === null || selectFields === void 0 ? void 0 : selectFields.length) {
                             const fields = selectFields
                                 .filter((field) => field !== "customerData")
+                                .filter((field) => field !== "logistics")
+                                .filter((field) => field !== "order_details")
                                 .map((field) => `order.${field}`);
                             queryBuilder.select([
                                 "logistics.id",
@@ -1158,7 +1307,8 @@ class OrderService {
                         break;
                     case "admin":
                         userDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyStaffToken(req);
-                        // // Add LEFT JOIN with Product
+                        selectFields = (0, graphqlUtils_1.getRequestedFields)(info, "getOrders.data");
+                        // Add LEFT JOIN with Product
                         queryBuilder.leftJoinAndSelect("order.customerData", "customer");
                         queryBuilder.leftJoinAndSelect("order.shop", "shop");
                         queryBuilder.leftJoinAndSelect("order.logistics", "logistics");
@@ -1166,6 +1316,7 @@ class OrderService {
                             const fields = selectFields
                                 .filter((field) => field != "customerData")
                                 .filter((field) => field != "shop")
+                                .filter((field) => field != "order_details")
                                 .map((field) => `order.${field}`);
                             queryBuilder.select([
                                 // Fields from customer
@@ -1243,12 +1394,55 @@ class OrderService {
                 }
                 // Add pagination and sorting
                 const [orderField, orderDirection] = this.order(sortedBy);
+                // Ensure the order field is selected if we have custom select
+                if (selectFields === null || selectFields === void 0 ? void 0 : selectFields.length) {
+                    const orderFieldName = orderField.replace("order.", "");
+                    if (!selectFields.includes(orderFieldName)) {
+                        queryBuilder.addSelect(`order.${orderFieldName}`);
+                    }
+                }
                 queryBuilder
                     .skip((page - 1) * limit)
                     .take(limit)
                     .orderBy(orderField, orderDirection);
                 // Execute the query
                 const [orders, total] = yield queryBuilder.getManyAndCount();
+                // Manually load order_details if requested
+                if ((selectFields === null || selectFields === void 0 ? void 0 : selectFields.includes("order_details")) && orders.length > 0) {
+                    const orderDetailRepository = (0, typeorm_1.getRepository)(orderDetail_1.OrderDetail);
+                    const orderIds = orders.map((order) => order.id);
+                    const orderDetails = yield orderDetailRepository.find({
+                        where: {
+                            order_id: (0, typeorm_1.In)(orderIds),
+                            is_active: true,
+                        },
+                        select: [
+                            "id",
+                            "product_id",
+                            "shop_id",
+                            "quantity",
+                            "price",
+                            "discount",
+                            "order_id",
+                            "order_no",
+                            "address_id",
+                            "order_status",
+                            "payment_status",
+                        ],
+                    });
+                    // Group order_details by order_id
+                    const orderDetailsMap = orderDetails.reduce((acc, detail) => {
+                        if (!acc[detail.order_id]) {
+                            acc[detail.order_id] = [];
+                        }
+                        acc[detail.order_id].push(detail);
+                        return acc;
+                    }, {});
+                    // Attach order_details to each order
+                    orders.forEach((order) => {
+                        order.order_details = orderDetailsMap[order.id] || [];
+                    });
+                }
                 return (0, success_handler_1.handleSuccessWithTotalData)(orders, total);
             }
             catch (error) {
@@ -1354,7 +1548,6 @@ class OrderService {
                     where: { is_active: true },
                     relations: { logistics: true },
                 });
-                console.log(order);
                 if (!order) {
                     return (0, error_handler_1.handleError)("Order not found", 404, null);
                 }

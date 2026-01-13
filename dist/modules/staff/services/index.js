@@ -64,16 +64,17 @@ class StaffService {
                 if (!staff) {
                     return (0, error_handler_1.handleError)("Staff not found", 404, null);
                 }
-                const existStaff = yield staffRepository.findOne({
-                    where: {
-                        username: data === null || data === void 0 ? void 0 : data.username,
-                        is_active: true,
-                        id: (0, typeorm_1.Not)(data === null || data === void 0 ? void 0 : data.id),
-                    },
-                });
-                if (existStaff) {
-                    return (0, error_handler_1.handleError)(config_1.config.message.username_already_exist, 404, null);
-                }
+                // const existStaff = await staffRepository.findOne({
+                //   where: {
+                //     // username: data?.username,
+                //     is_active: true,
+                //     id: Not(data?.id),
+                //   },
+                // });
+                // console.log({ existStaff });
+                // if (!existStaff) {
+                //   return handleError("Not found account", 404, null);
+                // }
                 // Hash the password
                 if (data === null || data === void 0 ? void 0 : data.password)
                     data.password = yield (0, helper_1.hashPassword)(data === null || data === void 0 ? void 0 : data.password);

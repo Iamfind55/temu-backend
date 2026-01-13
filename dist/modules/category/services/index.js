@@ -111,7 +111,7 @@ class CategoryService {
                 if (!staffDataFromToken)
                     return (0, error_handler_1.handleError)(config_1.config.message.invalid_token, 404, null);
                 const category = yield categoryRepository.findOne({
-                    where: { id: data.id },
+                    where: { id: data.id, is_active: true },
                 });
                 if (!category) {
                     return (0, error_handler_1.handleError)("Category not found", 404, null);
@@ -129,6 +129,27 @@ class CategoryService {
                         .getOne();
                     if (existingCategory) {
                         return (0, error_handler_1.handleError)("Category with the same name already exists", 400, null);
+                    }
+                }
+                // Check if parent_id is being changed
+                if (data.parent_id && data.parent_id !== category.parent_id) {
+                    // Get the old parent category
+                    const subLevelOlder = yield categoryRepository.findOne({
+                        where: { id: category.parent_id, is_active: true },
+                    });
+                    // Get all subcategories of the NEW parent (data.parent_id)
+                    const subLevelNew = yield categoryRepository.find({
+                        where: { parent_id: data.parent_id, is_active: true },
+                    });
+                    // Check if any subcategory has the same name as the old parent
+                    if (subLevelOlder && subLevelNew.length > 0) {
+                        const hasNameConflict = subLevelNew.find((item) => item.name === subLevelOlder.name);
+                        if (hasNameConflict) {
+                            data.parent_id = hasNameConflict.id;
+                        }
+                        if (!hasNameConflict && subLevelNew[0]) {
+                            data.parent_id = subLevelNew[0].id;
+                        }
                     }
                 }
                 category.updated_by = staffDataFromToken.id;
@@ -386,6 +407,145 @@ class CategoryService {
                 return (0, success_handler_1.handleSuccessWithTotalData)(result, total);
             }
             catch (error) {
+                return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
+            }
+        });
+    }
+    static getMainCategories(_a, info_1) {
+        return __awaiter(this, arguments, void 0, function* ({ where, page, limit, sortedBy, }, info) {
+            var _b, _c;
+            const categoryRepository = (0, typeorm_1.getRepository)(entity_1.Category);
+            try {
+                const order = this.order(sortedBy);
+                const queryBuilder = categoryRepository
+                    .createQueryBuilder("category")
+                    .where("category.is_active = true")
+                    .andWhere("category.parent_id IS NULL");
+                // --- Field selection ---
+                const selectFields = (0, graphqlUtils_1.getRequestedFields)(info, "getMainCategories.data");
+                if (selectFields === null || selectFields === void 0 ? void 0 : selectFields.length) {
+                    const fields = selectFields
+                        .filter((f) => f !== "subcategories" && f !== "parent_data")
+                        .map((f) => `category.${f}`);
+                    queryBuilder.select(fields);
+                }
+                // --- Filtering ---
+                if (where === null || where === void 0 ? void 0 : where.keyword) {
+                    queryBuilder.andWhere("category.name ILIKE :keyword", {
+                        keyword: `%${where.keyword}%`,
+                    });
+                }
+                if (where === null || where === void 0 ? void 0 : where.status) {
+                    queryBuilder.andWhere("category.status = :status", {
+                        status: where.status,
+                    });
+                }
+                if (((_b = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _b === void 0 ? void 0 : _b.startDate) &&
+                    ((_c = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _c === void 0 ? void 0 : _c.endDate)) {
+                    queryBuilder.andWhere("DATE(category.created_at) BETWEEN :startDate AND :endDate", {
+                        startDate: where.createdAtBetween.startDate,
+                        endDate: where.createdAtBetween.endDate,
+                    });
+                }
+                // --- Pagination & Sorting ---
+                queryBuilder
+                    .skip((page - 1) * limit)
+                    .take(limit)
+                    .orderBy(order);
+                const [categories, total] = yield queryBuilder.getManyAndCount();
+                return (0, success_handler_1.handleSuccessWithTotalData)(categories, total);
+            }
+            catch (error) {
+                console.log(error);
+                return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
+            }
+        });
+    }
+    static getSubCategories(_a, info_1) {
+        return __awaiter(this, arguments, void 0, function* ({ where, page, limit, sortedBy, }, info) {
+            var _b, _c;
+            const categoryRepository = (0, typeorm_1.getRepository)(entity_1.Category);
+            try {
+                const order = this.order(sortedBy);
+                // First, find all level 3 categories using raw SQL join
+                // Level 3 = categories whose parent has a parent
+                const queryBuilder = categoryRepository
+                    .createQueryBuilder("category")
+                    .innerJoin(entity_1.Category, "level2Parent", '"category"."parent_id"::uuid = "level2Parent"."id" AND "level2Parent"."is_active" = true')
+                    .innerJoin(entity_1.Category, "level1Parent", '"level2Parent"."parent_id"::uuid = "level1Parent"."id" AND "level1Parent"."is_active" = true')
+                    .where("category.is_active = true");
+                // --- Field selection ---
+                const selectFields = (0, graphqlUtils_1.getRequestedFields)(info, "getSubCategories.data");
+                if (selectFields === null || selectFields === void 0 ? void 0 : selectFields.length) {
+                    const fields = selectFields
+                        .filter((f) => f !== "subcategories" && f !== "parent_data")
+                        .map((f) => `category.${f}`);
+                    queryBuilder.select(fields);
+                }
+                // --- Filtering ---
+                if (where === null || where === void 0 ? void 0 : where.keyword) {
+                    queryBuilder.andWhere("category.name ILIKE :keyword", {
+                        keyword: `%${where.keyword}%`,
+                    });
+                }
+                if (where === null || where === void 0 ? void 0 : where.parent_id) {
+                    queryBuilder.andWhere("category.parent_id = :parent_id", {
+                        parent_id: where.parent_id,
+                    });
+                }
+                if (where === null || where === void 0 ? void 0 : where.status) {
+                    queryBuilder.andWhere("category.status = :status", {
+                        status: where.status,
+                    });
+                }
+                if (((_b = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _b === void 0 ? void 0 : _b.startDate) &&
+                    ((_c = where === null || where === void 0 ? void 0 : where.createdAtBetween) === null || _c === void 0 ? void 0 : _c.endDate)) {
+                    queryBuilder.andWhere("DATE(category.created_at) BETWEEN :startDate AND :endDate", {
+                        startDate: where.createdAtBetween.startDate,
+                        endDate: where.createdAtBetween.endDate,
+                    });
+                }
+                // --- Pagination & Sorting ---
+                // Prefix order columns with "category." to avoid ambiguity
+                const prefixedOrder = {};
+                for (const [key, value] of Object.entries(order)) {
+                    prefixedOrder[`category.${key}`] = value;
+                }
+                queryBuilder
+                    .skip((page - 1) * limit)
+                    .take(limit)
+                    .orderBy(prefixedOrder);
+                const [categories, total] = yield queryBuilder.getManyAndCount();
+                // If parent_data is not requested, return categories as-is
+                if (!(selectFields === null || selectFields === void 0 ? void 0 : selectFields.includes("parent_data"))) {
+                    return (0, success_handler_1.handleSuccessWithTotalData)(categories, total);
+                }
+                // Get level 1 (root) parent for each level 3 category
+                // For level 3: category -> level 2 parent -> level 1 parent (root)
+                const result = yield Promise.all(categories.map((category) => __awaiter(this, void 0, void 0, function* () {
+                    // Get level 2 parent (direct parent)
+                    const level2Parent = yield categoryRepository.findOne({
+                        where: { id: category.parent_id, is_active: true },
+                        select: ["id", "name", "parent_id"],
+                    });
+                    if (!level2Parent) {
+                        return Object.assign(Object.assign({}, category), { parent_data: null });
+                    }
+                    // Get level 1 parent (root parent)
+                    const level1Parent = level2Parent.parent_id
+                        ? yield categoryRepository.findOne({
+                            where: { id: level2Parent.parent_id, is_active: true },
+                            select: ["id", "name", "parent_id"],
+                        })
+                        : null;
+                    return Object.assign(Object.assign({}, category), { parent_data: level1Parent
+                            ? { id: level1Parent.id, name: level1Parent.name }
+                            : null });
+                })));
+                return (0, success_handler_1.handleSuccessWithTotalData)(result, total);
+            }
+            catch (error) {
+                console.log(error);
                 return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
             }
         });

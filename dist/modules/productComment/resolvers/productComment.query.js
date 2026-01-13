@@ -15,4 +15,5 @@ const services_1 = require("../services");
 exports.productCommentQuery = {
     getProductComments: (_1, _a) => __awaiter(void 0, [_1, _a], void 0, function* (_, { where, page = 1, limit = 10, sortedBy = baseType_1.BaseOrderByInput.created_at_DESC, }) { return services_1.ProductCommentService.getProductComments({ where, page, limit, sortedBy }); }),
     getProductComment: (_1, _a) => __awaiter(void 0, [_1, _a], void 0, function* (_, { id }) { return services_1.ProductCommentService.getProductComment({ id }); }),
+    getProductCommentProductID: (_1, _a) => __awaiter(void 0, [_1, _a], void 0, function* (_, { where, page = 1, limit = 10, sortedBy = baseType_1.BaseOrderByInput.created_at_DESC, }) { return services_1.ProductCommentService.getProductCommentProductID({ where, page, limit, sortedBy }); }),
 };

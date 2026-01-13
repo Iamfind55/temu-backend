@@ -15,9 +15,10 @@ exports.productSchema = `
     id: ID
     name: String
     description: String
+    cover_image: String
     images: [String]
     origin_image_url: String
-    cover_image: String
+    image_url: String
     price: Float
     market_price:Float
     price_str: String
@@ -49,10 +50,9 @@ exports.productSchema = `
   } 
 
   input CreateProductInput {
-    name: NameTranslateBaseInput
-    description: NameTranslateBaseInput
+    name: String
     images: [String]
-    cover_image: String
+    image_url: String
     price: Float
     discount: Float
     quantity: Int
@@ -71,10 +71,9 @@ exports.productSchema = `
 
   input UpdateProductInput {
     id: ID!
-    name: NameTranslateBaseInput
-    description: NameTranslateBaseInput
+    name: String
     images: [String]
-    cover_image: String
+    image_url: String
     price: Float
     discount: Float
     quantity: Int
@@ -87,7 +86,7 @@ exports.productSchema = `
     recommended: Boolean
     product_top: Int
     product_vip: Int
-    sell_count: Int
+    sell_count: String
     status: BaseStatus = ACTIVE
   }
 
@@ -136,9 +135,8 @@ exports.productSchema = `
 
   type SearchProduct {
     id: ID!
-    name: NameTranslateBaseType
-    description: NameTranslateBaseType
-    cover_image: String
+    name: String
+    image_url: String
     price: Float
     status: BaseStatus
   }
@@ -150,79 +148,13 @@ exports.productSchema = `
     error: Error
   } 
 
-  type TemuProductDataResponse {
-    success: Boolean!
-    source: String
-    data: JSON
-    product: JSON
-    reviews: JSON
-    categories: JSON
-    activityInfo: JSON
-    productInfo: JSON
-    completeData: JSON
-    headersData: JSON
-    reviewStore:JSON
-    cartScene:JSON
-    deliveryTag:JSON
-    error: Error
-  }
-
-  type TemuAPIResponse {
-    success: Boolean!
-    data: JSON
-    status: Int
-    error: Error
-  }
-
-  type FetchAllReviewsResponse {
-    success: Boolean!
-    totalProducts: Int!
-    totalReviewsFetched: Int!
-    errors: [String!]!
-  }
-
   type Query {
     getProducts(where: ProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessProductResponseMany!
     adminGetProducts(where: ProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessProductResponseMany!
     getBestSellingProducts(where: ProductBestSellingWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessProductResponseMany!
-    getSimilarProducts(where: SimilarProductWhereInput, limit: Int): SuccessProductResponseMany!
+    getSimilarProducts(where: SimilarProductWhereInput, limit: Int,page: Int,sortedBy: BaseOrderByInput): SuccessProductResponseMany!
     searchProducts(where: SearchProductWhereInput, limit: Int, page: Int, sortedBy: BaseOrderByInput): SuccessSearchProductResponseMany!
     getProduct(id: ID!): SuccessProductResponseOne!
-    getTemuProductData(productUrl: String!): TemuProductDataResponse!
-    getTemuReviews(
-      goodsId: String!
-      page: Int
-      size: Int
-      cookies: String
-      antiContent: String
-      verifyAuthToken: String
-      xPhanData: String
-      referer: String
-    ): TemuAPIResponse!
-    callTemuAPI(
-      endpoint: String!
-      method: String
-      queryParams: String
-      body: String
-      cookies: String
-      antiContent: String
-      verifyAuthToken: String
-      xPhanData: String
-      referer: String
-    ): TemuAPIResponse!
-    getTemuReviewsAuto(
-      productUrl: String!
-      goodsId: String!
-    ): TemuAPIResponse!
-    fetchAllProductReviews(
-      page: Int
-      limit: Int
-      cookies: String
-      antiContent: String
-      verifyAuthToken: String
-      xPhanData: String
-      referer: String
-    ): FetchAllReviewsResponse!
   }
 
   type Mutation {

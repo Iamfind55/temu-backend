@@ -21,6 +21,7 @@ const auth_middleware_1 = require("../../../middlewares/auth.middleware");
 const product_1 = require("../../product");
 const category_1 = require("../../category");
 const entity_2 = require("../../shop/entity");
+const types_2 = require("../../shop/types");
 class ShopProductService {
     static createShopProduct(_a) {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
@@ -45,6 +46,9 @@ class ShopProductService {
                 });
                 if (!shop)
                     return (0, error_handler_1.handleError)("Shop not found.", 404, null);
+                if (shop.status !== types_2.ShopStatus.APPROVED) {
+                    return (0, error_handler_1.handleError)("Your shop account is currently under review. Access will be granted after administrative approval.", 400, null);
+                }
                 if ((shop === null || shop === void 0 ? void 0 : shop.shop_vip) && shop.shop_vip < product.product_vip)
                     return (0, error_handler_1.handleError)(`You cannot apply this product VIP [${product.product_vip}] because you are in [${shop.shop_vip}].`, 404, null);
                 const existShopProduct = yield shopProductRepository.findOne({
@@ -71,6 +75,7 @@ class ShopProductService {
     }
     static createShopProducts(_a) {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
+            var _b;
             const shopProductRepository = (0, typeorm_1.getRepository)(entity_1.ShopProduct);
             const productRepository = (0, typeorm_1.getRepository)(product_1.Product);
             const shopRepository = (0, typeorm_1.getRepository)(entity_2.Shop);
@@ -91,11 +96,25 @@ class ShopProductService {
                         },
                     }),
                 ]);
-                const productsAvailability = products.filter((item) => {
-                    return (shop === null || shop === void 0 ? void 0 : shop.shop_vip) && shop.shop_vip >= item.product_vip;
-                });
+                // const productsAvailability = products.filter((item) => {
+                const shopVip = Number((_b = shop === null || shop === void 0 ? void 0 : shop.shop_vip) !== null && _b !== void 0 ? _b : 0);
+                //   const productVip = Number(item.product_vip ?? 0);
+                //   return shopVip >= productVip;
+                // });
+                // if (productsAvailability.length === 0) {
+                //   return handleError(
+                //     "No products were added - VIP products not available.",
+                //     402,
+                //     null
+                //   );
+                // }
+                const productsAvailability = products.filter((item) => { var _a; return shopVip >= Number((_a = item.product_vip) !== null && _a !== void 0 ? _a : 0); });
+                const vipBlockedProducts = products.filter((item) => { var _a; return shopVip < Number((_a = item.product_vip) !== null && _a !== void 0 ? _a : 0); });
+                if (productsAvailability.length === 0 && vipBlockedProducts.length > 0) {
+                    return (0, error_handler_1.handleError)(`Your shop VIP level (${shopVip}) is lower than the required product VIP.`, 403, null);
+                }
                 if (productsAvailability.length === 0) {
-                    return (0, error_handler_1.handleError)("No products were added - some may already exist in your shop.", 402, null);
+                    return (0, error_handler_1.handleError)("No products were added.", 404, null);
                 }
                 // Check for existing shop products
                 const existingShopProducts = yield shopProductRepository.find({
@@ -236,6 +255,7 @@ class ShopProductService {
     }
     static createShopProductsWithVIPLevel(_a) {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
+            var _b, _c;
             const shopProductRepository = (0, typeorm_1.getRepository)(entity_1.ShopProduct);
             const productRepository = (0, typeorm_1.getRepository)(product_1.Product);
             const shopRepository = (0, typeorm_1.getRepository)(entity_2.Shop);
@@ -248,10 +268,11 @@ class ShopProductService {
                 });
                 if (!shop)
                     return (0, error_handler_1.handleError)("Shop not found.", 404, null);
-                if (!shop)
-                    return (0, error_handler_1.handleError)("Shop not found.", 404, null);
-                if ((shop === null || shop === void 0 ? void 0 : shop.shop_vip) && (shop === null || shop === void 0 ? void 0 : shop.shop_vip) < data.vip)
-                    return (0, error_handler_1.handleError)(`You cannot apply these product VIP [${data.vip}] because you are in [${shop.shop_vip}].`, 404, null);
+                const shopVip = Number((_b = shop === null || shop === void 0 ? void 0 : shop.shop_vip) !== null && _b !== void 0 ? _b : 0);
+                const productVip = Number((_c = data === null || data === void 0 ? void 0 : data.vip) !== null && _c !== void 0 ? _c : 0);
+                if (shopVip < productVip) {
+                    return (0, error_handler_1.handleError)(`You cannot apply these product VIP [${productVip}] because you are in [${shopVip}].`, 404, null);
+                }
                 let results = [];
                 let continues = true;
                 const pageSize = 1000;
@@ -274,9 +295,10 @@ class ShopProductService {
                         break;
                     }
                     const productsAvailability = products.filter((item) => {
-                        if (item && (shop === null || shop === void 0 ? void 0 : shop.shop_vip) && shop.shop_vip >= item.product_vip) {
-                            return item;
-                        }
+                        var _a, _b;
+                        const shopVip = Number((_a = shop === null || shop === void 0 ? void 0 : shop.shop_vip) !== null && _a !== void 0 ? _a : 0);
+                        const productVip = Number((_b = item === null || item === void 0 ? void 0 : item.product_vip) !== null && _b !== void 0 ? _b : 0);
+                        return shopVip >= productVip;
                     });
                     // Check for existing shop products
                     const existingShopProducts = yield shopProductRepository.find({
@@ -400,11 +422,18 @@ class ShopProductService {
                     "product.id",
                     "product.name",
                     "product.price",
+                    "product.market_price",
+                    "product.origin_image_url",
+                    "product.price_str",
+                    "product.currency",
                     "product.cover_image",
                     "product.images",
                     "product.total_star",
+                    "product.star_store",
+                    "product.total_comment",
                     "product.product_vip",
                     "product.product_top",
+                    "product.quantity",
                     "productTag.id",
                     "productTag.text_rich",
                     "productTag.local_title",

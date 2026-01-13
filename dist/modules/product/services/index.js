@@ -27,6 +27,7 @@ const branding_1 = require("../../branding");
 const category_1 = require("../../category");
 const staff_1 = require("../../staff");
 const entity_1 = require("../entity");
+const productTag_1 = require("../../productTag");
 class ProductService {
     static createLoopCategoryAndProduct() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -21751,7 +21752,7 @@ class ProductService {
                 const staffDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyStaffToken(req);
                 if (!staffDataFromToken)
                     return (0, error_handler_1.handleError)(config_1.config.message.invalid_token, 404, null);
-                if (!(data === null || data === void 0 ? void 0 : data.name) || !(data === null || data === void 0 ? void 0 : data.cover_image)) {
+                if (!(data === null || data === void 0 ? void 0 : data.name) || !(data === null || data === void 0 ? void 0 : data.image_url)) {
                     return (0, error_handler_1.handleError)("Validation Error: Missing required fields", 400, null);
                 }
                 const categoryIds = (data === null || data === void 0 ? void 0 : data.category_id)
@@ -21771,6 +21772,7 @@ class ProductService {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
             try {
                 const productRepository = (0, typeorm_1.getRepository)(entity_1.Product);
+                console.log(data);
                 const staffDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyStaffToken(req);
                 if (!staffDataFromToken)
                     return (0, error_handler_1.handleError)(config_1.config.message.invalid_token, 404, null);
@@ -21780,7 +21782,7 @@ class ProductService {
                 const categoryIds = (data === null || data === void 0 ? void 0 : data.category_id)
                     ? yield this.findCategoryParents(data.category_id)
                     : [];
-                productRepository.merge(product, Object.assign(Object.assign({}, data), { category_ids: categoryIds, updated_by: staffDataFromToken === null || staffDataFromToken === void 0 ? void 0 : staffDataFromToken.id }));
+                productRepository.merge(product, Object.assign(Object.assign({}, data), { sell_count: data === null || data === void 0 ? void 0 : data.sell_count, category_ids: categoryIds, updated_by: staffDataFromToken === null || staffDataFromToken === void 0 ? void 0 : staffDataFromToken.id }));
                 const updatedProduct = yield productRepository.save(product);
                 return (0, success_handler_1.handleSuccess)(updatedProduct);
             }
@@ -21828,35 +21830,72 @@ class ProductService {
             return this.executeQuery(queryBuilder, info);
         });
     }
-    static getSimilarProducts(_b, info_1) {
-        return __awaiter(this, arguments, void 0, function* ({ req, where, page, limit, }, info) {
-            const productRepository = (0, typeorm_1.getRepository)(entity_1.Product);
-            const queryBuilder = yield this.buildBaseQuery({ req, where, page, limit, sortedBy: baseType_1.BaseOrderByInput.created_at_DESC }, info);
-            if (where === null || where === void 0 ? void 0 : where.product_id) {
-                const product = yield productRepository.findOne({
-                    where: { id: where.product_id },
-                    select: ["category_id", "brand_id"],
-                });
-                if (product) {
-                    queryBuilder.andWhere(new typeorm_1.Brackets((qb) => {
-                        if (product.category_id) {
-                            qb.where("product.category_id = :category_id", {
-                                category_id: product.category_id,
-                            });
-                        }
-                        if (product.brand_id) {
-                            qb.orWhere("product.brand_id = :brand_id", {
-                                brand_id: product.brand_id,
-                            });
-                        }
-                    }));
-                }
-            }
-            // random result
-            // queryBuilder.addOrderBy("RANDOM()").take(limit);
-            return this.executeQuery(queryBuilder, info);
-        });
-    }
+    // static async getSimilarProducts(
+    //   {
+    //     req,
+    //     where,
+    //     page,
+    //     limit,
+    //   }: {
+    //     req: Request;
+    //     where: Partial<SimilarProductWhereInput>;
+    //     page: number;
+    //     limit: number;
+    //   },
+    //   info: GraphQLResolveInfo
+    // ) {
+    //   const productRepository = getRepository(Product);
+    //   // Create simple query without DISTINCT for random ordering
+    //   const queryBuilder = productRepository
+    //     .createQueryBuilder("product")
+    //     .where("product.is_active = :is_active", { is_active: true })
+    //     .andWhere("product.status = :status", { status: "ACTIVE" });
+    //   // Add joins based on GraphQL selections
+    //   const fields = getRequestedFields(info, "getSimilarProducts.data");
+    //   if (fields.includes("categoryData")) {
+    //     queryBuilder.leftJoinAndSelect("product.categoryData", "categoryData");
+    //   }
+    //   if (fields.includes("brandData")) {
+    //     queryBuilder.leftJoinAndSelect("product.brandData", "brandData");
+    //   }
+    //   if (fields.includes("productTag")) {
+    //     queryBuilder.leftJoinAndSelect("product.productTag", "productTag");
+    //   }
+    //   if (where?.product_id) {
+    //     // Use createQueryBuilder to avoid DISTINCT issues
+    //     const product = await productRepository
+    //       .createQueryBuilder("product")
+    //       .select(["product.category_id", "product.brand_id"])
+    //       .where("product.id = :id", { id: where.product_id })
+    //       .getOne();
+    //     if (product) {
+    //       // Exclude the original product
+    //       queryBuilder.andWhere("product.id != :product_id", {
+    //         product_id: where.product_id,
+    //       });
+    //       // Same category OR same brand
+    //       queryBuilder.andWhere(
+    //         new Brackets((qb) => {
+    //           if (product.category_id) {
+    //             qb.where("product.category_id = :category_id", {
+    //               category_id: product.category_id,
+    //             });
+    //           }
+    //           if (product.brand_id) {
+    //             qb.orWhere("product.brand_id = :brand_id", {
+    //               brand_id: product.brand_id,
+    //             });
+    //           }
+    //         })
+    //       );
+    //     }
+    //   }
+    //   // Randomize results and limit
+    //   queryBuilder.orderBy("RANDOM()").take(limit || 10);
+    //   const products = await queryBuilder.getMany();
+    //   const total = products.length;
+    //   return handleSuccessWithTotalData(products, total);
+    // }
     // static async getSimilarProducts(
     //   {
     //     req,
@@ -21895,6 +21934,96 @@ class ProductService {
     //   queryBuilder.addOrderBy("RANDOM()").take(limit);
     //   return this.executeQuery(queryBuilder, info);
     // }
+    static getSimilarProducts(_b, info_1) {
+        return __awaiter(this, arguments, void 0, function* ({ req, where, page = 1, limit = 10, }, info) {
+            const productRepository = (0, typeorm_1.getRepository)(entity_1.Product);
+            const productTagRepository = (0, typeorm_1.getRepository)(productTag_1.ProductTag);
+            const brandingRepository = (0, typeorm_1.getRepository)(branding_1.Branding);
+            try {
+                if (!(where === null || where === void 0 ? void 0 : where.product_id)) {
+                    return (0, success_handler_1.handleSuccessWithTotalData)([], 0);
+                }
+                // Get reference product
+                const product = yield productRepository
+                    .createQueryBuilder("product")
+                    .select(["product.category_id", "product.brand_id"])
+                    .where("product.id = :id", { id: where.product_id })
+                    .getOne();
+                if (!product || (!product.category_id && !product.brand_id)) {
+                    return (0, success_handler_1.handleSuccessWithTotalData)([], 0);
+                }
+                // Build count query first
+                const countQueryBuilder = productRepository
+                    .createQueryBuilder("product")
+                    .where("product.is_active = :is_active", { is_active: true })
+                    .andWhere("product.status = :status", { status: "ACTIVE" })
+                    .andWhere("product.id != :product_id", { product_id: where.product_id });
+                // Same category OR same brand
+                countQueryBuilder.andWhere(new typeorm_1.Brackets((qb) => {
+                    if (product.category_id) {
+                        qb.where("product.category_id = :category_id", {
+                            category_id: product.category_id,
+                        });
+                    }
+                    if (product.brand_id) {
+                        qb.orWhere("product.brand_id = :brand_id", {
+                            brand_id: product.brand_id,
+                        });
+                    }
+                }));
+                // Get total count
+                const total = yield countQueryBuilder.getCount();
+                // Build query for products WITHOUT joins to avoid DISTINCT
+                const queryBuilder = productRepository
+                    .createQueryBuilder("product")
+                    .where("product.is_active = :is_active", { is_active: true })
+                    .andWhere("product.status = :status", { status: "ACTIVE" })
+                    .andWhere("product.id != :product_id", { product_id: where.product_id });
+                // Same category OR same brand
+                queryBuilder.andWhere(new typeorm_1.Brackets((qb) => {
+                    if (product.category_id) {
+                        qb.where("product.category_id = :category_id", {
+                            category_id: product.category_id,
+                        });
+                    }
+                    if (product.brand_id) {
+                        qb.orWhere("product.brand_id = :brand_id", {
+                            brand_id: product.brand_id,
+                        });
+                    }
+                }));
+                // Pagination
+                const skip = (page - 1) * limit;
+                queryBuilder.skip(skip).take(limit);
+                // Random order
+                queryBuilder.orderBy("RANDOM()");
+                // Execute query
+                const products = yield queryBuilder.getMany();
+                // Manually fetch productTag and brandData for each product
+                for (const prod of products) {
+                    // Fetch productTag
+                    prod.productTag = yield productTagRepository
+                        .createQueryBuilder("productTag")
+                        .where("productTag.product_id = :product_id", { product_id: prod.id })
+                        .andWhere("productTag.is_active = :is_active", { is_active: true })
+                        .getMany();
+                    // Fetch brandData
+                    if (prod.brand_id) {
+                        prod.brandData = (yield brandingRepository
+                            .createQueryBuilder("branding")
+                            .where("branding.id = :id", { id: prod.brand_id })
+                            .andWhere("branding.is_active = :is_active", { is_active: true })
+                            .getOne()) || undefined;
+                    }
+                }
+                return (0, success_handler_1.handleSuccessWithTotalData)(products, total);
+            }
+            catch (error) {
+                console.error("getSimilarProducts error:", error);
+                return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
+            }
+        });
+    }
     static searchProducts(_b) {
         return __awaiter(this, arguments, void 0, function* ({ where, page, limit, sortedBy, }) {
             const productRepository = (0, typeorm_1.getRepository)(entity_1.Product);
@@ -21926,9 +22055,14 @@ class ProductService {
             try {
                 const productRepository = (0, typeorm_1.getRepository)(entity_1.Product);
                 const categoryRepository = (0, typeorm_1.getRepository)(category_1.Category);
-                const product = yield productRepository.findOne({
-                    where: { id, is_active: true },
-                });
+                const product = yield productRepository
+                    .createQueryBuilder("product")
+                    .leftJoinAndSelect("product.productTag", "productTag")
+                    .leftJoinAndSelect("product.brandData", "brandData")
+                    .leftJoinAndSelect("product.categoryData", "categoryData")
+                    .where("product.id = :id", { id })
+                    .andWhere("product.is_active = :is_active", { is_active: true })
+                    .getOne();
                 if (!product)
                     return (0, error_handler_1.handleError)("Product not found", 404, null);
                 if ((_c = product === null || product === void 0 ? void 0 : product.category_ids) === null || _c === void 0 ? void 0 : _c.length) {
@@ -22162,6 +22296,12 @@ class ProductService {
                     const shopDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyShopToken(req);
                     if (shopDataFromToken === null || shopDataFromToken === void 0 ? void 0 : shopDataFromToken.id) {
                         queryBuilder.leftJoinAndSelect("product.shopProducts", "shopProduct", "shopProduct.shop_id = :shopId", { shopId: shopDataFromToken.id });
+                        queryBuilder.addSelect(`
+        CASE
+          WHEN shopProduct.id IS NOT NULL THEN 'ON_SHELF'
+          ELSE 'UN_SHELF'
+        END
+        `, "shopProductStatus");
                     }
                 }
                 catch (error) { }
@@ -22215,10 +22355,18 @@ class ProductService {
                 queryBuilder.andWhere("product.product_top = :product_top", {
                     product_top: where.product_top,
                 });
-            if ((where === null || where === void 0 ? void 0 : where.product_vip) || (where === null || where === void 0 ? void 0 : where.product_vip) === 0)
+            // if (where?.product_vip || where?.product_vip === 0)
+            //   queryBuilder.andWhere("product.product_vip = :product_vip", {
+            //     product_vip: where.product_vip,
+            //   });
+            if ((where === null || where === void 0 ? void 0 : where.product_vip) === undefined || (where === null || where === void 0 ? void 0 : where.product_vip) === null) {
+                queryBuilder.andWhere("product.product_vip = 0");
+            }
+            else {
                 queryBuilder.andWhere("product.product_vip = :product_vip", {
                     product_vip: where.product_vip,
                 });
+            }
             if (where === null || where === void 0 ? void 0 : where.price_between) {
                 queryBuilder
                     .andWhere("product.price >= :minPrice", {
@@ -22243,6 +22391,8 @@ class ProductService {
                 const fromDate = new Date();
                 fromDate.setDate(fromDate.getDate() - days);
                 queryBuilder.andWhere("product.created_at >= :fromDate", { fromDate });
+                queryBuilder.addSelect("RANDOM()", "rand_order");
+                queryBuilder.orderBy("rand_order");
             }
             // Randomized queries for offers or top-rated
             if (((where === null || where === void 0 ? void 0 : where.discount) && (where === null || where === void 0 ? void 0 : where.discount) > 0) || (where === null || where === void 0 ? void 0 : where.offer)) {

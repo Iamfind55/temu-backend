@@ -24,6 +24,9 @@ const logistics_1 = require("./logistics");
 const attribute_1 = require("./attribute");
 const shopFollower_1 = require("./shopFollower");
 const deposit_1 = require("./deposit");
+const withdraw_1 = require("./withdraw");
+const conversation_1 = require("./conversation");
+const message_1 = require("./message");
 const { GraphQLUpload } = require("graphql-upload");
 exports.resolvers = [
     { Upload: GraphQLUpload },
@@ -49,5 +52,8 @@ exports.resolvers = [
     logistics_1.logisticsResolvers,
     attribute_1.attributeResolvers,
     shopFollower_1.shopFollowerResulvers,
-    deposit_1.depositResolvers
+    deposit_1.depositResolvers,
+    withdraw_1.withdrawResolvers,
+    conversation_1.conversationResolvers,
+    message_1.messageResolvers
 ];

@@ -10,6 +10,7 @@ var OrderStatus;
     OrderStatus["CANCELLED"] = "CANCELLED";
     OrderStatus["SUCCESS"] = "SUCCESS";
     OrderStatus["FAILED"] = "FAILED";
+    OrderStatus["DELETED"] = "DELETED";
 })(OrderStatus || (exports.OrderStatus = OrderStatus = {}));
 var SignInStatus;
 (function (SignInStatus) {

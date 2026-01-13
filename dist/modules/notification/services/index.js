@@ -26,7 +26,6 @@ const pubsub_1 = __importDefault(require("../../../utils/pubsub"));
 class NotificationService {
     static createNotification(_a) {
         return __awaiter(this, arguments, void 0, function* ({ data, }) {
-            console.log("===== starting to createNotification");
             const notificationRepository = (0, typeorm_1.getRepository)(entity_1.Notification);
             try {
                 const newNotification = notificationRepository.create(Object.assign({}, data));

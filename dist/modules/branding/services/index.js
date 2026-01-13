@@ -49,8 +49,10 @@ class BrandingService {
     static updateBranding(_a) {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
             const brandingRepository = (0, typeorm_1.getRepository)(entity_1.Branding);
+            console.log(req.headers);
             try {
                 const staffDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyStaffToken(req);
+                console.log(staffDataFromToken);
                 if (!staffDataFromToken)
                     return (0, error_handler_1.handleError)(config_1.config.message.invalid_token, 404, null);
                 const branding = yield brandingRepository.findOneById(data.id);

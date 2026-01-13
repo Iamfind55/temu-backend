@@ -62,9 +62,21 @@ const startApp = () => __awaiter(void 0, void 0, void 0, function* () {
         server: httpServer,
         path: "/graphql",
     });
-    (0, ws_1.useServer)({
+    const serverCleanup = (0, ws_1.useServer)({
         schema,
-        context: () => __awaiter(void 0, void 0, void 0, function* () { return ({ pubsub: pubsub_1.default }); }),
+        context: (ctx) => __awaiter(void 0, void 0, void 0, function* () {
+            // ctx contains connectionParams from the client
+            return {
+                pubsub: pubsub_1.default,
+                connectionParams: ctx.connectionParams,
+            };
+        }),
+        onConnect: () => __awaiter(void 0, void 0, void 0, function* () {
+            console.log("WebSocket client connected");
+        }),
+        onDisconnect: () => __awaiter(void 0, void 0, void 0, function* () {
+            console.log("WebSocket client disconnected");
+        }),
     }, wsServer);
     const server = new apollo_server_express_1.ApolloServer({
         schema,
@@ -77,7 +89,7 @@ const startApp = () => __awaiter(void 0, void 0, void 0, function* () {
                         return {
                             drainServer() {
                                 return __awaiter(this, void 0, void 0, function* () {
-                                    yield wsServer.close(); // Ensure WebSocket server closes properly on shutdown
+                                    yield serverCleanup.dispose(); // Properly dispose of WebSocket server
                                 });
                             },
                         };
@@ -85,11 +97,17 @@ const startApp = () => __awaiter(void 0, void 0, void 0, function* () {
                 },
             },
         ],
+        // Disable Apollo Server's built-in subscription support since we're using graphql-ws
+        csrfPrevention: false,
     });
     // Middleware
     // Allow server to receive 100MB JSON payloads
     app.use(express_1.default.json({ limit: "100mb" }));
-    app.use((0, cors_1.default)());
+    // Configure CORS to allow WebSocket connections
+    app.use((0, cors_1.default)({
+        origin: true,
+        credentials: true,
+    }));
     // Start Apollo Server
     yield server.start();
     server.applyMiddleware({ app: app, path: "/graphql" });

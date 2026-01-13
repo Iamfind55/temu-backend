@@ -12,10 +12,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TransactionHistory = void 0;
 const typeorm_1 = require("typeorm");
 const baseEntity_1 = require("../../../utils/base/baseEntity");
-const baseType_1 = require("../../../utils/base/baseType");
 const types_1 = require("../types");
 const customer_1 = require("../../customer");
 const shop_1 = require("../../shop");
+const entity_1 = require("../../deposit/entity");
+const withdraw_1 = require("../../withdraw");
 let TransactionHistory = class TransactionHistory extends baseEntity_1.BaseEntity {
 };
 exports.TransactionHistory = TransactionHistory;
@@ -62,19 +63,11 @@ __decorate([
 __decorate([
     (0, typeorm_1.Column)({
         type: "enum",
-        enum: baseType_1.BaseStatus,
-        default: baseType_1.BaseStatus.ACTIVE,
-    }),
-    __metadata("design:type", String)
-], TransactionHistory.prototype, "status", void 0);
-__decorate([
-    (0, typeorm_1.Column)({
-        type: "enum",
         enum: types_1.ETransactionStatus,
         default: types_1.ETransactionStatus.PENDING,
     }),
     __metadata("design:type", String)
-], TransactionHistory.prototype, "transaction_status", void 0);
+], TransactionHistory.prototype, "status", void 0);
 __decorate([
     (0, typeorm_1.ManyToOne)(() => customer_1.Customer, (customer) => customer.transaction_histories, {
         nullable: true,
@@ -89,6 +82,18 @@ __decorate([
     (0, typeorm_1.JoinColumn)({ name: "shop_id" }),
     __metadata("design:type", shop_1.Shop)
 ], TransactionHistory.prototype, "shop", void 0);
+__decorate([
+    (0, typeorm_1.OneToOne)(() => entity_1.Deposit, deposit => deposit.transaction, {
+        nullable: true,
+    }),
+    __metadata("design:type", entity_1.Deposit)
+], TransactionHistory.prototype, "deposit", void 0);
+__decorate([
+    (0, typeorm_1.OneToOne)(() => withdraw_1.Withdraw, withdraw => withdraw.transaction, {
+        nullable: true,
+    }),
+    __metadata("design:type", withdraw_1.Withdraw)
+], TransactionHistory.prototype, "withdraw", void 0);
 exports.TransactionHistory = TransactionHistory = __decorate([
     (0, typeorm_1.Entity)()
 ], TransactionHistory);

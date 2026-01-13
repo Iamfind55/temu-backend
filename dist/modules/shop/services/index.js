@@ -63,7 +63,7 @@ class ShopService {
             const shopRepository = (0, typeorm_1.getRepository)(entity_1.Shop);
             try {
                 // Validation
-                if (!(data === null || data === void 0 ? void 0 : data.username) || !(data === null || data === void 0 ? void 0 : data.password)) {
+                if (!(data === null || data === void 0 ? void 0 : data.email) || !(data === null || data === void 0 ? void 0 : data.password)) {
                     return (0, error_handler_1.handleError)("Validation Error", 400, null);
                 }
                 if (data.email)
@@ -97,6 +97,7 @@ class ShopService {
                 return (0, success_handler_1.handleSuccess)({ token: "", data: savedShop });
             }
             catch (error) {
+                console.log(error);
                 return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
             }
         });
@@ -109,6 +110,9 @@ class ShopService {
                 const shop = yield shopRepository.findOne({ where: { email } });
                 if (!shop) {
                     return (0, error_handler_1.handleError)("Accont not found please try again", 400, null);
+                }
+                if (shop.isVerified) {
+                    return (0, error_handler_1.handleError)("Account is already verified", 400, null);
                 }
                 if (!shop.otp || shop.otp !== otp) {
                     return (0, error_handler_1.handleError)("Invalid OTP, please try again", 400, null);
@@ -151,8 +155,8 @@ class ShopService {
                 if (data === null || data === void 0 ? void 0 : data.password)
                     data.password = yield (0, helper_1.hashPassword)(data === null || data === void 0 ? void 0 : data.password);
                 // Handle payment method updates
-                if (data.payment_method && Array.isArray(data.payment_method)) {
-                    // Assign the updated payment methods back to the shop entity
+                if (data.payment_method && typeof data.payment_method === 'object') {
+                    // Assign the updated payment method back to the shop entity
                     const updatePaymentMethodData = this.updateShopMethodMapingData(data, shop);
                     data.payment_method = updatePaymentMethodData;
                 }
@@ -176,7 +180,7 @@ class ShopService {
                 if (!shop) {
                     return (0, error_handler_1.handleError)("Shop not found", 404, null);
                 }
-                shopRepository.merge(shop, { status: types_1.ShopStatus.ACTIVE });
+                shopRepository.merge(shop, { status: types_1.ShopStatus.APPROVED });
                 const updatedShop = yield shopRepository.save(shop);
                 return (0, success_handler_1.handleSuccess)(updatedShop);
             }
@@ -205,17 +209,17 @@ class ShopService {
                 if (data === null || data === void 0 ? void 0 : data.password) {
                     data.password = yield (0, helper_1.hashPassword)(data.password);
                 }
-                else {
-                    delete data.password; // TypeScript-safe way to "remove" the property
-                }
                 // Handle payment method updates
-                if (data.payment_method && Array.isArray(data.payment_method)) {
+                if (data.payment_method) {
                     // Assign the updated payment methods back to the shop entity
                     const updatePaymentMethodData = this.updateShopMethodMapingData(data, shop);
                     data.payment_method = updatePaymentMethodData;
                 }
                 // Merge and save the shop data
                 shopRepository.merge(shop, data);
+                if (shop.status === types_1.ShopStatus.PENDING) {
+                    shop.status = types_1.ShopStatus.ACTIVE;
+                }
                 const updatedShop = yield shopRepository.save(shop);
                 return (0, success_handler_1.handleSuccess)(updatedShop);
             }
@@ -225,17 +229,41 @@ class ShopService {
         });
     }
     static updateShopMethodMapingData(data, shop) {
-        const existingPaymentMethods = shop.payment_method || [];
-        const updatedPaymentMethods = data.payment_method || [];
-        // Update existing methods or add new ones
-        const updatePaymentMethodData = existingPaymentMethods.map((method) => {
-            const existPaymentMethodUpdate = updatedPaymentMethods.find((paymentMethod) => (paymentMethod === null || paymentMethod === void 0 ? void 0 : paymentMethod.id) === (method === null || method === void 0 ? void 0 : method.id) && (paymentMethod === null || paymentMethod === void 0 ? void 0 : paymentMethod.id) != null);
-            if (existPaymentMethodUpdate) {
-                return Object.assign(Object.assign({}, method), existPaymentMethodUpdate);
-            }
-            return method;
-        });
+        const existingPaymentMethod = shop.payment_method || {};
+        const updatedPaymentMethod = data.payment_method || {};
+        // Merge existing payment method with updated values
+        const updatePaymentMethodData = Object.assign(Object.assign({}, existingPaymentMethod), updatedPaymentMethod);
         return updatePaymentMethodData;
+    }
+    static shopRendOTP(_a) {
+        return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
+            const customerRepository = (0, typeorm_1.getRepository)(entity_1.Shop);
+            try {
+                const { email } = data;
+                // Validation
+                if (!email) {
+                    return (0, error_handler_1.handleError)("Validation Error", 400, null);
+                }
+                const shop = yield customerRepository.findOneBy({
+                    email: email,
+                });
+                if (!shop) {
+                    return (0, error_handler_1.handleError)(config_1.config.message.user_not_found, 404, null);
+                }
+                const otpExpires = (0, date_fns_1.addMinutes)(new Date(), 5);
+                const newOTP = helpers_1.OtpService.generateOtp();
+                shop.otp = newOTP;
+                shop.otpExpire_at = otpExpires;
+                shop.isVerified = false;
+                const savedShop = yield customerRepository.save(shop);
+                yield ShopService.sendOtpEmail(email, newOTP, savedShop);
+                return (0, success_handler_1.handleSuccess)({ token: null, data: savedShop });
+            }
+            catch (error) {
+                console.log(error);
+                return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
+            }
+        });
     }
     static deleteShop(_a) {
         return __awaiter(this, arguments, void 0, function* ({ id, req, }) {
@@ -403,30 +431,31 @@ class ShopService {
         return __awaiter(this, arguments, void 0, function* ({ where, }) {
             const shopRepository = (0, typeorm_1.getRepository)(entity_1.Shop);
             try {
-                const { username, password } = where;
+                const { email, password } = where;
                 // Validate input
-                if (!username || !password) {
-                    return (0, error_handler_1.handleError)("Username and password are required.", 400, null);
+                if (!email || !password) {
+                    return (0, error_handler_1.handleError)("Email and password are required.", 400, null);
                 }
                 const queryBuilder = shopRepository.createQueryBuilder("shop");
-                // Fetch user from database
+                // Fetch user from database by email
                 const shop = yield queryBuilder
                     .where("shop.is_active = :isActive", { isActive: true }) // Ensure only active shops
-                    .andWhere(new typeorm_1.Brackets((db) => {
-                    // Use Brackets to ensure correct grouping
-                    db.where("shop.username = :username", { username }).orWhere("shop.email = :email", { email: username });
-                }))
+                    .andWhere("shop.email = :email", { email })
                     .getOne();
                 if (!shop) {
-                    return (0, error_handler_1.handleError)("Invalid username or password", 400, null);
+                    return (0, error_handler_1.handleError)("Invalid email or password", 400, null);
                 }
                 // Compare passwords
                 const isPasswordValid = yield (0, helper_1.comparePassword)(password, (shop === null || shop === void 0 ? void 0 : shop.password) || "");
                 if (!isPasswordValid) {
-                    return (0, error_handler_1.handleError)("Invalid username or password.", 404, null);
+                    return (0, error_handler_1.handleError)("Invalid email or password.", 404, null);
                 }
-                if (shop.status !== types_1.ShopStatus.ACTIVE)
-                    return (0, error_handler_1.handleError)("Your shop is not active now. Please contact the admin to check the details.", 404, { status: shop.status });
+                // if (shop.status !== ShopStatus.ACTIVE)
+                //   return handleError(
+                //     "Your shop is not active now. Please contact the admin to check the details.",
+                //     404,
+                //     { status: shop.status }
+                //   );
                 // Generate JWT token
                 const token = new auth_middleware_1.AuthMiddlewareService().genShopToken(shop);
                 return (0, success_handler_1.handleSuccess)({ token, data: shop });
@@ -547,11 +576,20 @@ class ShopService {
                     return (0, error_handler_1.handleError)("Email not found", 404, "Email not found in database");
                 }
                 // Generate JWT token with expiration
-                const token = new auth_middleware_1.AuthMiddlewareService().genShopForgotPasswordToken(existEmail);
-                // Generate a reset password link
-                const resetLink = `${config_1.config.client_url}/reset-password?token=${token}`;
-                // Send mail with reset password link
-                yield this.sendResetPasswordEmail(email, resetLink);
+                // const token = new AuthMiddlewareService().genShopForgotPasswordToken(
+                //   existEmail
+                // );
+                // // Generate a reset password link
+                // const resetLink = `${config.client_url}/reset-password?token=${token}`;
+                // // Send mail with reset password link
+                // await this.sendResetPasswordEmail(email, resetLink);
+                const otpExpires = (0, date_fns_1.addMinutes)(new Date(), 5);
+                const newOTP = helpers_1.OtpService.generateOtp();
+                existEmail.otp = newOTP;
+                existEmail.otpExpire_at = otpExpires;
+                existEmail.isVerified = false;
+                const savedCustomer = yield shopRepository.save(existEmail);
+                yield ShopService.sendOtpEmail(email, newOTP, savedCustomer);
                 return (0, success_handler_1.handleSuccess)(null);
             }
             catch (error) {
@@ -759,7 +797,7 @@ class ShopService {
     }
     static shopRequestVIP(_a) {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
-            var _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
+            var _b, _c, _d, _e, _f, _g, _h, _j, _k;
             try {
                 const shopRepository = (0, typeorm_1.getRepository)(entity_1.Shop);
                 const shopDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyShopToken(req);
@@ -783,7 +821,7 @@ class ShopService {
                     return (0, error_handler_1.handleError)("You have already in current VIP that you will apply.", 404, null);
                 }
                 if (((_d = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _d === void 0 ? void 0 : _d.request_status) === types_1.ShopRequestStatus.APPROVED &&
-                    Number(5) === Number((_e = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _e === void 0 ? void 0 : _e.request_vip)) {
+                    Number(3) === Number((_e = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _e === void 0 ? void 0 : _e.request_vip)) {
                     return (0, error_handler_1.handleError)("You cannot request VIP because you are at the end of your VIP period.", 404, null);
                 }
                 if (((_f = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _f === void 0 ? void 0 : _f.request_vip) > data.request_vip &&
@@ -797,38 +835,26 @@ class ShopService {
                 // vip 5: 75000, percent: 45
                 const existingWallet = yield wallet_1.WalletService.getShopWallet({ req });
                 const balance = data.request_vip === "1"
-                    ? 15000
+                    ? types_1.EShopRechargeBalance.VIP1
                     : data.request_vip === "2"
-                        ? 30000
+                        ? types_1.EShopRechargeBalance.VIP2
                         : data.request_vip === "3"
-                            ? 45000
-                            : data.request_vip === "4"
-                                ? 60000
-                                : data.request_vip === "5"
-                                    ? 75000
-                                    : 1500;
+                            ? types_1.EShopRechargeBalance.VIP3
+                            : types_1.EShopRechargeBalance.NORMOL;
                 const addBalanceAmount = data.request_vip === "1"
-                    ? 1500
+                    ? types_1.EShopAmountBalance.VIP1
                     : data.request_vip === "2"
-                        ? 3000
+                        ? types_1.EShopAmountBalance.VIP2
                         : data.request_vip === "3"
-                            ? 4500
-                            : data.request_vip === "4"
-                                ? 6000
-                                : data.request_vip === "5"
-                                    ? 7500
-                                    : 15000;
+                            ? types_1.EShopAmountBalance.VIP3
+                            : types_1.EShopAmountBalance.NORMOL;
                 const profit = data.request_vip === "1"
-                    ? 25
+                    ? types_1.EProfitVIP.VIP1
                     : data.request_vip === "2"
-                        ? 30
+                        ? types_1.EProfitVIP.VIP2
                         : data.request_vip === "3"
-                            ? 35
-                            : data.request_vip === "4"
-                                ? 40
-                                : data.request_vip === "5"
-                                    ? 45
-                                    : 25;
+                            ? types_1.EProfitVIP.VIP3
+                            : types_1.EProfitVIP.NORMOL;
                 if (!existingWallet)
                     return (0, error_handler_1.handleError)("Wallet not found", 404, null);
                 if ((Number((_h = existingWallet.data) === null || _h === void 0 ? void 0 : _h.total_recharged) < balance &&
@@ -836,11 +862,7 @@ class ShopService {
                     (Number((_j = existingWallet.data) === null || _j === void 0 ? void 0 : _j.total_recharged) < balance &&
                         data.request_vip === "2") ||
                     (Number((_k = existingWallet.data) === null || _k === void 0 ? void 0 : _k.total_recharged) < balance &&
-                        data.request_vip === "3") ||
-                    (Number((_l = existingWallet.data) === null || _l === void 0 ? void 0 : _l.total_recharged) < balance &&
-                        data.request_vip === "4") ||
-                    (Number((_m = existingWallet.data) === null || _m === void 0 ? void 0 : _m.total_recharged) < balance &&
-                        data.request_vip === "5")) {
+                        data.request_vip === "3")) {
                     return (0, error_handler_1.handleError)(`Your balance not enough to apply VIP ${data.request_vip}`, 404, null);
                 }
                 const requestData = {

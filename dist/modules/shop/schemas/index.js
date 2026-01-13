@@ -46,7 +46,7 @@ exports.shopSchema = `
     shop_address: String
     image: ShopImageType
     id_card_info: ShopIdCardInfo
-    payment_method: [PaymentMethodType]
+    payment_method: PaymentMethodType
     status: ShopStatus
     shop_vip: Int
     profit: Float
@@ -105,6 +105,7 @@ exports.shopSchema = `
   enum ShopStatus {
     ACTIVE
     INACTIVE
+    APPROVED
     FROZEN
     PENDING
   }
@@ -122,7 +123,7 @@ exports.shopSchema = `
     image: ShopImageInput
     status: ShopStatus
     shop_vip: Int
-    payment_method: [PaymentMethodInput]
+    payment_method: PaymentMethodInput
     profit: Float
     id_card_info: ShopIdCardInfoInput
     store_name: String
@@ -146,7 +147,7 @@ exports.shopSchema = `
     image: ShopImageInput
     status: BaseStatus
     shop_vip: Int
-    payment_method: [PaymentMethodInput]
+    payment_method: PaymentMethodInput
     id_card_info: ShopIdCardInfoInput
     store_name: String
   } 
@@ -160,13 +161,16 @@ exports.shopSchema = `
   }
 
   input ShopWhereLoginInput {
-    username: String!
+    email: String!
     password: String!
   }
 
    input ShopVerifyOTPInput {
     email: String!
     otp: String!
+  }
+   input ResendOtpInput {
+    email: String!
   }
 
   type ShopLoginType {
@@ -216,6 +220,7 @@ exports.shopSchema = `
     error: Error
   } 
 
+  
   type SuccessShopRequestVIPResponseMany {
     success: Boolean!
     total: Int
@@ -243,7 +248,7 @@ exports.shopSchema = `
     deleteShop(id: ID!): SuccessShopResponseOne!
     shopLogin(where: ShopWhereLoginInput): ShopLoginResponse!
     shopForgotPassword(email: String!): SuccessShopForgotPasswordResponse!
-
+    shopResendOTP(data: ResendOtpInput!): SuccessShopResponseOne!
     shopRequestVIP(data: ShopRequestVIPInput!): SuccessShopRequestVIPResponseOne!
     adminApproveShopRequestVIP(id: ID!): SuccessShopRequestVIPResponseOne!
     adminRejectShopRequestVIP(id: ID!): SuccessShopRequestVIPResponseOne!
