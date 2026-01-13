@@ -46,21 +46,21 @@ exports.walletSchema = `
 
   input RechargeWalletInput {
     amount_recharged: Float!
-    coin_type: CoinTypeEnum!
+    coin_type: String!
     account_number: String
     image: String
     # identifier: TransactionIdentifierEnum!
   }
   input RechargeWalletWithInactiveStautsInput {
     amount_recharged: Float!
-    coin_type: CoinTypeEnum!
+    coin_type: String!
     account_number: String
     image: String
     email: String!
   }
   input WithdrawWalletInput {
     amount_withdraw: Float!
-    coin_type: CoinTypeEnum!
+    coin_type: String!
     account_number: String
     image: String
     # identifier: TransactionIdentifierEnum!

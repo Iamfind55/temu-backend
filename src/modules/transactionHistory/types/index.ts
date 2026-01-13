@@ -30,7 +30,7 @@ export enum ETransactionHistoryIdentifier {
 
 export enum ECoinType {
   ETH = "ETH",
-  TRX_USDT = "BRX/USDT",
+  TRX_USDT = "TRX/USDT",
   BTC = "BTC",
 }
 

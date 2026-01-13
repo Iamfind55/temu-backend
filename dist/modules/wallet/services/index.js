@@ -141,6 +141,10 @@ class WalletService {
                         code: 400,
                     };
                 }
+                const { coin_type } = data;
+                if (!Object.values(transactionHistory_1.ECoinType).includes(coin_type)) {
+                    return (0, error_handler_1.handleError)("Type of coin incorrect", 400);
+                }
                 return yield (0, typeorm_1.getManager)().transaction((transactionEntityManager) => __awaiter(this, void 0, void 0, function* () {
                     // Fetch the active wallet inside the transaction
                     const existingWallet = yield transactionEntityManager.findOne(entity_1.Wallet, {
@@ -227,6 +231,10 @@ class WalletService {
                         return (0, error_handler_1.handleError)(config_1.config.message.invalid_token, 404, shopDataFromToken);
                     }
                 }
+                const { coin_type } = data;
+                if (!Object.values(transactionHistory_1.ECoinType).includes(coin_type)) {
+                    return (0, error_handler_1.handleError)("Type of coin incorrect", 400, shopDataFromToken);
+                }
                 // Determine the appropriate user ID field based on token type
                 const userIdField = (shopDataFromToken === null || shopDataFromToken === void 0 ? void 0 : shopDataFromToken.type) === "SHOP"
                     ? { shop_id: shopDataFromToken.id, customer_id: undefined }
@@ -270,6 +278,10 @@ class WalletService {
                     shop_id: existShop.id,
                     customer_id: undefined,
                 };
+                const { coin_type } = data;
+                if (!Object.values(transactionHistory_1.ECoinType).includes(coin_type)) {
+                    return (0, error_handler_1.handleError)("Type of coin incorrect", 400);
+                }
                 // Recharge the balance using the rechargeBalance method
                 const wallet = yield this.rechargeBalance(Object.assign(Object.assign(Object.assign({}, data), userIdField), { payment_slip: data === null || data === void 0 ? void 0 : data.image }));
                 if ((wallet === null || wallet === void 0 ? void 0 : wallet.code) != 200) {
@@ -294,6 +306,10 @@ class WalletService {
                     if (!shopDataFromToken) {
                         return (0, error_handler_1.handleError)(config_1.config.message.invalid_token, 404, shopDataFromToken);
                     }
+                }
+                const { coin_type } = data;
+                if (!Object.values(transactionHistory_1.ECoinType).includes(coin_type)) {
+                    return (0, error_handler_1.handleError)("Type of coin incorrect", 400);
                 }
                 // Determine the appropriate user ID field based on token type
                 const userIdField = (shopDataFromToken === null || shopDataFromToken === void 0 ? void 0 : shopDataFromToken.type) === "SHOP"

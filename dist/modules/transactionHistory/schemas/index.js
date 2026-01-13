@@ -2,12 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.transactionHistorySchema = void 0;
 exports.transactionHistorySchema = ` 
-  enum CoinTypeEnum {
-    ERC20 
-    TRC20 
-    BTC
-  }
-
   enum TransactionIdentifierEnum {
     RECHARGE
     WITHDRAW
@@ -24,7 +18,7 @@ exports.transactionHistorySchema = `
     id: ID
     identifier: TransactionIdentifierEnum
     amount: Float
-    coin_type: CoinTypeEnum
+    coin_type: String
     payment_slip: String
     wallet_id: String
     status: TransactionStatusEnum
@@ -40,7 +34,7 @@ exports.transactionHistorySchema = `
 
   input TransactionHistoryWhereInput {
     identifier: TransactionIdentifierEnum
-    coin_type: CoinTypeEnum
+    coin_type: String
     createdAtBetween: DateBetweenInput
   }
 
