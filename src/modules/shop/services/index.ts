@@ -182,7 +182,6 @@ export class ShopService {
         return handleError("You OTP expires", 400, null);
       }
 
-      shop.status = ShopStatus.ACTIVE;
       shop.isOtpEnable = true;
       shop.isVerified = true;
       await shopRepository.save(shop);
@@ -355,9 +354,9 @@ export class ShopService {
 
       // Merge and save the shop data
       shopRepository.merge(shop, data as any);
-      if (shop.status === ShopStatus.PENDING) {
-        shop.status = ShopStatus.ACTIVE;
-      }
+      // if (shop.status === ShopStatus.PENDING) {
+      //   shop.status = ShopStatus.ACTIVE;
+      // }
       const updatedShop = await shopRepository.save(shop);
 
       return handleSuccess(updatedShop);
@@ -411,7 +410,7 @@ export class ShopService {
       shop.otp = newOTP;
       shop.otpExpire_at = otpExpires;
       shop.isVerified = false;
-      
+
       const savedShop = await customerRepository.save(shop);
       await ShopService.sendOtpEmail(email, newOTP, savedShop);
 
@@ -709,12 +708,18 @@ export class ShopService {
         return handleError("Invalid email or password.", 404, null);
       }
 
-      // if (shop.status !== ShopStatus.ACTIVE)
-      //   return handleError(
-      //     "Your shop is not active now. Please contact the admin to check the details.",
-      //     404,
-      //     { status: shop.status }
-      //   );
+      if (
+        shop.status !== ShopStatus.PENDING &&
+        shop.status !== ShopStatus.ACTIVE &&
+        shop.status !== ShopStatus.APPROVED
+      ) {
+        return handleError(
+          "Your shop is not active now. Please contact the admin to check the details.",
+          404,
+          { status: shop.status }
+        );
+      }
+
 
       // Generate JWT token
       const token = new AuthMiddlewareService().genShopToken(shop);
