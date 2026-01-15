@@ -354,9 +354,9 @@ export class ShopService {
 
       // Merge and save the shop data
       shopRepository.merge(shop, data as any);
-      // if (shop.status === ShopStatus.PENDING) {
-      //   shop.status = ShopStatus.ACTIVE;
-      // }
+      if (shop.status === ShopStatus.PENDING) {
+        shop.status = ShopStatus.ACTIVE;
+      }
       const updatedShop = await shopRepository.save(shop);
 
       return handleSuccess(updatedShop);
