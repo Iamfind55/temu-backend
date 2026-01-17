@@ -46,6 +46,7 @@ export const shopSchema = `
     payment_method: PaymentMethodType
     status: ShopStatus
     isVerified: Boolean
+    isOtpEnable:Boolean
     shop_vip: Int
     profit: Float
     created_by: String
