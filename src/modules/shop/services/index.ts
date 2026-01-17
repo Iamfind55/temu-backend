@@ -284,7 +284,7 @@ export class ShopService {
         return handleError("Shop not found", 404, null);
       }
 
-      shopRepository.merge(shop, { status: ShopStatus.APPROVED });
+      shopRepository.merge(shop, { status: ShopStatus.ACTIVE });
 
 
       const updatedShop = await shopRepository.save(shop);
@@ -355,7 +355,7 @@ export class ShopService {
       // Merge and save the shop data
       shopRepository.merge(shop, data as any);
       if (shop.status === ShopStatus.PENDING) {
-        shop.status = ShopStatus.ACTIVE;
+        shop.status = ShopStatus.APPROVED;
       }
       const updatedShop = await shopRepository.save(shop);
 
@@ -410,6 +410,7 @@ export class ShopService {
       shop.otp = newOTP;
       shop.otpExpire_at = otpExpires;
       shop.isVerified = false;
+      
 
       const savedShop = await customerRepository.save(shop);
       await ShopService.sendOtpEmail(email, newOTP, savedShop);
@@ -984,6 +985,7 @@ export class ShopService {
   static async sendOtpEmail(email: string, otp: string, customer: any) {
     try {
       console.log(" Sending OTP email...", customer.email);
+      console.log("Opt", customer,otp);
 
       // Create transporter
       const transporter = nodemailer.createTransport({

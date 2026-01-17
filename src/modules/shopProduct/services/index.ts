@@ -60,7 +60,7 @@ export class ShopProductService {
       });
 
       if (!shop) return handleError("Shop not found.", 404, null);
-      if (shop.status !== ShopStatus.APPROVED) {
+      if (shop.status !== ShopStatus.ACTIVE) {
         return handleError("Your shop account is currently under review. Access will be granted after administrative approval.", 400, null);
       }
       if (shop?.shop_vip && shop.shop_vip < product.product_vip)

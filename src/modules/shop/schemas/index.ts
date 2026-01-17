@@ -45,6 +45,7 @@ export const shopSchema = `
     id_card_info: ShopIdCardInfo
     payment_method: PaymentMethodType
     status: ShopStatus
+    isVerified: Boolean
     shop_vip: Int
     profit: Float
     created_by: String
