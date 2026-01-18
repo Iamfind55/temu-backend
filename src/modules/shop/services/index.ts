@@ -1203,6 +1203,16 @@ export class ShopService {
           null
         );
       }
+      if (
+        shop?.request_vip_data?.request_vip === data.request_vip &&
+        shop?.request_vip_data?.request_status === ShopRequestStatus.PENDING
+      ) {
+        return handleError(
+          `VIP${data.request_vip} request already submitted. Please wait for review.`,
+          404,
+          null
+        );
+      }
 
       if (
         shop?.request_vip_data?.request_status === ShopRequestStatus.APPROVED &&
