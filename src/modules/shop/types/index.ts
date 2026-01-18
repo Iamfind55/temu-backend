@@ -80,17 +80,17 @@ export enum EProfitVIP {
   NORMOL = 25,
   VIP1 = 35,
   VIP2 = 40,
-  VIP3 = 50
+  VIP3 = 45
 }
 export enum EShopRechargeBalance {
-  NORMOL = 1500,
+  NORMOL = 0,
   VIP1 = 15000,
   VIP2 = 30000,
   VIP3 = 45000
 }
 
 export enum EShopAmountBalance {
-  NORMOL = 1500,
+  NORMOL = 0,
   VIP1 = 1500,
   VIP2 = 3000,
   VIP3 = 4500

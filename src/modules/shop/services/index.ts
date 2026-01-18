@@ -1044,11 +1044,15 @@ export class ShopService {
 
       //  Setup mail options
       const mailOptions = {
-        from: `"Temu" <${config.smtp.user}>`,
+        from: `"Temu Shop Support" <${config.smtp.user}>`,
         to: email,
-        subject: `${otp} is your verification code`,
-        text: `Your OTP code is ${otp}. It will expire in 5 minutes.`,
+        subject: `Your Verification Code for Temu Shop`,
+        text: `Hello ${customer?.fullname || customer?.email},\n\nYour verification code is: ${otp}\n\nThis code will expire in 5 minutes.\n\nIf you did not request this code, please ignore this email.\n\nBest regards,\nTemu Shop Support Team`,
         html: htmlContent,
+        headers: {
+          'X-Priority': '1',
+          'X-Mailer': 'Temu Shop Mailer',
+        },
       };
 
       // Send the email
@@ -1076,19 +1080,15 @@ export class ShopService {
 
       // Email options
       const mailOptions = {
-        from: `"Temu" <${config.smtp.user}>`, // sender address
-        to: email, // recipient email
-        subject: `Reset Your Password ${Date.now().toString()}`, // Subject line
-        text: `You requested a password reset. Please copy the otp below to reset password`,
-        // html: `<p>You requested a password reset.</p>
-        //      <p>Click the link below to reset your password:</p>
-        //      <a href="${resetLink}" target="_blank">${resetLink}</a>`,
+        from: `"Temu Shop Support" <${config.smtp.user}>`,
+        to: email,
+        subject: `Password Reset Request - Temu Shop`,
+        text: `Hello,\n\nYou requested a password reset.\n\nYour reset code is: ${otp}\n\nThis code will expire in 5 minutes.\n\nIf you did not request this, please ignore this email.\n\nBest regards,\nTemu Shop Support Team`,
         html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
           <h2 style="color: #444;">Password Reset Request</h2>
-          <p>You requested a password reset. Click the button below to reset your password:</p>
-          <div"
-            style="
+          <p>You requested a password reset. Use the code below to reset your password:</p>
+          <div style="
               display: inline-block;
               background-color: #ff6600;
               color: white;
@@ -1096,14 +1096,19 @@ export class ShopService {
               text-decoration: none;
               border-radius: 6px;
               font-weight: bold;
+              margin: 15px 0;
             ">
-           Your otp code: ${otp}
+           Your code: ${otp}
           </div>
-         
-          <p>If you didn’t request this, please ignore this email.</p>
+          <p>This code will expire in 5 minutes.</p>
+          <p>If you didn't request this, please ignore this email.</p>
           <hr style="margin-top: 30px; border: none; border-top: 1px solid #ddd;">
-          <p style="font-size: 12px; color: #888;">© ${new Date().getFullYear()} Temu. All rights reserved.</p>
+          <p style="font-size: 12px; color: #888;">© ${new Date().getFullYear()} Temu Shop. All rights reserved.</p>
         </div>`,
+        headers: {
+          'X-Priority': '1',
+          'X-Mailer': 'Temu Shop Mailer',
+        },
       };
 
       // Send the email
@@ -1170,7 +1175,7 @@ export class ShopService {
         return handleError(config.message.invalid_token, 404, null);
       const id = shopDataFromToken?.id;
 
-      if (!["1", "2", "3", "4", "5"].includes(data.request_vip)) {
+      if (!["1", "2", "3"].includes(data.request_vip)) {
         {
           return handleError(
             `Not allow you apply VIP ${data.request_vip}`,
@@ -1235,6 +1240,7 @@ export class ShopService {
             : data.request_vip === "3"
               ? EShopRechargeBalance.VIP3
               : EShopRechargeBalance.NORMOL;
+
       const addBalanceAmount =
         data.request_vip === "1"
           ? EShopAmountBalance.VIP1
@@ -1492,11 +1498,7 @@ export class ShopService {
         (Number(existingWallet.data?.total_recharged) < balance &&
           shop?.request_vip_data.request_vip === "2") ||
         (Number(existingWallet.data?.total_recharged) < balance &&
-          shop?.request_vip_data.request_vip === "3") ||
-        (Number(existingWallet.data?.total_recharged) < balance &&
-          shop?.request_vip_data.request_vip === "4") ||
-        (Number(existingWallet.data?.total_recharged) < balance &&
-          shop?.request_vip_data.request_vip === "5")
+          shop?.request_vip_data.request_vip === "3")
       ) {
         return handleError(
           `Shop's balance not enough to apply VIP ${shop?.request_vip_data?.request_vip}`,
