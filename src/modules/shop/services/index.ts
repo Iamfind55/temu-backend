@@ -1490,7 +1490,6 @@ export class ShopService {
         where: { shop_id: shopId, is_active: true },
       });
 
-      const balance = shop?.request_vip_data.balance || 15000;
       const addBalanceAmount = shop?.request_vip_data.add_balance_amount || 1500;
       const profit = shop?.request_vip_data.profit;
 
@@ -1498,13 +1497,6 @@ export class ShopService {
         return handleError("Wallet not found", 404, null);
       }
 
-      if (Number(existingWallet.total_recharged) < balance) {
-        return handleError(
-          `Shop's balance not enough to apply VIP ${shop?.request_vip_data?.request_vip}`,
-          404,
-          null
-        );
-      }
 
       // Start the transaction
       await entityManager.transaction(async (transactionalEntityManager) => {
