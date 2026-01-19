@@ -414,8 +414,8 @@ export class OrderService {
                 if (!shopWallet) throw new Error("Shop wallet not found.");
               }
               shopWallet.total_frozen_balance +=
-                orderData.total_price +
-                (orderData.total_price * orderData.profit) / 100;
+                orderData.total_price 
+                
               await entityManager.save(Wallet, shopWallet);
             }
 
