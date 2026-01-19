@@ -1288,7 +1288,7 @@ export class ShopService {
         profit: profit,
         balance: balance,
         add_balance_amount: addBalanceAmount,
-        request_status: ShopRequestStatus.APPROVED,
+        request_status: ShopRequestStatus.PENDING,
         requested_at: new Date(),
       };
       await shopRepository.update(
@@ -1296,14 +1296,21 @@ export class ShopService {
         { request_vip_data: requestData }
       );
 
+      // Auto approve VIP request
+      const autoApproveResult = await this.autoApproveShopRequestVIP({ shopId: id });
+      if (!autoApproveResult.success) {
+        return handleError(autoApproveResult.error?.message || "Failed to auto approve VIP", 500, null);
+      }
+
       try {
         const details = {
           ...requestData,
+          request_status: ShopRequestStatus.APPROVED,
         };
 
         const _data = {
-          title: "Request VIP",
-          description: `You have reqeusted VIP to your shop's account success.`,
+          title: "VIP Approved",
+          description: `Your VIP ${data.request_vip} request has been approved.`,
           shop_id: id,
           reference_id: id,
           data: details,
@@ -1314,7 +1321,7 @@ export class ShopService {
         console.error("Error while create notification", { error });
       }
 
-      return handleSuccess(requestData);
+      return handleSuccess({ ...requestData, request_status: ShopRequestStatus.APPROVED });
     } catch (error: any) {
       return handleError(
         config.message.internal_server_error,
@@ -1451,6 +1458,101 @@ export class ShopService {
   //     );
   //   }
   // }
+
+  // Auto approve VIP request (called internally after shopRequestVIP)
+  static async autoApproveShopRequestVIP({
+    shopId,
+  }: {
+    shopId: string;
+  }): Promise<Response<ShopRequestVIPData | null>> {
+    const entityManager = getManager();
+
+    try {
+      const shopRepository = getRepository(Shop);
+      const walletRepository = getRepository(Wallet);
+
+      // Find the shop with pending VIP request
+      const shop = await shopRepository
+        .createQueryBuilder("shop")
+        .where("shop.is_active = :isActive", { isActive: true })
+        .andWhere(
+          "(shop.request_vip_data IS NOT NULL AND shop.request_vip_data ->> 'request_status' = :requestStatus)",
+          { requestStatus: ShopRequestStatus.PENDING }
+        )
+        .andWhere("shop.id = :shopId", { shopId })
+        .getOne();
+
+      if (!shop) {
+        return handleError("Shop not found or no pending VIP request", 404, null);
+      }
+
+      const existingWallet = await walletRepository.findOne({
+        where: { shop_id: shopId, is_active: true },
+      });
+
+      const balance = shop?.request_vip_data.balance || 15000;
+      const addBalanceAmount = shop?.request_vip_data.add_balance_amount || 1500;
+      const profit = shop?.request_vip_data.profit;
+
+      if (!existingWallet) {
+        return handleError("Wallet not found", 404, null);
+      }
+
+      if (Number(existingWallet.total_recharged) < balance) {
+        return handleError(
+          `Shop's balance not enough to apply VIP ${shop?.request_vip_data?.request_vip}`,
+          404,
+          null
+        );
+      }
+
+      // Start the transaction
+      await entityManager.transaction(async (transactionalEntityManager) => {
+        const requestData = {
+          ...shop.request_vip_data,
+          request_status: ShopRequestStatus.APPROVED,
+        };
+
+        // Update the shop within the transaction
+        await transactionalEntityManager.update(
+          Shop,
+          { id: shopId },
+          {
+            request_vip_data: requestData,
+            shop_vip: Number(shop.request_vip_data.request_vip),
+            profit: Number(profit),
+          }
+        );
+
+        // Update the wallet within the transaction
+        await transactionalEntityManager
+          .createQueryBuilder()
+          .update(Wallet)
+          .set({
+            total_balance: () => "total_balance + :total_balance",
+            total_withdraw_able_balance: () =>
+              "total_withdraw_able_balance + :total_withdraw_able_balance",
+          })
+          .where("shop_id = :shop_id", {
+            shop_id: shop.id,
+          })
+          .setParameters({
+            total_balance: Number(addBalanceAmount),
+            total_withdraw_able_balance: Number(addBalanceAmount),
+          })
+          .execute();
+      });
+
+      return handleSuccess(shop.request_vip_data);
+    } catch (error: any) {
+      console.error("Error in autoApproveShopRequestVIP:", error);
+      return handleError(
+        config.message.internal_server_error,
+        500,
+        error.message
+      );
+    }
+  }
 
   // Map `sortedBy` enum to TypeORM order format
   static async adminApproveShopRequestVIP({
