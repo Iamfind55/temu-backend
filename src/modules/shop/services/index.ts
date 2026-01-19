@@ -1477,7 +1477,7 @@ export class ShopService {
         .where("shop.is_active = :isActive", { isActive: true })
         .andWhere(
           "(shop.request_vip_data IS NOT NULL AND shop.request_vip_data ->> 'request_status' = :requestStatus)",
-          { requestStatus: ShopRequestStatus.PENDING }
+          { requestStatus: ShopRequestStatus.APPROVED }
         )
         .andWhere("shop.id = :shopId", { shopId })
         .getOne();
