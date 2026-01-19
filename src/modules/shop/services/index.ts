@@ -1288,7 +1288,7 @@ export class ShopService {
         profit: profit,
         balance: balance,
         add_balance_amount: addBalanceAmount,
-        request_status: ShopRequestStatus.PENDING,
+        request_status: ShopRequestStatus.APPROVED,
         requested_at: new Date(),
       };
       await shopRepository.update(
