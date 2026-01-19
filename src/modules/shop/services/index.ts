@@ -1487,7 +1487,6 @@ export class ShopService {
       });
 
       const addBalanceAmount = shop?.request_vip_data.add_balance_amount || 1500;
-      const profit = shop?.request_vip_data.profit;
 
       if (!existingWallet) {
         return handleError("Wallet not found", 404, null);
@@ -1507,8 +1506,7 @@ export class ShopService {
           { id: shopId },
           {
             request_vip_data: requestData,
-            shop_vip: Number(shop.request_vip_data.request_vip),
-            profit: Number(profit),
+            status: ShopStatus.APPROVED,
           }
         );
 
