@@ -1205,7 +1205,7 @@ export class ShopService {
       }
       if (
         shop?.request_vip_data?.request_vip === data.request_vip &&
-        shop?.request_vip_data?.request_status === ShopRequestStatus.PENDING
+        shop?.request_vip_data?.request_status === ShopRequestStatus.APPROVED
       ) {
         return handleError(
           `VIP${data.request_vip} request already submitted. Please wait for review.`,
@@ -1288,7 +1288,7 @@ export class ShopService {
         profit: profit,
         balance: balance,
         add_balance_amount: addBalanceAmount,
-        request_status: ShopRequestStatus.PENDING,
+        request_status: ShopRequestStatus.APPROVED,
         requested_at: new Date(),
       };
       await shopRepository.update(
@@ -1475,10 +1475,6 @@ export class ShopService {
       const shop = await shopRepository
         .createQueryBuilder("shop")
         .where("shop.is_active = :isActive", { isActive: true })
-        .andWhere(
-          "(shop.request_vip_data IS NOT NULL AND shop.request_vip_data ->> 'request_status' = :requestStatus)",
-          { requestStatus: ShopRequestStatus.APPROVED }
-        )
         .andWhere("shop.id = :shopId", { shopId })
         .getOne();
 
