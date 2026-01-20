@@ -1503,7 +1503,6 @@ export class ShopService {
           { id: shopId },
           {
             request_vip_data: requestData,
-            status: ShopStatus.APPROVED,
           }
         );
 
