@@ -1290,7 +1290,7 @@ export class ShopService {
       };
       await shopRepository.update(
         { id: id },
-        { shop_vip: Number(data.request_vip), request_vip_data: requestData }
+        { shop_vip: Number(data?.request_vip), request_vip_data: requestData }
       );
 
       // Auto approve VIP request
