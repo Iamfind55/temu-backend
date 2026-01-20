@@ -410,7 +410,7 @@ export class ShopService {
       shop.otp = newOTP;
       shop.otpExpire_at = otpExpires;
       shop.isVerified = false;
-      
+
 
       const savedShop = await customerRepository.save(shop);
       await ShopService.sendOtpEmail(email, newOTP, savedShop);
@@ -1290,7 +1290,7 @@ export class ShopService {
       };
       await shopRepository.update(
         { id: id },
-        { shop_vip: Number(data?.request_vip), request_vip_data: requestData }
+        { shop_vip: Number(data?.request_vip), profit: profit, request_vip_data: requestData }
       );
 
       // Auto approve VIP request
