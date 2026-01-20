@@ -14,10 +14,10 @@ export class BaseEntity {
   @Column({ type: "boolean", default: true })
   is_active!: boolean;
 
-  @CreateDateColumn()
+  @CreateDateColumn({ type: "timestamptz" })
   created_at!: Date;
 
-  @UpdateDateColumn()
+  @UpdateDateColumn({ type: "timestamptz" })
   updated_at!: Date;
 
   @Column({ nullable: true })

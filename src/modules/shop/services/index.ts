@@ -984,9 +984,6 @@ export class ShopService {
 
   static async sendOtpEmail(email: string, otp: string, customer: any) {
     try {
-      console.log(" Sending OTP email...", customer.email);
-      console.log("Opt", customer,otp);
-
       // Create transporter
       const transporter = nodemailer.createTransport({
         host: config.smtp.host,
@@ -1293,7 +1290,7 @@ export class ShopService {
       };
       await shopRepository.update(
         { id: id },
-        { request_vip_data: requestData }
+        { shop_vip: Number(data.request_vip), request_vip_data: requestData }
       );
 
       // Auto approve VIP request

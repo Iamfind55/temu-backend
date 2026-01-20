@@ -40,6 +40,9 @@ export const connectDB = async () => {
       database: config.db_name, // Replace with your PostgreSQL database name
       synchronize: true,
       logging: false,
+      extra: {
+        timezone: "America/New_York", // USA Eastern Time
+      },
       entities: [
         Banner,
         Branding,
