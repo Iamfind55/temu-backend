@@ -989,9 +989,13 @@ export class ShopService {
         host: config.smtp.host,
         port: config.smtp.port,
         secure: config.smtp.secure, // true for 465 (SSL), false for 587 (TLS)
+        requireTLS: true,
         auth: {
           user: config.smtp.user,
           pass: config.smtp.pass,
+        },
+        tls: {
+          rejectUnauthorized: false,
         },
       });
 
