@@ -51,6 +51,9 @@ const connectDB = () => __awaiter(void 0, void 0, void 0, function* () {
             database: config_1.config.db_name, // Replace with your PostgreSQL database name
             synchronize: true,
             logging: false,
+            extra: {
+                timezone: "America/New_York", // USA Eastern Time
+            },
             entities: [
                 banner_1.Banner,
                 branding_1.Branding,

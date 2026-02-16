@@ -75,6 +75,7 @@ export enum ShopStatus {
   APPROVED = "APPROVED",
   FROZEN = "FROZEN",
   INACTIVE = "INACTIVE",
+  DELETED = "DELETED",
 }
 export enum EProfitVIP {
   NORMOL = 25,

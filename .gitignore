@@ -38,3 +38,9 @@ categories.json
 rawData.json
 api-*.json
 debug-*.json
+
+# SSL certificates and Nginx logs (production)
+certbot/
+logs/
+nginx-init.conf
+*.backup

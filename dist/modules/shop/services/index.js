@@ -120,7 +120,6 @@ class ShopService {
                 if (!shop.otpExpire_at || shop.otpExpire_at <= new Date()) {
                     return (0, error_handler_1.handleError)("You OTP expires", 400, null);
                 }
-                shop.status = types_1.ShopStatus.ACTIVE;
                 shop.isOtpEnable = true;
                 shop.isVerified = true;
                 yield shopRepository.save(shop);
@@ -180,7 +179,7 @@ class ShopService {
                 if (!shop) {
                     return (0, error_handler_1.handleError)("Shop not found", 404, null);
                 }
-                shopRepository.merge(shop, { status: types_1.ShopStatus.APPROVED });
+                shopRepository.merge(shop, { status: types_1.ShopStatus.ACTIVE });
                 const updatedShop = yield shopRepository.save(shop);
                 return (0, success_handler_1.handleSuccess)(updatedShop);
             }
@@ -218,7 +217,7 @@ class ShopService {
                 // Merge and save the shop data
                 shopRepository.merge(shop, data);
                 if (shop.status === types_1.ShopStatus.PENDING) {
-                    shop.status = types_1.ShopStatus.ACTIVE;
+                    shop.status = types_1.ShopStatus.APPROVED;
                 }
                 const updatedShop = yield shopRepository.save(shop);
                 return (0, success_handler_1.handleSuccess)(updatedShop);
@@ -450,12 +449,11 @@ class ShopService {
                 if (!isPasswordValid) {
                     return (0, error_handler_1.handleError)("Invalid email or password.", 404, null);
                 }
-                // if (shop.status !== ShopStatus.ACTIVE)
-                //   return handleError(
-                //     "Your shop is not active now. Please contact the admin to check the details.",
-                //     404,
-                //     { status: shop.status }
-                //   );
+                if (shop.status !== types_1.ShopStatus.PENDING &&
+                    shop.status !== types_1.ShopStatus.ACTIVE &&
+                    shop.status !== types_1.ShopStatus.APPROVED) {
+                    return (0, error_handler_1.handleError)("Your shop is not active now. Please contact the admin to check the details.", 404, { status: shop.status });
+                }
                 // Generate JWT token
                 const token = new auth_middleware_1.AuthMiddlewareService().genShopToken(shop);
                 return (0, success_handler_1.handleSuccess)({ token, data: shop });
@@ -638,7 +636,6 @@ class ShopService {
     static sendOtpEmail(email, otp, customer) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                console.log(" Sending OTP email...", customer.email);
                 // Create transporter
                 const transporter = nodemailer.createTransport({
                     host: config_1.config.smtp.host,
@@ -693,11 +690,15 @@ class ShopService {
       `;
                 //  Setup mail options
                 const mailOptions = {
-                    from: `"Temu" <${config_1.config.smtp.user}>`,
+                    from: `"Temu Shop Support" <${config_1.config.smtp.user}>`,
                     to: email,
-                    subject: `${otp} is your verification code`,
-                    text: `Your OTP code is ${otp}. It will expire in 5 minutes.`,
+                    subject: `Your Verification Code for Temu Shop`,
+                    text: `Hello ${(customer === null || customer === void 0 ? void 0 : customer.fullname) || (customer === null || customer === void 0 ? void 0 : customer.email)},\n\nYour verification code is: ${otp}\n\nThis code will expire in 5 minutes.\n\nIf you did not request this code, please ignore this email.\n\nBest regards,\nTemu Shop Support Team`,
                     html: htmlContent,
+                    headers: {
+                        'X-Priority': '1',
+                        'X-Mailer': 'Temu Shop Mailer',
+                    },
                 };
                 // Send the email
                 const info = yield transporter.sendMail(mailOptions);
@@ -725,19 +726,15 @@ class ShopService {
                 });
                 // Email options
                 const mailOptions = {
-                    from: `"Temu" <${config_1.config.smtp.user}>`, // sender address
-                    to: email, // recipient email
-                    subject: `Reset Your Password ${Date.now().toString()}`, // Subject line
-                    text: `You requested a password reset. Please copy the otp below to reset password`,
-                    // html: `<p>You requested a password reset.</p>
-                    //      <p>Click the link below to reset your password:</p>
-                    //      <a href="${resetLink}" target="_blank">${resetLink}</a>`,
+                    from: `"Temu Shop Support" <${config_1.config.smtp.user}>`,
+                    to: email,
+                    subject: `Password Reset Request - Temu Shop`,
+                    text: `Hello,\n\nYou requested a password reset.\n\nYour reset code is: ${otp}\n\nThis code will expire in 5 minutes.\n\nIf you did not request this, please ignore this email.\n\nBest regards,\nTemu Shop Support Team`,
                     html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
           <h2 style="color: #444;">Password Reset Request</h2>
-          <p>You requested a password reset. Click the button below to reset your password:</p>
-          <div"
-            style="
+          <p>You requested a password reset. Use the code below to reset your password:</p>
+          <div style="
               display: inline-block;
               background-color: #ff6600;
               color: white;
@@ -745,14 +742,19 @@ class ShopService {
               text-decoration: none;
               border-radius: 6px;
               font-weight: bold;
+              margin: 15px 0;
             ">
-           Your otp code: ${otp}
+           Your code: ${otp}
           </div>
-         
-          <p>If you didn’t request this, please ignore this email.</p>
+          <p>This code will expire in 5 minutes.</p>
+          <p>If you didn't request this, please ignore this email.</p>
           <hr style="margin-top: 30px; border: none; border-top: 1px solid #ddd;">
-          <p style="font-size: 12px; color: #888;">© ${new Date().getFullYear()} Temu. All rights reserved.</p>
+          <p style="font-size: 12px; color: #888;">© ${new Date().getFullYear()} Temu Shop. All rights reserved.</p>
         </div>`,
+                    headers: {
+                        'X-Priority': '1',
+                        'X-Mailer': 'Temu Shop Mailer',
+                    },
                 };
                 // Send the email
                 transporter.sendMail(mailOptions, (error, info) => {
@@ -797,14 +799,14 @@ class ShopService {
     }
     static shopRequestVIP(_a) {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
-            var _b, _c, _d, _e, _f, _g, _h, _j, _k;
+            var _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
             try {
                 const shopRepository = (0, typeorm_1.getRepository)(entity_1.Shop);
                 const shopDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyShopToken(req);
                 if (!shopDataFromToken)
                     return (0, error_handler_1.handleError)(config_1.config.message.invalid_token, 404, null);
                 const id = shopDataFromToken === null || shopDataFromToken === void 0 ? void 0 : shopDataFromToken.id;
-                if (!["1", "2", "3", "4", "5"].includes(data.request_vip)) {
+                if (!["1", "2", "3"].includes(data.request_vip)) {
                     {
                         return (0, error_handler_1.handleError)(`Not allow you apply VIP ${data.request_vip}`, 404, null);
                     }
@@ -820,12 +822,16 @@ class ShopService {
                     ((_c = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _c === void 0 ? void 0 : _c.request_status) === types_1.ShopRequestStatus.APPROVED) {
                     return (0, error_handler_1.handleError)("You have already in current VIP that you will apply.", 404, null);
                 }
-                if (((_d = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _d === void 0 ? void 0 : _d.request_status) === types_1.ShopRequestStatus.APPROVED &&
-                    Number(3) === Number((_e = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _e === void 0 ? void 0 : _e.request_vip)) {
+                if (((_d = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _d === void 0 ? void 0 : _d.request_vip) === data.request_vip &&
+                    ((_e = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _e === void 0 ? void 0 : _e.request_status) === types_1.ShopRequestStatus.APPROVED) {
+                    return (0, error_handler_1.handleError)(`VIP${data.request_vip} request already submitted. Please wait for review.`, 404, null);
+                }
+                if (((_f = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _f === void 0 ? void 0 : _f.request_status) === types_1.ShopRequestStatus.APPROVED &&
+                    Number(3) === Number((_g = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _g === void 0 ? void 0 : _g.request_vip)) {
                     return (0, error_handler_1.handleError)("You cannot request VIP because you are at the end of your VIP period.", 404, null);
                 }
-                if (((_f = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _f === void 0 ? void 0 : _f.request_vip) > data.request_vip &&
-                    ((_g = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _g === void 0 ? void 0 : _g.request_status) === types_1.ShopRequestStatus.APPROVED) {
+                if (((_h = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _h === void 0 ? void 0 : _h.request_vip) > data.request_vip &&
+                    ((_j = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _j === void 0 ? void 0 : _j.request_status) === types_1.ShopRequestStatus.APPROVED) {
                     return (0, error_handler_1.handleError)("You cannot request a lower VIP level than your current VIP.", 404, null);
                 }
                 // vip 1: 15000, percent: 25
@@ -857,11 +863,11 @@ class ShopService {
                             : types_1.EProfitVIP.NORMOL;
                 if (!existingWallet)
                     return (0, error_handler_1.handleError)("Wallet not found", 404, null);
-                if ((Number((_h = existingWallet.data) === null || _h === void 0 ? void 0 : _h.total_recharged) < balance &&
+                if ((Number((_k = existingWallet.data) === null || _k === void 0 ? void 0 : _k.total_recharged) < balance &&
                     data.request_vip === "1") ||
-                    (Number((_j = existingWallet.data) === null || _j === void 0 ? void 0 : _j.total_recharged) < balance &&
+                    (Number((_l = existingWallet.data) === null || _l === void 0 ? void 0 : _l.total_recharged) < balance &&
                         data.request_vip === "2") ||
-                    (Number((_k = existingWallet.data) === null || _k === void 0 ? void 0 : _k.total_recharged) < balance &&
+                    (Number((_m = existingWallet.data) === null || _m === void 0 ? void 0 : _m.total_recharged) < balance &&
                         data.request_vip === "3")) {
                     return (0, error_handler_1.handleError)(`Your balance not enough to apply VIP ${data.request_vip}`, 404, null);
                 }
@@ -870,15 +876,20 @@ class ShopService {
                     profit: profit,
                     balance: balance,
                     add_balance_amount: addBalanceAmount,
-                    request_status: types_1.ShopRequestStatus.PENDING,
+                    request_status: types_1.ShopRequestStatus.APPROVED,
                     requested_at: new Date(),
                 };
-                yield shopRepository.update({ id: id }, { request_vip_data: requestData });
+                yield shopRepository.update({ id: id }, { shop_vip: Number(data === null || data === void 0 ? void 0 : data.request_vip), profit: profit, request_vip_data: requestData });
+                // Auto approve VIP request
+                const autoApproveResult = yield this.autoApproveShopRequestVIP({ shopId: id });
+                if (!autoApproveResult.success) {
+                    return (0, error_handler_1.handleError)(((_o = autoApproveResult.error) === null || _o === void 0 ? void 0 : _o.message) || "Failed to auto approve VIP", 500, null);
+                }
                 try {
-                    const details = Object.assign({}, requestData);
+                    const details = Object.assign(Object.assign({}, requestData), { request_status: types_1.ShopRequestStatus.APPROVED });
                     const _data = {
-                        title: "Request VIP",
-                        description: `You have reqeusted VIP to your shop's account success.`,
+                        title: "VIP Approved",
+                        description: `Your VIP ${data.request_vip} request has been approved.`,
                         shop_id: id,
                         reference_id: id,
                         data: details,
@@ -889,7 +900,7 @@ class ShopService {
                 catch (error) {
                     console.error("Error while create notification", { error });
                 }
-                return (0, success_handler_1.handleSuccess)(requestData);
+                return (0, success_handler_1.handleSuccess)(Object.assign(Object.assign({}, requestData), { request_status: types_1.ShopRequestStatus.APPROVED }));
             }
             catch (error) {
                 return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
@@ -1002,10 +1013,65 @@ class ShopService {
     //     );
     //   }
     // }
+    // Auto approve VIP request (called internally after shopRequestVIP)
+    static autoApproveShopRequestVIP(_a) {
+        return __awaiter(this, arguments, void 0, function* ({ shopId, }) {
+            const entityManager = (0, typeorm_1.getManager)();
+            try {
+                const shopRepository = (0, typeorm_1.getRepository)(entity_1.Shop);
+                const walletRepository = (0, typeorm_1.getRepository)(wallet_1.Wallet);
+                // Find the shop with pending VIP request
+                const shop = yield shopRepository
+                    .createQueryBuilder("shop")
+                    .where("shop.is_active = :isActive", { isActive: true })
+                    .andWhere("shop.id = :shopId", { shopId })
+                    .getOne();
+                if (!shop) {
+                    return (0, error_handler_1.handleError)("Shop not found or no pending VIP request", 404, null);
+                }
+                const existingWallet = yield walletRepository.findOne({
+                    where: { shop_id: shopId, is_active: true },
+                });
+                const addBalanceAmount = (shop === null || shop === void 0 ? void 0 : shop.request_vip_data.add_balance_amount) || 1500;
+                if (!existingWallet) {
+                    return (0, error_handler_1.handleError)("Wallet not found", 404, null);
+                }
+                // Start the transaction
+                yield entityManager.transaction((transactionalEntityManager) => __awaiter(this, void 0, void 0, function* () {
+                    const requestData = Object.assign(Object.assign({}, shop.request_vip_data), { request_status: types_1.ShopRequestStatus.APPROVED });
+                    // Update the shop within the transaction
+                    yield transactionalEntityManager.update(entity_1.Shop, { id: shopId }, {
+                        request_vip_data: requestData,
+                    });
+                    // Update the wallet within the transaction
+                    yield transactionalEntityManager
+                        .createQueryBuilder()
+                        .update(wallet_1.Wallet)
+                        .set({
+                        total_balance: () => "total_balance + :total_balance",
+                        total_withdraw_able_balance: () => "total_withdraw_able_balance + :total_withdraw_able_balance",
+                    })
+                        .where("shop_id = :shop_id", {
+                        shop_id: shop.id,
+                    })
+                        .setParameters({
+                        total_balance: Number(addBalanceAmount),
+                        total_withdraw_able_balance: Number(addBalanceAmount),
+                    })
+                        .execute();
+                }));
+                return (0, success_handler_1.handleSuccess)(shop.request_vip_data);
+            }
+            catch (error) {
+                console.error("Error in autoApproveShopRequestVIP:", error);
+                return (0, error_handler_1.handleError)(config_1.config.message.internal_server_error, 500, error.message);
+            }
+        });
+    }
     // Map `sortedBy` enum to TypeORM order format
     static adminApproveShopRequestVIP(_a) {
         return __awaiter(this, arguments, void 0, function* ({ id, req, }) {
-            var _b, _c, _d, _e, _f, _g;
+            var _b, _c, _d, _e;
             // Start a transaction
             const entityManager = (0, typeorm_1.getManager)();
             try {
@@ -1040,12 +1106,8 @@ class ShopService {
                     (Number((_c = existingWallet.data) === null || _c === void 0 ? void 0 : _c.total_recharged) < balance &&
                         (shop === null || shop === void 0 ? void 0 : shop.request_vip_data.request_vip) === "2") ||
                     (Number((_d = existingWallet.data) === null || _d === void 0 ? void 0 : _d.total_recharged) < balance &&
-                        (shop === null || shop === void 0 ? void 0 : shop.request_vip_data.request_vip) === "3") ||
-                    (Number((_e = existingWallet.data) === null || _e === void 0 ? void 0 : _e.total_recharged) < balance &&
-                        (shop === null || shop === void 0 ? void 0 : shop.request_vip_data.request_vip) === "4") ||
-                    (Number((_f = existingWallet.data) === null || _f === void 0 ? void 0 : _f.total_recharged) < balance &&
-                        (shop === null || shop === void 0 ? void 0 : shop.request_vip_data.request_vip) === "5")) {
-                    return (0, error_handler_1.handleError)(`Shop's balance not enough to apply VIP ${(_g = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _g === void 0 ? void 0 : _g.request_vip}`, 404, null);
+                        (shop === null || shop === void 0 ? void 0 : shop.request_vip_data.request_vip) === "3")) {
+                    return (0, error_handler_1.handleError)(`Shop's balance not enough to apply VIP ${(_e = shop === null || shop === void 0 ? void 0 : shop.request_vip_data) === null || _e === void 0 ? void 0 : _e.request_vip}`, 404, null);
                 }
                 // Start the transaction
                 yield entityManager.transaction((transactionalEntityManager) => __awaiter(this, void 0, void 0, function* () {

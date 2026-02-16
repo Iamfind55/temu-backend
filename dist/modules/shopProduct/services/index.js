@@ -46,7 +46,7 @@ class ShopProductService {
                 });
                 if (!shop)
                     return (0, error_handler_1.handleError)("Shop not found.", 404, null);
-                if (shop.status !== types_2.ShopStatus.APPROVED) {
+                if (shop.status !== types_2.ShopStatus.ACTIVE) {
                     return (0, error_handler_1.handleError)("Your shop account is currently under review. Access will be granted after administrative approval.", 400, null);
                 }
                 if ((shop === null || shop === void 0 ? void 0 : shop.shop_vip) && shop.shop_vip < product.product_vip)

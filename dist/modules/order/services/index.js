@@ -332,8 +332,7 @@ class OrderService {
                                     throw new Error("Shop wallet not found.");
                             }
                             // shopWallet.total_frozen_balance +=
-                            //   orderData.total_price +
-                            //   (orderData.total_price * orderData.profit) / 100;
+                            //   orderData.total_price 
                             yield entityManager.save(wallet_1.Wallet, shopWallet);
                         }
                         const order_no = this.generateUniqueTimestamp();
@@ -1030,26 +1029,43 @@ class OrderService {
                     // shopWallet.total_frozen_balance +=
                     // orderData.total_price +
                     // (orderData.total_price * orderData.profit) / 100;
+                    const deduct = (existOrder.total_price * (100 - Number(existOrder.profit))) / 100;
                     yield entityManager
                         .createQueryBuilder()
                         .update(wallet_1.Wallet)
                         .set({
-                        total_withdraw_able_balance: () => "total_withdraw_able_balance - :total_withdraw_able_balance",
-                        total_frozen_balance: () => "total_frozen_balance + :total_frozen_balance",
+                        total_withdraw_able_balance: () => "total_withdraw_able_balance - :deduct",
+                        total_frozen_balance: () => "total_frozen_balance + :freeze",
                     })
                         .where("shop_id = :shop_id", {
                         shop_id: existOrder.shop_id,
-                        total_withdraw_able_balance: ((existOrder === null || existOrder === void 0 ? void 0 : existOrder.total_price) * (100 - Number(existOrder.profit))) /
-                            100,
-                        total_frozen_balance: existOrder === null || existOrder === void 0 ? void 0 : existOrder.total_price,
-                        // total_frozen_balance:
-                        //   (existOrder?.total_price * (100 - Number(existOrder.profit))) /
-                        //   100,
-                        // total_frozen_balance:
-                        //   (existOrder?.total_price * existOrder.profit) / 100 +
-                        //   existOrder?.total_price,
+                        deduct,
+                        freeze: existOrder.total_price,
                     })
                         .execute();
+                    // await entityManager
+                    //   .createQueryBuilder()
+                    //   .update(Wallet)
+                    //   .set({
+                    //     total_withdraw_able_balance: () =>
+                    //       "total_withdraw_able_balance - :total_withdraw_able_balance",
+                    //     total_frozen_balance: () =>
+                    //       "total_frozen_balance + :total_frozen_balance",
+                    //   })
+                    //   .where("shop_id = :shop_id", {
+                    //     shop_id: existOrder.shop_id,
+                    //     total_withdraw_able_balance:
+                    //       (existOrder?.total_price * (100 - Number(existOrder.profit))) /
+                    //       100,
+                    //     total_frozen_balance: existOrder?.total_price,
+                    //     // total_frozen_balance:
+                    //     //   (existOrder?.total_price * (100 - Number(existOrder.profit))) /
+                    //     //   100,
+                    //     // total_frozen_balance:
+                    //     //   (existOrder?.total_price * existOrder.profit) / 100 +
+                    //     //   existOrder?.total_price,
+                    //   })
+                    //   .execute();
                     // await entityManager.increment(
                     //   Wallet,
                     //   {

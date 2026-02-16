@@ -443,14 +443,14 @@ export class ShopService {
       if (!staffDataFromToken)
         return handleError(config.message.invalid_token, 404, null);
 
-      const shop = await shopRepository.findOneBy({ id, is_active: true });
+      const shop = await shopRepository.findOneBy({ id });
 
       if (!shop) {
         return handleError("Shop not found", 404, null);
       }
 
       // await shopRepository.remove(shop);
-      await shopRepository.update({ id: id }, { is_active: false });
+      await shopRepository.update({ id: id }, { status: ShopStatus.DELETED });
 
       return handleSuccess(shop as any);
     } catch (error: any) {
@@ -712,7 +712,7 @@ export class ShopService {
       if (
         shop.status !== ShopStatus.PENDING &&
         shop.status !== ShopStatus.ACTIVE &&
-        shop.status !== ShopStatus.APPROVED
+        shop.status !== ShopStatus.APPROVED && shop.status !== ShopStatus.FROZEN
       ) {
         return handleError(
           "Your shop is not active now. Please contact the admin to check the details.",

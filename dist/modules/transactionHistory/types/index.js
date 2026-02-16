@@ -10,7 +10,7 @@ var ETransactionHistoryIdentifier;
 var ECoinType;
 (function (ECoinType) {
     ECoinType["ETH"] = "ETH";
-    ECoinType["TRX_USDT"] = "BRX/USDT";
+    ECoinType["TRX_USDT"] = "TRX/USDT";
     ECoinType["BTC"] = "BTC";
 })(ECoinType || (exports.ECoinType = ECoinType = {}));
 var ETransactionStatus;

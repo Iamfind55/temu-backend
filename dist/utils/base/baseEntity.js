@@ -23,11 +23,11 @@ __decorate([
     __metadata("design:type", Boolean)
 ], BaseEntity.prototype, "is_active", void 0);
 __decorate([
-    (0, typeorm_1.CreateDateColumn)(),
+    (0, typeorm_1.CreateDateColumn)({ type: "timestamptz" }),
     __metadata("design:type", Date)
 ], BaseEntity.prototype, "created_at", void 0);
 __decorate([
-    (0, typeorm_1.UpdateDateColumn)(),
+    (0, typeorm_1.UpdateDateColumn)({ type: "timestamptz" }),
     __metadata("design:type", Date)
 ], BaseEntity.prototype, "updated_at", void 0);
 __decorate([
