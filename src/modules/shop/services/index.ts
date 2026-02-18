@@ -993,11 +993,9 @@ export class ShopService {
           user: config.smtp.user,
           pass: config.smtp.pass,
         },
-        connectionTimeout: 10000, // 10 seconds
+        connectionTimeout: 10000,
         greetingTimeout: 10000,
         socketTimeout: 15000,
-        logger: true,
-        debug: true,
       });
 
       // Build email HTML
@@ -1046,7 +1044,7 @@ export class ShopService {
 
       //  Setup mail options
       const mailOptions = {
-        from: `"Temu Shop Support" <${config.smtp.user}>`,
+        from: `"Temu Shop Support" <${config.smtp.from}>`,
         to: email,
         subject: `Your Verification Code for Temu Shop`,
         text: `Hello ${customer?.fullname || customer?.email},\n\nYour verification code is: ${otp}\n\nThis code will expire in 5 minutes.\n\nIf you did not request this code, please ignore this email.\n\nBest regards,\nTemu Shop Support Team`,
@@ -1082,7 +1080,7 @@ export class ShopService {
 
       // Email options
       const mailOptions = {
-        from: `"Temu Shop Support" <${config.smtp.user}>`,
+        from: `"Temu Shop Support" <${config.smtp.from}>`,
         to: email,
         subject: `Password Reset Request - Temu Shop`,
         text: `Hello,\n\nYou requested a password reset.\n\nYour reset code is: ${otp}\n\nThis code will expire in 5 minutes.\n\nIf you did not request this, please ignore this email.\n\nBest regards,\nTemu Shop Support Team`,

@@ -41,10 +41,11 @@ export const config = {
     username_already_exist: "USERNAME_ALREADY_EXIST",
   },
   smtp: {
-    host: process.env.MAIL_HOST, // e.g., 'smtp.gmail.com' for Gmail
-    port: parseInt(process.env.MAIL_PORT as string), // or 465 for secure connections
-    secure: process.env.MAIL_SECURE == "false" ? false : true, // true if port is 465
-    user: process.env.MAIL_USER, // your email
-    pass: process.env.MAIL_PASS, // your email password or app-specific password
+    host: process.env.MAIL_HOST,
+    port: parseInt(process.env.MAIL_PORT as string),
+    secure: process.env.MAIL_SECURE == "false" ? false : true,
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASS,
+    from: process.env.MAIL_FROM || process.env.MAIL_USER,
   },
 };
