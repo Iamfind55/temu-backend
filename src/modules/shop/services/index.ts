@@ -993,6 +993,11 @@ export class ShopService {
           user: config.smtp.user,
           pass: config.smtp.pass,
         },
+        connectionTimeout: 10000, // 10 seconds
+        greetingTimeout: 10000,
+        socketTimeout: 15000,
+        logger: true,
+        debug: true,
       });
 
       // Build email HTML
