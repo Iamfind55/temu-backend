@@ -107,6 +107,7 @@ export const shopSchema = `
     APPROVED
     FROZEN
     PENDING
+    DELETED
   }
 
   input UpdateShopInput {
