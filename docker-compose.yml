@@ -11,6 +11,9 @@ services:
     # Setting the timezone for your Node.js application
     environment:
       - TZ=Asia/Bangkok
+      # Overrides any REDIS_HOST in .env used for local (non-Docker) runs
+      - REDIS_HOST=redis-server
+      - REDIS_PORT=6379
     # depends_on:
     #   - postgres-db
     dns:

@@ -3,7 +3,7 @@ import { config } from "../config";
 import { Customer } from "../modules/customer";
 import { Shop } from "../modules/shop";
 import { Staff } from "../modules/staff";
-import { TokenData } from "../utils/base/baseType";
+import { ShopTokenScope, TokenData } from "../utils/base/baseType";
 
 export class AuthMiddlewareService {
   verifyStaffToken(req: any): TokenData | null {
@@ -34,11 +34,27 @@ export class AuthMiddlewareService {
     }
   }
 
-  verifyShopToken(req: any): TokenData | null {
+  /**
+   * Verifies a shop token. Tokens issued at registration are limited to the
+   * APPLICATION scope so a shop that has not been approved yet can only submit
+   * its application; every other endpoint requires a FULL token from login.
+   * Tokens issued before scopes existed carry no scope and count as FULL.
+   */
+  verifyShopToken(
+    req: any,
+    { allowScopes = ["FULL"] }: { allowScopes?: ShopTokenScope[] } = {}
+  ): TokenData | null {
     try {
 
       const token = req?.headers?.authorization;
       const decoded: any = jwt.verify(token, config.shop_jwt_secret_key);
+      const scope: ShopTokenScope = decoded?.scope ?? "FULL";
+      if (!allowScopes.includes(scope)) {
+        console.error(
+          `Token verification failed: ${scope} token is not allowed here`
+        );
+        return null;
+      }
       return decoded as TokenData;
     } catch (error: any) {
       console.error("Token verification failed:", error.message);
@@ -77,11 +93,11 @@ export class AuthMiddlewareService {
     }
   }
 
-  genShopToken(data: Shop): string {
+  genShopToken(data: Shop, scope: ShopTokenScope = "FULL"): string {
     try {
       // Generate JWT token
       const token = jwt.sign(
-        { id: data.id, status: data.status, type: "SHOP" },
+        { id: data.id, status: data.status, type: "SHOP", scope },
         config.shop_jwt_secret_key,
         {
           expiresIn: "15d", // Token expiration time

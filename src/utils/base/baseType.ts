@@ -47,7 +47,14 @@ export enum ERolesStaff {
   STAFF="staff"
 }
 
+/**
+ * FULL comes from a normal login. APPLICATION is issued at registration and
+ * only permits submitting the shop application while status is PENDING.
+ */
+export type ShopTokenScope = "FULL" | "APPLICATION";
+
 export interface TokenData {
+  scope?: ShopTokenScope;
   id: string;
   username: string;
   type?: string;

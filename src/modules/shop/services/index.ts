@@ -125,17 +125,18 @@ export class ShopService {
       // Hash the password
       if (data?.password) data.password = await hashPassword(data?.password);
 
-      // Create and save shop
-      const otpExpires = addMinutes(new Date(), 5);
-      const otp = OtpService.generateOtp();
-      data.status == ShopStatus.PENDING;
-      data.otp = otp;
-      data.otpExpire_at = otpExpires;
+      // Create and save shop. A new shop stays PENDING until an admin approves
+      // it; no email verification is required to register.
+      data.status = ShopStatus.PENDING;
       const newShop = shopRepository.create(data);
       const savedShop: any = await shopRepository.save(newShop);
 
-      // Generate JWT token
-      // const token = new AuthMiddlewareService().genShopToken(savedShop);
+      // Application-scoped token: it only permits submitting the shop
+      // application, not logging in to the dashboard.
+      const token = new AuthMiddlewareService().genShopToken(
+        savedShop,
+        "APPLICATION"
+      );
 
       try {
         await WalletService.createWallet({
@@ -144,9 +145,7 @@ export class ShopService {
         } as any);
       } catch (error) { }
 
-      const email = savedShop.email;
-      this.sendOtpEmail(email, otp, savedShop);
-      return handleSuccess({ token: "", data: savedShop });
+      return handleSuccess({ token, data: savedShop });
     } catch (error: any) {
       console.log(error);
 
@@ -309,8 +308,11 @@ export class ShopService {
     const shopRepository = getRepository(Shop);
 
     try {
+      // Also reachable with the registration token, so a PENDING shop can
+      // submit its application before an admin approves it.
       const shopDataFromToken = new AuthMiddlewareService().verifyShopToken(
-        req
+        req,
+        { allowScopes: ["FULL", "APPLICATION"] }
       );
 
       if (!shopDataFromToken)
@@ -709,8 +711,16 @@ export class ShopService {
         return handleError("Invalid email or password.", 404, null);
       }
 
+      // A shop that has not been approved by an admin yet cannot log in.
+      if (shop.status === ShopStatus.PENDING) {
+        return handleError(
+          "Your shop is awaiting admin approval. You will be able to sign in once it is approved.",
+          403,
+          { status: shop.status }
+        );
+      }
+
       if (
-        shop.status !== ShopStatus.PENDING &&
         shop.status !== ShopStatus.ACTIVE &&
         shop.status !== ShopStatus.APPROVED && shop.status !== ShopStatus.FROZEN
       ) {
