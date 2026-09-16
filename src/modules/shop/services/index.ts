@@ -16,6 +16,7 @@ import {
   ShopWhereInput,
   ShopWhereLoginInput,
   ShopVerifyOTPInput,
+  ShopVerifyResetEmail,
   EProfitVIP,
   EShopRechargeBalance,
   EShopAmountBalance,
@@ -39,6 +40,23 @@ import { INotificationType, NotificationService } from "../../notification";
 import { OtpService } from "../utils/helpers";
 import { addMinutes } from "date-fns";
 import { ResendOtpCustomerInput } from "../../customer";
+
+/**
+ * Columns that getShops — an unauthenticated, public endpoint — is allowed to
+ * return. Anything identifying (email, phone_number, dob, shop_address),
+ * KYC-related (id_card_info) or financial (payment_method, profit) is reachable
+ * only through adminGetShops (staff token) or getShopInformation (the owner's
+ * own record). Entries must be real Shop columns, or the generated SQL breaks.
+ */
+const PUBLIC_SHOP_FIELDS = [
+  "id",
+  "store_name",
+  "image",
+  "status",
+  "shop_vip",
+  "shop_star",
+  "created_at",
+];
 
 export class ShopService {
   static async createShop({
@@ -496,31 +514,23 @@ export class ShopService {
         .createQueryBuilder("shop")
         .where("shop.is_active = :isActive", { isActive: true });
 
-      // Apply field selection
-      // Extract requested fields dynamically
+      // Apply field selection, narrowed to the public allowlist. A caller that
+      // asks for email or id_card_info here simply gets null back for it.
       const selectFields = getRequestedFields(info, "getShops.data");
-      if (selectFields?.length) {
-        const fields = selectFields.map((field) => `shop.${field}`);
-        queryBuilder.select(fields);
-      }
+      const publicFields = (selectFields || []).filter((field: string) =>
+        PUBLIC_SHOP_FIELDS.includes(field)
+      );
+      // TypeORM needs the primary key to hydrate entities.
+      if (!publicFields.includes("id")) publicFields.push("id");
+      queryBuilder.select(publicFields.map((field) => `shop.${field}`));
 
+      // Public search matches the storefront name only. Matching on email or
+      // phone_number would let an anonymous caller confirm whether a given
+      // address is registered.
       if (where?.keyword) {
-        queryBuilder.andWhere(
-          new Brackets((qb) => {
-            qb.where("shop.fullname ILIKE :keyword", {
-              keyword: `%${where.keyword}%`,
-            })
-              .orWhere("shop.username ILIKE :keyword", {
-                keyword: `%${where.keyword}%`,
-              })
-              .orWhere("shop.email ILIKE :keyword", {
-                keyword: `%${where.keyword}%`,
-              })
-              .orWhere("shop.phone_number ILIKE :keyword", {
-                keyword: `%${where.keyword}%`,
-              });
-          })
-        );
+        queryBuilder.andWhere("shop.store_name ILIKE :keyword", {
+          keyword: `%${where.keyword}%`,
+        });
       }
 
       if (where?.status) {
@@ -561,7 +571,10 @@ export class ShopService {
 
       const [shops, total] = await queryBuilder.getManyAndCount();
       const resultShops = shops?.map((shop: any) => {
+        // Belt and braces: the allowlist above should already have excluded
+        // these, but never let them leave this endpoint.
         if (shop?.payment_method) delete shop.payment_method;
+        if (shop?.id_card_info) delete shop.id_card_info;
         return shop;
       });
 
@@ -949,6 +962,50 @@ export class ShopService {
     }
   }
 
+  /**
+   * Locates the active shop the reset applies to. Matched case-insensitively
+   * and trimmed, since the seller types the address by hand.
+   */
+  private static async findShopForReset(email: string) {
+    return getRepository(Shop)
+      .createQueryBuilder("shop")
+      .where("LOWER(TRIM(shop.email)) = LOWER(TRIM(:email))", { email })
+      .andWhere("shop.is_active = :isActive", { isActive: true })
+      .getOne();
+  }
+
+  /**
+   * Pre-flight check for the reset form: confirms the address belongs to an
+   * account before the seller is asked to choose a new password. Convenience
+   * only - shopResetPassword looks the address up again, since a successful
+   * call here is not a credential and cannot be trusted.
+   */
+  static async shopVerifyResetEmail({
+    data,
+  }: {
+    data: ShopVerifyResetEmail;
+  }): Promise<Response<null>> {
+    try {
+      if (!data.email) {
+        return handleError("Validation Error", 400, null);
+      }
+
+      const shop = await ShopService.findShopForReset(data.email);
+
+      if (!shop) {
+        return handleError("This email is not registered", 404, null);
+      }
+
+      return handleSuccess(null);
+    } catch (error: any) {
+      return handleError(
+        config.message.internal_server_error,
+        500,
+        error.message
+      );
+    }
+  }
+
   static async shopResetPassword({
     data,
     req,
@@ -962,8 +1019,8 @@ export class ShopService {
       // const shopDataFromToken =
       //   new AuthMiddlewareService().verifyShopForgotPasswordToken(data.token);
 
-      if (!data.email || !data.new_password || !data.otp) {
-        return handleError(config.message.invalid_token, 404, null);
+      if (!data.email || !data.new_password) {
+        return handleError("Validation Error", 400, null);
       }
       const validatePassStrong = validateStrongPassword(data.new_password);
       if (!validatePassStrong) {
@@ -973,25 +1030,17 @@ export class ShopService {
           null
         );
       }
-      const shop = await shopRepository.findOne({
-        where: { email: data.email, is_active: true },
-      });
+
+      // Looked up again even though the form already called
+      // shopVerifyResetEmail: that call proves nothing on its own.
+      const shop = await ShopService.findShopForReset(data.email);
 
       if (!shop) {
-        return handleError("Shop not found", 404, null);
+        return handleError("This email is not registered", 404, null);
       }
 
-      const { otp, isVerified } = shop;
-
-      if (!isVerified) {
-        return handleError("Please verify your OTP code", 404, null);
-      }
-      if (otp != data.otp) {
-        return handleError("The OTP is invalid", 404, null);
-      }
       // Hash the password
       const newPass = await hashPassword(data?.new_password);
-      shop.isVerified = false;
       shopRepository.merge(shop, { password: newPass });
 
       const updatedShop = await shopRepository.save(shop);
@@ -1053,13 +1102,17 @@ export class ShopService {
       `;
 
       // Send the email
-      await sendMail({
+      const result = await sendMail({
         to: email,
         subject: `Your Verification Code for Temu Shop`,
         text: `Hello ${customer?.fullname || customer?.email},\n\nYour verification code is: ${otp}\n\nThis code will expire in 5 minutes.\n\nIf you did not request this code, please ignore this email.\n\nBest regards,\nTemu Shop Support Team`,
         html: htmlContent,
       });
-      console.log("Email sent:", email);
+      // "Accepted", not "delivered" — providers queue first. Log the id so a
+      // non-arriving email can be traced in the provider's dashboard.
+      console.log(
+        `Email accepted by ${result.provider} for ${email} (id: ${result.id ?? "n/a"})`
+      );
       return true;
     } catch (error: any) {
       console.error(
@@ -1072,7 +1125,7 @@ export class ShopService {
 
   static async sendResetPasswordEmail(email: string, otp: string) {
     try {
-      await sendMail({
+      const result = await sendMail({
         to: email,
         subject: `Password Reset Request - Temu Shop`,
         text: `Hello,\n\nYou requested a password reset.\n\nYour reset code is: ${otp}\n\nThis code will expire in 5 minutes.\n\nIf you did not request this, please ignore this email.\n\nBest regards,\nTemu Shop Support Team`,
@@ -1098,7 +1151,9 @@ export class ShopService {
           <p style="font-size: 12px; color: #888;">© ${new Date().getFullYear()} Temu Shop. All rights reserved.</p>
         </div>`,
       });
-      console.log("Reset password email sent:", email);
+      console.log(
+        `Reset password email accepted by ${result.provider} for ${email} (id: ${result.id ?? "n/a"})`
+      );
       return true;
     } catch (error: any) {
       console.error(

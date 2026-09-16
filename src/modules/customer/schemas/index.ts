@@ -128,6 +128,12 @@ export const customerSchema = `
     getCustomerInformation: SuccessCustomerResponseOne!
   }
 
+  input CustomerResetPasswordInput {
+    new_password: String!
+    otp: String!
+    email: String!
+  }
+
   type Mutation {
     customerResendOTP(data: ResendOtpCustomerInput!): CustomerLoginResponse!
     customerCreatePassword(data: CreatePasswordCustomerInput!): CustomerLoginResponse!
@@ -138,7 +144,7 @@ export const customerSchema = `
     deleteCustomer(id: ID!): SuccessCustomerResponseOne!
     customerLogin(where: CustomerWhereLoginInput): CustomerLoginResponse!
     customerForgotPassword(email: String!): SuccessShopForgotPasswordResponse!
-    customerResetPassword(data: ShopResetPasswordInput!): SuccessCustomerResponseOne!
+    customerResetPassword(data: CustomerResetPasswordInput!): SuccessCustomerResponseOne!
     updateCustomerInformation(data: UpdateCustomerInformationInput!): SuccessCustomerResponseOne!
   }
 `;

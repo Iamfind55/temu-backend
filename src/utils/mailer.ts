@@ -2,6 +2,16 @@
 const nodemailer = require("nodemailer");
 import { config } from "../config";
 
+export interface MailResult {
+  provider: string;
+  /**
+   * The provider's own id for the message. Providers accept a send before they
+   * transmit it, so a successful call here means "queued", not "delivered" —
+   * this id is what you search their dashboard with to find out which it was.
+   */
+  id?: string;
+}
+
 export interface MailMessage {
   to: string;
   subject: string;
@@ -18,7 +28,7 @@ const MAIL_TIMEOUT_MS = 15000;
  * by default, so an SMTP transport that works locally silently times out in
  * production. HTTPS is never blocked, which is why this is the default path.
  */
-async function sendViaResend(message: MailMessage): Promise<void> {
+async function sendViaResend(message: MailMessage): Promise<MailResult> {
   if (!config.mail.resend_api_key) {
     throw new Error("RESEND_API_KEY is not set");
   }
@@ -49,6 +59,9 @@ async function sendViaResend(message: MailMessage): Promise<void> {
       const body = await response.text();
       throw new Error(`Resend responded ${response.status}: ${body}`);
     }
+
+    const body: any = await response.json().catch(() => ({}));
+    return { provider: "resend", id: body?.id };
   } catch (error: any) {
     if (error?.name === "AbortError") {
       throw new Error(`Resend request timed out after ${MAIL_TIMEOUT_MS}ms`);
@@ -67,7 +80,7 @@ async function sendViaResend(message: MailMessage): Promise<void> {
  * address (gmail.com, etc.) fails DMARC alignment and is more likely to be
  * filtered as spam — verify a real domain in Brevo when you have one.
  */
-async function sendViaBrevo(message: MailMessage): Promise<void> {
+async function sendViaBrevo(message: MailMessage): Promise<MailResult> {
   if (!config.mail.brevo_api_key) {
     throw new Error("BREVO_API_KEY is not set");
   }
@@ -98,6 +111,9 @@ async function sendViaBrevo(message: MailMessage): Promise<void> {
       const body = await response.text();
       throw new Error(`Brevo responded ${response.status}: ${body}`);
     }
+
+    const body: any = await response.json().catch(() => ({}));
+    return { provider: "brevo", id: body?.messageId };
   } catch (error: any) {
     if (error?.name === "AbortError") {
       throw new Error(`Brevo request timed out after ${MAIL_TIMEOUT_MS}ms`);
@@ -109,7 +125,7 @@ async function sendViaBrevo(message: MailMessage): Promise<void> {
 }
 
 /** Kept for local development, where outbound SMTP is not firewalled. */
-async function sendViaSmtp(message: MailMessage): Promise<void> {
+async function sendViaSmtp(message: MailMessage): Promise<MailResult> {
   if (!config.smtp.host) {
     throw new Error("SMTP_HOST is not set");
   }
@@ -127,7 +143,7 @@ async function sendViaSmtp(message: MailMessage): Promise<void> {
     socketTimeout: MAIL_TIMEOUT_MS,
   });
 
-  await transporter.sendMail({
+  const info = await transporter.sendMail({
     from: `"${config.mail.from_name}" <${config.mail.from}>`,
     to: message.to,
     subject: message.subject,
@@ -138,13 +154,15 @@ async function sendViaSmtp(message: MailMessage): Promise<void> {
       "X-Mailer": "Temu Shop Mailer",
     },
   });
+
+  return { provider: "smtp", id: info?.messageId };
 }
 
 /**
  * Sends a message through the configured provider. Throws on failure so the
  * caller can decide what the user sees — never swallow this silently.
  */
-export async function sendMail(message: MailMessage): Promise<void> {
+export async function sendMail(message: MailMessage): Promise<MailResult> {
   switch (config.mail.provider) {
     case "brevo":
       return sendViaBrevo(message);

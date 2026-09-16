@@ -8,7 +8,7 @@ import {
 import { Request, Response } from "express";
 import { CustomerService } from "../services";
 import { CustomerModel } from "../types";
-import { ShopResetPassword } from "../../shop";
+import { CustomerResetPassword } from "../types";
 
 export const customerMutation = {
   createCustomer: async (
@@ -65,7 +65,7 @@ export const customerMutation = {
 
   customerResetPassword: async (
     _: any,
-    { data }: { data: ShopResetPassword },
+    { data }: { data: CustomerResetPassword },
     { req }: { req: Request }
   ) => CustomerService.customerResetPassword({ data: data, req }),
 

@@ -131,7 +131,10 @@ export const shopSchema = `
 
   input ShopResetPasswordInput {
     new_password: String!
-    otp: String!
+    email: String!
+  }
+
+  input ShopVerifyResetEmailInput {
     email: String!
   }
 
@@ -244,6 +247,7 @@ export const shopSchema = `
     adminUpdateShop(data: UpdateShopInput!): SuccessShopResponseOne!
     adminApproveShop(id: ID!): SuccessShopResponseOne!
     shopResetPassword(data: ShopResetPasswordInput!): SuccessShopResponseOne!
+    shopVerifyResetEmail(data: ShopVerifyResetEmailInput!): SuccessShopForgotPasswordResponse!
     updateShopInformation(data: UpdateShopInformationInput!): SuccessShopResponseOne!
     deleteShop(id: ID!): SuccessShopResponseOne!
     shopLogin(where: ShopWhereLoginInput): ShopLoginResponse!

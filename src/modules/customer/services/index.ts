@@ -28,12 +28,8 @@ import {
 import { AuthMiddlewareService } from "../../../middlewares/auth.middleware";
 import { GraphQLResolveInfo } from "graphql";
 import { getRequestedFields } from "../../../utils/graphqlUtils";
-import {
-  PaymentMethod,
-  Shop,
-  ShopResetPassword,
-  ShopService,
-} from "../../shop";
+import { PaymentMethod, Shop, ShopService } from "../../shop";
+import { CustomerResetPassword } from "../types";
 import { WalletService } from "../../wallet";
 import { addMinutes } from "date-fns";
 import { OtpService } from "../../shop/utils/helpers";
@@ -772,7 +768,7 @@ export class CustomerService {
     data,
     req,
   }: {
-    data: ShopResetPassword;
+    data: CustomerResetPassword;
     req: Request;
   }): Promise<Response<Customer | null>> {
     const customerRepository = getRepository(Customer);

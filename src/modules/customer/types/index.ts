@@ -59,3 +59,13 @@ export enum CustomerType {
   REAL = "REAL",
   FAKE = "FAKE",
 }
+
+/**
+ * Customers reset via emailed OTP. Shops use ShopResetPassword, which proves
+ * identity with the email/store_name pair instead.
+ */
+export interface CustomerResetPassword {
+  new_password: string;
+  otp: string;
+  email: string;
+}
