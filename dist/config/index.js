@@ -2,10 +2,28 @@
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.config = void 0;
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
+// Mail settings moved from MAIL_* to SMTP_*; the old names stay as a fallback
+// so already-deployed .env files keep working.
+const smtpHost = process.env.SMTP_HOST || process.env.MAIL_HOST;
+const smtpUser = process.env.SMTP_USER || process.env.MAIL_USER;
+const smtpPass = (process.env.SMTP_PASS || process.env.MAIL_PASS || "").replace(/\s/g, "" // Gmail shows app passwords in groups of four; the spaces are decorative.
+);
+const smtpPort = parseInt((process.env.SMTP_PORT || process.env.MAIL_PORT));
+const smtpSecureVar = (_a = process.env.SMTP_SECURE) !== null && _a !== void 0 ? _a : process.env.MAIL_SECURE;
+const smtpSecure = smtpSecureVar !== undefined ? smtpSecureVar === "true" : smtpPort === 465;
+// Outbound SMTP (25/465/587) is blocked by default on most cloud hosts, so
+// production sends over an HTTPS email API instead. Dropping in an API key is
+// enough to switch providers; MAIL_PROVIDER overrides the auto-detection.
+const resendApiKey = process.env.RESEND_API_KEY || "";
+const brevoApiKey = process.env.BREVO_API_KEY || "";
+const mailProvider = (process.env.MAIL_PROVIDER ||
+    (brevoApiKey ? "brevo" : resendApiKey ? "resend" : "smtp")).toLowerCase();
+const mailFrom = process.env.MAIL_FROM || process.env.SMTP_FROM || smtpUser;
 exports.config = {
     node: process.env.NODE_ENV,
     client_url: process.env.CLIENT_URL,
@@ -15,6 +33,11 @@ exports.config = {
     db_password: process.env.POSTGRES_PASSWORD, // Replace with your PostgreSQL password
     db_name: process.env.POSTGRES_DB,
     port: process.env.PORT || 5000,
+    // "redis-server" is the docker-compose service name; override with REDIS_HOST
+    // (e.g. 127.0.0.1) when running the server outside Docker.
+    redis_host: process.env.REDIS_HOST ||
+        (process.env.NODE_ENV === "LOCAL" ? "127.0.0.1" : "redis-server"),
+    redis_port: Number(process.env.REDIS_PORT) || 6379,
     feed_api_url: process.env.FEED_API_URL,
     storage_api_url: process.env.STORAGE_API_URL,
     encode_token: process.env.ENCODE_TOKEN,
@@ -44,10 +67,19 @@ exports.config = {
         username_already_exist: "USERNAME_ALREADY_EXIST",
     },
     smtp: {
-        host: process.env.MAIL_HOST, // e.g., 'smtp.gmail.com' for Gmail
-        port: parseInt(process.env.MAIL_PORT), // or 465 for secure connections
-        secure: process.env.MAIL_SECURE == "false" ? false : true, // true if port is 465
-        user: process.env.MAIL_USER, // your email
-        pass: process.env.MAIL_PASS, // your email password or app-specific password
+        host: smtpHost,
+        port: smtpPort,
+        // 465 = implicit TLS, 587 = STARTTLS. An explicit *_SECURE var still wins.
+        secure: smtpSecure,
+        user: smtpUser,
+        pass: smtpPass,
+        from: mailFrom,
+    },
+    mail: {
+        provider: mailProvider,
+        from: mailFrom,
+        from_name: process.env.MAIL_FROM_NAME || "Temu Shop Support",
+        resend_api_key: resendApiKey,
+        brevo_api_key: brevoApiKey,
     },
 };

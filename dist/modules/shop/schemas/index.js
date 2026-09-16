@@ -110,6 +110,7 @@ exports.shopSchema = `
     APPROVED
     FROZEN
     PENDING
+    DELETED
   }
 
   input UpdateShopInput {

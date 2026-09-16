@@ -92,7 +92,11 @@ class CustomerService {
                 newCustomer.otpExpire_at = otpExpires;
                 newCustomer.isVerified = false;
                 const savedCustomer = yield customerRepository.save(newCustomer);
-                yield shop_1.ShopService.sendOtpEmail(email, otp, savedCustomer);
+                const sent = yield shop_1.ShopService.sendOtpEmail(email, otp, savedCustomer);
+                if (!sent) {
+                    // The account is saved; the user can retry delivery via resend OTP.
+                    return (0, error_handler_1.handleError)("Could not send the verification email. Please try again.", 502, "Email provider rejected or timed out on the OTP send");
+                }
                 return (0, success_handler_1.handleSuccess)({ token: null, data: savedCustomer });
             }
             catch (error) {
@@ -203,7 +207,10 @@ class CustomerService {
                 customer.otpExpire_at = otpExpires;
                 customer.isVerified = false;
                 const savedCustomer = yield customerRepository.save(customer);
-                yield shop_1.ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+                const sent = yield shop_1.ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+                if (!sent) {
+                    return (0, error_handler_1.handleError)("Could not send the verification email. Please try again.", 502, "Email provider rejected or timed out on the OTP send");
+                }
                 return (0, success_handler_1.handleSuccess)({ token: null, data: savedCustomer });
             }
             catch (error) {
@@ -490,7 +497,10 @@ class CustomerService {
                 customer.otpExpire_at = otpExpires;
                 customer.isVerified = false;
                 const savedCustomer = yield customerRepository.save(customer);
-                yield shop_1.ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+                const sent = yield shop_1.ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+                if (!sent) {
+                    return (0, error_handler_1.handleError)("Could not send the verification email. Please try again.", 502, "Email provider rejected or timed out on the OTP send");
+                }
                 return (0, success_handler_1.handleSuccess)(null);
             }
             catch (error) {

@@ -19,12 +19,12 @@ const entity_1 = require("../entity");
 const baseType_1 = require("../../../utils/base/baseType");
 const helper_1 = require("../../../utils/helper");
 const auth_middleware_1 = require("../../../middlewares/auth.middleware");
+const mailer_1 = require("../../../utils/mailer");
 const graphqlUtils_1 = require("../../../utils/graphqlUtils");
 const wallet_1 = require("../../wallet");
 const notification_1 = require("../../notification");
 const helpers_1 = require("../utils/helpers");
 const date_fns_1 = require("date-fns");
-const nodemailer = require("nodemailer");
 class ShopService {
     static createShop(_a) {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
@@ -75,16 +75,14 @@ class ShopService {
                 // Hash the password
                 if (data === null || data === void 0 ? void 0 : data.password)
                     data.password = yield (0, helper_1.hashPassword)(data === null || data === void 0 ? void 0 : data.password);
-                // Create and save shop
-                const otpExpires = (0, date_fns_1.addMinutes)(new Date(), 5);
-                const otp = helpers_1.OtpService.generateOtp();
-                data.status == types_1.ShopStatus.PENDING;
-                data.otp = otp;
-                data.otpExpire_at = otpExpires;
+                // Create and save shop. A new shop stays PENDING until an admin approves
+                // it; no email verification is required to register.
+                data.status = types_1.ShopStatus.PENDING;
                 const newShop = shopRepository.create(data);
                 const savedShop = yield shopRepository.save(newShop);
-                // Generate JWT token
-                // const token = new AuthMiddlewareService().genShopToken(savedShop);
+                // Application-scoped token: it only permits submitting the shop
+                // application, not logging in to the dashboard.
+                const token = new auth_middleware_1.AuthMiddlewareService().genShopToken(savedShop, "APPLICATION");
                 try {
                     yield wallet_1.WalletService.createWallet({
                         shop_id: savedShop === null || savedShop === void 0 ? void 0 : savedShop.id,
@@ -92,9 +90,7 @@ class ShopService {
                     });
                 }
                 catch (error) { }
-                const email = savedShop.email;
-                this.sendOtpEmail(email, otp, savedShop);
-                return (0, success_handler_1.handleSuccess)({ token: "", data: savedShop });
+                return (0, success_handler_1.handleSuccess)({ token, data: savedShop });
             }
             catch (error) {
                 console.log(error);
@@ -192,7 +188,9 @@ class ShopService {
         return __awaiter(this, arguments, void 0, function* ({ data, req, }) {
             const shopRepository = (0, typeorm_1.getRepository)(entity_1.Shop);
             try {
-                const shopDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyShopToken(req);
+                // Also reachable with the registration token, so a PENDING shop can
+                // submit its application before an admin approves it.
+                const shopDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyShopToken(req, { allowScopes: ["FULL", "APPLICATION"] });
                 if (!shopDataFromToken)
                     return (0, error_handler_1.handleError)(config_1.config.message.invalid_token, 404, null);
                 const shop = yield shopRepository.findOne({
@@ -255,7 +253,10 @@ class ShopService {
                 shop.otpExpire_at = otpExpires;
                 shop.isVerified = false;
                 const savedShop = yield customerRepository.save(shop);
-                yield ShopService.sendOtpEmail(email, newOTP, savedShop);
+                const sent = yield ShopService.sendOtpEmail(email, newOTP, savedShop);
+                if (!sent) {
+                    return (0, error_handler_1.handleError)("Could not send the verification email. Please try again.", 502, "Email provider rejected or timed out on the OTP send");
+                }
                 return (0, success_handler_1.handleSuccess)({ token: null, data: savedShop });
             }
             catch (error) {
@@ -271,12 +272,12 @@ class ShopService {
                 const staffDataFromToken = new auth_middleware_1.AuthMiddlewareService().verifyStaffToken(req);
                 if (!staffDataFromToken)
                     return (0, error_handler_1.handleError)(config_1.config.message.invalid_token, 404, null);
-                const shop = yield shopRepository.findOneBy({ id, is_active: true });
+                const shop = yield shopRepository.findOneBy({ id });
                 if (!shop) {
                     return (0, error_handler_1.handleError)("Shop not found", 404, null);
                 }
                 // await shopRepository.remove(shop);
-                yield shopRepository.update({ id: id }, { is_active: false });
+                yield shopRepository.update({ id: id }, { status: types_1.ShopStatus.DELETED });
                 return (0, success_handler_1.handleSuccess)(shop);
             }
             catch (error) {
@@ -449,9 +450,12 @@ class ShopService {
                 if (!isPasswordValid) {
                     return (0, error_handler_1.handleError)("Invalid email or password.", 404, null);
                 }
-                if (shop.status !== types_1.ShopStatus.PENDING &&
-                    shop.status !== types_1.ShopStatus.ACTIVE &&
-                    shop.status !== types_1.ShopStatus.APPROVED) {
+                // A shop that has not been approved by an admin yet cannot log in.
+                if (shop.status === types_1.ShopStatus.PENDING) {
+                    return (0, error_handler_1.handleError)("Your shop is awaiting admin approval. You will be able to sign in once it is approved.", 403, { status: shop.status });
+                }
+                if (shop.status !== types_1.ShopStatus.ACTIVE &&
+                    shop.status !== types_1.ShopStatus.APPROVED && shop.status !== types_1.ShopStatus.FROZEN) {
                     return (0, error_handler_1.handleError)("Your shop is not active now. Please contact the admin to check the details.", 404, { status: shop.status });
                 }
                 // Generate JWT token
@@ -587,7 +591,10 @@ class ShopService {
                 existEmail.otpExpire_at = otpExpires;
                 existEmail.isVerified = false;
                 const savedCustomer = yield shopRepository.save(existEmail);
-                yield ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+                const sent = yield ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+                if (!sent) {
+                    return (0, error_handler_1.handleError)("Could not send the verification email. Please try again.", 502, "Email provider rejected or timed out on the OTP send");
+                }
                 return (0, success_handler_1.handleSuccess)(null);
             }
             catch (error) {
@@ -636,16 +643,6 @@ class ShopService {
     static sendOtpEmail(email, otp, customer) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                // Create transporter
-                const transporter = nodemailer.createTransport({
-                    host: config_1.config.smtp.host,
-                    port: config_1.config.smtp.port,
-                    secure: config_1.config.smtp.secure, // true for 465 (SSL), false for 587 (TLS)
-                    auth: {
-                        user: config_1.config.smtp.user,
-                        pass: config_1.config.smtp.pass,
-                    },
-                });
                 // Build email HTML
                 const htmlContent = `
       <body style="margin:0; padding:0; background-color:#f6f6f6; font-family:Arial, sans-serif;">
@@ -688,25 +685,18 @@ class ShopService {
         </div>
       </body>
       `;
-                //  Setup mail options
-                const mailOptions = {
-                    from: `"Temu Shop Support" <${config_1.config.smtp.user}>`,
+                // Send the email
+                yield (0, mailer_1.sendMail)({
                     to: email,
                     subject: `Your Verification Code for Temu Shop`,
                     text: `Hello ${(customer === null || customer === void 0 ? void 0 : customer.fullname) || (customer === null || customer === void 0 ? void 0 : customer.email)},\n\nYour verification code is: ${otp}\n\nThis code will expire in 5 minutes.\n\nIf you did not request this code, please ignore this email.\n\nBest regards,\nTemu Shop Support Team`,
                     html: htmlContent,
-                    headers: {
-                        'X-Priority': '1',
-                        'X-Mailer': 'Temu Shop Mailer',
-                    },
-                };
-                // Send the email
-                const info = yield transporter.sendMail(mailOptions);
-                console.log("Email sent:", customer.email);
+                });
+                console.log("Email sent:", email);
                 return true;
             }
             catch (error) {
-                console.error("Error sending OTP email:", error.message);
+                console.error(`Error sending OTP email via ${config_1.config.mail.provider}:`, error.message);
                 return false;
             }
         });
@@ -714,19 +704,7 @@ class ShopService {
     static sendResetPasswordEmail(email, otp) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                // Create a transporter
-                const transporter = nodemailer.createTransport({
-                    host: config_1.config.smtp.host,
-                    port: config_1.config.smtp.port,
-                    secure: config_1.config.smtp.secure, // true for 465, false for other ports
-                    auth: {
-                        user: config_1.config.smtp.user, // SMTP username
-                        pass: config_1.config.smtp.pass, // SMTP password
-                    },
-                });
-                // Email options
-                const mailOptions = {
-                    from: `"Temu Shop Support" <${config_1.config.smtp.user}>`,
+                yield (0, mailer_1.sendMail)({
                     to: email,
                     subject: `Password Reset Request - Temu Shop`,
                     text: `Hello,\n\nYou requested a password reset.\n\nYour reset code is: ${otp}\n\nThis code will expire in 5 minutes.\n\nIf you did not request this, please ignore this email.\n\nBest regards,\nTemu Shop Support Team`,
@@ -751,23 +729,13 @@ class ShopService {
           <hr style="margin-top: 30px; border: none; border-top: 1px solid #ddd;">
           <p style="font-size: 12px; color: #888;">© ${new Date().getFullYear()} Temu Shop. All rights reserved.</p>
         </div>`,
-                    headers: {
-                        'X-Priority': '1',
-                        'X-Mailer': 'Temu Shop Mailer',
-                    },
-                };
-                // Send the email
-                transporter.sendMail(mailOptions, (error, info) => {
-                    if (error) {
-                        console.error("Error sending email:", error);
-                    }
-                    else {
-                        console.log("Email sent:", info.response);
-                    }
                 });
+                console.log("Reset password email sent:", email);
+                return true;
             }
             catch (error) {
-                console.error(error);
+                console.error(`Error sending reset password email via ${config_1.config.mail.provider}:`, error.message);
+                return false;
             }
         });
     }

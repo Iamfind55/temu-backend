@@ -17,6 +17,17 @@ const smtpSecureVar = process.env.SMTP_SECURE ?? process.env.MAIL_SECURE;
 const smtpSecure =
   smtpSecureVar !== undefined ? smtpSecureVar === "true" : smtpPort === 465;
 
+// Outbound SMTP (25/465/587) is blocked by default on most cloud hosts, so
+// production sends over an HTTPS email API instead. Dropping in an API key is
+// enough to switch providers; MAIL_PROVIDER overrides the auto-detection.
+const resendApiKey = process.env.RESEND_API_KEY || "";
+const brevoApiKey = process.env.BREVO_API_KEY || "";
+const mailProvider = (
+  process.env.MAIL_PROVIDER ||
+  (brevoApiKey ? "brevo" : resendApiKey ? "resend" : "smtp")
+).toLowerCase();
+const mailFrom = process.env.MAIL_FROM || process.env.SMTP_FROM || smtpUser;
+
 export const config = {
   node: process.env.NODE_ENV,
   client_url: process.env.CLIENT_URL,
@@ -68,6 +79,13 @@ export const config = {
     secure: smtpSecure,
     user: smtpUser,
     pass: smtpPass,
-    from: process.env.MAIL_FROM || process.env.SMTP_FROM || smtpUser,
+    from: mailFrom,
+  },
+  mail: {
+    provider: mailProvider,
+    from: mailFrom,
+    from_name: process.env.MAIL_FROM_NAME || "Temu Shop Support",
+    resend_api_key: resendApiKey,
+    brevo_api_key: brevoApiKey,
   },
 };

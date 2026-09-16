@@ -13,6 +13,7 @@ var ShopStatus;
     ShopStatus["APPROVED"] = "APPROVED";
     ShopStatus["FROZEN"] = "FROZEN";
     ShopStatus["INACTIVE"] = "INACTIVE";
+    ShopStatus["DELETED"] = "DELETED";
 })(ShopStatus || (exports.ShopStatus = ShopStatus = {}));
 var EProfitVIP;
 (function (EProfitVIP) {

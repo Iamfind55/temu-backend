@@ -125,7 +125,15 @@ export class CustomerService {
       newCustomer.isVerified = false;
       const savedCustomer = await customerRepository.save(newCustomer);
 
-      await ShopService.sendOtpEmail(email, otp, savedCustomer);
+      const sent = await ShopService.sendOtpEmail(email, otp, savedCustomer);
+      if (!sent) {
+        // The account is saved; the user can retry delivery via resend OTP.
+        return handleError(
+          "Could not send the verification email. Please try again.",
+          502,
+          "Email provider rejected or timed out on the OTP send"
+        );
+      }
 
       return handleSuccess({ token: null, data: savedCustomer } as any);
     } catch (error: any) {
@@ -279,7 +287,14 @@ export class CustomerService {
       customer.otpExpire_at = otpExpires;
       customer.isVerified = false;
       const savedCustomer = await customerRepository.save(customer);
-      await ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+      const sent = await ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+      if (!sent) {
+        return handleError(
+          "Could not send the verification email. Please try again.",
+          502,
+          "Email provider rejected or timed out on the OTP send"
+        );
+      }
 
       return handleSuccess({ token: null, data: savedCustomer } as any);
     } catch (error: any) {
@@ -734,7 +749,14 @@ export class CustomerService {
       customer.otpExpire_at = otpExpires;
       customer.isVerified = false;
       const savedCustomer = await customerRepository.save(customer);
-      await ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+      const sent = await ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+      if (!sent) {
+        return handleError(
+          "Could not send the verification email. Please try again.",
+          502,
+          "Email provider rejected or timed out on the OTP send"
+        );
+      }
 
       return handleSuccess(null);
     } catch (error: any) {

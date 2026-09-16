@@ -30,6 +30,7 @@ import {
   validateStrongPassword,
 } from "../../../utils/helper";
 import { AuthMiddlewareService } from "../../../middlewares/auth.middleware";
+import { sendMail } from "../../../utils/mailer";
 import { getRequestedFields } from "../../../utils/graphqlUtils";
 import { GraphQLResolveInfo } from "graphql";
 import { Wallet, WalletService } from "../../wallet";
@@ -38,7 +39,6 @@ import { INotificationType, NotificationService } from "../../notification";
 import { OtpService } from "../utils/helpers";
 import { addMinutes } from "date-fns";
 import { ResendOtpCustomerInput } from "../../customer";
-const nodemailer = require("nodemailer");
 
 export class ShopService {
   static async createShop({
@@ -415,7 +415,14 @@ export class ShopService {
 
 
       const savedShop = await customerRepository.save(shop);
-      await ShopService.sendOtpEmail(email, newOTP, savedShop);
+      const sent = await ShopService.sendOtpEmail(email, newOTP, savedShop);
+      if (!sent) {
+        return handleError(
+          "Could not send the verification email. Please try again.",
+          502,
+          "Email provider rejected or timed out on the OTP send"
+        );
+      }
 
       return handleSuccess({ token: null, data: savedShop } as any);
     } catch (error: any) {
@@ -924,7 +931,14 @@ export class ShopService {
       existEmail.isVerified = false;
       const savedCustomer = await shopRepository.save(existEmail);
 
-      await ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+      const sent = await ShopService.sendOtpEmail(email, newOTP, savedCustomer);
+      if (!sent) {
+        return handleError(
+          "Could not send the verification email. Please try again.",
+          502,
+          "Email provider rejected or timed out on the OTP send"
+        );
+      }
       return handleSuccess(null);
     } catch (error: any) {
       return handleError(
@@ -994,20 +1008,6 @@ export class ShopService {
 
   static async sendOtpEmail(email: string, otp: string, customer: any) {
     try {
-      // Create transporter
-      const transporter = nodemailer.createTransport({
-        host: config.smtp.host,
-        port: config.smtp.port,
-        secure: config.smtp.secure, // true for 465 (SSL), false for 587 (TLS)
-        auth: {
-          user: config.smtp.user,
-          pass: config.smtp.pass,
-        },
-        connectionTimeout: 10000,
-        greetingTimeout: 10000,
-        socketTimeout: 15000,
-      });
-
       // Build email HTML
       const htmlContent = `
       <body style="margin:0; padding:0; background-color:#f6f6f6; font-family:Arial, sans-serif;">
@@ -1052,45 +1052,27 @@ export class ShopService {
       </body>
       `;
 
-      //  Setup mail options
-      const mailOptions = {
-        from: `"Temu Shop Support" <${config.smtp.from}>`,
+      // Send the email
+      await sendMail({
         to: email,
         subject: `Your Verification Code for Temu Shop`,
         text: `Hello ${customer?.fullname || customer?.email},\n\nYour verification code is: ${otp}\n\nThis code will expire in 5 minutes.\n\nIf you did not request this code, please ignore this email.\n\nBest regards,\nTemu Shop Support Team`,
         html: htmlContent,
-        headers: {
-          'X-Priority': '1',
-          'X-Mailer': 'Temu Shop Mailer',
-        },
-      };
-
-      // Send the email
-      const info = await transporter.sendMail(mailOptions);
-      console.log("Email sent:", customer.email);
+      });
+      console.log("Email sent:", email);
       return true;
     } catch (error: any) {
-      console.error("Error sending OTP email:", error.message);
+      console.error(
+        `Error sending OTP email via ${config.mail.provider}:`,
+        error.message
+      );
       return false;
     }
   }
 
   static async sendResetPasswordEmail(email: string, otp: string) {
     try {
-      // Create a transporter
-      const transporter = nodemailer.createTransport({
-        host: config.smtp.host,
-        port: config.smtp.port,
-        secure: config.smtp.secure, // true for 465, false for other ports
-        auth: {
-          user: config.smtp.user, // SMTP username
-          pass: config.smtp.pass, // SMTP password
-        },
-      });
-
-      // Email options
-      const mailOptions = {
-        from: `"Temu Shop Support" <${config.smtp.from}>`,
+      await sendMail({
         to: email,
         subject: `Password Reset Request - Temu Shop`,
         text: `Hello,\n\nYou requested a password reset.\n\nYour reset code is: ${otp}\n\nThis code will expire in 5 minutes.\n\nIf you did not request this, please ignore this email.\n\nBest regards,\nTemu Shop Support Team`,
@@ -1115,22 +1097,15 @@ export class ShopService {
           <hr style="margin-top: 30px; border: none; border-top: 1px solid #ddd;">
           <p style="font-size: 12px; color: #888;">© ${new Date().getFullYear()} Temu Shop. All rights reserved.</p>
         </div>`,
-        headers: {
-          'X-Priority': '1',
-          'X-Mailer': 'Temu Shop Mailer',
-        },
-      };
-
-      // Send the email
-      transporter.sendMail(mailOptions, (error: any, info: any) => {
-        if (error) {
-          console.error("Error sending email:", error);
-        } else {
-          console.log("Email sent:", info.response);
-        }
       });
-    } catch (error) {
-      console.error(error);
+      console.log("Reset password email sent:", email);
+      return true;
+    } catch (error: any) {
+      console.error(
+        `Error sending reset password email via ${config.mail.provider}:`,
+        error.message
+      );
+      return false;
     }
   }
 
